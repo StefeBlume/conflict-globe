@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T19:57:20.451Z",
-  "durationSec": 361,
+  "generatedAt": "2026-08-15T21:04:55.743Z",
+  "durationSec": 387,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -55,7 +55,7 @@
       {
         "id": "france24",
         "ok": true,
-        "count": 24,
+        "count": 23,
         "error": null
       },
       {
@@ -114,12 +114,16 @@
       }
     ],
     "gdelt": {
-      "ok": 5,
-      "failed": 5,
+      "ok": 3,
+      "failed": 7,
       "skipped": 6,
       "errors": [
         {
           "id": "burkina-faso",
+          "error": "fetch failed"
+        },
+        {
+          "id": "haiti",
           "error": "HTTP 429"
         },
         {
@@ -127,16 +131,20 @@
           "error": "HTTP 429"
         },
         {
-          "id": "colombia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "south-sudan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "somalia",
+          "id": "ecuador",
           "error": "fetch failed"
+        },
+        {
+          "id": "drc-m23",
+          "error": "fetch failed"
+        },
+        {
+          "id": "sahel-mali",
+          "error": "fetch failed"
+        },
+        {
+          "id": "ethiopia",
+          "error": "HTTP 429"
         }
       ]
     },
@@ -144,8 +152,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 524,
-    "newArticles": 2
+    "articles": 533,
+    "newArticles": 9
   },
   "conflicts": [
     {
@@ -175,13 +183,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 15
+          "count": 17
         },
         {
           "key": "ceasefire",
@@ -190,16 +198,16 @@
           "count": 7
         },
         {
-          "key": "displacement",
-          "label": "Vertreibung",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 6
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
+          "key": "displacement",
+          "label": "Vertreibung",
           "dir": "up",
-          "count": 5
+          "count": 6
         },
         {
           "key": "escalation",
@@ -308,7 +316,7 @@
         {
           "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
           "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-15T16:02:49.000Z",
+          "date": "2026-08-15T20:21:14.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as earlier action against its soldiers.",
@@ -348,23 +356,44 @@
           "score": 26
         },
         {
-          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
-          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
-          "date": "2026-08-15T15:29:52.000Z",
+          "title": "Israeli strikes kill 11 in southern Lebanon, Hezbollah threatens to retaliate",
+          "url": "https://www.france24.com/en/middle-east/20260815-israeli-strikes-kill-11-in-southern-lebanon-hezbollah-threatens-to-retaliate",
+          "date": "2026-08-15T20:37:34.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
-          "isNew": false,
+          "summary": "Israeli airstrikes on southern Lebanon killed at least 11 people Saturday, some of the deadliest since deals in June eased hostilities between Israel and Hezbollah. Israel's military said the strikes were in retaliation for an attack by Hezbollah on its troops in the country's south and the Iran-backed militant group said that the attacks would be \"met with what they deserve\".",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Iran condemns Israeli attacks in Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-condemns-israeli-attacks-lebanon",
+          "date": "2026-08-15T20:16:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran condemns Israeli attacks in Lebanon Iran’s foreign ministry has condemned Israel’s recent attacks on southern Lebanon which killed 11 people, including children,&nbsp;according to Iran’s semi-official Tasnim news agency. Ministry spokesman Esmaeil Baghaei said Iran “regrets” the international community’s “continued silence and inaction of the United Nations Security Council in the face of bla",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 26
         },
@@ -432,25 +461,25 @@
           "score": 26
         },
         {
-          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
-          "date": "2026-08-15T14:19:13.000Z",
-          "source": "Middle East Eye",
+          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
+          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
+          "date": "2026-08-15T15:29:52.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
@@ -470,6 +499,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 23
+        },
+        {
+          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
+          "date": "2026-08-15T14:19:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 23
         },
@@ -1607,7 +1657,7 @@
           "score": 0
         }
       ],
-      "itemCount": 64
+      "itemCount": 66
     },
     {
       "id": "ukraine-russia",
@@ -1878,27 +1928,6 @@
           "score": 21
         },
         {
-          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
-          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
-          "date": "2026-08-15T14:26:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 21
-        },
-        {
           "title": "Humanitarian aid warehouses come under attack in Ukraine",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168102",
           "date": "2026-08-10T12:00:00.000Z",
@@ -1970,6 +1999,27 @@
             "label": "Opfer"
           },
           "score": 19
+        },
+        {
+          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T14:26:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Ukraine war: Grain attacks raise food price fears",
@@ -3353,13 +3403,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 14
+          "count": 16
         },
         {
           "key": "ceasefire",
@@ -3374,14 +3424,14 @@
           "count": 6
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 4
-        },
-        {
           "key": "airstrike",
           "label": "Luftschläge",
+          "dir": "up",
+          "count": 5
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 4
         }
@@ -3464,6 +3514,27 @@
       ],
       "items": [
         {
+          "title": "Israeli strikes kill 11 in southern Lebanon, Hezbollah threatens to retaliate",
+          "url": "https://www.france24.com/en/middle-east/20260815-israeli-strikes-kill-11-in-southern-lebanon-hezbollah-threatens-to-retaliate",
+          "date": "2026-08-15T20:37:34.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israeli airstrikes on southern Lebanon killed at least 11 people Saturday, some of the deadliest since deals in June eased hostilities between Israel and Hezbollah. Israel's military said the strikes were in retaliation for an attack by Hezbollah on its troops in the country's south and the Iran-backed militant group said that the attacks would be \"met with what they deserve\".",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 29
+        },
+        {
           "title": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-11-south-lebanon-health-ministry-says",
           "date": "2026-08-15T15:21:14.000Z",
@@ -3485,51 +3556,9 @@
           "score": 29
         },
         {
-          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
-          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
-          "date": "2026-08-15T15:29:52.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 28
-        },
-        {
-          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
-          "date": "2026-08-15T14:19:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 28
-        },
-        {
           "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
           "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-15T16:02:49.000Z",
+          "date": "2026-08-15T20:21:14.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as earlier action against its soldiers.",
@@ -3600,6 +3629,27 @@
           "score": 27
         },
         {
+          "title": "Iran condemns Israeli attacks in Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-condemns-israeli-attacks-lebanon",
+          "date": "2026-08-15T20:16:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran condemns Israeli attacks in Lebanon Iran’s foreign ministry has condemned Israel’s recent attacks on southern Lebanon which killed 11 people, including children,&nbsp;according to Iran’s semi-official Tasnim news agency. Ministry spokesman Esmaeil Baghaei said Iran “regrets” the international community’s “continued silence and inaction of the United Nations Security Council in the face of bla",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Israel says soldiers wounded in southern Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-soldiers-wounded-southern-lebanon",
           "date": "2026-08-15T18:52:42.000Z",
@@ -3619,6 +3669,48 @@
             "label": "Opfer"
           },
           "score": 26
+        },
+        {
+          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
+          "date": "2026-08-15T14:19:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 25
+        },
+        {
+          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
+          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
+          "date": "2026-08-15T15:29:52.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 25
         },
         {
           "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
@@ -4133,7 +4225,725 @@
           "score": 0
         }
       ],
-      "itemCount": 29
+      "itemCount": 31
+    },
+    {
+      "id": "iran-israel",
+      "name": "Iran–Israel",
+      "nameEn": "Iran–Israel",
+      "region": "Naher Osten",
+      "countries": [
+        "Iran"
+      ],
+      "lat": 32.4,
+      "lon": 53.7,
+      "tier": "high",
+      "since": "Schattenkrieg / offene Schläge 2024–2025",
+      "parties": [
+        "Iran/IRGC",
+        "Israel",
+        "USA"
+      ],
+      "background": "Direkte Schlagabtausche 2024/2025 lösten den früheren Schattenkrieg ab; Streit um das Atomprogramm, Sanktionen und Irans regionale Achse.",
+      "hotspots": [
+        "Natanz",
+        "Fordo",
+        "Isfahan",
+        "Straße von Hormus"
+      ],
+      "activity": 100,
+      "severity": 69,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "IRN",
+      "extraCountries": [
+        "ISR"
+      ],
+      "regions": [
+        {
+          "id": "IRN-3216",
+          "name": "Tehran",
+          "nameDe": "Teheran",
+          "type": "Province",
+          "anchor": [
+            51.831,
+            35.568
+          ],
+          "count": 3,
+          "newCount": 0,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          }
+        },
+        {
+          "id": "IRN-3228",
+          "name": "Hormozgan",
+          "nameDe": "Hormozgan",
+          "type": "Province",
+          "anchor": [
+            56.242,
+            27.12
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        },
+        {
+          "id": "IRN-3210",
+          "name": "Bushehr",
+          "nameDe": "Buschehr",
+          "type": "Province",
+          "anchor": [
+            51.381,
+            28.85
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Iran condemns Israeli attacks in Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-condemns-israeli-attacks-lebanon",
+          "date": "2026-08-15T20:16:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran condemns Israeli attacks in Lebanon Iran’s foreign ministry has condemned Israel’s recent attacks on southern Lebanon which killed 11 people, including children,&nbsp;according to Iran’s semi-official Tasnim news agency. Ministry spokesman Esmaeil Baghaei said Iran “regrets” the international community’s “continued silence and inaction of the United Nations Security Council in the face of bla",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "Saudi Arabia condemns attack on UAE tankers in Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-condemns-attack-uae-tankers-hormuz",
+          "date": "2026-08-15T01:36:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Saudi Arabia condemns attack on UAE tankers in Hormuz Saudi Arabia's foreign ministry has strongly condemned an attack on two tankers belonging to the UAE’s oil giant ADNOC while transiting the Strait of Hormuz. In a statement, the ministry said that “the recurrence of these attacks constitutes a dangerous escalation and a direct threat to the security and safety of maritime navigation and global ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Did the US really destroy Iran’s ballistic missile capability?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
+          "date": "2026-08-15T03:52:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uaes-adnoc-says-one-its-vessels-came-under-attack-while-transiting",
+          "date": "2026-08-14T22:33:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz UAE's Abu Dhabi National Oil Company said on Saturday that one of its vessels came under attack while transiting the Strait of Hormuz a day earlier. The state oil company said no injuries were reported, with the situation now under control.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-has-lost-roughly-25-percent-its-reaper-drones-iran-war-report",
+          "date": "2026-08-14T21:19:23.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report The US-Israeli war on Iran has depleted or destroyed more than $1.3bn worth of the US's MQ-9 Reaper drones, roughly translating to 25 percent of the country's pre-war fleet of unmanned aerial vehicles, according to a report by The Washington Post published on Friday. The report underscores how Iran's air defences have continue",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Iran resumes flights at Bandar Abbas airport after wartime disruptions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-resumes-flights-bandar-abbas-airport-after-wartime-disruptions",
+          "date": "2026-08-15T17:45:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran resumes flights at Bandar Abbas airport after wartime disruptions Flights at the port city of Bandar Abbas resumed on Saturday after repeated interruptions during war with the United States, state media reported. Kazem Tavassoli, director general of airports in Hormozgan province, said \"scheduled flights at Bandar Abbas International Airport on high-traffic domestic routes resumed today, acco",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3228",
+            "name": "Hormozgan",
+            "nameDe": "Hormozgan",
+            "type": "Province",
+            "anchor": [
+              56.242,
+              27.12
+            ],
+            "matched": "Hormozgan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T17:03:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea The Iran war may be fought primarily remotely via the air, but its strategic outcome is increasingly being decided at sea.&nbsp; The latest strikes and counterstrikes have clarified rather than altered that central fact. Washington may escalate through a ground intervention, wider attacks on Iran’s critical infrastructure,",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
+          "title": "Trump signals plan to claim Hormuz ‘soon’",
+          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
+          "date": "2026-08-15T02:18:53.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 19
+        },
+        {
+          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
+          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
+          "date": "2026-08-14T21:38:17.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "Donald Trump to declare Hormuz US territory 'soon'",
+          "url": "https://www.dw.com/en/donald-trump-to-declare-hormuz-us-territory-soon/a-78377755?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-14T22:14:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Donald Trump said the strait would become part of the US after Iran is defeated. He also told Americans to accept higher gas prices, which have soared since Iran closed Hormuz in response to US and Israeli attacks.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 17
+        },
+        {
+          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T14:26:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 16
+        },
+        {
+          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
+          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
+          "date": "2026-08-15T11:12:08.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3210",
+            "name": "Bushehr",
+            "nameDe": "Buschehr",
+            "type": "Province",
+            "anchor": [
+              51.381,
+              28.85
+            ],
+            "matched": "Persian Gulf"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 16
+        },
+        {
+          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
+          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
+          "date": "2026-08-15T11:30:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’",
+          "url": "https://www.timesofisrael.com/trump-says-hell-hit-iran-hard-economically-will-soon-declare-hormuz-us-territory/",
+          "date": "2026-08-14T22:26:15.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "US president urges Americans to accept slightly higher gas prices for the 'great service' of preventing Iran from obtaining nuclear bomb, dismisses concerns about conditions aboard aircraft carrier The post Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’ appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
+          "title": "Iran war live: Trump vows to make Hormuz US territory ‘pretty soon’",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/15/iran-war-live-trump-vows-to-make-hormuz-us-territory-pretty-soon?traffic_source=rss",
+          "date": "2026-08-15T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US President Trump says that 'pretty soon' he will declare the Strait of Hormuz a US territory once Iran is defeated.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
+          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
+          "date": "2026-08-14T21:50:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Vance says low oil prices are top US goal in Iran conflict",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-says-low-oil-prices-are-top-us-goal-iran-conflict",
+          "date": "2026-08-14T21:44:35.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Vance says low oil prices are top US goal in Iran conflict Vice President JD Vance said on Thursday that the top US priority in the&nbsp;Iran&nbsp;war was keeping oil and gasoline prices low for Americans, with preventing Tehran from acquiring a nuclear weapon ranking second. The remarks contrasted with President Donald Trump's repeated framing of the fight: that entering the war had the sole obje",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
+          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
+          "date": "2026-08-13T09:45:56.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Benjamin Netanyahu describes UK as ‘first Islamic republic to get a nuclear weapon’",
+          "url": "https://www.theguardian.com/world/2026/aug/14/benjamin-netanyahu-describes-uk-first-islamic-republic-to-get-nuclear-weapon",
+          "date": "2026-08-14T12:00:42.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Israeli PM criticised by political rival for attacking an international ally and overseeing ‘horrific diplomatic failure’ The Israeli prime minister, Benjamin Netanyahu, called the UK “the Islamic republic of Britain” in a podcast interview, where he also described the country as the “first Islamic republic to get a nuclear weapon”. His comments, made during an interview for Israel’s army radio, p",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 12
+        },
+        {
+          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
+          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T21:21:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Romania Shuts Nuclear Reactor on Danube as Power Crisis Deepens",
+          "url": "https://balkaninsight.com/2026/08/13/romania-shuts-nuclear-reactor-on-danube-as-power-crisis-deepens/bi/",
+          "date": "2026-08-13T10:41:03.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Record low water levels in the River Danube force temporary shutdown of Romania’s last operating nuclear reactor, obliging the country to import more electricity.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Trump says record Navy deployment in Iran operations 'not nearly long enough'",
+          "url": "https://www.france24.com/en/middle-east/20260814-trump-says-record-navy-deployment-in-iran-operations-not-nearly-long-enough",
+          "date": "2026-08-14T20:17:38.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "US President Donald Trump on Friday dismissed concerns about the toll on sailors aboard the aircraft carrier USS Abraham Lincoln, who have endured a record deployment of almost nine months, saying that the deployment had been “not nearly long enough”. The Lincoln has been supporting the US war against Iran, and reports have emerged of sailors struggling with mental health issues.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "US to hit Iran hard economically, Trump says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-hit-iran-hard-economically-trump-says",
+          "date": "2026-08-14T19:44:39.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US to hit Iran hard economically, Trump says US President Donald Trump told Fox News on Friday that the United States will hit&nbsp;Iran&nbsp;hard economically, as Washington and Tehran struggle to reach a deal to end a nearly six-month war. His comments came a day after US Treasury Secretary Scott Bessent said the US would impose measures on Tehran that have \"never been seen\" as soon as next week",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran to join BRICS development bank soon, central bank chief says",
+          "url": "https://www.timesofisrael.com/iran-to-join-brics-development-bank-soon-central-bank-chief-says/",
+          "date": "2026-08-14T12:18:45.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "In bid to skirt US and international sanctions, Islamic Republic seeks to build on its 2024 accession to bloc formed by Brazil, Russia, India, China and South Africa The post Iran to join BRICS development bank soon, central bank chief says appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-13T19:46:27.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran: UNHCR Middle East Situation: Emergency Update #22 as of 6 August 2026",
+          "url": "https://reliefweb.int/report/iran-islamic-republic/unhcr-middle-east-situation-emergency-update-22-6-august-2026",
+          "date": "2026-08-09T14:03:08.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Iran (Islamic Republic of), Afghanistan, Armenia, Iraq, Lebanon, Pakistan, Syrian Arab Republic, Türkiye Source: UN High Commissioner for Refugees Please refer to the attached file. SITUATION OVERVIEW REGIONAL CONTEXT Since late February 2026, hostilities in Iran and Lebanon have caused significant harm for civilians directly affected, while generating humanitarian consequences and elev",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        }
+      ],
+      "itemCount": 26
     },
     {
       "id": "sudan",
@@ -5015,703 +5825,6 @@
       "itemCount": 30
     },
     {
-      "id": "iran-israel",
-      "name": "Iran–Israel",
-      "nameEn": "Iran–Israel",
-      "region": "Naher Osten",
-      "countries": [
-        "Iran"
-      ],
-      "lat": 32.4,
-      "lon": 53.7,
-      "tier": "high",
-      "since": "Schattenkrieg / offene Schläge 2024–2025",
-      "parties": [
-        "Iran/IRGC",
-        "Israel",
-        "USA"
-      ],
-      "background": "Direkte Schlagabtausche 2024/2025 lösten den früheren Schattenkrieg ab; Streit um das Atomprogramm, Sanktionen und Irans regionale Achse.",
-      "hotspots": [
-        "Natanz",
-        "Fordo",
-        "Isfahan",
-        "Straße von Hormus"
-      ],
-      "activity": 99,
-      "severity": 68,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 3
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "IRN",
-      "extraCountries": [
-        "ISR"
-      ],
-      "regions": [
-        {
-          "id": "IRN-3216",
-          "name": "Tehran",
-          "nameDe": "Teheran",
-          "type": "Province",
-          "anchor": [
-            51.831,
-            35.568
-          ],
-          "count": 3,
-          "newCount": 0,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          }
-        },
-        {
-          "id": "IRN-3228",
-          "name": "Hormozgan",
-          "nameDe": "Hormozgan",
-          "type": "Province",
-          "anchor": [
-            56.242,
-            27.12
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
-          "id": "IRN-3210",
-          "name": "Bushehr",
-          "nameDe": "Buschehr",
-          "type": "Province",
-          "anchor": [
-            51.381,
-            28.85
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Saudi Arabia condemns attack on UAE tankers in Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-condemns-attack-uae-tankers-hormuz",
-          "date": "2026-08-15T01:36:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Saudi Arabia condemns attack on UAE tankers in Hormuz Saudi Arabia's foreign ministry has strongly condemned an attack on two tankers belonging to the UAE’s oil giant ADNOC while transiting the Strait of Hormuz. In a statement, the ministry said that “the recurrence of these attacks constitutes a dangerous escalation and a direct threat to the security and safety of maritime navigation and global ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Did the US really destroy Iran’s ballistic missile capability?",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
-          "date": "2026-08-15T03:52:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uaes-adnoc-says-one-its-vessels-came-under-attack-while-transiting",
-          "date": "2026-08-14T22:33:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz UAE's Abu Dhabi National Oil Company said on Saturday that one of its vessels came under attack while transiting the Strait of Hormuz a day earlier. The state oil company said no injuries were reported, with the situation now under control.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-has-lost-roughly-25-percent-its-reaper-drones-iran-war-report",
-          "date": "2026-08-14T21:19:23.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report The US-Israeli war on Iran has depleted or destroyed more than $1.3bn worth of the US's MQ-9 Reaper drones, roughly translating to 25 percent of the country's pre-war fleet of unmanned aerial vehicles, according to a report by The Washington Post published on Friday. The report underscores how Iran's air defences have continue",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
-          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
-          "date": "2026-08-15T11:30:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 19
-        },
-        {
-          "title": "Iran resumes flights at Bandar Abbas airport after wartime disruptions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-resumes-flights-bandar-abbas-airport-after-wartime-disruptions",
-          "date": "2026-08-15T17:45:10.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran resumes flights at Bandar Abbas airport after wartime disruptions Flights at the port city of Bandar Abbas resumed on Saturday after repeated interruptions during war with the United States, state media reported. Kazem Tavassoli, director general of airports in Hormozgan province, said \"scheduled flights at Bandar Abbas International Airport on high-traffic domestic routes resumed today, acco",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3228",
-            "name": "Hormozgan",
-            "nameDe": "Hormozgan",
-            "type": "Province",
-            "anchor": [
-              56.242,
-              27.12
-            ],
-            "matched": "Hormozgan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
-          "date": "2026-08-15T17:03:10.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea The Iran war may be fought primarily remotely via the air, but its strategic outcome is increasingly being decided at sea.&nbsp; The latest strikes and counterstrikes have clarified rather than altered that central fact. Washington may escalate through a ground intervention, wider attacks on Iran’s critical infrastructure,",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
-        },
-        {
-          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
-          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
-          "date": "2026-08-15T14:26:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "Trump signals plan to claim Hormuz ‘soon’",
-          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
-          "date": "2026-08-15T02:18:53.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
-          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
-          "date": "2026-08-14T21:38:17.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 17
-        },
-        {
-          "title": "Donald Trump to declare Hormuz US territory 'soon'",
-          "url": "https://www.dw.com/en/donald-trump-to-declare-hormuz-us-territory-soon/a-78377755?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-14T22:14:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Donald Trump said the strait would become part of the US after Iran is defeated. He also told Americans to accept higher gas prices, which have soared since Iran closed Hormuz in response to US and Israeli attacks.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 17
-        },
-        {
-          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
-          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
-          "date": "2026-08-15T11:12:08.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3210",
-            "name": "Bushehr",
-            "nameDe": "Buschehr",
-            "type": "Province",
-            "anchor": [
-              51.381,
-              28.85
-            ],
-            "matched": "Persian Gulf"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 16
-        },
-        {
-          "title": "Trump says record Navy deployment in Iran operations 'not nearly long enough'",
-          "url": "https://www.france24.com/en/middle-east/20260814-trump-says-record-navy-deployment-in-iran-operations-not-nearly-long-enough",
-          "date": "2026-08-14T20:17:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "US President Donald Trump on Friday dismissed concerns about the toll on sailors aboard the aircraft carrier USS Abraham Lincoln, who have endured a record deployment of almost nine months, saying that the deployment had been “not nearly long enough”. The Lincoln has been supporting the US war against Iran, and reports have emerged of sailors struggling with mental health issues.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’",
-          "url": "https://www.timesofisrael.com/trump-says-hell-hit-iran-hard-economically-will-soon-declare-hormuz-us-territory/",
-          "date": "2026-08-14T22:26:15.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "US president urges Americans to accept slightly higher gas prices for the 'great service' of preventing Iran from obtaining nuclear bomb, dismisses concerns about conditions aboard aircraft carrier The post Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’ appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran war live: Trump vows to make Hormuz US territory ‘pretty soon’",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/15/iran-war-live-trump-vows-to-make-hormuz-us-territory-pretty-soon?traffic_source=rss",
-          "date": "2026-08-15T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US President Trump says that 'pretty soon' he will declare the Strait of Hormuz a US territory once Iran is defeated.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
-          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
-          "date": "2026-08-14T21:50:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Vance says low oil prices are top US goal in Iran conflict",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-says-low-oil-prices-are-top-us-goal-iran-conflict",
-          "date": "2026-08-14T21:44:35.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Vance says low oil prices are top US goal in Iran conflict Vice President JD Vance said on Thursday that the top US priority in the&nbsp;Iran&nbsp;war was keeping oil and gasoline prices low for Americans, with preventing Tehran from acquiring a nuclear weapon ranking second. The remarks contrasted with President Donald Trump's repeated framing of the fight: that entering the war had the sole obje",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
-          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
-          "date": "2026-08-13T09:45:56.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Benjamin Netanyahu describes UK as ‘first Islamic republic to get a nuclear weapon’",
-          "url": "https://www.theguardian.com/world/2026/aug/14/benjamin-netanyahu-describes-uk-first-islamic-republic-to-get-nuclear-weapon",
-          "date": "2026-08-14T12:00:42.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Israeli PM criticised by political rival for attacking an international ally and overseeing ‘horrific diplomatic failure’ The Israeli prime minister, Benjamin Netanyahu, called the UK “the Islamic republic of Britain” in a podcast interview, where he also described the country as the “first Islamic republic to get a nuclear weapon”. His comments, made during an interview for Israel’s army radio, p",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 12
-        },
-        {
-          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
-          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T21:21:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Romania Shuts Nuclear Reactor on Danube as Power Crisis Deepens",
-          "url": "https://balkaninsight.com/2026/08/13/romania-shuts-nuclear-reactor-on-danube-as-power-crisis-deepens/bi/",
-          "date": "2026-08-13T10:41:03.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Record low water levels in the River Danube force temporary shutdown of Romania’s last operating nuclear reactor, obliging the country to import more electricity.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "US to hit Iran hard economically, Trump says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-hit-iran-hard-economically-trump-says",
-          "date": "2026-08-14T19:44:39.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US to hit Iran hard economically, Trump says US President Donald Trump told Fox News on Friday that the United States will hit&nbsp;Iran&nbsp;hard economically, as Washington and Tehran struggle to reach a deal to end a nearly six-month war. His comments came a day after US Treasury Secretary Scott Bessent said the US would impose measures on Tehran that have \"never been seen\" as soon as next week",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iran to join BRICS development bank soon, central bank chief says",
-          "url": "https://www.timesofisrael.com/iran-to-join-brics-development-bank-soon-central-bank-chief-says/",
-          "date": "2026-08-14T12:18:45.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "In bid to skirt US and international sanctions, Islamic Republic seeks to build on its 2024 accession to bloc formed by Brazil, Russia, India, China and South Africa The post Iran to join BRICS development bank soon, central bank chief says appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
-          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-13T19:46:27.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iran: UNHCR Middle East Situation: Emergency Update #22 as of 6 August 2026",
-          "url": "https://reliefweb.int/report/iran-islamic-republic/unhcr-middle-east-situation-emergency-update-22-6-august-2026",
-          "date": "2026-08-09T14:03:08.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Iran (Islamic Republic of), Afghanistan, Armenia, Iraq, Lebanon, Pakistan, Syrian Arab Republic, Türkiye Source: UN High Commissioner for Refugees Please refer to the attached file. SITUATION OVERVIEW REGIONAL CONTEXT Since late February 2026, hostilities in Iran and Lebanon have caused significant harm for civilians directly affected, while generating humanitarian consequences and elev",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 25
-    },
-    {
       "id": "drc-m23",
       "name": "DR Kongo / Ostkongo",
       "nameEn": "DR Congo – M23",
@@ -5885,7 +5998,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "APO Group - Africa Newsroom / Press release | Former rebel fighters join campaign against Ebola in the Democratic Republic of the Congo ( DR Congo ) ",
@@ -6971,7 +7084,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Burkina Faso: Key Message Update - Start of agricultural season marked by late and erratic rainfall onset, July 2026 - January 2027",
@@ -7265,27 +7378,6 @@
           "score": 19
         },
         {
-          "title": "The next Yemen war might be different",
-          "url": "https://www.aljazeera.com/features/2026/8/15/the-next-yemen-war-might-be-different?traffic_source=rss",
-          "date": "2026-08-15T14:32:07.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Drones are no longer the advantage for only one side.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 19
-        },
-        {
           "title": "Houthis say they targeted Aramco in Saudi Arabia's Najran with drone",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-they-targeted-aramco-saudi-arabias-najran-drone",
           "date": "2026-08-14T19:32:17.000Z",
@@ -7326,6 +7418,27 @@
             "label": "Seeangriff"
           },
           "score": 18
+        },
+        {
+          "title": "The next Yemen war might be different",
+          "url": "https://www.aljazeera.com/features/2026/8/15/the-next-yemen-war-might-be-different?traffic_source=rss",
+          "date": "2026-08-15T14:32:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Drones are no longer the advantage for only one side.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 16
         },
         {
           "title": "IRC operations in the west coast of Yemen disrupted, as attacks on Al Mokha stoke fears of wider conflict",
@@ -7564,8 +7677,8 @@
         "Arauca",
         "Chocó"
       ],
-      "activity": 45,
-      "severity": 52,
+      "activity": 42,
+      "severity": 51,
       "newCount": 0,
       "signals": [
         {
@@ -7648,27 +7761,6 @@
           "score": 16
         },
         {
-          "title": "Colombia: Latinoamérica y El Caribe Resumen de Situación Semanal al 14 de agosto 2026",
-          "url": "https://reliefweb.int/report/colombia/latinoamerica-y-el-caribe-resumen-de-situacion-semanal-al-14-de-agosto-2026",
-          "date": "2026-08-14T20:09:32.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Colombia, Guatemala, Haiti, Mexico, Peru Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. CIFRAS CLAVE 47,4K casos confirmados de sarampión en la región, más de tres veces la cifra total de 2025 53,8K personas afectadas por un terremoto de magnitud 7,4 en Colombia 266 personas fallecidas tras un terremoto de magnitud 7,4 en Colombi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "The InSight Take: Abelardo de la Espriella Inherits Colombia’s Fractured Criminal Landscape",
           "url": "https://insightcrime.org/news/the-insight-take-abelardo-de-la-espriella-inherits-colombias-fractured-criminal-landscape/",
           "date": "2026-08-11T21:55:27.000Z",
@@ -7709,6 +7801,27 @@
             "label": "Proteste/Unruhen"
           },
           "score": 15
+        },
+        {
+          "title": "Colombia: Latinoamérica y El Caribe Resumen de Situación Semanal al 14 de agosto 2026",
+          "url": "https://reliefweb.int/report/colombia/latinoamerica-y-el-caribe-resumen-de-situacion-semanal-al-14-de-agosto-2026",
+          "date": "2026-08-14T20:09:32.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Colombia, Guatemala, Haiti, Mexico, Peru Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. CIFRAS CLAVE 47,4K casos confirmados de sarampión en la región, más de tres veces la cifra total de 2025 53,8K personas afectadas por un terremoto de magnitud 7,4 en Colombia 266 personas fallecidas tras un terremoto de magnitud 7,4 en Colombi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
         },
         {
           "title": "Colombia: Latin America & The Caribbean Weekly Situation Update as of 14 August 2026",
@@ -7976,6 +8089,489 @@
       "itemCount": 17
     },
     {
+      "id": "niger",
+      "name": "Niger",
+      "nameEn": "Niger",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Niger"
+      ],
+      "lat": 14.5,
+      "lon": 7.5,
+      "tier": "high",
+      "since": "2015 / Putsch 2023",
+      "parties": [
+        "Militärjunta",
+        "IS-Sahel",
+        "JNIM",
+        "Boko Haram/ISWAP"
+      ],
+      "background": "Nach dem Putsch 2023 Abzug westlicher Truppen und Hinwendung zu Russland; Angriffe im Dreiländereck Tillabéri und im Diffa-Gebiet.",
+      "hotspots": [
+        "Tillabéri",
+        "Diffa",
+        "Niamey",
+        "Dreiländereck"
+      ],
+      "activity": 37,
+      "severity": 50,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "NER",
+      "extraCountries": [
+        "NGA"
+      ],
+      "regions": [
+        {
+          "id": "NER-94",
+          "name": "Niamey",
+          "nameDe": "Niamey",
+          "type": "Capital District",
+          "anchor": [
+            2.131,
+            13.517
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          }
+        },
+        {
+          "id": "NGA-2839",
+          "name": "Borno State",
+          "nameDe": "Borno",
+          "type": "State",
+          "anchor": [
+            13.171,
+            11.891
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        },
+        {
+          "id": "NGA-2851",
+          "name": "Niger State",
+          "nameDe": "Niger",
+          "type": "State",
+          "anchor": [
+            5.599,
+            9.941
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          }
+        },
+        {
+          "id": "NGA-2849",
+          "name": "Kwara State",
+          "nameDe": "Kwara",
+          "type": "State",
+          "anchor": [
+            4.373,
+            8.984
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "American missionary kidnapped in Niger freed after nine months",
+          "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
+          "date": "2026-08-14T14:55:17.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Kevin Rideout, who was abducted by unknown assailants in Niamey, said to be in good health and in care of US officials An American missionary who was kidnapped in Niger in October has been released, his organisation has said. Serving in Mission International said Kevin Rideout “is in good health in the care of US officials” and would soon be reunited with his extended family. Continue reading...",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 20
+        },
+        {
+          "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
+          "url": "https://allafrica.com/stories/202608140172.html",
+          "date": "2026-08-14T10:39:57.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Troops of the Nigerian Army have apprehended a high-profile terrorist operative linked to a notorious terrorist leader and 60 suspected collaborators in separate operations across theatres.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Nigeria: Nigerian Troops Foil Advance By Terrorists Riding About 200 Motorcycles - Official",
+          "url": "https://allafrica.com/stories/202608130119.html",
+          "date": "2026-08-13T09:54:56.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] \"The troops also recovered one motorcycle and destroyed six others during the operation, while one soldier sustained injuries.\"",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 19
+        },
+        {
+          "title": "X account of Nigerian military headquarters hacked – Official",
+          "url": "https://www.premiumtimesng.com/news/top-news/903209-x-account-of-nigerian-military-headquarters-hacked-official.html",
+          "date": "2026-08-15T20:23:04.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "PREMIUM TIMES ran a quick check on the account and found that it has been flooded with many cryptocurrency-related posts. The post X account of Nigerian military headquarters hacked – Official appeared first on Premium Times Nigeria .",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
+          "url": "https://allafrica.com/stories/202608140520.html",
+          "date": "2026-08-14T19:58:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Crusoe Osagie writes that the attack on the museum in Benin City and the propriety of an individual taking sole possession of globally significant artifacts puts the future of cultural restitution in jeopardy",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Vultures are disappearing in Nigeria - but the 'Vulture King' is fighting to reverse the trend",
+          "url": "https://www.bbc.co.uk/news/articles/cx256pp33l3o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-12T23:19:28.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Some see them as sinister or hunt them for ritual use but these birds play a vital role in nature's cycle.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Mali: Mali Junta Pardons French Agent Jailed for 'Undermining State Security'",
+          "url": "https://allafrica.com/stories/202608140174.html",
+          "date": "2026-08-14T10:41:31.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[RFI] Mali's junta leader General Assimi Goïta has pardoned a French intelligence agent serving a 20-year prison sentence, a rare conciliatory move after years of strained relations between the west African nation and its former colonial ruler.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Nigeria: DSS, Army Unite to End Banditry in North-West",
+          "url": "https://allafrica.com/stories/202608140177.html",
+          "date": "2026-08-14T10:42:27.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Leadership] The Department of State Services (DSS) and the Nigerian Army have pledged to deepen intelligence sharing and operational coordination to end banditry and terrorism in the North-West.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Nigeria: Put Military Budget On First-Line Charge, Ndume Tells FG",
+          "url": "https://allafrica.com/stories/202608130449.html",
+          "date": "2026-08-13T15:51:48.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Senator Ali Ndume (Borno South) has urged President Bola Ahmed Tinubu to place the annual budget of the Nigerian Armed Forces on First-Line Charge to eliminate bureaucratic delays in funding military operations.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2839",
+            "name": "Borno State",
+            "nameDe": "Borno",
+            "type": "State",
+            "anchor": [
+              13.171,
+              11.891
+            ],
+            "matched": "Borno"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Nigeria: Gunmen Kill Nine Travellers in Niger",
+          "url": "https://allafrica.com/stories/202608130184.html",
+          "date": "2026-08-13T11:35:47.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The nine people were killed in Borgu Local Government Area of Niger State, with police and military personnel recovering the bodies.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2851",
+            "name": "Niger State",
+            "nameDe": "Niger",
+            "type": "State",
+            "anchor": [
+              5.599,
+              9.941
+            ],
+            "matched": "Niger State"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 12
+        },
+        {
+          "title": "Nigeria: Army Battalion Begins Operations in Kwara South",
+          "url": "https://allafrica.com/stories/202608130182.html",
+          "date": "2026-08-13T11:34:50.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] A Nigerian Army battalion has begun operations in Omu-Aran, Kwara State, as part of a broader military deployment to strengthen security in Kwara South.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2849",
+            "name": "Kwara State",
+            "nameDe": "Kwara",
+            "type": "State",
+            "anchor": [
+              4.373,
+              8.984
+            ],
+            "matched": "Kwara State"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Niger : Mécanisme de Réponse Rapide (RRM) - Aperçu juillet 2026",
+          "url": "https://reliefweb.int/report/niger/niger-mecanisme-de-reponse-rapide-rrm-apercu-juillet-2026",
+          "date": "2026-08-14T11:23:39.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Niger Sources: Action contre la Faim France, Agency for Technical Cooperation and Development, Danish Refugee Council, Government of Niger, International Rescue Committee, UN Children's Fund, UN Office for the Coordination of Humanitarian Affairs, World Food Programme Please refer to the attached Infographic. MULTISECTORIEL Le Mécanisme de Réponse Rapide (RRM) est constitué d’un réseau d’",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "US missionary released following kidnap in Niger, Christian group says",
+          "url": "https://www.bbc.co.uk/news/articles/ckg40jvvkp7o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-14T10:18:02.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Kevin Rideout, who was kidnapped outside his home in the capital last October, is now with US officials.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 11
+        },
+        {
+          "title": "Niger: Personnes relevant de la compétence du HCR 31 - Juillet 2026",
+          "url": "https://reliefweb.int/report/niger/niger-personnes-relevant-de-la-competence-du-hcr-31-juillet-2026",
+          "date": "2026-08-10T11:03:13.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Niger Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Nigeria: U.S. Flags Civilian Deaths, Funding Gaps As Nigeria Pushes for CPC Delisting",
+          "url": "https://allafrica.com/stories/202608140364.html",
+          "date": "2026-08-14T14:22:13.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] Despite Nigeria's reported prosecution of hundreds of terror suspects and recruitment of 50,000 police officers, the United States said continuing challenges remained in the fight to remove Nigeria from its Country of Particular Concern, CPC, list.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 3
+        }
+      ],
+      "itemCount": 15
+    },
+    {
       "id": "nigeria",
       "name": "Nigeria",
       "nameEn": "Nigeria",
@@ -8004,7 +8600,7 @@
       ],
       "activity": 38,
       "severity": 50,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "displacement",
@@ -8146,28 +8742,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
-        },
-        {
-          "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
-          "url": "https://allafrica.com/stories/202608140520.html",
-          "date": "2026-08-14T19:58:20.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Crusoe Osagie writes that the attack on the museum in Benin City and the propriety of an individual taking sole possession of globally significant artifacts puts the future of cultural restitution in jeopardy",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
+          "score": 20
         },
         {
           "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
@@ -8210,6 +8785,48 @@
             "label": "Bodenoffensive"
           },
           "score": 19
+        },
+        {
+          "title": "X account of Nigerian military headquarters hacked – Official",
+          "url": "https://www.premiumtimesng.com/news/top-news/903209-x-account-of-nigerian-military-headquarters-hacked-official.html",
+          "date": "2026-08-15T20:23:04.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "PREMIUM TIMES ran a quick check on the account and found that it has been flooded with many cryptocurrency-related posts. The post X account of Nigerian military headquarters hacked – Official appeared first on Premium Times Nigeria .",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
+          "url": "https://allafrica.com/stories/202608140520.html",
+          "date": "2026-08-14T19:58:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Crusoe Osagie writes that the attack on the museum in Benin City and the propriety of an individual taking sole possession of globally significant artifacts puts the future of cultural restitution in jeopardy",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Vultures are disappearing in Nigeria - but the 'Vulture King' is fighting to reverse the trend",
@@ -8337,27 +8954,6 @@
           "score": 12
         },
         {
-          "title": "UNHCR Lake Chad Basin: Nigerian Refugees & Repatriation Overview - 1 August 2026",
-          "url": "https://reliefweb.int/report/nigeria/unhcr-lake-chad-basin-nigerian-refugees-repatriation-overview-1-august-2026",
-          "date": "2026-08-13T13:03:46.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Nigeria, Cameroon, Chad, Niger Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
           "title": "Nigeria: Army Battalion Begins Operations in Kwara South",
           "url": "https://allafrica.com/stories/202608130182.html",
           "date": "2026-08-13T11:34:50.000Z",
@@ -8386,7 +8982,28 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 12
+        },
+        {
+          "title": "UNHCR Lake Chad Basin: Nigerian Refugees & Repatriation Overview - 1 August 2026",
+          "url": "https://reliefweb.int/report/nigeria/unhcr-lake-chad-basin-nigerian-refugees-repatriation-overview-1-august-2026",
+          "date": "2026-08-13T13:03:46.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Nigeria, Cameroon, Chad, Niger Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
         },
         {
           "title": "Nigeria: U.S. Flags Civilian Deaths, Funding Gaps As Nigeria Pushes for CPC Delisting",
@@ -8483,469 +9100,7 @@
           "score": 0
         }
       ],
-      "itemCount": 15
-    },
-    {
-      "id": "niger",
-      "name": "Niger",
-      "nameEn": "Niger",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Niger"
-      ],
-      "lat": 14.5,
-      "lon": 7.5,
-      "tier": "high",
-      "since": "2015 / Putsch 2023",
-      "parties": [
-        "Militärjunta",
-        "IS-Sahel",
-        "JNIM",
-        "Boko Haram/ISWAP"
-      ],
-      "background": "Nach dem Putsch 2023 Abzug westlicher Truppen und Hinwendung zu Russland; Angriffe im Dreiländereck Tillabéri und im Diffa-Gebiet.",
-      "hotspots": [
-        "Tillabéri",
-        "Diffa",
-        "Niamey",
-        "Dreiländereck"
-      ],
-      "activity": 34,
-      "severity": 49,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "NER",
-      "extraCountries": [
-        "NGA"
-      ],
-      "regions": [
-        {
-          "id": "NER-94",
-          "name": "Niamey",
-          "nameDe": "Niamey",
-          "type": "Capital District",
-          "anchor": [
-            2.131,
-            13.517
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          }
-        },
-        {
-          "id": "NGA-2839",
-          "name": "Borno State",
-          "nameDe": "Borno",
-          "type": "State",
-          "anchor": [
-            13.171,
-            11.891
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
-          "id": "NGA-2851",
-          "name": "Niger State",
-          "nameDe": "Niger",
-          "type": "State",
-          "anchor": [
-            5.599,
-            9.941
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          }
-        },
-        {
-          "id": "NGA-2849",
-          "name": "Kwara State",
-          "nameDe": "Kwara",
-          "type": "State",
-          "anchor": [
-            4.373,
-            8.984
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
-          "url": "https://allafrica.com/stories/202608140520.html",
-          "date": "2026-08-14T19:58:20.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Crusoe Osagie writes that the attack on the museum in Benin City and the propriety of an individual taking sole possession of globally significant artifacts puts the future of cultural restitution in jeopardy",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
-          "title": "American missionary kidnapped in Niger freed after nine months",
-          "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
-          "date": "2026-08-14T14:55:17.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Kevin Rideout, who was abducted by unknown assailants in Niamey, said to be in good health and in care of US officials An American missionary who was kidnapped in Niger in October has been released, his organisation has said. Serving in Mission International said Kevin Rideout “is in good health in the care of US officials” and would soon be reunited with his extended family. Continue reading...",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 20
-        },
-        {
-          "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
-          "url": "https://allafrica.com/stories/202608140172.html",
-          "date": "2026-08-14T10:39:57.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Troops of the Nigerian Army have apprehended a high-profile terrorist operative linked to a notorious terrorist leader and 60 suspected collaborators in separate operations across theatres.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Nigeria: Nigerian Troops Foil Advance By Terrorists Riding About 200 Motorcycles - Official",
-          "url": "https://allafrica.com/stories/202608130119.html",
-          "date": "2026-08-13T09:54:56.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] \"The troops also recovered one motorcycle and destroyed six others during the operation, while one soldier sustained injuries.\"",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 19
-        },
-        {
-          "title": "Vultures are disappearing in Nigeria - but the 'Vulture King' is fighting to reverse the trend",
-          "url": "https://www.bbc.co.uk/news/articles/cx256pp33l3o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-12T23:19:28.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Some see them as sinister or hunt them for ritual use but these birds play a vital role in nature's cycle.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Mali: Mali Junta Pardons French Agent Jailed for 'Undermining State Security'",
-          "url": "https://allafrica.com/stories/202608140174.html",
-          "date": "2026-08-14T10:41:31.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[RFI] Mali's junta leader General Assimi Goïta has pardoned a French intelligence agent serving a 20-year prison sentence, a rare conciliatory move after years of strained relations between the west African nation and its former colonial ruler.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Nigeria: DSS, Army Unite to End Banditry in North-West",
-          "url": "https://allafrica.com/stories/202608140177.html",
-          "date": "2026-08-14T10:42:27.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Leadership] The Department of State Services (DSS) and the Nigerian Army have pledged to deepen intelligence sharing and operational coordination to end banditry and terrorism in the North-West.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Nigeria: Put Military Budget On First-Line Charge, Ndume Tells FG",
-          "url": "https://allafrica.com/stories/202608130449.html",
-          "date": "2026-08-13T15:51:48.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Senator Ali Ndume (Borno South) has urged President Bola Ahmed Tinubu to place the annual budget of the Nigerian Armed Forces on First-Line Charge to eliminate bureaucratic delays in funding military operations.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2839",
-            "name": "Borno State",
-            "nameDe": "Borno",
-            "type": "State",
-            "anchor": [
-              13.171,
-              11.891
-            ],
-            "matched": "Borno"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Nigeria: Gunmen Kill Nine Travellers in Niger",
-          "url": "https://allafrica.com/stories/202608130184.html",
-          "date": "2026-08-13T11:35:47.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The nine people were killed in Borgu Local Government Area of Niger State, with police and military personnel recovering the bodies.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2851",
-            "name": "Niger State",
-            "nameDe": "Niger",
-            "type": "State",
-            "anchor": [
-              5.599,
-              9.941
-            ],
-            "matched": "Niger State"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 12
-        },
-        {
-          "title": "Niger : Mécanisme de Réponse Rapide (RRM) - Aperçu juillet 2026",
-          "url": "https://reliefweb.int/report/niger/niger-mecanisme-de-reponse-rapide-rrm-apercu-juillet-2026",
-          "date": "2026-08-14T11:23:39.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Niger Sources: Action contre la Faim France, Agency for Technical Cooperation and Development, Danish Refugee Council, Government of Niger, International Rescue Committee, UN Children's Fund, UN Office for the Coordination of Humanitarian Affairs, World Food Programme Please refer to the attached Infographic. MULTISECTORIEL Le Mécanisme de Réponse Rapide (RRM) est constitué d’un réseau d’",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Nigeria: Army Battalion Begins Operations in Kwara South",
-          "url": "https://allafrica.com/stories/202608130182.html",
-          "date": "2026-08-13T11:34:50.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] A Nigerian Army battalion has begun operations in Omu-Aran, Kwara State, as part of a broader military deployment to strengthen security in Kwara South.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2849",
-            "name": "Kwara State",
-            "nameDe": "Kwara",
-            "type": "State",
-            "anchor": [
-              4.373,
-              8.984
-            ],
-            "matched": "Kwara State"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "US missionary released following kidnap in Niger, Christian group says",
-          "url": "https://www.bbc.co.uk/news/articles/ckg40jvvkp7o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-14T10:18:02.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Kevin Rideout, who was kidnapped outside his home in the capital last October, is now with US officials.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 11
-        },
-        {
-          "title": "Niger: Personnes relevant de la compétence du HCR 31 - Juillet 2026",
-          "url": "https://reliefweb.int/report/niger/niger-personnes-relevant-de-la-competence-du-hcr-31-juillet-2026",
-          "date": "2026-08-10T11:03:13.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Niger Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Nigeria: U.S. Flags Civilian Deaths, Funding Gaps As Nigeria Pushes for CPC Delisting",
-          "url": "https://allafrica.com/stories/202608140364.html",
-          "date": "2026-08-14T14:22:13.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Vanguard] Despite Nigeria's reported prosecution of hundreds of terror suspects and recruitment of 50,000 police officers, the United States said continuing challenges remained in the fight to remove Nigeria from its Country of Particular Concern, CPC, list.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 3
-        }
-      ],
-      "itemCount": 14
+      "itemCount": 16
     },
     {
       "id": "afghanistan",
@@ -8974,7 +9129,7 @@
       ],
       "activity": 35,
       "severity": 49,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -9022,7 +9177,7 @@
           "source": "breitbart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -9034,7 +9189,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 27
+          "score": 25
         },
         {
           "title": "Taliban marks 5 years back in power as Afghan women remain shut out of public life",
@@ -9403,7 +9558,7 @@
       ],
       "activity": 26,
       "severity": 46,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -9481,7 +9636,7 @@
           "source": "azernews.az",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9493,7 +9648,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
+          "score": 18
         },
         {
           "title": "Missing Circassian–Syrian man may have been ‘tortured to death’ in Russian Army, activists say",
@@ -11016,6 +11171,573 @@
       "itemCount": 7
     },
     {
+      "id": "taiwan-strait",
+      "name": "Taiwanstraße",
+      "nameEn": "Taiwan Strait",
+      "region": "Asien (Ost)",
+      "countries": [
+        "Taiwan"
+      ],
+      "lat": 24,
+      "lon": 120.5,
+      "tier": "medium",
+      "since": "laufende Spannungen",
+      "parties": [
+        "China (VBA)",
+        "Taiwan",
+        "USA",
+        "Japan"
+      ],
+      "background": "Zunehmende chinesische Militärübungen, Luftraumverletzungen und Grauzonen-Operationen inklusive Kabelsabotage rund um Taiwan.",
+      "hotspots": [
+        "Taiwanstraße",
+        "Kinmen",
+        "Medianlinie",
+        "ADIZ"
+      ],
+      "activity": 70,
+      "severity": 43,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "TWN",
+      "extraCountries": [
+        "CHN"
+      ],
+      "regions": [
+        {
+          "id": "TWN-1167",
+          "name": "New Taipei",
+          "nameDe": "Neu-Taipeh",
+          "type": "Special Municipality",
+          "anchor": [
+            121.586,
+            24.999
+          ],
+          "count": 1,
+          "newCount": 1,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          }
+        },
+        {
+          "id": "CHN-1155",
+          "name": "Beijing",
+          "nameDe": "Peking",
+          "type": "Municipality",
+          "anchor": [
+            116.406,
+            40.174
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": " 《 TAIPEI TIMES 》 Missile production passes key test : source - 焦點",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5541263",
+          "date": "2026-08-15T20:00:00.000Z",
+          "source": "news.ltn.com.tw",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": {
+            "id": "TWN-1167",
+            "name": "New Taipei",
+            "nameDe": "Neu-Taipeh",
+            "type": "Special Municipality",
+            "anchor": [
+              121.586,
+              24.999
+            ],
+            "matched": "Taipei"
+          },
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 24
+        },
+        {
+          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
+          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
+          "date": "2026-08-15T11:43:15.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 23
+        },
+        {
+          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
+          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
+          "date": "2026-08-15T11:09:27.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Libya's Haftar played role in securing US hostage's release, report says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/libyas-haftar-played-role-securing-us-hostages-release-report-says",
+          "date": "2026-08-15T04:31:46.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Libya's Haftar played role in securing US hostage's release, report says Authorities in eastern Libya under military commander Khalifa Haftar helped secure the release of an American missionary held hostage held by an Islamic State affiliate in West Africa's Sahel region, escorting him to freedom through Libya, Reuters reported, citing five sources. Four of the sources said that a deal was brokere",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 22
+        },
+        {
+          "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
+          "date": "2026-08-12T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "The United Nations has once again urged warring parties in Sudan to protect civilians as the fighting continues to take a heavy toll on the population.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Fighting deepens needs and fuels further displacement in Sudan",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168109",
+          "date": "2026-08-10T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Ongoing conflict, displacement and funding shortages continue to deepen needs in Sudan, the UN Office for the Coordination of Humanitarian Affairs (OCHA) warned on Monday, underscoring the need for greater civilian protection.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Petroleum dealers postpone planned strike as govt approves margin revision",
+          "url": "https://www.dawn.com/news/2022816/petroleum-dealers-postpone-planned-strike-as-govt-approves-margin-revision",
+          "date": "2026-08-14T19:40:36.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The Pakistan Petroleum Dealers’ Association (PPDA) on Friday called off its plans to begin a strike on Saturday after the government approved a proposed revision in the dealers’ margins. The nod for the revision was also confirmed by the finance ministry in a statement. The Economic Coordination Committee had “deliberated on the matter regarding revision of dealers’ margins on motor spirit and hig",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Trump signals plan to claim Hormuz ‘soon’",
+          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
+          "date": "2026-08-15T02:18:53.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 17
+        },
+        {
+          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
+          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
+          "date": "2026-08-14T21:38:17.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Albania Could Face Costly Arbitration Battle After Scrapping Vlora Airport Plans",
+          "url": "https://balkaninsight.com/2026/08/10/albania-could-face-costly-arbitration-battle-after-scrapping-vlora-airport-plans/bi/",
+          "date": "2026-08-10T05:53:46.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Experts say the government's move to ditch a controversial concession contract to build Vlora International Airport, at significant cost to taxpayers, highlights structural weaknesses in Albania’s public-private partnership framework.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
+          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
+          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
+          "date": "2026-08-15T11:30:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 15
+        },
+        {
+          "title": "'We are seeing the cracks of Israeli politics play out in the West Bank'",
+          "url": "https://www.france24.com/en/we-are-seeing-the-cracks-of-israeli-politics-play-out-in-the-west-bank",
+          "date": "2026-08-15T06:37:15.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Palestinian residents of three houses in Qusra near Nablus in the occupied West Bank say they have been effectively cut off from food and other supplies since the siege by Israeli settlers began on Sunday. But the Israeli military has not done anything to remove the settlers. \"We are seeing the cracks of Israeli politics, including a paralysed prime minister’s inability to condemn basic filmed vio",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 15
+        },
+        {
+          "title": "India marks 80th Independence Day with military display",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/india-marks-80th-independence-day-with-military-display?traffic_source=rss",
+          "date": "2026-08-15T03:39:06.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "India marked its 80th Independence Day at Delhi’s historic Red Fort.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
+          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
+          "date": "2026-08-14T21:50:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Taiwan passes defence budget after record delay, retains drone funding",
+          "url": "https://www.aljazeera.com/economy/2026/8/15/taiwan-passes-defence-budget-after-record-delay-retains-drone-funding?traffic_source=rss",
+          "date": "2026-08-15T04:44:14.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Taiwan parliament ends deadlock, ensuring vital drone programme funding amid rising cross-strait tensions with Beijing.",
+          "isNew": false,
+          "region": {
+            "id": "CHN-1155",
+            "name": "Beijing",
+            "nameDe": "Peking",
+            "type": "Municipality",
+            "anchor": [
+              116.406,
+              40.174
+            ],
+            "matched": "Beijing"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 13
+        },
+        {
+          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
+          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
+          "date": "2026-08-14T17:52:51.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
+          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T21:21:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Kennedy Center board approves Trump name on facade, renovation plan",
+          "url": "https://www.dw.com/en/kennedy-center-board-approves-trump-name-on-facade-renovation-plan/a-78359935?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T20:33:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The move appears designed to circumvent a judge's ruling that the US president's name should be removed, potentially setting the stage for a new legal fight over the Kennedy Center's name and future.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Explained: The Mecca Pact, a safety net with no strings attached",
+          "url": "https://www.dawn.com/news/2022768/explained-the-mecca-pact-a-safety-net-with-no-strings-attached",
+          "date": "2026-08-14T07:34:36.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Rough summary: Enemies will think twice because an attack on one country could drag in all three Takes defense into their own hands as a backup without snubbing the US or leaning towards China. One-on-one rivalries with Iran converted to a three-front headache for Tehran Combines naval power to keep oil shipments and trade routes safe The Mecca Joint Defence Agreement, signed on August 7, 2026, by",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 11
+        },
+        {
+          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-13T19:46:27.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
+          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
+          "date": "2026-08-11T13:25:46.000Z",
+          "source": "ReliefWeb Headlines (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Somalia Source: Médecins Sans Frontières The survey, across 888 households in 14 displacement sites in Baidoa, also found that one-third of families are surviving on just one meal a day, while only two per cent can afford three meals a day.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        }
+      ],
+      "itemCount": 21
+    },
+    {
       "id": "somalia",
       "name": "Somalia",
       "nameEn": "Somalia",
@@ -11604,519 +12326,6 @@
       "itemCount": 10
     },
     {
-      "id": "taiwan-strait",
-      "name": "Taiwanstraße",
-      "nameEn": "Taiwan Strait",
-      "region": "Asien (Ost)",
-      "countries": [
-        "Taiwan"
-      ],
-      "lat": 24,
-      "lon": 120.5,
-      "tier": "medium",
-      "since": "laufende Spannungen",
-      "parties": [
-        "China (VBA)",
-        "Taiwan",
-        "USA",
-        "Japan"
-      ],
-      "background": "Zunehmende chinesische Militärübungen, Luftraumverletzungen und Grauzonen-Operationen inklusive Kabelsabotage rund um Taiwan.",
-      "hotspots": [
-        "Taiwanstraße",
-        "Kinmen",
-        "Medianlinie",
-        "ADIZ"
-      ],
-      "activity": 66,
-      "severity": 42,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "TWN",
-      "extraCountries": [
-        "CHN"
-      ],
-      "regions": [
-        {
-          "id": "CHN-1155",
-          "name": "Beijing",
-          "nameDe": "Peking",
-          "type": "Municipality",
-          "anchor": [
-            116.406,
-            40.174
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
-          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
-          "date": "2026-08-15T11:09:27.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 23
-        },
-        {
-          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
-          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
-          "date": "2026-08-15T11:43:15.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 23
-        },
-        {
-          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
-          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
-          "date": "2026-08-15T11:30:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 22
-        },
-        {
-          "title": "Libya's Haftar played role in securing US hostage's release, report says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/libyas-haftar-played-role-securing-us-hostages-release-report-says",
-          "date": "2026-08-15T04:31:46.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Libya's Haftar played role in securing US hostage's release, report says Authorities in eastern Libya under military commander Khalifa Haftar helped secure the release of an American missionary held hostage held by an Islamic State affiliate in West Africa's Sahel region, escorting him to freedom through Libya, Reuters reported, citing five sources. Four of the sources said that a deal was brokere",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 22
-        },
-        {
-          "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
-          "date": "2026-08-12T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "The United Nations has once again urged warring parties in Sudan to protect civilians as the fighting continues to take a heavy toll on the population.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Fighting deepens needs and fuels further displacement in Sudan",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168109",
-          "date": "2026-08-10T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Ongoing conflict, displacement and funding shortages continue to deepen needs in Sudan, the UN Office for the Coordination of Humanitarian Affairs (OCHA) warned on Monday, underscoring the need for greater civilian protection.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Petroleum dealers postpone planned strike as govt approves margin revision",
-          "url": "https://www.dawn.com/news/2022816/petroleum-dealers-postpone-planned-strike-as-govt-approves-margin-revision",
-          "date": "2026-08-14T19:40:36.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The Pakistan Petroleum Dealers’ Association (PPDA) on Friday called off its plans to begin a strike on Saturday after the government approved a proposed revision in the dealers’ margins. The nod for the revision was also confirmed by the finance ministry in a statement. The Economic Coordination Committee had “deliberated on the matter regarding revision of dealers’ margins on motor spirit and hig",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Trump signals plan to claim Hormuz ‘soon’",
-          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
-          "date": "2026-08-15T02:18:53.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 17
-        },
-        {
-          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
-          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
-          "date": "2026-08-14T21:38:17.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Albania Could Face Costly Arbitration Battle After Scrapping Vlora Airport Plans",
-          "url": "https://balkaninsight.com/2026/08/10/albania-could-face-costly-arbitration-battle-after-scrapping-vlora-airport-plans/bi/",
-          "date": "2026-08-10T05:53:46.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Experts say the government's move to ditch a controversial concession contract to build Vlora International Airport, at significant cost to taxpayers, highlights structural weaknesses in Albania’s public-private partnership framework.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 16
-        },
-        {
-          "title": "'We are seeing the cracks of Israeli politics play out in the West Bank'",
-          "url": "https://www.france24.com/en/we-are-seeing-the-cracks-of-israeli-politics-play-out-in-the-west-bank",
-          "date": "2026-08-15T06:37:15.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Palestinian residents of three houses in Qusra near Nablus in the occupied West Bank say they have been effectively cut off from food and other supplies since the siege by Israeli settlers began on Sunday. But the Israeli military has not done anything to remove the settlers. \"We are seeing the cracks of Israeli politics, including a paralysed prime minister’s inability to condemn basic filmed vio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 15
-        },
-        {
-          "title": "India marks 80th Independence Day with military display",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/india-marks-80th-independence-day-with-military-display?traffic_source=rss",
-          "date": "2026-08-15T03:39:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "India marked its 80th Independence Day at Delhi’s historic Red Fort.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
-          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
-          "date": "2026-08-14T21:50:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Taiwan passes defence budget after record delay, retains drone funding",
-          "url": "https://www.aljazeera.com/economy/2026/8/15/taiwan-passes-defence-budget-after-record-delay-retains-drone-funding?traffic_source=rss",
-          "date": "2026-08-15T04:44:14.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Taiwan parliament ends deadlock, ensuring vital drone programme funding amid rising cross-strait tensions with Beijing.",
-          "isNew": false,
-          "region": {
-            "id": "CHN-1155",
-            "name": "Beijing",
-            "nameDe": "Peking",
-            "type": "Municipality",
-            "anchor": [
-              116.406,
-              40.174
-            ],
-            "matched": "Beijing"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 13
-        },
-        {
-          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
-          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
-          "date": "2026-08-14T17:52:51.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
-          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T21:21:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Kennedy Center board approves Trump name on facade, renovation plan",
-          "url": "https://www.dw.com/en/kennedy-center-board-approves-trump-name-on-facade-renovation-plan/a-78359935?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T20:33:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "The move appears designed to circumvent a judge's ruling that the US president's name should be removed, potentially setting the stage for a new legal fight over the Kennedy Center's name and future.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Explained: The Mecca Pact, a safety net with no strings attached",
-          "url": "https://www.dawn.com/news/2022768/explained-the-mecca-pact-a-safety-net-with-no-strings-attached",
-          "date": "2026-08-14T07:34:36.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Rough summary: Enemies will think twice because an attack on one country could drag in all three Takes defense into their own hands as a backup without snubbing the US or leaning towards China. One-on-one rivalries with Iran converted to a three-front headache for Tehran Combines naval power to keep oil shipments and trade routes safe The Mecca Joint Defence Agreement, signed on August 7, 2026, by",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
-          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-13T19:46:27.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
-          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
-          "date": "2026-08-11T13:25:46.000Z",
-          "source": "ReliefWeb Headlines (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Somalia Source: Médecins Sans Frontières The survey, across 888 households in 14 displacement sites in Baidoa, also found that one-third of families are surviving on just one meal a day, while only two per cent can afford three meals a day.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 20
-    },
-    {
       "id": "mexico-cartels",
       "name": "Mexiko (Kartellgewalt)",
       "nameEn": "Mexico – Cartel Violence",
@@ -12270,27 +12479,6 @@
       ],
       "items": [
         {
-          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
-          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
-          "date": "2026-08-15T11:09:27.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 23
-        },
-        {
           "title": "South Korea president proposes talks with Pyongyang to formally end Korean War",
           "url": "https://www.france24.com/en/asia-pacific/20260815-south-korea-president-proposes-talks-with-pyongyang-to-formally-end-korean-war",
           "date": "2026-08-15T15:39:37.000Z",
@@ -12318,6 +12506,27 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
+          },
+          "score": 22
+        },
+        {
+          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
+          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
+          "date": "2026-08-15T11:09:27.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 22
         },
@@ -12361,7 +12570,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "South Korea Seeks Talks to Officially End War With North",
@@ -12382,7 +12591,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "South Korea proposes talks with North to end Korean war",
@@ -12563,7 +12772,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Indonesian rescuers search for survivors as 7.7 quake death toll rises to 38",
@@ -12762,8 +12971,8 @@
         "Sirte",
         "Ölhalbmond"
       ],
-      "activity": 31,
-      "severity": 32,
+      "activity": 26,
+      "severity": 30,
       "newCount": 0,
       "signals": [
         {
@@ -12840,7 +13049,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Libya Haftar played key role in release of US hostage held by Islamic State , sources say",
@@ -12861,7 +13070,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Libya Khalifa Haftar played key role in release of US hostage Kevin Rideout held by Islamic State : Sources",
@@ -13597,7 +13806,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "7 killed , 23 injured in bus - truck collision in N . Iraq",
@@ -14267,9 +14476,9 @@
         "Palma",
         "Macomia"
       ],
-      "activity": 4,
+      "activity": 6,
       "severity": 24,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "displacement",
@@ -14292,8 +14501,8 @@
             39.25,
             -14.959
           ],
-          "count": 2,
-          "newCount": 0,
+          "count": 3,
+          "newCount": 1,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -14322,6 +14531,37 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "UN Expert : Mozambique Must Shield Civilians in Terror Fight",
+          "url": "https://www.miragenews.com/un-expert-mozambique-must-shield-civilians-in-1727468/",
+          "date": "2026-08-14T14:00:00.000Z",
+          "source": "miragenews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": {
+            "id": "MOZ-1200",
+            "name": "Nampula",
+            "nameDe": "Nampula",
+            "type": "Province",
+            "anchor": [
+              39.25,
+              -14.959
+            ],
+            "matched": "Mozambique"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 10
         },
         {
           "title": "Mozambique — Movement Alert Report — 165 (08 August 2026)",
@@ -14386,7 +14626,7 @@
           "score": 0
         }
       ],
-      "itemCount": 3
+      "itemCount": 4
     },
     {
       "id": "car",
