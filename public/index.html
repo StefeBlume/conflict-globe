@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conflict Globe – Weltweite Konfliktlage</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="globe"></canvas>
+  <div id="tooltip" hidden></div>
+
+  <header id="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <h1>Conflict&nbsp;Globe</h1>
+      <span class="sub">Weltweite Konfliktlage in Echtzeit</span>
+    </div>
+    <div class="meta">
+      <div class="stat"><b id="stat-conflicts">–</b><span>Konflikte</span></div>
+      <div class="stat"><b id="stat-articles">–</b><span>Meldungen</span></div>
+      <div class="stat new"><b id="stat-new">–</b><span>neu</span></div>
+      <div class="updated" id="updated" title="Zeitpunkt des letzten Datenabrufs">–</div>
+    </div>
+  </header>
+
+  <aside id="list-panel">
+    <div class="list-head">
+      <input id="search" type="search" placeholder="Konflikt oder Land suchen …" autocomplete="off" />
+      <div class="filters" id="filters">
+        <button data-tier="all" class="active">Alle</button>
+        <button data-tier="war">Krieg</button>
+        <button data-tier="high">Hoch</button>
+        <button data-tier="medium">Mittel</button>
+        <button data-tier="low">Gering</button>
+      </div>
+    </div>
+    <ol id="conflict-list"></ol>
+    <div class="legend">
+      <span><i class="sw war"></i>Krieg</span>
+      <span><i class="sw high"></i>Hoch</span>
+      <span><i class="sw medium"></i>Mittel</span>
+      <span><i class="sw low"></i>Gering</span>
+    </div>
+  </aside>
+
+  <button id="back-btn" hidden>← Zurück zur Weltansicht</button>
+  <div id="region-legend" hidden></div>
+
+  <section id="detail" class="hidden" aria-live="polite">
+    <button id="close-detail" aria-label="Schließen">×</button>
+    <div id="detail-body"></div>
+  </section>
+
+  <div id="hint">Ziehen zum Drehen · Scrollen zum Zoomen · Land anklicken für Regionalansicht</div>
+
+  <button id="info-btn" title="Quellen und Hinweise">i</button>
+
+  <div id="info-panel" hidden>
+    <button id="info-close" aria-label="Schließen">×</button>
+    <h2>Quellen und Hinweise</h2>
+
+    <section>
+      <h3>Automatisch erzeugte Texte</h3>
+      <p>
+        Die <b>Lageeinschätzungen</b> unter jedem Konflikt werden automatisiert von einem
+        Sprachmodell aus den verlinkten Meldungen zusammengefasst. Sie sind
+        <b>kein redaktionell geprüfter Journalismus</b> und können Fehler enthalten.
+        Maßgeblich sind immer die verlinkten Originalquellen.
+      </p>
+    </section>
+
+    <section>
+      <h3>Was die Zahlen bedeuten</h3>
+      <p>
+        <b>Intensität</b> und <b>Aktivität</b> messen die Dichte der Berichterstattung,
+        nicht das Ausmaß der Gewalt. Mediale Aufmerksamkeit ist weltweit sehr ungleich
+        verteilt: Ein niedriger Wert bedeutet wenig Berichterstattung, nicht Ruhe.
+        Die Ereignis-Symbole beruhen auf einer Stichwortanalyse der Überschriften.
+      </p>
+    </section>
+
+    <section>
+      <h3>Quellen</h3>
+      <p>
+        Meldungen von ReliefWeb (UN OCHA), UN News, International Crisis Group,
+        Al Jazeera, BBC, The Guardian, Deutsche Welle, France 24, Middle East Eye,
+        Balkan Insight, OC Media, AllAfrica, InSight Crime, Dawn, TOLOnews,
+        Premium Times und Times of Israel sowie über den GDELT-Nachrichtenindex.
+        Angezeigt werden ausschließlich Überschrift, Quelle und Link — kein Artikeltext.
+      </p>
+      <p>
+        Kartengrundlage: <b>Natural Earth</b> (gemeinfrei), Verwaltungsgrenzen aus
+        Natural Earth 10m. Konfliktzahlen optional von ACLED.
+      </p>
+    </section>
+
+    <section>
+      <h3>Aktualisierung</h3>
+      <p id="info-updated">–</p>
+    </section>
+  </div>
+</div>
+
+<div id="loading"><div class="spinner"></div><p>Lade Konfliktdaten …</p></div>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>

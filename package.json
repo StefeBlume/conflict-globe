@@ -1,0 +1,23 @@
+{
+  "name": "conflict-globe",
+  "version": "1.0.0",
+  "description": "3D-Globus-Dashboard zur weltweiten Konfliktlage mit stuendlichem Nachrichten-Update",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/serve.mjs",
+    "update": "node src/fetch.mjs",
+    "update:fast": "node src/fetch.mjs --no-gdelt",
+    "dev": "node src/fetch.mjs --no-gdelt && node src/serve.mjs",
+    "build:static": "node src/build-static.mjs",
+    "update:publish": "node src/fetch.mjs && node src/build-static.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "three": "^0.169.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  }
+}

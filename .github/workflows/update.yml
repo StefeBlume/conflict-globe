@@ -1,0 +1,65 @@
+name: Konfliktdaten aktualisieren und veröffentlichen
+
+on:
+  schedule:
+    # Stündlich um :17 UTC. Nicht auf :00 legen - zu dieser Minute startet ein
+    # Grossteil aller Cron-Jobs auf GitHub, entsprechend lange sind die Wartezeiten.
+    - cron: '17 * * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # aktualisierten Datenstand zurückschreiben
+  pages: write
+  id-token: write
+
+# Ein Lauf zur Zeit. Überlappende Läufe würden sich beim Zurückschreiben behindern.
+concurrency:
+  group: conflict-globe
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Das Projekt kommt zur Laufzeit ohne Abhängigkeiten aus - kein npm install nötig.
+      - name: Quellen abrufen
+        env:
+          # Optional: unter Settings > Secrets hinterlegen, dann liefert ACLED
+          # zusätzlich harte Ereignis- und Opferzahlen.
+          ACLED_KEY: ${{ secrets.ACLED_KEY }}
+          ACLED_EMAIL: ${{ secrets.ACLED_EMAIL }}
+        run: node src/fetch.mjs --timespan 36h --gdelt-budget 300 --gdelt-max 16
+
+      - name: Statischen Datenstand bauen
+        run: node src/build-static.mjs
+
+      - name: Datenstand zurückschreiben
+        run: |
+          git config user.name  "conflict-globe bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json data/gdelt-rotation.json public/data/state.json
+          # Nur committen, wenn sich wirklich etwas geändert hat.
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen."
+          else
+            git commit -m "Datenstand $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4
