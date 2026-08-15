@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T15:04:43.651Z",
-  "durationSec": 362,
+  "generatedAt": "2026-08-15T16:00:12.977Z",
+  "durationSec": 369,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -49,7 +49,7 @@
       {
         "id": "dw",
         "ok": true,
-        "count": 12,
+        "count": 13,
         "error": null
       },
       {
@@ -114,29 +114,29 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
+      "ok": 6,
       "failed": 5,
-      "skipped": 8,
+      "skipped": 5,
       "errors": [
         {
           "id": "burkina-faso",
           "error": "HTTP 429"
         },
         {
-          "id": "ethiopia",
+          "id": "drc-m23",
+          "error": "fetch failed"
+        },
+        {
+          "id": "sinai-egypt",
+          "error": "fetch failed"
+        },
+        {
+          "id": "myanmar",
+          "error": "fetch failed"
+        },
+        {
+          "id": "syria",
           "error": "HTTP 429"
-        },
-        {
-          "id": "india-pakistan",
-          "error": "fetch failed"
-        },
-        {
-          "id": "haiti",
-          "error": "fetch failed"
-        },
-        {
-          "id": "mexico-cartels",
-          "error": "fetch failed"
         }
       ]
     },
@@ -144,8 +144,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 488,
-    "newArticles": 6
+    "articles": 500,
+    "newArticles": 12
   },
   "conflicts": [
     {
@@ -175,13 +175,19 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 5,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 11
+          "count": 14
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 7
         },
         {
           "key": "displacement",
@@ -190,16 +196,10 @@
           "count": 6
         },
         {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 5
-        },
-        {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 4
+          "count": 5
         },
         {
           "key": "escalation",
@@ -348,13 +348,97 @@
           "score": 26
         },
         {
+          "title": "Lebanon says 11 killed in Israeli airstrikes",
+          "url": "https://www.dw.com/en/lebanon-says-11-killed-in-israeli-airstrikes/a-78383713?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-15T15:35:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Lebanon's prime minister denounced the attacks on villages in southern Lebanon for targeting civilians in their homes. Israel said it was firing on Hezbollah infrastructure.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
+          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
+          "date": "2026-08-15T15:29:52.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon",
+          "url": "https://www.middleeasteye.net/news/israel-pilot-zones-withdrawal-paper-continued-occupation-south-lebanon",
+          "date": "2026-08-15T15:31:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon Submitted by Giovanna Vial on Wed, 08/12/2026 - 15:47 MEE visited two of the villages touted as models for Israel's withdrawal. Residents say Israeli troops were never there to begin with A Lebanese soldier stands guard at the entrance to Zawtar al-Gharbiyeh, one of three southern Lebanese villages designated as a “",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-11-south-lebanon-health-ministry-says",
+          "date": "2026-08-15T15:21:14.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​ We earlier reported that Israeli attacks had killed nine people in southern Lebanon. Lebanon's health ministry now says at least 11 people were killed in Israeli strikes in southern Lebanon on Saturday. Seven people were killed when Israeli warplanes struck a house in the southern town of Ansar, while four others were kill",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
           "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
           "date": "2026-08-15T14:19:13.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -417,27 +501,6 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Hezbollah has warned that Israel’s attacks would be met with an 'appropriate response'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
-          "title": "Mideast live: Hezbollah says Israeli attacks on Lebanon will be met with 'appropriate' response",
-          "url": "https://www.france24.com/en/middle-east/20260815-middle-east-live-trump-threatens-us-takeover-of-hormuz-as-iran-vows-to-retain-control",
-          "date": "2026-08-15T05:12:23.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Hezbollah said that Israeli attacks on Lebanon would be met with an \"appropriate\" response and urged Lebanese authorities to halt \"humiliating\" negotiations with Israel after strikes on the country's south killed at least 11 people Saturday. Follow our live blog for the latest updates.",
           "isNew": false,
           "region": null,
           "event": {
@@ -516,6 +579,27 @@
           "score": 22
         },
         {
+          "title": "Mideast live: Hezbollah says Israeli attacks on Lebanon will be met with 'appropriate' response",
+          "url": "https://www.france24.com/en/middle-east/20260815-middle-east-live-trump-threatens-us-takeover-of-hormuz-as-iran-vows-to-retain-control",
+          "date": "2026-08-15T05:12:23.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Hezbollah said that Israeli attacks on Lebanon would be met with an \"appropriate\" response and urged Lebanese authorities to halt \"humiliating\" negotiations with Israel after strikes on the country's south killed at least 11 people Saturday. Follow our live blog for the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
           "title": "‘We never leave’: Palestinians besieged in West Bank fear Israeli settlers will seize their homes",
           "url": "https://www.france24.com/en/middle-east/20260814-israel-s-new-west-bank-settlements-bring-chaos-to-palestinians",
           "date": "2026-08-14T16:15:18.000Z",
@@ -579,13 +663,13 @@
           "score": 22
         },
         {
-          "title": "Donald Trump's Latin America allies open arms to Israel",
-          "url": "https://www.dw.com/en/donald-trump-s-latin-america-allies-open-arms-to-israel/a-78378930?maca=en-rss-en-world-4025-rdf",
+          "title": "Trump's Latin America allies open arms to Israel",
+          "url": "https://www.dw.com/en/trump-s-latin-america-allies-open-arms-to-israel/a-78378930?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-15T11:35:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "While the ongoing military actions in Gaza and settler attacks on Palestinians in the West Bank have largely isolated Israel globally, Latin America's authoritarian right sees an opening for a strategic alliance.",
-          "isNew": false,
+          "summary": "While ongoing military actions in Gaza and settler attacks on Palestinians in the occupied West Bank have largely isolated Israel globally, Latin America's authoritarian right sees an opening for a strategic alliance.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -747,6 +831,27 @@
           "score": 18
         },
         {
+          "title": "Donald Trump's Latin America allies open arms to Israel",
+          "url": "https://www.dw.com/en/donald-trump-s-latin-america-allies-open-arms-to-israel/a-78378930?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-15T11:35:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "While the ongoing military actions in Gaza and settler attacks on Palestinians in the West Bank have largely isolated Israel globally, Latin America's authoritarian right sees an opening for a strategic alliance.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "West Bank: Washington condemns siege of Palestinian homes",
           "url": "https://www.france24.com/en/video/20260814-west-bank-washington-condemns-siege-of-palestinian-homes",
           "date": "2026-08-14T15:00:00.000Z",
@@ -766,27 +871,6 @@
             "label": "Belagerung"
           },
           "score": 18
-        },
-        {
-          "title": "Moment Israeli forces storm wedding hall in occupied West Bank",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/moment-israeli-forces-storm-wedding-hall-in-occupied-west-bank?traffic_source=rss",
-          "date": "2026-08-15T07:13:11.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli forces stormed a wedding hall in al-Eizariya town in the occupied West Bank and assaulted Palestinian attendees.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 17
         },
         {
           "title": "'We are seeing the cracks of Israeli politics play out in the West Bank'",
@@ -850,6 +934,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Moment Israeli forces storm wedding hall in occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/moment-israeli-forces-storm-wedding-hall-in-occupied-west-bank?traffic_source=rss",
+          "date": "2026-08-15T07:13:11.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli forces stormed a wedding hall in al-Eizariya town in the occupied West Bank and assaulted Palestinian attendees.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
         },
         {
           "title": "Hezbollah chief says Israel ‘only understands the language of force’",
@@ -1439,7 +1544,7 @@
           "score": 0
         }
       ],
-      "itemCount": 56
+      "itemCount": 61
     },
     {
       "id": "ukraine-russia",
@@ -1470,7 +1575,7 @@
       ],
       "activity": 55,
       "severity": 71,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -1685,7 +1790,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2612,27 +2717,6 @@
           "score": 18
         },
         {
-          "title": "Why Israel has done so little to rein in spiraling settler violence against Palestinians",
-          "url": "https://www.dailygazette.com/ade/ap/national/why-israel-has-done-so-little-to-rein-in-spiraling-settler-violence-against-palestinians/article_8709ef93-79e7-52e7-9a87-aaf67cf1e07a.html",
-          "date": "2026-08-15T09:15:00.000Z",
-          "source": "dailygazette.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
           "title": "Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers",
           "url": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-14T17:03:17.000Z",
@@ -2675,27 +2759,6 @@
           "score": 17
         },
         {
-          "title": "Moment Israeli forces storm wedding hall in occupied West Bank",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/moment-israeli-forces-storm-wedding-hall-in-occupied-west-bank?traffic_source=rss",
-          "date": "2026-08-15T07:13:11.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli forces stormed a wedding hall in al-Eizariya town in the occupied West Bank and assaulted Palestinian attendees.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 16
-        },
-        {
           "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
           "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
           "date": "2026-08-14T17:52:51.000Z",
@@ -2736,6 +2799,48 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Why Israel has done so little to rein in spiraling settler violence against Palestinians",
+          "url": "https://www.dailygazette.com/ade/ap/national/why-israel-has-done-so-little-to-rein-in-spiraling-settler-violence-against-palestinians/article_8709ef93-79e7-52e7-9a87-aaf67cf1e07a.html",
+          "date": "2026-08-15T09:15:00.000Z",
+          "source": "dailygazette.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Moment Israeli forces storm wedding hall in occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/moment-israeli-forces-storm-wedding-hall-in-occupied-west-bank?traffic_source=rss",
+          "date": "2026-08-15T07:13:11.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli forces stormed a wedding hall in al-Eizariya town in the occupied West Bank and assaulted Palestinian attendees.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
         },
         {
           "title": "There a reason why Israel has done little to rein in settler violence . It not just Netanyahu",
@@ -3087,6 +3192,793 @@
       "itemCount": 35
     },
     {
+      "id": "lebanon-hezbollah",
+      "name": "Israel–Libanon / Hisbollah",
+      "nameEn": "Israel–Hezbollah",
+      "region": "Naher Osten",
+      "countries": [
+        "Lebanon"
+      ],
+      "lat": 33.6,
+      "lon": 35.5,
+      "tier": "high",
+      "since": "Oktober 2023 / Eskalation 2024",
+      "parties": [
+        "Israel",
+        "Hisbollah",
+        "Libanesische Armee",
+        "UNIFIL"
+      ],
+      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
+      "hotspots": [
+        "Südlibanon",
+        "Beirut/Dahiyeh",
+        "Bekaa-Ebene"
+      ],
+      "activity": 100,
+      "severity": 69,
+      "newCount": 4,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 14
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 6
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 6
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 4
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 4
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "LBN",
+      "extraCountries": [
+        "ISR"
+      ],
+      "regions": [
+        {
+          "id": "LBN-3060",
+          "name": "South",
+          "nameDe": "Gouvernement Süd-Libanon",
+          "type": "Province",
+          "anchor": [
+            35.368,
+            33.36
+          ],
+          "count": 2,
+          "newCount": 1,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          }
+        },
+        {
+          "id": "LBN-3024",
+          "name": "Beirut",
+          "nameDe": "Beirut",
+          "type": "Province",
+          "anchor": [
+            35.508,
+            33.888
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          }
+        },
+        {
+          "id": "LBN-3059",
+          "name": "Nabatieh",
+          "nameDe": "Nabatäa",
+          "type": "Province",
+          "anchor": [
+            35.512,
+            33.3
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "ISR-3058",
+          "name": "Jerusalem",
+          "nameDe": "Bezirk Jerusalem",
+          "type": "District",
+          "anchor": [
+            35.035,
+            31.753
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-11-south-lebanon-health-ministry-says",
+          "date": "2026-08-15T15:21:14.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​ We earlier reported that Israeli attacks had killed nine people in southern Lebanon. Lebanon's health ministry now says at least 11 people were killed in Israeli strikes in southern Lebanon on Saturday. Seven people were killed when Israeli warplanes struck a house in the southern town of Ansar, while four others were kill",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 29
+        },
+        {
+          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
+          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
+          "date": "2026-08-15T15:29:52.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 28
+        },
+        {
+          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
+          "date": "2026-08-15T14:19:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 28
+        },
+        {
+          "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
+          "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-15T13:38:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as an earlier action against its soldiers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
+          "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
+          "date": "2026-08-15T13:55:28.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Rescue services search for survivors and bodies after airstrikes hit homes in Ansar and Deir al-Zahrani Eleven people have been killed, including three children, and 19 injured in two Israeli airstrikes on southern Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar, killing",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 27
+        },
+        {
+          "title": "Lebanon says 11 killed in Israeli airstrikes",
+          "url": "https://www.dw.com/en/lebanon-says-11-killed-in-israeli-airstrikes/a-78383713?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-15T15:35:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Lebanon's prime minister denounced the attacks on villages in southern Lebanon for targeting civilians in their homes. Israel said it was firing on Hezbollah infrastructure.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon",
+          "url": "https://www.middleeasteye.net/news/israel-pilot-zones-withdrawal-paper-continued-occupation-south-lebanon",
+          "date": "2026-08-15T15:31:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon Submitted by Giovanna Vial on Wed, 08/12/2026 - 15:47 MEE visited two of the villages touted as models for Israel's withdrawal. Residents say Israeli troops were never there to begin with A Lebanese soldier stands guard at the entrance to Zawtar al-Gharbiyeh, one of three southern Lebanese villages designated as a “",
+          "isNew": true,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli attacks kill nine people in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-nine-people-southern-lebanon",
+          "date": "2026-08-15T10:45:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli attacks kill nine people in southern Lebanon The Israeli military has killed two people and injured nine in an attack on Deir ez-Zahrani, a village in southern Lebanon, according to the Lebanese health ministry. Earlier, Israeli warplanes killed seven people in a strike on a house on the outskirts of Ansar village in southern Lebanon, local media reported. The Israeli military confirmed it",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
+          "title": "At scene of deadly Israeli strike on Lebanon home",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/at-scene-of-deadly-israeli-strike-on-lebanon-home?traffic_source=rss",
+          "date": "2026-08-15T10:18:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "An overnight Israeli strike on a family home in Ansar, southern Lebanon, killed at least seven people.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
+          "title": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate",
+          "url": "https://www.middleeasteye.net/news/deadly-israeli-strikes-kill-nine-southern-lebanon-tensions-escalate",
+          "date": "2026-08-15T13:40:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate Submitted by MEE staff on Sat, 08/15/2026 - 13:49 Prime Minister Nawaf Salam says civilians killed in the town of Ansar were 'not military infrastructure' A man watches as heavy machinery, first responders and residents search the site of an Israeli air strike in Deir al-Zahrani, southern Lebanon, on 15 August 2026 (Abbas Fa",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israeli strikes kill 11 in southern Lebanon as attacks intensify",
+          "url": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss",
+          "date": "2026-08-15T07:18:13.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Hezbollah has warned that Israel’s attacks would be met with an 'appropriate response'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
+          "title": "'We're seeing an important escalation in southern Lebanon despite the so-called truce'",
+          "url": "https://www.france24.com/en/we-re-seeing-an-important-escalation-in-southern-lebanon-despite-the-so-called-truce",
+          "date": "2026-08-15T09:59:22.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Overnight Israeli strikes in southern Lebanon killed at least seven people in one village, in the deadliest escalation since the lull in fighting began two months ago. FRANCE 24 correspondent Renée Davis, reporting from Beirut, says the strikes mark a significant escalation despite the so-called truce, and also gives us an update on ongoing negotiations with Israel.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3024",
+            "name": "Beirut",
+            "nameDe": "Beirut",
+            "type": "Province",
+            "anchor": [
+              35.508,
+              33.888
+            ],
+            "matched": "Beirut"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 24
+        },
+        {
+          "title": "Seven people killed in Israeli air attacks on southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-killed-israeli-air-attacks-southern-lebanon",
+          "date": "2026-08-15T05:26:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Seven people killed in Israeli air attacks on southern Lebanon Seven people were killed following an Israeli air strike on the town of Ansar in southern Lebanon early Saturday morning, according to the country’s civil defence. Israeli jets struck the outskirts of Ansar in the Nabatieh district, as well as the vicinity of Nabatieh al-Fawqa, Quds News Network reported earlier. At dawn, Israeli troop",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3059",
+            "name": "Nabatieh",
+            "nameDe": "Nabatäa",
+            "type": "Province",
+            "anchor": [
+              35.512,
+              33.3
+            ],
+            "matched": "Nabatieh"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 23
+        },
+        {
+          "title": "Mideast live: Hezbollah says Israeli attacks on Lebanon will be met with 'appropriate' response",
+          "url": "https://www.france24.com/en/middle-east/20260815-middle-east-live-trump-threatens-us-takeover-of-hormuz-as-iran-vows-to-retain-control",
+          "date": "2026-08-15T05:12:23.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Hezbollah said that Israeli attacks on Lebanon would be met with an \"appropriate\" response and urged Lebanese authorities to halt \"humiliating\" negotiations with Israel after strikes on the country's south killed at least 11 people Saturday. Follow our live blog for the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops",
+          "url": "https://www.timesofisrael.com/liveblog-august-15-2026/",
+          "date": "2026-08-14T22:51:07.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "Military doesn't give details on terror group's attack * IDF troops join search and rescue ops in Colombia quake zone * Anan Khalaili signs with Crystal Palace in most expensive deal for an Israeli soccer player The post 9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Lebanon’s PM urges timetable for Israeli withdrawal as Hezbollah slams deal",
+          "url": "https://www.aljazeera.com/news/2026/8/14/lebanons-pm-urges-timetable-for-israeli-withdrawal-as-hezbollah-slams-deal?traffic_source=rss",
+          "date": "2026-08-14T23:02:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Hezbollah criticises Beirut’s approach, accusing officials of exposing the Lebanese army to risks and Israeli pressure.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3024",
+            "name": "Beirut",
+            "nameDe": "Beirut",
+            "type": "Province",
+            "anchor": [
+              35.508,
+              33.888
+            ],
+            "matched": "Beirut"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 22
+        },
+        {
+          "title": "Lebanon: UN peacekeepers count hundreds of Israeli strikes and incursions in a single weekend",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168108",
+          "date": "2026-08-10T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Israeli forces fired 455 projectiles into south Lebanon and breached Lebanese airspace 97 times between Friday and Sunday, the UN's peacekeeping mission in the country reported Monday – among the heaviest fire seen in months.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Hezbollah chief says Israel ‘only understands the language of force’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-says-israel-only-understands-language-force",
+          "date": "2026-08-15T01:53:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hezbollah chief says Israel ‘only understands the language of force’ Hezbollah’s secretary general, Sheikh Naim Qassem, said Israel’s 33-day war against Lebanon in 2006 has proved that “the occupying regime only understands the language of force”, Press TV reported. In a speech on the anniversary of Hezbollah’s “victory” against Israel in the 2006 war, Qassem said the 2006 war began after the capt",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army",
+          "url": "https://www.timesofisrael.com/hezbollah-chief-says-lebanon-israel-deal-humiliates-the-nation-and-its-army/",
+          "date": "2026-08-14T19:34:22.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "In speech marking anniversary of Second Lebanon War, Naim Qassem accuses Lebanese authorities of giving up on 'dignity,' signing off on whatever Jerusalem demands The post Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-hezbollah-accuses-lebanons-government-targeting-resistance",
+          "date": "2026-08-14T17:22:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report Hezbollah chief Naim Qassem accused the&nbsp;Lebanese authorities of \"targeting the resistance instead of targeting the enemy\" and failing to \"abide by agreements\", Al Jazeera reported. “The southern town of Mansouri is supposed to be liberated … not occupied … yet residents can’t return … what have the Leba",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "UN: Keep International Force in Lebanon to Protect Civilians",
+          "url": "https://reliefweb.int/report/lebanon/un-keep-international-force-lebanon-protect-civilians",
+          "date": "2026-08-14T01:39:40.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Lebanon, Israel Source: Human Rights Watch As UNIFIL Sets Exit, Attacks on Population, Mass Displacement Continue The United Nations Security Council should ensure that an international force remains in southern Lebanon to protect civilians and deter human rights abuses by the Israeli military and Hezbollah, Human Rights Watch said today. In August 2025, the Security Council unanimously",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 12
+        },
+        {
+          "title": "Lebanon: Inter-Sector Coordination Group Minutes of Meeting - 7 August 2026",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-minutes-meeting-7-august-2026",
+          "date": "2026-08-13T12:03:21.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Lebanon Situation Analysis: [27/7/2026 -- 2/8/2026]",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-situation-analysis-2772026-282026",
+          "date": "2026-08-12T12:43:01.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: Data Friendly Space Please refer to the attached file. Executive Summary This Lebanon SituationHub report provides comprehensive situational analysis and actionable intelligence for humanitarian decision-makers responding to the ongoing crisis in Lebanon. The humanitarian situation in Lebanon requires coordinated, evidence-based response strategies. This SituationHub analy",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Lebanon: Inter-Sector Coordination Group Meeting - 7 August 2026",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-meeting-7-august-2026",
+          "date": "2026-08-10T13:03:07.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Lebanon: Flash Update #49 - Escalation of hostilities in Lebanon (as of 10 August 2026)",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-flash-update-49-escalation-hostilities-lebanon-10-august-2026",
+          "date": "2026-08-12T12:16:15.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. HIGHLIGHTS At least 4,335 deaths and 12,277 injuries recorded due to hostilities since 2 March, with 355 people killed and 276 injured since the 19 June ceasefire announcement, according to the Ministry of Public Health. 352,793 people remain displaced within Lebanon as of 6 August, w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 0
+        },
+        {
+          "title": "Lebanon: Conflict Intensity Snapshot (2 March - 10 August 2026)",
+          "url": "https://reliefweb.int/map/lebanon/lebanon-conflict-intensity-snapshot-2-march-10-august-2026",
+          "date": "2026-08-11T10:00:32.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Map.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 0
+        },
+        {
+          "title": "Lebanon · Emergency Rapid Needs Assessment (ERNA) – Lessons Learnt Consolidated Findings Report 2026",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-emergency-rapid-needs-assessment-erna-lessons-learnt-consolidated-findings-report-2026",
+          "date": "2026-08-10T11:03:16.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file. Executive Summary The picture is consistent across groups and sectors. Partners were broadly positive about how the ERNA was run - coordination, communication and the standardized tools were praised by a large majority - but were near-unanimous that the exercise was not rapid enough. The dominant concern ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        },
+        {
+          "title": "Lebanon Response Plan (LRP) and Flash Appeal (FA) 2026 January to June Funding Update (As of 30th June 2026)",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-response-plan-lrp-and-flash-appeal-fa-2026-january-june-funding-update-30th-june-2026",
+          "date": "2026-08-10T10:03:16.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        }
+      ],
+      "itemCount": 28
+    },
+    {
       "id": "sudan",
       "name": "Sudan",
       "nameEn": "Sudan Civil War",
@@ -3110,7 +4002,7 @@
         "Khartum",
         "Kordofan"
       ],
-      "activity": 49,
+      "activity": 47,
       "severity": 69,
       "newCount": 0,
       "signals": [
@@ -3701,27 +4593,6 @@
           "score": 12
         },
         {
-          "title": "Dignity Kit Guidance Note for Sudan [EN/AR]",
-          "url": "https://reliefweb.int/report/sudan/dignity-kit-guidance-note-sudan-enar",
-          "date": "2026-08-12T15:27:45.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Sources: Gender Based Violence Area of Responsibility, United Nations Population Fund Please refer to the attached files. The GBV Area of Responsibility (AoR) in Sudan led the development of this guidance, with critical technical and operational contributions from the Dignity Kit Task Force. This collaborative effort brought together key partners, including the International Rescue ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
           "title": "Refugees in South Sudan face extreme hunger as funds run out",
           "url": "https://reliefweb.int/report/south-sudan/joint-news-release-wfpunhcr-refugees-south-sudan-face-extreme-hunger-funds-run-out",
           "date": "2026-08-14T10:03:10.000Z",
@@ -3741,6 +4612,27 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Dignity Kit Guidance Note for Sudan [EN/AR]",
+          "url": "https://reliefweb.int/report/sudan/dignity-kit-guidance-note-sudan-enar",
+          "date": "2026-08-12T15:27:45.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Sources: Gender Based Violence Area of Responsibility, United Nations Population Fund Please refer to the attached files. The GBV Area of Responsibility (AoR) in Sudan led the development of this guidance, with critical technical and operational contributions from the Dignity Kit Task Force. This collaborative effort brought together key partners, including the International Rescue ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
         },
         {
           "title": "Sudan: Eritrean Refugees Overview in Sudan (as of 31 July 2026)",
@@ -3991,7 +4883,7 @@
       ],
       "activity": 92,
       "severity": 66,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -4179,7 +5071,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -4592,699 +5484,6 @@
         }
       ],
       "itemCount": 23
-    },
-    {
-      "id": "lebanon-hezbollah",
-      "name": "Israel–Libanon / Hisbollah",
-      "nameEn": "Israel–Hezbollah",
-      "region": "Naher Osten",
-      "countries": [
-        "Lebanon"
-      ],
-      "lat": 33.6,
-      "lon": 35.5,
-      "tier": "high",
-      "since": "Oktober 2023 / Eskalation 2024",
-      "parties": [
-        "Israel",
-        "Hisbollah",
-        "Libanesische Armee",
-        "UNIFIL"
-      ],
-      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
-      "hotspots": [
-        "Südlibanon",
-        "Beirut/Dahiyeh",
-        "Bekaa-Ebene"
-      ],
-      "activity": 82,
-      "severity": 63,
-      "newCount": 1,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 11
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 6
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 4
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 4
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 3
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "LBN",
-      "extraCountries": [
-        "ISR"
-      ],
-      "regions": [
-        {
-          "id": "LBN-3024",
-          "name": "Beirut",
-          "nameDe": "Beirut",
-          "type": "Province",
-          "anchor": [
-            35.508,
-            33.888
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          }
-        },
-        {
-          "id": "LBN-3059",
-          "name": "Nabatieh",
-          "nameDe": "Nabatäa",
-          "type": "Province",
-          "anchor": [
-            35.512,
-            33.3
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "LBN-3060",
-          "name": "South",
-          "nameDe": "Gouvernement Süd-Libanon",
-          "type": "Province",
-          "anchor": [
-            35.368,
-            33.36
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
-          "id": "ISR-3058",
-          "name": "Jerusalem",
-          "nameDe": "Bezirk Jerusalem",
-          "type": "District",
-          "anchor": [
-            35.035,
-            31.753
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
-          "date": "2026-08-15T14:19:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 28
-        },
-        {
-          "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
-          "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-15T13:38:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as an earlier action against its soldiers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
-          "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
-          "date": "2026-08-15T13:55:28.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Rescue services search for survivors and bodies after airstrikes hit homes in Ansar and Deir al-Zahrani Eleven people have been killed, including three children, and 19 injured in two Israeli airstrikes on southern Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar, killing",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 27
-        },
-        {
-          "title": "'We're seeing an important escalation in southern Lebanon despite the so-called truce'",
-          "url": "https://www.france24.com/en/we-re-seeing-an-important-escalation-in-southern-lebanon-despite-the-so-called-truce",
-          "date": "2026-08-15T09:59:22.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Overnight Israeli strikes in southern Lebanon killed at least seven people in one village, in the deadliest escalation since the lull in fighting began two months ago. FRANCE 24 correspondent Renée Davis, reporting from Beirut, says the strikes mark a significant escalation despite the so-called truce, and also gives us an update on ongoing negotiations with Israel.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3024",
-            "name": "Beirut",
-            "nameDe": "Beirut",
-            "type": "Province",
-            "anchor": [
-              35.508,
-              33.888
-            ],
-            "matched": "Beirut"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 27
-        },
-        {
-          "title": "Mideast live: Hezbollah says Israeli attacks on Lebanon will be met with 'appropriate' response",
-          "url": "https://www.france24.com/en/middle-east/20260815-middle-east-live-trump-threatens-us-takeover-of-hormuz-as-iran-vows-to-retain-control",
-          "date": "2026-08-15T05:12:23.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Hezbollah said that Israeli attacks on Lebanon would be met with an \"appropriate\" response and urged Lebanese authorities to halt \"humiliating\" negotiations with Israel after strikes on the country's south killed at least 11 people Saturday. Follow our live blog for the latest updates.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israeli attacks kill nine people in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-nine-people-southern-lebanon",
-          "date": "2026-08-15T10:45:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli attacks kill nine people in southern Lebanon The Israeli military has killed two people and injured nine in an attack on Deir ez-Zahrani, a village in southern Lebanon, according to the Lebanese health ministry. Earlier, Israeli warplanes killed seven people in a strike on a house on the outskirts of Ansar village in southern Lebanon, local media reported. The Israeli military confirmed it",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
-          "title": "At scene of deadly Israeli strike on Lebanon home",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/at-scene-of-deadly-israeli-strike-on-lebanon-home?traffic_source=rss",
-          "date": "2026-08-15T10:18:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "An overnight Israeli strike on a family home in Ansar, southern Lebanon, killed at least seven people.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 26
-        },
-        {
-          "title": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate",
-          "url": "https://www.middleeasteye.net/news/deadly-israeli-strikes-kill-nine-southern-lebanon-tensions-escalate",
-          "date": "2026-08-15T13:40:59.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate Submitted by MEE staff on Sat, 08/15/2026 - 13:49 Prime Minister Nawaf Salam says civilians killed in the town of Ansar were 'not military infrastructure' A man watches as heavy machinery, first responders and residents search the site of an Israeli air strike in Deir al-Zahrani, southern Lebanon, on 15 August 2026 (Abbas Fa",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Israeli strikes kill 11 in southern Lebanon as attacks intensify",
-          "url": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss",
-          "date": "2026-08-15T07:18:13.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Hezbollah has warned that Israel’s attacks would be met with an 'appropriate response'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
-          "title": "Seven people killed in Israeli air attacks on southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-killed-israeli-air-attacks-southern-lebanon",
-          "date": "2026-08-15T05:26:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Seven people killed in Israeli air attacks on southern Lebanon Seven people were killed following an Israeli air strike on the town of Ansar in southern Lebanon early Saturday morning, according to the country’s civil defence. Israeli jets struck the outskirts of Ansar in the Nabatieh district, as well as the vicinity of Nabatieh al-Fawqa, Quds News Network reported earlier. At dawn, Israeli troop",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3059",
-            "name": "Nabatieh",
-            "nameDe": "Nabatäa",
-            "type": "Province",
-            "anchor": [
-              35.512,
-              33.3
-            ],
-            "matched": "Nabatieh"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
-          "title": "9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops",
-          "url": "https://www.timesofisrael.com/liveblog-august-15-2026/",
-          "date": "2026-08-14T22:51:07.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "Military doesn't give details on terror group's attack * IDF troops join search and rescue ops in Colombia quake zone * Anan Khalaili signs with Crystal Palace in most expensive deal for an Israeli soccer player The post 9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Lebanon’s PM urges timetable for Israeli withdrawal as Hezbollah slams deal",
-          "url": "https://www.aljazeera.com/news/2026/8/14/lebanons-pm-urges-timetable-for-israeli-withdrawal-as-hezbollah-slams-deal?traffic_source=rss",
-          "date": "2026-08-14T23:02:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Hezbollah criticises Beirut’s approach, accusing officials of exposing the Lebanese army to risks and Israeli pressure.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3024",
-            "name": "Beirut",
-            "nameDe": "Beirut",
-            "type": "Province",
-            "anchor": [
-              35.508,
-              33.888
-            ],
-            "matched": "Beirut"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 22
-        },
-        {
-          "title": "Lebanon: UN peacekeepers count hundreds of Israeli strikes and incursions in a single weekend",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168108",
-          "date": "2026-08-10T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Israeli forces fired 455 projectiles into south Lebanon and breached Lebanese airspace 97 times between Friday and Sunday, the UN's peacekeeping mission in the country reported Monday – among the heaviest fire seen in months.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Hezbollah chief says Israel ‘only understands the language of force’",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-says-israel-only-understands-language-force",
-          "date": "2026-08-15T01:53:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hezbollah chief says Israel ‘only understands the language of force’ Hezbollah’s secretary general, Sheikh Naim Qassem, said Israel’s 33-day war against Lebanon in 2006 has proved that “the occupying regime only understands the language of force”, Press TV reported. In a speech on the anniversary of Hezbollah’s “victory” against Israel in the 2006 war, Qassem said the 2006 war began after the capt",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army",
-          "url": "https://www.timesofisrael.com/hezbollah-chief-says-lebanon-israel-deal-humiliates-the-nation-and-its-army/",
-          "date": "2026-08-14T19:34:22.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "In speech marking anniversary of Second Lebanon War, Naim Qassem accuses Lebanese authorities of giving up on 'dignity,' signing off on whatever Jerusalem demands The post Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-hezbollah-accuses-lebanons-government-targeting-resistance",
-          "date": "2026-08-14T17:22:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report Hezbollah chief Naim Qassem accused the&nbsp;Lebanese authorities of \"targeting the resistance instead of targeting the enemy\" and failing to \"abide by agreements\", Al Jazeera reported. “The southern town of Mansouri is supposed to be liberated … not occupied … yet residents can’t return … what have the Leba",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "UN: Keep International Force in Lebanon to Protect Civilians",
-          "url": "https://reliefweb.int/report/lebanon/un-keep-international-force-lebanon-protect-civilians",
-          "date": "2026-08-14T01:39:40.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Lebanon, Israel Source: Human Rights Watch As UNIFIL Sets Exit, Attacks on Population, Mass Displacement Continue The United Nations Security Council should ensure that an international force remains in southern Lebanon to protect civilians and deter human rights abuses by the Israeli military and Hezbollah, Human Rights Watch said today. In August 2025, the Security Council unanimously",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 12
-        },
-        {
-          "title": "Lebanon: Inter-Sector Coordination Group Minutes of Meeting - 7 August 2026",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-minutes-meeting-7-august-2026",
-          "date": "2026-08-13T12:03:21.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Lebanon Situation Analysis: [27/7/2026 -- 2/8/2026]",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-situation-analysis-2772026-282026",
-          "date": "2026-08-12T12:43:01.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: Data Friendly Space Please refer to the attached file. Executive Summary This Lebanon SituationHub report provides comprehensive situational analysis and actionable intelligence for humanitarian decision-makers responding to the ongoing crisis in Lebanon. The humanitarian situation in Lebanon requires coordinated, evidence-based response strategies. This SituationHub analy",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Lebanon: Inter-Sector Coordination Group Meeting - 7 August 2026",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-meeting-7-august-2026",
-          "date": "2026-08-10T13:03:07.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Lebanon: Flash Update #49 - Escalation of hostilities in Lebanon (as of 10 August 2026)",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-flash-update-49-escalation-hostilities-lebanon-10-august-2026",
-          "date": "2026-08-12T12:16:15.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. HIGHLIGHTS At least 4,335 deaths and 12,277 injuries recorded due to hostilities since 2 March, with 355 people killed and 276 injured since the 19 June ceasefire announcement, according to the Ministry of Public Health. 352,793 people remain displaced within Lebanon as of 6 August, w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 0
-        },
-        {
-          "title": "Lebanon: Conflict Intensity Snapshot (2 March - 10 August 2026)",
-          "url": "https://reliefweb.int/map/lebanon/lebanon-conflict-intensity-snapshot-2-march-10-august-2026",
-          "date": "2026-08-11T10:00:32.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Map.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 0
-        },
-        {
-          "title": "Lebanon · Emergency Rapid Needs Assessment (ERNA) – Lessons Learnt Consolidated Findings Report 2026",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-emergency-rapid-needs-assessment-erna-lessons-learnt-consolidated-findings-report-2026",
-          "date": "2026-08-10T11:03:16.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file. Executive Summary The picture is consistent across groups and sectors. Partners were broadly positive about how the ERNA was run - coordination, communication and the standardized tools were praised by a large majority - but were near-unanimous that the exercise was not rapid enough. The dominant concern ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        },
-        {
-          "title": "Lebanon Response Plan (LRP) and Flash Appeal (FA) 2026 January to June Funding Update (As of 30th June 2026)",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-response-plan-lrp-and-flash-appeal-fa-2026-january-june-funding-update-30th-june-2026",
-          "date": "2026-08-10T10:03:16.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        }
-      ],
-      "itemCount": 24
     },
     {
       "id": "drc-m23",
@@ -6983,7 +7182,7 @@
       ],
       "activity": 46,
       "severity": 52,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -7198,7 +7397,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Drones are no longer the advantage for only one side.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9083,7 +9282,7 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 26,
+      "activity": 24,
       "severity": 46,
       "newCount": 0,
       "signals": [
@@ -9286,37 +9485,6 @@
           "score": 15
         },
         {
-          "title": "Indian firm to make fighter jet engines with Rolls-Royce",
-          "url": "https://www.dawn.com/news/2022814/indian-firm-to-make-fighter-jet-engines-with-rolls-royce",
-          "date": "2026-08-14T15:08:43.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "India’s Reliance Industries and Britain’s Rolls-Royce announced on Friday plans to jointly design and manufacture engines for New Delhi’s multirole indigenous fighter jet programme. Reliance Industries Limited, India’s largest private sector company, has been expanding into defence production in military aerospace and advanced munitions to support Prime Minister Narendra Modi’s ‘Make in India’ ini",
-          "isNew": false,
-          "region": {
-            "id": "IND-2428",
-            "name": "Delhi",
-            "nameDe": "Delhi",
-            "type": "Union Territory",
-            "anchor": [
-              77.108,
-              28.661
-            ],
-            "matched": "Delhi"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Pakistan's leadership stresses need for unity, reforms as nation celebrates Independence Day",
           "url": "https://www.dawn.com/news/2022742/pakistans-leadership-stresses-need-for-unity-reforms-as-nation-celebrates-independence-day",
           "date": "2026-08-14T18:23:04.000Z",
@@ -9346,6 +9514,37 @@
             "label": "Bericht"
           },
           "score": 15
+        },
+        {
+          "title": "Indian firm to make fighter jet engines with Rolls-Royce",
+          "url": "https://www.dawn.com/news/2022814/indian-firm-to-make-fighter-jet-engines-with-rolls-royce",
+          "date": "2026-08-14T15:08:43.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "India’s Reliance Industries and Britain’s Rolls-Royce announced on Friday plans to jointly design and manufacture engines for New Delhi’s multirole indigenous fighter jet programme. Reliance Industries Limited, India’s largest private sector company, has been expanding into defence production in military aerospace and advanced munitions to support Prime Minister Narendra Modi’s ‘Make in India’ ini",
+          "isNew": false,
+          "region": {
+            "id": "IND-2428",
+            "name": "Delhi",
+            "nameDe": "Delhi",
+            "type": "Union Territory",
+            "anchor": [
+              77.108,
+              28.661
+            ],
+            "matched": "Delhi"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 11
         },
         {
           "title": "Afghan soil being used against Pakistan, Naqvi tells Norway FM as two discuss counterterrorism cooperation",
@@ -10238,415 +10437,128 @@
       "itemCount": 10
     },
     {
-      "id": "ethiopia",
-      "name": "Äthiopien",
-      "nameEn": "Ethiopia",
+      "id": "somalia",
+      "name": "Somalia",
+      "nameEn": "Somalia",
       "region": "Afrika (Horn)",
       "countries": [
-        "Ethiopia"
+        "Somalia"
       ],
-      "lat": 11.5,
-      "lon": 39,
+      "lat": 4.5,
+      "lon": 45.5,
       "tier": "high",
-      "since": "2020 (Tigray) / Amhara seit 2023",
+      "since": "2006",
       "parties": [
         "Bundesregierung",
-        "Fano (Amhara)",
-        "OLA (Oromia)",
-        "TPLF/Tigray-Fraktionen",
-        "Eritrea"
+        "Al-Shabaab",
+        "IS-Somalia",
+        "AUSSOM",
+        "Puntland",
+        "Jubaland"
       ],
-      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
+      "background": "Al-Shabaab-Offensiven in Hirshabelle und Shabelle, IS-Ableger in Puntland, Spannungen zwischen Mogadischu und den Bundesstaaten sowie um Somaliland.",
       "hotspots": [
-        "Amhara",
-        "Oromia",
-        "Tigray",
-        "Afar",
-        "Assab"
+        "Mogadischu",
+        "Shabelle",
+        "Puntland",
+        "Jubaland",
+        "Somaliland"
       ],
-      "activity": 15,
+      "activity": 14,
       "severity": 43,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 5
+          "count": 2
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 1
         }
       ],
       "acled": null,
       "briefing": null,
-      "iso3": "ETH",
+      "iso3": "SOM",
       "extraCountries": [
-        "ERI",
-        "SOM"
+        "ETH"
       ],
-      "regions": [
-        {
-          "id": "ETH-3133",
-          "name": "Addis Ababa",
-          "nameDe": "Addis Abeba",
-          "type": "Administrative State",
-          "anchor": [
-            38.786,
-            8.978
-          ],
-          "count": 3,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "ETH-3109",
-          "name": "Amhara",
-          "nameDe": "Amhara",
-          "type": "Administrative State",
-          "anchor": [
-            38.048,
-            11.583
-          ],
-          "count": 3,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "ETH-3134",
-          "name": "Somali",
-          "nameDe": "Somali",
-          "type": "Administrative State",
-          "anchor": [
-            43.324,
-            6.938
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "ETH-3132",
-          "name": "Benishangul-Gumuz",
-          "nameDe": "Benishangul-Gumuz",
-          "type": "Administrative State",
-          "anchor": [
-            35.454,
-            10.584
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        }
-      ],
+      "regions": [],
       "items": [
         {
-          "title": "Sudan: RSF Says It Captures Key Sudan Town Near Ethiopian Border As Army Withdraws",
-          "url": "https://allafrica.com/stories/202608140047.html",
-          "date": "2026-08-14T07:14:58.000Z",
-          "source": "AllAfrica – Konflikte",
+          "title": "RSF drone attacks in Sudan , Somalia drought emergency , and WFP sticks with Palantir : The Cheat Sheet",
+          "url": "https://www.thenewhumanitarian.org/cheat-sheet/2026/08/14/rsf-drone-attacks-somalias-drought-emergency-and-wfp-sticks-palantir-cheat",
+          "date": "2026-08-14T16:45:00.000Z",
+          "source": "thenewhumanitarian.org",
           "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Sudan's Rapid Support Forces (RSF) and allied fighters have advanced into Al Kurmuk, a strategically important town in Blue Nile State bordering Ethiopia, according to reports by Al Jazeera and The National.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
+          "summary": "",
+          "isNew": true,
+          "region": null,
           "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
-          "score": 22
+          "score": 25
         },
         {
-          "title": "Ethiopia: Media Warfare, National Consequences - How Ethiopia's Propaganda War Threatens Fragile Peace",
-          "url": "https://allafrica.com/stories/202608140380.html",
-          "date": "2026-08-14T15:40:55.000Z",
+          "title": "SOMALIA : Military Command and NISA Issue Conflicting Accounts of Recent Airstrikes Targeting Al - Shabaab",
+          "url": "https://raxanreeb.com/somalia-military-command-and-nisa-issue-conflicting-accounts-of-recent-airstrikes-targeting-al-shabaab/",
+          "date": "2026-08-15T09:00:00.000Z",
+          "source": "raxanreeb.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 24
+        },
+        {
+          "title": "Somalia: Puntland Puts Forces On Alert Over Reported Hassan Sheikh Visit to Galkayo",
+          "url": "https://allafrica.com/stories/202608140136.html",
+          "date": "2026-08-14T10:05:37.000Z",
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Recently, media outlets affiliated with Ethiopia's ruling Prosperity Party have carried strikingly similar narratives about the Tigray People's Liberation Front (TPLF). Whether coordinated by design or driven by a shared political agenda, the repetition of identical messages across multiple platforms creates the impression of an organized communication campaign rath",
+          "summary": "[Shabelle] Garowe -- Somalia's Puntland administration said Thursday it had placed its security forces on heightened alert and warned against a reported visit by President Hassan Sheikh Mohamud to Galkayo, a city divided between Puntland and the neighbouring Galmudug state.",
           "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 18
-        },
-        {
-          "title": "Sudan: Sudan Paramilitary Forces Attack Border Town, Army Alleges Assault Launched From Ethiopia",
-          "url": "https://allafrica.com/stories/202608120407.html",
-          "date": "2026-08-12T14:15:19.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Sudan's paramilitary Rapid Support Forces (RSF) attacked the border town of Geissan in Blue Nile State on Tuesday, according to the RSF and local authorities, while a Sudanese army source told AFP that the assault was launched \"from inside Ethiopian territory.\"",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 15
         },
         {
-          "title": "As millions of children head back to school this fall, new IRC program ensures over 150,000 conflict-affected children in Ethiopia access quality education",
-          "url": "https://reliefweb.int/report/ethiopia/millions-children-head-back-school-fall-new-irc-program-ensures-over-150000-conflict-affected-children-ethiopia-access-quality-education",
-          "date": "2026-08-13T04:33:06.000Z",
+          "title": "Somalia — Emergency Trend Tracking Report (ETT) - 13 Districts assessed | Week 08 (01 - 05 August)",
+          "url": "https://reliefweb.int/report/somalia/somalia-emergency-trend-tracking-report-ett-13-districts-assessed-week-08-01-05-august",
+          "date": "2026-08-12T13:33:06.000Z",
           "source": "ReliefWeb (UN OCHA)",
           "sourceType": "humanitarian",
-          "summary": "Country: Ethiopia Source: International Rescue Committee New \"Playful Education Pathways in Ethiopia\" (PEPE) initiative uses playful learning to bring education to children in Amhara and Tigray Conflict and poverty are the main barriers for children in Ethiopia’s Amhara and Tigray regions to access education. In partnership with the LEGO Foundation, the IRC’s new program PEPE (implemented with a c",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3109",
-            "name": "Amhara",
-            "nameDe": "Amhara",
-            "type": "Administrative State",
-            "anchor": [
-              38.048,
-              11.583
-            ],
-            "matched": "Amhara"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Ethiopia Monthly Protection Overview - July 2026",
-          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-july-2026",
-          "date": "2026-08-10T12:19:02.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Amhara: Security situation remained tense and volatile across the region, significantly impacting humanitarian access. A total of 55 security incidents were reported, including abductions, shootings, and illegal taxation affecting commuters and humanitarian worke",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3109",
-            "name": "Amhara",
-            "nameDe": "Amhara",
-            "type": "Administrative State",
-            "anchor": [
-              38.048,
-              11.583
-            ],
-            "matched": "Amhara"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 9
-        },
-        {
-          "title": "Ethiopia Monthly Protection Overview - May 2026",
-          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-may-2026",
-          "date": "2026-08-10T12:15:26.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Amhara: On 27–28 May, two humanitarian vehicles reportedly taken by UAGs in Waghimira Zone. Amhara: Displacements from Abargele zone to Sekota Town due to continued conflict; estimated total of 13,206 individuals so far displaced, comprising 6,845 males and 6,361",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3109",
-            "name": "Amhara",
-            "nameDe": "Amhara",
-            "type": "Administrative State",
-            "anchor": [
-              38.048,
-              11.583
-            ],
-            "matched": "Amhara"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 9
-        },
-        {
-          "title": "Ethiopia Monthly Protection Overview - March 2026",
-          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-march-2026",
-          "date": "2026-08-10T12:12:25.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Somali: Inter-clan violence in Gololcha and Welgo kebeles resulted in a reported two fatalities. Inter-ethnic clashes in Babile district reportedly caused seven deaths, driven by resource competition, boundary disputes, and weak conflict resolution mechanisms. So",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 9
-        },
-        {
-          "title": "Ethiopia Monthly Protection Overview - January 2026",
-          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-january-2026",
-          "date": "2026-08-10T11:49:36.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Amhara: Debark-Gondar road remains unsafe for travel. Benishangul: Due to ongoing armed conflict, 1,112 individuals displaced from Kura Woreda to Almahal Kebele in Guba Woreda. 4,000+ individuals displaced from Jawi Woreda to Mandura Woreda in Metekel Zone. Somal",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3132",
-            "name": "Benishangul-Gumuz",
-            "nameDe": "Benishangul-Gumuz",
-            "type": "Administrative State",
-            "anchor": [
-              35.454,
-              10.584
-            ],
-            "matched": "Benishangul"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 9
-        },
-        {
-          "title": "Ethiopia: Mitigating the impacts of El Niño - Urgent call for assistance",
-          "url": "https://reliefweb.int/report/ethiopia/ethiopia-mitigating-impacts-el-nino-urgent-call-assistance",
-          "date": "2026-08-10T11:03:11.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Ethiopia Source: Food and Agriculture Organization of the United Nations Please refer to the attached file. Context Ethiopia continues to face recurrent climate-induced and conflict‑related shocks that are eroding livelihoods, food security and household resilience. Repeated droughts, floods, erratic rainfall patterns and land degradation have reduced agricultural productivity and weakene",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Ethiopia Key Message Update, July 2026 - January 2027: El Niño-driven rainfall delays and deficits raise concerns for the meher harvest",
-          "url": "https://reliefweb.int/report/ethiopia/ethiopia-key-message-update-july-2026-january-2027-el-nino-driven-rainfall-delays-and-deficits-raise-concerns-meher-harvest",
-          "date": "2026-08-10T00:38:02.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Ethiopia Source: Famine Early Warning System Network Please refer to the attached file. Key Messages Millions of households countrywide are struggling to meet their food needs as the June to August lean season peaks amid high market dependence, constrained income, and high food prices. Of particular concern are internally displaced persons (IDPs), refugees, and crop-dependent households t",
+          "summary": "Country: Somalia Source: International Organization for Migration Please refer to the attached Infographic. DTM launched a new round of ETT on 14 June 2026 using an updated methodology to monitor displacement driven by conflict, as well as the climatic impacts of the El Niño phenomenon, which is expected to trigger significant displacement toward the end of the year. DTM teams collect data in 13 d",
           "isNew": false,
           "region": null,
           "event": {
@@ -10660,9 +10572,30 @@
             "label": "Vertreibung"
           },
           "score": 9
+        },
+        {
+          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
+          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
+          "date": "2026-08-11T13:25:46.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Somalia Source: Médecins Sans Frontières 11 August 2026 - One in every two children screened in displacement sites in Baidoa, Southwest Somalia, is acutely malnourished and one in every four is severely malnourished. These shocking statistics are the findings of a malnutrition survey carried out in July by Médecins Sans Frontières/Doctors Without Borders (MSF). “Behind every statistic is ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
         }
       ],
-      "itemCount": 10
+      "itemCount": 5
     },
     {
       "id": "south-sudan",
@@ -11378,82 +11311,220 @@
       "itemCount": 20
     },
     {
-      "id": "somalia",
-      "name": "Somalia",
-      "nameEn": "Somalia",
+      "id": "ethiopia",
+      "name": "Äthiopien",
+      "nameEn": "Ethiopia",
       "region": "Afrika (Horn)",
       "countries": [
-        "Somalia"
+        "Ethiopia"
       ],
-      "lat": 4.5,
-      "lon": 45.5,
+      "lat": 11.5,
+      "lon": 39,
       "tier": "high",
-      "since": "2006",
+      "since": "2020 (Tigray) / Amhara seit 2023",
       "parties": [
         "Bundesregierung",
-        "Al-Shabaab",
-        "IS-Somalia",
-        "AUSSOM",
-        "Puntland",
-        "Jubaland"
+        "Fano (Amhara)",
+        "OLA (Oromia)",
+        "TPLF/Tigray-Fraktionen",
+        "Eritrea"
       ],
-      "background": "Al-Shabaab-Offensiven in Hirshabelle und Shabelle, IS-Ableger in Puntland, Spannungen zwischen Mogadischu und den Bundesstaaten sowie um Somaliland.",
+      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
       "hotspots": [
-        "Mogadischu",
-        "Shabelle",
-        "Puntland",
-        "Jubaland",
-        "Somaliland"
+        "Amhara",
+        "Oromia",
+        "Tigray",
+        "Afar",
+        "Assab"
       ],
-      "activity": 4,
-      "severity": 40,
+      "activity": 13,
+      "severity": 42,
       "newCount": 0,
       "signals": [
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 2
+          "count": 5
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
         }
       ],
       "acled": null,
       "briefing": null,
-      "iso3": "SOM",
+      "iso3": "ETH",
       "extraCountries": [
-        "ETH"
+        "ERI",
+        "SOM"
       ],
-      "regions": [],
+      "regions": [
+        {
+          "id": "ETH-3133",
+          "name": "Addis Ababa",
+          "nameDe": "Addis Abeba",
+          "type": "Administrative State",
+          "anchor": [
+            38.786,
+            8.978
+          ],
+          "count": 3,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "ETH-3109",
+          "name": "Amhara",
+          "nameDe": "Amhara",
+          "type": "Administrative State",
+          "anchor": [
+            38.048,
+            11.583
+          ],
+          "count": 3,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "ETH-3134",
+          "name": "Somali",
+          "nameDe": "Somali",
+          "type": "Administrative State",
+          "anchor": [
+            43.324,
+            6.938
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "ETH-3132",
+          "name": "Benishangul-Gumuz",
+          "nameDe": "Benishangul-Gumuz",
+          "type": "Administrative State",
+          "anchor": [
+            35.454,
+            10.584
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        }
+      ],
       "items": [
         {
-          "title": "Somalia: Puntland Puts Forces On Alert Over Reported Hassan Sheikh Visit to Galkayo",
-          "url": "https://allafrica.com/stories/202608140136.html",
-          "date": "2026-08-14T10:05:37.000Z",
+          "title": "Sudan: RSF Says It Captures Key Sudan Town Near Ethiopian Border As Army Withdraws",
+          "url": "https://allafrica.com/stories/202608140047.html",
+          "date": "2026-08-14T07:14:58.000Z",
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
-          "summary": "[Shabelle] Garowe -- Somalia's Puntland administration said Thursday it had placed its security forces on heightened alert and warned against a reported visit by President Hassan Sheikh Mohamud to Galkayo, a city divided between Puntland and the neighbouring Galmudug state.",
+          "summary": "[Addis Standard] Addis Abeba -- Sudan's Rapid Support Forces (RSF) and allied fighters have advanced into Al Kurmuk, a strategically important town in Blue Nile State bordering Ethiopia, according to reports by Al Jazeera and The National.",
           "isNew": false,
-          "region": null,
+          "region": {
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
+            "type": "Administrative State",
+            "anchor": [
+              38.786,
+              8.978
+            ],
+            "matched": "Addis Abeba"
+          },
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 22
+        },
+        {
+          "title": "Sudan: Sudan Paramilitary Forces Attack Border Town, Army Alleges Assault Launched From Ethiopia",
+          "url": "https://allafrica.com/stories/202608120407.html",
+          "date": "2026-08-12T14:15:19.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Sudan's paramilitary Rapid Support Forces (RSF) attacked the border town of Geissan in Blue Nile State on Tuesday, according to the RSF and local authorities, while a Sudanese army source told AFP that the assault was launched \"from inside Ethiopian territory.\"",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
+            "type": "Administrative State",
+            "anchor": [
+              38.786,
+              8.978
+            ],
+            "matched": "Addis Abeba"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 15
         },
         {
-          "title": "Somalia — Emergency Trend Tracking Report (ETT) - 13 Districts assessed | Week 08 (01 - 05 August)",
-          "url": "https://reliefweb.int/report/somalia/somalia-emergency-trend-tracking-report-ett-13-districts-assessed-week-08-01-05-august",
-          "date": "2026-08-12T13:33:06.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Somalia Source: International Organization for Migration Please refer to the attached Infographic. DTM launched a new round of ETT on 14 June 2026 using an updated methodology to monitor displacement driven by conflict, as well as the climatic impacts of the El Niño phenomenon, which is expected to trigger significant displacement toward the end of the year. DTM teams collect data in 13 d",
+          "title": "Ethiopia: Media Warfare, National Consequences - How Ethiopia's Propaganda War Threatens Fragile Peace",
+          "url": "https://allafrica.com/stories/202608140380.html",
+          "date": "2026-08-14T15:40:55.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Recently, media outlets affiliated with Ethiopia's ruling Prosperity Party have carried strikingly similar narratives about the Tigray People's Liberation Front (TPLF). Whether coordinated by design or driven by a shared political agenda, the repetition of identical messages across multiple platforms creates the impression of an organized communication campaign rath",
           "isNew": false,
-          "region": null,
+          "region": {
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
+            "type": "Administrative State",
+            "anchor": [
+              38.786,
+              8.978
+            ],
+            "matched": "Addis Abeba"
+          },
           "event": {
             "type": "report",
             "icon": "📄",
@@ -11464,21 +11535,197 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
+          "score": 14
+        },
+        {
+          "title": "As millions of children head back to school this fall, new IRC program ensures over 150,000 conflict-affected children in Ethiopia access quality education",
+          "url": "https://reliefweb.int/report/ethiopia/millions-children-head-back-school-fall-new-irc-program-ensures-over-150000-conflict-affected-children-ethiopia-access-quality-education",
+          "date": "2026-08-13T04:33:06.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Ethiopia Source: International Rescue Committee New \"Playful Education Pathways in Ethiopia\" (PEPE) initiative uses playful learning to bring education to children in Amhara and Tigray Conflict and poverty are the main barriers for children in Ethiopia’s Amhara and Tigray regions to access education. In partnership with the LEGO Foundation, the IRC’s new program PEPE (implemented with a c",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3109",
+            "name": "Amhara",
+            "nameDe": "Amhara",
+            "type": "Administrative State",
+            "anchor": [
+              38.048,
+              11.583
+            ],
+            "matched": "Amhara"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Ethiopia Monthly Protection Overview - July 2026",
+          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-july-2026",
+          "date": "2026-08-10T12:19:02.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Amhara: Security situation remained tense and volatile across the region, significantly impacting humanitarian access. A total of 55 security incidents were reported, including abductions, shootings, and illegal taxation affecting commuters and humanitarian worke",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3109",
+            "name": "Amhara",
+            "nameDe": "Amhara",
+            "type": "Administrative State",
+            "anchor": [
+              38.048,
+              11.583
+            ],
+            "matched": "Amhara"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
           "score": 9
         },
         {
-          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
-          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
-          "date": "2026-08-11T13:25:46.000Z",
+          "title": "Ethiopia Monthly Protection Overview - May 2026",
+          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-may-2026",
+          "date": "2026-08-10T12:15:26.000Z",
           "source": "ReliefWeb (UN OCHA)",
           "sourceType": "humanitarian",
-          "summary": "Country: Somalia Source: Médecins Sans Frontières 11 August 2026 - One in every two children screened in displacement sites in Baidoa, Southwest Somalia, is acutely malnourished and one in every four is severely malnourished. These shocking statistics are the findings of a malnutrition survey carried out in July by Médecins Sans Frontières/Doctors Without Borders (MSF). “Behind every statistic is ",
+          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Amhara: On 27–28 May, two humanitarian vehicles reportedly taken by UAGs in Waghimira Zone. Amhara: Displacements from Abargele zone to Sekota Town due to continued conflict; estimated total of 13,206 individuals so far displaced, comprising 6,845 males and 6,361",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3109",
+            "name": "Amhara",
+            "nameDe": "Amhara",
+            "type": "Administrative State",
+            "anchor": [
+              38.048,
+              11.583
+            ],
+            "matched": "Amhara"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 9
+        },
+        {
+          "title": "Ethiopia Monthly Protection Overview - March 2026",
+          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-march-2026",
+          "date": "2026-08-10T12:12:25.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Somali: Inter-clan violence in Gololcha and Welgo kebeles resulted in a reported two fatalities. Inter-ethnic clashes in Babile district reportedly caused seven deaths, driven by resource competition, boundary disputes, and weak conflict resolution mechanisms. So",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 9
+        },
+        {
+          "title": "Ethiopia Monthly Protection Overview - January 2026",
+          "url": "https://reliefweb.int/report/ethiopia/ethiopia-monthly-protection-overview-january-2026",
+          "date": "2026-08-10T11:49:36.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Ethiopia Sources: Protection Cluster, UN High Commissioner for Refugees Please refer to the attached file. Attacks on Civilians Amhara: Debark-Gondar road remains unsafe for travel. Benishangul: Due to ongoing armed conflict, 1,112 individuals displaced from Kura Woreda to Almahal Kebele in Guba Woreda. 4,000+ individuals displaced from Jawi Woreda to Mandura Woreda in Metekel Zone. Somal",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3132",
+            "name": "Benishangul-Gumuz",
+            "nameDe": "Benishangul-Gumuz",
+            "type": "Administrative State",
+            "anchor": [
+              35.454,
+              10.584
+            ],
+            "matched": "Benishangul"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 9
+        },
+        {
+          "title": "Ethiopia: Mitigating the impacts of El Niño - Urgent call for assistance",
+          "url": "https://reliefweb.int/report/ethiopia/ethiopia-mitigating-impacts-el-nino-urgent-call-assistance",
+          "date": "2026-08-10T11:03:11.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Ethiopia Source: Food and Agriculture Organization of the United Nations Please refer to the attached file. Context Ethiopia continues to face recurrent climate-induced and conflict‑related shocks that are eroding livelihoods, food security and household resilience. Repeated droughts, floods, erratic rainfall patterns and land degradation have reduced agricultural productivity and weakene",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Ethiopia Key Message Update, July 2026 - January 2027: El Niño-driven rainfall delays and deficits raise concerns for the meher harvest",
+          "url": "https://reliefweb.int/report/ethiopia/ethiopia-key-message-update-july-2026-january-2027-el-nino-driven-rainfall-delays-and-deficits-raise-concerns-meher-harvest",
+          "date": "2026-08-10T00:38:02.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Ethiopia Source: Famine Early Warning System Network Please refer to the attached file. Key Messages Millions of households countrywide are struggling to meet their food needs as the June to August lean season peaks amid high market dependence, constrained income, and high food prices. Of particular concern are internally displaced persons (IDPs), refugees, and crop-dependent households t",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "displacement",
@@ -11488,7 +11735,7 @@
           "score": 9
         }
       ],
-      "itemCount": 3
+      "itemCount": 10
     },
     {
       "id": "mexico-cartels",
@@ -11872,7 +12119,7 @@
       ],
       "activity": 34,
       "severity": 33,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -11906,7 +12153,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Rescuers combed through debris for survivors on Saturday after a powerful earthquake struck off Indonesia’s eastern Flores island, killing at least 47 people, according to disaster officials. The national disaster management agency (BNPB) raised the death toll from 40 late on Saturday, while rescue official Fathur Rahman said 50 people were injured in the 7.7-magnitude quake. Suharyanto, who leads",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -12650,15 +12897,15 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 22,
-      "severity": 29,
-      "newCount": 0,
+      "activity": 26,
+      "severity": 30,
+      "newCount": 1,
       "signals": [
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 2
+          "count": 3
         },
         {
           "key": "casualties",
@@ -12679,7 +12926,25 @@
       "extraCountries": [
         "KOR"
       ],
-      "regions": [],
+      "regions": [
+        {
+          "id": "PRK-3305",
+          "name": "Pyongyang",
+          "nameDe": "Pjöngjang",
+          "type": "Special City",
+          "anchor": [
+            125.923,
+            38.996
+          ],
+          "count": 1,
+          "newCount": 1,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          }
+        }
+      ],
       "items": [
         {
           "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
@@ -12701,6 +12966,37 @@
             "label": "Opfer"
           },
           "score": 26
+        },
+        {
+          "title": "South Korea president proposes talks with Pyongyang to formally end Korean War",
+          "url": "https://www.france24.com/en/asia-pacific/20260815-south-korea-president-proposes-talks-with-pyongyang-to-formally-end-korean-war",
+          "date": "2026-08-15T15:39:37.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "South Korean President Lee Jae-myung proposed on Saturday that Pyongyang engage in dialogue to formally end the Korean War, which has technically been ongoing for more than 70 years due to the lack of a peace treaty.",
+          "isNew": true,
+          "region": {
+            "id": "PRK-3305",
+            "name": "Pyongyang",
+            "nameDe": "Pjöngjang",
+            "type": "Special City",
+            "anchor": [
+              125.923,
+              38.996
+            ],
+            "matched": "Pyongyang"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 22
         },
         {
           "title": "Did the US really destroy Iran’s ballistic missile capability?",
@@ -12763,7 +13059,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 17
+          "score": 15
         },
         {
           "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
@@ -12787,239 +13083,7 @@
           "score": 13
         }
       ],
-      "itemCount": 5
-    },
-    {
-      "id": "cameroon",
-      "name": "Kamerun (Anglophone Krise)",
-      "nameEn": "Cameroon – Anglophone Crisis",
-      "region": "Afrika (Zentral)",
-      "countries": [
-        "Cameroon"
-      ],
-      "lat": 5.9,
-      "lon": 10.1,
-      "tier": "medium",
-      "since": "2017",
-      "parties": [
-        "Regierung",
-        "Ambazonische Separatisten",
-        "Boko Haram (Norden)"
-      ],
-      "background": "Separatistenkonflikt in den anglophonen Regionen Nordwest und Südwest, zusätzlich Boko-Haram-Angriffe im Norden; angespannte Lage nach der Wahl.",
-      "hotspots": [
-        "Bamenda",
-        "Buea",
-        "Nordwest",
-        "Südwest",
-        "Far North"
-      ],
-      "activity": 9,
-      "severity": 25,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 5
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "CMR",
-      "extraCountries": [
-        "NGA"
-      ],
-      "regions": [
-        {
-          "id": "CMR-1477",
-          "name": "Northwest",
-          "nameDe": "Nord-Ouest",
-          "type": "Province",
-          "anchor": [
-            10.365,
-            6.37
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Cameroon : North-West and South-West regions - Humanitarian Access Severity Overview | July 2026",
-          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-humanitarian-access-severity-overview-july-2026",
-          "date": "2026-08-12T15:23:08.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": {
-            "id": "CMR-1477",
-            "name": "Northwest",
-            "nameDe": "Nord-Ouest",
-            "type": "Province",
-            "anchor": [
-              10.365,
-              6.37
-            ],
-            "matched": "North-West"
-          },
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Cameroon : North-West and South-West regions - Overview of the Humanitarian Access, January to June 2026",
-          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-overview-humanitarian-access-january-june-2026",
-          "date": "2026-08-12T15:19:58.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": {
-            "id": "CMR-1477",
-            "name": "Northwest",
-            "nameDe": "Nord-Ouest",
-            "type": "Province",
-            "anchor": [
-              10.365,
-              6.37
-            ],
-            "matched": "North-West"
-          },
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Japan Contributes USD 1.25 Million to Support WFP Food Assistance for Displaced People in Cameroon | World Food Programme",
-          "url": "https://reliefweb.int/report/cameroon/japan-contributes-usd-125-million-support-wfp-food-assistance-displaced-people-cameroon-world-food-programme",
-          "date": "2026-08-12T13:03:05.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Nigeria Source: World Food Programme YAOUNDE – 12 August 2026 – The Government of Japan has contributed JPY 200 million (approximately USD 1.25 million or XAF 708,000,000) to support the United Nations World Food Programme (WFP) in providing emergency food assistance to more than 13,000 refugees and internally displaced people affected by food insecurity in Cameroon. This Japa",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Cameroon: Locations of forcibly displaced persons (July 2026)",
-          "url": "https://reliefweb.int/map/cameroon/cameroon-locations-forcibly-displaced-persons-july-2026",
-          "date": "2026-08-10T14:03:29.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Central African Republic, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "UNHCR Cameroon Multi Country Office: Forcibly displaced persons movements (July 2026)",
-          "url": "https://reliefweb.int/map/cameroon/unhcr-cameroon-multi-country-office-forcibly-displaced-persons-movements-july-2026",
-          "date": "2026-08-10T14:03:26.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Central African Republic, Chad, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Refugees and Internally Displaced Persons in Cameroon Multi Country Office (July 2026)",
-          "url": "https://reliefweb.int/report/cameroon/refugees-and-internally-displaced-persons-cameroon-multi-country-office-july-2026",
-          "date": "2026-08-10T14:03:24.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Congo, Equatorial Guinea, Gabon, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "MCO Cameroon: Refugee and asylum-seeker statistics (July 2026)",
-          "url": "https://reliefweb.int/report/cameroon/mco-cameroon-refugee-and-asylum-seeker-statistics-july-2026",
-          "date": "2026-08-10T14:03:20.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Central African Republic, Chad, Congo, Equatorial Guinea, Gabon, Nigeria, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 7
+      "itemCount": 6
     },
     {
       "id": "rohingya-bangladesh",
@@ -13511,6 +13575,238 @@
         }
       ],
       "itemCount": 3
+    },
+    {
+      "id": "cameroon",
+      "name": "Kamerun (Anglophone Krise)",
+      "nameEn": "Cameroon – Anglophone Crisis",
+      "region": "Afrika (Zentral)",
+      "countries": [
+        "Cameroon"
+      ],
+      "lat": 5.9,
+      "lon": 10.1,
+      "tier": "medium",
+      "since": "2017",
+      "parties": [
+        "Regierung",
+        "Ambazonische Separatisten",
+        "Boko Haram (Norden)"
+      ],
+      "background": "Separatistenkonflikt in den anglophonen Regionen Nordwest und Südwest, zusätzlich Boko-Haram-Angriffe im Norden; angespannte Lage nach der Wahl.",
+      "hotspots": [
+        "Bamenda",
+        "Buea",
+        "Nordwest",
+        "Südwest",
+        "Far North"
+      ],
+      "activity": 6,
+      "severity": 24,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 5
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "CMR",
+      "extraCountries": [
+        "NGA"
+      ],
+      "regions": [
+        {
+          "id": "CMR-1477",
+          "name": "Northwest",
+          "nameDe": "Nord-Ouest",
+          "type": "Province",
+          "anchor": [
+            10.365,
+            6.37
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Cameroon : North-West and South-West regions - Humanitarian Access Severity Overview | July 2026",
+          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-humanitarian-access-severity-overview-july-2026",
+          "date": "2026-08-12T15:23:08.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": {
+            "id": "CMR-1477",
+            "name": "Northwest",
+            "nameDe": "Nord-Ouest",
+            "type": "Province",
+            "anchor": [
+              10.365,
+              6.37
+            ],
+            "matched": "North-West"
+          },
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Cameroon : North-West and South-West regions - Overview of the Humanitarian Access, January to June 2026",
+          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-overview-humanitarian-access-january-june-2026",
+          "date": "2026-08-12T15:19:58.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": {
+            "id": "CMR-1477",
+            "name": "Northwest",
+            "nameDe": "Nord-Ouest",
+            "type": "Province",
+            "anchor": [
+              10.365,
+              6.37
+            ],
+            "matched": "North-West"
+          },
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Japan Contributes USD 1.25 Million to Support WFP Food Assistance for Displaced People in Cameroon | World Food Programme",
+          "url": "https://reliefweb.int/report/cameroon/japan-contributes-usd-125-million-support-wfp-food-assistance-displaced-people-cameroon-world-food-programme",
+          "date": "2026-08-12T13:03:05.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Nigeria Source: World Food Programme YAOUNDE – 12 August 2026 – The Government of Japan has contributed JPY 200 million (approximately USD 1.25 million or XAF 708,000,000) to support the United Nations World Food Programme (WFP) in providing emergency food assistance to more than 13,000 refugees and internally displaced people affected by food insecurity in Cameroon. This Japa",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Cameroon: Locations of forcibly displaced persons (July 2026)",
+          "url": "https://reliefweb.int/map/cameroon/cameroon-locations-forcibly-displaced-persons-july-2026",
+          "date": "2026-08-10T14:03:29.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Central African Republic, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "UNHCR Cameroon Multi Country Office: Forcibly displaced persons movements (July 2026)",
+          "url": "https://reliefweb.int/map/cameroon/unhcr-cameroon-multi-country-office-forcibly-displaced-persons-movements-july-2026",
+          "date": "2026-08-10T14:03:26.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Central African Republic, Chad, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Refugees and Internally Displaced Persons in Cameroon Multi Country Office (July 2026)",
+          "url": "https://reliefweb.int/report/cameroon/refugees-and-internally-displaced-persons-cameroon-multi-country-office-july-2026",
+          "date": "2026-08-10T14:03:24.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Congo, Equatorial Guinea, Gabon, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "MCO Cameroon: Refugee and asylum-seeker statistics (July 2026)",
+          "url": "https://reliefweb.int/report/cameroon/mco-cameroon-refugee-and-asylum-seeker-statistics-july-2026",
+          "date": "2026-08-10T14:03:20.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Central African Republic, Chad, Congo, Equatorial Guinea, Gabon, Nigeria, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        }
+      ],
+      "itemCount": 7
     },
     {
       "id": "iraq",
