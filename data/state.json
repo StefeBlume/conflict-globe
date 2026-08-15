@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T14:06:03.087Z",
-  "durationSec": 448,
+  "generatedAt": "2026-08-15T15:04:43.651Z",
+  "durationSec": 362,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 24,
+        "count": 28,
         "error": null
       },
       {
@@ -114,45 +114,29 @@
       }
     ],
     "gdelt": {
-      "ok": 0,
-      "failed": 9,
-      "skipped": 7,
+      "ok": 3,
+      "failed": 5,
+      "skipped": 8,
       "errors": [
         {
-          "id": "turkey-pkk",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "cameroon",
-          "error": "fetch failed"
-        },
-        {
-          "id": "rohingya-bangladesh",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "thailand-cambodia",
-          "error": "fetch failed"
-        },
-        {
-          "id": "colombia",
-          "error": "fetch failed"
-        },
-        {
           "id": "burkina-faso",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "ethiopia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "india-pakistan",
           "error": "fetch failed"
         },
         {
-          "id": "south-china-sea",
+          "id": "haiti",
           "error": "fetch failed"
         },
         {
-          "id": "south-sudan",
+          "id": "mexico-cartels",
           "error": "fetch failed"
-        },
-        {
-          "id": "west-papua",
-          "error": "GDELT gedrosselt"
         }
       ]
     },
@@ -160,8 +144,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 482,
-    "newArticles": 3
+    "articles": 488,
+    "newArticles": 6
   },
   "conflicts": [
     {
@@ -197,7 +181,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 10
+          "count": 11
         },
         {
           "key": "displacement",
@@ -206,22 +190,22 @@
           "count": 6
         },
         {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 5
+        },
+        {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
           "count": 4
         },
         {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 4
-        },
-        {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 3
+          "count": 4
         }
       ],
       "acled": null,
@@ -343,23 +327,44 @@
           "score": 26
         },
         {
-          "title": "Israeli strikes on south Lebanon kill nine in worst toll since June",
+          "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
           "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
-          "date": "2026-08-15T10:48:33.000Z",
+          "date": "2026-08-15T13:55:28.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Two airstrikes reportedly hit homes in Ansar and Deir al-Zahrani with rescue services trying to find survivors Nine people have been killed, including three children, and 11 injured in two Israeli airstrikes on south Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar in sou",
+          "summary": "Rescue services search for survivors and bodies after airstrikes hit homes in Ansar and Deir al-Zahrani Eleven people have been killed, including three children, and 19 injured in two Israeli airstrikes on southern Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar, killing",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           },
           "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
+        },
+        {
+          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
+          "date": "2026-08-15T14:19:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 26
         },
@@ -370,7 +375,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate Submitted by MEE staff on Sat, 08/15/2026 - 13:49 Prime Minister Nawaf Salam says civilians killed in the town of Ansar were 'not military infrastructure' A man watches as heavy machinery, first responders and residents search the site of an Israeli air strike in Deir al-Zahrani, southern Lebanon, on 15 August 2026 (Abbas Fa",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -406,12 +411,12 @@
           "score": 26
         },
         {
-          "title": "Israeli strikes kill nine in southern Lebanon as attacks intensify",
+          "title": "Israeli strikes kill 11 in southern Lebanon as attacks intensify",
           "url": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss",
           "date": "2026-08-15T07:18:13.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Deadliest Israeli attack in Lebanon since June agreements significantly reduced hostilities.",
+          "summary": "Hezbollah has warned that Israel’s attacks would be met with an 'appropriate response'.",
           "isNew": false,
           "region": null,
           "event": {
@@ -423,27 +428,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
-          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
-          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
-          "date": "2026-08-15T08:52:10.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
           },
           "score": 23
         },
@@ -574,27 +558,6 @@
           "score": 22
         },
         {
-          "title": "West Bank: Washington condemns siege of Palestinian homes",
-          "url": "https://www.france24.com/en/video/20260814-west-bank-washington-condemns-siege-of-palestinian-homes",
-          "date": "2026-08-14T15:00:00.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Settlers have been besieging homes in Qusra ​for almost a week, intensifying ‌pressure on Palestinians.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 22
-        },
-        {
           "title": "Lebanon’s PM urges timetable for Israeli withdrawal as Hezbollah slams deal",
           "url": "https://www.aljazeera.com/news/2026/8/14/lebanons-pm-urges-timetable-for-israeli-withdrawal-as-hezbollah-slams-deal?traffic_source=rss",
           "date": "2026-08-14T23:02:55.000Z",
@@ -654,6 +617,27 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 20
+        },
+        {
+          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
+          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
+          "date": "2026-08-15T08:52:10.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "score": 20
         },
@@ -763,6 +747,27 @@
           "score": 18
         },
         {
+          "title": "West Bank: Washington condemns siege of Palestinian homes",
+          "url": "https://www.france24.com/en/video/20260814-west-bank-washington-condemns-siege-of-palestinian-homes",
+          "date": "2026-08-14T15:00:00.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Settlers have been besieging homes in Qusra ​for almost a week, intensifying ‌pressure on Palestinians.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 18
+        },
+        {
           "title": "Moment Israeli forces storm wedding hall in occupied West Bank",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/moment-israeli-forces-storm-wedding-hall-in-occupied-west-bank?traffic_source=rss",
           "date": "2026-08-15T07:13:11.000Z",
@@ -826,48 +831,6 @@
           "score": 16
         },
         {
-          "title": "Hezbollah chief says Israel ‘only understands the language of force’",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-says-israel-only-understands-language-force",
-          "date": "2026-08-15T01:53:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hezbollah chief says Israel ‘only understands the language of force’ Hezbollah’s secretary general, Sheikh Naim Qassem, said Israel’s 33-day war against Lebanon in 2006 has proved that “the occupying regime only understands the language of force”, Press TV reported. In a speech on the anniversary of Hezbollah’s “victory” against Israel in the 2006 war, Qassem said the 2006 war began after the capt",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "oPt: Turkish Red Crescent Gaza Prosthetic & Orthotic Support Project in Gaza",
-          "url": "https://reliefweb.int/report/occupied-palestinian-territory/turkish-red-crescent-gaza-prosthetic-orthotic-support-project-gaza",
-          "date": "2026-08-14T14:21:53.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: occupied Palestinian territory Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "oPt: WHO Attacks on health care in the Gaza Strip (Since 1 January 2026 - 6 August 2026)",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/who-attacks-health-care-gaza-strip-1-january-2026-6-august-2026",
           "date": "2026-08-11T11:03:06.000Z",
@@ -887,6 +850,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Hezbollah chief says Israel ‘only understands the language of force’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-says-israel-only-understands-language-force",
+          "date": "2026-08-15T01:53:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hezbollah chief says Israel ‘only understands the language of force’ Hezbollah’s secretary general, Sheikh Naim Qassem, said Israel’s 33-day war against Lebanon in 2006 has proved that “the occupying regime only understands the language of force”, Press TV reported. In a speech on the anniversary of Hezbollah’s “victory” against Israel in the 2006 war, Qassem said the 2006 war began after the capt",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Three Palestinian injured in firing by Israeli army, settlers",
@@ -990,27 +974,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "US said pushing silent Netanyahu to publicly condemn settler violence in Qusra",
-          "url": "https://www.timesofisrael.com/us-said-pushing-netanyahu-to-publicly-condemn-settler-violence-in-qusra-as-pm-keeps-mum/",
-          "date": "2026-08-14T14:37:50.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "Katz says he told IDF to plan transfer of full civilian law enforcement in West Bank to police, which is already largely responsible for the matter; residents say activists were blocked from delivering food on sixth day of siege The post US said pushing silent Netanyahu to publicly condemn settler violence in Qusra appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
           },
           "score": 15
         },
@@ -1130,6 +1093,27 @@
           "score": 12
         },
         {
+          "title": "oPt: Turkish Red Crescent Gaza Prosthetic & Orthotic Support Project in Gaza",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/turkish-red-crescent-gaza-prosthetic-orthotic-support-project-gaza",
+          "date": "2026-08-14T14:21:53.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: occupied Palestinian territory Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
           "title": "oPt: The daily struggle for a dignified life continues for Palestinians in Gaza",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/daily-struggle-dignified-life-continues-palestinians-gaza",
           "date": "2026-08-14T12:47:22.000Z",
@@ -1191,6 +1175,27 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "US said pushing silent Netanyahu to publicly condemn settler violence in Qusra",
+          "url": "https://www.timesofisrael.com/us-said-pushing-netanyahu-to-publicly-condemn-settler-violence-in-qusra-as-pm-keeps-mum/",
+          "date": "2026-08-14T14:37:50.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "Katz says he told IDF to plan transfer of full civilian law enforcement in West Bank to police, which is already largely responsible for the matter; residents say activists were blocked from delivering food on sixth day of siege The post US said pushing silent Netanyahu to publicly condemn settler violence in Qusra appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
         },
         {
           "title": "West Bank: Palestinians families trapped in home",
@@ -1434,886 +1439,7 @@
           "score": 0
         }
       ],
-      "itemCount": 55
-    },
-    {
-      "id": "sudan",
-      "name": "Sudan",
-      "nameEn": "Sudan Civil War",
-      "region": "Afrika (Horn/Nord)",
-      "countries": [
-        "Sudan"
-      ],
-      "lat": 14.5,
-      "lon": 29.5,
-      "tier": "war",
-      "since": "April 2023",
-      "parties": [
-        "Sudanesische Armee (SAF)",
-        "Rapid Support Forces (RSF)",
-        "verbündete Milizen"
-      ],
-      "background": "Größte Vertreibungskrise der Welt. Kampf zwischen SAF und RSF; Belagerung und Massaker in Darfur, Hungersnot in mehreren Regionen.",
-      "hotspots": [
-        "El Fasher",
-        "Darfur",
-        "Khartum",
-        "Kordofan"
-      ],
-      "activity": 55,
-      "severity": 71,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 17
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": {
-        "headline": "RSF meldet Einnahme einer Stadt nahe der äthiopischen Grenze",
-        "text": "Die Rapid Support Forces erklärten, eine strategisch wichtige Stadt nahe der Grenze zu Äthiopien eingenommen zu haben; die Armee habe sich zurückgezogen. Eine unabhängige Bestätigung liegt bislang nicht vor. Die UN meldet parallel Angriffe und weitere Vertreibungen in Blue Nile und Nord-Kordofan sowie sich verschlechternde Bedingungen in Nord-Darfur.",
-        "sources": [
-          "https://allafrica.com/tools/headlines/rdf/conflict/headlines.rdf",
-          "https://news.un.org/en/story/2026/08"
-        ],
-        "updatedAt": "2026-08-14T20:35:27.650Z"
-      },
-      "iso3": "SDN",
-      "extraCountries": [
-        "SSD",
-        "TCD"
-      ],
-      "regions": [
-        {
-          "id": "SDN-883",
-          "name": "North Kordofan",
-          "nameDe": "Schamal Kurdufan",
-          "type": "State",
-          "anchor": [
-            29.382,
-            14.438
-          ],
-          "count": 3,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        },
-        {
-          "id": "SDN-148",
-          "name": "Blue Nile",
-          "nameDe": "An-Nil al-azraq",
-          "type": "State",
-          "anchor": [
-            34.065,
-            11.402
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "SDN-874",
-          "name": "Khartoum",
-          "nameDe": "Al-Chartum",
-          "type": "Region",
-          "anchor": [
-            32.785,
-            15.844
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          }
-        },
-        {
-          "id": "SDN-881",
-          "name": "North Darfur",
-          "nameDe": "Schamal Darfur",
-          "type": "State",
-          "anchor": [
-            25.709,
-            16.35
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "TCD-5582",
-          "name": "Sila",
-          "nameDe": "Sila",
-          "type": "Prefecture",
-          "anchor": [
-            21.411,
-            12.139
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Sudan: SAF Accused of Civilian Killings As RSF Drones Strike Three States",
-          "url": "https://allafrica.com/stories/202608130032.html",
-          "date": "2026-08-13T07:48:41.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Dabanga] Jabra El Sheikh / Omdurman / Khartoum / Ed Damer / -- The Sudanese Armed Forces (SAF) were accused on Wednesday of killing at least five civilians and wounding more than 10 others in North Kordofan, while paramilitary Rapid Support Forces (RSF) drones struck targets across River Nile, Khartoum and North Kordofan states, highlighting the growing threat to civilians beyond Sudan's active f",
-          "isNew": false,
-          "region": {
-            "id": "SDN-883",
-            "name": "North Kordofan",
-            "nameDe": "Schamal Kurdufan",
-            "type": "State",
-            "anchor": [
-              29.382,
-              14.438
-            ],
-            "matched": "North Kordofan"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Sudan: RSF Says It Captures Key Sudan Town Near Ethiopian Border As Army Withdraws",
-          "url": "https://allafrica.com/stories/202608140047.html",
-          "date": "2026-08-14T07:14:58.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Sudan's Rapid Support Forces (RSF) and allied fighters have advanced into Al Kurmuk, a strategically important town in Blue Nile State bordering Ethiopia, according to reports by Al Jazeera and The National.",
-          "isNew": false,
-          "region": {
-            "id": "SDN-148",
-            "name": "Blue Nile",
-            "nameDe": "An-Nil al-azraq",
-            "type": "State",
-            "anchor": [
-              34.065,
-              11.402
-            ],
-            "matched": "Blue Nile State"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 23
-        },
-        {
-          "title": "Sudan: Sudan Paramilitary Forces Attack Border Town, Army Alleges Assault Launched From Ethiopia",
-          "url": "https://allafrica.com/stories/202608120407.html",
-          "date": "2026-08-12T14:15:19.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Sudan's paramilitary Rapid Support Forces (RSF) attacked the border town of Geissan in Blue Nile State on Tuesday, according to the RSF and local authorities, while a Sudanese army source told AFP that the assault was launched \"from inside Ethiopian territory.\"",
-          "isNew": false,
-          "region": {
-            "id": "SDN-148",
-            "name": "Blue Nile",
-            "nameDe": "An-Nil al-azraq",
-            "type": "State",
-            "anchor": [
-              34.065,
-              11.402
-            ],
-            "matched": "Blue Nile State"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
-          "date": "2026-08-12T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "The United Nations has once again urged warring parties in Sudan to protect civilians as the fighting continues to take a heavy toll on the population.",
-          "isNew": false,
-          "region": {
-            "id": "SDN-883",
-            "name": "North Kordofan",
-            "nameDe": "Schamal Kurdufan",
-            "type": "State",
-            "anchor": [
-              29.382,
-              14.438
-            ],
-            "matched": "North Kordofan"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 21
-        },
-        {
-          "title": "South Sudan: UN mission decries deadly attacks, works to calm tensions after ‘nothing but devastation’",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168118",
-          "date": "2026-08-11T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "The UN Mission in South Sudan (UNMISS) has condemned recent armed group attacks in Warrap state which reportedly left more than 60 civilians dead and 50 others injured.&nbsp;",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Fighting deepens needs and fuels further displacement in Sudan",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168109",
-          "date": "2026-08-10T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Ongoing conflict, displacement and funding shortages continue to deepen needs in Sudan, the UN Office for the Coordination of Humanitarian Affairs (OCHA) warned on Monday, underscoring the need for greater civilian protection.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Attacks on Health Care in Sudan, 22 July - 04 August 2026",
-          "url": "https://reliefweb.int/report/sudan/attacks-health-care-sudan-22-july-04-august-2026",
-          "date": "2026-08-12T12:42:18.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Insecurity Insight Please refer to the attached file. Using data collected by Insecurity Insight, the Safeguarding Health in Conflict Coalition (SHCC) identified 134 incidents of violence against or obstruction of health care in Sudan in 2025. Drone strikes impacting health care surged in 2025, increasing from three incidents in 2024 to 24 in 2025. Over 75% of armed drone st",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 16
-        },
-        {
-          "title": "Sudan: Kids for Kids Expands Emergency Response as Conditions Worsen Across North Darfur",
-          "url": "https://reliefweb.int/report/sudan/kids-kids-expands-emergency-response-conditions-worsen-across-north-darfur",
-          "date": "2026-08-14T14:18:26.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Kids for Kids As Sudan’s conflict passes 1,200 days of fighting, the humanitarian situation in North Darfur has deteriorated further, with remote rural communities facing extreme hunger, displacement and collapsing basic services. UK charity Kids for Kids is urgently scaling up its response to reach vulnerable children and families in some of the hardest-to-access villages i",
-          "isNew": false,
-          "region": {
-            "id": "SDN-881",
-            "name": "North Darfur",
-            "nameDe": "Schamal Darfur",
-            "type": "State",
-            "anchor": [
-              25.709,
-              16.35
-            ],
-            "matched": "North Darfur"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 16
-        },
-        {
-          "title": "Turkish Red Crescent: Humanitarian Aid Operation in Sudan (11 August 2026)",
-          "url": "https://reliefweb.int/report/sudan/turkish-red-crescent-humanitarian-aid-operation-sudan-11-august-2026",
-          "date": "2026-08-14T14:29:13.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 16
-        },
-        {
-          "title": "Sudan: The harrowing reality of giving birth in a war zone",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168141",
-          "date": "2026-08-14T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Sudanese women about to give birth are losing their babies and sometimes their own lives because of a lack of specialist healthcare support, amid the ongoing war, UN humanitarians said on Friday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "How a Sudanese refugee became a head teacher in a Chadian camp",
-          "url": "https://www.aljazeera.com/news/2026/8/15/how-a-sudanese-refugee-became-a-head-teacher-in-a-chadian-camp?traffic_source=rss",
-          "date": "2026-08-15T05:14:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Displaced by Sudan’s war, Sahra now leads a refugee school where education offers children safety and hope.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 15
-        },
-        {
-          "title": "Sudan: Broad Reaction to Burhan's Call for Dialogue Inside Sudan and Reports of Presidential Amnesty",
-          "url": "https://allafrica.com/stories/202608140060.html",
-          "date": "2026-08-14T07:31:55.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Dabanga] Amsterdam / Khartoum -- A call by Sudanese Armed Forces (SAF) chief and head of the Sovereignty Council, Gen Abdelfattah El Burhan, for dialogue inside Sudan, coupled with reports of a forthcoming presidential amnesty, has prompted widespread reaction among political forces, civil-society organisations, and the Sudanese public.",
-          "isNew": false,
-          "region": {
-            "id": "SDN-874",
-            "name": "Khartoum",
-            "nameDe": "Al-Chartum",
-            "type": "Region",
-            "anchor": [
-              32.785,
-              15.844
-            ],
-            "matched": "Khartoum"
-          },
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 14
-        },
-        {
-          "title": "Sudan: ‘It made me dream again’: The students refusing to let war stop their education",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168093",
-          "date": "2026-08-09T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Sarah Tekhlu was ready to give up on university. An Eritrean refugee, she had already been displaced once from Khartoum to Madani, then again to Port Sudan, as war tore through the country around her. Higher education, she had decided, was a luxury she could no longer afford to want.",
-          "isNew": false,
-          "region": {
-            "id": "SDN-874",
-            "name": "Khartoum",
-            "nameDe": "Al-Chartum",
-            "type": "Region",
-            "anchor": [
-              32.785,
-              15.844
-            ],
-            "matched": "Khartoum"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Sudan: Refugees, Lost Trade and Security Costs - How Conflict in One African Country Drives Up Debt for Its Neighbours",
-          "url": "https://allafrica.com/stories/202608140062.html",
-          "date": "2026-08-14T07:33:35.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[The Conversation Africa] Conflicts in Africa vary in scope and intensity. They range from large-scale civil wars to territorial disputes, localised insurgencies, inter-communal violence, political instability, armed conflict and terrorism. The continent has earned the reputation of being the world's bloodiest.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Sudan Situation Map Weekly Regional Update - 10 August 2026",
-          "url": "https://reliefweb.int/report/sudan/sudan-situation-map-weekly-regional-update-10-august-2026",
-          "date": "2026-08-14T10:03:15.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Sudan, Central African Republic, Chad, Egypt, Ethiopia, Libya, South Sudan, Uganda Source: UN High Commissioner for Refugees Please refer to the attached Infographic. There are now 11.3 million forcibly displaced due to the outbreak of conflict in Sudan since April 2023, including 6.5 million internally and 4.6 million in neighbouring countries. Sudan and neighbouring countries were alr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Sudan: Eastern Africa: El Niño Preparedness Alert - August 2026",
-          "url": "https://reliefweb.int/report/sudan/eastern-africa-el-nino-preparedness-alert-august-2026",
-          "date": "2026-08-14T09:11:04.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Sudan, Burundi, Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan, Uganda, United Republic of Tanzania Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. El Niño is intensifying, with a very strong event expected during October–December (OND) rainy season, potentially amplified by a positive Indian Ocean Dipole. Easter",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Sudan: Nearly 39,000 displaced children arrive in El Obeid in six months, with city close to breaking point",
-          "url": "https://reliefweb.int/report/sudan/sudan-nearly-39000-displaced-children-arrive-el-obeid-six-months-city-close-breaking-point",
-          "date": "2026-08-14T06:03:05.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Save the Children The new arrivals are now part of more than 605,000 people living in El Obeid town and Sheikan locality, who have come seeking safety but are facing new challenges in accessing health, water, education and protection services within the city. PORT SUDAN, 14 August 2026 – Nearly 39,000 children fled to the city of El Obeid in North Kordofan, Sudan, over the f",
-          "isNew": false,
-          "region": {
-            "id": "SDN-883",
-            "name": "North Kordofan",
-            "nameDe": "Schamal Kurdufan",
-            "type": "State",
-            "anchor": [
-              29.382,
-              14.438
-            ],
-            "matched": "North Kordofan"
-          },
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Sudan Key Facts and Figures (July 2026)",
-          "url": "https://reliefweb.int/report/sudan/sudan-key-facts-and-figures-july-2026",
-          "date": "2026-08-13T16:10:56.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Dignity Kit Guidance Note for Sudan [EN/AR]",
-          "url": "https://reliefweb.int/report/sudan/dignity-kit-guidance-note-sudan-enar",
-          "date": "2026-08-12T15:27:45.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Sources: Gender Based Violence Area of Responsibility, United Nations Population Fund Please refer to the attached files. The GBV Area of Responsibility (AoR) in Sudan led the development of this guidance, with critical technical and operational contributions from the Dignity Kit Task Force. This collaborative effort brought together key partners, including the International Rescue ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Refugees in South Sudan face extreme hunger as funds run out",
-          "url": "https://reliefweb.int/report/south-sudan/joint-news-release-wfpunhcr-refugees-south-sudan-face-extreme-hunger-funds-run-out",
-          "date": "2026-08-14T10:03:10.000Z",
-          "source": "ReliefWeb Headlines (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: South Sudan, Sudan Sources: UN High Commissioner for Refugees, World Food Programme Without immediate funding, the final food aid for the most vulnerable 240,000 refugees will be provided in September, cutting off a lifeline for hundreds of thousands already living on the edge.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Sudan: Eritrean Refugees Overview in Sudan (as of 31 July 2026)",
-          "url": "https://reliefweb.int/report/sudan/sudan-eritrean-refugees-overview-sudan-31-july-2026",
-          "date": "2026-08-12T14:03:40.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Sudan, Eritrea Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "UNHCR Sudan - Ethiopian Refugees Overview in Sudan as of 31 July 2026",
-          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-ethiopian-refugees-overview-sudan-31-july-2026",
-          "date": "2026-08-12T14:03:32.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Sudan, Ethiopia Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Sudan Informal Social Protection Monitoring - Round 1",
-          "url": "https://reliefweb.int/report/sudan/sudan-informal-social-protection-monitoring-round-1",
-          "date": "2026-08-12T13:04:04.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Mercy Corps Please refer to the attached file. BACKGROUND During and in the aftermath of crises, communities are often their own first responders. Informal support from family, friends, neighbors, and other groups is frequently more essential to households’ survival than formal support from aid actors and governments. This is particularly salient in Sudan where IDPs are ofte",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Solidarités International Newsletter - August 2026 - Sudan Mission",
-          "url": "https://reliefweb.int/report/sudan/solidarites-international-newsletter-august-2026-sudan-mission",
-          "date": "2026-08-12T09:39:55.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Solidarités International Please refer to the attached file. As the Sudanese crisis’ front lines continue to shift, over 33.7 million people are now in need of assistance, far exceeding the funds currently available for humanitarian responses (OCHA, July 2026). ​ Especially across the Darfurs and Kordofans, needs continue to grow and NGOs need to plan interventions within th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Sudan Situation Analysis: [27/7/2026] - [2/8/2026]",
-          "url": "https://reliefweb.int/report/sudan/sudan-situation-analysis-2772026-282026",
-          "date": "2026-08-11T16:23:00.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Data Friendly Space Please refer to the attached file. Executive Summary The Sudan crisis continues to represent one of the world's most severe humanitarian emergencies, with the conflict between the Sudanese Armed Forces (SAF) and Rapid Support Forces (RSF) driving unprecedented levels of displacement, violence, and suffering. This GANNET SituationHub report provides a comp",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Refugees fleeing Sudan face months without shelter, water or healthcare in eastern Chad",
-          "url": "https://reliefweb.int/report/chad/refugees-fleeing-sudan-face-months-without-shelter-water-or-healthcare-eastern-chad",
-          "date": "2026-08-10T08:31:48.000Z",
-          "source": "ReliefWeb Headlines (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Chad, Sudan Source: Médecins Sans Frontières More than 2,500 refugees fleeing violence spent more than six months without adequate shelter, latrines, access to water or food while awaiting relocation from Adémour transit site in Sila province.",
-          "isNew": false,
-          "region": {
-            "id": "TCD-5582",
-            "name": "Sila",
-            "nameDe": "Sila",
-            "type": "Prefecture",
-            "anchor": [
-              21.411,
-              12.139
-            ],
-            "matched": "Sila"
-          },
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "UNHCR Sudan - South Sudanese Refugees in Sudan Dashboard as of 31 July 2026",
-          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-south-sudanese-refugees-sudan-dashboard-31-july-2026",
-          "date": "2026-08-12T14:03:49.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Sudan, South Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        },
-        {
-          "title": "UNHCR Sudan - Overview of Refugees and Asylum-seekers in Sudan Dashboard as of 31 July 2026",
-          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-overview-refugees-and-asylum-seekers-sudan-dashboard-31-july-2026",
-          "date": "2026-08-12T14:03:21.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Sudan, Central African Republic, Chad, Eritrea, Ethiopia, South Sudan, Syrian Arab Republic, Yemen Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        },
-        {
-          "title": "UNHCR Sudan - Overview of Refugees and IDPs in Sudan Dashboard as of 31 July 2026",
-          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-overview-refugees-and-idps-sudan-dashboard-31-july-2026",
-          "date": "2026-08-12T14:03:10.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        },
-        {
-          "title": "UNICEF Sudan Humanitarian Situation Report No. 44 (Mid - Year), 30 June 2026",
-          "url": "https://reliefweb.int/report/sudan/unicef-sudan-humanitarian-situation-report-no-44-mid-year-30-june-2026",
-          "date": "2026-08-11T04:02:34.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: UN Children's Fund Please refer to the attached file. Highlights As Sudan's conflict entered its fourth year, humanitarian needs remained immense, with 33.7 million people requiring assistance amid displacement, disease outbreaks, food insecurity and disrupted services. UNICEF and partners screened 5.3 million children for acute malnutrition, treated 174,700 children with se",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        }
-      ],
-      "itemCount": 30
+      "itemCount": 56
     },
     {
       "id": "ukraine-russia",
@@ -2342,15 +1468,15 @@
         "Kursk",
         "Krim"
       ],
-      "activity": 50,
-      "severity": 70,
-      "newCount": 0,
+      "activity": 55,
+      "severity": 71,
+      "newCount": 1,
       "signals": [
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 6
+          "count": 7
         },
         {
           "key": "casualties",
@@ -2549,6 +1675,27 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 21
+        },
+        {
+          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T14:26:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 21
         },
@@ -3107,7 +2254,7 @@
           "score": 0
         }
       ],
-      "itemCount": 27
+      "itemCount": 28
     },
     {
       "id": "west-bank",
@@ -3213,27 +2360,6 @@
           "score": 26
         },
         {
-          "title": "US ambassador calls Israeli settler West Bank siege act of terror",
-          "url": "https://arynews.tv/us-ambassador-calls-israeli-settler-west-bank-siege-act-of-terror",
-          "date": "2026-08-15T08:30:00.000Z",
-          "source": "arynews.tv",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 25
-        },
-        {
           "title": "Occupied West Bank: Settler siege of Palestinians marks a new low",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168130",
           "date": "2026-08-13T12:00:00.000Z",
@@ -3276,12 +2402,12 @@
           "score": 22
         },
         {
-          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
-          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
-          "date": "2026-08-15T08:52:10.000Z",
-          "source": "France 24",
+          "title": "US ambassador calls Israeli settler West Bank siege act of terror",
+          "url": "https://arynews.tv/us-ambassador-calls-israeli-settler-west-bank-siege-act-of-terror",
+          "date": "2026-08-15T08:30:00.000Z",
+          "source": "arynews.tv",
           "sourceType": "news",
-          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
+          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
@@ -3339,12 +2465,12 @@
           "score": 22
         },
         {
-          "title": "West Bank: Washington condemns siege of Palestinian homes",
-          "url": "https://www.france24.com/en/video/20260814-west-bank-washington-condemns-siege-of-palestinian-homes",
-          "date": "2026-08-14T15:00:00.000Z",
+          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
+          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
+          "date": "2026-08-15T08:52:10.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "Settlers have been besieging homes in Qusra ​for almost a week, intensifying ‌pressure on Palestinians.",
+          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
           "isNew": false,
           "region": null,
           "event": {
@@ -3357,7 +2483,7 @@
             "icon": "🛡️",
             "label": "Belagerung"
           },
-          "score": 22
+          "score": 19
         },
         {
           "title": "Israel/OPT: Siege of Palestinian homes in Qusra marks relentless escalation in state-backed settler violence",
@@ -3444,6 +2570,27 @@
           "score": 18
         },
         {
+          "title": "West Bank: Washington condemns siege of Palestinian homes",
+          "url": "https://www.france24.com/en/video/20260814-west-bank-washington-condemns-siege-of-palestinian-homes",
+          "date": "2026-08-14T15:00:00.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Settlers have been besieging homes in Qusra ​for almost a week, intensifying ‌pressure on Palestinians.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 18
+        },
+        {
           "title": "Palestinians trapped as Israeli settlers besiege West Bank village",
           "url": "https://www.siasat.com/palestinians-trapped-as-israeli-settlers-besiege-west-bank-village-3525057/",
           "date": "2026-08-15T10:30:00.000Z",
@@ -3469,27 +2616,6 @@
           "url": "https://www.dailygazette.com/ade/ap/national/why-israel-has-done-so-little-to-rein-in-spiraling-settler-violence-against-palestinians/article_8709ef93-79e7-52e7-9a87-aaf67cf1e07a.html",
           "date": "2026-08-15T09:15:00.000Z",
           "source": "dailygazette.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "There a reason why Israel has done little to rein in settler violence . It not just Netanyahu",
-          "url": "https://krmg.com/2026/08/14/theres-a-reason-why-israel-has-done-little-to-rein-in-settler-violence-its-not-just-netanyahu/",
-          "date": "2026-08-15T08:45:00.000Z",
-          "source": "krmg.com",
           "sourceType": "news",
           "summary": "",
           "isNew": false,
@@ -3612,6 +2738,27 @@
           "score": 16
         },
         {
+          "title": "There a reason why Israel has done little to rein in settler violence . It not just Netanyahu",
+          "url": "https://krmg.com/2026/08/14/theres-a-reason-why-israel-has-done-little-to-rein-in-settler-violence-its-not-just-netanyahu/",
+          "date": "2026-08-15T08:45:00.000Z",
+          "source": "krmg.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
           "title": "Three Palestinian injured in firing by Israeli army, settlers",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinian-injured-firing-israeli-army-settlers",
           "date": "2026-08-15T00:55:57.000Z",
@@ -3692,27 +2839,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "US said pushing silent Netanyahu to publicly condemn settler violence in Qusra",
-          "url": "https://www.timesofisrael.com/us-said-pushing-netanyahu-to-publicly-condemn-settler-violence-in-qusra-as-pm-keeps-mum/",
-          "date": "2026-08-14T14:37:50.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "Katz says he told IDF to plan transfer of full civilian law enforcement in West Bank to police, which is already largely responsible for the matter; residents say activists were blocked from delivering food on sixth day of siege The post US said pushing silent Netanyahu to publicly condemn settler violence in Qusra appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
           },
           "score": 15
         },
@@ -3799,6 +2925,27 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "US said pushing silent Netanyahu to publicly condemn settler violence in Qusra",
+          "url": "https://www.timesofisrael.com/us-said-pushing-netanyahu-to-publicly-condemn-settler-violence-in-qusra-as-pm-keeps-mum/",
+          "date": "2026-08-14T14:37:50.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "Katz says he told IDF to plan transfer of full civilian law enforcement in West Bank to police, which is already largely responsible for the matter; residents say activists were blocked from delivering food on sixth day of siege The post US said pushing silent Netanyahu to publicly condemn settler violence in Qusra appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
         },
         {
           "title": "Israeli military moves as settlers besiege 3 West Bank homes",
@@ -3940,6 +3087,885 @@
       "itemCount": 35
     },
     {
+      "id": "sudan",
+      "name": "Sudan",
+      "nameEn": "Sudan Civil War",
+      "region": "Afrika (Horn/Nord)",
+      "countries": [
+        "Sudan"
+      ],
+      "lat": 14.5,
+      "lon": 29.5,
+      "tier": "war",
+      "since": "April 2023",
+      "parties": [
+        "Sudanesische Armee (SAF)",
+        "Rapid Support Forces (RSF)",
+        "verbündete Milizen"
+      ],
+      "background": "Größte Vertreibungskrise der Welt. Kampf zwischen SAF und RSF; Belagerung und Massaker in Darfur, Hungersnot in mehreren Regionen.",
+      "hotspots": [
+        "El Fasher",
+        "Darfur",
+        "Khartum",
+        "Kordofan"
+      ],
+      "activity": 49,
+      "severity": 69,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 17
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": {
+        "headline": "RSF meldet Einnahme einer Stadt nahe der äthiopischen Grenze",
+        "text": "Die Rapid Support Forces erklärten, eine strategisch wichtige Stadt nahe der Grenze zu Äthiopien eingenommen zu haben; die Armee habe sich zurückgezogen. Eine unabhängige Bestätigung liegt bislang nicht vor. Die UN meldet parallel Angriffe und weitere Vertreibungen in Blue Nile und Nord-Kordofan sowie sich verschlechternde Bedingungen in Nord-Darfur.",
+        "sources": [
+          "https://allafrica.com/tools/headlines/rdf/conflict/headlines.rdf",
+          "https://news.un.org/en/story/2026/08"
+        ],
+        "updatedAt": "2026-08-14T20:35:27.650Z"
+      },
+      "iso3": "SDN",
+      "extraCountries": [
+        "SSD",
+        "TCD"
+      ],
+      "regions": [
+        {
+          "id": "SDN-883",
+          "name": "North Kordofan",
+          "nameDe": "Schamal Kurdufan",
+          "type": "State",
+          "anchor": [
+            29.382,
+            14.438
+          ],
+          "count": 3,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        },
+        {
+          "id": "SDN-148",
+          "name": "Blue Nile",
+          "nameDe": "An-Nil al-azraq",
+          "type": "State",
+          "anchor": [
+            34.065,
+            11.402
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "SDN-874",
+          "name": "Khartoum",
+          "nameDe": "Al-Chartum",
+          "type": "Region",
+          "anchor": [
+            32.785,
+            15.844
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          }
+        },
+        {
+          "id": "SDN-881",
+          "name": "North Darfur",
+          "nameDe": "Schamal Darfur",
+          "type": "State",
+          "anchor": [
+            25.709,
+            16.35
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "TCD-5582",
+          "name": "Sila",
+          "nameDe": "Sila",
+          "type": "Prefecture",
+          "anchor": [
+            21.411,
+            12.139
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Sudan: SAF Accused of Civilian Killings As RSF Drones Strike Three States",
+          "url": "https://allafrica.com/stories/202608130032.html",
+          "date": "2026-08-13T07:48:41.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Dabanga] Jabra El Sheikh / Omdurman / Khartoum / Ed Damer / -- The Sudanese Armed Forces (SAF) were accused on Wednesday of killing at least five civilians and wounding more than 10 others in North Kordofan, while paramilitary Rapid Support Forces (RSF) drones struck targets across River Nile, Khartoum and North Kordofan states, highlighting the growing threat to civilians beyond Sudan's active f",
+          "isNew": false,
+          "region": {
+            "id": "SDN-883",
+            "name": "North Kordofan",
+            "nameDe": "Schamal Kurdufan",
+            "type": "State",
+            "anchor": [
+              29.382,
+              14.438
+            ],
+            "matched": "North Kordofan"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Sudan: RSF Says It Captures Key Sudan Town Near Ethiopian Border As Army Withdraws",
+          "url": "https://allafrica.com/stories/202608140047.html",
+          "date": "2026-08-14T07:14:58.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Sudan's Rapid Support Forces (RSF) and allied fighters have advanced into Al Kurmuk, a strategically important town in Blue Nile State bordering Ethiopia, according to reports by Al Jazeera and The National.",
+          "isNew": false,
+          "region": {
+            "id": "SDN-148",
+            "name": "Blue Nile",
+            "nameDe": "An-Nil al-azraq",
+            "type": "State",
+            "anchor": [
+              34.065,
+              11.402
+            ],
+            "matched": "Blue Nile State"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 23
+        },
+        {
+          "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
+          "date": "2026-08-12T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "The United Nations has once again urged warring parties in Sudan to protect civilians as the fighting continues to take a heavy toll on the population.",
+          "isNew": false,
+          "region": {
+            "id": "SDN-883",
+            "name": "North Kordofan",
+            "nameDe": "Schamal Kurdufan",
+            "type": "State",
+            "anchor": [
+              29.382,
+              14.438
+            ],
+            "matched": "North Kordofan"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 21
+        },
+        {
+          "title": "South Sudan: UN mission decries deadly attacks, works to calm tensions after ‘nothing but devastation’",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168118",
+          "date": "2026-08-11T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "The UN Mission in South Sudan (UNMISS) has condemned recent armed group attacks in Warrap state which reportedly left more than 60 civilians dead and 50 others injured.&nbsp;",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Fighting deepens needs and fuels further displacement in Sudan",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168109",
+          "date": "2026-08-10T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Ongoing conflict, displacement and funding shortages continue to deepen needs in Sudan, the UN Office for the Coordination of Humanitarian Affairs (OCHA) warned on Monday, underscoring the need for greater civilian protection.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Attacks on Health Care in Sudan, 22 July - 04 August 2026",
+          "url": "https://reliefweb.int/report/sudan/attacks-health-care-sudan-22-july-04-august-2026",
+          "date": "2026-08-12T12:42:18.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Insecurity Insight Please refer to the attached file. Using data collected by Insecurity Insight, the Safeguarding Health in Conflict Coalition (SHCC) identified 134 incidents of violence against or obstruction of health care in Sudan in 2025. Drone strikes impacting health care surged in 2025, increasing from three incidents in 2024 to 24 in 2025. Over 75% of armed drone st",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
+          "title": "Sudan: The harrowing reality of giving birth in a war zone",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168141",
+          "date": "2026-08-14T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Sudanese women about to give birth are losing their babies and sometimes their own lives because of a lack of specialist healthcare support, amid the ongoing war, UN humanitarians said on Friday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Sudan: Sudan Paramilitary Forces Attack Border Town, Army Alleges Assault Launched From Ethiopia",
+          "url": "https://allafrica.com/stories/202608120407.html",
+          "date": "2026-08-12T14:15:19.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Sudan's paramilitary Rapid Support Forces (RSF) attacked the border town of Geissan in Blue Nile State on Tuesday, according to the RSF and local authorities, while a Sudanese army source told AFP that the assault was launched \"from inside Ethiopian territory.\"",
+          "isNew": false,
+          "region": {
+            "id": "SDN-148",
+            "name": "Blue Nile",
+            "nameDe": "An-Nil al-azraq",
+            "type": "State",
+            "anchor": [
+              34.065,
+              11.402
+            ],
+            "matched": "Blue Nile State"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "How a Sudanese refugee became a head teacher in a Chadian camp",
+          "url": "https://www.aljazeera.com/news/2026/8/15/how-a-sudanese-refugee-became-a-head-teacher-in-a-chadian-camp?traffic_source=rss",
+          "date": "2026-08-15T05:14:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Displaced by Sudan’s war, Sahra now leads a refugee school where education offers children safety and hope.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 15
+        },
+        {
+          "title": "Sudan: Broad Reaction to Burhan's Call for Dialogue Inside Sudan and Reports of Presidential Amnesty",
+          "url": "https://allafrica.com/stories/202608140060.html",
+          "date": "2026-08-14T07:31:55.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Dabanga] Amsterdam / Khartoum -- A call by Sudanese Armed Forces (SAF) chief and head of the Sovereignty Council, Gen Abdelfattah El Burhan, for dialogue inside Sudan, coupled with reports of a forthcoming presidential amnesty, has prompted widespread reaction among political forces, civil-society organisations, and the Sudanese public.",
+          "isNew": false,
+          "region": {
+            "id": "SDN-874",
+            "name": "Khartoum",
+            "nameDe": "Al-Chartum",
+            "type": "Region",
+            "anchor": [
+              32.785,
+              15.844
+            ],
+            "matched": "Khartoum"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 14
+        },
+        {
+          "title": "Sudan: ‘It made me dream again’: The students refusing to let war stop their education",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168093",
+          "date": "2026-08-09T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Sarah Tekhlu was ready to give up on university. An Eritrean refugee, she had already been displaced once from Khartoum to Madani, then again to Port Sudan, as war tore through the country around her. Higher education, she had decided, was a luxury she could no longer afford to want.",
+          "isNew": false,
+          "region": {
+            "id": "SDN-874",
+            "name": "Khartoum",
+            "nameDe": "Al-Chartum",
+            "type": "Region",
+            "anchor": [
+              32.785,
+              15.844
+            ],
+            "matched": "Khartoum"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Sudan: Refugees, Lost Trade and Security Costs - How Conflict in One African Country Drives Up Debt for Its Neighbours",
+          "url": "https://allafrica.com/stories/202608140062.html",
+          "date": "2026-08-14T07:33:35.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[The Conversation Africa] Conflicts in Africa vary in scope and intensity. They range from large-scale civil wars to territorial disputes, localised insurgencies, inter-communal violence, political instability, armed conflict and terrorism. The continent has earned the reputation of being the world's bloodiest.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Sudan: Kids for Kids Expands Emergency Response as Conditions Worsen Across North Darfur",
+          "url": "https://reliefweb.int/report/sudan/kids-kids-expands-emergency-response-conditions-worsen-across-north-darfur",
+          "date": "2026-08-14T14:18:26.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Kids for Kids As Sudan’s conflict passes 1,200 days of fighting, the humanitarian situation in North Darfur has deteriorated further, with remote rural communities facing extreme hunger, displacement and collapsing basic services. UK charity Kids for Kids is urgently scaling up its response to reach vulnerable children and families in some of the hardest-to-access villages i",
+          "isNew": false,
+          "region": {
+            "id": "SDN-881",
+            "name": "North Darfur",
+            "nameDe": "Schamal Darfur",
+            "type": "State",
+            "anchor": [
+              25.709,
+              16.35
+            ],
+            "matched": "North Darfur"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 12
+        },
+        {
+          "title": "Turkish Red Crescent: Humanitarian Aid Operation in Sudan (11 August 2026)",
+          "url": "https://reliefweb.int/report/sudan/turkish-red-crescent-humanitarian-aid-operation-sudan-11-august-2026",
+          "date": "2026-08-14T14:29:13.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Sudan Situation Map Weekly Regional Update - 10 August 2026",
+          "url": "https://reliefweb.int/report/sudan/sudan-situation-map-weekly-regional-update-10-august-2026",
+          "date": "2026-08-14T10:03:15.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Sudan, Central African Republic, Chad, Egypt, Ethiopia, Libya, South Sudan, Uganda Source: UN High Commissioner for Refugees Please refer to the attached Infographic. There are now 11.3 million forcibly displaced due to the outbreak of conflict in Sudan since April 2023, including 6.5 million internally and 4.6 million in neighbouring countries. Sudan and neighbouring countries were alr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Sudan: Eastern Africa: El Niño Preparedness Alert - August 2026",
+          "url": "https://reliefweb.int/report/sudan/eastern-africa-el-nino-preparedness-alert-august-2026",
+          "date": "2026-08-14T09:11:04.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Sudan, Burundi, Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan, Uganda, United Republic of Tanzania Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. El Niño is intensifying, with a very strong event expected during October–December (OND) rainy season, potentially amplified by a positive Indian Ocean Dipole. Easter",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Sudan: Nearly 39,000 displaced children arrive in El Obeid in six months, with city close to breaking point",
+          "url": "https://reliefweb.int/report/sudan/sudan-nearly-39000-displaced-children-arrive-el-obeid-six-months-city-close-breaking-point",
+          "date": "2026-08-14T06:03:05.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Save the Children The new arrivals are now part of more than 605,000 people living in El Obeid town and Sheikan locality, who have come seeking safety but are facing new challenges in accessing health, water, education and protection services within the city. PORT SUDAN, 14 August 2026 – Nearly 39,000 children fled to the city of El Obeid in North Kordofan, Sudan, over the f",
+          "isNew": false,
+          "region": {
+            "id": "SDN-883",
+            "name": "North Kordofan",
+            "nameDe": "Schamal Kurdufan",
+            "type": "State",
+            "anchor": [
+              29.382,
+              14.438
+            ],
+            "matched": "North Kordofan"
+          },
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Sudan Key Facts and Figures (July 2026)",
+          "url": "https://reliefweb.int/report/sudan/sudan-key-facts-and-figures-july-2026",
+          "date": "2026-08-13T16:10:56.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Dignity Kit Guidance Note for Sudan [EN/AR]",
+          "url": "https://reliefweb.int/report/sudan/dignity-kit-guidance-note-sudan-enar",
+          "date": "2026-08-12T15:27:45.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Sources: Gender Based Violence Area of Responsibility, United Nations Population Fund Please refer to the attached files. The GBV Area of Responsibility (AoR) in Sudan led the development of this guidance, with critical technical and operational contributions from the Dignity Kit Task Force. This collaborative effort brought together key partners, including the International Rescue ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Refugees in South Sudan face extreme hunger as funds run out",
+          "url": "https://reliefweb.int/report/south-sudan/joint-news-release-wfpunhcr-refugees-south-sudan-face-extreme-hunger-funds-run-out",
+          "date": "2026-08-14T10:03:10.000Z",
+          "source": "ReliefWeb Headlines (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: South Sudan, Sudan Sources: UN High Commissioner for Refugees, World Food Programme Without immediate funding, the final food aid for the most vulnerable 240,000 refugees will be provided in September, cutting off a lifeline for hundreds of thousands already living on the edge.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Sudan: Eritrean Refugees Overview in Sudan (as of 31 July 2026)",
+          "url": "https://reliefweb.int/report/sudan/sudan-eritrean-refugees-overview-sudan-31-july-2026",
+          "date": "2026-08-12T14:03:40.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Sudan, Eritrea Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "UNHCR Sudan - Ethiopian Refugees Overview in Sudan as of 31 July 2026",
+          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-ethiopian-refugees-overview-sudan-31-july-2026",
+          "date": "2026-08-12T14:03:32.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Sudan, Ethiopia Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Sudan Informal Social Protection Monitoring - Round 1",
+          "url": "https://reliefweb.int/report/sudan/sudan-informal-social-protection-monitoring-round-1",
+          "date": "2026-08-12T13:04:04.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Mercy Corps Please refer to the attached file. BACKGROUND During and in the aftermath of crises, communities are often their own first responders. Informal support from family, friends, neighbors, and other groups is frequently more essential to households’ survival than formal support from aid actors and governments. This is particularly salient in Sudan where IDPs are ofte",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Solidarités International Newsletter - August 2026 - Sudan Mission",
+          "url": "https://reliefweb.int/report/sudan/solidarites-international-newsletter-august-2026-sudan-mission",
+          "date": "2026-08-12T09:39:55.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Solidarités International Please refer to the attached file. As the Sudanese crisis’ front lines continue to shift, over 33.7 million people are now in need of assistance, far exceeding the funds currently available for humanitarian responses (OCHA, July 2026). ​ Especially across the Darfurs and Kordofans, needs continue to grow and NGOs need to plan interventions within th",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Sudan Situation Analysis: [27/7/2026] - [2/8/2026]",
+          "url": "https://reliefweb.int/report/sudan/sudan-situation-analysis-2772026-282026",
+          "date": "2026-08-11T16:23:00.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Data Friendly Space Please refer to the attached file. Executive Summary The Sudan crisis continues to represent one of the world's most severe humanitarian emergencies, with the conflict between the Sudanese Armed Forces (SAF) and Rapid Support Forces (RSF) driving unprecedented levels of displacement, violence, and suffering. This GANNET SituationHub report provides a comp",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Refugees fleeing Sudan face months without shelter, water or healthcare in eastern Chad",
+          "url": "https://reliefweb.int/report/chad/refugees-fleeing-sudan-face-months-without-shelter-water-or-healthcare-eastern-chad",
+          "date": "2026-08-10T08:31:48.000Z",
+          "source": "ReliefWeb Headlines (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Chad, Sudan Source: Médecins Sans Frontières More than 2,500 refugees fleeing violence spent more than six months without adequate shelter, latrines, access to water or food while awaiting relocation from Adémour transit site in Sila province.",
+          "isNew": false,
+          "region": {
+            "id": "TCD-5582",
+            "name": "Sila",
+            "nameDe": "Sila",
+            "type": "Prefecture",
+            "anchor": [
+              21.411,
+              12.139
+            ],
+            "matched": "Sila"
+          },
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "UNHCR Sudan - South Sudanese Refugees in Sudan Dashboard as of 31 July 2026",
+          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-south-sudanese-refugees-sudan-dashboard-31-july-2026",
+          "date": "2026-08-12T14:03:49.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Sudan, South Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        },
+        {
+          "title": "UNHCR Sudan - Overview of Refugees and Asylum-seekers in Sudan Dashboard as of 31 July 2026",
+          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-overview-refugees-and-asylum-seekers-sudan-dashboard-31-july-2026",
+          "date": "2026-08-12T14:03:21.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Sudan, Central African Republic, Chad, Eritrea, Ethiopia, South Sudan, Syrian Arab Republic, Yemen Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        },
+        {
+          "title": "UNHCR Sudan - Overview of Refugees and IDPs in Sudan Dashboard as of 31 July 2026",
+          "url": "https://reliefweb.int/report/sudan/unhcr-sudan-overview-refugees-and-idps-sudan-dashboard-31-july-2026",
+          "date": "2026-08-12T14:03:10.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        },
+        {
+          "title": "UNICEF Sudan Humanitarian Situation Report No. 44 (Mid - Year), 30 June 2026",
+          "url": "https://reliefweb.int/report/sudan/unicef-sudan-humanitarian-situation-report-no-44-mid-year-30-june-2026",
+          "date": "2026-08-11T04:02:34.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: UN Children's Fund Please refer to the attached file. Highlights As Sudan's conflict entered its fourth year, humanitarian needs remained immense, with 33.7 million people requiring assistance amid displacement, disease outbreaks, food insecurity and disrupted services. UNICEF and partners screened 5.3 million children for acute malnutrition, treated 174,700 children with se",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        }
+      ],
+      "itemCount": 30
+    },
+    {
       "id": "iran-israel",
       "name": "Iran–Israel",
       "nameEn": "Iran–Israel",
@@ -3963,21 +3989,21 @@
         "Isfahan",
         "Straße von Hormus"
       ],
-      "activity": 87,
-      "severity": 65,
-      "newCount": 0,
+      "activity": 92,
+      "severity": 66,
+      "newCount": 1,
       "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        },
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
           "count": 3
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
         },
         {
           "key": "escalation",
@@ -4145,6 +4171,27 @@
             "label": "Drohnenangriff"
           },
           "score": 22
+        },
+        {
+          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T14:26:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 19
         },
         {
           "title": "Trump signals plan to claim Hormuz ‘soon’",
@@ -4544,7 +4591,7 @@
           "score": 9
         }
       ],
-      "itemCount": 22
+      "itemCount": 23
     },
     {
       "id": "lebanon-hezbollah",
@@ -4570,15 +4617,15 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 78,
-      "severity": 62,
+      "activity": 82,
+      "severity": 63,
       "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 10
+          "count": 11
         },
         {
           "key": "displacement",
@@ -4587,21 +4634,21 @@
           "count": 6
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 3
-        },
-        {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 3
+          "count": 4
         },
         {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
+          "count": 4
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
           "count": 3
         }
       ],
@@ -4612,23 +4659,6 @@
         "ISR"
       ],
       "regions": [
-        {
-          "id": "LBN-3060",
-          "name": "South",
-          "nameDe": "Gouvernement Süd-Libanon",
-          "type": "Province",
-          "anchor": [
-            35.368,
-            33.36
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        },
         {
           "id": "LBN-3024",
           "name": "Beirut",
@@ -4664,6 +4694,23 @@
           }
         },
         {
+          "id": "LBN-3060",
+          "name": "South",
+          "nameDe": "Gouvernement Süd-Libanon",
+          "type": "Province",
+          "anchor": [
+            35.368,
+            33.36
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        },
+        {
           "id": "ISR-3058",
           "name": "Jerusalem",
           "nameDe": "Bezirk Jerusalem",
@@ -4682,6 +4729,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
+          "date": "2026-08-15T14:19:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 28
+        },
         {
           "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
           "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
@@ -4704,33 +4772,23 @@
           "score": 27
         },
         {
-          "title": "Israeli strikes on south Lebanon kill nine in worst toll since June",
+          "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
           "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
-          "date": "2026-08-15T10:48:33.000Z",
+          "date": "2026-08-15T13:55:28.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Two airstrikes reportedly hit homes in Ansar and Deir al-Zahrani with rescue services trying to find survivors Nine people have been killed, including three children, and 11 injured in two Israeli airstrikes on south Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar in sou",
+          "summary": "Rescue services search for survivors and bodies after airstrikes hit homes in Ansar and Deir al-Zahrani Eleven people have been killed, including three children, and 19 injured in two Israeli airstrikes on southern Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar, killing",
           "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
+          "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           },
           "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           },
           "score": 27
         },
@@ -4835,7 +4893,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate Submitted by MEE staff on Sat, 08/15/2026 - 13:49 Prime Minister Nawaf Salam says civilians killed in the town of Ansar were 'not military infrastructure' A man watches as heavy machinery, first responders and residents search the site of an Israeli air strike in Deir al-Zahrani, southern Lebanon, on 15 August 2026 (Abbas Fa",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -4850,12 +4908,12 @@
           "score": 26
         },
         {
-          "title": "Israeli strikes kill nine in southern Lebanon as attacks intensify",
+          "title": "Israeli strikes kill 11 in southern Lebanon as attacks intensify",
           "url": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss",
           "date": "2026-08-15T07:18:13.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Deadliest Israeli attack in Lebanon since June agreements significantly reduced hostilities.",
+          "summary": "Hezbollah has warned that Israel’s attacks would be met with an 'appropriate response'.",
           "isNew": false,
           "region": null,
           "event": {
@@ -4868,7 +4926,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 23
+          "score": 24
         },
         {
           "title": "Seven people killed in Israeli air attacks on southern Lebanon",
@@ -5003,7 +5061,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
+          "score": 15
         },
         {
           "title": "Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army",
@@ -5226,7 +5284,7 @@
           "score": 0
         }
       ],
-      "itemCount": 23
+      "itemCount": 24
     },
     {
       "id": "drc-m23",
@@ -5257,7 +5315,7 @@
       ],
       "activity": 22,
       "severity": 61,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "ceasefire",
@@ -5342,6 +5400,27 @@
           "score": 25
         },
         {
+          "title": "Former rebel fighters join campaign against Ebola in the DR Congo",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168146",
+          "date": "2026-08-15T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Demobilised former combatants are actively joining the fight against Ebola by participating in public information campaigns in the east of the Democratic Republic of the Congo (DRC).&nbsp;",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 22
+        },
+        {
           "title": "Joint statement on 6th meeting of the Joint Security Coordination Mechanism for the Peace Agreement between the Democratic Republic of the Congo and the Republic of Rwanda",
           "url": "http://thepeninsulaqatar.com/article/14/08/2026/joint-statement-on-6th-meeting-of-the-joint-security-coordination-mechanism-for-the-peace-agreement-between-the-democratic-republic-of-the-congo-and-the-republic-of-rwanda",
           "date": "2026-08-14T22:30:00.000Z",
@@ -5361,27 +5440,6 @@
             "label": "Waffenruhe"
           },
           "score": 22
-        },
-        {
-          "title": "Former rebel fighters join campaign against Ebola in the DR Congo",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168146",
-          "date": "2026-08-15T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Demobilised former combatants are actively joining the fight against Ebola by participating in public information campaigns in the east of the Democratic Republic of the Congo.&nbsp;",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 21
         },
         {
           "title": "DR Congo: Flambées épidémiques en Afrique, santé sous tension",
@@ -5484,262 +5542,6 @@
           "source": "ReliefWeb (UN OCHA)",
           "sourceType": "humanitarian",
           "summary": "Countries: Democratic Republic of the Congo, Burkina Faso, Cameroon, Central African Republic, Chad, Mali, Niger, Nigeria, World Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 0
-        }
-      ],
-      "itemCount": 8
-    },
-    {
-      "id": "sahel-mali",
-      "name": "Mali / Sahel",
-      "nameEn": "Mali",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Mali"
-      ],
-      "lat": 16.5,
-      "lon": -2.5,
-      "tier": "war",
-      "since": "2012",
-      "parties": [
-        "Militärjunta",
-        "JNIM (al-Qaida)",
-        "IS-Sahel",
-        "Tuareg/FLA",
-        "Africa Corps (Russland)"
-      ],
-      "background": "JNIM setzt die Junta mit Blockaden und Angriffen unter Druck, auch nahe Bamako; Tuareg-Rebellen im Norden, russische Africa-Corps-Söldner statt UN/Frankreich.",
-      "hotspots": [
-        "Bamako",
-        "Gao",
-        "Timbuktu",
-        "Mopti",
-        "Kidal"
-      ],
-      "activity": 17,
-      "severity": 60,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MLI",
-      "extraCountries": [
-        "BFA",
-        "NER"
-      ],
-      "regions": [
-        {
-          "id": "MLI-2688",
-          "name": "Tombouctou",
-          "nameDe": "Timbuktu",
-          "type": "Region",
-          "anchor": [
-            -3.58,
-            20.045
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Mali pardons French national convicted over alleged coup plot",
-          "url": "http://www.europesun.com/news/279241183/mali-pardons-french-national-convicted-over-alleged-coup-plot",
-          "date": "2026-08-14T14:45:00.000Z",
-          "source": "europesun.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 22
-        },
-        {
-          "title": "Mali: Mali Junta Pardons French Agent Jailed for 'Undermining State Security'",
-          "url": "https://allafrica.com/stories/202608140174.html",
-          "date": "2026-08-14T10:41:31.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[RFI] Mali's junta leader General Assimi Goïta has pardoned a French intelligence agent serving a 20-year prison sentence, a rare conciliatory move after years of strained relations between the west African nation and its former colonial ruler.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Somalia: Puntland Puts Forces On Alert Over Reported Hassan Sheikh Visit to Galkayo",
-          "url": "https://allafrica.com/stories/202608140136.html",
-          "date": "2026-08-14T10:05:37.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Garowe -- Somalia's Puntland administration said Thursday it had placed its security forces on heightened alert and warned against a reported visit by President Hassan Sheikh Mohamud to Galkayo, a city divided between Puntland and the neighbouring Galmudug state.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Mali: Rapport GBVIMS- Trimestre 2-2026",
-          "url": "https://reliefweb.int/report/mali/rapport-gbvims-trimestre-2-2026",
-          "date": "2026-08-13T10:30:52.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Mali Source: United Nations Population Fund Please refer to the attached file. Le deuxième trimestre 2026 a été marqué par la persistance et la complexification de la crise humanitaire et sécuritaire au Mali. L'intensification des affrontements armés, la multiplication des blocus sur les axes stratégiques du nord et du centre (notamment dans les régions de Tombouctou et de Ménaka), ainsi ",
-          "isNew": false,
-          "region": {
-            "id": "MLI-2688",
-            "name": "Tombouctou",
-            "nameDe": "Timbuktu",
-            "type": "Region",
-            "anchor": [
-              -3.58,
-              20.045
-            ],
-            "matched": "Tombouctou"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Five years after the Taliban takeover, the exclusion of women and girls in Afghanistan has been normalised",
-          "url": "https://reliefweb.int/report/afghanistan/five-years-afghan-womens-futures-crossroads",
-          "date": "2026-08-12T08:03:06.000Z",
-          "source": "ReliefWeb Headlines (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Afghanistan Source: UN Women More than 10.7 million women and girls require assistance. Deteriorating health outcomes, food insecurity, and shrinking access to services delivered by female professionals are deepening the crisis.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "famine",
-            "icon": "🍽️",
-            "label": "Hunger/Versorgung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
-          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
-          "date": "2026-08-11T13:25:46.000Z",
-          "source": "ReliefWeb Headlines (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Somalia Source: Médecins Sans Frontières The survey, across 888 households in 14 displacement sites in Baidoa, also found that one-third of families are surviving on just one meal a day, while only two per cent can afford three meals a day.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Mali : Bulletin Humanitaire (Juin - Juillet 2026)",
-          "url": "https://reliefweb.int/report/mali/mali-bulletin-humanitaire-juin-juillet-2026",
-          "date": "2026-08-14T11:53:36.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Mali Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. À Tombouctou, des solutions intégrées pour renforcer la résilience des communautés Du 29 juin au 1er juillet, la Coordonnatrice résidente et humanitaire des Nations Unies au Mali, Mme Hanaa Singer-Hamdy, s’est rendue à Tombouctou afin de rencontrer les autorités régionales, les partenair",
-          "isNew": false,
-          "region": {
-            "id": "MLI-2688",
-            "name": "Tombouctou",
-            "nameDe": "Timbuktu",
-            "type": "Region",
-            "anchor": [
-              -3.58,
-              20.045
-            ],
-            "matched": "Tombouctou"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 3
-        },
-        {
-          "title": "Mali : Tableau de bord humanitaire (Janvier - Juin 2026)",
-          "url": "https://reliefweb.int/report/mali/mali-tableau-de-bord-humanitaire-janvier-juin-2026",
-          "date": "2026-08-12T09:57:14.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Mali Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
           "isNew": false,
           "region": null,
           "event": {
@@ -6057,6 +5859,262 @@
         }
       ],
       "itemCount": 9
+    },
+    {
+      "id": "sahel-mali",
+      "name": "Mali / Sahel",
+      "nameEn": "Mali",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Mali"
+      ],
+      "lat": 16.5,
+      "lon": -2.5,
+      "tier": "war",
+      "since": "2012",
+      "parties": [
+        "Militärjunta",
+        "JNIM (al-Qaida)",
+        "IS-Sahel",
+        "Tuareg/FLA",
+        "Africa Corps (Russland)"
+      ],
+      "background": "JNIM setzt die Junta mit Blockaden und Angriffen unter Druck, auch nahe Bamako; Tuareg-Rebellen im Norden, russische Africa-Corps-Söldner statt UN/Frankreich.",
+      "hotspots": [
+        "Bamako",
+        "Gao",
+        "Timbuktu",
+        "Mopti",
+        "Kidal"
+      ],
+      "activity": 14,
+      "severity": 59,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MLI",
+      "extraCountries": [
+        "BFA",
+        "NER"
+      ],
+      "regions": [
+        {
+          "id": "MLI-2688",
+          "name": "Tombouctou",
+          "nameDe": "Timbuktu",
+          "type": "Region",
+          "anchor": [
+            -3.58,
+            20.045
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Mali pardons French national convicted over alleged coup plot",
+          "url": "http://www.europesun.com/news/279241183/mali-pardons-french-national-convicted-over-alleged-coup-plot",
+          "date": "2026-08-14T14:45:00.000Z",
+          "source": "europesun.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 18
+        },
+        {
+          "title": "Mali: Mali Junta Pardons French Agent Jailed for 'Undermining State Security'",
+          "url": "https://allafrica.com/stories/202608140174.html",
+          "date": "2026-08-14T10:41:31.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[RFI] Mali's junta leader General Assimi Goïta has pardoned a French intelligence agent serving a 20-year prison sentence, a rare conciliatory move after years of strained relations between the west African nation and its former colonial ruler.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Somalia: Puntland Puts Forces On Alert Over Reported Hassan Sheikh Visit to Galkayo",
+          "url": "https://allafrica.com/stories/202608140136.html",
+          "date": "2026-08-14T10:05:37.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Garowe -- Somalia's Puntland administration said Thursday it had placed its security forces on heightened alert and warned against a reported visit by President Hassan Sheikh Mohamud to Galkayo, a city divided between Puntland and the neighbouring Galmudug state.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Mali: Rapport GBVIMS- Trimestre 2-2026",
+          "url": "https://reliefweb.int/report/mali/rapport-gbvims-trimestre-2-2026",
+          "date": "2026-08-13T10:30:52.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Mali Source: United Nations Population Fund Please refer to the attached file. Le deuxième trimestre 2026 a été marqué par la persistance et la complexification de la crise humanitaire et sécuritaire au Mali. L'intensification des affrontements armés, la multiplication des blocus sur les axes stratégiques du nord et du centre (notamment dans les régions de Tombouctou et de Ménaka), ainsi ",
+          "isNew": false,
+          "region": {
+            "id": "MLI-2688",
+            "name": "Tombouctou",
+            "nameDe": "Timbuktu",
+            "type": "Region",
+            "anchor": [
+              -3.58,
+              20.045
+            ],
+            "matched": "Tombouctou"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Five years after the Taliban takeover, the exclusion of women and girls in Afghanistan has been normalised",
+          "url": "https://reliefweb.int/report/afghanistan/five-years-afghan-womens-futures-crossroads",
+          "date": "2026-08-12T08:03:06.000Z",
+          "source": "ReliefWeb Headlines (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Afghanistan Source: UN Women More than 10.7 million women and girls require assistance. Deteriorating health outcomes, food insecurity, and shrinking access to services delivered by female professionals are deepening the crisis.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "famine",
+            "icon": "🍽️",
+            "label": "Hunger/Versorgung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
+          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
+          "date": "2026-08-11T13:25:46.000Z",
+          "source": "ReliefWeb Headlines (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Somalia Source: Médecins Sans Frontières The survey, across 888 households in 14 displacement sites in Baidoa, also found that one-third of families are surviving on just one meal a day, while only two per cent can afford three meals a day.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Mali : Bulletin Humanitaire (Juin - Juillet 2026)",
+          "url": "https://reliefweb.int/report/mali/mali-bulletin-humanitaire-juin-juillet-2026",
+          "date": "2026-08-14T11:53:36.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Mali Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. À Tombouctou, des solutions intégrées pour renforcer la résilience des communautés Du 29 juin au 1er juillet, la Coordonnatrice résidente et humanitaire des Nations Unies au Mali, Mme Hanaa Singer-Hamdy, s’est rendue à Tombouctou afin de rencontrer les autorités régionales, les partenair",
+          "isNew": false,
+          "region": {
+            "id": "MLI-2688",
+            "name": "Tombouctou",
+            "nameDe": "Timbuktu",
+            "type": "Region",
+            "anchor": [
+              -3.58,
+              20.045
+            ],
+            "matched": "Tombouctou"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 3
+        },
+        {
+          "title": "Mali : Tableau de bord humanitaire (Janvier - Juin 2026)",
+          "url": "https://reliefweb.int/report/mali/mali-tableau-de-bord-humanitaire-janvier-juin-2026",
+          "date": "2026-08-12T09:57:14.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Mali Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 0
+        }
+      ],
+      "itemCount": 8
     },
     {
       "id": "haiti",
@@ -6923,9 +6981,9 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 41,
-      "severity": 51,
-      "newCount": 0,
+      "activity": 46,
+      "severity": 52,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -7134,6 +7192,27 @@
           "score": 19
         },
         {
+          "title": "The next Yemen war might be different",
+          "url": "https://www.aljazeera.com/features/2026/8/15/the-next-yemen-war-might-be-different?traffic_source=rss",
+          "date": "2026-08-15T14:32:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Drones are no longer the advantage for only one side.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 19
+        },
+        {
           "title": "‘People were burning’: Crew members of ship hit by Houthis recount attack",
           "url": "https://www.timesofisrael.com/people-were-burning-crew-members-of-ship-hit-by-houthis-recount-attack/",
           "date": "2026-08-14T11:26:35.000Z",
@@ -7155,27 +7234,6 @@
           "score": 18
         },
         {
-          "title": "Houthi spokesman says 'Saudi warships and mercenaries' targeted",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-spokesman-says-saudi-warships-and-mercenaries-targeted-al-mokha",
-          "date": "2026-08-15T02:13:00.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Houthi spokesman says 'Saudi warships and mercenaries' targeted Houthi military spokesperson&nbsp;Yahya Saree has said the rebels “targeted concentrations and weapons belonging to the Saudi enemy”. In a statement carried by Press TV, Saree said the “servicemen targeted warships belonging to its (Riyadh’s) tools and mercenaries in the al-Mokha area, using a large number of ballistic missiles”. “The",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 16
-        },
-        {
           "title": "IRC operations in the west coast of Yemen disrupted, as attacks on Al Mokha stoke fears of wider conflict",
           "url": "https://reliefweb.int/report/yemen/irc-operations-west-coast-yemen-disrupted-attacks-al-mokha-stoke-fears-wider-conflict",
           "date": "2026-08-11T14:33:05.000Z",
@@ -7195,6 +7253,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Houthi spokesman says 'Saudi warships and mercenaries' targeted",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-spokesman-says-saudi-warships-and-mercenaries-targeted-al-mokha",
+          "date": "2026-08-15T02:13:00.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Houthi spokesman says 'Saudi warships and mercenaries' targeted Houthi military spokesperson&nbsp;Yahya Saree has said the rebels “targeted concentrations and weapons belonging to the Saudi enemy”. In a statement carried by Press TV, Saree said the “servicemen targeted warships belonging to its (Riyadh’s) tools and mercenaries in the al-Mokha area, using a large number of ballistic missiles”. “The",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 15
         },
         {
           "title": "Yemen: Beyond Jobs: Building an inclusive youth economy in Aden",
@@ -7364,7 +7443,7 @@
           "score": 0
         }
       ],
-      "itemCount": 16
+      "itemCount": 17
     },
     {
       "id": "nigeria",
@@ -7393,8 +7472,8 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 42,
-      "severity": 51,
+      "activity": 38,
+      "severity": 50,
       "newCount": 0,
       "signals": [
         {
@@ -7798,7 +7877,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 7
+          "score": 3
         },
         {
           "title": "UNHCR Nigeria Refugees & Asylum-seekers Dashboard - 1 August 2026",
@@ -7871,7 +7950,7 @@
             "icon": "🍽️",
             "label": "Hunger/Versorgung"
           },
-          "score": 3
+          "score": 0
         }
       ],
       "itemCount": 15
@@ -7901,8 +7980,8 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 39,
-      "severity": 50,
+      "activity": 34,
+      "severity": 49,
       "newCount": 0,
       "signals": [
         {
@@ -8002,6 +8081,27 @@
       ],
       "items": [
         {
+          "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
+          "url": "https://allafrica.com/stories/202608140520.html",
+          "date": "2026-08-14T19:58:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Crusoe Osagie writes that the attack on the museum in Benin City and the propriety of an individual taking sole possession of globally significant artifacts puts the future of cultural restitution in jeopardy",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 23
+        },
+        {
           "title": "American missionary kidnapped in Niger freed after nine months",
           "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
           "date": "2026-08-14T14:55:17.000Z",
@@ -8030,28 +8130,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 24
-        },
-        {
-          "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
-          "url": "https://allafrica.com/stories/202608140520.html",
-          "date": "2026-08-14T19:58:20.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Crusoe Osagie writes that the attack on the museum in Benin City and the propriety of an individual taking sole possession of globally significant artifacts puts the future of cultural restitution in jeopardy",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
+          "score": 20
         },
         {
           "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
@@ -8333,7 +8412,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 7
+          "score": 3
         }
       ],
       "itemCount": 14
@@ -10185,8 +10264,8 @@
         "Afar",
         "Assab"
       ],
-      "activity": 17,
-      "severity": 44,
+      "activity": 15,
+      "severity": 43,
       "newCount": 0,
       "signals": [
         {
@@ -10324,37 +10403,6 @@
           "score": 22
         },
         {
-          "title": "Sudan: Sudan Paramilitary Forces Attack Border Town, Army Alleges Assault Launched From Ethiopia",
-          "url": "https://allafrica.com/stories/202608120407.html",
-          "date": "2026-08-12T14:15:19.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Sudan's paramilitary Rapid Support Forces (RSF) attacked the border town of Geissan in Blue Nile State on Tuesday, according to the RSF and local authorities, while a Sudanese army source told AFP that the assault was launched \"from inside Ethiopian territory.\"",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 20
-        },
-        {
           "title": "Ethiopia: Media Warfare, National Consequences - How Ethiopia's Propaganda War Threatens Fragile Peace",
           "url": "https://allafrica.com/stories/202608140380.html",
           "date": "2026-08-14T15:40:55.000Z",
@@ -10384,6 +10432,37 @@
             "label": "Vertreibung"
           },
           "score": 18
+        },
+        {
+          "title": "Sudan: Sudan Paramilitary Forces Attack Border Town, Army Alleges Assault Launched From Ethiopia",
+          "url": "https://allafrica.com/stories/202608120407.html",
+          "date": "2026-08-12T14:15:19.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Sudan's paramilitary Rapid Support Forces (RSF) attacked the border town of Geissan in Blue Nile State on Tuesday, according to the RSF and local authorities, while a Sudanese army source told AFP that the assault was launched \"from inside Ethiopian territory.\"",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
+            "type": "Administrative State",
+            "anchor": [
+              38.786,
+              8.978
+            ],
+            "matched": "Addis Abeba"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "As millions of children head back to school this fall, new IRC program ensures over 150,000 conflict-affected children in Ethiopia access quality education",
@@ -11791,15 +11870,15 @@
         "Intan Jaya",
         "Timika"
       ],
-      "activity": 30,
-      "severity": 31,
-      "newCount": 0,
+      "activity": 34,
+      "severity": 33,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 3
+          "count": 4
         },
         {
           "key": "sanctions",
@@ -11821,6 +11900,27 @@
       "regions": [],
       "items": [
         {
+          "title": "Rescuers search for survivors as Indonesian 7.7 quake death toll rises to 47",
+          "url": "https://www.dawn.com/news/2023007/rescuers-search-for-survivors-as-indonesian-77-quake-death-toll-rises-to-47",
+          "date": "2026-08-15T14:35:08.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Rescuers combed through debris for survivors on Saturday after a powerful earthquake struck off Indonesia’s eastern Flores island, killing at least 47 people, according to disaster officials. The national disaster management agency (BNPB) raised the death toll from 40 late on Saturday, while rescue official Fathur Rahman said 50 people were injured in the 7.7-magnitude quake. Suharyanto, who leads",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
           "title": "Indonesian rescuers search for survivors as 7.7 quake death toll rises to 38",
           "url": "https://www.dawn.com/news/2023007/indonesian-rescuers-search-for-survivors-as-77-quake-death-toll-rises-to-38",
           "date": "2026-08-15T11:19:30.000Z",
@@ -11839,7 +11939,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Strong 7.7-magnitude earthquake strikes eastern Indonesia, killing at least 38",
@@ -11989,7 +12089,7 @@
           "score": 9
         }
       ],
-      "itemCount": 8
+      "itemCount": 9
     },
     {
       "id": "chad",
@@ -12626,7 +12726,7 @@
         {
           "title": "South Korea proposes talks to officially end war with North",
           "url": "https://www.bbc.co.uk/news/articles/c8en2z9jp2xo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-15T09:35:23.000Z",
+          "date": "2026-08-15T14:40:15.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Lee Jae Myung offers chance to end the conflict, which has been frozen since an armistice in 1953.",
@@ -12688,87 +12788,6 @@
         }
       ],
       "itemCount": 5
-    },
-    {
-      "id": "turkey-pkk",
-      "name": "Türkei–PKK",
-      "nameEn": "Turkey–PKK",
-      "region": "Naher Osten",
-      "countries": [
-        "Turkey"
-      ],
-      "lat": 37.9,
-      "lon": 41,
-      "tier": "medium",
-      "since": "1984 / Friedensprozess 2025",
-      "parties": [
-        "Türkei",
-        "PKK",
-        "SDF/YPG"
-      ],
-      "background": "Nach dem PKK-Auflösungsbeschluss 2025 läuft ein fragiler Friedensprozess; parallel türkische Operationen in Nordirak und Nordsyrien.",
-      "hotspots": [
-        "Südost-Türkei",
-        "Kandil",
-        "Nordsyrien"
-      ],
-      "activity": 10,
-      "severity": 25,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "TUR",
-      "extraCountries": [
-        "IRQ",
-        "SYR"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "Turkish Red Crescent: Humanitarian Aid Operation in Sudan (11 August 2026)",
-          "url": "https://reliefweb.int/report/sudan/turkish-red-crescent-humanitarian-aid-operation-sudan-11-august-2026",
-          "date": "2026-08-14T14:29:13.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Sudan Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 16
-        },
-        {
-          "title": "oPt: Turkish Red Crescent Gaza Prosthetic & Orthotic Support Project in Gaza",
-          "url": "https://reliefweb.int/report/occupied-palestinian-territory/turkish-red-crescent-gaza-prosthetic-orthotic-support-project-gaza",
-          "date": "2026-08-14T14:21:53.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: occupied Palestinian territory Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        }
-      ],
-      "itemCount": 2
     },
     {
       "id": "cameroon",
@@ -13267,6 +13286,87 @@
       "itemCount": 10
     },
     {
+      "id": "turkey-pkk",
+      "name": "Türkei–PKK",
+      "nameEn": "Turkey–PKK",
+      "region": "Naher Osten",
+      "countries": [
+        "Turkey"
+      ],
+      "lat": 37.9,
+      "lon": 41,
+      "tier": "medium",
+      "since": "1984 / Friedensprozess 2025",
+      "parties": [
+        "Türkei",
+        "PKK",
+        "SDF/YPG"
+      ],
+      "background": "Nach dem PKK-Auflösungsbeschluss 2025 läuft ein fragiler Friedensprozess; parallel türkische Operationen in Nordirak und Nordsyrien.",
+      "hotspots": [
+        "Südost-Türkei",
+        "Kandil",
+        "Nordsyrien"
+      ],
+      "activity": 5,
+      "severity": 24,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "TUR",
+      "extraCountries": [
+        "IRQ",
+        "SYR"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "Turkish Red Crescent: Humanitarian Aid Operation in Sudan (11 August 2026)",
+          "url": "https://reliefweb.int/report/sudan/turkish-red-crescent-humanitarian-aid-operation-sudan-11-august-2026",
+          "date": "2026-08-14T14:29:13.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Sudan Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 12
+        },
+        {
+          "title": "oPt: Turkish Red Crescent Gaza Prosthetic & Orthotic Support Project in Gaza",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/turkish-red-crescent-gaza-prosthetic-orthotic-support-project-gaza",
+          "date": "2026-08-14T14:21:53.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: occupied Palestinian territory Source: Turkish Red Crescent Society Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        }
+      ],
+      "itemCount": 2
+    },
+    {
       "id": "mozambique",
       "name": "Mosambik / Cabo Delgado",
       "nameEn": "Mozambique – Cabo Delgado",
@@ -13291,7 +13391,7 @@
         "Palma",
         "Macomia"
       ],
-      "activity": 6,
+      "activity": 4,
       "severity": 24,
       "newCount": 0,
       "signals": [
@@ -13407,10 +13507,79 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 3
+          "score": 0
         }
       ],
       "itemCount": 3
+    },
+    {
+      "id": "iraq",
+      "name": "Irak",
+      "nameEn": "Iraq",
+      "region": "Naher Osten",
+      "countries": [
+        "Iraq"
+      ],
+      "lat": 33.3,
+      "lon": 43.7,
+      "tier": "medium",
+      "since": "2003 / IS-Restkonflikt",
+      "parties": [
+        "Irakische Regierung",
+        "IS-Zellen",
+        "schiitische Milizen",
+        "USA",
+        "KRG"
+      ],
+      "background": "IS-Restzellen im Norden, Spannungen zwischen Bagdad und Erbil, Angriffe iran-naher Milizen auf US-Stützpunkte.",
+      "hotspots": [
+        "Kirkuk",
+        "Anbar",
+        "Erbil",
+        "Diyala"
+      ],
+      "activity": 1,
+      "severity": 23,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "IRQ",
+      "extraCountries": [
+        "SYR"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "Update on Internal Displacement in Iraq (As of June 2026)",
+          "url": "https://reliefweb.int/report/iraq/update-internal-displacement-iraq-june-2026",
+          "date": "2026-08-09T11:03:17.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Iraq Sources: International Organization for Migration, UN High Commissioner for Refugees Please refer to the attached file. Overview 997,334 IDPs remain displaced in Iraq.1 This includes 97,2712 people living in the 183 IDP camps, located in the Kurdistan Region of Iraq. Of this population, 18,763 IDP families (89,709 individuals) continue to reside in 13 camps across Dohuk Governorate a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        }
+      ],
+      "itemCount": 1
     },
     {
       "id": "car",
@@ -13436,8 +13605,8 @@
         "Vakaga",
         "Haute-Kotto"
       ],
-      "activity": 6,
-      "severity": 24,
+      "activity": 3,
+      "severity": 23,
       "newCount": 0,
       "signals": [
         {
@@ -13500,7 +13669,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 12
+          "score": 9
         },
         {
           "title": "Central African Republic: Overview of incidents affecting humanitarian workers (January - July 2026)",
@@ -13573,79 +13742,10 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 3
+          "score": 0
         }
       ],
       "itemCount": 4
-    },
-    {
-      "id": "iraq",
-      "name": "Irak",
-      "nameEn": "Iraq",
-      "region": "Naher Osten",
-      "countries": [
-        "Iraq"
-      ],
-      "lat": 33.3,
-      "lon": 43.7,
-      "tier": "medium",
-      "since": "2003 / IS-Restkonflikt",
-      "parties": [
-        "Irakische Regierung",
-        "IS-Zellen",
-        "schiitische Milizen",
-        "USA",
-        "KRG"
-      ],
-      "background": "IS-Restzellen im Norden, Spannungen zwischen Bagdad und Erbil, Angriffe iran-naher Milizen auf US-Stützpunkte.",
-      "hotspots": [
-        "Kirkuk",
-        "Anbar",
-        "Erbil",
-        "Diyala"
-      ],
-      "activity": 1,
-      "severity": 23,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "IRQ",
-      "extraCountries": [
-        "SYR"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "Update on Internal Displacement in Iraq (As of June 2026)",
-          "url": "https://reliefweb.int/report/iraq/update-internal-displacement-iraq-june-2026",
-          "date": "2026-08-09T11:03:17.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Iraq Sources: International Organization for Migration, UN High Commissioner for Refugees Please refer to the attached file. Overview 997,334 IDPs remain displaced in Iraq.1 This includes 97,2712 people living in the 183 IDP camps, located in the Kurdistan Region of Iraq. Of this population, 18,763 IDP families (89,709 individuals) continue to reside in 13 camps across Dohuk Governorate a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 1
     },
     {
       "id": "south-china-sea",
@@ -14169,7 +14269,7 @@
         "Zvečan",
         "Grenzübergänge"
       ],
-      "activity": 6,
+      "activity": 5,
       "severity": 12,
       "newCount": 0,
       "signals": [
@@ -14225,7 +14325,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "‘Absurd Blockade’: Fresh Parliamentary Deadlock Pushes Kosovo Back Into Crisis Mode",
