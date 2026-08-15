@@ -169,6 +169,45 @@ Zugriff auf dieses lokale Projekt.
 Die Lageeinschätzungen liegen in `data/briefings.json` und werden vom Server live in die
 API gemischt — ein neues Briefing ist ohne erneuten Datenabruf sofort im Dashboard.
 
+## Als Website veröffentlichen
+
+Das Dashboard läuft auch ohne Node-Prozess: Das Frontend fragt zuerst `/api/state`
+ab und fällt auf die statische Datei `public/data/state.json` zurück. Damit ist es
+auf jedem Static-Hosting lauffähig.
+
+```bash
+npm run update:publish   # Quellen abrufen + public/data/state.json bauen
+```
+
+### GitHub Pages
+
+Das Repository ist vorbereitet (`.github/workflows/update.yml`). Der Workflow ruft
+stündlich die Quellen ab, schreibt den neuen Datenstand zurück und veröffentlicht
+die Seite — unabhängig davon, ob der eigene Rechner läuft.
+
+1. Auf <https://github.com/new> ein Repository anlegen (öffentlich, ohne README).
+2. Lokal verbinden und hochladen:
+
+   ```bash
+   git remote add origin https://github.com/DEIN-NAME/conflict-globe.git && git push -u origin main
+   ```
+
+3. Im Repository unter **Settings → Pages** bei *Source* **GitHub Actions** wählen.
+4. Optional unter **Settings → Secrets and variables → Actions** die Werte
+   `ACLED_KEY` und `ACLED_EMAIL` hinterlegen — dann liefert ACLED zusätzlich harte
+   Ereignis- und Opferzahlen.
+
+Die Seite erscheint danach unter `https://DEIN-NAME.github.io/conflict-globe/`.
+
+### Was beim Veröffentlichen zu beachten ist
+
+- Angezeigt werden ausschließlich **Überschrift, Quelle und Link** — nie Artikeltext.
+  Das entspricht dem üblichen Aggregatormodell und ist der belastbare Weg.
+- Die **Lageeinschätzungen sind maschinell erzeugt**. Das Hinweisfenster (Knopf „i"
+  unten rechts) sagt das ausdrücklich; dieser Hinweis sollte erhalten bleiben.
+- Für eine öffentlich erreichbare Seite aus Deutschland stellt sich die Frage nach
+  einem **Impressum**. Das ist kein Rechtsrat, nur ein Punkt, den man kennen sollte.
+
 ## Projektstruktur
 
 ```
