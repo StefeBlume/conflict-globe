@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T17:06:31.848Z",
-  "durationSec": 363,
+  "generatedAt": "2026-08-15T18:02:18.981Z",
+  "durationSec": 418,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,36 +114,32 @@
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 7,
-      "skipped": 5,
+      "ok": 3,
+      "failed": 6,
+      "skipped": 7,
       "errors": [
-        {
-          "id": "burkina-faso",
-          "error": "fetch failed"
-        },
         {
           "id": "haiti",
           "error": "fetch failed"
         },
         {
           "id": "venezuela",
-          "error": "fetch failed"
-        },
-        {
-          "id": "chad",
           "error": "HTTP 429"
         },
         {
-          "id": "syria",
-          "error": "fetch failed"
+          "id": "turkey-pkk",
+          "error": "GDELT gedrosselt"
         },
         {
-          "id": "somalia",
-          "error": "fetch failed"
+          "id": "cameroon",
+          "error": "HTTP 429"
         },
         {
-          "id": "afghanistan",
+          "id": "rohingya-bangladesh",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "thailand-cambodia",
           "error": "HTTP 429"
         }
       ]
@@ -152,8 +148,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 514,
-    "newArticles": 16
+    "articles": 519,
+    "newArticles": 5
   },
   "conflicts": [
     {
@@ -183,13 +179,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 14
+          "count": 15
         },
         {
           "key": "ceasefire",
@@ -251,6 +247,27 @@
       ],
       "items": [
         {
+          "title": "Israeli army says it killed two Palestinians in Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
+          "date": "2026-08-15T17:53:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli army says it killed two Palestinians in Gaza The Israeli military has said its Paratroopers Brigade killed two Palestinians in Gaza. The military said the Palestinians crossed the so-called “yellow line.\" Under the US-brokered agreement reached with Hamas last October, Israel was supposed to withdraw to the yellow line while temporarily retaining control over 53 percent of Gaza. But Israel",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 33
+        },
+        {
           "title": "Israeli drone strike injures three in central Gaza",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-injures-three-central-gaza",
           "date": "2026-08-15T11:39:52.000Z",
@@ -269,7 +286,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 30
+          "score": 27
         },
         {
           "title": "Gaza: Destruction of buildings rises by nearly 10 per cent since ceasefire",
@@ -383,7 +400,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon At the entrance to Zawtar al-Gharbiyeh, a village in southern&nbsp; Lebanon , a Lebanese Army checkpoint marks the edge of what is now officially known as a \"pilot zone\". It is one of three villages - along with Froun and Srifa - designated as such under the framework agreement between&nbsp; Israel , the United Stat",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -503,27 +520,6 @@
           "score": 23
         },
         {
-          "title": "Seven people killed in Israeli air attacks on southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-killed-israeli-air-attacks-southern-lebanon",
-          "date": "2026-08-15T05:26:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Seven people killed in Israeli air attacks on southern Lebanon Seven people were killed following an Israeli air strike on the town of Ansar in southern Lebanon early Saturday morning, according to the country’s civil defence. Israeli jets struck the outskirts of Ansar in the Nabatieh district, as well as the vicinity of Nabatieh al-Fawqa, Quds News Network reported earlier. At dawn, Israeli troop",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
           "title": "Occupied West Bank: Settler siege of Palestinians marks a new low",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168130",
           "date": "2026-08-13T12:00:00.000Z",
@@ -551,7 +547,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Three Palestinian families say they have been trapped inside their homes in the occupied West Bank for nearly a week.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -562,6 +558,27 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
+          },
+          "score": 22
+        },
+        {
+          "title": "Seven people killed in Israeli air attacks on southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-killed-israeli-air-attacks-southern-lebanon",
+          "date": "2026-08-15T05:26:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Seven people killed in Israeli air attacks on southern Lebanon Seven people were killed following an Israeli air strike on the town of Ansar in southern Lebanon early Saturday morning, according to the country’s civil defence. Israeli jets struck the outskirts of Ansar in the Nabatieh district, as well as the vicinity of Nabatieh al-Fawqa, Quds News Network reported earlier. At dawn, Israeli troop",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 22
         },
@@ -669,27 +686,6 @@
             "label": "Waffenruhe"
           },
           "score": 22
-        },
-        {
-          "title": "Trump's Latin America allies open arms to Israel",
-          "url": "https://www.dw.com/en/trump-s-latin-america-allies-open-arms-to-israel/a-78378930?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-15T11:35:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "While ongoing military actions in Gaza and settler attacks on Palestinians in the occupied West Bank have largely isolated Israel globally, Latin America's authoritarian right sees an opening for a strategic alliance.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 21
         },
         {
           "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
@@ -818,6 +814,27 @@
           "score": 18
         },
         {
+          "title": "Trump's Latin America allies open arms to Israel",
+          "url": "https://www.dw.com/en/trump-s-latin-america-allies-open-arms-to-israel/a-78378930?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-15T11:35:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "While ongoing military actions in Gaza and settler attacks on Palestinians in the occupied West Bank have largely isolated Israel globally, Latin America's authoritarian right sees an opening for a strategic alliance.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "‘We never leave’: Palestinians besieged in West Bank fear Israeli settlers will seize their homes",
           "url": "https://www.france24.com/en/middle-east/20260814-israel-s-new-west-bank-settlements-bring-chaos-to-palestinians",
           "date": "2026-08-14T16:15:18.000Z",
@@ -835,27 +852,6 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Donald Trump's Latin America allies open arms to Israel",
-          "url": "https://www.dw.com/en/donald-trump-s-latin-america-allies-open-arms-to-israel/a-78378930?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-15T11:35:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "While the ongoing military actions in Gaza and settler attacks on Palestinians in the West Bank have largely isolated Israel globally, Latin America's authoritarian right sees an opening for a strategic alliance.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 18
         },
@@ -879,27 +875,6 @@
             "label": "Belagerung"
           },
           "score": 18
-        },
-        {
-          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
-          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
-          "date": "2026-08-14T17:52:51.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
         },
         {
           "title": "oPt: WHO Attacks on health care in the Gaza Strip (Since 1 January 2026 - 6 August 2026)",
@@ -940,6 +915,27 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
+          },
+          "score": 15
+        },
+        {
+          "title": "Donald Trump's Latin America allies open arms to Israel",
+          "url": "https://www.dw.com/en/donald-trump-s-latin-america-allies-open-arms-to-israel/a-78378930?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-15T11:35:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "While the ongoing military actions in Gaza and settler attacks on Palestinians in the West Bank have largely isolated Israel globally, Latin America's authoritarian right sees an opening for a strategic alliance.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 15
         },
@@ -1143,27 +1139,6 @@
           "score": 15
         },
         {
-          "title": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-hezbollah-accuses-lebanons-government-targeting-resistance",
-          "date": "2026-08-14T17:22:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report Hezbollah chief Naim Qassem accused the&nbsp;Lebanese authorities of \"targeting the resistance instead of targeting the enemy\" and failing to \"abide by agreements\", Al Jazeera reported. “The southern town of Mansouri is supposed to be liberated … not occupied … yet residents can’t return … what have the Leba",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Benjamin Netanyahu describes UK as ‘first Islamic republic to get a nuclear weapon’",
           "url": "https://www.theguardian.com/world/2026/aug/14/benjamin-netanyahu-describes-uk-first-islamic-republic-to-get-nuclear-weapon",
           "date": "2026-08-14T12:00:42.000Z",
@@ -1202,6 +1177,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 12
+        },
+        {
+          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
+          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
+          "date": "2026-08-14T17:52:51.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 12
         },
@@ -1288,6 +1284,27 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-hezbollah-accuses-lebanons-government-targeting-resistance",
+          "date": "2026-08-14T17:22:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report Hezbollah chief Naim Qassem accused the&nbsp;Lebanese authorities of \"targeting the resistance instead of targeting the enemy\" and failing to \"abide by agreements\", Al Jazeera reported. “The southern town of Mansouri is supposed to be liberated … not occupied … yet residents can’t return … what have the Leba",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Analysis: Israel’s government can’t disown West Bank settler violence",
@@ -1573,7 +1590,7 @@
           "score": 0
         }
       ],
-      "itemCount": 62
+      "itemCount": 63
     },
     {
       "id": "ukraine-russia",
@@ -1602,8 +1619,8 @@
         "Kursk",
         "Krim"
       ],
-      "activity": 60,
-      "severity": 73,
+      "activity": 65,
+      "severity": 74,
       "newCount": 1,
       "signals": [
         {
@@ -1619,6 +1636,12 @@
           "count": 5
         },
         {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        },
+        {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
@@ -1627,12 +1650,6 @@
         {
           "key": "sanctions",
           "label": "Sanktionen",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
           "dir": "up",
           "count": 1
         }
@@ -1662,7 +1679,7 @@
             55.668
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -1768,7 +1785,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 34
+          "score": 31
         },
         {
           "title": "Ukraine hits Russian Starlink-style network, Moscow tracks arms package",
@@ -1777,7 +1794,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ukraine used domestically produced Flamingo missiles to hit targets in Russia's southwestern Samara region.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "RUS-2364",
             "name": "Moscow",
@@ -1820,7 +1837,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Ukraine: Civilian casualties hit highest level since March 2022",
@@ -1877,6 +1894,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
+          "title": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T17:03:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea The Iran war may be fought primarily remotely via the air, but its strategic outcome is increasingly being decided at sea.&nbsp; The latest strikes and counterstrikes have clarified rather than altered that central fact. Washington may escalate through a ground intervention, wider attacks on Iran’s critical infrastructure,",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "clash",
@@ -2419,7 +2457,7 @@
           "score": 0
         }
       ],
-      "itemCount": 29
+      "itemCount": 30
     },
     {
       "id": "west-bank",
@@ -2448,7 +2486,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "escalation",
@@ -2531,7 +2569,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Three Palestinian families say they have been trapped inside their homes in the occupied West Bank for nearly a week.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -2775,27 +2813,6 @@
             "label": "Gefechte"
           },
           "score": 17
-        },
-        {
-          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
-          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
-          "date": "2026-08-14T17:52:51.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
         },
         {
           "title": "oPt: WHO Attacks on health care in the West Bank (Since 1 January - 31 July 2026)",
@@ -3071,6 +3088,27 @@
           "score": 13
         },
         {
+          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
+          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
+          "date": "2026-08-14T17:52:51.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
           "title": "oPt: WFP Palestine Food Security Analysis: West Bank Food Security Report – Q1: 2026 (July 2026)",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/wfp-palestine-food-security-analysis-west-bank-food-security-report-q1-2026-july-2026",
           "date": "2026-08-13T13:48:56.000Z",
@@ -3273,535 +3311,247 @@
       "itemCount": 36
     },
     {
-      "id": "lebanon-hezbollah",
-      "name": "Israel–Libanon / Hisbollah",
-      "nameEn": "Israel–Hezbollah",
+      "id": "iran-israel",
+      "name": "Iran–Israel",
+      "nameEn": "Iran–Israel",
       "region": "Naher Osten",
       "countries": [
-        "Lebanon"
+        "Iran"
       ],
-      "lat": 33.6,
-      "lon": 35.5,
+      "lat": 32.4,
+      "lon": 53.7,
       "tier": "high",
-      "since": "Oktober 2023 / Eskalation 2024",
+      "since": "Schattenkrieg / offene Schläge 2024–2025",
       "parties": [
+        "Iran/IRGC",
         "Israel",
-        "Hisbollah",
-        "Libanesische Armee",
-        "UNIFIL"
+        "USA"
       ],
-      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
+      "background": "Direkte Schlagabtausche 2024/2025 lösten den früheren Schattenkrieg ab; Streit um das Atomprogramm, Sanktionen und Irans regionale Achse.",
       "hotspots": [
-        "Südlibanon",
-        "Beirut/Dahiyeh",
-        "Bekaa-Ebene"
+        "Natanz",
+        "Fordo",
+        "Isfahan",
+        "Straße von Hormus"
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 2,
       "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 14
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 6
-        },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 6
+          "count": 3
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 3
         },
         {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 4
+          "count": 2
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 4
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
         }
       ],
       "acled": null,
       "briefing": null,
-      "iso3": "LBN",
+      "iso3": "IRN",
       "extraCountries": [
         "ISR"
       ],
       "regions": [
         {
-          "id": "LBN-3060",
-          "name": "South",
-          "nameDe": "Gouvernement Süd-Libanon",
+          "id": "IRN-3216",
+          "name": "Tehran",
+          "nameDe": "Teheran",
           "type": "Province",
           "anchor": [
-            35.368,
-            33.36
+            51.831,
+            35.568
           ],
-          "count": 2,
+          "count": 3,
+          "newCount": 0,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          }
+        },
+        {
+          "id": "IRN-3228",
+          "name": "Hormozgan",
+          "nameDe": "Hormozgan",
+          "type": "Province",
+          "anchor": [
+            56.242,
+            27.12
+          ],
+          "count": 1,
           "newCount": 1,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          }
-        },
-        {
-          "id": "LBN-3024",
-          "name": "Beirut",
-          "nameDe": "Beirut",
-          "type": "Province",
-          "anchor": [
-            35.508,
-            33.888
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          }
-        },
-        {
-          "id": "LBN-3059",
-          "name": "Nabatieh",
-          "nameDe": "Nabatäa",
-          "type": "Province",
-          "anchor": [
-            35.512,
-            33.3
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "ISR-3058",
-          "name": "Jerusalem",
-          "nameDe": "Bezirk Jerusalem",
-          "type": "District",
-          "anchor": [
-            35.035,
-            31.753
-          ],
-          "count": 1,
-          "newCount": 0,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          }
+        },
+        {
+          "id": "IRN-3210",
+          "name": "Bushehr",
+          "nameDe": "Buschehr",
+          "type": "Province",
+          "anchor": [
+            51.381,
+            28.85
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           }
         }
       ],
       "items": [
         {
-          "title": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-11-south-lebanon-health-ministry-says",
-          "date": "2026-08-15T15:21:14.000Z",
+          "title": "Saudi Arabia condemns attack on UAE tankers in Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-condemns-attack-uae-tankers-hormuz",
+          "date": "2026-08-15T01:36:03.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​ We earlier reported that Israeli attacks had killed nine people in southern Lebanon. Lebanon's health ministry now says at least 11 people were killed in Israeli strikes in southern Lebanon on Saturday. Seven people were killed when Israeli warplanes struck a house in the southern town of Ansar, while four others were kill",
+          "summary": "Saudi Arabia condemns attack on UAE tankers in Hormuz Saudi Arabia's foreign ministry has strongly condemned an attack on two tankers belonging to the UAE’s oil giant ADNOC while transiting the Strait of Hormuz. In a statement, the ministry said that “the recurrence of these attacks constitutes a dangerous escalation and a direct threat to the security and safety of maritime navigation and global ",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
-          "score": 29
+          "score": 22
         },
         {
-          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
-          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
-          "date": "2026-08-15T15:29:52.000Z",
-          "source": "France 24",
+          "title": "Did the US really destroy Iran’s ballistic missile capability?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
+          "date": "2026-08-15T03:52:08.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
+          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           },
           "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           },
-          "score": 28
+          "score": 22
         },
         {
-          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
-          "date": "2026-08-15T14:19:13.000Z",
+          "title": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uaes-adnoc-says-one-its-vessels-came-under-attack-while-transiting",
+          "date": "2026-08-14T22:33:53.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "summary": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz UAE's Abu Dhabi National Oil Company said on Saturday that one of its vessels came under attack while transiting the Strait of Hormuz a day earlier. The state oil company said no injuries were reported, with the situation now under control.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
-          "score": 28
+          "score": 22
         },
         {
-          "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
-          "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-15T16:02:49.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as earlier action against its soldiers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
-          "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
-          "date": "2026-08-15T13:55:28.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Rescue services search for survivors and bodies after airstrikes hit homes in Ansar and Deir al-Zahrani Eleven people have been killed, including three children, and 19 injured in two Israeli airstrikes on southern Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar, killing",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 27
-        },
-        {
-          "title": "Lebanon says 11 killed in Israeli airstrikes",
-          "url": "https://www.dw.com/en/lebanon-says-11-killed-in-israeli-airstrikes/a-78383713?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-15T15:35:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Lebanon's prime minister denounced the attacks on villages in southern Lebanon for targeting civilians in their homes. Israel said it was firing on Hezbollah infrastructure.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-pilot-zones-withdrawal-paper-continued-occupation-south-lebanon",
-          "date": "2026-08-15T15:58:42.000Z",
+          "title": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-has-lost-roughly-25-percent-its-reaper-drones-iran-war-report",
+          "date": "2026-08-14T21:19:23.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon At the entrance to Zawtar al-Gharbiyeh, a village in southern&nbsp; Lebanon , a Lebanese Army checkpoint marks the edge of what is now officially known as a \"pilot zone\". It is one of three villages - along with Froun and Srifa - designated as such under the framework agreement between&nbsp; Israel , the United Stat",
+          "summary": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report The US-Israeli war on Iran has depleted or destroyed more than $1.3bn worth of the US's MQ-9 Reaper drones, roughly translating to 25 percent of the country's pre-war fleet of unmanned aerial vehicles, according to a report by The Washington Post published on Friday. The report underscores how Iran's air defences have continue",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
+          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
+          "date": "2026-08-15T11:30:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 19
+        },
+        {
+          "title": "Iran resumes flights at Bandar Abbas airport after wartime disruptions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-resumes-flights-bandar-abbas-airport-after-wartime-disruptions",
+          "date": "2026-08-15T17:45:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran resumes flights at Bandar Abbas airport after wartime disruptions Flights at the port city of Bandar Abbas resumed on Saturday after repeated interruptions during war with the United States, state media reported. Kazem Tavassoli, director general of airports in Hormozgan province, said \"scheduled flights at Bandar Abbas International Airport on high-traffic domestic routes resumed today, acco",
           "isNew": true,
           "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
+            "id": "IRN-3228",
+            "name": "Hormozgan",
+            "nameDe": "Hormozgan",
             "type": "Province",
             "anchor": [
-              35.368,
-              33.36
+              56.242,
+              27.12
             ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 27
-        },
-        {
-          "title": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate",
-          "url": "https://www.middleeasteye.net/news/deadly-israeli-strikes-kill-nine-southern-lebanon-tensions-escalate",
-          "date": "2026-08-15T13:40:59.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate Submitted by MEE staff on Sat, 08/15/2026 - 13:49 Prime Minister Nawaf Salam says civilians killed in the town of Ansar were 'not military infrastructure' A man watches as heavy machinery, first responders and residents search the site of an Israeli air strike in Deir al-Zahrani, southern Lebanon, on 15 August 2026 (Abbas Fa",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "'We're seeing an important escalation in southern Lebanon despite the so-called truce'",
-          "url": "https://www.france24.com/en/we-re-seeing-an-important-escalation-in-southern-lebanon-despite-the-so-called-truce",
-          "date": "2026-08-15T09:59:22.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Overnight Israeli strikes in southern Lebanon killed at least seven people in one village, in the deadliest escalation since the lull in fighting began two months ago. FRANCE 24 correspondent Renée Davis, reporting from Beirut, says the strikes mark a significant escalation despite the so-called truce, and also gives us an update on ongoing negotiations with Israel.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3024",
-            "name": "Beirut",
-            "nameDe": "Beirut",
-            "type": "Province",
-            "anchor": [
-              35.508,
-              33.888
-            ],
-            "matched": "Beirut"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 24
-        },
-        {
-          "title": "Israeli attacks kill nine people in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-nine-people-southern-lebanon",
-          "date": "2026-08-15T10:45:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli attacks kill nine people in southern Lebanon The Israeli military has killed two people and injured nine in an attack on Deir ez-Zahrani, a village in southern Lebanon, according to the Lebanese health ministry. Earlier, Israeli warplanes killed seven people in a strike on a house on the outskirts of Ansar village in southern Lebanon, local media reported. The Israeli military confirmed it",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
-          "title": "At scene of deadly Israeli strike on Lebanon home",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/at-scene-of-deadly-israeli-strike-on-lebanon-home?traffic_source=rss",
-          "date": "2026-08-15T10:18:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "An overnight Israeli strike on a family home in Ansar, southern Lebanon, killed at least seven people.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 23
-        },
-        {
-          "title": "Seven people killed in Israeli air attacks on southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-killed-israeli-air-attacks-southern-lebanon",
-          "date": "2026-08-15T05:26:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Seven people killed in Israeli air attacks on southern Lebanon Seven people were killed following an Israeli air strike on the town of Ansar in southern Lebanon early Saturday morning, according to the country’s civil defence. Israeli jets struck the outskirts of Ansar in the Nabatieh district, as well as the vicinity of Nabatieh al-Fawqa, Quds News Network reported earlier. At dawn, Israeli troop",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3059",
-            "name": "Nabatieh",
-            "nameDe": "Nabatäa",
-            "type": "Province",
-            "anchor": [
-              35.512,
-              33.3
-            ],
-            "matched": "Nabatieh"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
-          "title": "Israeli strikes kill 11 in southern Lebanon as attacks intensify",
-          "url": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss",
-          "date": "2026-08-15T07:18:13.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Hezbollah has warned that Israel’s attacks would be met with an 'appropriate response'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Mideast live: Hezbollah says Israeli attacks on Lebanon will be met with 'appropriate' response",
-          "url": "https://www.france24.com/en/middle-east/20260815-middle-east-live-trump-threatens-us-takeover-of-hormuz-as-iran-vows-to-retain-control",
-          "date": "2026-08-15T05:12:23.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Hezbollah said that Israeli attacks on Lebanon would be met with an \"appropriate\" response and urged Lebanese authorities to halt \"humiliating\" negotiations with Israel after strikes on the country's south killed at least 11 people Saturday. Follow our live blog for the latest updates.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops",
-          "url": "https://www.timesofisrael.com/liveblog-august-15-2026/",
-          "date": "2026-08-14T22:51:07.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "Military doesn't give details on terror group's attack * IDF troops join search and rescue ops in Colombia quake zone * Anan Khalaili signs with Crystal Palace in most expensive deal for an Israeli soccer player The post 9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Lebanon’s PM urges timetable for Israeli withdrawal as Hezbollah slams deal",
-          "url": "https://www.aljazeera.com/news/2026/8/14/lebanons-pm-urges-timetable-for-israeli-withdrawal-as-hezbollah-slams-deal?traffic_source=rss",
-          "date": "2026-08-14T23:02:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Hezbollah criticises Beirut’s approach, accusing officials of exposing the Lebanese army to risks and Israeli pressure.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3024",
-            "name": "Beirut",
-            "nameDe": "Beirut",
-            "type": "Province",
-            "anchor": [
-              35.508,
-              33.888
-            ],
-            "matched": "Beirut"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 22
-        },
-        {
-          "title": "Lebanon: UN peacekeepers count hundreds of Israeli strikes and incursions in a single weekend",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168108",
-          "date": "2026-08-10T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Israeli forces fired 455 projectiles into south Lebanon and breached Lebanese airspace 97 times between Friday and Sunday, the UN's peacekeeping mission in the country reported Monday – among the heaviest fire seen in months.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
+            "matched": "Hormozgan"
           },
           "event": {
             "type": "report",
@@ -3816,12 +3566,33 @@
           "score": 19
         },
         {
-          "title": "Hezbollah chief says Israel ‘only understands the language of force’",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-says-israel-only-understands-language-force",
-          "date": "2026-08-15T01:53:18.000Z",
+          "title": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T17:03:10.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Hezbollah chief says Israel ‘only understands the language of force’ Hezbollah’s secretary general, Sheikh Naim Qassem, said Israel’s 33-day war against Lebanon in 2006 has proved that “the occupying regime only understands the language of force”, Press TV reported. In a speech on the anniversary of Hezbollah’s “victory” against Israel in the 2006 war, Qassem said the 2006 war began after the capt",
+          "summary": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea The Iran war may be fought primarily remotely via the air, but its strategic outcome is increasingly being decided at sea.&nbsp; The latest strikes and counterstrikes have clarified rather than altered that central fact. Washington may escalate through a ground intervention, wider attacks on Iran’s critical infrastructure,",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
+          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
+          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
+          "date": "2026-08-15T14:26:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
           "isNew": false,
           "region": null,
           "event": {
@@ -3830,31 +3601,52 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
-          "score": 15
+          "score": 19
         },
         {
-          "title": "Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army",
-          "url": "https://www.timesofisrael.com/hezbollah-chief-says-lebanon-israel-deal-humiliates-the-nation-and-its-army/",
-          "date": "2026-08-14T19:34:22.000Z",
-          "source": "Times of Israel",
+          "title": "Trump signals plan to claim Hormuz ‘soon’",
+          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
+          "date": "2026-08-15T02:18:53.000Z",
+          "source": "Dawn (Pakistan)",
           "sourceType": "news",
-          "summary": "In speech marking anniversary of Second Lebanon War, Naim Qassem accuses Lebanese authorities of giving up on 'dignity,' signing off on whatever Jerusalem demands The post Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army appeared first on The Times of Israel .",
+          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
           "isNew": false,
           "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
             "anchor": [
-              35.035,
-              31.753
+              51.831,
+              35.568
             ],
-            "matched": "Jerusalem"
+            "matched": "Tehran"
           },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 19
+        },
+        {
+          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
+          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
+          "date": "2026-08-14T21:38:17.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
+          "isNew": false,
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -3865,15 +3657,67 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 15
+          "score": 17
         },
         {
-          "title": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-hezbollah-accuses-lebanons-government-targeting-resistance",
-          "date": "2026-08-14T17:22:28.000Z",
-          "source": "Middle East Eye",
+          "title": "Donald Trump to declare Hormuz US territory 'soon'",
+          "url": "https://www.dw.com/en/donald-trump-to-declare-hormuz-us-territory-soon/a-78377755?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-14T22:14:00.000Z",
+          "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report Hezbollah chief Naim Qassem accused the&nbsp;Lebanese authorities of \"targeting the resistance instead of targeting the enemy\" and failing to \"abide by agreements\", Al Jazeera reported. “The southern town of Mansouri is supposed to be liberated … not occupied … yet residents can’t return … what have the Leba",
+          "summary": "Donald Trump said the strait would become part of the US after Iran is defeated. He also told Americans to accept higher gas prices, which have soared since Iran closed Hormuz in response to US and Israeli attacks.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 17
+        },
+        {
+          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
+          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
+          "date": "2026-08-15T11:12:08.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3210",
+            "name": "Bushehr",
+            "nameDe": "Buschehr",
+            "type": "Province",
+            "anchor": [
+              51.381,
+              28.85
+            ],
+            "matched": "Persian Gulf"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 16
+        },
+        {
+          "title": "Trump says record Navy deployment in Iran operations 'not nearly long enough'",
+          "url": "https://www.france24.com/en/middle-east/20260814-trump-says-record-navy-deployment-in-iran-operations-not-nearly-long-enough",
+          "date": "2026-08-14T20:17:38.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "US President Donald Trump on Friday dismissed concerns about the toll on sailors aboard the aircraft carrier USS Abraham Lincoln, who have endured a record deployment of almost nine months, saying that the deployment had been “not nearly long enough”. The Lincoln has been supporting the US war against Iran, and reports have emerged of sailors struggling with mental health issues.",
           "isNew": false,
           "region": null,
           "event": {
@@ -3889,12 +3733,158 @@
           "score": 15
         },
         {
-          "title": "UN: Keep International Force in Lebanon to Protect Civilians",
-          "url": "https://reliefweb.int/report/lebanon/un-keep-international-force-lebanon-protect-civilians",
-          "date": "2026-08-14T01:39:40.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Lebanon, Israel Source: Human Rights Watch As UNIFIL Sets Exit, Attacks on Population, Mass Displacement Continue The United Nations Security Council should ensure that an international force remains in southern Lebanon to protect civilians and deter human rights abuses by the Israeli military and Hezbollah, Human Rights Watch said today. In August 2025, the Security Council unanimously",
+          "title": "Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’",
+          "url": "https://www.timesofisrael.com/trump-says-hell-hit-iran-hard-economically-will-soon-declare-hormuz-us-territory/",
+          "date": "2026-08-14T22:26:15.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "US president urges Americans to accept slightly higher gas prices for the 'great service' of preventing Iran from obtaining nuclear bomb, dismisses concerns about conditions aboard aircraft carrier The post Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’ appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
+          "title": "Iran war live: Trump vows to make Hormuz US territory ‘pretty soon’",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/15/iran-war-live-trump-vows-to-make-hormuz-us-territory-pretty-soon?traffic_source=rss",
+          "date": "2026-08-15T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US President Trump says that 'pretty soon' he will declare the Strait of Hormuz a US territory once Iran is defeated.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
+          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
+          "date": "2026-08-14T21:50:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Vance says low oil prices are top US goal in Iran conflict",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-says-low-oil-prices-are-top-us-goal-iran-conflict",
+          "date": "2026-08-14T21:44:35.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Vance says low oil prices are top US goal in Iran conflict Vice President JD Vance said on Thursday that the top US priority in the&nbsp;Iran&nbsp;war was keeping oil and gasoline prices low for Americans, with preventing Tehran from acquiring a nuclear weapon ranking second. The remarks contrasted with President Donald Trump's repeated framing of the fight: that entering the war had the sole obje",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "US to hit Iran hard economically, Trump says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-hit-iran-hard-economically-trump-says",
+          "date": "2026-08-14T19:44:39.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US to hit Iran hard economically, Trump says US President Donald Trump told Fox News on Friday that the United States will hit&nbsp;Iran&nbsp;hard economically, as Washington and Tehran struggle to reach a deal to end a nearly six-month war. His comments came a day after US Treasury Secretary Scott Bessent said the US would impose measures on Tehran that have \"never been seen\" as soon as next week",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
+          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
+          "date": "2026-08-13T09:45:56.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Benjamin Netanyahu describes UK as ‘first Islamic republic to get a nuclear weapon’",
+          "url": "https://www.theguardian.com/world/2026/aug/14/benjamin-netanyahu-describes-uk-first-islamic-republic-to-get-nuclear-weapon",
+          "date": "2026-08-14T12:00:42.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Israeli PM criticised by political rival for attacking an international ally and overseeing ‘horrific diplomatic failure’ The Israeli prime minister, Benjamin Netanyahu, called the UK “the Islamic republic of Britain” in a podcast interview, where he also described the country as the “first Islamic republic to get a nuclear weapon”. His comments, made during an interview for Israel’s army radio, p",
           "isNew": false,
           "region": null,
           "event": {
@@ -3910,12 +3900,12 @@
           "score": 12
         },
         {
-          "title": "Lebanon: Inter-Sector Coordination Group Minutes of Meeting - 7 August 2026",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-minutes-meeting-7-august-2026",
-          "date": "2026-08-13T12:03:21.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
+          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
+          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T21:21:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
           "isNew": false,
           "region": null,
           "event": {
@@ -3924,19 +3914,19 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 12
         },
         {
-          "title": "Lebanon Situation Analysis: [27/7/2026 -- 2/8/2026]",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-situation-analysis-2772026-282026",
-          "date": "2026-08-12T12:43:01.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: Data Friendly Space Please refer to the attached file. Executive Summary This Lebanon SituationHub report provides comprehensive situational analysis and actionable intelligence for humanitarian decision-makers responding to the ongoing crisis in Lebanon. The humanitarian situation in Lebanon requires coordinated, evidence-based response strategies. This SituationHub analy",
+          "title": "Romania Shuts Nuclear Reactor on Danube as Power Crisis Deepens",
+          "url": "https://balkaninsight.com/2026/08/13/romania-shuts-nuclear-reactor-on-danube-as-power-crisis-deepens/bi/",
+          "date": "2026-08-13T10:41:03.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Record low water levels in the River Danube force temporary shutdown of Romania’s last operating nuclear reactor, obliging the country to import more electricity.",
           "isNew": false,
           "region": null,
           "event": {
@@ -3949,15 +3939,57 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 9
+          "score": 12
         },
         {
-          "title": "Lebanon: Inter-Sector Coordination Group Meeting - 7 August 2026",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-meeting-7-august-2026",
-          "date": "2026-08-10T13:03:07.000Z",
+          "title": "Iran to join BRICS development bank soon, central bank chief says",
+          "url": "https://www.timesofisrael.com/iran-to-join-brics-development-bank-soon-central-bank-chief-says/",
+          "date": "2026-08-14T12:18:45.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "In bid to skirt US and international sanctions, Islamic Republic seeks to build on its 2024 accession to bloc formed by Brazil, Russia, India, China and South Africa The post Iran to join BRICS development bank soon, central bank chief says appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-13T19:46:27.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran: UNHCR Middle East Situation: Emergency Update #22 as of 6 August 2026",
+          "url": "https://reliefweb.int/report/iran-islamic-republic/unhcr-middle-east-situation-emergency-update-22-6-august-2026",
+          "date": "2026-08-09T14:03:08.000Z",
           "source": "ReliefWeb (UN OCHA)",
           "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
+          "summary": "Countries: Iran (Islamic Republic of), Afghanistan, Armenia, Iraq, Lebanon, Pakistan, Syrian Arab Republic, Türkiye Source: UN High Commissioner for Refugees Please refer to the attached file. SITUATION OVERVIEW REGIONAL CONTEXT Since late February 2026, hostilities in Iran and Lebanon have caused significant harm for civilians directly affected, while generating humanitarian consequences and elev",
           "isNew": false,
           "region": null,
           "event": {
@@ -3971,93 +4003,9 @@
             "label": "Vertreibung"
           },
           "score": 9
-        },
-        {
-          "title": "Lebanon: Flash Update #49 - Escalation of hostilities in Lebanon (as of 10 August 2026)",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-flash-update-49-escalation-hostilities-lebanon-10-august-2026",
-          "date": "2026-08-12T12:16:15.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. HIGHLIGHTS At least 4,335 deaths and 12,277 injuries recorded due to hostilities since 2 March, with 355 people killed and 276 injured since the 19 June ceasefire announcement, according to the Ministry of Public Health. 352,793 people remain displaced within Lebanon as of 6 August, w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 0
-        },
-        {
-          "title": "Lebanon: Conflict Intensity Snapshot (2 March - 10 August 2026)",
-          "url": "https://reliefweb.int/map/lebanon/lebanon-conflict-intensity-snapshot-2-march-10-august-2026",
-          "date": "2026-08-11T10:00:32.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Map.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 0
-        },
-        {
-          "title": "Lebanon · Emergency Rapid Needs Assessment (ERNA) – Lessons Learnt Consolidated Findings Report 2026",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-emergency-rapid-needs-assessment-erna-lessons-learnt-consolidated-findings-report-2026",
-          "date": "2026-08-10T11:03:16.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file. Executive Summary The picture is consistent across groups and sectors. Partners were broadly positive about how the ERNA was run - coordination, communication and the standardized tools were praised by a large majority - but were near-unanimous that the exercise was not rapid enough. The dominant concern ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        },
-        {
-          "title": "Lebanon Response Plan (LRP) and Flash Appeal (FA) 2026 January to June Funding Update (As of 30th June 2026)",
-          "url": "https://reliefweb.int/report/lebanon/lebanon-response-plan-lrp-and-flash-appeal-fa-2026-january-june-funding-update-30th-june-2026",
-          "date": "2026-08-10T10:03:16.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
         }
       ],
-      "itemCount": 28
+      "itemCount": 25
     },
     {
       "id": "sudan",
@@ -4939,219 +4887,148 @@
       "itemCount": 30
     },
     {
-      "id": "iran-israel",
-      "name": "Iran–Israel",
-      "nameEn": "Iran–Israel",
+      "id": "lebanon-hezbollah",
+      "name": "Israel–Libanon / Hisbollah",
+      "nameEn": "Israel–Hezbollah",
       "region": "Naher Osten",
       "countries": [
-        "Iran"
+        "Lebanon"
       ],
-      "lat": 32.4,
-      "lon": 53.7,
+      "lat": 33.6,
+      "lon": 35.5,
       "tier": "high",
-      "since": "Schattenkrieg / offene Schläge 2024–2025",
+      "since": "Oktober 2023 / Eskalation 2024",
       "parties": [
-        "Iran/IRGC",
         "Israel",
-        "USA"
+        "Hisbollah",
+        "Libanesische Armee",
+        "UNIFIL"
       ],
-      "background": "Direkte Schlagabtausche 2024/2025 lösten den früheren Schattenkrieg ab; Streit um das Atomprogramm, Sanktionen und Irans regionale Achse.",
+      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
       "hotspots": [
-        "Natanz",
-        "Fordo",
-        "Isfahan",
-        "Straße von Hormus"
+        "Südlibanon",
+        "Beirut/Dahiyeh",
+        "Bekaa-Ebene"
       ],
-      "activity": 92,
-      "severity": 66,
+      "activity": 99,
+      "severity": 68,
       "newCount": 0,
       "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 14
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 6
+        },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 3
+          "count": 6
         },
         {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 1
+          "count": 4
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
+          "count": 4
         }
       ],
       "acled": null,
       "briefing": null,
-      "iso3": "IRN",
+      "iso3": "LBN",
       "extraCountries": [
         "ISR"
       ],
       "regions": [
         {
-          "id": "IRN-3216",
-          "name": "Tehran",
-          "nameDe": "Teheran",
+          "id": "LBN-3060",
+          "name": "South",
+          "nameDe": "Gouvernement Süd-Libanon",
           "type": "Province",
           "anchor": [
-            51.831,
-            35.568
+            35.368,
+            33.36
           ],
-          "count": 3,
+          "count": 2,
           "newCount": 0,
           "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           }
         },
         {
-          "id": "IRN-3210",
-          "name": "Bushehr",
-          "nameDe": "Buschehr",
+          "id": "LBN-3024",
+          "name": "Beirut",
+          "nameDe": "Beirut",
           "type": "Province",
           "anchor": [
-            51.381,
-            28.85
+            35.508,
+            33.888
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          }
+        },
+        {
+          "id": "LBN-3059",
+          "name": "Nabatieh",
+          "nameDe": "Nabatäa",
+          "type": "Province",
+          "anchor": [
+            35.512,
+            33.3
           ],
           "count": 1,
           "newCount": 0,
           "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "ISR-3058",
+          "name": "Jerusalem",
+          "nameDe": "Bezirk Jerusalem",
+          "type": "District",
+          "anchor": [
+            35.035,
+            31.753
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         }
       ],
       "items": [
         {
-          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
-          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
-          "date": "2026-08-15T11:30:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 22
-        },
-        {
-          "title": "Saudi Arabia condemns attack on UAE tankers in Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-condemns-attack-uae-tankers-hormuz",
-          "date": "2026-08-15T01:36:03.000Z",
+          "title": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-11-south-lebanon-health-ministry-says",
+          "date": "2026-08-15T15:21:14.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Saudi Arabia condemns attack on UAE tankers in Hormuz Saudi Arabia's foreign ministry has strongly condemned an attack on two tankers belonging to the UAE’s oil giant ADNOC while transiting the Strait of Hormuz. In a statement, the ministry said that “the recurrence of these attacks constitutes a dangerous escalation and a direct threat to the security and safety of maritime navigation and global ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Did the US really destroy Iran’s ballistic missile capability?",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
-          "date": "2026-08-15T03:52:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uaes-adnoc-says-one-its-vessels-came-under-attack-while-transiting",
-          "date": "2026-08-14T22:33:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz UAE's Abu Dhabi National Oil Company said on Saturday that one of its vessels came under attack while transiting the Strait of Hormuz a day earlier. The state oil company said no injuries were reported, with the situation now under control.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-has-lost-roughly-25-percent-its-reaper-drones-iran-war-report",
-          "date": "2026-08-14T21:19:23.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US has lost roughly 25 percent of its Reaper drones in Iran war: Report The US-Israeli war on Iran has depleted or destroyed more than $1.3bn worth of the US's MQ-9 Reaper drones, roughly translating to 25 percent of the country's pre-war fleet of unmanned aerial vehicles, according to a report by The Washington Post published on Friday. The report underscores how Iran's air defences have continue",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "How Iran and Ukraine are strategically sinking their rivals at sea",
-          "url": "https://www.middleeasteye.net/opinion/how-iran-and-ukraine-are-strategically-sinking-their-rivals-sea",
-          "date": "2026-08-15T14:26:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "How Iran and Ukraine are strategically sinking their rivals at sea Submitted by Omar Ashour on Mon, 07/06/2026 - 20:54 Through a combination of tactics, both countries have managed to keep superior fleets at bay, dealing significant blows to the US and Russia Images released by Ukrainian authorities in November 2025 show what they say are sea drone attacks on oil tankers in the Black Sea (Security",
+          "summary": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​ We earlier reported that Israeli attacks had killed nine people in southern Lebanon. Lebanon's health ministry now says at least 11 people were killed in Israeli strikes in southern Lebanon on Saturday. Seven people were killed when Israeli warplanes struck a house in the southern town of Ansar, while four others were kill",
           "isNew": false,
           "region": null,
           "event": {
@@ -5160,218 +5037,385 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
-          "score": 19
+          "score": 29
         },
         {
-          "title": "Trump signals plan to claim Hormuz ‘soon’",
-          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
-          "date": "2026-08-15T02:18:53.000Z",
-          "source": "Dawn (Pakistan)",
+          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
+          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
+          "date": "2026-08-15T15:29:52.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
+          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
           "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
+          "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
-          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
-          "date": "2026-08-15T11:12:08.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3210",
-            "name": "Bushehr",
-            "nameDe": "Buschehr",
-            "type": "Province",
-            "anchor": [
-              51.381,
-              28.85
-            ],
-            "matched": "Persian Gulf"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "regionEvent": {
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 19
+          "score": 28
         },
         {
-          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
-          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
-          "date": "2026-08-14T21:38:17.000Z",
+          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
+          "date": "2026-08-15T14:19:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 28
+        },
+        {
+          "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
+          "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-15T16:02:49.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as earlier action against its soldiers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
+          "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
+          "date": "2026-08-15T13:55:28.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
+          "summary": "Rescue services search for survivors and bodies after airstrikes hit homes in Ansar and Deir al-Zahrani Eleven people have been killed, including three children, and 19 injured in two Israeli airstrikes on southern Lebanon, the worst toll since deals in June brought a lull in hostilities between Israel and Hezbollah. Israeli warplanes bombed a home on the outskirts of the village of Ansar, killing",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 17
-        },
-        {
-          "title": "Donald Trump to declare Hormuz US territory 'soon'",
-          "url": "https://www.dw.com/en/donald-trump-to-declare-hormuz-us-territory-soon/a-78377755?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-14T22:14:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Donald Trump said the strait would become part of the US after Iran is defeated. He also told Americans to accept higher gas prices, which have soared since Iran closed Hormuz in response to US and Israeli attacks.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 17
-        },
-        {
-          "title": "Trump says record Navy deployment in Iran operations 'not nearly long enough'",
-          "url": "https://www.france24.com/en/middle-east/20260814-trump-says-record-navy-deployment-in-iran-operations-not-nearly-long-enough",
-          "date": "2026-08-14T20:17:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "US President Donald Trump on Friday dismissed concerns about the toll on sailors aboard the aircraft carrier USS Abraham Lincoln, who have endured a record deployment of almost nine months, saying that the deployment had been “not nearly long enough”. The Lincoln has been supporting the US war against Iran, and reports have emerged of sailors struggling with mental health issues.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’",
-          "url": "https://www.timesofisrael.com/trump-says-hell-hit-iran-hard-economically-will-soon-declare-hormuz-us-territory/",
-          "date": "2026-08-14T22:26:15.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "US president urges Americans to accept slightly higher gas prices for the 'great service' of preventing Iran from obtaining nuclear bomb, dismisses concerns about conditions aboard aircraft carrier The post Trump says he’ll hit Iran hard economically, will soon declare Hormuz ‘US territory’ appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran war live: Trump vows to make Hormuz US territory ‘pretty soon’",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/15/iran-war-live-trump-vows-to-make-hormuz-us-territory-pretty-soon?traffic_source=rss",
-          "date": "2026-08-15T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US President Trump says that 'pretty soon' he will declare the Strait of Hormuz a US territory once Iran is defeated.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
-          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
-          "date": "2026-08-14T21:50:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           },
           "regionEvent": {
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 15
+          "score": 27
         },
         {
-          "title": "Vance says low oil prices are top US goal in Iran conflict",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-says-low-oil-prices-are-top-us-goal-iran-conflict",
-          "date": "2026-08-14T21:44:35.000Z",
+          "title": "Lebanon says 11 killed in Israeli airstrikes",
+          "url": "https://www.dw.com/en/lebanon-says-11-killed-in-israeli-airstrikes/a-78383713?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-15T15:35:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Lebanon's prime minister denounced the attacks on villages in southern Lebanon for targeting civilians in their homes. Israel said it was firing on Hezbollah infrastructure.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-pilot-zones-withdrawal-paper-continued-occupation-south-lebanon",
+          "date": "2026-08-15T15:58:42.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Vance says low oil prices are top US goal in Iran conflict Vice President JD Vance said on Thursday that the top US priority in the&nbsp;Iran&nbsp;war was keeping oil and gasoline prices low for Americans, with preventing Tehran from acquiring a nuclear weapon ranking second. The remarks contrasted with President Donald Trump's repeated framing of the fight: that entering the war had the sole obje",
+          "summary": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon At the entrance to Zawtar al-Gharbiyeh, a village in southern&nbsp; Lebanon , a Lebanese Army checkpoint marks the edge of what is now officially known as a \"pilot zone\". It is one of three villages - along with Froun and Srifa - designated as such under the framework agreement between&nbsp; Israel , the United Stat",
           "isNew": false,
           "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
             "type": "Province",
             "anchor": [
-              51.831,
-              35.568
+              35.368,
+              33.36
             ],
-            "matched": "Tehran"
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 27
+        },
+        {
+          "title": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate",
+          "url": "https://www.middleeasteye.net/news/deadly-israeli-strikes-kill-nine-southern-lebanon-tensions-escalate",
+          "date": "2026-08-15T13:40:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate Submitted by MEE staff on Sat, 08/15/2026 - 13:49 Prime Minister Nawaf Salam says civilians killed in the town of Ansar were 'not military infrastructure' A man watches as heavy machinery, first responders and residents search the site of an Israeli air strike in Deir al-Zahrani, southern Lebanon, on 15 August 2026 (Abbas Fa",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "'We're seeing an important escalation in southern Lebanon despite the so-called truce'",
+          "url": "https://www.france24.com/en/we-re-seeing-an-important-escalation-in-southern-lebanon-despite-the-so-called-truce",
+          "date": "2026-08-15T09:59:22.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Overnight Israeli strikes in southern Lebanon killed at least seven people in one village, in the deadliest escalation since the lull in fighting began two months ago. FRANCE 24 correspondent Renée Davis, reporting from Beirut, says the strikes mark a significant escalation despite the so-called truce, and also gives us an update on ongoing negotiations with Israel.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3024",
+            "name": "Beirut",
+            "nameDe": "Beirut",
+            "type": "Province",
+            "anchor": [
+              35.508,
+              33.888
+            ],
+            "matched": "Beirut"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 24
+        },
+        {
+          "title": "Israeli attacks kill nine people in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-nine-people-southern-lebanon",
+          "date": "2026-08-15T10:45:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli attacks kill nine people in southern Lebanon The Israeli military has killed two people and injured nine in an attack on Deir ez-Zahrani, a village in southern Lebanon, according to the Lebanese health ministry. Earlier, Israeli warplanes killed seven people in a strike on a house on the outskirts of Ansar village in southern Lebanon, local media reported. The Israeli military confirmed it",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
+          "title": "At scene of deadly Israeli strike on Lebanon home",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/at-scene-of-deadly-israeli-strike-on-lebanon-home?traffic_source=rss",
+          "date": "2026-08-15T10:18:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "An overnight Israeli strike on a family home in Ansar, southern Lebanon, killed at least seven people.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 23
+        },
+        {
+          "title": "Seven people killed in Israeli air attacks on southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-killed-israeli-air-attacks-southern-lebanon",
+          "date": "2026-08-15T05:26:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Seven people killed in Israeli air attacks on southern Lebanon Seven people were killed following an Israeli air strike on the town of Ansar in southern Lebanon early Saturday morning, according to the country’s civil defence. Israeli jets struck the outskirts of Ansar in the Nabatieh district, as well as the vicinity of Nabatieh al-Fawqa, Quds News Network reported earlier. At dawn, Israeli troop",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3059",
+            "name": "Nabatieh",
+            "nameDe": "Nabatäa",
+            "type": "Province",
+            "anchor": [
+              35.512,
+              33.3
+            ],
+            "matched": "Nabatieh"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli strikes kill 11 in southern Lebanon as attacks intensify",
+          "url": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss",
+          "date": "2026-08-15T07:18:13.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Hezbollah has warned that Israel’s attacks would be met with an 'appropriate response'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Mideast live: Hezbollah says Israeli attacks on Lebanon will be met with 'appropriate' response",
+          "url": "https://www.france24.com/en/middle-east/20260815-middle-east-live-trump-threatens-us-takeover-of-hormuz-as-iran-vows-to-retain-control",
+          "date": "2026-08-15T05:12:23.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Hezbollah said that Israeli attacks on Lebanon would be met with an \"appropriate\" response and urged Lebanese authorities to halt \"humiliating\" negotiations with Israel after strikes on the country's south killed at least 11 people Saturday. Follow our live blog for the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops",
+          "url": "https://www.timesofisrael.com/liveblog-august-15-2026/",
+          "date": "2026-08-14T22:51:07.000Z",
+          "source": "Times of Israel",
+          "sourceType": "news",
+          "summary": "Military doesn't give details on terror group's attack * IDF troops join search and rescue ops in Colombia quake zone * Anan Khalaili signs with Crystal Palace in most expensive deal for an Israeli soccer player The post 9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Lebanon’s PM urges timetable for Israeli withdrawal as Hezbollah slams deal",
+          "url": "https://www.aljazeera.com/news/2026/8/14/lebanons-pm-urges-timetable-for-israeli-withdrawal-as-hezbollah-slams-deal?traffic_source=rss",
+          "date": "2026-08-14T23:02:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Hezbollah criticises Beirut’s approach, accusing officials of exposing the Lebanese army to risks and Israeli pressure.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3024",
+            "name": "Beirut",
+            "nameDe": "Beirut",
+            "type": "Province",
+            "anchor": [
+              35.508,
+              33.888
+            ],
+            "matched": "Beirut"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 22
+        },
+        {
+          "title": "Lebanon: UN peacekeepers count hundreds of Israeli strikes and incursions in a single weekend",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168108",
+          "date": "2026-08-10T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Israeli forces fired 455 projectiles into south Lebanon and breached Lebanese airspace 97 times between Friday and Sunday, the UN's peacekeeping mission in the country reported Monday – among the heaviest fire seen in months.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
           },
           "event": {
             "type": "report",
@@ -5383,46 +5427,15 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 15
+          "score": 19
         },
         {
-          "title": "US to hit Iran hard economically, Trump says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-hit-iran-hard-economically-trump-says",
-          "date": "2026-08-14T19:44:39.000Z",
+          "title": "Hezbollah chief says Israel ‘only understands the language of force’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-says-israel-only-understands-language-force",
+          "date": "2026-08-15T01:53:18.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "US to hit Iran hard economically, Trump says US President Donald Trump told Fox News on Friday that the United States will hit&nbsp;Iran&nbsp;hard economically, as Washington and Tehran struggle to reach a deal to end a nearly six-month war. His comments came a day after US Treasury Secretary Scott Bessent said the US would impose measures on Tehran that have \"never been seen\" as soon as next week",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
-          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
-          "date": "2026-08-13T09:45:56.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
+          "summary": "Hezbollah chief says Israel ‘only understands the language of force’ Hezbollah’s secretary general, Sheikh Naim Qassem, said Israel’s 33-day war against Lebanon in 2006 has proved that “the occupying regime only understands the language of force”, Press TV reported. In a speech on the anniversary of Hezbollah’s “victory” against Israel in the 2006 war, Qassem said the 2006 war began after the capt",
           "isNew": false,
           "region": null,
           "event": {
@@ -5435,15 +5448,46 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 12
+          "score": 15
         },
         {
-          "title": "Benjamin Netanyahu describes UK as ‘first Islamic republic to get a nuclear weapon’",
-          "url": "https://www.theguardian.com/world/2026/aug/14/benjamin-netanyahu-describes-uk-first-islamic-republic-to-get-nuclear-weapon",
-          "date": "2026-08-14T12:00:42.000Z",
-          "source": "The Guardian World",
+          "title": "Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army",
+          "url": "https://www.timesofisrael.com/hezbollah-chief-says-lebanon-israel-deal-humiliates-the-nation-and-its-army/",
+          "date": "2026-08-14T19:34:22.000Z",
+          "source": "Times of Israel",
           "sourceType": "news",
-          "summary": "Israeli PM criticised by political rival for attacking an international ally and overseeing ‘horrific diplomatic failure’ The Israeli prime minister, Benjamin Netanyahu, called the UK “the Islamic republic of Britain” in a podcast interview, where he also described the country as the “first Islamic republic to get a nuclear weapon”. His comments, made during an interview for Israel’s army radio, p",
+          "summary": "In speech marking anniversary of Second Lebanon War, Naim Qassem accuses Lebanese authorities of giving up on 'dignity,' signing off on whatever Jerusalem demands The post Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army appeared first on The Times of Israel .",
+          "isNew": false,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "UN: Keep International Force in Lebanon to Protect Civilians",
+          "url": "https://reliefweb.int/report/lebanon/un-keep-international-force-lebanon-protect-civilians",
+          "date": "2026-08-14T01:39:40.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Lebanon, Israel Source: Human Rights Watch As UNIFIL Sets Exit, Attacks on Population, Mass Displacement Continue The United Nations Security Council should ensure that an international force remains in southern Lebanon to protect civilians and deter human rights abuses by the Israeli military and Hezbollah, Human Rights Watch said today. In August 2025, the Security Council unanimously",
           "isNew": false,
           "region": null,
           "event": {
@@ -5459,96 +5503,75 @@
           "score": 12
         },
         {
-          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
-          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T21:21:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Romania Shuts Nuclear Reactor on Danube as Power Crisis Deepens",
-          "url": "https://balkaninsight.com/2026/08/13/romania-shuts-nuclear-reactor-on-danube-as-power-crisis-deepens/bi/",
-          "date": "2026-08-13T10:41:03.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Record low water levels in the River Danube force temporary shutdown of Romania’s last operating nuclear reactor, obliging the country to import more electricity.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Iran to join BRICS development bank soon, central bank chief says",
-          "url": "https://www.timesofisrael.com/iran-to-join-brics-development-bank-soon-central-bank-chief-says/",
-          "date": "2026-08-14T12:18:45.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "In bid to skirt US and international sanctions, Islamic Republic seeks to build on its 2024 accession to bloc formed by Brazil, Russia, India, China and South Africa The post Iran to join BRICS development bank soon, central bank chief says appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
-          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-13T19:46:27.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iran: UNHCR Middle East Situation: Emergency Update #22 as of 6 August 2026",
-          "url": "https://reliefweb.int/report/iran-islamic-republic/unhcr-middle-east-situation-emergency-update-22-6-august-2026",
-          "date": "2026-08-09T14:03:08.000Z",
+          "title": "Lebanon: Inter-Sector Coordination Group Minutes of Meeting - 7 August 2026",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-minutes-meeting-7-august-2026",
+          "date": "2026-08-13T12:03:21.000Z",
           "source": "ReliefWeb (UN OCHA)",
           "sourceType": "humanitarian",
-          "summary": "Countries: Iran (Islamic Republic of), Afghanistan, Armenia, Iraq, Lebanon, Pakistan, Syrian Arab Republic, Türkiye Source: UN High Commissioner for Refugees Please refer to the attached file. SITUATION OVERVIEW REGIONAL CONTEXT Since late February 2026, hostilities in Iran and Lebanon have caused significant harm for civilians directly affected, while generating humanitarian consequences and elev",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-hezbollah-accuses-lebanons-government-targeting-resistance",
+          "date": "2026-08-14T17:22:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report Hezbollah chief Naim Qassem accused the&nbsp;Lebanese authorities of \"targeting the resistance instead of targeting the enemy\" and failing to \"abide by agreements\", Al Jazeera reported. “The southern town of Mansouri is supposed to be liberated … not occupied … yet residents can’t return … what have the Leba",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Lebanon Situation Analysis: [27/7/2026 -- 2/8/2026]",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-situation-analysis-2772026-282026",
+          "date": "2026-08-12T12:43:01.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: Data Friendly Space Please refer to the attached file. Executive Summary This Lebanon SituationHub report provides comprehensive situational analysis and actionable intelligence for humanitarian decision-makers responding to the ongoing crisis in Lebanon. The humanitarian situation in Lebanon requires coordinated, evidence-based response strategies. This SituationHub analy",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Lebanon: Inter-Sector Coordination Group Meeting - 7 August 2026",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-inter-sector-coordination-group-meeting-7-august-2026",
+          "date": "2026-08-10T13:03:07.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file.",
           "isNew": false,
           "region": null,
           "event": {
@@ -5562,9 +5585,93 @@
             "label": "Vertreibung"
           },
           "score": 9
+        },
+        {
+          "title": "Lebanon: Flash Update #49 - Escalation of hostilities in Lebanon (as of 10 August 2026)",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-flash-update-49-escalation-hostilities-lebanon-10-august-2026",
+          "date": "2026-08-12T12:16:15.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. HIGHLIGHTS At least 4,335 deaths and 12,277 injuries recorded due to hostilities since 2 March, with 355 people killed and 276 injured since the 19 June ceasefire announcement, according to the Ministry of Public Health. 352,793 people remain displaced within Lebanon as of 6 August, w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 0
+        },
+        {
+          "title": "Lebanon: Conflict Intensity Snapshot (2 March - 10 August 2026)",
+          "url": "https://reliefweb.int/map/lebanon/lebanon-conflict-intensity-snapshot-2-march-10-august-2026",
+          "date": "2026-08-11T10:00:32.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Map.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 0
+        },
+        {
+          "title": "Lebanon · Emergency Rapid Needs Assessment (ERNA) – Lessons Learnt Consolidated Findings Report 2026",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-emergency-rapid-needs-assessment-erna-lessons-learnt-consolidated-findings-report-2026",
+          "date": "2026-08-10T11:03:16.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached file. Executive Summary The picture is consistent across groups and sectors. Partners were broadly positive about how the ERNA was run - coordination, communication and the standardized tools were praised by a large majority - but were near-unanimous that the exercise was not rapid enough. The dominant concern ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        },
+        {
+          "title": "Lebanon Response Plan (LRP) and Flash Appeal (FA) 2026 January to June Funding Update (As of 30th June 2026)",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-response-plan-lrp-and-flash-appeal-fa-2026-january-june-funding-update-30th-june-2026",
+          "date": "2026-08-10T10:03:16.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Lebanon Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
         }
       ],
-      "itemCount": 23
+      "itemCount": 28
     },
     {
       "id": "drc-m23",
@@ -5595,7 +5702,7 @@
       ],
       "activity": 32,
       "severity": 64,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "ceasefire",
@@ -5680,27 +5787,6 @@
           "score": 25
         },
         {
-          "title": "Former rebel fighters join campaign against Ebola in the DR Congo",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168146",
-          "date": "2026-08-15T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Demobilised former combatants are actively joining the fight against Ebola by participating in public information campaigns in the east of the Democratic Republic of the Congo (DRC).&nbsp;",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 22
-        },
-        {
           "title": "Joint statement on 6th meeting of the Joint Security Coordination Mechanism for the Peace Agreement between the Democratic Republic of the Congo and the Republic of Rwanda",
           "url": "http://thepeninsulaqatar.com/article/14/08/2026/joint-statement-on-6th-meeting-of-the-joint-security-coordination-mechanism-for-the-peace-agreement-between-the-democratic-republic-of-the-congo-and-the-republic-of-rwanda",
           "date": "2026-08-14T22:30:00.000Z",
@@ -5722,13 +5808,13 @@
           "score": 22
         },
         {
-          "title": "Former rebels join Ebola awareness campaign in eastern DRC – Channel Africa",
-          "url": "https://www.channelafrica.co.za/channelafrica/news/former-rebels-join-ebola-awareness-campaign-in-eastern-drc/",
-          "date": "2026-08-15T15:00:00.000Z",
-          "source": "channelafrica.co.za",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
+          "title": "Former rebel fighters join campaign against Ebola in the DR Congo",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168146",
+          "date": "2026-08-15T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Demobilised former combatants are actively joining the fight against Ebola by participating in public information campaigns in the east of the Democratic Republic of the Congo (DRC).&nbsp;",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "displacement",
@@ -5740,7 +5826,28 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 17
+          "score": 19
+        },
+        {
+          "title": "Former rebels join Ebola awareness campaign in eastern DRC – Channel Africa",
+          "url": "https://www.channelafrica.co.za/channelafrica/news/former-rebels-join-ebola-awareness-campaign-in-eastern-drc/",
+          "date": "2026-08-15T15:00:00.000Z",
+          "source": "channelafrica.co.za",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 18
         },
         {
           "title": "APO Group - Africa Newsroom / Press release | Former rebel fighters join campaign against Ebola in the Democratic Republic of the Congo ( DR Congo ) ",
@@ -5749,7 +5856,7 @@
           "source": "africa-newsroom.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "displacement",
@@ -5761,7 +5868,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 17
+          "score": 18
         },
         {
           "title": "DR Congo: Flambées épidémiques en Afrique, santé sous tension",
@@ -5880,307 +5987,6 @@
         }
       ],
       "itemCount": 10
-    },
-    {
-      "id": "myanmar",
-      "name": "Myanmar",
-      "nameEn": "Myanmar Civil War",
-      "region": "Asien (Südost)",
-      "countries": [
-        "Myanmar"
-      ],
-      "lat": 21,
-      "lon": 96,
-      "tier": "war",
-      "since": "Putsch 2021",
-      "parties": [
-        "Militärjunta (SAC)",
-        "NUG/PDF",
-        "Arakan Army",
-        "MNDAA",
-        "TNLA",
-        "KIA",
-        "Karen NU"
-      ],
-      "background": "Bürgerkrieg nach dem Putsch 2021: Widerstandsallianzen und ethnische Armeen kontrollieren große Gebiete; die Arakan Army dominiert Rakhine, Junta setzt auf Luftangriffe und Wahlen.",
-      "hotspots": [
-        "Rakhine",
-        "Shan-Staat",
-        "Kachin",
-        "Sagaing",
-        "Karen",
-        "Chin"
-      ],
-      "activity": 17,
-      "severity": 60,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 4
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MMR",
-      "extraCountries": [],
-      "regions": [
-        {
-          "id": "MMR-3266",
-          "name": "Kayin State",
-          "nameDe": "Kayin-Staat",
-          "type": "State",
-          "anchor": [
-            97.785,
-            17.155
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Myanmar: Mu Traw District Situation Update: The Burma Army conducted air strikes and shelling, planted landmines inside villages, and caused displacement and challenges in Lu Thaw Township (September 2025 to February 2026)",
-          "url": "https://reliefweb.int/report/myanmar/mu-traw-district-situation-update-burma-army-conducted-air-strikes-and-shelling-planted-landmines-inside-villages-and-caused-displacement-and-challenges-lu-thaw-township-september-2025-february-2026",
-          "date": "2026-08-14T07:03:18.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Myanmar Source: Karen Human Rights Group Please refer to the attached file. Burma Army shelling caused displacement and difficulties for villagers’ livelihoods Situations of fighting and conflict escalated because Burma Army2 soldiers increased their military operations near their army camps and frequently fired shells into villages that were located close their army camps. Shells explode",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3266",
-            "name": "Kayin State",
-            "nameDe": "Kayin-Staat",
-            "type": "State",
-            "anchor": [
-              97.785,
-              17.155
-            ],
-            "matched": "Karen"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "Myanmar: Doo Tha Htoo District Short Update: Burma Army shelling and air strikes caused injuries, destruction, and displacement in Hpa-an Township (January to April 2026)",
-          "url": "https://reliefweb.int/report/myanmar/doo-tha-htoo-district-short-update-burma-army-shelling-and-air-strikes-caused-injuries-destruction-and-displacement-hpa-township-january-april-2026",
-          "date": "2026-08-13T08:33:10.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Myanmar Source: Karen Human Rights Group Please refer to the attached file. This Short Update describes events occurring in Hpa-an Township, Doo Tha Htoo (Thaton) District during the period between January to April 2026. On 12 January 2026 and 19 March 2026, Burma Army Light Infantry Battalion (LIB) #202, based at Taung Ka Lay army camp, indiscriminately fired mortar shells into Tz--- and",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3266",
-            "name": "Kayin State",
-            "nameDe": "Kayin-Staat",
-            "type": "State",
-            "anchor": [
-              97.785,
-              17.155
-            ],
-            "matched": "Karen"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "Attacks on Health Care in Myanmar: 22 July - 04 August 2026",
-          "url": "https://reliefweb.int/report/myanmar/attacks-health-care-myanmar-22-july-04-august-2026",
-          "date": "2026-08-13T08:31:45.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Myanmar Source: Insecurity Insight Please refer to the attached file. Using data collected by Insecurity Insight, the Safeguarding Health in Conflict Coalition (SHCC) identified 259 incidents of violence against or obstruction of health care in Myanmar in 2025. Health facilities, including clinics, hospitals, pharmacies, and rural health centers, were reportedly damaged or destroyed on at",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
-        },
-        {
-          "title": "Myanmar: UN investigators document deliberate military attacks on civilians",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168110",
-          "date": "2026-08-11T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Myanmar's military has carried out a sustained campaign of deliberate attacks on civilians – including airstrikes on homes, schools and camps for displaced people, alongside arbitrary detention, torture and sexual violence – according to Human Rights Council-appointed investigators.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ex-Myanmar ambassador to UK on trial for trespassing in diplomatic residence",
-          "url": "https://www.theguardian.com/uk-news/2026/aug/12/ex-myanmar-ambassador-uk-kyaw-zwar-minn-trial-trespassing-diplomatic-residence",
-          "date": "2026-08-12T18:01:51.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Kyaw Zwar Minn was ousted for declaring loyalty to Aung San Suu Kyi after 2021 coup but refused to leave his home Myanmar’s ousted ambassador to the UK has gone on trial on trespassing charges for refusing to leave a diplomatic residence after being unceremoniously locked out of the embassy in 2021. Shortly after Myanmar’s military seized power in 2021, triggering mass protests that spiralled into",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 12
-        },
-        {
-          "title": "Mali: Mali Junta Pardons French Agent Jailed for 'Undermining State Security'",
-          "url": "https://allafrica.com/stories/202608140174.html",
-          "date": "2026-08-14T10:41:31.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[RFI] Mali's junta leader General Assimi Goïta has pardoned a French intelligence agent serving a 20-year prison sentence, a rare conciliatory move after years of strained relations between the west African nation and its former colonial ruler.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "EU steps up humanitarian aid for Myanmar by €10.5 million as conflict claims more than 100,000 lives",
-          "url": "https://reliefweb.int/report/myanmar/eu-steps-humanitarian-aid-myanmar-eur105-million-conflict-claims-more-100000-lives",
-          "date": "2026-08-13T10:33:05.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Myanmar Source: European Commission's Directorate-General for European Civil Protection and Humanitarian Aid Operations The European Union is providing an additional €10.5 million in humanitarian aid for people affected by the conflict in Myanmar. This brings EU humanitarian support for the country to €49.1 million in 2026. More than 100,000 lives have now been lost since the military cou",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Myanmar Situation Analysis: [27/7/2026 - 2/8/2026]",
-          "url": "https://reliefweb.int/report/myanmar/myanmar-situation-analysis-2772026-282026",
-          "date": "2026-08-11T16:33:00.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Myanmar Source: Data Friendly Space Please refer to the attached file. Executive Summary Myanmar faces a protracted humanitarian emergency characterized by widespread displacement, ongoing armed conflict, severe economic deterioration, and compounding natural disasters. The crisis demands sustained international attention and coordinated humanitarian response across multiple sectors. The ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Report of the Independent Investigative Mechanism for Myanmar* (A/HRC/63/19)",
-          "url": "https://reliefweb.int/report/myanmar/report-independent-investigative-mechanism-myanmar-ahrc6319",
-          "date": "2026-08-11T08:03:06.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Myanmar Source: UN Human Rights Council Please refer to the attached file. Report Myanmar Mechanism investigations reveal deliberate attacks on civilians by the Myanmar military – Annual Report Geneva, 11 August 2026 – Investigations by the Independent Investigative Mechanism for Myanmar (Mechanism), as detailed in its Annual Report released today, show a pattern of deliberate aerial atta",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 9
     },
     {
       "id": "sahel-mali",
@@ -6437,6 +6243,307 @@
         }
       ],
       "itemCount": 8
+    },
+    {
+      "id": "myanmar",
+      "name": "Myanmar",
+      "nameEn": "Myanmar Civil War",
+      "region": "Asien (Südost)",
+      "countries": [
+        "Myanmar"
+      ],
+      "lat": 21,
+      "lon": 96,
+      "tier": "war",
+      "since": "Putsch 2021",
+      "parties": [
+        "Militärjunta (SAC)",
+        "NUG/PDF",
+        "Arakan Army",
+        "MNDAA",
+        "TNLA",
+        "KIA",
+        "Karen NU"
+      ],
+      "background": "Bürgerkrieg nach dem Putsch 2021: Widerstandsallianzen und ethnische Armeen kontrollieren große Gebiete; die Arakan Army dominiert Rakhine, Junta setzt auf Luftangriffe und Wahlen.",
+      "hotspots": [
+        "Rakhine",
+        "Shan-Staat",
+        "Kachin",
+        "Sagaing",
+        "Karen",
+        "Chin"
+      ],
+      "activity": 15,
+      "severity": 59,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 4
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MMR",
+      "extraCountries": [],
+      "regions": [
+        {
+          "id": "MMR-3266",
+          "name": "Kayin State",
+          "nameDe": "Kayin-Staat",
+          "type": "State",
+          "anchor": [
+            97.785,
+            17.155
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Myanmar: Mu Traw District Situation Update: The Burma Army conducted air strikes and shelling, planted landmines inside villages, and caused displacement and challenges in Lu Thaw Township (September 2025 to February 2026)",
+          "url": "https://reliefweb.int/report/myanmar/mu-traw-district-situation-update-burma-army-conducted-air-strikes-and-shelling-planted-landmines-inside-villages-and-caused-displacement-and-challenges-lu-thaw-township-september-2025-february-2026",
+          "date": "2026-08-14T07:03:18.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Myanmar Source: Karen Human Rights Group Please refer to the attached file. Burma Army shelling caused displacement and difficulties for villagers’ livelihoods Situations of fighting and conflict escalated because Burma Army2 soldiers increased their military operations near their army camps and frequently fired shells into villages that were located close their army camps. Shells explode",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3266",
+            "name": "Kayin State",
+            "nameDe": "Kayin-Staat",
+            "type": "State",
+            "anchor": [
+              97.785,
+              17.155
+            ],
+            "matched": "Karen"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 19
+        },
+        {
+          "title": "Myanmar: Doo Tha Htoo District Short Update: Burma Army shelling and air strikes caused injuries, destruction, and displacement in Hpa-an Township (January to April 2026)",
+          "url": "https://reliefweb.int/report/myanmar/doo-tha-htoo-district-short-update-burma-army-shelling-and-air-strikes-caused-injuries-destruction-and-displacement-hpa-township-january-april-2026",
+          "date": "2026-08-13T08:33:10.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Myanmar Source: Karen Human Rights Group Please refer to the attached file. This Short Update describes events occurring in Hpa-an Township, Doo Tha Htoo (Thaton) District during the period between January to April 2026. On 12 January 2026 and 19 March 2026, Burma Army Light Infantry Battalion (LIB) #202, based at Taung Ka Lay army camp, indiscriminately fired mortar shells into Tz--- and",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3266",
+            "name": "Kayin State",
+            "nameDe": "Kayin-Staat",
+            "type": "State",
+            "anchor": [
+              97.785,
+              17.155
+            ],
+            "matched": "Karen"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 19
+        },
+        {
+          "title": "Attacks on Health Care in Myanmar: 22 July - 04 August 2026",
+          "url": "https://reliefweb.int/report/myanmar/attacks-health-care-myanmar-22-july-04-august-2026",
+          "date": "2026-08-13T08:31:45.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Myanmar Source: Insecurity Insight Please refer to the attached file. Using data collected by Insecurity Insight, the Safeguarding Health in Conflict Coalition (SHCC) identified 259 incidents of violence against or obstruction of health care in Myanmar in 2025. Health facilities, including clinics, hospitals, pharmacies, and rural health centers, were reportedly damaged or destroyed on at",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
+          "title": "Myanmar: UN investigators document deliberate military attacks on civilians",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168110",
+          "date": "2026-08-11T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Myanmar's military has carried out a sustained campaign of deliberate attacks on civilians – including airstrikes on homes, schools and camps for displaced people, alongside arbitrary detention, torture and sexual violence – according to Human Rights Council-appointed investigators.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Mali: Mali Junta Pardons French Agent Jailed for 'Undermining State Security'",
+          "url": "https://allafrica.com/stories/202608140174.html",
+          "date": "2026-08-14T10:41:31.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[RFI] Mali's junta leader General Assimi Goïta has pardoned a French intelligence agent serving a 20-year prison sentence, a rare conciliatory move after years of strained relations between the west African nation and its former colonial ruler.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "EU steps up humanitarian aid for Myanmar by €10.5 million as conflict claims more than 100,000 lives",
+          "url": "https://reliefweb.int/report/myanmar/eu-steps-humanitarian-aid-myanmar-eur105-million-conflict-claims-more-100000-lives",
+          "date": "2026-08-13T10:33:05.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Myanmar Source: European Commission's Directorate-General for European Civil Protection and Humanitarian Aid Operations The European Union is providing an additional €10.5 million in humanitarian aid for people affected by the conflict in Myanmar. This brings EU humanitarian support for the country to €49.1 million in 2026. More than 100,000 lives have now been lost since the military cou",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Ex-Myanmar ambassador to UK on trial for trespassing in diplomatic residence",
+          "url": "https://www.theguardian.com/uk-news/2026/aug/12/ex-myanmar-ambassador-uk-kyaw-zwar-minn-trial-trespassing-diplomatic-residence",
+          "date": "2026-08-12T18:01:51.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Kyaw Zwar Minn was ousted for declaring loyalty to Aung San Suu Kyi after 2021 coup but refused to leave his home Myanmar’s ousted ambassador to the UK has gone on trial on trespassing charges for refusing to leave a diplomatic residence after being unceremoniously locked out of the embassy in 2021. Shortly after Myanmar’s military seized power in 2021, triggering mass protests that spiralled into",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 9
+        },
+        {
+          "title": "Myanmar Situation Analysis: [27/7/2026 - 2/8/2026]",
+          "url": "https://reliefweb.int/report/myanmar/myanmar-situation-analysis-2772026-282026",
+          "date": "2026-08-11T16:33:00.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Myanmar Source: Data Friendly Space Please refer to the attached file. Executive Summary Myanmar faces a protracted humanitarian emergency characterized by widespread displacement, ongoing armed conflict, severe economic deterioration, and compounding natural disasters. The crisis demands sustained international attention and coordinated humanitarian response across multiple sectors. The ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Report of the Independent Investigative Mechanism for Myanmar* (A/HRC/63/19)",
+          "url": "https://reliefweb.int/report/myanmar/report-independent-investigative-mechanism-myanmar-ahrc6319",
+          "date": "2026-08-11T08:03:06.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Myanmar Source: UN Human Rights Council Please refer to the attached file. Report Myanmar Mechanism investigations reveal deliberate attacks on civilians by the Myanmar military – Annual Report Geneva, 11 August 2026 – Investigations by the Independent Investigative Mechanism for Myanmar (Mechanism), as detailed in its Annual Report released today, show a pattern of deliberate aerial atta",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 9
+        }
+      ],
+      "itemCount": 9
     },
     {
       "id": "haiti",
@@ -6751,9 +6858,9 @@
         "Est",
         "Ouagadougou"
       ],
-      "activity": 2,
-      "severity": 55,
-      "newCount": 0,
+      "activity": 6,
+      "severity": 56,
+      "newCount": 1,
       "signals": [
         {
           "key": "displacement",
@@ -6786,6 +6893,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Burkina Faso imposes military training on journalists",
+          "url": "https://www.africanews.com/2026/08/15/burkina-faso-imposes-military-training-on-journalists/",
+          "date": "2026-08-15T14:30:00.000Z",
+          "source": "africanews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
         {
           "title": "Burkina Faso: Key Message Update - Start of agricultural season marked by late and erratic rainfall onset, July 2026 - January 2027",
           "url": "https://reliefweb.int/report/burkina-faso/burkina-faso-key-message-update-start-agricultural-season-marked-late-and-erratic-rainfall-onset-july-2026-january-2027",
@@ -6839,7 +6967,7 @@
           "score": 0
         }
       ],
-      "itemCount": 2
+      "itemCount": 3
     },
     {
       "id": "yemen",
@@ -6869,7 +6997,7 @@
       ],
       "activity": 50,
       "severity": 54,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -6958,7 +7086,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Yemen's Mocha port suspends operations after Houthi attacks Yemen's Mocha port has suspended commercial and maritime operations after being hit by more than 25 missiles in Houthi attacks in recent days, the port's director said on Saturday. The attacks killed seven people and caused an estimated $16m in losses, the director told a news conference.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -7377,7 +7505,7 @@
         "Arauca",
         "Chocó"
       ],
-      "activity": 51,
+      "activity": 50,
       "severity": 54,
       "newCount": 0,
       "signals": [
@@ -7458,7 +7586,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Govt raises petroleum dealers’ margin to Rs9.98 per litre",
@@ -8785,7 +8913,7 @@
         "Panjschir",
         "Kandahar"
       ],
-      "activity": 32,
+      "activity": 30,
       "severity": 48,
       "newCount": 0,
       "signals": [
@@ -8967,7 +9095,7 @@
             "icon": "🍽️",
             "label": "Hunger/Versorgung"
           },
-          "score": 12
+          "score": 9
         },
         {
           "title": "Five years after the Taliban takeover, the exclusion of women and girls in Afghanistan has been normalised",
@@ -9595,7 +9723,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "India marks 80th Independence Day with military display",
@@ -10282,15 +10410,15 @@
           "count": 3
         },
         {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        },
-        {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
           "count": 1
         }
       ],
@@ -10337,27 +10465,6 @@
         }
       ],
       "items": [
-        {
-          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
-          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
-          "date": "2026-08-15T11:12:08.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 19
-        },
         {
           "title": "Balochistan home minister unhurt as convoy comes under attack in Mastung",
           "url": "https://www.dawn.com/news/2022775/balochistan-home-minister-unhurt-as-convoy-comes-under-attack-in-mastung",
@@ -10407,6 +10514,27 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 16
+        },
+        {
+          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
+          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
+          "date": "2026-08-15T11:12:08.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "score": 16
         },
@@ -10805,7 +10933,7 @@
         "Medianlinie",
         "ADIZ"
       ],
-      "activity": 70,
+      "activity": 68,
       "severity": 43,
       "newCount": 0,
       "signals": [
@@ -10879,7 +11007,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
@@ -10900,7 +11028,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
@@ -10921,7 +11049,7 @@
             "icon": "🛡️",
             "label": "Belagerung"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Libya's Haftar played role in securing US hostage's release, report says",
@@ -11050,27 +11178,6 @@
           "score": 16
         },
         {
-          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
-          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
-          "date": "2026-08-14T17:52:51.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "Albania Could Face Costly Arbitration Battle After Scrapping Vlora Airport Plans",
           "url": "https://balkaninsight.com/2026/08/10/albania-could-face-costly-arbitration-battle-after-scrapping-vlora-airport-plans/bi/",
           "date": "2026-08-10T05:53:46.000Z",
@@ -11184,6 +11291,27 @@
             "label": "Drohnenangriff"
           },
           "score": 13
+        },
+        {
+          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
+          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
+          "date": "2026-08-14T17:52:51.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
         },
         {
           "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
@@ -11987,7 +12115,7 @@
       ],
       "activity": 46,
       "severity": 36,
-      "newCount": 4,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -12053,7 +12181,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "South Korea president proposes talks with Pyongyang to formally end Korean War",
@@ -12108,27 +12236,6 @@
           "score": 22
         },
         {
-          "title": "South Korea Lee urges talks with North Korea about finally ending Korean war | South Korea",
-          "url": "https://www.theguardian.com/world/2026/aug/15/south-koreas-lee-urges-talks-with-north-korea-about-finally-ending-korean-war",
-          "date": "2026-08-15T04:30:00.000Z",
-          "source": "theguardian.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 21
-        },
-        {
           "title": "South Korea proposes talks to officially end war with North",
           "url": "https://www.bbc.co.uk/news/articles/c8en2z9jp2xo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-15T14:40:15.000Z",
@@ -12156,7 +12263,7 @@
           "source": "newser.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -12168,7 +12275,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 17
+          "score": 18
         },
         {
           "title": "South Korea proposes talks with North to end Korean war",
@@ -12177,7 +12284,7 @@
           "source": "rte.ie",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -12189,7 +12296,28 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 17
+          "score": 18
+        },
+        {
+          "title": "South Korea Lee urges talks with North Korea about finally ending Korean war | South Korea",
+          "url": "https://www.theguardian.com/world/2026/aug/15/south-koreas-lee-urges-talks-with-north-korea-about-finally-ending-korean-war",
+          "date": "2026-08-15T04:30:00.000Z",
+          "source": "theguardian.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
         },
         {
           "title": "South Korea’s president wants talks with North to end Korean War",
@@ -12219,7 +12347,7 @@
           "source": "freemalaysiatoday.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -12231,7 +12359,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 14
+          "score": 15
         },
         {
           "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
@@ -12626,7 +12754,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Strong 7.7-magnitude earthquake strikes eastern Indonesia, killing at least 38",
@@ -13341,7 +13469,7 @@
       ],
       "activity": 10,
       "severity": 25,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -13371,7 +13499,7 @@
           "source": "archive.nytimes.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "abduction",
@@ -13383,7 +13511,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 28
+          "score": 25
         },
         {
           "title": "7 killed , 23 injured in bus - truck collision in N . Iraq",
@@ -13392,7 +13520,7 @@
           "source": "iraqsun.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -13404,7 +13532,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Update on Internal Displacement in Iraq (As of June 2026)",
@@ -14538,7 +14666,7 @@
       ],
       "activity": 22,
       "severity": 17,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -14578,7 +14706,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Ukraine hits Russian Starlink-style network, Moscow tracks arms package",
@@ -14587,7 +14715,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ukraine used domestically produced Flamingo missiles to hit targets in Russia's southwestern Samara region.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -14620,7 +14748,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Missing Circassian–Syrian man may have been ‘tortured to death’ in Russian Army, activists say",
@@ -14735,7 +14863,7 @@
       ],
       "activity": 18,
       "severity": 16,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -14769,7 +14897,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Ukraine hits Russian Starlink-style network, Moscow tracks arms package",
@@ -14778,7 +14906,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ukraine used domestically produced Flamingo missiles to hit targets in Russia's southwestern Samara region.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -14811,7 +14939,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Missing Circassian–Syrian man may have been ‘tortured to death’ in Russian Army, activists say",
