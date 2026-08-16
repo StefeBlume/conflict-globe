@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T17:59:26.500Z",
-  "durationSec": 389,
+  "generatedAt": "2026-08-16T19:16:08.496Z",
+  "durationSec": 372,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,16 +114,20 @@
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 8,
-      "skipped": 4,
+      "ok": 3,
+      "failed": 6,
+      "skipped": 7,
       "errors": [
         {
-          "id": "mozambique",
+          "id": "burkina-faso",
           "error": "HTTP 429"
         },
         {
           "id": "haiti",
+          "error": "fetch failed"
+        },
+        {
+          "id": "india-pakistan",
           "error": "HTTP 429"
         },
         {
@@ -135,20 +139,8 @@
           "error": "HTTP 429"
         },
         {
-          "id": "ecuador",
+          "id": "turkey-pkk",
           "error": "fetch failed"
-        },
-        {
-          "id": "somalia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "ukraine-russia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "gaza",
-          "error": "HTTP 429"
         }
       ]
     },
@@ -156,8 +148,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 654,
-    "newArticles": 11
+    "articles": 656,
+    "newArticles": 4
   },
   "conflicts": [
     {
@@ -187,7 +179,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 3,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
@@ -234,25 +226,7 @@
       "extraCountries": [
         "ISR"
       ],
-      "regions": [
-        {
-          "id": "ISR-3058",
-          "name": "Jerusalem",
-          "nameDe": "Bezirk Jerusalem",
-          "type": "District",
-          "anchor": [
-            35.035,
-            31.753
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
+      "regions": [],
       "items": [
         {
           "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
@@ -282,7 +256,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -318,34 +292,13 @@
           "score": 26
         },
         {
-          "title": "South Lebanon: How will Israeli strikes affect negotiations?",
-          "url": "https://www.france24.com/en/south-lebanon-how-will-israeli-strikes-affect-negotiations",
-          "date": "2026-08-16T13:00:14.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel killed 11 people in strikes on southern Lebanon on Saturday, in what has been described as the biggest threat to the peace talks since the June agreement. Ziad Majed, Professor of Middle East Studies at the American University of Paris, spoke to FRANCE 24 about the potential impact of the strikes on the negotiations underway in Rome, the role of the United States, and Israel's policy toward",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 26
-        },
-        {
           "title": "Israeli military attacks strategic hill in southern Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-attacks-southern-lebanon",
           "date": "2026-08-16T17:05:01.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli military attacks strategic hill in southern Lebanon The Israeli military has attacked&nbsp;Ali al-Taher Hill in southern Lebanon with explosives, according to the National News Agency. The strategically important high ground on the outskirts of Nabatieh al-Fawqa has seen intense Israeli military action.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -429,7 +382,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "The statement came as US envoy Jared Kushner and Gaza peace envoy Nickolay Mladenov held ceasefire and implementation talks with regional mediators in Egypt.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -440,6 +393,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 23
+        },
+        {
+          "title": "South Lebanon: How will Israeli strikes affect negotiations?",
+          "url": "https://www.france24.com/en/south-lebanon-how-will-israeli-strikes-affect-negotiations",
+          "date": "2026-08-16T13:00:14.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israel killed 11 people in strikes on southern Lebanon on Saturday, in what has been described as the biggest threat to the peace talks since the June agreement. Ziad Majed, Professor of Middle East Studies at the American University of Paris, spoke to FRANCE 24 about the potential impact of the strikes on the negotiations underway in Rome, the role of the United States, and Israel's policy toward",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "score": 23
         },
@@ -484,6 +458,48 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "Israeli army besieges Palestinian homes in occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/israeli-army-besieges-palestinian-homes-in-occupied-west-bank?traffic_source=rss",
+          "date": "2026-08-16T17:45:52.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli troops have raided the village of Qusra, south of Nablus, in the occupied West Bank.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 22
+        },
+        {
+          "title": "Pope calls for end to Israeli violence against Palestinians in occupied West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pope-calls-end-israeli-violence-against-palestinians-occupied-west-bank",
+          "date": "2026-08-16T18:00:26.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pope calls for end to Israeli violence against Palestinians in occupied West Bank Pope Leo XIV renewed his call for an end “to the repeated acts of violence against the Palestinian population of the West Bank,\" Vatican News reported. The leader added an urgent appeal to the international community “to ensure that progress is made toward a two-state solution, for a just and lasting peace.” &nbsp;",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
         },
         {
           "title": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan",
@@ -654,27 +670,6 @@
           "score": 22
         },
         {
-          "title": "Israel says soldiers wounded in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-soldiers-wounded-southern-lebanon",
-          "date": "2026-08-15T18:52:42.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel says soldiers wounded in southern Lebanon The Israeli military says three soldiers, including one officer, were wounded by an explosive drone in southern Lebanon overnight. In a post on X, the army said the soldiers were taken out of Lebanon to receive medical treatment in hospital, and their families have been notified.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "Heavy clashes reported as Israel targets south Lebanon with airstrikes , artillery , phosphorous shelling",
           "url": "https://www.presstv.co.uk/Detail/2026/08/16/774436/Israel-attacks-Lebanon-airstrikes-artillery-phosphorus-Hezbollah-clashes",
           "date": "2026-08-16T03:45:00.000Z",
@@ -715,27 +710,6 @@
             "label": "Opfer"
           },
           "score": 22
-        },
-        {
-          "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
-          "url": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
-          "date": "2026-08-13T18:54:09.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Former PM of Israel calls events ‘concerted and meticulous attempt at ethnic cleansing’ against Palestinians Israeli troops have forced two Palestinian families to leave their besieged West Bank homes, the day after a top Israeli commander personally promised he would end a violent settler campaign to drive them out. Israeli soldiers also took over eight other homes in Qusra early on Thursday, tel",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 20
         },
         {
           "title": "Hamas leader meets Egyptian intelligence chief",
@@ -822,27 +796,6 @@
           "score": 19
         },
         {
-          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
-          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
-          "date": "2026-08-16T12:02:18.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
-        },
-        {
           "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
           "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
           "date": "2026-08-16T11:33:32.000Z",
@@ -902,6 +855,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israel says soldiers wounded in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-soldiers-wounded-southern-lebanon",
+          "date": "2026-08-15T18:52:42.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel says soldiers wounded in southern Lebanon The Israeli military says three soldiers, including one officer, were wounded by an explosive drone in southern Lebanon overnight. In a post on X, the army said the soldiers were taken out of Lebanon to receive medical treatment in hospital, and their families have been notified.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 18
         },
@@ -1263,23 +1237,23 @@
           "score": 18
         },
         {
-          "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
-          "url": "https://www.france24.com/en/west-bank-palestinian-families-besieged-for-a-week-as-settler-violence-continues",
-          "date": "2026-08-16T08:50:57.000Z",
-          "source": "France 24",
+          "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
+          "url": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
+          "date": "2026-08-13T18:54:09.000Z",
+          "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Several Palestinian homes in the West Bank village of Qusra have been under siege for a week, with families trapped inside as supplies dwindle and water and electricity are cut off. Settlers have continued their attacks openly, despite the presence of Israeli soldiers and growing international pressure on Israel.",
+          "summary": "Former PM of Israel calls events ‘concerted and meticulous attempt at ethnic cleansing’ against Palestinians Israeli troops have forced two Palestinian families to leave their besieged West Bank homes, the day after a top Israeli commander personally promised he would end a violent settler campaign to drive them out. Israeli soldiers also took over eight other homes in Qusra early on Thursday, tel",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
           "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
           "score": 17
         },
@@ -1301,6 +1275,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
+          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
+          "date": "2026-08-16T12:02:18.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 16
         },
@@ -1366,6 +1361,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
+          "url": "https://www.france24.com/en/west-bank-palestinian-families-besieged-for-a-week-as-settler-violence-continues",
+          "date": "2026-08-16T08:50:57.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Several Palestinian homes in the West Bank village of Qusra have been under siege for a week, with families trapped inside as supplies dwindle and water and electricity are cut off. Settlers have continued their attacks openly, despite the presence of Israeli soldiers and growing international pressure on Israel.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 15
         },
         {
           "title": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten",
@@ -1891,58 +1907,6 @@
             "label": "Opfer"
           },
           "score": 11
-        },
-        {
-          "title": "Israeli soldiers accused of supporting ‘terrorist’ settlers in Qusra",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/israeli-soldiers-accused-of-supporting-terrorist-settlers-in-qusra?traffic_source=rss",
-          "date": "2026-08-14T21:45:20.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli soldiers accused of supporting ‘terrorist’ settlers in Qusra",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army",
-          "url": "https://www.timesofisrael.com/hezbollah-chief-says-lebanon-israel-deal-humiliates-the-nation-and-its-army/",
-          "date": "2026-08-14T19:34:22.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "In speech marking anniversary of Second Lebanon War, Naim Qassem accuses Lebanese authorities of giving up on 'dignity,' signing off on whatever Jerusalem demands The post Hezbollah chief says Lebanon-Israel deal humiliates the nation and its army appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -2207,7 +2171,7 @@
         {
           "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
           "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-16T15:50:12.000Z",
+          "date": "2026-08-16T19:03:04.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
@@ -2264,7 +2228,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 32
+          "score": 29
         },
         {
           "title": "Ukraine attacks Wildberries, Russia's biggest online market",
@@ -3089,7 +3053,7 @@
       ],
       "activity": 70,
       "severity": 76,
-      "newCount": 4,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -3176,7 +3140,7 @@
             15.844
           ],
           "count": 2,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "talks",
             "icon": "🤝",
@@ -3219,27 +3183,6 @@
         }
       ],
       "items": [
-        {
-          "title": "RSF turns to drones , new fronts as Sudan battlefield pressure grows",
-          "url": "https://www.al-monitor.com/originals/2026/08/rsf-turns-drones-new-fronts-sudan-battlefield-pressure-grows",
-          "date": "2026-08-16T10:00:00.000Z",
-          "source": "al-monitor.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 28
-        },
         {
           "title": "Sudan: RSF Says It Captures Key Sudan Town Near Ethiopian Border As Army Withdraws",
           "url": "https://allafrica.com/stories/202608140047.html",
@@ -3345,6 +3288,27 @@
           "score": 22
         },
         {
+          "title": "RSF turns to drones , new fronts as Sudan battlefield pressure grows",
+          "url": "https://www.al-monitor.com/originals/2026/08/rsf-turns-drones-new-fronts-sudan-battlefield-pressure-grows",
+          "date": "2026-08-16T10:00:00.000Z",
+          "source": "al-monitor.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
           "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
           "date": "2026-08-12T12:00:00.000Z",
@@ -3445,7 +3409,7 @@
           "source": "honestreporting.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -3457,38 +3421,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
-        },
-        {
-          "title": "Sudan army chief says armed forces belong to all Sudanese , Khartoum is safe",
-          "url": "https://aa.com.tr/en/middle-east/sudan-s-army-chief-says-armed-forces-belong-to-all-sudanese-khartoum-is-safe/4028334",
-          "date": "2026-08-15T16:00:00.000Z",
-          "source": "aa.com.tr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": {
-            "id": "SDN-874",
-            "name": "Khartoum",
-            "nameDe": "Al-Chartum",
-            "type": "Region",
-            "anchor": [
-              32.785,
-              15.844
-            ],
-            "matched": "Khartoum"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
+          "score": 18
         },
         {
           "title": "Attacks on Health Care in Sudan, 22 July - 04 August 2026",
@@ -3593,27 +3526,6 @@
             "label": "Verhandlungen"
           },
           "score": 14
-        },
-        {
-          "title": "Sudan army says it is ready for peace - but RSF must lay down its arms",
-          "url": "https://news.az/news/sudan-army-says-it-is-ready-for-peace-but-rsf-must-lay-down-its-arms",
-          "date": "2026-08-15T11:00:00.000Z",
-          "source": "news.az",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 13
         },
         {
           "title": "Sudan: Refugees, Lost Trade and Security Costs - How Conflict in One African Country Drives Up Debt for Its Neighbours",
@@ -3781,6 +3693,58 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Sudan army chief says armed forces belong to all Sudanese , Khartoum is safe",
+          "url": "https://aa.com.tr/en/middle-east/sudan-s-army-chief-says-armed-forces-belong-to-all-sudanese-khartoum-is-safe/4028334",
+          "date": "2026-08-15T16:00:00.000Z",
+          "source": "aa.com.tr",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "SDN-874",
+            "name": "Khartoum",
+            "nameDe": "Al-Chartum",
+            "type": "Region",
+            "anchor": [
+              32.785,
+              15.844
+            ],
+            "matched": "Khartoum"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Sudan army says it is ready for peace - but RSF must lay down its arms",
+          "url": "https://news.az/news/sudan-army-says-it-is-ready-for-peace-but-rsf-must-lay-down-its-arms",
+          "date": "2026-08-15T11:00:00.000Z",
+          "source": "news.az",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "How a Sudanese refugee became a head teacher in a Chadian camp",
@@ -4095,7 +4059,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 2,
       "signals": [
         {
           "key": "escalation",
@@ -4205,7 +4169,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -4218,48 +4182,6 @@
             "label": "Belagerung"
           },
           "score": 26
-        },
-        {
-          "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
-          "url": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
-          "date": "2026-08-13T18:54:09.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Former PM of Israel calls events ‘concerted and meticulous attempt at ethnic cleansing’ against Palestinians Israeli troops have forced two Palestinian families to leave their besieged West Bank homes, the day after a top Israeli commander personally promised he would end a violent settler campaign to drive them out. Israeli soldiers also took over eight other homes in Qusra early on Thursday, tel",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 22
-        },
-        {
-          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
-          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
-          "date": "2026-08-16T12:02:18.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
         },
         {
           "title": "Several Palestinians injured as settlers continue attacks in West Bank",
@@ -4325,13 +4247,13 @@
           "score": 21
         },
         {
-          "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
-          "url": "https://www.france24.com/en/west-bank-palestinian-families-besieged-for-a-week-as-settler-violence-continues",
-          "date": "2026-08-16T08:50:57.000Z",
-          "source": "France 24",
+          "title": "Israeli army besieges Palestinian homes in occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/israeli-army-besieges-palestinian-homes-in-occupied-west-bank?traffic_source=rss",
+          "date": "2026-08-16T17:45:52.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Several Palestinian homes in the West Bank village of Qusra have been under siege for a week, with families trapped inside as supplies dwindle and water and electricity are cut off. Settlers have continued their attacks openly, despite the presence of Israeli soldiers and growing international pressure on Israel.",
-          "isNew": false,
+          "summary": "Israeli troops have raided the village of Qusra, south of Nablus, in the occupied West Bank.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "siege",
@@ -4342,6 +4264,69 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
+          },
+          "score": 20
+        },
+        {
+          "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
+          "url": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
+          "date": "2026-08-13T18:54:09.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Former PM of Israel calls events ‘concerted and meticulous attempt at ethnic cleansing’ against Palestinians Israeli troops have forced two Palestinian families to leave their besieged West Bank homes, the day after a top Israeli commander personally promised he would end a violent settler campaign to drive them out. Israeli soldiers also took over eight other homes in Qusra early on Thursday, tel",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 19
+        },
+        {
+          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
+          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
+          "date": "2026-08-16T12:02:18.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 19
+        },
+        {
+          "title": "Pope calls for end to Israeli violence against Palestinians in occupied West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pope-calls-end-israeli-violence-against-palestinians-occupied-west-bank",
+          "date": "2026-08-16T18:00:26.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pope calls for end to Israeli violence against Palestinians in occupied West Bank Pope Leo XIV renewed his call for an end “to the repeated acts of violence against the Palestinian population of the West Bank,\" Vatican News reported. The leader added an urgent appeal to the international community “to ensure that progress is made toward a two-state solution, for a just and lasting peace.” &nbsp;",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 19
         },
@@ -4575,6 +4560,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
+          "url": "https://www.france24.com/en/west-bank-palestinian-families-besieged-for-a-week-as-settler-violence-continues",
+          "date": "2026-08-16T08:50:57.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Several Palestinian homes in the West Bank village of Qusra have been under siege for a week, with families trapped inside as supplies dwindle and water and electricity are cut off. Settlers have continued their attacks openly, despite the presence of Israeli soldiers and growing international pressure on Israel.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 15
         },
         {
           "title": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten",
@@ -5133,7 +5139,7 @@
           "score": 8
         }
       ],
-      "itemCount": 46
+      "itemCount": 48
     },
     {
       "id": "lebanon-hezbollah",
@@ -5161,7 +5167,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -5228,7 +5234,7 @@
             33.3
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -5293,44 +5299,13 @@
           "score": 27
         },
         {
-          "title": "South Lebanon: How will Israeli strikes affect negotiations?",
-          "url": "https://www.france24.com/en/south-lebanon-how-will-israeli-strikes-affect-negotiations",
-          "date": "2026-08-16T13:00:14.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel killed 11 people in strikes on southern Lebanon on Saturday, in what has been described as the biggest threat to the peace talks since the June agreement. Ziad Majed, Professor of Middle East Studies at the American University of Paris, spoke to FRANCE 24 about the potential impact of the strikes on the negotiations underway in Rome, the role of the United States, and Israel's policy toward",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 26
-        },
-        {
           "title": "Israeli military attacks strategic hill in southern Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-attacks-southern-lebanon",
           "date": "2026-08-16T17:05:01.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli military attacks strategic hill in southern Lebanon The Israeli military has attacked&nbsp;Ali al-Taher Hill in southern Lebanon with explosives, according to the National News Agency. The strategically important high ground on the outskirts of Nabatieh al-Fawqa has seen intense Israeli military action.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "LBN-3059",
             "name": "Nabatieh",
@@ -5393,6 +5368,37 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 23
+        },
+        {
+          "title": "South Lebanon: How will Israeli strikes affect negotiations?",
+          "url": "https://www.france24.com/en/south-lebanon-how-will-israeli-strikes-affect-negotiations",
+          "date": "2026-08-16T13:00:14.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israel killed 11 people in strikes on southern Lebanon on Saturday, in what has been described as the biggest threat to the peace talks since the June agreement. Ziad Majed, Professor of Middle East Studies at the American University of Paris, spoke to FRANCE 24 about the potential impact of the strikes on the negotiations underway in Rome, the role of the United States, and Israel's policy toward",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "score": 23
         },
@@ -5711,27 +5717,6 @@
           "score": 22
         },
         {
-          "title": "Israel says soldiers wounded in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-soldiers-wounded-southern-lebanon",
-          "date": "2026-08-15T18:52:42.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel says soldiers wounded in southern Lebanon The Israeli military says three soldiers, including one officer, were wounded by an explosive drone in southern Lebanon overnight. In a post on X, the army said the soldiers were taken out of Lebanon to receive medical treatment in hospital, and their families have been notified.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
           "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
           "date": "2026-08-15T13:55:28.000Z",
@@ -5803,6 +5788,27 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Israel says soldiers wounded in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-soldiers-wounded-southern-lebanon",
+          "date": "2026-08-15T18:52:42.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel says soldiers wounded in southern Lebanon The Israeli military says three soldiers, including one officer, were wounded by an explosive drone in southern Lebanon overnight. In a post on X, the army said the soldiers were taken out of Lebanon to receive medical treatment in hospital, and their families have been notified.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
         },
         {
           "title": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon",
@@ -6669,27 +6675,6 @@
           "score": 19
         },
         {
-          "title": "Iran war pushes Middle Eastern airlines towards $4.3bn loss in 2026",
-          "url": "https://www.middleeasteye.net/news/middle-eastern-airlines-lose-43bn-2026-amid-iran-war",
-          "date": "2026-08-16T12:21:37.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran war pushes Middle Eastern airlines towards $4.3bn loss in 2026 Submitted by Gaspard Rouffin on Thu, 08/13/2026 - 16:07 Major airlines have resumed flights, but reduced capacity, international carrier suspensions and security concerns are slowing recovery An Emirates Airbus A380 passenger aircraft prepares for landing at Dubai International Airport on 8 March 2026 (AFP) Off As the US and Israe",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Iranian military promises 'complete defeat' of Israel and US",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-military-promises-complete-defeat-israel-and-us",
           "date": "2026-08-16T10:02:11.000Z",
@@ -6814,6 +6799,27 @@
             "label": "Bericht"
           },
           "score": 17
+        },
+        {
+          "title": "Iran war pushes Middle Eastern airlines towards $4.3bn loss in 2026",
+          "url": "https://www.middleeasteye.net/news/middle-eastern-airlines-lose-43bn-2026-amid-iran-war",
+          "date": "2026-08-16T12:21:37.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran war pushes Middle Eastern airlines towards $4.3bn loss in 2026 Submitted by Gaspard Rouffin on Thu, 08/13/2026 - 16:07 Major airlines have resumed flights, but reduced capacity, international carrier suspensions and security concerns are slowing recovery An Emirates Airbus A380 passenger aircraft prepares for landing at Dubai International Airport on 8 March 2026 (AFP) Off As the US and Israe",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
@@ -7338,7 +7344,7 @@
       ],
       "activity": 26,
       "severity": 62,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "ceasefire",
@@ -7398,27 +7404,6 @@
       ],
       "items": [
         {
-          "title": "DRC , RWANDA ADVANCE PEACE AGREEMENT MONITORING AND THANK QATAR FOR SUPPORT",
-          "url": "https://www.qatarliving.com/en/article/drc-rwanda-advance-peace-agreement-monitoring-and-thank-qatar-for-support",
-          "date": "2026-08-16T13:00:00.000Z",
-          "source": "qatarliving.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 27
-        },
-        {
           "title": "Congo-Kinshasa: Joint Statement on the Sixth Meeting of the Joint Security Coordination Mechanism for the Peace Agreement Between the Democratic Republic of the Congo and the Republic of Rwanda",
           "url": "https://allafrica.com/stories/202608140259.html",
           "date": "2026-08-14T12:15:40.000Z",
@@ -7448,6 +7433,27 @@
             "label": "Waffenruhe"
           },
           "score": 25
+        },
+        {
+          "title": "DRC , RWANDA ADVANCE PEACE AGREEMENT MONITORING AND THANK QATAR FOR SUPPORT",
+          "url": "https://www.qatarliving.com/en/article/drc-rwanda-advance-peace-agreement-monitoring-and-thank-qatar-for-support",
+          "date": "2026-08-16T13:00:00.000Z",
+          "source": "qatarliving.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 22
         },
         {
           "title": "Joint statement on 6th meeting of the Joint Security Coordination Mechanism for the Peace Agreement between the Democratic Republic of the Congo and the Republic of Rwanda",
@@ -9601,7 +9607,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "British national shot dead in Kashmir by Pakistani security forces",
@@ -9981,27 +9987,6 @@
       ],
       "items": [
         {
-          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
-          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
-          "date": "2026-08-16T12:02:18.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
-        },
-        {
           "title": "Petroleum dealers postpone planned strike as govt approves margin revision",
           "url": "https://www.dawn.com/news/2022816/petroleum-dealers-postpone-planned-strike-as-govt-approves-margin-revision",
           "date": "2026-08-14T19:40:36.000Z",
@@ -10021,6 +10006,27 @@
             "label": "Bericht"
           },
           "score": 18
+        },
+        {
+          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
+          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
+          "date": "2026-08-16T12:02:18.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 16
         },
         {
           "title": "National Liberation Army (ELN)",
@@ -10398,7 +10404,7 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 33,
+      "activity": 30,
       "severity": 48,
       "newCount": 0,
       "signals": [
@@ -10572,27 +10578,6 @@
           "score": 15
         },
         {
-          "title": "Israeli Minister warns  with absolute certainty  that Syria could become  next war  ",
-          "url": "https://www.azernews.az/region/262436.html",
-          "date": "2026-08-15T19:00:00.000Z",
-          "source": "azernews.az",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Syrian Arab Republic: Protecting food production systems and livestock assets of high-severity food‑insecure households in the northeast I Project update | August 2026",
           "url": "https://reliefweb.int/report/syrian-arab-republic/syrian-arab-republic-protecting-food-production-systems-and-livestock-assets-high-severity-food-insecure-households-northeast-i-project-update-august-2026",
           "date": "2026-08-14T08:03:27.000Z",
@@ -10695,6 +10680,27 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Israeli Minister warns  with absolute certainty  that Syria could become  next war  ",
+          "url": "https://www.azernews.az/region/262436.html",
+          "date": "2026-08-15T19:00:00.000Z",
+          "source": "azernews.az",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Syria Key Message Update: Worsening economic constraints drive persistent Crisis (IPC Phase 3) outcomes, July 2026 - January 2027",
@@ -11937,8 +11943,8 @@
         "Panjschir",
         "Kandahar"
       ],
-      "activity": 28,
-      "severity": 47,
+      "activity": 26,
+      "severity": 46,
       "newCount": 0,
       "signals": [
         {
@@ -11999,7 +12005,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Five years since the Taliban took control of Afghanistan, humanitarian need is at a record high as the response collapses | The IRC",
@@ -12511,7 +12517,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "British national shot dead in Kashmir by Pakistani security forces",
@@ -13551,7 +13557,7 @@
       ],
       "activity": 70,
       "severity": 43,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -13665,7 +13671,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "The statement came as US envoy Jared Kushner and Gaza peace envoy Nickolay Mladenov held ceasefire and implementation talks with regional mediators in Egypt.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -14668,7 +14674,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "South Korean president proposes talks with North to formally end war",
@@ -15079,8 +15085,8 @@
         "Guerrero",
         "Grenzregion"
       ],
-      "activity": 5,
-      "severity": 40,
+      "activity": 3,
+      "severity": 39,
       "newCount": 0,
       "signals": [],
       "acled": null,
@@ -15108,7 +15114,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 21
+          "score": 18
         },
         {
           "title": "Democracy Digest: US Charges Mexican Cartel Members over Czech Weapons Deal",
@@ -15529,7 +15535,7 @@
         {
           "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
           "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-16T15:50:12.000Z",
+          "date": "2026-08-16T19:03:04.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
@@ -15544,27 +15550,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
-          "title": "BBC visits smouldering Kyiv market after Russian strikes",
-          "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-16T12:18:09.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Six people were injured in the strike on the market selling second-hand records, posters, toys and tools.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
           },
           "score": 26
         },
@@ -15630,6 +15615,27 @@
             "label": "Opfer"
           },
           "score": 26
+        },
+        {
+          "title": "BBC visits smouldering Kyiv market after Russian strikes",
+          "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-16T12:18:09.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Six people were injured in the strike on the market selling second-hand records, posters, toys and tools.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 23
         },
         {
           "title": "Troops from North Korea to boost Russia's Ukraine forces",
@@ -16733,7 +16739,7 @@
         {
           "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
           "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-16T15:50:12.000Z",
+          "date": "2026-08-16T19:03:04.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
@@ -16748,27 +16754,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
-          "title": "BBC visits smouldering Kyiv market after Russian strikes",
-          "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-16T12:18:09.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Six people were injured in the strike on the market selling second-hand records, posters, toys and tools.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
           },
           "score": 26
         },
@@ -16834,6 +16819,27 @@
             "label": "Opfer"
           },
           "score": 26
+        },
+        {
+          "title": "BBC visits smouldering Kyiv market after Russian strikes",
+          "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-16T12:18:09.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Six people were injured in the strike on the market selling second-hand records, posters, toys and tools.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 23
         },
         {
           "title": "Troops from North Korea to boost Russia's Ukraine forces",
@@ -17323,7 +17329,7 @@
         "Südwest",
         "Far North"
       ],
-      "activity": 10,
+      "activity": 8,
       "severity": 25,
       "newCount": 0,
       "signals": [
@@ -17379,7 +17385,7 @@
             "icon": "📣",
             "label": "Proteste/Unruhen"
           },
-          "score": 15
+          "score": 11
         },
         {
           "title": "Cameroon : North-West and South-West regions - Humanitarian Access Severity Overview | July 2026",
