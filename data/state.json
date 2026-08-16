@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T07:55:28.492Z",
-  "durationSec": 405,
+  "generatedAt": "2026-08-16T09:52:16.793Z",
+  "durationSec": 417,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -108,35 +108,43 @@
       },
       {
         "id": "premiumtimes",
-        "ok": true,
-        "count": 15,
-        "error": null
+        "ok": false,
+        "count": 0,
+        "error": "HTTP 429"
       }
     ],
     "gdelt": {
-      "ok": 5,
-      "failed": 5,
+      "ok": 3,
+      "failed": 7,
       "skipped": 6,
       "errors": [
         {
-          "id": "car",
+          "id": "yemen",
+          "error": "fetch failed"
+        },
+        {
+          "id": "cameroon",
+          "error": "fetch failed"
+        },
+        {
+          "id": "rohingya-bangladesh",
           "error": "HTTP 429"
         },
         {
-          "id": "ethiopia",
+          "id": "thailand-cambodia",
+          "error": "fetch failed"
+        },
+        {
+          "id": "drc-m23",
           "error": "HTTP 429"
         },
         {
-          "id": "armenia-azerbaijan",
+          "id": "ecuador",
           "error": "HTTP 429"
         },
         {
-          "id": "venezuela",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "turkey-pkk",
-          "error": "HTTP 429"
+          "id": "west-bank",
+          "error": "fetch failed"
         }
       ]
     },
@@ -144,8 +152,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 586,
-    "newArticles": 14
+    "articles": 594,
+    "newArticles": 11
   },
   "conflicts": [
     {
@@ -175,19 +183,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 3,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 18
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 8
+          "count": 19
         },
         {
           "key": "airstrike",
@@ -199,6 +201,12 @@
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
+          "count": 7
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
           "count": 7
         },
         {
@@ -232,37 +240,16 @@
             35.035,
             31.753
           ],
-          "count": 2,
+          "count": 1,
           "newCount": 0,
           "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         }
       ],
       "items": [
-        {
-          "title": "Israeli army says it killed two Palestinians in Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
-          "date": "2026-08-15T17:53:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli army says it killed two Palestinians in Gaza The Israeli military has said its Paratroopers Brigade killed two Palestinians in Gaza. The military said the Palestinians crossed the so-called “yellow line.\" Under the US-brokered agreement reached with Hamas last October, Israel was supposed to withdraw to the yellow line while temporarily retaining control over 53 percent of Gaza. But Israel",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 30
-        },
         {
           "title": "Several Palestinians injured as settlers continue attacks in West Bank",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-settlers-continue-attacks-west-bank",
@@ -327,13 +314,34 @@
           "score": 26
         },
         {
+          "title": "Israel threatens further attacks on Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-fresh-attacks-lebanon",
+          "date": "2026-08-16T08:45:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel threatens further attacks on Lebanon Israeli Defence Minister Israel Katz has threatened further attacks in southern Lebanon, saying: \"No account in any arena will remain open. We will strike with full force at those who harm our soldiers and our citizens.\" The Israeli military killed at least 11 people and wounded 19 others in southern Lebanon on Saturday.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Arab League condemns Israeli strikes on Lebanon as 'dangerous escalation'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/arab-league-condemns-israeli-strikes-lebanon-dangerous-escalation",
           "date": "2026-08-16T06:12:29.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Arab League condemns Israeli strikes on Lebanon as 'dangerous escalation' The Arab League has condemned Israel’s deadly strikes on Lebanon that killed 11 people and destroyed dozens of homes as “a dangerous escalation that threatens to derail any efforts aimed at resolving the ongoing conflict”. In a statement, a spokesman of the League said: \"Israel’s policies and practices blatantly expose the o",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -344,27 +352,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 26
-        },
-        {
-          "title": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-lebanons-nabatieh-israel-continues-strikes",
-          "date": "2026-08-16T02:27:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes Explosions were heard in the area between Ali al-Taher Heights and the Dabsha area in the Nabatieh district of southern Lebanon, Al Jazeera reported. Al Manar TV said the blasts were a result of Israeli air attacks in the area, while the Nabatieh Channel said the raids took place in the vicinity of the town of Kfar Reman. The attac",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
           },
           "score": 26
         },
@@ -388,27 +375,6 @@
             "label": "Gefechte"
           },
           "score": 26
-        },
-        {
-          "title": "Heavy clashes reported as Israel targets south Lebanon with airstrikes , artillery , phosphorous shelling",
-          "url": "https://www.presstv.co.uk/Detail/2026/08/16/774436/Israel-attacks-Lebanon-airstrikes-artillery-phosphorus-Hezbollah-clashes",
-          "date": "2026-08-16T03:45:00.000Z",
-          "source": "presstv.co.uk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 25
         },
         {
           "title": "Hamas delegation to hold talks on Gaza agreement in Cairo, report says",
@@ -516,6 +482,27 @@
           "score": 23
         },
         {
+          "title": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-lebanons-nabatieh-israel-continues-strikes",
+          "date": "2026-08-16T02:27:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes Explosions were heard in the area between Ali al-Taher Heights and the Dabsha area in the Nabatieh district of southern Lebanon, Al Jazeera reported. Al Manar TV said the blasts were a result of Israeli air attacks in the area, while the Nabatieh Channel said the raids took place in the vicinity of the town of Kfar Reman. The attac",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 23
+        },
+        {
           "title": "Iran condemns Israeli attacks in Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-condemns-israeli-attacks-lebanon",
           "date": "2026-08-15T20:16:10.000Z",
@@ -575,6 +562,48 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli army says it killed two Palestinians in Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
+          "date": "2026-08-15T17:53:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli army says it killed two Palestinians in Gaza The Israeli military has said its Paratroopers Brigade killed two Palestinians in Gaza. The military said the Palestinians crossed the so-called “yellow line.\" Under the US-brokered agreement reached with Hamas last October, Israel was supposed to withdraw to the yellow line while temporarily retaining control over 53 percent of Gaza. But Israel",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Heavy clashes reported as Israel targets south Lebanon with airstrikes , artillery , phosphorous shelling",
+          "url": "https://www.presstv.co.uk/Detail/2026/08/16/774436/Israel-attacks-Lebanon-airstrikes-artillery-phosphorus-Hezbollah-clashes",
+          "date": "2026-08-16T03:45:00.000Z",
+          "source": "presstv.co.uk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
           "score": 22
         },
@@ -768,27 +797,6 @@
           "score": 22
         },
         {
-          "title": "Al Jazeera journalist opens beach cafe in the Gaza she loves",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/al-jazeera-journalist-opens-beach-cafe-in-the-gaza-she-loves?traffic_source=rss",
-          "date": "2026-08-16T02:26:54.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Palestinian journalist Hind Khoudary has opened a Gaza beach cafe, hoping to revive a much-loved part of life in the war",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
           "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
           "url": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
           "date": "2026-08-13T18:54:09.000Z",
@@ -810,13 +818,34 @@
           "score": 20
         },
         {
+          "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
+          "url": "https://www.france24.com/en/west-bank-palestinian-families-besieged-for-a-week-as-settler-violence-continues",
+          "date": "2026-08-16T08:50:57.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Several Palestinian homes in the West Bank village of Qusra have been under siege for a week, with families trapped inside as supplies dwindle and water and electricity are cut off. Settlers have continued their attacks openly, despite the presence of Israeli soldiers and growing international pressure on Israel.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 20
+        },
+        {
           "title": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-violence-60-year-old-man-among-two-palestinians-shot-eight",
           "date": "2026-08-16T06:33:50.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten Israeli settlers, backed by Israeli forces, shot at and injured two Palestinians and beat up eight others during an attack in the al-Ras area of Hebron city on Sunday, Wafa reported. One of the shooting victims, a 60-year-old man, was shot in the back and hand. A second man, aged 46, was also shot before being detained by ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -837,7 +866,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Despite a genocide and multiple wars, analysts say the issues determining October’s elections fall far closer to home.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "election",
@@ -911,27 +940,6 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
-          },
-          "score": 19
-        },
-        {
-          "title": "oPt: Settler encroachments and attacks on Palestinian homes are beyond a boiling point [EN/AR]",
-          "url": "https://reliefweb.int/report/occupied-palestinian-territory/settler-encroachments-and-attacks-palestinian-homes-are-beyond-boiling-point-enar",
-          "date": "2026-08-13T08:16:01.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: occupied Palestinian territory Source: UN Office of the High Commissioner for Human Rights Please refer to the attached files. Israeli authorities must immediately remove settlers who are violently displacing thousands of Palestinians, unlawfully grabbing Palestinian land and expanding settlements. Since the establishment of an Israeli settler outpost near Qusra, a Palestinian town locate",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 19
         },
@@ -1146,6 +1154,27 @@
           "score": 18
         },
         {
+          "title": "Al Jazeera journalist opens beach cafe in the Gaza she loves",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/al-jazeera-journalist-opens-beach-cafe-in-the-gaza-she-loves?traffic_source=rss",
+          "date": "2026-08-16T02:26:54.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Palestinian journalist Hind Khoudary has opened a Gaza beach cafe, hoping to revive a much-loved part of life in the war",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
           "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
           "url": "https://www.aljazeera.com/news/liveblog/2026/8/16/iran-war-live-talks-on-hormuz-strait-continue-israel-kills-11-in-lebanon?traffic_source=rss",
           "date": "2026-08-16T00:00:45.000Z",
@@ -1188,6 +1217,27 @@
           "score": 16
         },
         {
+          "title": "oPt: Settler encroachments and attacks on Palestinian homes are beyond a boiling point [EN/AR]",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/settler-encroachments-and-attacks-palestinian-homes-are-beyond-boiling-point-enar",
+          "date": "2026-08-13T08:16:01.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: occupied Palestinian territory Source: UN Office of the High Commissioner for Human Rights Please refer to the attached files. Israeli authorities must immediately remove settlers who are violently displacing thousands of Palestinians, unlawfully grabbing Palestinian land and expanding settlements. Since the establishment of an Israeli settler outpost near Qusra, a Palestinian town locate",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
           "title": "oPt: WHO Attacks on health care in the Gaza Strip (Since 1 January 2026 - 6 August 2026)",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/who-attacks-health-care-gaza-strip-1-january-2026-6-august-2026",
           "date": "2026-08-11T11:03:06.000Z",
@@ -1207,27 +1257,6 @@
             "label": "Gefechte"
           },
           "score": 16
-        },
-        {
-          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
-          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
-          "date": "2026-08-15T08:52:10.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 15
         },
         {
           "title": "Israeli settlers besiege Palestinian families in occupied West Bank",
@@ -1375,6 +1404,27 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
+          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
+          "date": "2026-08-15T08:52:10.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
         },
         {
           "title": "Israeli forces fire tear gas canisters at Palestinian homes in Ramallah",
@@ -1889,58 +1939,6 @@
             "label": "Opfer"
           },
           "score": 9
-        },
-        {
-          "title": "oPt: Ramiz Alakbarov, Deputy Special Coordinator for the Middle East Peace Process - Briefing to the Security Council on the Situation in the Middle East (11 August 2026)",
-          "url": "https://reliefweb.int/report/occupied-palestinian-territory/ramiz-alakbarov-deputy-special-coordinator-middle-east-peace-process-briefing-security-council-situation-middle-east-11-august-2026",
-          "date": "2026-08-12T03:39:16.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: occupied Palestinian territory Source: UN Special Coordinator for the Middle East Peace Process Please refer to the attached file. [As Delivered] Madam President, Members of the Security Council, Thank you for convening this important meeting on the situation in the occupied West Bank, including East Jerusalem. It comes at a critical moment. While the fragile ceasefire in Gaza and regiona",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 9
-        },
-        {
-          "title": "Israeli militants besiege two Palestinian families in their West Bank homes",
-          "url": "https://www.theguardian.com/world/2026/aug/12/israeli-militants-besiege-two-palestinian-families-in-their-west-bank-homes",
-          "date": "2026-08-13T06:45:27.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Settlers and soldiers cut off water and electricity to homes, and block medical care in campaign of terror Israeli militants have besieged two Palestinian families in their homes since the weekend, aiming to take over their properties in the West Bank village of Qusra through a campaign of terror. A group of settlers and soldiers set up a tent outside the home of Yousef Hassan’s family on Sunday a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -1972,9 +1970,9 @@
         "Kursk",
         "Krim"
       ],
-      "activity": 76,
-      "severity": 77,
-      "newCount": 2,
+      "activity": 81,
+      "severity": 79,
+      "newCount": 1,
       "signals": [
         {
           "key": "displacement",
@@ -1986,13 +1984,13 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 5
+          "count": 6
         },
         {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 2
+          "count": 3
         },
         {
           "key": "airstrike",
@@ -2031,12 +2029,29 @@
             37.665,
             55.668
           ],
-          "count": 4,
+          "count": 5,
           "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "RUS-2367",
+          "name": "Rostov",
+          "nameDe": "Rostow",
+          "type": "Region",
+          "anchor": [
+            41.309,
+            47.746
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           }
         },
         {
@@ -2110,34 +2125,13 @@
       ],
       "items": [
         {
-          "title": "Russian strikes kill Ukrainian woman as NATO jet downs drone over Romania",
+          "title": "Ukraine targets Moscow in mass drone attack as Russia bombards Kyiv",
           "url": "https://www.aljazeera.com/news/2026/8/16/russian-strikes-kill-ukrainian-woman-as-nato-jet-downs-drone-over-romania?traffic_source=rss",
           "date": "2026-08-16T04:54:33.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Romania's Defence Ministry didn't specify origin of the drone but has previously blamed Russia for similar incidents.",
+          "summary": "Russian authorities report 201 Ukrainian drones downed overnight in the Moscow region in the escalating conflict.",
           "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 32
-        },
-        {
-          "title": "Live: Moscow targeted by 600 drones overnight, explosions heard in Kyiv",
-          "url": "https://www.france24.com/en/europe/20260816-live-moscow-targeted-by-600-drones-overnight-explosions-heard-in-kyiv",
-          "date": "2026-08-16T04:42:16.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Six hundred drones targeted the Moscow region in a sustained overnight assault that wounded three people, the Russian capital's mayor said on Sunday, as Ukraine steps up long-range attacks into Russian territory. The assault came as Russian ⁠forces launched a ​missile attack on Kyiv, sparking fires in at least two districts of Ukraine's capital, Mayor ​Vitali ‌Klitschko said. Follow our live blog ",
-          "isNew": true,
           "region": {
             "id": "RUS-2364",
             "name": "Moscow",
@@ -2159,26 +2153,57 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
+          "score": 35
+        },
+        {
+          "title": "Five killed as Russia launches fresh aerial attacks across Ukraine",
+          "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-16T09:04:14.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Ukrainian President Volodymyr Zelensky accuses Russia of targeting civilian infrastructure, while Moscow reports that a warehouse was hit.",
+          "isNew": true,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
           "score": 32
         },
         {
-          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
-          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
-          "date": "2026-08-15T11:43:15.000Z",
+          "title": "Live: Ukraine hit missile fuel production facility in Russia in overnight assault",
+          "url": "https://www.france24.com/en/europe/20260816-live-moscow-targeted-by-600-drones-overnight-explosions-heard-in-kyiv",
+          "date": "2026-08-16T04:42:16.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
+          "summary": "Ukraine ​hit ​a missile fuel production facility ​in ‌Russia's ⁠Rostov ‌region overnight, Ukrainian military ⁠said on Sunday, as Ukraine steps up long-range attacks into Russian territory. The assault came as Russian ⁠forces launched a ​missile attack on Kyiv, sparking fires in at least two districts of Ukraine's capital, Mayor ​Vitali ‌Klitschko said. Follow our live blog for all the latest updat",
           "isNew": false,
           "region": {
-            "id": "RUS-2392",
-            "name": "Samara",
-            "nameDe": "Samara",
+            "id": "RUS-2367",
+            "name": "Rostov",
+            "nameDe": "Rostow",
             "type": "Region",
             "anchor": [
-              50.468,
-              53.28
+              41.309,
+              47.746
             ],
-            "matched": "Samara"
+            "matched": "Rostov"
           },
           "event": {
             "type": "missile",
@@ -2190,7 +2215,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 31
+          "score": 32
         },
         {
           "title": "Troops from North Korea to boost Russia's Ukraine forces",
@@ -2199,7 +2224,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2233,6 +2258,37 @@
             "label": "Bericht"
           },
           "score": 23
+        },
+        {
+          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
+          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
+          "date": "2026-08-15T11:43:15.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2392",
+            "name": "Samara",
+            "nameDe": "Samara",
+            "type": "Region",
+            "anchor": [
+              50.468,
+              53.28
+            ],
+            "matched": "Samara"
+          },
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
         },
         {
           "title": "Ukraine: Civilian casualties hit highest level since March 2022",
@@ -2883,7 +2939,7 @@
           "score": 0
         }
       ],
-      "itemCount": 33
+      "itemCount": 34
     },
     {
       "id": "west-bank",
@@ -3052,34 +3108,13 @@
           "score": 22
         },
         {
-          "title": "US ambassador calls Israeli settler West Bank siege act of terror",
-          "url": "https://arynews.tv/us-ambassador-calls-israeli-settler-west-bank-siege-act-of-terror",
-          "date": "2026-08-15T08:30:00.000Z",
-          "source": "arynews.tv",
+          "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
+          "url": "https://www.france24.com/en/west-bank-palestinian-families-besieged-for-a-week-as-settler-violence-continues",
+          "date": "2026-08-16T08:50:57.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 22
-        },
-        {
-          "title": "Colonizers Renew Siege of Palestinian Families Near Nablus",
-          "url": "https://imemc.org/article/colonizers-renew-siege-of-palestinian-families-near-nablus/",
-          "date": "2026-08-15T08:00:00.000Z",
-          "source": "imemc.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
+          "summary": "Several Palestinian homes in the West Bank village of Qusra have been under siege for a week, with families trapped inside as supplies dwindle and water and electricity are cut off. Settlers have continued their attacks openly, despite the presence of Israeli soldiers and growing international pressure on Israel.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "siege",
@@ -3100,7 +3135,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten Israeli settlers, backed by Israeli forces, shot at and injured two Palestinians and beat up eight others during an attack in the al-Ras area of Hebron city on Sunday, Wafa reported. One of the shooting victims, a 60-year-old man, was shot in the back and hand. A second man, aged 46, was also shot before being detained by ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -3157,25 +3192,46 @@
           "score": 19
         },
         {
-          "title": "oPt: Settler encroachments and attacks on Palestinian homes are beyond a boiling point [EN/AR]",
-          "url": "https://reliefweb.int/report/occupied-palestinian-territory/settler-encroachments-and-attacks-palestinian-homes-are-beyond-boiling-point-enar",
-          "date": "2026-08-13T08:16:01.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: occupied Palestinian territory Source: UN Office of the High Commissioner for Human Rights Please refer to the attached files. Israeli authorities must immediately remove settlers who are violently displacing thousands of Palestinians, unlawfully grabbing Palestinian land and expanding settlements. Since the establishment of an Israeli settler outpost near Qusra, a Palestinian town locate",
+          "title": "US ambassador calls Israeli settler West Bank siege act of terror",
+          "url": "https://arynews.tv/us-ambassador-calls-israeli-settler-west-bank-siege-act-of-terror",
+          "date": "2026-08-15T08:30:00.000Z",
+          "source": "arynews.tv",
+          "sourceType": "news",
+          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
-          "score": 19
+          "score": 18
+        },
+        {
+          "title": "Colonizers Renew Siege of Palestinian Families Near Nablus",
+          "url": "https://imemc.org/article/colonizers-renew-siege-of-palestinian-families-near-nablus/",
+          "date": "2026-08-15T08:00:00.000Z",
+          "source": "imemc.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 18
         },
         {
           "title": "Siege of West Bank families 'state-backed settler terror', Amnesty official says",
@@ -3241,6 +3297,27 @@
           "score": 18
         },
         {
+          "title": "oPt: Settler encroachments and attacks on Palestinian homes are beyond a boiling point [EN/AR]",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/settler-encroachments-and-attacks-palestinian-homes-are-beyond-boiling-point-enar",
+          "date": "2026-08-13T08:16:01.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: occupied Palestinian territory Source: UN Office of the High Commissioner for Human Rights Please refer to the attached files. Israeli authorities must immediately remove settlers who are violently displacing thousands of Palestinians, unlawfully grabbing Palestinian land and expanding settlements. Since the establishment of an Israeli settler outpost near Qusra, a Palestinian town locate",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
           "title": "oPt: WHO Attacks on health care in the West Bank (Since 1 January - 31 July 2026)",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/who-attacks-health-care-west-bank-1-january-31-july-2026",
           "date": "2026-08-11T10:03:10.000Z",
@@ -3260,27 +3337,6 @@
             "label": "Gefechte"
           },
           "score": 16
-        },
-        {
-          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
-          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
-          "date": "2026-08-15T08:52:10.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 15
         },
         {
           "title": "Israeli settlers besiege Palestinian families in occupied West Bank",
@@ -3321,48 +3377,6 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
-          },
-          "score": 15
-        },
-        {
-          "title": "Why Israel has done so little to rein in spiraling settler violence against Palestinians",
-          "url": "https://www.dailygazette.com/ade/ap/national/why-israel-has-done-so-little-to-rein-in-spiraling-settler-violence-against-palestinians/article_8709ef93-79e7-52e7-9a87-aaf67cf1e07a.html",
-          "date": "2026-08-15T09:15:00.000Z",
-          "source": "dailygazette.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "There a reason why Israel has done little to rein in settler violence . It not just Netanyahu",
-          "url": "https://krmg.com/2026/08/14/theres-a-reason-why-israel-has-done-little-to-rein-in-settler-violence-its-not-just-netanyahu/",
-          "date": "2026-08-15T08:45:00.000Z",
-          "source": "krmg.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -3449,6 +3463,69 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "US urges Netanyahu to condemn settlers besieging Palestinians in West Bank",
+          "url": "https://www.france24.com/en/us-urges-netanyahu-to-condemn-settlers-besieging-palestinians-in-west-bank",
+          "date": "2026-08-15T08:52:10.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "The United States is urging Israeli Prime Minister Benjamin Netanyahu to publicly condemn Israeli settlers who have besieged Palestinian homes in Qusra, while France is calling for their arrest and prosecution. As residents remain cut off from food and other supplies, settler violence is putting further political pressure on Netanyahu ahead of Israel’s election.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Why Israel has done so little to rein in spiraling settler violence against Palestinians",
+          "url": "https://www.dailygazette.com/ade/ap/national/why-israel-has-done-so-little-to-rein-in-spiraling-settler-violence-against-palestinians/article_8709ef93-79e7-52e7-9a87-aaf67cf1e07a.html",
+          "date": "2026-08-15T09:15:00.000Z",
+          "source": "dailygazette.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "There a reason why Israel has done little to rein in settler violence . It not just Netanyahu",
+          "url": "https://krmg.com/2026/08/14/theres-a-reason-why-israel-has-done-little-to-rein-in-settler-violence-its-not-just-netanyahu/",
+          "date": "2026-08-15T08:45:00.000Z",
+          "source": "krmg.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Israeli forces fire tear gas canisters at Palestinian homes in Ramallah",
@@ -3797,7 +3874,7 @@
           "score": 8
         }
       ],
-      "itemCount": 39
+      "itemCount": 40
     },
     {
       "id": "lebanon-hezbollah",
@@ -3831,7 +3908,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 17
+          "count": 18
         },
         {
           "key": "displacement",
@@ -3988,13 +4065,34 @@
           "score": 26
         },
         {
+          "title": "Israel threatens further attacks on Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-fresh-attacks-lebanon",
+          "date": "2026-08-16T08:45:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel threatens further attacks on Lebanon Israeli Defence Minister Israel Katz has threatened further attacks in southern Lebanon, saying: \"No account in any arena will remain open. We will strike with full force at those who harm our soldiers and our citizens.\" The Israeli military killed at least 11 people and wounded 19 others in southern Lebanon on Saturday.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Arab League condemns Israeli strikes on Lebanon as 'dangerous escalation'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/arab-league-condemns-israeli-strikes-lebanon-dangerous-escalation",
           "date": "2026-08-16T06:12:29.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Arab League condemns Israeli strikes on Lebanon as 'dangerous escalation' The Arab League has condemned Israel’s deadly strikes on Lebanon that killed 11 people and destroyed dozens of homes as “a dangerous escalation that threatens to derail any efforts aimed at resolving the ongoing conflict”. In a statement, a spokesman of the League said: \"Israel’s policies and practices blatantly expose the o",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -4005,37 +4103,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 26
-        },
-        {
-          "title": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-lebanons-nabatieh-israel-continues-strikes",
-          "date": "2026-08-16T02:27:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes Explosions were heard in the area between Ali al-Taher Heights and the Dabsha area in the Nabatieh district of southern Lebanon, Al Jazeera reported. Al Manar TV said the blasts were a result of Israeli air attacks in the area, while the Nabatieh Channel said the raids took place in the vicinity of the town of Kfar Reman. The attac",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3059",
-            "name": "Nabatieh",
-            "nameDe": "Nabatäa",
-            "type": "Province",
-            "anchor": [
-              35.512,
-              33.3
-            ],
-            "matched": "Nabatieh"
-          },
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
           },
           "score": 26
         },
@@ -4103,35 +4170,35 @@
           "score": 24
         },
         {
-          "title": "'We're seeing an important escalation in southern Lebanon despite the so-called truce'",
-          "url": "https://www.france24.com/en/we-re-seeing-an-important-escalation-in-southern-lebanon-despite-the-so-called-truce",
-          "date": "2026-08-15T09:59:22.000Z",
-          "source": "France 24",
+          "title": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-lebanons-nabatieh-israel-continues-strikes",
+          "date": "2026-08-16T02:27:53.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Overnight Israeli strikes in southern Lebanon killed at least seven people in one village, in the deadliest escalation since the lull in fighting began two months ago. FRANCE 24 correspondent Renée Davis, reporting from Beirut, says the strikes mark a significant escalation despite the so-called truce, and also gives us an update on ongoing negotiations with Israel.",
+          "summary": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes Explosions were heard in the area between Ali al-Taher Heights and the Dabsha area in the Nabatieh district of southern Lebanon, Al Jazeera reported. Al Manar TV said the blasts were a result of Israeli air attacks in the area, while the Nabatieh Channel said the raids took place in the vicinity of the town of Kfar Reman. The attac",
           "isNew": false,
           "region": {
-            "id": "LBN-3024",
-            "name": "Beirut",
-            "nameDe": "Beirut",
+            "id": "LBN-3059",
+            "name": "Nabatieh",
+            "nameDe": "Nabatäa",
             "type": "Province",
             "anchor": [
-              35.508,
-              33.888
+              35.512,
+              33.3
             ],
-            "matched": "Beirut"
+            "matched": "Nabatieh"
           },
           "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
           },
           "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
           },
-          "score": 24
+          "score": 23
         },
         {
           "title": "Iran condemns Israeli attacks in Lebanon",
@@ -4174,6 +4241,37 @@
             "label": "Opfer"
           },
           "score": 23
+        },
+        {
+          "title": "'We're seeing an important escalation in southern Lebanon despite the so-called truce'",
+          "url": "https://www.france24.com/en/we-re-seeing-an-important-escalation-in-southern-lebanon-despite-the-so-called-truce",
+          "date": "2026-08-15T09:59:22.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Overnight Israeli strikes in southern Lebanon killed at least seven people in one village, in the deadliest escalation since the lull in fighting began two months ago. FRANCE 24 correspondent Renée Davis, reporting from Beirut, says the strikes mark a significant escalation despite the so-called truce, and also gives us an update on ongoing negotiations with Israel.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3024",
+            "name": "Beirut",
+            "nameDe": "Beirut",
+            "type": "Province",
+            "anchor": [
+              35.508,
+              33.888
+            ],
+            "matched": "Beirut"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 22
         },
         {
           "title": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon",
@@ -4751,7 +4849,7 @@
           "score": 0
         }
       ],
-      "itemCount": 35
+      "itemCount": 36
     },
     {
       "id": "sudan",
@@ -4941,37 +5039,6 @@
           "score": 23
         },
         {
-          "title": "Sudan: SAF Accused of Civilian Killings As RSF Drones Strike Three States",
-          "url": "https://allafrica.com/stories/202608130032.html",
-          "date": "2026-08-13T07:48:41.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Dabanga] Jabra El Sheikh / Omdurman / Khartoum / Ed Damer / -- The Sudanese Armed Forces (SAF) were accused on Wednesday of killing at least five civilians and wounding more than 10 others in North Kordofan, while paramilitary Rapid Support Forces (RSF) drones struck targets across River Nile, Khartoum and North Kordofan states, highlighting the growing threat to civilians beyond Sudan's active f",
-          "isNew": false,
-          "region": {
-            "id": "SDN-883",
-            "name": "North Kordofan",
-            "nameDe": "Schamal Kurdufan",
-            "type": "State",
-            "anchor": [
-              29.382,
-              14.438
-            ],
-            "matched": "North Kordofan"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 23
-        },
-        {
           "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
           "date": "2026-08-12T12:00:00.000Z",
@@ -5083,6 +5150,37 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Sudan: SAF Accused of Civilian Killings As RSF Drones Strike Three States",
+          "url": "https://allafrica.com/stories/202608130032.html",
+          "date": "2026-08-13T07:48:41.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Dabanga] Jabra El Sheikh / Omdurman / Khartoum / Ed Damer / -- The Sudanese Armed Forces (SAF) were accused on Wednesday of killing at least five civilians and wounding more than 10 others in North Kordofan, while paramilitary Rapid Support Forces (RSF) drones struck targets across River Nile, Khartoum and North Kordofan states, highlighting the growing threat to civilians beyond Sudan's active f",
+          "isNew": false,
+          "region": {
+            "id": "SDN-883",
+            "name": "North Kordofan",
+            "nameDe": "Schamal Kurdufan",
+            "type": "State",
+            "anchor": [
+              29.382,
+              14.438
+            ],
+            "matched": "North Kordofan"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 15
         },
@@ -5656,8 +5754,8 @@
         "Isfahan",
         "Straße von Hormus"
       ],
-      "activity": 90,
-      "severity": 66,
+      "activity": 88,
+      "severity": 65,
       "newCount": 0,
       "signals": [
         {
@@ -5752,6 +5850,48 @@
       ],
       "items": [
         {
+          "title": "Qatar denies capturing three Iranian pilots after downing fighter jets",
+          "url": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-16T09:27:58.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Iran claims they have been held since Qatar downed two fighter jets at the start of the US-Iran war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 29
+        },
+        {
+          "title": "Iran condemns Israeli attacks in Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-condemns-israeli-attacks-lebanon",
+          "date": "2026-08-15T20:16:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran condemns Israeli attacks in Lebanon Iran’s foreign ministry has condemned Israel’s recent attacks on southern Lebanon which killed 11 people, including children,&nbsp;according to Iran’s semi-official Tasnim news agency. Ministry spokesman Esmaeil Baghaei said Iran “regrets” the international community’s “continued silence and inaction of the United Nations Security Council in the face of bla",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 23
+        },
+        {
           "title": "Qatar denies Tehran’s claim it is detaining Iranian bomber pilots",
           "url": "https://www.aljazeera.com/news/2026/8/15/qatar-denies-it-is-detaining-three-iranian-bomber-pilots?traffic_source=rss",
           "date": "2026-08-15T20:55:29.000Z",
@@ -5780,49 +5920,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 29
-        },
-        {
-          "title": "Qatar denies capturing three Iranian pilots after downing fighter jets",
-          "url": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-15T21:03:57.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Iran claims they have been held since Qatar downed two fighter jets at the start of the US-Iran war.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 26
-        },
-        {
-          "title": "Iran condemns Israeli attacks in Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-condemns-israeli-attacks-lebanon",
-          "date": "2026-08-15T20:16:10.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran condemns Israeli attacks in Lebanon Iran’s foreign ministry has condemned Israel’s recent attacks on southern Lebanon which killed 11 people, including children,&nbsp;according to Iran’s semi-official Tasnim news agency. Ministry spokesman Esmaeil Baghaei said Iran “regrets” the international community’s “continued silence and inaction of the United Nations Security Council in the face of bla",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
@@ -5958,7 +6056,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea",
@@ -6191,27 +6289,6 @@
           "score": 11
         },
         {
-          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
-          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
-          "date": "2026-08-13T09:45:56.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
           "title": "Iran war live: Trump vows to make Hormuz US territory ‘pretty soon’",
           "url": "https://www.aljazeera.com/news/liveblog/2026/8/15/iran-war-live-trump-vows-to-make-hormuz-us-territory-pretty-soon?traffic_source=rss",
           "date": "2026-08-15T00:00:00.000Z",
@@ -6419,6 +6496,27 @@
             "label": "Vertreibung"
           },
           "score": 9
+        },
+        {
+          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
+          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
+          "date": "2026-08-13T09:45:56.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
         }
       ],
       "itemCount": 29
@@ -6768,8 +6866,8 @@
         "Karen",
         "Chin"
       ],
-      "activity": 22,
-      "severity": 61,
+      "activity": 19,
+      "severity": 60,
       "newCount": 0,
       "signals": [
         {
@@ -6845,37 +6943,6 @@
       ],
       "items": [
         {
-          "title": "Rohingya Muslims face violence in Myanmar Rakhine State – Shafaqna English | International Shia News & Fatwas",
-          "url": "https://en.shafaqna.com/471190/rohingya-muslims-face-violence-in-myanmars-rakhine-state/",
-          "date": "2026-08-15T20:00:00.000Z",
-          "source": "en.shafaqna.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Rakhine State"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
           "title": "Myanmar: Mu Traw District Situation Update: The Burma Army conducted air strikes and shelling, planted landmines inside villages, and caused displacement and challenges in Lu Thaw Township (September 2025 to February 2026)",
           "url": "https://reliefweb.int/report/myanmar/mu-traw-district-situation-update-burma-army-conducted-air-strikes-and-shelling-planted-landmines-inside-villages-and-caused-displacement-and-challenges-lu-thaw-township-september-2025-february-2026",
           "date": "2026-08-14T07:03:18.000Z",
@@ -6907,6 +6974,27 @@
           "score": 19
         },
         {
+          "title": "Myanmar: UN investigators document deliberate military attacks on civilians",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168110",
+          "date": "2026-08-11T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Myanmar's military has carried out a sustained campaign of deliberate attacks on civilians – including airstrikes on homes, schools and camps for displaced people, alongside arbitrary detention, torture and sexual violence – according to Human Rights Council-appointed investigators.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "Myanmar: Doo Tha Htoo District Short Update: Burma Army shelling and air strikes caused injuries, destruction, and displacement in Hpa-an Township (January to April 2026)",
           "url": "https://reliefweb.int/report/myanmar/doo-tha-htoo-district-short-update-burma-army-shelling-and-air-strikes-caused-injuries-destruction-and-displacement-hpa-township-january-april-2026",
           "date": "2026-08-13T08:33:10.000Z",
@@ -6935,7 +7023,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Attacks on Health Care in Myanmar: 22 July - 04 August 2026",
@@ -6956,49 +7044,38 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
+          "score": 16
         },
         {
-          "title": "Myanmar: UN investigators document deliberate military attacks on civilians",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168110",
-          "date": "2026-08-11T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Myanmar's military has carried out a sustained campaign of deliberate attacks on civilians – including airstrikes on homes, schools and camps for displaced people, alongside arbitrary detention, torture and sexual violence – according to Human Rights Council-appointed investigators.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "KIO rules out joining junta separate talks with EAOs",
-          "url": "https://www.bnionline.net/en/news/kio-rules-out-joining-juntas-separate-talks-eaos",
-          "date": "2026-08-15T05:30:00.000Z",
-          "source": "bnionline.net",
+          "title": "Rohingya Muslims face violence in Myanmar Rakhine State – Shafaqna English | International Shia News & Fatwas",
+          "url": "https://en.shafaqna.com/471190/rohingya-muslims-face-violence-in-myanmars-rakhine-state/",
+          "date": "2026-08-15T20:00:00.000Z",
+          "source": "en.shafaqna.com",
           "sourceType": "news",
           "summary": "",
           "isNew": false,
-          "region": null,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Rakhine State"
+          },
           "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 14
+          "score": 15
         },
         {
           "title": "Mali: Mali Junta Pardons French Agent Jailed for 'Undermining State Security'",
@@ -7041,6 +7118,27 @@
             "label": "Hilfslieferung"
           },
           "score": 12
+        },
+        {
+          "title": "KIO rules out joining junta separate talks with EAOs",
+          "url": "https://www.bnionline.net/en/news/kio-rules-out-joining-juntas-separate-talks-eaos",
+          "date": "2026-08-15T05:30:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
         },
         {
           "title": "Ex-Myanmar ambassador to UK on trial for trespassing in diplomatic residence",
@@ -7678,7 +7776,7 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 58,
+      "activity": 57,
       "severity": 56,
       "newCount": 0,
       "signals": [
@@ -7701,14 +7799,14 @@
           "count": 3
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
           "count": 2
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 2
         }
@@ -7797,6 +7895,27 @@
       ],
       "items": [
         {
+          "title": "Yemeni government forces hit back after new Houthi offensive",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/08-16-2026-houthis-yemen-sv?traffic_source=rss",
+          "date": "2026-08-16T04:09:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Yemeni government forces, backed by Saudi Arabia, have struck back after a new Houthi offensive in areas it controls.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 29
+        },
+        {
           "title": "Houthis launch sixth ballistic missile at Marib city",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-launch-sixth-ballistic-missile-marib-city",
           "date": "2026-08-16T02:57:38.000Z",
@@ -7825,59 +7944,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 30
-        },
-        {
-          "title": "Yemeni government forces hit back after new Houthi offensive",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/08-16-2026-houthis-yemen-sv?traffic_source=rss",
-          "date": "2026-08-16T04:09:01.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Yemeni government forces, backed by Saudi Arabia, have struck back after a new Houthi offensive in areas it controls.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 29
-        },
-        {
-          "title": "Yemen’s government says Houthi strikes hit residential areas in Marib",
-          "url": "https://www.aljazeera.com/news/2026/8/15/yemens-government-says-houthi-strikes-hit-residential-areas-in-marib?traffic_source=rss",
-          "date": "2026-08-15T23:27:10.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Yemen's Ministry of Information denounces attacks on Marib as 'escalation' that threatens lives and increases suffering.",
-          "isNew": false,
-          "region": {
-            "id": "YEM-337",
-            "name": "Ma'rib",
-            "nameDe": "Gouvernement Ma'rib",
-            "type": "Governorate",
-            "anchor": [
-              45.571,
-              15.476
-            ],
-            "matched": "Marib"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 29
+          "score": 27
         },
         {
           "title": "Report: Drone strikes kill three Houthi fighters and wound commanders in southwest Yemen",
@@ -7923,6 +7990,37 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Yemen’s government says Houthi strikes hit residential areas in Marib",
+          "url": "https://www.aljazeera.com/news/2026/8/15/yemens-government-says-houthi-strikes-hit-residential-areas-in-marib?traffic_source=rss",
+          "date": "2026-08-15T23:27:10.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Yemen's Ministry of Information denounces attacks on Marib as 'escalation' that threatens lives and increases suffering.",
+          "isNew": false,
+          "region": {
+            "id": "YEM-337",
+            "name": "Ma'rib",
+            "nameDe": "Gouvernement Ma'rib",
+            "type": "Governorate",
+            "anchor": [
+              45.571,
+              15.476
+            ],
+            "matched": "Marib"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "clash",
@@ -8286,30 +8384,9 @@
             "label": "Bericht"
           },
           "score": 0
-        },
-        {
-          "title": "Yemen WASH Cluster - Humanitarian Update (January - June 2026)",
-          "url": "https://reliefweb.int/report/yemen/yemen-wash-cluster-humanitarian-update-january-june-2026",
-          "date": "2026-08-09T08:16:55.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Yemen Source: WASH Cluster Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 0
         }
       ],
-      "itemCount": 22
+      "itemCount": 21
     },
     {
       "id": "burkina-faso",
@@ -8476,7 +8553,7 @@
       ],
       "activity": 41,
       "severity": 51,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -8512,7 +8589,7 @@
             11.765
           ],
           "count": 2,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -8590,68 +8667,6 @@
       ],
       "items": [
         {
-          "title": "Ghana: 10 Officers, 17 Bandits Killed in Clash in Kebbi State",
-          "url": "https://allafrica.com/stories/202608140580.html",
-          "date": "2026-08-14T20:57:47.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Ghanaian Times] Ten Nigerian police officers were killed and two wounded in a clash with a gang of suspected bandits in northwestern Kebbi state, police said on ⁠Tuesday.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2879",
-            "name": "Kebbi State",
-            "nameDe": "Kebbi",
-            "type": "State",
-            "anchor": [
-              4.496,
-              11.765
-            ],
-            "matched": "Kebbi State"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 20
-        },
-        {
-          "title": "Freed Kebbi judge recognises bandits’ hideout",
-          "url": "https://www.premiumtimesng.com/news/top-news/903316-freed-kebbi-judge-recognises-bandits-hideout.html",
-          "date": "2026-08-16T07:42:43.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Justice Faruk Bunza stated that his abductors held him at a camp in Suru LGA and appeared to have prior knowledge of potential targets. The post Freed Kebbi judge recognises bandits’ hideout appeared first on Premium Times Nigeria .",
-          "isNew": true,
-          "region": {
-            "id": "NGA-2879",
-            "name": "Kebbi State",
-            "nameDe": "Kebbi",
-            "type": "State",
-            "anchor": [
-              4.496,
-              11.765
-            ],
-            "matched": "Kebbi"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 20
-        },
-        {
           "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
           "url": "https://allafrica.com/stories/202608140172.html",
           "date": "2026-08-14T10:39:57.000Z",
@@ -8694,6 +8709,68 @@
           "score": 19
         },
         {
+          "title": "Ghana: 10 Officers, 17 Bandits Killed in Clash in Kebbi State",
+          "url": "https://allafrica.com/stories/202608140580.html",
+          "date": "2026-08-14T20:57:47.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Ghanaian Times] Ten Nigerian police officers were killed and two wounded in a clash with a gang of suspected bandits in northwestern Kebbi state, police said on ⁠Tuesday.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2879",
+            "name": "Kebbi State",
+            "nameDe": "Kebbi",
+            "type": "State",
+            "anchor": [
+              4.496,
+              11.765
+            ],
+            "matched": "Kebbi State"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Freed Kebbi judge recognises bandits’ hideout",
+          "url": "https://www.premiumtimesng.com/news/top-news/903316-freed-kebbi-judge-recognises-bandits-hideout.html",
+          "date": "2026-08-16T07:42:43.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Justice Faruk Bunza stated that his abductors held him at a camp in Suru LGA and appeared to have prior knowledge of potential targets. The post Freed Kebbi judge recognises bandits’ hideout appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2879",
+            "name": "Kebbi State",
+            "nameDe": "Kebbi",
+            "type": "State",
+            "anchor": [
+              4.496,
+              11.765
+            ],
+            "matched": "Kebbi"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 18
+        },
+        {
           "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
           "url": "https://allafrica.com/stories/202608140520.html",
           "date": "2026-08-14T19:58:20.000Z",
@@ -8712,7 +8789,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Kenya: Court Orders Govt to Set Aside Millons for Torture, Abduction Victims",
@@ -8830,27 +8907,6 @@
           "score": 12
         },
         {
-          "title": "UNHCR Lake Chad Basin: Nigerian Refugees & Repatriation Overview - 1 August 2026",
-          "url": "https://reliefweb.int/report/nigeria/unhcr-lake-chad-basin-nigerian-refugees-repatriation-overview-1-august-2026",
-          "date": "2026-08-13T13:03:46.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Nigeria, Cameroon, Chad, Niger Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
           "title": "Nigeria: Gunmen Kill Nine Travellers in Niger",
           "url": "https://allafrica.com/stories/202608130184.html",
           "date": "2026-08-13T11:35:47.000Z",
@@ -8879,7 +8935,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 11
+          "score": 12
         },
         {
           "title": "Nigeria: Army Battalion Begins Operations in Kwara South",
@@ -8910,7 +8966,28 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 12
+        },
+        {
+          "title": "UNHCR Lake Chad Basin: Nigerian Refugees & Repatriation Overview - 1 August 2026",
+          "url": "https://reliefweb.int/report/nigeria/unhcr-lake-chad-basin-nigerian-refugees-repatriation-overview-1-august-2026",
+          "date": "2026-08-13T13:03:46.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Nigeria, Cameroon, Chad, Niger Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
         },
         {
           "title": "Nigeria: U.S. Flags Civilian Deaths, Funding Gaps As Nigeria Pushes for CPC Delisting",
@@ -9037,7 +9114,7 @@
       ],
       "activity": 38,
       "severity": 50,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -9102,13 +9179,13 @@
       ],
       "items": [
         {
-          "title": "Emirati academic's barbed tweet on Pakistan exposes UAE unease over Mecca pact",
+          "title": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact",
           "url": "https://www.middleeasteye.net/news/emirati-academics-barbed-tweet-pakistan-exposes-uae-unease-over-mecca-pact",
           "date": "2026-08-16T07:19:35.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Emirati academic's barbed tweet on Pakistan exposes UAE unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Disparaging remarks by Abdulkhaleq Abdulla, a former aide to UAE President Mohammed bin Zayed, on Pakistan's ‘poverty, illiteracy’ and nuclear arsenal spark online backlash. Turkey’s President Recep Tayyip Erdogan shakes hands with Pakistan’s Prime Minister Shehbaz Shari",
-          "isNew": true,
+          "summary": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Remarks by the political analyst on Pakistan's poverty, illiteracy and nuclear arsenal have sparked online backlash Turkish President Recep Tayyip Erdogan, Saudi Crown Prince Mohammed bin Salman and Pakistani Prime Minister Shehbaz Sharif meet in Mecca on 7 August 2",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9121,99 +9198,6 @@
             "label": "Bericht"
           },
           "score": 19
-        },
-        {
-          "title": "‘No no-go areas’ across Balochistan, says Home Minister Langove",
-          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-home-minister-langove",
-          "date": "2026-08-16T03:33:14.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Balochistan’s wounds",
-          "url": "https://www.dawn.com/news/2023135/balochistans-wounds",
-          "date": "2026-08-16T03:47:54.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "ALTHOUGH Balochistan has been experiencing varying degrees of tumult for over two decades now, currently, the troubled province is witnessing near-constant terrorist activity and lawlessness. The rulers in both Islamabad and Quetta often downplay the situation, but there are moments when they themselves admit that all is not well in Balochistan. For instance, on Friday, when the nation was celebra",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "‘No no-go areas’ across Balochistan, says Langove",
-          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-langove",
-          "date": "2026-08-16T03:26:39.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
         },
         {
           "title": "Balochistan home minister unhurt as convoy comes under attack in Mastung",
@@ -9266,6 +9250,99 @@
             "label": "Opfer"
           },
           "score": 16
+        },
+        {
+          "title": "‘No no-go areas’ across Balochistan, says Home Minister Langove",
+          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-home-minister-langove",
+          "date": "2026-08-16T03:33:14.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Balochistan’s wounds",
+          "url": "https://www.dawn.com/news/2023135/balochistans-wounds",
+          "date": "2026-08-16T03:47:54.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "ALTHOUGH Balochistan has been experiencing varying degrees of tumult for over two decades now, currently, the troubled province is witnessing near-constant terrorist activity and lawlessness. The rulers in both Islamabad and Quetta often downplay the situation, but there are moments when they themselves admit that all is not well in Balochistan. For instance, on Friday, when the nation was celebra",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "‘No no-go areas’ across Balochistan, says Langove",
+          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-langove",
+          "date": "2026-08-16T03:26:39.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
@@ -10607,7 +10684,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "X account of Nigerian military headquarters hacked – Official",
@@ -10725,27 +10802,6 @@
           "score": 12
         },
         {
-          "title": "Niger : Mécanisme de Réponse Rapide (RRM) - Aperçu juillet 2026",
-          "url": "https://reliefweb.int/report/niger/niger-mecanisme-de-reponse-rapide-rrm-apercu-juillet-2026",
-          "date": "2026-08-14T11:23:39.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Niger Sources: Action contre la Faim France, Agency for Technical Cooperation and Development, Danish Refugee Council, Government of Niger, International Rescue Committee, UN Children's Fund, UN Office for the Coordination of Humanitarian Affairs, World Food Programme Please refer to the attached Infographic. MULTISECTORIEL Le Mécanisme de Réponse Rapide (RRM) est constitué d’un réseau d’",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
           "title": "Nigeria: Gunmen Kill Nine Travellers in Niger",
           "url": "https://allafrica.com/stories/202608130184.html",
           "date": "2026-08-13T11:35:47.000Z",
@@ -10774,7 +10830,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 11
+          "score": 12
         },
         {
           "title": "Nigeria: Army Battalion Begins Operations in Kwara South",
@@ -10805,7 +10861,28 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 12
+        },
+        {
+          "title": "Niger : Mécanisme de Réponse Rapide (RRM) - Aperçu juillet 2026",
+          "url": "https://reliefweb.int/report/niger/niger-mecanisme-de-reponse-rapide-rrm-apercu-juillet-2026",
+          "date": "2026-08-14T11:23:39.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Niger Sources: Action contre la Faim France, Agency for Technical Cooperation and Development, Danish Refugee Council, Government of Niger, International Rescue Committee, UN Children's Fund, UN Office for the Coordination of Humanitarian Affairs, World Food Programme Please refer to the attached Infographic. MULTISECTORIEL Le Mécanisme de Réponse Rapide (RRM) est constitué d’un réseau d’",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
         },
         {
           "title": "US missionary released following kidnap in Niger, Christian group says",
@@ -11326,7 +11403,7 @@
       ],
       "activity": 24,
       "severity": 46,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -11475,13 +11552,13 @@
           "score": 19
         },
         {
-          "title": "Emirati academic's barbed tweet on Pakistan exposes UAE unease over Mecca pact",
+          "title": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact",
           "url": "https://www.middleeasteye.net/news/emirati-academics-barbed-tweet-pakistan-exposes-uae-unease-over-mecca-pact",
           "date": "2026-08-16T07:19:35.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Emirati academic's barbed tweet on Pakistan exposes UAE unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Disparaging remarks by Abdulkhaleq Abdulla, a former aide to UAE President Mohammed bin Zayed, on Pakistan's ‘poverty, illiteracy’ and nuclear arsenal spark online backlash. Turkey’s President Recep Tayyip Erdogan shakes hands with Pakistan’s Prime Minister Shehbaz Shari",
-          "isNew": true,
+          "summary": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Remarks by the political analyst on Pakistan's poverty, illiteracy and nuclear arsenal have sparked online backlash Turkish President Recep Tayyip Erdogan, Saudi Crown Prince Mohammed bin Salman and Pakistani Prime Minister Shehbaz Sharif meet in Mecca on 7 August 2",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -12011,167 +12088,6 @@
       "itemCount": 9
     },
     {
-      "id": "somalia",
-      "name": "Somalia",
-      "nameEn": "Somalia",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "Somalia"
-      ],
-      "lat": 4.5,
-      "lon": 45.5,
-      "tier": "high",
-      "since": "2006",
-      "parties": [
-        "Bundesregierung",
-        "Al-Shabaab",
-        "IS-Somalia",
-        "AUSSOM",
-        "Puntland",
-        "Jubaland"
-      ],
-      "background": "Al-Shabaab-Offensiven in Hirshabelle und Shabelle, IS-Ableger in Puntland, Spannungen zwischen Mogadischu und den Bundesstaaten sowie um Somaliland.",
-      "hotspots": [
-        "Mogadischu",
-        "Shabelle",
-        "Puntland",
-        "Jubaland",
-        "Somaliland"
-      ],
-      "activity": 11,
-      "severity": 42,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "SOM",
-      "extraCountries": [
-        "ETH"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "SOMALIA : Military Command and NISA Issue Conflicting Accounts of Recent Airstrikes Targeting Al - Shabaab",
-          "url": "https://raxanreeb.com/somalia-military-command-and-nisa-issue-conflicting-accounts-of-recent-airstrikes-targeting-al-shabaab/",
-          "date": "2026-08-15T09:00:00.000Z",
-          "source": "raxanreeb.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "RSF drone attacks in Sudan , Somalia drought emergency , and WFP sticks with Palantir : The Cheat Sheet",
-          "url": "https://www.thenewhumanitarian.org/cheat-sheet/2026/08/14/rsf-drone-attacks-somalias-drought-emergency-and-wfp-sticks-palantir-cheat",
-          "date": "2026-08-14T16:45:00.000Z",
-          "source": "thenewhumanitarian.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Somalia: Puntland Puts Forces On Alert Over Reported Hassan Sheikh Visit to Galkayo",
-          "url": "https://allafrica.com/stories/202608140136.html",
-          "date": "2026-08-14T10:05:37.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Garowe -- Somalia's Puntland administration said Thursday it had placed its security forces on heightened alert and warned against a reported visit by President Hassan Sheikh Mohamud to Galkayo, a city divided between Puntland and the neighbouring Galmudug state.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Somalia — Emergency Trend Tracking Report (ETT) - 13 Districts assessed | Week 08 (01 - 05 August)",
-          "url": "https://reliefweb.int/report/somalia/somalia-emergency-trend-tracking-report-ett-13-districts-assessed-week-08-01-05-august",
-          "date": "2026-08-12T13:33:06.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Somalia Source: International Organization for Migration Please refer to the attached Infographic. DTM launched a new round of ETT on 14 June 2026 using an updated methodology to monitor displacement driven by conflict, as well as the climatic impacts of the El Niño phenomenon, which is expected to trigger significant displacement toward the end of the year. DTM teams collect data in 13 d",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
-          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
-          "date": "2026-08-11T13:25:46.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Somalia Source: Médecins Sans Frontières 11 August 2026 - One in every two children screened in displacement sites in Baidoa, Southwest Somalia, is acutely malnourished and one in every four is severely malnourished. These shocking statistics are the findings of a malnutrition survey carried out in July by Médecins Sans Frontières/Doctors Without Borders (MSF). “Behind every statistic is ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 5
-    },
-    {
       "id": "ethiopia",
       "name": "Äthiopien",
       "nameEn": "Ethiopia",
@@ -12623,7 +12539,7 @@
         "Juba",
         "Jonglei"
       ],
-      "activity": 12,
+      "activity": 10,
       "severity": 42,
       "newCount": 0,
       "signals": [
@@ -12730,7 +12646,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 12
+          "score": 9
         },
         {
           "title": "WHO Weekly Situation Update on Ongoing Health Emergency Events in South Sudan - Week #32, Date: 03–09 Aug 2026",
@@ -12797,6 +12713,167 @@
         }
       ],
       "itemCount": 7
+    },
+    {
+      "id": "somalia",
+      "name": "Somalia",
+      "nameEn": "Somalia",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "Somalia"
+      ],
+      "lat": 4.5,
+      "lon": 45.5,
+      "tier": "high",
+      "since": "2006",
+      "parties": [
+        "Bundesregierung",
+        "Al-Shabaab",
+        "IS-Somalia",
+        "AUSSOM",
+        "Puntland",
+        "Jubaland"
+      ],
+      "background": "Al-Shabaab-Offensiven in Hirshabelle und Shabelle, IS-Ableger in Puntland, Spannungen zwischen Mogadischu und den Bundesstaaten sowie um Somaliland.",
+      "hotspots": [
+        "Mogadischu",
+        "Shabelle",
+        "Puntland",
+        "Jubaland",
+        "Somaliland"
+      ],
+      "activity": 9,
+      "severity": 41,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "SOM",
+      "extraCountries": [
+        "ETH"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "SOMALIA : Military Command and NISA Issue Conflicting Accounts of Recent Airstrikes Targeting Al - Shabaab",
+          "url": "https://raxanreeb.com/somalia-military-command-and-nisa-issue-conflicting-accounts-of-recent-airstrikes-targeting-al-shabaab/",
+          "date": "2026-08-15T09:00:00.000Z",
+          "source": "raxanreeb.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "RSF drone attacks in Sudan , Somalia drought emergency , and WFP sticks with Palantir : The Cheat Sheet",
+          "url": "https://www.thenewhumanitarian.org/cheat-sheet/2026/08/14/rsf-drone-attacks-somalias-drought-emergency-and-wfp-sticks-palantir-cheat",
+          "date": "2026-08-14T16:45:00.000Z",
+          "source": "thenewhumanitarian.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Somalia: Puntland Puts Forces On Alert Over Reported Hassan Sheikh Visit to Galkayo",
+          "url": "https://allafrica.com/stories/202608140136.html",
+          "date": "2026-08-14T10:05:37.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Garowe -- Somalia's Puntland administration said Thursday it had placed its security forces on heightened alert and warned against a reported visit by President Hassan Sheikh Mohamud to Galkayo, a city divided between Puntland and the neighbouring Galmudug state.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Somalia — Emergency Trend Tracking Report (ETT) - 13 Districts assessed | Week 08 (01 - 05 August)",
+          "url": "https://reliefweb.int/report/somalia/somalia-emergency-trend-tracking-report-ett-13-districts-assessed-week-08-01-05-august",
+          "date": "2026-08-12T13:33:06.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Somalia Source: International Organization for Migration Please refer to the attached Infographic. DTM launched a new round of ETT on 14 June 2026 using an updated methodology to monitor displacement driven by conflict, as well as the climatic impacts of the El Niño phenomenon, which is expected to trigger significant displacement toward the end of the year. DTM teams collect data in 13 d",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
+          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
+          "date": "2026-08-11T13:25:46.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Somalia Source: Médecins Sans Frontières 11 August 2026 - One in every two children screened in displacement sites in Baidoa, Southwest Somalia, is acutely malnourished and one in every four is severely malnourished. These shocking statistics are the findings of a malnutrition survey carried out in July by Médecins Sans Frontières/Doctors Without Borders (MSF). “Behind every statistic is ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        }
+      ],
+      "itemCount": 5
     },
     {
       "id": "taiwan-strait",
@@ -12920,7 +12997,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": " 《 TAIPEI TIMES 》 Missile production passes key test : source - 焦點",
@@ -13387,86 +13464,6 @@
       "itemCount": 22
     },
     {
-      "id": "mexico-cartels",
-      "name": "Mexiko (Kartellgewalt)",
-      "nameEn": "Mexico – Cartel Violence",
-      "region": "Amerika (Nord)",
-      "countries": [
-        "Mexico"
-      ],
-      "lat": 23.5,
-      "lon": -102.5,
-      "tier": "high",
-      "since": "2006",
-      "parties": [
-        "Mexikanischer Staat",
-        "Sinaloa-Kartell",
-        "CJNG",
-        "US-Druck"
-      ],
-      "background": "Interner Krieg im Sinaloa-Kartell, CJNG-Expansion und massiver US-Druck nach der Einstufung von Kartellen als Terrororganisationen.",
-      "hotspots": [
-        "Sinaloa/Culiacán",
-        "Michoacán",
-        "Guerrero",
-        "Grenzregion"
-      ],
-      "activity": 5,
-      "severity": 40,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MEX",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "On the Radar: Cartel Coalition’s Gaps and a CJNG Weapons Bust",
-          "url": "https://insightcrime.org/news/on-the-radar-cartel-coalitions-gaps-and-a-cjng-weapons-bust/",
-          "date": "2026-08-13T18:12:11.000Z",
-          "source": "InSight Crime",
-          "sourceType": "analysis",
-          "summary": "On the Radar: Cartel Coalition’s Gaps and a CJNG Weapons Bust What can Washington's new \"cartel coalition\" deliver? What does the arrest of CJNG operators in Europe say about the group’s resilience? And can a joint police push stop Brazil's two biggest gangs from carving up Bolivia's border with Brazil? This week's top three organized crime stories in On the Radar. The post On the Radar: Cartel Co",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 21
-        },
-        {
-          "title": "Democracy Digest: US Charges Mexican Cartel Members over Czech Weapons Deal",
-          "url": "https://balkaninsight.com/2026/08/14/democracy-digest-us-charges-mexican-cartel-members-over-czech-weapons-deal/rd/",
-          "date": "2026-08-14T07:02:50.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Elsewhere, Slovak Interior Ministry forced into embarrassing U-turn over speed cameras with suspected Russian links; Poland beefs up defence of critical infrastructure against Russian threats; and future of Orban’s summer camp in doubt.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        }
-      ],
-      "itemCount": 2
-    },
-    {
       "id": "korea",
       "name": "Koreanische Halbinsel",
       "nameEn": "Korean Peninsula",
@@ -13490,8 +13487,8 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 55,
-      "severity": 39,
+      "activity": 58,
+      "severity": 40,
       "newCount": 1,
       "signals": [
         {
@@ -13504,7 +13501,7 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 2
+          "count": 3
         },
         {
           "key": "displacement",
@@ -13552,7 +13549,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -13563,6 +13560,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
+          "title": "Live: Ukraine hit missile fuel production facility in Russia in overnight assault",
+          "url": "https://www.france24.com/en/europe/20260816-live-moscow-targeted-by-600-drones-overnight-explosions-heard-in-kyiv",
+          "date": "2026-08-16T04:42:16.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ​hit ​a missile fuel production facility ​in ‌Russia's ⁠Rostov ‌region overnight, Ukrainian military ⁠said on Sunday, as Ukraine steps up long-range attacks into Russian territory. The assault came as Russian ⁠forces launched a ​missile attack on Kyiv, sparking fires in at least two districts of Ukraine's capital, Mayor ​Vitali ‌Klitschko said. Follow our live blog for all the latest updat",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           },
           "score": 26
         },
@@ -13585,28 +13603,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
-        },
-        {
-          "title": "South Korean president proposes talks to officially end war with North Korea",
-          "url": "https://www.premiumtimesng.com/foreign/903280-south-korean-president-proposes-talks-to-officially-end-war-with-north-korea.html",
-          "date": "2026-08-16T04:38:04.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "However, there was no formal peace treaty, so technically the two Koreas are still at war. The post South Korean president proposes talks to officially end war with North Korea appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 22
+          "score": 23
         },
         {
           "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
@@ -13661,24 +13658,14 @@
           "score": 19
         },
         {
-          "title": "South Korean president proposes talks with North to formally end war",
-          "url": "https://www.dawn.com/news/2023168/south-korean-president-proposes-talks-with-north-to-formally-end-war",
-          "date": "2026-08-16T03:05:28.000Z",
-          "source": "Dawn (Pakistan)",
+          "title": "South Korean president proposes talks to officially end war with North Korea",
+          "url": "https://www.premiumtimesng.com/foreign/903280-south-korean-president-proposes-talks-to-officially-end-war-with-north-korea.html",
+          "date": "2026-08-16T04:38:04.000Z",
+          "source": "Premium Times (Nigeria)",
           "sourceType": "news",
-          "summary": "SEOUL: South Korean President Lee Jae Myung proposed talks with North Korea on Saturday to formally end the long-running Korean war, as Pyongyang deepens ties with Moscow while asserting its status as an “irreversible” nuclear state. The two Koreas remain technically at war because their 1950-53 conflict ended with an armistice rather than a peace treaty. Lee made the proposal in his speech at a c",
+          "summary": "However, there was no formal peace treaty, so technically the two Koreas are still at war. The post South Korean president proposes talks to officially end war with North Korea appeared first on Premium Times Nigeria .",
           "isNew": false,
-          "region": {
-            "id": "PRK-3305",
-            "name": "Pyongyang",
-            "nameDe": "Pjöngjang",
-            "type": "Special City",
-            "anchor": [
-              125.923,
-              38.996
-            ],
-            "matched": "Pyongyang"
-          },
+          "region": null,
           "event": {
             "type": "talks",
             "icon": "🤝",
@@ -13732,6 +13719,37 @@
             "label": "Verhandlungen"
           },
           "score": 16
+        },
+        {
+          "title": "South Korean president proposes talks with North to formally end war",
+          "url": "https://www.dawn.com/news/2023168/south-korean-president-proposes-talks-with-north-to-formally-end-war",
+          "date": "2026-08-16T03:05:28.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "SEOUL: South Korean President Lee Jae Myung proposed talks with North Korea on Saturday to formally end the long-running Korean war, as Pyongyang deepens ties with Moscow while asserting its status as an “irreversible” nuclear state. The two Koreas remain technically at war because their 1950-53 conflict ended with an armistice rather than a peace treaty. Lee made the proposal in his speech at a c",
+          "isNew": false,
+          "region": {
+            "id": "PRK-3305",
+            "name": "Pyongyang",
+            "nameDe": "Pjöngjang",
+            "type": "Special City",
+            "anchor": [
+              125.923,
+              38.996
+            ],
+            "matched": "Pyongyang"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
         },
         {
           "title": "South Korea Seeks Talks to Officially End War With North",
@@ -13857,10 +13875,90 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         }
       ],
-      "itemCount": 14
+      "itemCount": 15
+    },
+    {
+      "id": "mexico-cartels",
+      "name": "Mexiko (Kartellgewalt)",
+      "nameEn": "Mexico – Cartel Violence",
+      "region": "Amerika (Nord)",
+      "countries": [
+        "Mexico"
+      ],
+      "lat": 23.5,
+      "lon": -102.5,
+      "tier": "high",
+      "since": "2006",
+      "parties": [
+        "Mexikanischer Staat",
+        "Sinaloa-Kartell",
+        "CJNG",
+        "US-Druck"
+      ],
+      "background": "Interner Krieg im Sinaloa-Kartell, CJNG-Expansion und massiver US-Druck nach der Einstufung von Kartellen als Terrororganisationen.",
+      "hotspots": [
+        "Sinaloa/Culiacán",
+        "Michoacán",
+        "Guerrero",
+        "Grenzregion"
+      ],
+      "activity": 5,
+      "severity": 40,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MEX",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "On the Radar: Cartel Coalition’s Gaps and a CJNG Weapons Bust",
+          "url": "https://insightcrime.org/news/on-the-radar-cartel-coalitions-gaps-and-a-cjng-weapons-bust/",
+          "date": "2026-08-13T18:12:11.000Z",
+          "source": "InSight Crime",
+          "sourceType": "analysis",
+          "summary": "On the Radar: Cartel Coalition’s Gaps and a CJNG Weapons Bust What can Washington's new \"cartel coalition\" deliver? What does the arrest of CJNG operators in Europe say about the group’s resilience? And can a joint police push stop Brazil's two biggest gangs from carving up Bolivia's border with Brazil? This week's top three organized crime stories in On the Radar. The post On the Radar: Cartel Co",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 21
+        },
+        {
+          "title": "Democracy Digest: US Charges Mexican Cartel Members over Czech Weapons Deal",
+          "url": "https://balkaninsight.com/2026/08/14/democracy-digest-us-charges-mexican-cartel-members-over-czech-weapons-deal/rd/",
+          "date": "2026-08-14T07:02:50.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Elsewhere, Slovak Interior Ministry forced into embarrassing U-turn over speed cameras with suspected Russian links; Poland beefs up defence of critical infrastructure against Russian threats; and future of Orban’s summer camp in doubt.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        }
+      ],
+      "itemCount": 2
     },
     {
       "id": "west-papua",
@@ -13885,15 +13983,15 @@
         "Intan Jaya",
         "Timika"
       ],
-      "activity": 37,
-      "severity": 34,
+      "activity": 42,
+      "severity": 35,
       "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 5
+          "count": 6
         },
         {
           "key": "displacement",
@@ -13920,6 +14018,27 @@
       "extraCountries": [],
       "regions": [],
       "items": [
+        {
+          "title": "Indonesian earthquake : Aid reaches Flores as death toll climbs",
+          "url": "https://www.france24.com/en/indonesian-earthquake-aid-reaches-flores-as-death-toll-climbs",
+          "date": "2026-08-16T08:46:45.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 47 people have been killed after a powerful 7.7-magnitude earthquake struck eastern Indonesia, triggering hundreds of aftershocks, widespread destruction and landslides. Rescue operations are underway as remote villages remain difficult to reach and the death toll is expected to rise.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
         {
           "title": "Rescuers search for survivors as Indonesian 7.7 quake death toll rises to 47",
           "url": "https://www.dawn.com/news/2023007/rescuers-search-for-survivors-as-indonesian-77-quake-death-toll-rises-to-47",
@@ -13990,7 +14109,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Thousands of evacuees on Indonesia's Flores island began receiving aid on Sunday after a 7.7-magnitude quake killed 48 people, injured dozens and damaged hundreds of houses and buildings. Some 5,000 people fled their homes and in some areas people were left without electricity and telecommunications.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -14152,7 +14271,7 @@
           "score": 9
         }
       ],
-      "itemCount": 11
+      "itemCount": 12
     },
     {
       "id": "libya",
@@ -14455,8 +14574,8 @@
         "N'Djamena",
         "Ost-Tschad"
       ],
-      "activity": 23,
-      "severity": 29,
+      "activity": 20,
+      "severity": 28,
       "newCount": 0,
       "signals": [
         {
@@ -14578,27 +14697,6 @@
           "score": 12
         },
         {
-          "title": "Tchad : Présence physique des partenaires au Lac (Qui à un bureau où ?) Août 2026",
-          "url": "https://reliefweb.int/report/chad/tchad-presence-physique-des-partenaires-au-lac-qui-un-bureau-ou-aout-2026",
-          "date": "2026-08-13T08:09:14.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Chad Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
           "title": "How a Sudanese refugee became a head teacher in a Chadian camp",
           "url": "https://www.aljazeera.com/news/2026/8/15/how-a-sudanese-refugee-became-a-head-teacher-in-a-chadian-camp?traffic_source=rss",
           "date": "2026-08-15T05:14:40.000Z",
@@ -14639,6 +14737,27 @@
             "label": "Opfer"
           },
           "score": 11
+        },
+        {
+          "title": "Tchad : Présence physique des partenaires au Lac (Qui à un bureau où ?) Août 2026",
+          "url": "https://reliefweb.int/report/chad/tchad-presence-physique-des-partenaires-au-lac-qui-un-bureau-ou-aout-2026",
+          "date": "2026-08-13T08:09:14.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Chad Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
         },
         {
           "title": "UNHCR Weekly Relocation Update - Eastern Chad (31 July 2026)",
@@ -14919,7 +15038,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 3
+          "score": 0
         },
         {
           "title": "Bureau de coordination du HCR À l’est du Tchad | Urgence Soudan Dashboard de la relocalisation - depuis Avril 2023 (Mise à jour du 09-08-2026)",
@@ -15307,7 +15426,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "7 killed , 23 injured in bus - truck collision in N . Iraq",
@@ -15866,6 +15985,325 @@
       "itemCount": 4
     },
     {
+      "id": "moldova-transnistria",
+      "name": "Moldau / Transnistrien",
+      "nameEn": "Moldova & Transnistria",
+      "region": "Europa / Eurasien",
+      "countries": [
+        "Moldova"
+      ],
+      "lat": 47,
+      "lon": 28.9,
+      "tier": "low",
+      "since": "1992",
+      "parties": [
+        "Moldau",
+        "Transnistrien",
+        "Russland"
+      ],
+      "background": "Eingefrorener Konflikt mit russischen Truppen in Transnistrien; hybride Einflussnahme und Energiedruck auf Chisinau.",
+      "hotspots": [
+        "Transnistrien",
+        "Chisinau",
+        "Gagausien"
+      ],
+      "activity": 46,
+      "severity": 24,
+      "newCount": 2,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MDA",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Ukraine targets Moscow in mass drone attack as Russia bombards Kyiv",
+          "url": "https://www.aljazeera.com/news/2026/8/16/russian-strikes-kill-ukrainian-woman-as-nato-jet-downs-drone-over-romania?traffic_source=rss",
+          "date": "2026-08-16T04:54:33.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Russian authorities report 201 Ukrainian drones downed overnight in the Moscow region in the escalating conflict.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Five killed as Russia launches fresh aerial attacks across Ukraine",
+          "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-16T09:04:14.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Ukrainian President Volodymyr Zelensky accuses Russia of targeting civilian infrastructure, while Moscow reports that a warehouse was hit.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Troops from North Korea to boost Russia's Ukraine forces",
+          "url": "https://www.dw.com/en/troops-from-north-korea-to-boost-russia-s-ukraine-forces/a-78385524?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-16T06:49:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
+          "title": "Live: Ukraine hit missile fuel production facility in Russia in overnight assault",
+          "url": "https://www.france24.com/en/europe/20260816-live-moscow-targeted-by-600-drones-overnight-explosions-heard-in-kyiv",
+          "date": "2026-08-16T04:42:16.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ​hit ​a missile fuel production facility ​in ‌Russia's ⁠Rostov ‌region overnight, Ukrainian military ⁠said on Sunday, as Ukraine steps up long-range attacks into Russian territory. The assault came as Russian ⁠forces launched a ​missile attack on Kyiv, sparking fires in at least two districts of Ukraine's capital, Mayor ​Vitali ‌Klitschko said. Follow our live blog for all the latest updat",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
+          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
+          "date": "2026-08-15T11:43:15.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "New UK cost of living crisis looms with soaring energy bills forecast to lift inflation",
+          "url": "https://www.theguardian.com/business/2026/aug/16/new-uk-cost-of-living-crisis-looms-rising-energy-bills-inflation",
+          "date": "2026-08-16T08:42:16.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Latest reading on Wednesday likely to frame scale of challenge for new PM to ease pressures on households amid Iran war fallout British households are facing a renewed cost of living squeeze, with official figures expected to show this week that soaring energy bills drove up inflation in July to close to 3%. As the Iran war continues to send shock waves through global energy markets, economists pr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Russians snap up new homes built on Ukraine 'graveyard'",
+          "url": "https://www.dw.com/en/russians-snap-up-new-homes-built-on-ukraine-graveyard/a-78360176?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-15T11:50:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Russia is constructing high-rises in the occupied Ukrainian city of Mariupol, on the sites of buildings it destroyed. Who's buying these properties? And what happened to the Ukrainians who used to lived here?",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Ukraine hits Russian Starlink-style network, Moscow tracks arms package",
+          "url": "https://www.aljazeera.com/news/2026/8/15/ukraine-hits-russian-starlink-style-network-moscow-tracks-arms-package?traffic_source=rss",
+          "date": "2026-08-15T15:50:06.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine used domestically produced Flamingo missiles to hit targets in Russia's southwestern Samara region.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Missing Circassian–Syrian man may have been ‘tortured to death’ in Russian Army, activists say",
+          "url": "https://oc-media.org/missing-circassian-syrian-man-may-have-been-tortured-to-death-in-russian-army-activists-say/",
+          "date": "2026-08-14T11:33:36.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Activists believe the young man may have been forcibly conscripted.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Ukraine Situation - Moldova : Household Economic Capacity Assessment (HECA) 2026 Key Findings",
+          "url": "https://reliefweb.int/report/moldova/ukraine-situation-moldova-household-economic-capacity-assessment-heca-2026-key-findings",
+          "date": "2026-08-14T09:03:22.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Moldova, Ukraine Source: UN High Commissioner for Refugees Please refer to the attached file. Key Messages • About half of households (54%) had a total monthly income up to 10,000 MDL (around 570 USD). • The large majority of households (96%) self-assessed their standard of living as at least satisfying (n=577). • Approximately two fifths (40%) of household members aged 15 years old and",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "Zelensky’s Belgrade Visit Tests Serbia’s EU-Russia Balancing Act",
+          "url": "https://balkaninsight.com/2026/08/10/zelenskys-belgrade-visit-tests-serbias-eu-russia-balancing-act/bi/",
+          "date": "2026-08-10T11:08:12.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "The Ukrainian president’s first official visit to Serbia sends a political signal to Moscow and Brussels. But there is little evidence that Belgrade is preparing to abandon its long-running balancing act or impose sanctions on Russia.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Ukraine Situation - Moldova: Funding Opportunities for Civil Society Organizations in Moldova (Last Update: August 1, 2026)",
+          "url": "https://reliefweb.int/report/moldova/ukraine-situation-moldova-funding-opportunities-civil-society-organizations-moldova-last-update-august-1-2026",
+          "date": "2026-08-14T09:03:30.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Moldova, Ukraine Source: UN High Commissioner for Refugees Please refer to the attached file. This compilation is part of the Refugee Coordination Forum's effort to support local organizations in Moldova to access funding opportunities in line with localization efforts. We have collected information from various sources online and compiled it here for the convenience of local CSOs. Howe",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 3
+        }
+      ],
+      "itemCount": 12
+    },
+    {
       "id": "car",
       "name": "Zentralafrikanische Republik",
       "nameEn": "Central African Republic",
@@ -16226,265 +16664,6 @@
       "itemCount": 0
     },
     {
-      "id": "moldova-transnistria",
-      "name": "Moldau / Transnistrien",
-      "nameEn": "Moldova & Transnistria",
-      "region": "Europa / Eurasien",
-      "countries": [
-        "Moldova"
-      ],
-      "lat": 47,
-      "lon": 28.9,
-      "tier": "low",
-      "since": "1992",
-      "parties": [
-        "Moldau",
-        "Transnistrien",
-        "Russland"
-      ],
-      "background": "Eingefrorener Konflikt mit russischen Truppen in Transnistrien; hybride Einflussnahme und Energiedruck auf Chisinau.",
-      "hotspots": [
-        "Transnistrien",
-        "Chisinau",
-        "Gagausien"
-      ],
-      "activity": 37,
-      "severity": 22,
-      "newCount": 1,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MDA",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Russian strikes kill Ukrainian woman as NATO jet downs drone over Romania",
-          "url": "https://www.aljazeera.com/news/2026/8/16/russian-strikes-kill-ukrainian-woman-as-nato-jet-downs-drone-over-romania?traffic_source=rss",
-          "date": "2026-08-16T04:54:33.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Romania's Defence Ministry didn't specify origin of the drone but has previously blamed Russia for similar incidents.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Troops from North Korea to boost Russia's Ukraine forces",
-          "url": "https://www.dw.com/en/troops-from-north-korea-to-boost-russia-s-ukraine-forces/a-78385524?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-16T06:49:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 26
-        },
-        {
-          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
-          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
-          "date": "2026-08-15T11:43:15.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 23
-        },
-        {
-          "title": "New UK cost of living crisis looms with soaring energy bills forecast to lift inflation",
-          "url": "https://www.theguardian.com/business/2026/aug/16/new-uk-cost-of-living-crisis-looms-rising-energy-bills-inflation",
-          "date": "2026-08-16T05:00:16.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Latest reading on Wednesday likely to frame scale of challenge for new PM to ease pressures on households amid Iran war fallout British households are facing a renewed cost of living squeeze, with official figures expected to show this week that soaring energy bills drove up inflation in July to close to 3%. As the Iran war continues to send shock waves through global energy markets, economists pr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Russians snap up new homes built on Ukraine 'graveyard'",
-          "url": "https://www.dw.com/en/russians-snap-up-new-homes-built-on-ukraine-graveyard/a-78360176?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-15T11:50:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Russia is constructing high-rises in the occupied Ukrainian city of Mariupol, on the sites of buildings it destroyed. Who's buying these properties? And what happened to the Ukrainians who used to lived here?",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Ukraine hits Russian Starlink-style network, Moscow tracks arms package",
-          "url": "https://www.aljazeera.com/news/2026/8/15/ukraine-hits-russian-starlink-style-network-moscow-tracks-arms-package?traffic_source=rss",
-          "date": "2026-08-15T15:50:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine used domestically produced Flamingo missiles to hit targets in Russia's southwestern Samara region.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Missing Circassian–Syrian man may have been ‘tortured to death’ in Russian Army, activists say",
-          "url": "https://oc-media.org/missing-circassian-syrian-man-may-have-been-tortured-to-death-in-russian-army-activists-say/",
-          "date": "2026-08-14T11:33:36.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Activists believe the young man may have been forcibly conscripted.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Ukraine Situation - Moldova : Household Economic Capacity Assessment (HECA) 2026 Key Findings",
-          "url": "https://reliefweb.int/report/moldova/ukraine-situation-moldova-household-economic-capacity-assessment-heca-2026-key-findings",
-          "date": "2026-08-14T09:03:22.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Moldova, Ukraine Source: UN High Commissioner for Refugees Please refer to the attached file. Key Messages • About half of households (54%) had a total monthly income up to 10,000 MDL (around 570 USD). • The large majority of households (96%) self-assessed their standard of living as at least satisfying (n=577). • Approximately two fifths (40%) of household members aged 15 years old and",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Zelensky’s Belgrade Visit Tests Serbia’s EU-Russia Balancing Act",
-          "url": "https://balkaninsight.com/2026/08/10/zelenskys-belgrade-visit-tests-serbias-eu-russia-balancing-act/bi/",
-          "date": "2026-08-10T11:08:12.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "The Ukrainian president’s first official visit to Serbia sends a political signal to Moscow and Brussels. But there is little evidence that Belgrade is preparing to abandon its long-running balancing act or impose sanctions on Russia.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Ukraine Situation - Moldova: Funding Opportunities for Civil Society Organizations in Moldova (Last Update: August 1, 2026)",
-          "url": "https://reliefweb.int/report/moldova/ukraine-situation-moldova-funding-opportunities-civil-society-organizations-moldova-last-update-august-1-2026",
-          "date": "2026-08-14T09:03:30.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Moldova, Ukraine Source: UN High Commissioner for Refugees Please refer to the attached file. This compilation is part of the Refugee Coordination Forum's effort to support local organizations in Moldova to access funding opportunities in line with localization efforts. We have collected information from various sources online and compiled it here for the convenience of local CSOs. Howe",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 3
-        }
-      ],
-      "itemCount": 10
-    },
-    {
       "id": "georgia",
       "name": "Georgien (Abchasien / Südossetien)",
       "nameEn": "Georgia",
@@ -16508,10 +16687,28 @@
         "Südossetien",
         "Tbilissi"
       ],
-      "activity": 27,
-      "severity": 19,
-      "newCount": 1,
+      "activity": 37,
+      "severity": 22,
+      "newCount": 2,
       "signals": [
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
         {
           "key": "sanctions",
           "label": "Sanktionen",
@@ -16526,13 +16723,34 @@
       "regions": [],
       "items": [
         {
-          "title": "Russian strikes kill Ukrainian woman as NATO jet downs drone over Romania",
+          "title": "Ukraine targets Moscow in mass drone attack as Russia bombards Kyiv",
           "url": "https://www.aljazeera.com/news/2026/8/16/russian-strikes-kill-ukrainian-woman-as-nato-jet-downs-drone-over-romania?traffic_source=rss",
           "date": "2026-08-16T04:54:33.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Romania's Defence Ministry didn't specify origin of the drone but has previously blamed Russia for similar incidents.",
+          "summary": "Russian authorities report 201 Ukrainian drones downed overnight in the Moscow region in the escalating conflict.",
           "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Five killed as Russia launches fresh aerial attacks across Ukraine",
+          "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-16T09:04:14.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Ukrainian President Volodymyr Zelensky accuses Russia of targeting civilian infrastructure, while Moscow reports that a warehouse was hit.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "airstrike",
@@ -16553,7 +16771,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -16564,6 +16782,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
+          "title": "Live: Ukraine hit missile fuel production facility in Russia in overnight assault",
+          "url": "https://www.france24.com/en/europe/20260816-live-moscow-targeted-by-600-drones-overnight-explosions-heard-in-kyiv",
+          "date": "2026-08-16T04:42:16.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ​hit ​a missile fuel production facility ​in ‌Russia's ⁠Rostov ‌region overnight, Ukrainian military ⁠said on Sunday, as Ukraine steps up long-range attacks into Russian territory. The assault came as Russian ⁠forces launched a ​missile attack on Kyiv, sparking fires in at least two districts of Ukraine's capital, Mayor ​Vitali ‌Klitschko said. Follow our live blog for all the latest updat",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           },
           "score": 26
         },
@@ -16586,7 +16825,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Russians snap up new homes built on Ukraine 'graveyard'",
@@ -16673,7 +16912,7 @@
           "score": 9
         }
       ],
-      "itemCount": 7
+      "itemCount": 9
     },
     {
       "id": "sinai-egypt",
