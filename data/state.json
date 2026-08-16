@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T17:07:32.801Z",
-  "durationSec": 416,
+  "generatedAt": "2026-08-16T17:59:26.500Z",
+  "durationSec": 389,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -115,28 +115,40 @@
     ],
     "gdelt": {
       "ok": 4,
-      "failed": 5,
-      "skipped": 7,
+      "failed": 8,
+      "skipped": 4,
       "errors": [
         {
-          "id": "burkina-faso",
-          "error": "fetch failed"
+          "id": "mozambique",
+          "error": "HTTP 429"
         },
         {
           "id": "haiti",
-          "error": "fetch failed"
-        },
-        {
-          "id": "south-china-sea",
           "error": "HTTP 429"
         },
         {
-          "id": "west-papua",
+          "id": "afghanistan",
           "error": "HTTP 429"
         },
         {
-          "id": "drc-m23",
+          "id": "venezuela",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "ecuador",
           "error": "fetch failed"
+        },
+        {
+          "id": "somalia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "ukraine-russia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "gaza",
+          "error": "HTTP 429"
         }
       ]
     },
@@ -144,8 +156,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 646,
-    "newArticles": 15
+    "articles": 654,
+    "newArticles": 11
   },
   "conflicts": [
     {
@@ -175,7 +187,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
@@ -187,7 +199,13 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 9
+          "count": 10
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 8
         },
         {
           "key": "airstrike",
@@ -199,12 +217,6 @@
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 7
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
           "count": 7
         }
       ],
@@ -264,6 +276,27 @@
           "score": 27
         },
         {
+          "title": "‘Water and salt’: Qusra residents trapped in Israeli settler siege",
+          "url": "https://www.aljazeera.com/news/2026/8/16/water-and-salt-qusra-residents-trapped-in-israeli-settler-siege?traffic_source=rss",
+          "date": "2026-08-16T17:18:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 26
+        },
+        {
           "title": "Why has Israel escalated attacks in southern Lebanon despite ceasefire?",
           "url": "https://www.aljazeera.com/news/2026/8/16/why-has-israel-escalated-attacks-in-southern-lebanon-despite-ceasefire?traffic_source=rss",
           "date": "2026-08-16T10:59:10.000Z",
@@ -306,13 +339,34 @@
           "score": 26
         },
         {
+          "title": "Israeli military attacks strategic hill in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-attacks-southern-lebanon",
+          "date": "2026-08-16T17:05:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli military attacks strategic hill in southern Lebanon The Israeli military has attacked&nbsp;Ali al-Taher Hill in southern Lebanon with explosives, according to the National News Agency. The strategically important high ground on the outskirts of Nabatieh al-Fawqa has seen intense Israeli military action.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Death toll increases in Lebanon since Israeli invasion",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-increases-lebanon-israeli-invasion",
           "date": "2026-08-16T16:25:32.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Death toll increases in Lebanon since Israeli invasion Israeli attacks have killed at least 4,346 people and wounded more than 12,000 in Lebanon since invading the south on 2 March, according to the Lebanese health ministry. The ministry said those killed include 393 women, 257 children and at least 135 medical workers. Israeli strikes on the towns of Deir al-Zahrani&nbsp;and Ansar killed 11 peopl",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -369,6 +423,27 @@
           "score": 23
         },
         {
+          "title": "UAE, Saudi Arabia, others condemn Israel's rejection of Trump Gaza plan",
+          "url": "https://www.dw.com/en/uae-saudi-arabia-others-condemn-israel-s-rejection-of-trump-gaza-plan/a-78389399?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-16T17:31:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The statement came as US envoy Jared Kushner and Gaza peace envoy Nickolay Mladenov held ceasefire and implementation talks with regional mediators in Egypt.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 23
+        },
+        {
           "title": "Gaza genocide: How Israel made horror a ritual of daily life",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/how-israel-made-horror-ritual-daily-life",
           "date": "2026-08-16T13:18:13.000Z",
@@ -411,34 +486,13 @@
           "score": 23
         },
         {
-          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
-          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
-          "date": "2026-08-16T11:33:32.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A Hamas delegation began a meeting with Egypt's spy chief on Sunday to discuss ways to advance the implementation of a post-war plan for Gaza while US envoy Jared Kushner met with Egyptian President Abdel Fattah al-Sissi.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 22
-        },
-        {
           "title": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/five-arab-countries-condemn-israels-rejection-trumps-gaza-plan",
           "date": "2026-08-16T16:39:02.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan Five Arab countries together with Turkey, Pakistan and Indonesia on Sunday condemned Israel's rejection&nbsp;of US President Donald Trump's plan for Gaza. In a joint statement, the countries including Egypt, Qatar, Saudi Arabia and UAE, said the rejection threatened Trump's intensified efforts to end Israel's war on Gaza.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -621,27 +675,6 @@
           "score": 22
         },
         {
-          "title": "Israeli army says it killed two Palestinians in Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
-          "date": "2026-08-15T17:53:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli army says it killed two Palestinians in Gaza The Israeli military has said its Paratroopers Brigade killed two Palestinians in Gaza. The military said the Palestinians crossed the so-called “yellow line.\" Under the US-brokered agreement reached with Hamas last October, Israel was supposed to withdraw to the yellow line while temporarily retaining control over 53 percent of Gaza. But Israel",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "Heavy clashes reported as Israel targets south Lebanon with airstrikes , artillery , phosphorous shelling",
           "url": "https://www.presstv.co.uk/Detail/2026/08/16/774436/Israel-attacks-Lebanon-airstrikes-artillery-phosphorus-Hezbollah-clashes",
           "date": "2026-08-16T03:45:00.000Z",
@@ -747,27 +780,6 @@
           "score": 19
         },
         {
-          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
-          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
-          "date": "2026-08-16T11:54:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Israeli strikes on southern Lebanon kill 11 in worst toll since June truce",
           "url": "https://www.theguardian.com/world/2026/aug/15/israeli-strike-on-southern-lebanon-kills-seven-in-worst-toll-since-june-state-media-says",
           "date": "2026-08-15T13:55:28.000Z",
@@ -831,6 +843,27 @@
           "score": 19
         },
         {
+          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
+          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
+          "date": "2026-08-16T11:33:32.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A Hamas delegation held talks with Egyptian intelligence chief Hassan Rashad in Egypt on Sunday, followed by talks with US envoy Jared Kushner. Kushner had met shortly before with President Abdel Fattah al-Sisi in an effort to break the deadlock over the US-brockered peace plan for Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 19
+        },
+        {
           "title": "Israel/OPT: Siege of Palestinian homes in Qusra marks relentless escalation in state-backed settler violence",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/israelopt-siege-palestinian-homes-qusra-marks-relentless-escalation-state-backed-settler-violence",
           "date": "2026-08-14T13:48:00.000Z",
@@ -869,6 +902,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli army says it killed two Palestinians in Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
+          "date": "2026-08-15T17:53:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli army says it killed two Palestinians in Gaza The Israeli military has said its Paratroopers Brigade killed two Palestinians in Gaza. The military said the Palestinians crossed the so-called “yellow line.\" Under the US-brokered agreement reached with Hamas last October, Israel was supposed to withdraw to the yellow line while temporarily retaining control over 53 percent of Gaza. But Israel",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 18
         },
@@ -1230,12 +1284,12 @@
           "score": 17
         },
         {
-          "title": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-violence-60-year-old-man-among-two-palestinians-shot-eight",
-          "date": "2026-08-16T06:33:50.000Z",
-          "source": "Middle East Eye",
+          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
+          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
+          "date": "2026-08-16T11:54:55.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten Israeli settlers, backed by Israeli forces, shot at and injured two Palestinians and beat up eight others during an attack in the al-Ras area of Hebron city on Sunday, Wafa reported. One of the shooting victims, a 60-year-old man, was shot in the back and hand. A second man, aged 46, was also shot before being detained by ",
+          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
           "isNew": false,
           "region": null,
           "event": {
@@ -1244,11 +1298,11 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 17
+          "score": 16
         },
         {
           "title": "Iranian military promises 'complete defeat' of Israel and US",
@@ -1312,6 +1366,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-violence-60-year-old-man-among-two-palestinians-shot-eight",
+          "date": "2026-08-16T06:33:50.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten Israeli settlers, backed by Israeli forces, shot at and injured two Palestinians and beat up eight others during an attack in the al-Ras area of Hebron city on Sunday, Wafa reported. One of the shooting victims, a 60-year-old man, was shot in the back and hand. A second man, aged 46, was also shot before being detained by ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Israeli defence minister Katz says 'no account will remain unsettled'",
@@ -1868,69 +1943,6 @@
             "label": "Bericht"
           },
           "score": 11
-        },
-        {
-          "title": "Art offers young Gaza survivors solace and escape from war’s devastation",
-          "url": "https://www.aljazeera.com/features/2026/8/14/art-offers-young-gaza-survivors-solace-and-escape-from-wars-devastation?traffic_source=rss",
-          "date": "2026-08-14T18:43:36.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Young survivors of Israel's genocidal war in Gaza find safe spaces to process trauma and rediscover joy.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-hezbollah-accuses-lebanons-government-targeting-resistance",
-          "date": "2026-08-14T17:22:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hezbollah accuses Lebanon’s government of targeting ‘resistance’ instead of Israel: Report Hezbollah chief Naim Qassem accused the&nbsp;Lebanese authorities of \"targeting the resistance instead of targeting the enemy\" and failing to \"abide by agreements\", Al Jazeera reported. “The southern town of Mansouri is supposed to be liberated … not occupied … yet residents can’t return … what have the Leba",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Analysis: Israel’s government can’t disown West Bank settler violence",
-          "url": "https://www.aljazeera.com/news/2026/8/14/analysis-israels-government-cant-disown-west-bank-settler-violence?traffic_source=rss",
-          "date": "2026-08-14T16:46:30.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Rights groups warn settler and state-led violence aim to displace Palestinians and annex land in the occupied West Bank.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -1964,7 +1976,7 @@
       ],
       "activity": 85,
       "severity": 80,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -2039,7 +2051,7 @@
             50.29
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "casualties",
             "icon": "🚨",
@@ -2137,7 +2149,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Kyiv was hit by Russian strikes on Sunday, killing at least four people and injuring six, while a popular outdoor book market was destroyed. Vendors rushed to the scene to assess the damage, with some saying they had lost their shops and their livelihoods.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "UKR-321",
             "name": "Kyiv",
@@ -2261,7 +2273,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Since mid-July, Ukraine has been targeting warehouses of Russia's largest online retailer Wildberries almost every day. Ukraine says it's disrupting front-line shipments. But experts say it's disrupting Russia's economy.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2281,7 +2293,7 @@
           "date": "2026-08-16T06:49:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
+          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt this will make a fundamental difference in the course of Russia's war with Ukraine.",
           "isNew": false,
           "region": null,
           "event": {
@@ -3075,9 +3087,9 @@
         "Khartum",
         "Kordofan"
       ],
-      "activity": 55,
-      "severity": 71,
-      "newCount": 1,
+      "activity": 70,
+      "severity": 76,
+      "newCount": 4,
       "signals": [
         {
           "key": "displacement",
@@ -3163,8 +3175,8 @@
             32.785,
             15.844
           ],
-          "count": 1,
-          "newCount": 0,
+          "count": 2,
+          "newCount": 1,
           "event": {
             "type": "talks",
             "icon": "🤝",
@@ -3207,6 +3219,27 @@
         }
       ],
       "items": [
+        {
+          "title": "RSF turns to drones , new fronts as Sudan battlefield pressure grows",
+          "url": "https://www.al-monitor.com/originals/2026/08/rsf-turns-drones-new-fronts-sudan-battlefield-pressure-grows",
+          "date": "2026-08-16T10:00:00.000Z",
+          "source": "al-monitor.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 28
+        },
         {
           "title": "Sudan: RSF Says It Captures Key Sudan Town Near Ethiopian Border As Army Withdraws",
           "url": "https://allafrica.com/stories/202608140047.html",
@@ -3297,7 +3330,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -3406,6 +3439,58 @@
           "score": 18
         },
         {
+          "title": "RSF , IFJ Continue to Sneak Terrorists Off Gaza Journalists Lists But an Unclear Process Keeps Others",
+          "url": "https://honestreporting.com/rsf-ifj-continue-to-sneak-terrorists-off-gaza-journalists-lists-but-an-unclear-process-keeps-others/",
+          "date": "2026-08-16T14:00:00.000Z",
+          "source": "honestreporting.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "Sudan army chief says armed forces belong to all Sudanese , Khartoum is safe",
+          "url": "https://aa.com.tr/en/middle-east/sudan-s-army-chief-says-armed-forces-belong-to-all-sudanese-khartoum-is-safe/4028334",
+          "date": "2026-08-15T16:00:00.000Z",
+          "source": "aa.com.tr",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": {
+            "id": "SDN-874",
+            "name": "Khartoum",
+            "nameDe": "Al-Chartum",
+            "type": "Region",
+            "anchor": [
+              32.785,
+              15.844
+            ],
+            "matched": "Khartoum"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "Attacks on Health Care in Sudan, 22 July - 04 August 2026",
           "url": "https://reliefweb.int/report/sudan/attacks-health-care-sudan-22-july-04-august-2026",
           "date": "2026-08-12T12:42:18.000Z",
@@ -3508,6 +3593,27 @@
             "label": "Verhandlungen"
           },
           "score": 14
+        },
+        {
+          "title": "Sudan army says it is ready for peace - but RSF must lay down its arms",
+          "url": "https://news.az/news/sudan-army-says-it-is-ready-for-peace-but-rsf-must-lay-down-its-arms",
+          "date": "2026-08-15T11:00:00.000Z",
+          "source": "news.az",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 13
         },
         {
           "title": "Sudan: Refugees, Lost Trade and Security Costs - How Conflict in One African Country Drives Up Debt for Its Neighbours",
@@ -3960,7 +4066,7 @@
           "score": 0
         }
       ],
-      "itemCount": 32
+      "itemCount": 36
     },
     {
       "id": "west-bank",
@@ -4078,7 +4184,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "A week after Israeli settlers began besieging Palestinian homes in the West Bank village of Qusra, human rights activist Netanael Hanadaro joined FRANCE 24 to recount what he witnessed there. He said he and other NGO members reached the isolated homes on foot and left food outside for the trapped residents, with the Israeli army saying it would deliver the supplies. Hanadaro described an extraordi",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -4091,6 +4197,27 @@
             "label": "Belagerung"
           },
           "score": 29
+        },
+        {
+          "title": "‘Water and salt’: Qusra residents trapped in Israeli settler siege",
+          "url": "https://www.aljazeera.com/news/2026/8/16/water-and-salt-qusra-residents-trapped-in-israeli-settler-siege?traffic_source=rss",
+          "date": "2026-08-16T17:18:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 26
         },
         {
           "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
@@ -4198,27 +4325,6 @@
           "score": 21
         },
         {
-          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
-          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
-          "date": "2026-08-16T11:54:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
           "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
           "url": "https://www.france24.com/en/west-bank-palestinian-families-besieged-for-a-week-as-settler-violence-continues",
           "date": "2026-08-16T08:50:57.000Z",
@@ -4231,27 +4337,6 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 19
-        },
-        {
-          "title": "West Bank homes left without water or electricity",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-homes-left-without-water-or-electricity",
-          "date": "2026-08-16T11:40:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "West Bank homes left without water or electricity Three homes under siege in the town of Qusra in the occupied West Bank have been left without electricity or water. Al Jazeera reported that Qusra's mayor said Israeli soldiers had prevented technical teams and activists from reaching the homes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "siege",
@@ -4387,12 +4472,12 @@
           "score": 18
         },
         {
-          "title": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-violence-60-year-old-man-among-two-palestinians-shot-eight",
-          "date": "2026-08-16T06:33:50.000Z",
-          "source": "Middle East Eye",
+          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
+          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
+          "date": "2026-08-16T11:54:55.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten Israeli settlers, backed by Israeli forces, shot at and injured two Palestinians and beat up eight others during an attack in the al-Ras area of Hebron city on Sunday, Wafa reported. One of the shooting victims, a 60-year-old man, was shot in the back and hand. A second man, aged 46, was also shot before being detained by ",
+          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
           "isNew": false,
           "region": null,
           "event": {
@@ -4401,11 +4486,32 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 17
+        },
+        {
+          "title": "West Bank homes left without water or electricity",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-homes-left-without-water-or-electricity",
+          "date": "2026-08-16T11:40:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "West Bank homes left without water or electricity Three homes under siege in the town of Qusra in the occupied West Bank have been left without electricity or water. Al Jazeera reported that Qusra's mayor said Israeli soldiers had prevented technical teams and activists from reaching the homes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 16
         },
         {
           "title": "oPt: Qusra attack highlights escalating state-backed violence as West Bank healthcare attacks quadruple in one month",
@@ -4469,6 +4575,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-violence-60-year-old-man-among-two-palestinians-shot-eight",
+          "date": "2026-08-16T06:33:50.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Settler violence: 60-year-old man among two Palestinians shot, eight beaten Israeli settlers, backed by Israeli forces, shot at and injured two Palestinians and beat up eight others during an attack in the al-Ras area of Hebron city on Sunday, Wafa reported. One of the shooting victims, a 60-year-old man, was shot in the back and hand. A second man, aged 46, was also shot before being detained by ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "900 obstacles and counting: West Bank families trapped as aid access shrinks",
@@ -5006,7 +5133,7 @@
           "score": 8
         }
       ],
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "lebanon-hezbollah",
@@ -5100,8 +5227,8 @@
             35.512,
             33.3
           ],
-          "count": 2,
-          "newCount": 0,
+          "count": 3,
+          "newCount": 1,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -5151,7 +5278,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Death toll increases in Lebanon since Israeli invasion Israeli attacks have killed at least 4,346 people and wounded more than 12,000 in Lebanon since invading the south on 2 March, according to the Lebanese health ministry. The ministry said those killed include 393 women, 257 children and at least 135 medical workers. Israeli strikes on the towns of Deir al-Zahrani&nbsp;and Ansar killed 11 peopl",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -5193,6 +5320,37 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israeli military attacks strategic hill in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-attacks-southern-lebanon",
+          "date": "2026-08-16T17:05:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli military attacks strategic hill in southern Lebanon The Israeli military has attacked&nbsp;Ali al-Taher Hill in southern Lebanon with explosives, according to the National News Agency. The strategically important high ground on the outskirts of Nabatieh al-Fawqa has seen intense Israeli military action.",
+          "isNew": true,
+          "region": {
+            "id": "LBN-3059",
+            "name": "Nabatieh",
+            "nameDe": "Nabatäa",
+            "type": "Province",
+            "anchor": [
+              35.512,
+              33.3
+            ],
+            "matched": "Nabatieh"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 26
         },
@@ -6253,7 +6411,7 @@
           "score": 0
         }
       ],
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "iran-israel",
@@ -6281,7 +6439,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -6381,7 +6539,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "The Iranian military announced on Sunday it would be offering a $30,000 reward for killing or capturing US soldiers, with the bounty doubled if conducted by a woman. There have been no known deployments of US ground troops in Iran during the war except for a rescue mission carried out in April.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "offensive",
@@ -6415,27 +6573,6 @@
             "label": "Bodenoffensive"
           },
           "score": 26
-        },
-        {
-          "title": "‘Limited options’ for many Iranians as war with US chokes economy",
-          "url": "https://www.aljazeera.com/news/2026/8/16/limited-options-for-many-iranians-as-war-with-us-chokes-economy?traffic_source=rss",
-          "date": "2026-08-16T11:38:50.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Millions of Iranians struggle to make ends meet as war with US devastates the economy and sends prices soaring.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 22
         },
         {
           "title": "Iran condemns Israeli attacks in Lebanon",
@@ -6490,12 +6627,12 @@
           "score": 22
         },
         {
-          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
-          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
-          "date": "2026-08-16T11:14:23.000Z",
+          "title": "‘Limited options’ for many Iranians as war with US chokes economy",
+          "url": "https://www.aljazeera.com/news/2026/8/16/limited-options-for-many-iranians-as-war-with-us-chokes-economy?traffic_source=rss",
+          "date": "2026-08-16T11:38:50.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
+          "summary": "Millions of Iranians struggle to make ends meet as war with US devastates the economy and sends prices soaring.",
           "isNew": false,
           "region": null,
           "event": {
@@ -6508,7 +6645,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 20
+          "score": 19
         },
         {
           "title": "Centcom chief visits US carrier enforcing Iran blockade amid reports of severe strain on crew",
@@ -6658,6 +6795,27 @@
           "score": 18
         },
         {
+          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
+          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
+          "date": "2026-08-16T11:14:23.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
           "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
           "url": "https://www.aljazeera.com/news/liveblog/2026/8/16/iran-war-live-talks-on-hormuz-strait-continue-israel-kills-11-in-lebanon?traffic_source=rss",
           "date": "2026-08-16T00:00:45.000Z",
@@ -6675,37 +6833,6 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran resumes flights at Bandar Abbas airport after wartime disruptions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-resumes-flights-bandar-abbas-airport-after-wartime-disruptions",
-          "date": "2026-08-15T17:45:10.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran resumes flights at Bandar Abbas airport after wartime disruptions Flights at the port city of Bandar Abbas resumed on Saturday after repeated interruptions during war with the United States, state media reported. Kazem Tavassoli, director general of airports in Hormozgan province, said \"scheduled flights at Bandar Abbas International Airport on high-traffic domestic routes resumed today, acco",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3228",
-            "name": "Hormozgan",
-            "nameDe": "Hormozgan",
-            "type": "Province",
-            "anchor": [
-              56.242,
-              27.12
-            ],
-            "matched": "Hormozgan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -6771,6 +6898,37 @@
             "label": "Gefechte"
           },
           "score": 12
+        },
+        {
+          "title": "Iran resumes flights at Bandar Abbas airport after wartime disruptions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-resumes-flights-bandar-abbas-airport-after-wartime-disruptions",
+          "date": "2026-08-15T17:45:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran resumes flights at Bandar Abbas airport after wartime disruptions Flights at the port city of Bandar Abbas resumed on Saturday after repeated interruptions during war with the United States, state media reported. Kazem Tavassoli, director general of airports in Hormozgan province, said \"scheduled flights at Bandar Abbas International Airport on high-traffic domestic routes resumed today, acco",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3228",
+            "name": "Hormozgan",
+            "nameDe": "Hormozgan",
+            "type": "Province",
+            "anchor": [
+              56.242,
+              27.12
+            ],
+            "matched": "Hormozgan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Opinion: How Iran and Ukraine are strategically sinking their rivals at sea",
@@ -7178,15 +7336,21 @@
         "Süd-Kivu",
         "Ituri"
       ],
-      "activity": 21,
-      "severity": 61,
-      "newCount": 0,
+      "activity": 26,
+      "severity": 62,
+      "newCount": 1,
       "signals": [
         {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 2
+          "count": 3
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
         }
       ],
       "acled": null,
@@ -7233,6 +7397,27 @@
         }
       ],
       "items": [
+        {
+          "title": "DRC , RWANDA ADVANCE PEACE AGREEMENT MONITORING AND THANK QATAR FOR SUPPORT",
+          "url": "https://www.qatarliving.com/en/article/drc-rwanda-advance-peace-agreement-monitoring-and-thank-qatar-for-support",
+          "date": "2026-08-16T13:00:00.000Z",
+          "source": "qatarliving.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 27
+        },
         {
           "title": "Congo-Kinshasa: Joint Statement on the Sixth Meeting of the Joint Security Coordination Mechanism for the Peace Agreement Between the Democratic Republic of the Congo and the Republic of Rwanda",
           "url": "https://allafrica.com/stories/202608140259.html",
@@ -7464,7 +7649,7 @@
           "score": 0
         }
       ],
-      "itemCount": 10
+      "itemCount": 11
     },
     {
       "id": "myanmar",
@@ -9271,7 +9456,7 @@
       ],
       "activity": 38,
       "severity": 50,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -9309,7 +9494,7 @@
             28.318
           ],
           "count": 6,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -9342,7 +9527,7 @@
           "source": "radio.gov.pk",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "PAK-1108",
             "name": "Balochistan",
@@ -9364,7 +9549,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Balochistan home minister unhurt as convoy comes under attack in Mastung",
@@ -11817,27 +12002,6 @@
           "score": 22
         },
         {
-          "title": "Taliban pressured by insurgents after 5 years in power",
-          "url": "https://www.dw.com/en/taliban-pressured-by-insurgents-after-5-years-in-power/a-78371144?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-14T13:49:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "The Taliban managed to retake power in Afghanistan on August 15, 2021. Now, they face armed factions who challenge the Taliban rule and strain their central claim of providing security.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 13
-        },
-        {
           "title": "Five years since the Taliban took control of Afghanistan, humanitarian need is at a record high as the response collapses | The IRC",
           "url": "https://reliefweb.int/report/afghanistan/five-years-taliban-took-control-afghanistan-humanitarian-need-record-high-response-collapses-irc",
           "date": "2026-08-14T09:33:05.000Z",
@@ -11878,6 +12042,27 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Taliban pressured by insurgents after 5 years in power",
+          "url": "https://www.dw.com/en/taliban-pressured-by-insurgents-after-5-years-in-power/a-78371144?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-14T13:49:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The Taliban managed to retake power in Afghanistan on August 15, 2021. Now, they face armed factions who challenge the Taliban rule and strain their central claim of providing security.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Taliban marks 5 years back in power as Afghan women remain shut out of public life",
@@ -12893,7 +13078,7 @@
       ],
       "activity": 16,
       "severity": 43,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -12972,7 +13157,7 @@
             13.778
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "explosion",
             "icon": "💣",
@@ -13022,7 +13207,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "ETH-3110",
             "name": "Tigray",
@@ -13340,206 +13525,6 @@
       "itemCount": 11
     },
     {
-      "id": "south-sudan",
-      "name": "Südsudan",
-      "nameEn": "South Sudan",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "S. Sudan"
-      ],
-      "lat": 7.5,
-      "lon": 30.5,
-      "tier": "high",
-      "since": "2013 / Krise 2025",
-      "parties": [
-        "Regierung (Kiir/SPLM)",
-        "SPLM-IO (Machar)",
-        "White Army",
-        "Milizen"
-      ],
-      "background": "Das Friedensabkommen von 2018 steht vor dem Kollaps: Festsetzung Machars, Luftangriffe in Upper Nile und Kämpfe mit der White Army.",
-      "hotspots": [
-        "Upper Nile",
-        "Nasir",
-        "Juba",
-        "Jonglei"
-      ],
-      "activity": 10,
-      "severity": 42,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "SSD",
-      "extraCountries": [
-        "SDN"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "South Sudan: UN mission decries deadly attacks, works to calm tensions after ‘nothing but devastation’",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168118",
-          "date": "2026-08-11T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "The UN Mission in South Sudan (UNMISS) has condemned recent armed group attacks in Warrap state which reportedly left more than 60 civilians dead and 50 others injured.&nbsp;",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Joint News Release - WFP/UNHCR: Refugees in South Sudan face extreme hunger as funds run out",
-          "url": "https://reliefweb.int/report/south-sudan/joint-news-release-wfpunhcr-refugees-south-sudan-face-extreme-hunger-funds-run-out",
-          "date": "2026-08-14T10:03:10.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: South Sudan, Sudan Sources: UN High Commissioner for Refugees, World Food Programme JUBA, South Sudan – More than 650,000 refugees and asylum seekers in South Sudan risk losing further access to lifesaving food, nutrition and other assistance due to critical funding shortfalls, leaving families who fled war and hunger with nowhere else to turn, UNHCR, the UN Refugee Agency, and the Unit",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "South Sudan - Operation Overview, April - June 2026",
-          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-april-june-2026",
-          "date": "2026-08-14T00:35:24.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached file. Background South Sudan continues to face a complex humanitarian crisis driven by conflict, climate-related shocks, disease outbreaks, displacement, food insecurity and economic deterioration. Access to affected communities remains constrained by poor road conditions, seasonal flooding, and limi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "UNHCR South Sudan Population Overview of Refugees and Asylum-seekers (As of 31 July 2026)",
-          "url": "https://reliefweb.int/report/south-sudan/unhcr-south-sudan-population-overview-refugees-and-asylum-seekers-31-july-2026",
-          "date": "2026-08-13T08:03:17.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Eritrea, Ethiopia, Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "WHO Weekly Situation Update on Ongoing Health Emergency Events in South Sudan - Week #32, Date: 03–09 Aug 2026",
-          "url": "https://reliefweb.int/report/south-sudan/who-weekly-situation-update-ongoing-health-emergency-events-south-sudan-week-32-date-03-09-aug-2026",
-          "date": "2026-08-13T02:30:29.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Uganda Source: World Health Organization Please refer to the attached file. PRIORITY ACTIONS ▸ Operationalize the new Tier 1A/1B/1C county framework, prioritizing Ezo, Yambio, Juba, Yei, Morobo and Nzara for EVD/BVD IPC supplies, case management capacity and RCCE under the area-based readiness approach. ▸ Expedite the ICG application for OC",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "South Sudan - Operation Overview Infographic, April - June 2026",
-          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-infographic-april-june-2026",
-          "date": "2026-08-14T00:31:05.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached Infographic. Summary This infographic report from April-June 2026 details logistics achievements in South Sudan, including cargo transport by various means, funding status, and participating organizations in humanitarian efforts, highlighting key responses and operational data.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 3
-        },
-        {
-          "title": "South Sudan: Humanitarian Access Snapshot - July 2026",
-          "url": "https://reliefweb.int/report/south-sudan/south-sudan-humanitarian-access-snapshot-july-2026",
-          "date": "2026-08-11T15:12:02.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: South Sudan Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. Humanitarian access in South Sudan remained severely constrained in July 2026 by ongoing conflict and insecurity, violence against humanitarian personnel and assets, bureaucratic and administrative impediments (BAIs), and deteriorating physical access. A total of 65 humanit",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 0
-        }
-      ],
-      "itemCount": 7
-    },
-    {
       "id": "taiwan-strait",
       "name": "Taiwanstraße",
       "nameEn": "Taiwan Strait",
@@ -13564,13 +13549,19 @@
         "Medianlinie",
         "ADIZ"
       ],
-      "activity": 66,
-      "severity": 42,
+      "activity": 70,
+      "severity": 43,
       "newCount": 1,
       "signals": [
         {
           "key": "talks",
           "label": "Verhandlungen",
+          "dir": "down",
+          "count": 4
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
           "dir": "down",
           "count": 3
         },
@@ -13584,12 +13575,6 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
           "count": 2
         },
         {
@@ -13674,39 +13659,18 @@
           "score": 22
         },
         {
-          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
-          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
-          "date": "2026-08-16T11:14:23.000Z",
-          "source": "Al Jazeera",
+          "title": "UAE, Saudi Arabia, others condemn Israel's rejection of Trump Gaza plan",
+          "url": "https://www.dw.com/en/uae-saudi-arabia-others-condemn-israel-s-rejection-of-trump-gaza-plan/a-78389399?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-16T17:31:00.000Z",
+          "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
-          "isNew": false,
+          "summary": "The statement came as US envoy Jared Kushner and Gaza peace envoy Nickolay Mladenov held ceasefire and implementation talks with regional mediators in Egypt.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
-          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
-          "date": "2026-08-16T11:33:32.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A Hamas delegation began a meeting with Egypt's spy chief on Sunday to discuss ways to advance the implementation of a post-war plan for Gaza while US envoy Jared Kushner met with Egyptian President Abdel Fattah al-Sissi.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
           },
           "regionEvent": {
             "type": "ceasefire",
@@ -13722,7 +13686,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan Five Arab countries together with Turkey, Pakistan and Indonesia on Sunday condemned Israel's rejection&nbsp;of US President Donald Trump's plan for Gaza. In a joint statement, the countries including Egypt, Qatar, Saudi Arabia and UAE, said the rejection threatened Trump's intensified efforts to end Israel's war on Gaza.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -13861,6 +13825,48 @@
             "label": "Bericht"
           },
           "score": 18
+        },
+        {
+          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
+          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
+          "date": "2026-08-16T11:14:23.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
+          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
+          "date": "2026-08-16T11:33:32.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A Hamas delegation held talks with Egyptian intelligence chief Hassan Rashad in Egypt on Sunday, followed by talks with US envoy Jared Kushner. Kushner had met shortly before with President Abdel Fattah al-Sisi in an effort to break the deadlock over the US-brockered peace plan for Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 16
         },
         {
           "title": "Albania Could Face Costly Arbitration Battle After Scrapping Vlora Airport Plans",
@@ -14188,7 +14194,207 @@
           "score": 9
         }
       ],
-      "itemCount": 25
+      "itemCount": 26
+    },
+    {
+      "id": "south-sudan",
+      "name": "Südsudan",
+      "nameEn": "South Sudan",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "S. Sudan"
+      ],
+      "lat": 7.5,
+      "lon": 30.5,
+      "tier": "high",
+      "since": "2013 / Krise 2025",
+      "parties": [
+        "Regierung (Kiir/SPLM)",
+        "SPLM-IO (Machar)",
+        "White Army",
+        "Milizen"
+      ],
+      "background": "Das Friedensabkommen von 2018 steht vor dem Kollaps: Festsetzung Machars, Luftangriffe in Upper Nile und Kämpfe mit der White Army.",
+      "hotspots": [
+        "Upper Nile",
+        "Nasir",
+        "Juba",
+        "Jonglei"
+      ],
+      "activity": 10,
+      "severity": 42,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "SSD",
+      "extraCountries": [
+        "SDN"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "South Sudan: UN mission decries deadly attacks, works to calm tensions after ‘nothing but devastation’",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168118",
+          "date": "2026-08-11T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "The UN Mission in South Sudan (UNMISS) has condemned recent armed group attacks in Warrap state which reportedly left more than 60 civilians dead and 50 others injured.&nbsp;",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Joint News Release - WFP/UNHCR: Refugees in South Sudan face extreme hunger as funds run out",
+          "url": "https://reliefweb.int/report/south-sudan/joint-news-release-wfpunhcr-refugees-south-sudan-face-extreme-hunger-funds-run-out",
+          "date": "2026-08-14T10:03:10.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: South Sudan, Sudan Sources: UN High Commissioner for Refugees, World Food Programme JUBA, South Sudan – More than 650,000 refugees and asylum seekers in South Sudan risk losing further access to lifesaving food, nutrition and other assistance due to critical funding shortfalls, leaving families who fled war and hunger with nowhere else to turn, UNHCR, the UN Refugee Agency, and the Unit",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "South Sudan - Operation Overview, April - June 2026",
+          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-april-june-2026",
+          "date": "2026-08-14T00:35:24.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached file. Background South Sudan continues to face a complex humanitarian crisis driven by conflict, climate-related shocks, disease outbreaks, displacement, food insecurity and economic deterioration. Access to affected communities remains constrained by poor road conditions, seasonal flooding, and limi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "UNHCR South Sudan Population Overview of Refugees and Asylum-seekers (As of 31 July 2026)",
+          "url": "https://reliefweb.int/report/south-sudan/unhcr-south-sudan-population-overview-refugees-and-asylum-seekers-31-july-2026",
+          "date": "2026-08-13T08:03:17.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Eritrea, Ethiopia, Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "WHO Weekly Situation Update on Ongoing Health Emergency Events in South Sudan - Week #32, Date: 03–09 Aug 2026",
+          "url": "https://reliefweb.int/report/south-sudan/who-weekly-situation-update-ongoing-health-emergency-events-south-sudan-week-32-date-03-09-aug-2026",
+          "date": "2026-08-13T02:30:29.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Uganda Source: World Health Organization Please refer to the attached file. PRIORITY ACTIONS ▸ Operationalize the new Tier 1A/1B/1C county framework, prioritizing Ezo, Yambio, Juba, Yei, Morobo and Nzara for EVD/BVD IPC supplies, case management capacity and RCCE under the area-based readiness approach. ▸ Expedite the ICG application for OC",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "South Sudan - Operation Overview Infographic, April - June 2026",
+          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-infographic-april-june-2026",
+          "date": "2026-08-14T00:31:05.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached Infographic. Summary This infographic report from April-June 2026 details logistics achievements in South Sudan, including cargo transport by various means, funding status, and participating organizations in humanitarian efforts, highlighting key responses and operational data.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 3
+        },
+        {
+          "title": "South Sudan: Humanitarian Access Snapshot - July 2026",
+          "url": "https://reliefweb.int/report/south-sudan/south-sudan-humanitarian-access-snapshot-july-2026",
+          "date": "2026-08-11T15:12:02.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: South Sudan Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. Humanitarian access in South Sudan remained severely constrained in July 2026 by ongoing conflict and insecurity, violence against humanitarian personnel and assets, bureaucratic and administrative impediments (BAIs), and deteriorating physical access. A total of 65 humanit",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 0
+        }
+      ],
+      "itemCount": 7
     },
     {
       "id": "korea",
@@ -14276,33 +14482,12 @@
       ],
       "items": [
         {
-          "title": "Korean Peninsula on Edge : Peace Offer , Border Clashes and US – South Korea War Games Raise Tensions with North Korea",
-          "url": "https://openthemagazine.com/world/peace-offer-warning-shots-and-war-games-why-the-korean-peninsula-is-heating-up-again",
-          "date": "2026-08-16T11:45:00.000Z",
-          "source": "openthemagazine.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
           "title": "Troops from North Korea to boost Russia's Ukraine forces",
           "url": "https://www.dw.com/en/troops-from-north-korea-to-boost-russia-s-ukraine-forces/a-78385524?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-16T06:49:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
+          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt this will make a fundamental difference in the course of Russia's war with Ukraine.",
           "isNew": false,
           "region": null,
           "event": {
@@ -14337,6 +14522,27 @@
             "label": "Raketenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Korean Peninsula on Edge : Peace Offer , Border Clashes and US – South Korea War Games Raise Tensions with North Korea",
+          "url": "https://openthemagazine.com/world/peace-offer-warning-shots-and-war-games-why-the-korean-peninsula-is-heating-up-again",
+          "date": "2026-08-16T11:45:00.000Z",
+          "source": "openthemagazine.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Russian ballistic missile strikes kill one in Ukraine",
@@ -15266,7 +15472,7 @@
       ],
       "activity": 63,
       "severity": 29,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -15390,7 +15596,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Since mid-July, Ukraine has been targeting warehouses of Russia's largest online retailer Wildberries almost every day. Ukraine says it's disrupting front-line shipments. But experts say it's disrupting Russia's economy.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -15411,7 +15617,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Kyiv was hit by Russian strikes on Sunday, killing at least four people and injuring six, while a popular outdoor book market was destroyed. Vendors rushed to the scene to assess the damage, with some saying they had lost their shops and their livelihoods.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -15431,7 +15637,7 @@
           "date": "2026-08-16T06:49:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
+          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt this will make a fundamental difference in the course of Russia's war with Ukraine.",
           "isNew": false,
           "region": null,
           "event": {
@@ -16476,7 +16682,7 @@
       ],
       "activity": 54,
       "severity": 27,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -16594,7 +16800,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Since mid-July, Ukraine has been targeting warehouses of Russia's largest online retailer Wildberries almost every day. Ukraine says it's disrupting front-line shipments. But experts say it's disrupting Russia's economy.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -16615,7 +16821,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Kyiv was hit by Russian strikes on Sunday, killing at least four people and injuring six, while a popular outdoor book market was destroyed. Vendors rushed to the scene to assess the damage, with some saying they had lost their shops and their livelihoods.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -16635,7 +16841,7 @@
           "date": "2026-08-16T06:49:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt that this will make a fundamental difference in the course of Russia's war with Ukraine.",
+          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt this will make a fundamental difference in the course of Russia's war with Ukraine.",
           "isNew": false,
           "region": null,
           "event": {
@@ -17595,7 +17801,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 12
+          "score": 11
         },
         {
           "title": "UN Expert : Mozambique Must Shield Civilians in Terror Fight",
@@ -18087,12 +18293,6 @@
           "count": 3
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 2
-        },
-        {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
@@ -18102,6 +18302,12 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
           "count": 1
         },
         {
@@ -18135,27 +18341,6 @@
         }
       ],
       "items": [
-        {
-          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
-          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
-          "date": "2026-08-16T11:33:32.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A Hamas delegation began a meeting with Egypt's spy chief on Sunday to discuss ways to advance the implementation of a post-war plan for Gaza while US envoy Jared Kushner met with Egyptian President Abdel Fattah al-Sissi.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 19
-        },
         {
           "title": "Hamas leader meets Egyptian intelligence chief",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-leader-meets-egyptian-intelligence-chief",
@@ -18197,6 +18382,27 @@
             "label": "Opfer"
           },
           "score": 18
+        },
+        {
+          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
+          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
+          "date": "2026-08-16T11:33:32.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A Hamas delegation held talks with Egyptian intelligence chief Hassan Rashad in Egypt on Sunday, followed by talks with US envoy Jared Kushner. Kushner had met shortly before with President Abdel Fattah al-Sisi in an effort to break the deadlock over the US-brockered peace plan for Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 16
         },
         {
           "title": "Hamas delegation to hold talks on Gaza agreement in Cairo, report says",
