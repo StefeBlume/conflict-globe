@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T21:03:58.600Z",
-  "durationSec": 369,
+  "generatedAt": "2026-08-16T21:58:47.545Z",
+  "durationSec": 362,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 32,
+        "count": 34,
         "error": null
       },
       {
@@ -114,33 +114,45 @@
       }
     ],
     "gdelt": {
-      "ok": 5,
-      "failed": 6,
-      "skipped": 5,
+      "ok": 3,
+      "failed": 9,
+      "skipped": 4,
       "errors": [
         {
-          "id": "thailand-cambodia",
+          "id": "yemen",
           "error": "HTTP 429"
         },
         {
-          "id": "pakistan",
-          "error": "fetch failed"
+          "id": "haiti",
+          "error": "HTTP 429"
         },
         {
-          "id": "sahel-mali",
+          "id": "afghanistan",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "venezuela",
           "error": "fetch failed"
         },
         {
           "id": "drc-m23",
-          "error": "fetch failed"
+          "error": "HTTP 429"
         },
         {
-          "id": "somalia",
-          "error": "fetch failed"
+          "id": "south-china-sea",
+          "error": "HTTP 429"
         },
         {
-          "id": "mexico-cartels",
-          "error": "fetch failed"
+          "id": "libya",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "india-pakistan",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "syria",
+          "error": "HTTP 429"
         }
       ]
     },
@@ -148,8 +160,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 668,
-    "newArticles": 8
+    "articles": 673,
+    "newArticles": 6
   },
   "conflicts": [
     {
@@ -179,7 +191,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -229,13 +241,34 @@
       "regions": [],
       "items": [
         {
+          "title": "Erdogan says Hamas acted sincerely, criticises Israeli attacks",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-clip-erdogan-gaza-tr?traffic_source=rss",
+          "date": "2026-08-16T20:55:19.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Erdogan said Hamas has shown all possible sincere solidarity, while Israel continues aggressive attacks on Gaza.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 30
+        },
+        {
           "title": "Erdogan says Israeli attacks on Lebanon are a serious concern for Türkiye",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/erdogan-says-israeli-attacks-on-lebanon-are-a-serious-concern-for-turkiye?traffic_source=rss",
           "date": "2026-08-16T19:29:31.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Turkish President Recep Tayyip Erdogan said continued Israeli attacks on Lebanon are a source of serious concern.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -355,27 +388,6 @@
           "score": 25
         },
         {
-          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
-          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
-          "date": "2026-08-16T13:17:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 24
-        },
-        {
           "title": "UAE, Saudi Arabia, others condemn Israel's rejection of Trump Gaza plan",
           "url": "https://www.dw.com/en/uae-saudi-arabia-others-condemn-israel-s-rejection-of-trump-gaza-plan/a-78389399?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-16T17:31:00.000Z",
@@ -424,7 +436,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The rare meeting comes a week after Israel rejected Donald Trump's peace plan for Gaza.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -519,6 +531,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
+          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
+          "date": "2026-08-16T13:17:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "score": 22
         },
@@ -645,27 +678,6 @@
             "type": "explosion",
             "icon": "💣",
             "label": "Explosion/Anschlag"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli settlers injure five Palestinians in Masafer Yatta attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-five-palestinians-masafer-yatta-attacks",
-          "date": "2026-08-15T21:15:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli settlers injure five Palestinians in Masafer Yatta attacks Five Palestinians, including two women, two men and a child, suffered bruises and contusions when Israeli settlers attacked residents of Umm al-Khair village in Masafer Yatta, south of Hebron in the occupied West Bank, the Wafa news agency reported. Anti-settlement activist Osama Makhamrehn told the agency that the settlers also hu",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 22
         },
@@ -876,6 +888,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli settlers injure five Palestinians in Masafer Yatta attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-five-palestinians-masafer-yatta-attacks",
+          "date": "2026-08-15T21:15:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers injure five Palestinians in Masafer Yatta attacks Five Palestinians, including two women, two men and a child, suffered bruises and contusions when Israeli settlers attacked residents of Umm al-Khair village in Masafer Yatta, south of Hebron in the occupied West Bank, the Wafa news agency reported. Anti-settlement activist Osama Makhamrehn told the agency that the settlers also hu",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 18
         },
@@ -1342,27 +1375,6 @@
           "score": 17
         },
         {
-          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
-          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
-          "date": "2026-08-16T11:54:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
           "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
           "date": "2026-08-16T12:02:18.000Z",
@@ -1380,27 +1392,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 16
-        },
-        {
-          "title": "Iranian military promises 'complete defeat' of Israel and US",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-military-promises-complete-defeat-israel-and-us",
-          "date": "2026-08-16T10:02:11.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian military promises 'complete defeat' of Israel and US The general staff of Iran's armed forces has pledged the \"complete defeat\" of the US and Israel in the region, saying the legacy of \"resistance\" has been passed to a new generation of Iranians. Meanwhile, an official in the Islamic Revolutionary Guard Corps said more than 85 percent of its air defence production capacity was undamaged in",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 16
         },
@@ -1445,6 +1436,48 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
+          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
+          "date": "2026-08-16T11:54:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Iranian military promises 'complete defeat' of Israel and US",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-military-promises-complete-defeat-israel-and-us",
+          "date": "2026-08-16T10:02:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian military promises 'complete defeat' of Israel and US The general staff of Iran's armed forces has pledged the \"complete defeat\" of the US and Israel in the region, saying the legacy of \"resistance\" has been passed to a new generation of Iranians. Meanwhile, an official in the Islamic Revolutionary Guard Corps said more than 85 percent of its air defence production capacity was undamaged in",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
@@ -1886,27 +1919,6 @@
             "label": "Bodenoffensive"
           },
           "score": 11
-        },
-        {
-          "title": "Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers",
-          "url": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-14T17:03:17.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Two families have been trapped in their homes in the occupied West Bank for several days.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -2107,37 +2119,6 @@
           "score": 35
         },
         {
-          "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
-          "date": "2026-08-16T15:35:53.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 33
-        },
-        {
           "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
           "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-16T19:03:04.000Z",
@@ -2231,6 +2212,37 @@
           "score": 32
         },
         {
+          "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
+          "date": "2026-08-16T15:35:53.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 30
+        },
+        {
           "title": "BBC visits smouldering Kyiv market after Russian strikes",
           "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-16T12:18:09.000Z",
@@ -2280,7 +2292,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 29
+          "score": 26
         },
         {
           "title": "Troops from North Korea to boost Russia's Ukraine forces",
@@ -3246,48 +3258,6 @@
           "score": 23
         },
         {
-          "title": "Sudan: Young Sudanese Call for 'Inclusive Dialogue to Address Roots of War, Put Justice and Peace First'",
-          "url": "https://allafrica.com/stories/202608160008.html",
-          "date": "2026-08-16T15:39:21.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Dabanga] Amstertdam -- By Amin Ramadan for Radio Dabanga",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 22
-        },
-        {
-          "title": "Ethiopia: The Tigray War - Lines of Fire Extending to the Sudanese Border",
-          "url": "https://allafrica.com/stories/202608160012.html",
-          "date": "2026-08-16T15:58:02.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 22
-        },
-        {
           "title": "RSF turns to drones , new fronts as Sudan battlefield pressure grows",
           "url": "https://www.al-monitor.com/originals/2026/08/rsf-turns-drones-new-fronts-sudan-battlefield-pressure-grows",
           "date": "2026-08-16T10:00:00.000Z",
@@ -3340,12 +3310,12 @@
           "score": 21
         },
         {
-          "title": "Sudan: Women Demand Inclusive, Safe Dialogue to End Sudan War for Good",
-          "url": "https://allafrica.com/stories/202608160007.html",
-          "date": "2026-08-16T15:38:20.000Z",
+          "title": "Sudan: Young Sudanese Call for 'Inclusive Dialogue to Address Roots of War, Put Justice and Peace First'",
+          "url": "https://allafrica.com/stories/202608160008.html",
+          "date": "2026-08-16T15:39:21.000Z",
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
-          "summary": "[Dabanga] Nairobi / Amsterdam -- Sudanese feminist and civil society figures have called for broader participation in any anticipated Sudanese-Sudanese dialogue, demanding genuine guarantees to protect participants and provide a safe space for discussion. They stressed the need for women, young people, and civil society to play an active role in the political process.",
+          "summary": "[Dabanga] Amstertdam -- By Amin Ramadan for Radio Dabanga",
           "isNew": false,
           "region": null,
           "event": {
@@ -3358,7 +3328,28 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 20
+          "score": 19
+        },
+        {
+          "title": "Ethiopia: The Tigray War - Lines of Fire Extending to the Sudanese Border",
+          "url": "https://allafrica.com/stories/202608160012.html",
+          "date": "2026-08-16T15:58:02.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 19
         },
         {
           "title": "South Sudan: UN mission decries deadly attacks, works to calm tensions after ‘nothing but devastation’",
@@ -3401,6 +3392,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Sudan: Women Demand Inclusive, Safe Dialogue to End Sudan War for Good",
+          "url": "https://allafrica.com/stories/202608160007.html",
+          "date": "2026-08-16T15:38:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Dabanga] Nairobi / Amsterdam -- Sudanese feminist and civil society figures have called for broader participation in any anticipated Sudanese-Sudanese dialogue, demanding genuine guarantees to protect participants and provide a safe space for discussion. They stressed the need for women, young people, and civil society to play an active role in the political process.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 17
         },
         {
           "title": "Attacks on Health Care in Sudan, 22 July - 04 August 2026",
@@ -4090,7 +4102,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "escalation",
@@ -4141,12 +4153,12 @@
             35.035,
             31.753
           ],
-          "count": 1,
-          "newCount": 0,
+          "count": 2,
+          "newCount": 1,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           }
         }
       ],
@@ -4158,27 +4170,6 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 26
-        },
-        {
-          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
-          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
-          "date": "2026-08-16T13:17:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
           "isNew": false,
           "region": null,
           "event": {
@@ -4215,33 +4206,33 @@
           "score": 26
         },
         {
+          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
+          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
+          "date": "2026-08-16T13:17:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 22
+        },
+        {
           "title": "Several Palestinians injured as settlers continue attacks in West Bank",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-settlers-continue-attacks-west-bank",
           "date": "2026-08-16T03:58:02.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Several Palestinians injured as settlers continue attacks in West Bank Israeli settlers continued their assaults on Palestinians and their property in the occupied West Bank, injuring several people. Here are the details of some of these attacks, reported by Wafa. •&nbsp;&nbsp;&nbsp;&nbsp;Israeli settlers beat up three Palestinians and sprayed them with pepper spray in the al-Masoudiya area, on th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli settlers injure five Palestinians in Masafer Yatta attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-five-palestinians-masafer-yatta-attacks",
-          "date": "2026-08-15T21:15:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli settlers injure five Palestinians in Masafer Yatta attacks Five Palestinians, including two women, two men and a child, suffered bruises and contusions when Israeli settlers attacked residents of Umm al-Khair village in Masafer Yatta, south of Hebron in the occupied West Bank, the Wafa news agency reported. Anti-settlement activist Osama Makhamrehn told the agency that the settlers also hu",
           "isNew": false,
           "region": null,
           "event": {
@@ -4269,6 +4260,37 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 21
+        },
+        {
+          "title": "Recap of latest developments in West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-latest-developments-west-bank",
+          "date": "2026-08-16T21:47:54.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Recap of latest developments in West Bank A Palestinian doctor from Jerusalem was injured on Sunday night after being beaten by Israeli settlers in the town of Jannatah, east of Bethlehem in the occupied West Bank, Wafa news agency reported, citing&nbsp;the Jerusalem Governorate. Israeli settlers attacked and besieged a Palestinian home on the outskirts of Beit Imrin village, northwest of Nablus, ",
+          "isNew": true,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "siege",
@@ -4383,6 +4405,27 @@
           "score": 19
         },
         {
+          "title": "Israeli settlers injure five Palestinians in Masafer Yatta attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-five-palestinians-masafer-yatta-attacks",
+          "date": "2026-08-15T21:15:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers injure five Palestinians in Masafer Yatta attacks Five Palestinians, including two women, two men and a child, suffered bruises and contusions when Israeli settlers attacked residents of Umm al-Khair village in Masafer Yatta, south of Hebron in the occupied West Bank, the Wafa news agency reported. Anti-settlement activist Osama Makhamrehn told the agency that the settlers also hu",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "US ambassador calls Israeli settler West Bank siege act of terror",
           "url": "https://arynews.tv/us-ambassador-calls-israeli-settler-west-bank-siege-act-of-terror",
           "date": "2026-08-15T08:30:00.000Z",
@@ -4488,48 +4531,6 @@
           "score": 18
         },
         {
-          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
-          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
-          "date": "2026-08-16T11:54:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 17
-        },
-        {
-          "title": "West Bank homes left without water or electricity",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-homes-left-without-water-or-electricity",
-          "date": "2026-08-16T11:40:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "West Bank homes left without water or electricity Three homes under siege in the town of Qusra in the occupied West Bank have been left without electricity or water. Al Jazeera reported that Qusra's mayor said Israeli soldiers had prevented technical teams and activists from reaching the homes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 16
-        },
-        {
           "title": "oPt: Qusra attack highlights escalating state-backed violence as West Bank healthcare attacks quadruple in one month",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/qusra-attack-highlights-escalating-state-backed-violence-west-bank-healthcare-attacks-quadruple-one-month",
           "date": "2026-08-13T11:01:43.000Z",
@@ -4591,6 +4592,48 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
+          "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
+          "date": "2026-08-16T11:54:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israel's transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "West Bank homes left without water or electricity",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-homes-left-without-water-or-electricity",
+          "date": "2026-08-16T11:40:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "West Bank homes left without water or electricity Three homes under siege in the town of Qusra in the occupied West Bank have been left without electricity or water. Al Jazeera reported that Qusra's mayor said Israeli soldiers had prevented technical teams and activists from reaching the homes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 15
         },
         {
           "title": "West Bank: Palestinian families besieged for a week as settler violence continues",
@@ -5170,7 +5213,7 @@
           "score": 8
         }
       ],
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "lebanon-hezbollah",
@@ -5198,7 +5241,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -5336,7 +5379,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Turkish President Recep Tayyip Erdogan said continued Israeli attacks on Lebanon are a source of serious concern.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -6495,9 +6538,9 @@
         "Isfahan",
         "Straße von Hormus"
       ],
-      "activity": 96,
-      "severity": 67,
-      "newCount": 0,
+      "activity": 99,
+      "severity": 68,
+      "newCount": 1,
       "signals": [
         {
           "key": "talks",
@@ -6546,8 +6589,8 @@
             51.831,
             35.568
           ],
-          "count": 4,
-          "newCount": 0,
+          "count": 5,
+          "newCount": 1,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -6591,27 +6634,6 @@
       ],
       "items": [
         {
-          "title": "Iran offers $30,000 bounty for killing or capturing US soldiers",
-          "url": "https://www.france24.com/en/middle-east/20260816-iran-offers-30-000-bounty-for-killing-or-capturing-us-soldiers",
-          "date": "2026-08-16T15:40:26.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The Iranian military announced on Sunday it would be offering a $30,000 reward for killing or capturing US soldiers, with the bounty doubled if conducted by a woman. There have been no known deployments of US ground troops in Iran during the war except for a rescue mission carried out in April.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 27
-        },
-        {
           "title": "Qatar denies capturing three Iranian pilots after downing fighter jets",
           "url": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-16T09:27:58.000Z",
@@ -6633,67 +6655,56 @@
           "score": 26
         },
         {
-          "title": "‘Limited options’ for many Iranians as war with US chokes economy",
-          "url": "https://www.aljazeera.com/news/2026/8/16/limited-options-for-many-iranians-as-war-with-us-chokes-economy?traffic_source=rss",
-          "date": "2026-08-16T11:38:50.000Z",
-          "source": "Al Jazeera",
+          "title": "Iran offers $30,000 bounty for killing or capturing US soldiers",
+          "url": "https://www.france24.com/en/middle-east/20260816-iran-offers-30-000-bounty-for-killing-or-capturing-us-soldiers",
+          "date": "2026-08-16T15:40:26.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "Millions of Iranians struggle to make ends meet as war with US devastates the economy and sends prices soaring.",
+          "summary": "The Iranian military announced on Sunday it would be offering a $30,000 reward for killing or capturing US soldiers, with the bounty doubled if conducted by a woman. There have been no known deployments of US ground troops in Iran during the war except for a rescue mission carried out in April.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
-          "score": 19
+          "score": 24
         },
         {
-          "title": "Centcom chief visits US carrier enforcing Iran blockade amid reports of severe strain on crew",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-chief-visits-us-carrier-enforcing-iran-blockade-amid-reports",
-          "date": "2026-08-16T15:54:21.000Z",
+          "title": "Iran parliament speaker says US used more firepower in Iran than on Vietnam",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-parliament-speaker-says-us-used-more-firepower-iran-vietnam",
+          "date": "2026-08-16T21:05:27.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Centcom chief visits US carrier enforcing Iran blockade amid reports of severe strain on crew The head of the United States Central Command (Centcom), Admiral Bradley Cooper, has visited the USS Abraham Lincoln aircraft carrier in the Arabian Sea, which is enforcing the&nbsp; US &nbsp;blockade of Iran. His visit came amid reports of severe strain on the carrier's crew, including mental health conc",
-          "isNew": false,
-          "region": null,
+          "summary": "Iran parliament speaker says US used more firepower in Iran than on Vietnam Iranian Parliament Speaker Mohammad Bagher Ghalibaf said the US had used more firepower against Iran than during the Vietnam War. Speaking at an event broadcast by state broadcaster IRIB, Ghalibaf said Tehran must reach a “point of deterrence” to avoid becoming trapped in a cycle of war and peace.",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
           "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
           },
           "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
           },
-          "score": 19
-        },
-        {
-          "title": "Iranian military promises 'complete defeat' of Israel and US",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-military-promises-complete-defeat-israel-and-us",
-          "date": "2026-08-16T10:02:11.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian military promises 'complete defeat' of Israel and US The general staff of Iran's armed forces has pledged the \"complete defeat\" of the US and Israel in the region, saying the legacy of \"resistance\" has been passed to a new generation of Iranians. Meanwhile, an official in the Islamic Revolutionary Guard Corps said more than 85 percent of its air defence production capacity was undamaged in",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
+          "score": 21
         },
         {
           "title": "Iran condemns Israeli attacks in Lebanon",
@@ -6832,25 +6843,25 @@
           "score": 18
         },
         {
-          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
-          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
-          "date": "2026-08-16T11:14:23.000Z",
-          "source": "Al Jazeera",
+          "title": "Centcom chief visits US carrier enforcing Iran blockade amid reports of severe strain on crew",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-chief-visits-us-carrier-enforcing-iran-blockade-amid-reports",
+          "date": "2026-08-16T15:54:21.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
+          "summary": "Centcom chief visits US carrier enforcing Iran blockade amid reports of severe strain on crew The head of the United States Central Command (Centcom), Admiral Bradley Cooper, has visited the USS Abraham Lincoln aircraft carrier in the Arabian Sea, which is enforcing the&nbsp; US &nbsp;blockade of Iran. His visit came amid reports of severe strain on the carrier's crew, including mental health conc",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
-          "score": 17
+          "score": 16
         },
         {
           "title": "Iran war pushes Middle Eastern airlines towards $4.3bn loss in 2026",
@@ -6872,6 +6883,69 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "‘Limited options’ for many Iranians as war with US chokes economy",
+          "url": "https://www.aljazeera.com/news/2026/8/16/limited-options-for-many-iranians-as-war-with-us-chokes-economy?traffic_source=rss",
+          "date": "2026-08-16T11:38:50.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Millions of Iranians struggle to make ends meet as war with US devastates the economy and sends prices soaring.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Iranian military promises 'complete defeat' of Israel and US",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-military-promises-complete-defeat-israel-and-us",
+          "date": "2026-08-16T10:02:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian military promises 'complete defeat' of Israel and US The general staff of Iran's armed forces has pledged the \"complete defeat\" of the US and Israel in the region, saying the legacy of \"resistance\" has been passed to a new generation of Iranians. Meanwhile, an official in the Islamic Revolutionary Guard Corps said more than 85 percent of its air defence production capacity was undamaged in",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
+          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
+          "date": "2026-08-16T11:14:23.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
@@ -7079,27 +7153,6 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
-          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T21:21:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 11
         },
@@ -7323,6 +7376,27 @@
           "score": 9
         },
         {
+          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
+          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T21:21:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
           "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
           "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-13T19:46:27.000Z",
@@ -7365,7 +7439,7 @@
           "score": 8
         }
       ],
-      "itemCount": 34
+      "itemCount": 35
     },
     {
       "id": "drc-m23",
@@ -8158,7 +8232,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Haiti: Country conditions remain unsafe for returns, new report finds",
@@ -8651,6 +8725,142 @@
       "itemCount": 8
     },
     {
+      "id": "burkina-faso",
+      "name": "Burkina Faso",
+      "nameEn": "Burkina Faso",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Burkina Faso"
+      ],
+      "lat": 12.6,
+      "lon": -1.7,
+      "tier": "war",
+      "since": "2015",
+      "parties": [
+        "Militärregierung (Traoré)",
+        "JNIM",
+        "IS-Sahel",
+        "VDP-Milizen"
+      ],
+      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
+      "hotspots": [
+        "Djibo",
+        "Sahel-Region",
+        "Est",
+        "Ouagadougou"
+      ],
+      "activity": 4,
+      "severity": 56,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "BFA",
+      "extraCountries": [],
+      "regions": [
+        {
+          "id": "BFA-2806",
+          "name": "Soum",
+          "nameDe": "Soum",
+          "type": "Province",
+          "anchor": [
+            -1.291,
+            14.229
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "famine",
+            "icon": "🍽️",
+            "label": "Hunger/Versorgung"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Burkina Faso imposes military training on journalists",
+          "url": "https://www.africanews.com/2026/08/15/burkina-faso-imposes-military-training-on-journalists/",
+          "date": "2026-08-15T14:30:00.000Z",
+          "source": "africanews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Burkina Faso: Key Message Update - Start of agricultural season marked by late and erratic rainfall onset, July 2026 - January 2027",
+          "url": "https://reliefweb.int/report/burkina-faso/burkina-faso-key-message-update-start-agricultural-season-marked-late-and-erratic-rainfall-onset-july-2026-january-2027",
+          "date": "2026-08-11T01:49:34.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Burkina Faso Source: Famine Early Warning System Network Please refer to the attached file. Key Messages Crisis! (IPC Phase 3!) outcomes are expected in Karo-Peli Province (Soum Region) between July and September. Insecurity prevents households from earning sufficient income to meet their needs, even with the available cereals sold at subsidized prices. Poor households are forced to reduc",
+          "isNew": false,
+          "region": {
+            "id": "BFA-2806",
+            "name": "Soum",
+            "nameDe": "Soum",
+            "type": "Province",
+            "anchor": [
+              -1.291,
+              14.229
+            ],
+            "matched": "Soum"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "famine",
+            "icon": "🍽️",
+            "label": "Hunger/Versorgung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Burkina Faso: UNHCR West and Central Africa: 2026 Funding Update (as of 31 July 2026)",
+          "url": "https://reliefweb.int/report/burkina-faso/unhcr-west-and-central-africa-2026-funding-update-31-july-2026",
+          "date": "2026-08-10T03:02:44.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Burkina Faso, Cameroon, Central African Republic, Chad, Democratic Republic of the Congo, Mali, Niger, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached file.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        }
+      ],
+      "itemCount": 3
+    },
+    {
       "id": "yemen",
       "name": "Jemen / Rotes Meer",
       "nameEn": "Yemen & Red Sea",
@@ -8676,8 +8886,8 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 57,
-      "severity": 56,
+      "activity": 54,
+      "severity": 55,
       "newCount": 0,
       "signals": [
         {
@@ -8823,7 +9033,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 29
+          "score": 22
         },
         {
           "title": "Houthi missile barrage hits Mocha port as fighting escalates in Yemen",
@@ -8854,7 +9064,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 28
+          "score": 22
         },
         {
           "title": "Houthis launch sixth ballistic missile at Marib city",
@@ -8884,37 +9094,6 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Report: Drone strikes kill three Houthi fighters and wound commanders in southwest Yemen",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-drone-strikes-kill-three-houthi-fighters-and-wound-commanders",
-          "date": "2026-08-15T21:52:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Report: Drone strikes kill three Houthi fighters and wound commanders in southwest Yemen Yemeni government forces said at least three Houthis have been killed during drone strikes west of Taiz governorate, in the southwest of the country, according to the Yemen News Agency. The air strikes wounded several others, including field commanders.",
-          "isNew": false,
-          "region": {
-            "id": "YEM-158",
-            "name": "Ta'izz",
-            "nameDe": "Gouvernement Ta'izz",
-            "type": "Governorate",
-            "anchor": [
-              43.787,
-              13.41
-            ],
-            "matched": "Taiz"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 22
         },
@@ -9011,6 +9190,37 @@
             "label": "Seeangriff"
           },
           "score": 19
+        },
+        {
+          "title": "Report: Drone strikes kill three Houthi fighters and wound commanders in southwest Yemen",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-drone-strikes-kill-three-houthi-fighters-and-wound-commanders",
+          "date": "2026-08-15T21:52:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Report: Drone strikes kill three Houthi fighters and wound commanders in southwest Yemen Yemeni government forces said at least three Houthis have been killed during drone strikes west of Taiz governorate, in the southwest of the country, according to the Yemen News Agency. The air strikes wounded several others, including field commanders.",
+          "isNew": false,
+          "region": {
+            "id": "YEM-158",
+            "name": "Ta'izz",
+            "nameDe": "Gouvernement Ta'izz",
+            "type": "Governorate",
+            "anchor": [
+              43.787,
+              13.41
+            ],
+            "matched": "Taiz"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Yemen's Mocha port suspends operations after Houthi attacks",
@@ -9351,72 +9561,84 @@
       "itemCount": 23
     },
     {
-      "id": "burkina-faso",
-      "name": "Burkina Faso",
-      "nameEn": "Burkina Faso",
-      "region": "Afrika (Sahel)",
+      "id": "colombia",
+      "name": "Kolumbien",
+      "nameEn": "Colombia",
+      "region": "Amerika (Süd)",
       "countries": [
-        "Burkina Faso"
+        "Colombia"
       ],
-      "lat": 12.6,
-      "lon": -1.7,
-      "tier": "war",
-      "since": "2015",
+      "lat": 5,
+      "lon": -74,
+      "tier": "high",
+      "since": "1964 / Krise seit 2025",
       "parties": [
-        "Militärregierung (Traoré)",
-        "JNIM",
-        "IS-Sahel",
-        "VDP-Milizen"
+        "Regierung",
+        "ELN",
+        "FARC-Dissidenten",
+        "Clan del Golfo"
       ],
-      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
+      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
       "hotspots": [
-        "Djibo",
-        "Sahel-Region",
-        "Est",
-        "Ouagadougou"
+        "Catatumbo",
+        "Cauca",
+        "Arauca",
+        "Chocó"
       ],
-      "activity": 4,
-      "severity": 56,
-      "newCount": 0,
+      "activity": 42,
+      "severity": 51,
+      "newCount": 1,
       "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 4
+        },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
           "count": 2
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
         }
       ],
       "acled": null,
       "briefing": null,
-      "iso3": "BFA",
+      "iso3": "COL",
       "extraCountries": [],
       "regions": [
         {
-          "id": "BFA-2806",
-          "name": "Soum",
-          "nameDe": "Soum",
-          "type": "Province",
+          "id": "COL-1408",
+          "name": "Valle del Cauca",
+          "nameDe": "Valle del Cauca",
+          "type": "Department",
           "anchor": [
-            -1.291,
-            14.229
+            -76.51,
+            3.873
           ],
           "count": 1,
           "newCount": 0,
           "event": {
-            "type": "famine",
-            "icon": "🍽️",
-            "label": "Hunger/Versorgung"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         }
       ],
       "items": [
         {
-          "title": "Burkina Faso imposes military training on journalists",
-          "url": "https://www.africanews.com/2026/08/15/burkina-faso-imposes-military-training-on-journalists/",
-          "date": "2026-08-15T14:30:00.000Z",
-          "source": "africanews.com",
+          "title": "Petroleum dealers postpone planned strike as govt approves margin revision",
+          "url": "https://www.dawn.com/news/2022816/petroleum-dealers-postpone-planned-strike-as-govt-approves-margin-revision",
+          "date": "2026-08-14T19:40:36.000Z",
+          "source": "Dawn (Pakistan)",
           "sourceType": "news",
-          "summary": "",
+          "summary": "The Pakistan Petroleum Dealers’ Association (PPDA) on Friday called off its plans to begin a strike on Saturday after the government approved a proposed revision in the dealers’ margins. The nod for the revision was also confirmed by the finance ministry in a statement. The Economic Coordination Committee had “deliberated on the matter regarding revision of dealers’ margins on motor spirit and hig",
           "isNew": false,
           "region": null,
           "event": {
@@ -9429,46 +9651,141 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 18
         },
         {
-          "title": "Burkina Faso: Key Message Update - Start of agricultural season marked by late and erratic rainfall onset, July 2026 - January 2027",
-          "url": "https://reliefweb.int/report/burkina-faso/burkina-faso-key-message-update-start-agricultural-season-marked-late-and-erratic-rainfall-onset-july-2026-january-2027",
-          "date": "2026-08-11T01:49:34.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Burkina Faso Source: Famine Early Warning System Network Please refer to the attached file. Key Messages Crisis! (IPC Phase 3!) outcomes are expected in Karo-Peli Province (Soum Region) between July and September. Insecurity prevents households from earning sufficient income to meet their needs, even with the available cereals sold at subsidized prices. Poor households are forced to reduc",
-          "isNew": false,
-          "region": {
-            "id": "BFA-2806",
-            "name": "Soum",
-            "nameDe": "Soum",
-            "type": "Province",
-            "anchor": [
-              -1.291,
-              14.229
-            ],
-            "matched": "Soum"
-          },
+          "title": "Colombia breaks with international consensus on occupied Syrian Golan",
+          "url": "https://sana.sy/en/syria/2336742/",
+          "date": "2026-08-16T19:45:00.000Z",
+          "source": "sana.sy",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "famine",
-            "icon": "🍽️",
-            "label": "Hunger/Versorgung"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 9
+          "score": 17
         },
         {
-          "title": "Burkina Faso: UNHCR West and Central Africa: 2026 Funding Update (as of 31 July 2026)",
-          "url": "https://reliefweb.int/report/burkina-faso/unhcr-west-and-central-africa-2026-funding-update-31-july-2026",
-          "date": "2026-08-10T03:02:44.000Z",
+          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
+          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
+          "date": "2026-08-16T12:02:18.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 16
+        },
+        {
+          "title": "National Liberation Army (ELN)",
+          "url": "https://insightcrime.org/colombia-organized-crime-news/eln-profile/",
+          "date": "2026-08-12T17:59:23.000Z",
+          "source": "InSight Crime",
+          "sourceType": "analysis",
+          "summary": "National Liberation Army (ELN) The National Liberation Army (Ejército de Liberación Nacional – ELN) is Colombia’s last true insurgency and one of Latin America’s most powerful criminal organizations. The post National Liberation Army (ELN) appeared first on InSight Crime .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "The InSight Take: Abelardo de la Espriella Inherits Colombia’s Fractured Criminal Landscape",
+          "url": "https://insightcrime.org/news/the-insight-take-abelardo-de-la-espriella-inherits-colombias-fractured-criminal-landscape/",
+          "date": "2026-08-11T21:55:27.000Z",
+          "source": "InSight Crime",
+          "sourceType": "analysis",
+          "summary": "The InSight Take: Abelardo de la Espriella Inherits Colombia’s Fractured Criminal Landscape In this week's InSight Take, Co-Director Jeremy McDermott and Senior Colombia Analyst Sara Garcia unpack what Abelardo de la Espriella inherits, Washington's likely support, whether de la Espriella can match the Uribe-era security gains, and the human rights risks of a harder military push. The post The InS",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Colombia: Latinoamérica y El Caribe Resumen de Situación Semanal al 14 de agosto 2026",
+          "url": "https://reliefweb.int/report/colombia/latinoamerica-y-el-caribe-resumen-de-situacion-semanal-al-14-de-agosto-2026",
+          "date": "2026-08-14T20:09:32.000Z",
           "source": "ReliefWeb (UN OCHA)",
           "sourceType": "humanitarian",
-          "summary": "Countries: Burkina Faso, Cameroon, Central African Republic, Chad, Democratic Republic of the Congo, Mali, Niger, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached file.",
+          "summary": "Countries: Colombia, Guatemala, Haiti, Mexico, Peru Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. CIFRAS CLAVE 47,4K casos confirmados de sarampión en la región, más de tres veces la cifra total de 2025 53,8K personas afectadas por un terremoto de magnitud 7,4 en Colombia 266 personas fallecidas tras un terremoto de magnitud 7,4 en Colombi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Colombia: Latin America & The Caribbean Weekly Situation Update as of 14 August 2026",
+          "url": "https://reliefweb.int/report/colombia/latin-america-caribbean-weekly-situation-update-14-august-2026",
+          "date": "2026-08-14T19:48:10.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Colombia, Guatemala, Haiti, Mexico, Peru Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. KEY FIGURES 47.4K confirmed cases of measles in the region, more than 3x all of 2025 53.8K people affected by 7.4 magnitude earthquake in Colombia 266 people dead following 7.4 magnitude earthquake in Colombia COLOMBIA: EARTHQUAKE Colombia has",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 12
+        },
+        {
+          "title": "Colombia: Conflict-affected families have lost everything yet again | NRC",
+          "url": "https://reliefweb.int/report/colombia/colombia-conflict-affected-families-have-lost-everything-yet-again-nrc",
+          "date": "2026-08-14T14:03:05.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Source: Norwegian Refugee Council Statement by Giovanni Rizzo, the Norwegian Refugee Council’s country director for Colombia on the humanitarian situation following Monday’s deadly earthquake: Press release Colombia Published 14. Aug 2026 “Colombia was facing severe humanitarian needs long before Monday’s deadly earthquake. Over nine million people—survivors of armed conflict, re",
           "isNew": false,
           "region": null,
           "event": {
@@ -9481,10 +9798,251 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 0
+          "score": 12
+        },
+        {
+          "title": "Terremoto en Colombia: Informe de Situación #2 (12 de agosto de 2026)",
+          "url": "https://reliefweb.int/report/colombia/terremoto-en-colombia-informe-de-situacion-2-12-de-agosto-de-2026",
+          "date": "2026-08-14T12:18:26.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Source: Project HOPE Please refer to the attached file. El Equipo de Respuesta a Emergencias de Project HOPE se encuentra en terreno en los departamentos de Valle del Cauca y Risaralda, en Colombia, evaluando rápidamente las necesidades tras el terremoto de magnitud 7.4 que se registró a 240 kilómetros al oeste de Bogotá y que causó daños generalizados, deslizamientos de tierra y",
+          "isNew": false,
+          "region": {
+            "id": "COL-1408",
+            "name": "Valle del Cauca",
+            "nameDe": "Valle del Cauca",
+            "type": "Department",
+            "anchor": [
+              -76.51,
+              3.873
+            ],
+            "matched": "Valle del Cauca"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Clúster Salud Colombia: Terremoto Agosto 10 - 2026 - Reporte Situacional #1",
+          "url": "https://reliefweb.int/report/colombia/cluster-salud-colombia-terremoto-agosto-10-2026-reporte-situacional-1",
+          "date": "2026-08-14T01:25:46.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Sources: Health Cluster, Pan American Health Organization, World Health Organization Please refer to the attached file. Contexto país Colombia enfrenta en 2026 un contexto humanitario marcado por la convergencia de conflicto armado, desastres, desplazamientos, confinamientos, restricciones de acceso y brechas persistentes en capacidades locales y acceso a servicios esenciales. An",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Govt raises petroleum dealers’ margin to Rs9.98 per litre",
+          "url": "https://www.dawn.com/news/2022943/govt-raises-petroleum-dealers-margin-to-rs998-per-litre",
+          "date": "2026-08-15T02:35:55.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "• PPDA calls off nationwide strike planned from today • Higher margin to take effect from Sept 1 ISLAMABAD: In a move aimed at averting a nationwide strike by petroleum dealers, the Economic Coordination Com­mittee (ECC) of the federal cabinet on Friday approved a 15.5 per cent increase in dealers’ margins on both petrol and high-speed diesel, following which the dealers called off their protest p",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 11
+        },
+        {
+          "title": "Race to free trapped quake survivor offers hope in Colombia",
+          "url": "https://www.france24.com/en/americas/20260814-race-to-free-trapped-survivor-offers-hope-in-colombia-earthquake-zone",
+          "date": "2026-08-14T16:49:37.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Rescue workers rushed to free a survivor Friday in Colombia amid the rubble left by a powerful earthquake nearly four days earlier that killed at least 285 people and injured 4,000. Some 400 people were still missing and tens of thousands of homes were ​damaged, leaving many Colombians sleeping in shelters or outside.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 11
+        },
+        {
+          "title": "Teens who fled Venezuela after deadly quakes caught in another disaster in Colombia",
+          "url": "https://www.bbc.co.uk/news/articles/c9v42m3430vo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-14T08:02:35.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Deivi Delfín and his brother moved to Colombia after a quake in Venezuela killed their mother, but were caught in another deadly disaster.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Petroleum levy collection hits record Rs1.57tr",
+          "url": "https://www.dawn.com/news/2022699/petroleum-levy-collection-hits-record-rs157tr",
+          "date": "2026-08-14T02:23:46.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "• Cost of running civil govt rises 16pc, crosses Rs1tr for first time • Fiscal deficit shrinks to 2.6pc on the back of provincial surpluses, lower interest bill • Defence spending up 18pc; primary surplus reaches record 2.9pc of GDP ISLAMABAD: With a record Rs1.567 trillion petroleum levy collection amid record consumer-end oil prices following US-Israel attacks on Iran, the cost of running the ci",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
+        },
+        {
+          "title": "Colombia: La atención integral a la primera infancia en situaciones de crisis prolongadas, un llamado que no da espera - nota de política",
+          "url": "https://reliefweb.int/report/colombia/la-atencion-integral-la-primera-infancia-en-situaciones-de-crisis-prolongadas-un-llamado-que-no-da-espera-nota-de-politica",
+          "date": "2026-08-13T13:34:32.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Source: R4V Please refer to the attached file. Resumen ejecutivo La primera infancia en Colombia está en el centro de una triple crisis prolongada: el conflicto armado, la migración transfronteriza forzada y los desastres y el cambio climático. Estas situaciones no actúan de manera aislada, sino que se superponen en los mismos territorios y afectan a las mismas poblaciones, lo qu",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Colombia: La primera infancia en el marco de los desastres y las crisis climáticas",
+          "url": "https://reliefweb.int/report/colombia/la-primera-infancia-en-el-marco-de-los-desastres-y-las-crisis-climaticas",
+          "date": "2026-08-13T13:34:09.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Source: R4V Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Colombia: La primera infancia en el marco del conflicto armado",
+          "url": "https://reliefweb.int/report/colombia/la-primera-infancia-en-el-marco-del-conflicto-armado",
+          "date": "2026-08-13T13:34:00.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Source: R4V Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Colombia: Flash Update 006 - Actualización afectaciones por terremoto en Colombia - 14 de agosto de 2026",
+          "url": "https://reliefweb.int/report/colombia/colombia-flash-update-006-actualizacion-afectaciones-por-terremoto-en-colombia-14-de-agosto-de-2026",
+          "date": "2026-08-15T02:09:10.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Sources: El Equipo Humanitario País Colombia, UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. Este Flash update es producido por OCHA Colombia con insumos de los socios humanitarios y reportes oficiales. Corte a 14 agosto (18:30 horas). La siguiente actualización de este documento se realizará el lunes 17 de agosto de 2026. Impacto humani",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 3
+        },
+        {
+          "title": "Colombia: Flash Update 005 - Actualización afectaciones por terremoto en Colombia - 13 de agosto de 2026",
+          "url": "https://reliefweb.int/report/colombia/colombia-flash-update-005-actualizacion-afectaciones-por-terremoto-en-colombia-13-de-agosto-de-2026",
+          "date": "2026-08-14T01:45:04.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Colombia Sources: El Equipo Humanitario País Colombia, UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. Este Flash update es producido por OCHA Colombia con insumos de los socios humanitarios y reportes oficiales. Corte a 13 agosto (17:00 horas) La magnitud de la emergencia sigue creciendo. Las lluvias e impactos asociados han dejado 53.816 persona",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 3
         }
       ],
-      "itemCount": 3
+      "itemCount": 19
     },
     {
       "id": "pakistan",
@@ -9967,469 +10525,6 @@
       "itemCount": 15
     },
     {
-      "id": "colombia",
-      "name": "Kolumbien",
-      "nameEn": "Colombia",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Colombia"
-      ],
-      "lat": 5,
-      "lon": -74,
-      "tier": "high",
-      "since": "1964 / Krise seit 2025",
-      "parties": [
-        "Regierung",
-        "ELN",
-        "FARC-Dissidenten",
-        "Clan del Golfo"
-      ],
-      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
-      "hotspots": [
-        "Catatumbo",
-        "Cauca",
-        "Arauca",
-        "Chocó"
-      ],
-      "activity": 38,
-      "severity": 50,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 4
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COL",
-      "extraCountries": [],
-      "regions": [
-        {
-          "id": "COL-1408",
-          "name": "Valle del Cauca",
-          "nameDe": "Valle del Cauca",
-          "type": "Department",
-          "anchor": [
-            -76.51,
-            3.873
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Petroleum dealers postpone planned strike as govt approves margin revision",
-          "url": "https://www.dawn.com/news/2022816/petroleum-dealers-postpone-planned-strike-as-govt-approves-margin-revision",
-          "date": "2026-08-14T19:40:36.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The Pakistan Petroleum Dealers’ Association (PPDA) on Friday called off its plans to begin a strike on Saturday after the government approved a proposed revision in the dealers’ margins. The nod for the revision was also confirmed by the finance ministry in a statement. The Economic Coordination Committee had “deliberated on the matter regarding revision of dealers’ margins on motor spirit and hig",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Week in pictures: A solar eclipse, quake in Colombia and Israeli settlers in the occupied West Bank",
-          "url": "https://www.france24.com/en/europe/20260816-week-in-pictures-a-solar-eclipse-quake-in-colombia-and-israeli-settlers-in-the-occupied-west-bank",
-          "date": "2026-08-16T12:02:18.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A solar eclipse seen across parts of Europe, ongoing search-and-rescue efforts in Colombia after a devastating earthquake killed at least 300 people and left hundreds missing, and escalating violence by Israeli settlers in the occupied West Bank, condemned by the US ambassador to Israel as \"acts of terror\": FRANCE 24 takes a look at the week's most striking images.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 16
-        },
-        {
-          "title": "National Liberation Army (ELN)",
-          "url": "https://insightcrime.org/colombia-organized-crime-news/eln-profile/",
-          "date": "2026-08-12T17:59:23.000Z",
-          "source": "InSight Crime",
-          "sourceType": "analysis",
-          "summary": "National Liberation Army (ELN) The National Liberation Army (Ejército de Liberación Nacional – ELN) is Colombia’s last true insurgency and one of Latin America’s most powerful criminal organizations. The post National Liberation Army (ELN) appeared first on InSight Crime .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "The InSight Take: Abelardo de la Espriella Inherits Colombia’s Fractured Criminal Landscape",
-          "url": "https://insightcrime.org/news/the-insight-take-abelardo-de-la-espriella-inherits-colombias-fractured-criminal-landscape/",
-          "date": "2026-08-11T21:55:27.000Z",
-          "source": "InSight Crime",
-          "sourceType": "analysis",
-          "summary": "The InSight Take: Abelardo de la Espriella Inherits Colombia’s Fractured Criminal Landscape In this week's InSight Take, Co-Director Jeremy McDermott and Senior Colombia Analyst Sara Garcia unpack what Abelardo de la Espriella inherits, Washington's likely support, whether de la Espriella can match the Uribe-era security gains, and the human rights risks of a harder military push. The post The InS",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Colombia: Latinoamérica y El Caribe Resumen de Situación Semanal al 14 de agosto 2026",
-          "url": "https://reliefweb.int/report/colombia/latinoamerica-y-el-caribe-resumen-de-situacion-semanal-al-14-de-agosto-2026",
-          "date": "2026-08-14T20:09:32.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Colombia, Guatemala, Haiti, Mexico, Peru Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. CIFRAS CLAVE 47,4K casos confirmados de sarampión en la región, más de tres veces la cifra total de 2025 53,8K personas afectadas por un terremoto de magnitud 7,4 en Colombia 266 personas fallecidas tras un terremoto de magnitud 7,4 en Colombi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Colombia: Latin America & The Caribbean Weekly Situation Update as of 14 August 2026",
-          "url": "https://reliefweb.int/report/colombia/latin-america-caribbean-weekly-situation-update-14-august-2026",
-          "date": "2026-08-14T19:48:10.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Colombia, Guatemala, Haiti, Mexico, Peru Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. KEY FIGURES 47.4K confirmed cases of measles in the region, more than 3x all of 2025 53.8K people affected by 7.4 magnitude earthquake in Colombia 266 people dead following 7.4 magnitude earthquake in Colombia COLOMBIA: EARTHQUAKE Colombia has",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 12
-        },
-        {
-          "title": "Colombia: Conflict-affected families have lost everything yet again | NRC",
-          "url": "https://reliefweb.int/report/colombia/colombia-conflict-affected-families-have-lost-everything-yet-again-nrc",
-          "date": "2026-08-14T14:03:05.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Source: Norwegian Refugee Council Statement by Giovanni Rizzo, the Norwegian Refugee Council’s country director for Colombia on the humanitarian situation following Monday’s deadly earthquake: Press release Colombia Published 14. Aug 2026 “Colombia was facing severe humanitarian needs long before Monday’s deadly earthquake. Over nine million people—survivors of armed conflict, re",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "Terremoto en Colombia: Informe de Situación #2 (12 de agosto de 2026)",
-          "url": "https://reliefweb.int/report/colombia/terremoto-en-colombia-informe-de-situacion-2-12-de-agosto-de-2026",
-          "date": "2026-08-14T12:18:26.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Source: Project HOPE Please refer to the attached file. El Equipo de Respuesta a Emergencias de Project HOPE se encuentra en terreno en los departamentos de Valle del Cauca y Risaralda, en Colombia, evaluando rápidamente las necesidades tras el terremoto de magnitud 7.4 que se registró a 240 kilómetros al oeste de Bogotá y que causó daños generalizados, deslizamientos de tierra y",
-          "isNew": false,
-          "region": {
-            "id": "COL-1408",
-            "name": "Valle del Cauca",
-            "nameDe": "Valle del Cauca",
-            "type": "Department",
-            "anchor": [
-              -76.51,
-              3.873
-            ],
-            "matched": "Valle del Cauca"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Clúster Salud Colombia: Terremoto Agosto 10 - 2026 - Reporte Situacional #1",
-          "url": "https://reliefweb.int/report/colombia/cluster-salud-colombia-terremoto-agosto-10-2026-reporte-situacional-1",
-          "date": "2026-08-14T01:25:46.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Sources: Health Cluster, Pan American Health Organization, World Health Organization Please refer to the attached file. Contexto país Colombia enfrenta en 2026 un contexto humanitario marcado por la convergencia de conflicto armado, desastres, desplazamientos, confinamientos, restricciones de acceso y brechas persistentes en capacidades locales y acceso a servicios esenciales. An",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Govt raises petroleum dealers’ margin to Rs9.98 per litre",
-          "url": "https://www.dawn.com/news/2022943/govt-raises-petroleum-dealers-margin-to-rs998-per-litre",
-          "date": "2026-08-15T02:35:55.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• PPDA calls off nationwide strike planned from today • Higher margin to take effect from Sept 1 ISLAMABAD: In a move aimed at averting a nationwide strike by petroleum dealers, the Economic Coordination Com­mittee (ECC) of the federal cabinet on Friday approved a 15.5 per cent increase in dealers’ margins on both petrol and high-speed diesel, following which the dealers called off their protest p",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 11
-        },
-        {
-          "title": "Race to free trapped quake survivor offers hope in Colombia",
-          "url": "https://www.france24.com/en/americas/20260814-race-to-free-trapped-survivor-offers-hope-in-colombia-earthquake-zone",
-          "date": "2026-08-14T16:49:37.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Rescue workers rushed to free a survivor Friday in Colombia amid the rubble left by a powerful earthquake nearly four days earlier that killed at least 285 people and injured 4,000. Some 400 people were still missing and tens of thousands of homes were ​damaged, leaving many Colombians sleeping in shelters or outside.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 11
-        },
-        {
-          "title": "Teens who fled Venezuela after deadly quakes caught in another disaster in Colombia",
-          "url": "https://www.bbc.co.uk/news/articles/c9v42m3430vo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-14T08:02:35.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Deivi Delfín and his brother moved to Colombia after a quake in Venezuela killed their mother, but were caught in another deadly disaster.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Petroleum levy collection hits record Rs1.57tr",
-          "url": "https://www.dawn.com/news/2022699/petroleum-levy-collection-hits-record-rs157tr",
-          "date": "2026-08-14T02:23:46.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• Cost of running civil govt rises 16pc, crosses Rs1tr for first time • Fiscal deficit shrinks to 2.6pc on the back of provincial surpluses, lower interest bill • Defence spending up 18pc; primary surplus reaches record 2.9pc of GDP ISLAMABAD: With a record Rs1.567 trillion petroleum levy collection amid record consumer-end oil prices following US-Israel attacks on Iran, the cost of running the ci",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 11
-        },
-        {
-          "title": "Colombia: La atención integral a la primera infancia en situaciones de crisis prolongadas, un llamado que no da espera - nota de política",
-          "url": "https://reliefweb.int/report/colombia/la-atencion-integral-la-primera-infancia-en-situaciones-de-crisis-prolongadas-un-llamado-que-no-da-espera-nota-de-politica",
-          "date": "2026-08-13T13:34:32.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Source: R4V Please refer to the attached file. Resumen ejecutivo La primera infancia en Colombia está en el centro de una triple crisis prolongada: el conflicto armado, la migración transfronteriza forzada y los desastres y el cambio climático. Estas situaciones no actúan de manera aislada, sino que se superponen en los mismos territorios y afectan a las mismas poblaciones, lo qu",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Colombia: La primera infancia en el marco de los desastres y las crisis climáticas",
-          "url": "https://reliefweb.int/report/colombia/la-primera-infancia-en-el-marco-de-los-desastres-y-las-crisis-climaticas",
-          "date": "2026-08-13T13:34:09.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Source: R4V Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Colombia: La primera infancia en el marco del conflicto armado",
-          "url": "https://reliefweb.int/report/colombia/la-primera-infancia-en-el-marco-del-conflicto-armado",
-          "date": "2026-08-13T13:34:00.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Source: R4V Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Colombia: Flash Update 006 - Actualización afectaciones por terremoto en Colombia - 14 de agosto de 2026",
-          "url": "https://reliefweb.int/report/colombia/colombia-flash-update-006-actualizacion-afectaciones-por-terremoto-en-colombia-14-de-agosto-de-2026",
-          "date": "2026-08-15T02:09:10.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Sources: El Equipo Humanitario País Colombia, UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. Este Flash update es producido por OCHA Colombia con insumos de los socios humanitarios y reportes oficiales. Corte a 14 agosto (18:30 horas). La siguiente actualización de este documento se realizará el lunes 17 de agosto de 2026. Impacto humani",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 3
-        },
-        {
-          "title": "Colombia: Flash Update 005 - Actualización afectaciones por terremoto en Colombia - 13 de agosto de 2026",
-          "url": "https://reliefweb.int/report/colombia/colombia-flash-update-005-actualizacion-afectaciones-por-terremoto-en-colombia-13-de-agosto-de-2026",
-          "date": "2026-08-14T01:45:04.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Colombia Sources: El Equipo Humanitario País Colombia, UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. Este Flash update es producido por OCHA Colombia con insumos de los socios humanitarios y reportes oficiales. Corte a 13 agosto (17:00 horas) La magnitud de la emergencia sigue creciendo. Las lluvias e impactos asociados han dejado 53.816 persona",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 3
-        }
-      ],
-      "itemCount": 18
-    },
-    {
       "id": "taiwan-strait",
       "name": "Taiwanstraße",
       "nameEn": "Taiwan Strait",
@@ -10454,9 +10549,9 @@
         "Medianlinie",
         "ADIZ"
       ],
-      "activity": 89,
+      "activity": 87,
       "severity": 49,
-      "newCount": 4,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -10506,7 +10601,7 @@
             24.999
           ],
           "count": 2,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -10539,7 +10634,7 @@
           "source": "news.ltn.com.tw",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "TWN-1167",
             "name": "New Taipei",
@@ -10561,7 +10656,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 27
+          "score": 25
         },
         {
           "title": "Notes from Central Taiwan : From vaccines to drones : The anatomy of Taiwan political forgetting",
@@ -10570,7 +10665,7 @@
           "source": "taipeitimes.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -10582,7 +10677,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "China wants to block drone bill : source",
@@ -10591,7 +10686,7 @@
           "source": "taipeitimes.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -10603,7 +10698,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Trump envoy Kushner meets Hamas leader to push Gaza peace plan",
@@ -10612,7 +10707,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The rare meeting comes a week after Israel rejected Donald Trump's peace plan for Gaza.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -10847,27 +10942,6 @@
           "score": 18
         },
         {
-          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
-          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
-          "date": "2026-08-16T11:14:23.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
           "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
           "date": "2026-08-16T11:33:32.000Z",
@@ -10908,6 +10982,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
+          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
+          "date": "2026-08-16T11:14:23.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
@@ -10990,27 +11085,6 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
-          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T21:21:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 11
         },
@@ -11170,6 +11244,27 @@
             "label": "Vertreibung"
           },
           "score": 9
+        },
+        {
+          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
+          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T21:21:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
         },
         {
           "title": "Kennedy Center board approves Trump name on facade, renovation plan",
@@ -11855,6 +11950,27 @@
       ],
       "items": [
         {
+          "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
+          "url": "https://allafrica.com/stories/202608140172.html",
+          "date": "2026-08-14T10:39:57.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Troops of the Nigerian Army have apprehended a high-profile terrorist operative linked to a notorious terrorist leader and 60 suspected collaborators in separate operations across theatres.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
           "title": "Ghana: 10 Officers, 17 Bandits Killed in Clash in Kebbi State",
           "url": "https://allafrica.com/stories/202608140580.html",
           "date": "2026-08-14T20:57:47.000Z",
@@ -11883,28 +11999,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 20
-        },
-        {
-          "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
-          "url": "https://allafrica.com/stories/202608140172.html",
-          "date": "2026-08-14T10:39:57.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Troops of the Nigerian Army have apprehended a high-profile terrorist operative linked to a notorious terrorist leader and 60 suspected collaborators in separate operations across theatres.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
@@ -13653,6 +13748,545 @@
       "itemCount": 12
     },
     {
+      "id": "korea",
+      "name": "Koreanische Halbinsel",
+      "nameEn": "Korean Peninsula",
+      "region": "Asien (Ost)",
+      "countries": [
+        "North Korea"
+      ],
+      "lat": 39,
+      "lon": 127,
+      "tier": "medium",
+      "since": "1950 (Waffenstillstand)",
+      "parties": [
+        "Nordkorea",
+        "Südkorea",
+        "USA",
+        "Russland"
+      ],
+      "background": "Raketentests, Truppenentsendung nach Russland und Zwischenfälle an der DMZ prägen die Lage; kaum diplomatische Kanäle.",
+      "hotspots": [
+        "DMZ",
+        "Gelbes Meer",
+        "Pjöngjang"
+      ],
+      "activity": 75,
+      "severity": 45,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 9
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 6
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "PRK",
+      "extraCountries": [
+        "KOR"
+      ],
+      "regions": [
+        {
+          "id": "PRK-3305",
+          "name": "Pyongyang",
+          "nameDe": "Pjöngjang",
+          "type": "Special City",
+          "anchor": [
+            125.923,
+            38.996
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
+          "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
+          "date": "2026-08-16T19:12:31.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 19 people were killed Sunday in drone and missile strikes in Russia and Ukraine which destroyed a book market in Kyiv while Moscow faced one of the most massive attacks since the start of the war. Ukraine and Russia have been escalating their long-range strikes for months, resulting in a growing number of civilian casualties, more than four years after the start of the Russian invasion.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Troops from North Korea to boost Russia's Ukraine forces",
+          "url": "https://www.dw.com/en/troops-from-north-korea-to-boost-russia-s-ukraine-forces/a-78385524?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-16T06:49:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt this will make a fundamental difference in the course of Russia's war with Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 23
+        },
+        {
+          "title": "Houthi missile barrage hits Mocha port as fighting escalates in Yemen",
+          "url": "https://www.middleeasteye.net/news/houthi-missile-barrage-hits-mocha-port-fighting-escalates-yemen",
+          "date": "2026-08-16T10:57:46.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Houthi missile barrage hits Mocha port as fighting escalates in Yemen Submitted by MEE staff on Sun, 08/16/2026 - 10:32 Officials say Houthi strikes have damaged civilian property in Marib and caused an estimated $16m in losses at the strategic Red Sea port The navigation bridge of a sunken vessel protrudes from the water at the Port of Mocha in Yemen on 10 August 2026 (Khaled Ziad/AFP) Off Yemen'",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Korean Peninsula on Edge : Peace Offer , Border Clashes and US – South Korea War Games Raise Tensions with North Korea",
+          "url": "https://openthemagazine.com/world/peace-offer-warning-shots-and-war-games-why-the-korean-peninsula-is-heating-up-again",
+          "date": "2026-08-16T11:45:00.000Z",
+          "source": "openthemagazine.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Russian ballistic missile strikes kill one in Ukraine",
+          "url": "https://www.rte.ie/news/2026/0816/1588059-ukraine-russia-war/",
+          "date": "2026-08-16T08:15:00.000Z",
+          "source": "rte.ie",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Houthis launch sixth ballistic missile at Marib city",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-launch-sixth-ballistic-missile-marib-city",
+          "date": "2026-08-16T02:57:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Houthis launch sixth ballistic missile at Marib city Houthis have fired a sixth ballistic missile on the Yemeni city of Marib, according to the Marib governorate. In a post on X, the governorate published photos of a crater in the ground as well as the mangled remains of a vehicle.&nbsp; The statement added that ongoing assault “threatens the lives of civilians, displaced persons’ camps, and resid",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Live: Ukraine hit missile fuel production facility in Russia in overnight assault",
+          "url": "https://www.france24.com/en/europe/20260816-live-moscow-targeted-by-600-drones-overnight-explosions-heard-in-kyiv",
+          "date": "2026-08-16T04:42:16.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ​hit ​a missile fuel production facility ​in ‌Russia's ⁠Rostov ‌region overnight, Ukrainian military ⁠said on Sunday, as Ukraine steps up long-range attacks into Russian territory. The assault came as Russian ⁠forces launched a ​missile attack on Kyiv, sparking fires in at least two districts of Ukraine's capital, Mayor ​Vitali ‌Klitschko said. Follow our live blog for all the latest updat",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Trump says US will scale back military drills with South Korea",
+          "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-16T21:27:42.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "His decision to reduce the partnership came after South Korea recently declined to aid his war effort in Iran.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
+          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
+          "date": "2026-08-15T11:09:27.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Did the US really destroy Iran’s ballistic missile capability?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
+          "date": "2026-08-15T03:52:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "S . Korea fires warning shots after North Korean soldiers cross demarcation line",
+          "url": "https://www.freemalaysiatoday.com/category/world/2026/08/16/s-korea-fires-warning-shots-after-north-korean-soldiers-cross-demarcation-line",
+          "date": "2026-08-16T13:15:00.000Z",
+          "source": "freemalaysiatoday.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "South Korean president proposes talks with North to formally end war",
+          "url": "https://dunyanews.tv/en/World/968157-south-korean-president-proposes-talks-with-north-to-formally-end-war",
+          "date": "2026-08-16T08:45:00.000Z",
+          "source": "dunyanews.tv",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "South Korean president proposes talks to officially end war with North Korea",
+          "url": "https://www.premiumtimesng.com/foreign/903280-south-korean-president-proposes-talks-to-officially-end-war-with-north-korea.html",
+          "date": "2026-08-16T04:38:04.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "However, there was no formal peace treaty, so technically the two Koreas are still at war. The post South Korean president proposes talks to officially end war with North Korea appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "South Korea proposes talks to officially end war with North",
+          "url": "https://www.bbc.co.uk/news/articles/c8en2z9jp2xo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-15T14:40:15.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Lee Jae Myung offers chance to end the conflict, which has been frozen since an armistice in 1953.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 12
+        },
+        {
+          "title": "South Korea president proposes talks with Pyongyang to formally end Korean War",
+          "url": "https://www.france24.com/en/asia-pacific/20260815-south-korea-president-proposes-talks-with-pyongyang-to-formally-end-korean-war",
+          "date": "2026-08-15T15:39:37.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "South Korean President Lee Jae-myung proposed on Saturday that Pyongyang engage in dialogue to formally end the Korean War, which has technically been ongoing for more than 70 years due to the lack of a peace treaty.",
+          "isNew": false,
+          "region": {
+            "id": "PRK-3305",
+            "name": "Pyongyang",
+            "nameDe": "Pjöngjang",
+            "type": "Special City",
+            "anchor": [
+              125.923,
+              38.996
+            ],
+            "matched": "Pyongyang"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "South Korea Seeks Talks to Officially End War With North",
+          "url": "https://www.newser.com/story/394708/south-korea-seeks-talks-to-officially-end-war-with-north.html",
+          "date": "2026-08-15T14:45:00.000Z",
+          "source": "newser.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "South Korea proposes talks with North to end Korean war",
+          "url": "https://www.rte.ie/news/world/2026/0815/1588005-korea-war/",
+          "date": "2026-08-15T13:45:00.000Z",
+          "source": "rte.ie",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "South Korea’s president wants talks with North to end Korean War",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/south-koreas-president-wants-talks-with-north-to-end-korean-war?traffic_source=rss",
+          "date": "2026-08-15T06:53:28.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "South Korean President Lee Jae Myung has proposed talks with North Korea to formally end the Korean War.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "South Korea Lee urges talks with North Korea about finally ending Korean war | South Korea",
+          "url": "https://www.theguardian.com/world/2026/aug/15/south-koreas-lee-urges-talks-with-north-korea-about-finally-ending-korean-war",
+          "date": "2026-08-15T04:30:00.000Z",
+          "source": "theguardian.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "South Korean president proposes talks with North to formally end Korean War",
+          "url": "https://www.freemalaysiatoday.com/category/world/2026/08/15/south-korean-president-proposes-talks-with-north-to-formally-end-korean-war",
+          "date": "2026-08-15T05:15:00.000Z",
+          "source": "freemalaysiatoday.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
+          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
+          "date": "2026-08-13T09:45:56.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 21
+    },
+    {
       "id": "venezuela",
       "name": "Venezuela / Essequibo",
       "nameEn": "Venezuela & Essequibo",
@@ -14046,37 +14680,6 @@
       ],
       "items": [
         {
-          "title": "Ethiopia: The Tigray War - Lines of Fire Extending to the Sudanese Border",
-          "url": "https://allafrica.com/stories/202608160012.html",
-          "date": "2026-08-16T15:58:02.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 23
-        },
-        {
           "title": "Sudan: RSF Says It Captures Key Sudan Town Near Ethiopian Border As Army Withdraws",
           "url": "https://allafrica.com/stories/202608140047.html",
           "date": "2026-08-14T07:14:58.000Z",
@@ -14106,6 +14709,37 @@
             "label": "Bodenoffensive"
           },
           "score": 22
+        },
+        {
+          "title": "Ethiopia: The Tigray War - Lines of Fire Extending to the Sudanese Border",
+          "url": "https://allafrica.com/stories/202608160012.html",
+          "date": "2026-08-16T15:58:02.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3110",
+            "name": "Tigray",
+            "nameDe": "Tigray",
+            "type": "Administrative State",
+            "anchor": [
+              38.442,
+              13.778
+            ],
+            "matched": "Tigray"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 20
         },
         {
           "title": "Sudan: Sudan Paramilitary Forces Attack Border Town, Army Alleges Assault Launched From Ethiopia",
@@ -14368,524 +15002,6 @@
         }
       ],
       "itemCount": 11
-    },
-    {
-      "id": "korea",
-      "name": "Koreanische Halbinsel",
-      "nameEn": "Korean Peninsula",
-      "region": "Asien (Ost)",
-      "countries": [
-        "North Korea"
-      ],
-      "lat": 39,
-      "lon": 127,
-      "tier": "medium",
-      "since": "1950 (Waffenstillstand)",
-      "parties": [
-        "Nordkorea",
-        "Südkorea",
-        "USA",
-        "Russland"
-      ],
-      "background": "Raketentests, Truppenentsendung nach Russland und Zwischenfälle an der DMZ prägen die Lage; kaum diplomatische Kanäle.",
-      "hotspots": [
-        "DMZ",
-        "Gelbes Meer",
-        "Pjöngjang"
-      ],
-      "activity": 70,
-      "severity": 43,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 9
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 6
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "PRK",
-      "extraCountries": [
-        "KOR"
-      ],
-      "regions": [
-        {
-          "id": "PRK-3305",
-          "name": "Pyongyang",
-          "nameDe": "Pjöngjang",
-          "type": "Special City",
-          "anchor": [
-            125.923,
-            38.996
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
-          "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
-          "date": "2026-08-16T19:12:31.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "At least 19 people were killed Sunday in drone and missile strikes in Russia and Ukraine which destroyed a book market in Kyiv while Moscow faced one of the most massive attacks since the start of the war. Ukraine and Russia have been escalating their long-range strikes for months, resulting in a growing number of civilian casualties, more than four years after the start of the Russian invasion.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Troops from North Korea to boost Russia's Ukraine forces",
-          "url": "https://www.dw.com/en/troops-from-north-korea-to-boost-russia-s-ukraine-forces/a-78385524?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-16T06:49:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Intelligence agencies report that North Korea is preparing to send up to 50,000 troops to Russia. But military experts doubt this will make a fundamental difference in the course of Russia's war with Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 23
-        },
-        {
-          "title": "Houthi missile barrage hits Mocha port as fighting escalates in Yemen",
-          "url": "https://www.middleeasteye.net/news/houthi-missile-barrage-hits-mocha-port-fighting-escalates-yemen",
-          "date": "2026-08-16T10:57:46.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Houthi missile barrage hits Mocha port as fighting escalates in Yemen Submitted by MEE staff on Sun, 08/16/2026 - 10:32 Officials say Houthi strikes have damaged civilian property in Marib and caused an estimated $16m in losses at the strategic Red Sea port The navigation bridge of a sunken vessel protrudes from the water at the Port of Mocha in Yemen on 10 August 2026 (Khaled Ziad/AFP) Off Yemen'",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 23
-        },
-        {
-          "title": "Korean Peninsula on Edge : Peace Offer , Border Clashes and US – South Korea War Games Raise Tensions with North Korea",
-          "url": "https://openthemagazine.com/world/peace-offer-warning-shots-and-war-games-why-the-korean-peninsula-is-heating-up-again",
-          "date": "2026-08-16T11:45:00.000Z",
-          "source": "openthemagazine.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Russian ballistic missile strikes kill one in Ukraine",
-          "url": "https://www.rte.ie/news/2026/0816/1588059-ukraine-russia-war/",
-          "date": "2026-08-16T08:15:00.000Z",
-          "source": "rte.ie",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Houthis launch sixth ballistic missile at Marib city",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-launch-sixth-ballistic-missile-marib-city",
-          "date": "2026-08-16T02:57:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Houthis launch sixth ballistic missile at Marib city Houthis have fired a sixth ballistic missile on the Yemeni city of Marib, according to the Marib governorate. In a post on X, the governorate published photos of a crater in the ground as well as the mangled remains of a vehicle.&nbsp; The statement added that ongoing assault “threatens the lives of civilians, displaced persons’ camps, and resid",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Live: Ukraine hit missile fuel production facility in Russia in overnight assault",
-          "url": "https://www.france24.com/en/europe/20260816-live-moscow-targeted-by-600-drones-overnight-explosions-heard-in-kyiv",
-          "date": "2026-08-16T04:42:16.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukraine ​hit ​a missile fuel production facility ​in ‌Russia's ⁠Rostov ‌region overnight, Ukrainian military ⁠said on Sunday, as Ukraine steps up long-range attacks into Russian territory. The assault came as Russian ⁠forces launched a ​missile attack on Kyiv, sparking fires in at least two districts of Ukraine's capital, Mayor ​Vitali ‌Klitschko said. Follow our live blog for all the latest updat",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
-          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
-          "date": "2026-08-15T11:09:27.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Did the US really destroy Iran’s ballistic missile capability?",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
-          "date": "2026-08-15T03:52:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "S . Korea fires warning shots after North Korean soldiers cross demarcation line",
-          "url": "https://www.freemalaysiatoday.com/category/world/2026/08/16/s-korea-fires-warning-shots-after-north-korean-soldiers-cross-demarcation-line",
-          "date": "2026-08-16T13:15:00.000Z",
-          "source": "freemalaysiatoday.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "South Korean president proposes talks with North to formally end war",
-          "url": "https://dunyanews.tv/en/World/968157-south-korean-president-proposes-talks-with-north-to-formally-end-war",
-          "date": "2026-08-16T08:45:00.000Z",
-          "source": "dunyanews.tv",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "South Korean president proposes talks to officially end war with North Korea",
-          "url": "https://www.premiumtimesng.com/foreign/903280-south-korean-president-proposes-talks-to-officially-end-war-with-north-korea.html",
-          "date": "2026-08-16T04:38:04.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "However, there was no formal peace treaty, so technically the two Koreas are still at war. The post South Korean president proposes talks to officially end war with North Korea appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "South Korea proposes talks to officially end war with North",
-          "url": "https://www.bbc.co.uk/news/articles/c8en2z9jp2xo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-15T14:40:15.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Lee Jae Myung offers chance to end the conflict, which has been frozen since an armistice in 1953.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 12
-        },
-        {
-          "title": "South Korea president proposes talks with Pyongyang to formally end Korean War",
-          "url": "https://www.france24.com/en/asia-pacific/20260815-south-korea-president-proposes-talks-with-pyongyang-to-formally-end-korean-war",
-          "date": "2026-08-15T15:39:37.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "South Korean President Lee Jae-myung proposed on Saturday that Pyongyang engage in dialogue to formally end the Korean War, which has technically been ongoing for more than 70 years due to the lack of a peace treaty.",
-          "isNew": false,
-          "region": {
-            "id": "PRK-3305",
-            "name": "Pyongyang",
-            "nameDe": "Pjöngjang",
-            "type": "Special City",
-            "anchor": [
-              125.923,
-              38.996
-            ],
-            "matched": "Pyongyang"
-          },
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "South Korea Seeks Talks to Officially End War With North",
-          "url": "https://www.newser.com/story/394708/south-korea-seeks-talks-to-officially-end-war-with-north.html",
-          "date": "2026-08-15T14:45:00.000Z",
-          "source": "newser.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "South Korea proposes talks with North to end Korean war",
-          "url": "https://www.rte.ie/news/world/2026/0815/1588005-korea-war/",
-          "date": "2026-08-15T13:45:00.000Z",
-          "source": "rte.ie",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "South Korea’s president wants talks with North to end Korean War",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/south-koreas-president-wants-talks-with-north-to-end-korean-war?traffic_source=rss",
-          "date": "2026-08-15T06:53:28.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "South Korean President Lee Jae Myung has proposed talks with North Korea to formally end the Korean War.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "South Korea Lee urges talks with North Korea about finally ending Korean war | South Korea",
-          "url": "https://www.theguardian.com/world/2026/aug/15/south-koreas-lee-urges-talks-with-north-korea-about-finally-ending-korean-war",
-          "date": "2026-08-15T04:30:00.000Z",
-          "source": "theguardian.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "South Korean president proposes talks with North to formally end Korean War",
-          "url": "https://www.freemalaysiatoday.com/category/world/2026/08/15/south-korean-president-proposes-talks-with-north-to-formally-end-korean-war",
-          "date": "2026-08-15T05:15:00.000Z",
-          "source": "freemalaysiatoday.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
-          "url": "https://www.theguardian.com/world/2026/aug/13/south-korea-incheon-airport-iran-war-middle-east",
-          "date": "2026-08-13T09:45:56.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Incheon airport had 38.39m international passengers in first half of 2026, as traffic diverted from Middle East hubs South Korea’s Incheon airport has become the world’s busiest airport for international passengers, in part owing to disruption in the Middle East caused by the Iran war. The airport, South Korea’s main gateway, about 30 miles (48km) west of Seoul, handled 38.39 million international",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 20
     },
     {
       "id": "south-sudan",
@@ -15351,9 +15467,9 @@
         "Intan Jaya",
         "Timika"
       ],
-      "activity": 33,
-      "severity": 32,
-      "newCount": 0,
+      "activity": 38,
+      "severity": 34,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -15406,6 +15522,27 @@
             "label": "Opfer"
           },
           "score": 22
+        },
+        {
+          "title": "Recap of latest developments in West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-latest-developments-west-bank",
+          "date": "2026-08-16T21:47:54.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Recap of latest developments in West Bank A Palestinian doctor from Jerusalem was injured on Sunday night after being beaten by Israeli settlers in the town of Jannatah, east of Bethlehem in the occupied West Bank, Wafa news agency reported, citing&nbsp;the Jerusalem Governorate. Israeli settlers attacked and besieged a Palestinian home on the outskirts of Beit Imrin village, northwest of Nablus, ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 19
         },
         {
           "title": "Rescuers search for survivors as Indonesian 7.7 quake death toll rises to 47",
@@ -15597,6 +15734,27 @@
           "score": 11
         },
         {
+          "title": "Kenya: Ruto Hails KDF for Supporting Development Projects Across Kenya Beyond Vision 2030",
+          "url": "https://allafrica.com/stories/202608130193.html",
+          "date": "2026-08-13T11:40:52.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Capital FM] Eldoret -- President William Ruto has commended the Kenya Defence Forces (KDF) for playing a growing role in the country's development agenda, saying the military's contribution is aligned with Kenya's long-term goals beyond Vision 2030.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
           "title": "Indonesia: ASEAN Weekly Disaster Update Week 32 | 3 - 9 August 2026",
           "url": "https://reliefweb.int/report/indonesia/asean-weekly-disaster-update-week-32-3-9-august-2026",
           "date": "2026-08-11T10:06:42.000Z",
@@ -15616,30 +15774,9 @@
             "label": "Bodenoffensive"
           },
           "score": 9
-        },
-        {
-          "title": "Kenya: Ruto Hails KDF for Supporting Development Projects Across Kenya Beyond Vision 2030",
-          "url": "https://allafrica.com/stories/202608130193.html",
-          "date": "2026-08-13T11:40:52.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Capital FM] Eldoret -- President William Ruto has commended the Kenya Defence Forces (KDF) for playing a growing role in the country's development agenda, saying the military's contribution is aligned with Kenya's long-term goals beyond Vision 2030.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 12
+      "itemCount": 13
     },
     {
       "id": "moldova-transnistria",
@@ -15706,27 +15843,6 @@
       "regions": [],
       "items": [
         {
-          "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
-          "date": "2026-08-16T15:35:53.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
           "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
           "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-16T19:03:04.000Z",
@@ -15769,27 +15885,6 @@
           "score": 26
         },
         {
-          "title": "Ukraine attacks Wildberries, Russia's biggest online market",
-          "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-16T15:45:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Since mid-July, Ukraine has been targeting warehouses of Russia's largest online retailer Wildberries almost every day. Ukraine says it's disrupting front-line shipments. But experts say it's disrupting Russia's economy.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
           "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
           "date": "2026-08-16T19:12:31.000Z",
@@ -15811,6 +15906,27 @@
           "score": 26
         },
         {
+          "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
+          "date": "2026-08-16T15:35:53.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 23
+        },
+        {
           "title": "BBC visits smouldering Kyiv market after Russian strikes",
           "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-16T12:18:09.000Z",
@@ -15828,6 +15944,27 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 23
+        },
+        {
+          "title": "Ukraine attacks Wildberries, Russia's biggest online market",
+          "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-16T15:45:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Since mid-July, Ukraine has been targeting warehouses of Russia's largest online retailer Wildberries almost every day. Ukraine says it's disrupting front-line shipments. But experts say it's disrupting Russia's economy.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 23
         },
@@ -16937,27 +17074,6 @@
       "regions": [],
       "items": [
         {
-          "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
-          "date": "2026-08-16T15:35:53.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
           "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
           "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-16T19:03:04.000Z",
@@ -17000,27 +17116,6 @@
           "score": 26
         },
         {
-          "title": "Ukraine attacks Wildberries, Russia's biggest online market",
-          "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-16T15:45:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Since mid-July, Ukraine has been targeting warehouses of Russia's largest online retailer Wildberries almost every day. Ukraine says it's disrupting front-line shipments. But experts say it's disrupting Russia's economy.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
           "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
           "date": "2026-08-16T19:12:31.000Z",
@@ -17042,6 +17137,27 @@
           "score": 26
         },
         {
+          "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
+          "date": "2026-08-16T15:35:53.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 23
+        },
+        {
           "title": "BBC visits smouldering Kyiv market after Russian strikes",
           "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-16T12:18:09.000Z",
@@ -17059,6 +17175,27 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 23
+        },
+        {
+          "title": "Ukraine attacks Wildberries, Russia's biggest online market",
+          "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-16T15:45:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Since mid-July, Ukraine has been targeting warehouses of Russia's largest online retailer Wildberries almost every day. Ukraine says it's disrupting front-line shipments. But experts say it's disrupting Russia's economy.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 23
         },
@@ -17556,7 +17693,7 @@
       ],
       "activity": 10,
       "severity": 25,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -17588,7 +17725,7 @@
             33.298
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -17604,7 +17741,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Iraq’s Integrity Commission seized of millions in cash and jewelry said to be linked to corruption charges.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRQ-3063",
             "name": "Baghdad",
