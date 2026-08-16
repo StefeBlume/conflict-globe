@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T19:16:08.496Z",
-  "durationSec": 372,
+  "generatedAt": "2026-08-16T19:57:06.290Z",
+  "durationSec": 413,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,33 +114,37 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
-      "failed": 6,
-      "skipped": 7,
+      "ok": 4,
+      "failed": 7,
+      "skipped": 5,
       "errors": [
-        {
-          "id": "burkina-faso",
-          "error": "HTTP 429"
-        },
         {
           "id": "haiti",
           "error": "fetch failed"
         },
         {
-          "id": "india-pakistan",
+          "id": "syria",
           "error": "HTTP 429"
         },
         {
           "id": "afghanistan",
-          "error": "HTTP 429"
+          "error": "fetch failed"
         },
         {
           "id": "venezuela",
           "error": "HTTP 429"
         },
         {
-          "id": "turkey-pkk",
+          "id": "south-sudan",
           "error": "fetch failed"
+        },
+        {
+          "id": "myanmar",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "rohingya-bangladesh",
+          "error": "HTTP 429"
         }
       ]
     },
@@ -148,8 +152,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 656,
-    "newArticles": 4
+    "articles": 662,
+    "newArticles": 8
   },
   "conflicts": [
     {
@@ -185,7 +189,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 22
+          "count": 23
         },
         {
           "key": "ceasefire",
@@ -197,7 +201,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 8
+          "count": 9
         },
         {
           "key": "airstrike",
@@ -228,27 +232,6 @@
       ],
       "regions": [],
       "items": [
-        {
-          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
-          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
-          "date": "2026-08-16T13:17:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 27
-        },
         {
           "title": "‘Water and salt’: Qusra residents trapped in Israeli settler siege",
           "url": "https://www.aljazeera.com/news/2026/8/16/water-and-salt-qusra-residents-trapped-in-israeli-settler-siege?traffic_source=rss",
@@ -332,6 +315,69 @@
             "label": "Opfer"
           },
           "score": 26
+        },
+        {
+          "title": "Hamas says it asked Board of Peace to 'compel' Israel to accept Gaza plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-it-asked-board-peace-compel-israel-accept-gaza-plan",
+          "date": "2026-08-16T19:45:52.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hamas says it asked Board of Peace to 'compel' Israel to accept Gaza plan Hamas said on Sunday that it had asked the US-backed Board of Peace to \"compel\"&nbsp;Israel&nbsp;to accept a peace plan for Gaza after its leader met with US President Donald Trump's envoy Jared Kushner in Egypt. In a statement, the group said it had called on the Board and mediating countries to \"compel the occupation to im",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 25
+        },
+        {
+          "title": "Remains of Palestinian teen shot by Israeli forces recovered in Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/remains-palestinian-teen-shot-israeli-forces-recovered-gaza",
+          "date": "2026-08-16T19:10:04.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Remains of Palestinian teen shot by Israeli forces recovered in Gaza The Palestine Red Crescent Society (PRCS) has recovered the body of a teenager who was killed by the Israeli military on Saturday in southern Gaza, Wafa news agency reported. Israeli forces shot Suhail Masoud Shalouf, 14, on al-Tina Street, located on the outskirts of Khan Younis.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 25
+        },
+        {
+          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
+          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
+          "date": "2026-08-16T13:17:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 24
         },
         {
           "title": "Gaza: Destruction of buildings rises by nearly 10 per cent since ceasefire",
@@ -418,55 +464,13 @@
           "score": 23
         },
         {
-          "title": "Gaza genocide: How Israel made horror a ritual of daily life",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/how-israel-made-horror-ritual-daily-life",
-          "date": "2026-08-16T13:18:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Gaza genocide: How Israel made horror a ritual of daily life Life&nbsp;under genocide has its familiar daily rituals. A discerning eye detects latent horrors in the scenes that unfold in succession across screens. Elsewhere, the scene itself disappears beneath rubble, entombing the bodies of thousands of Palestinians whose breath was cut off below, while their families remain unable to retrieve th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 23
-        },
-        {
-          "title": "Israel threatens further attacks on Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-fresh-attacks-lebanon",
-          "date": "2026-08-16T08:45:11.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel threatens further attacks on Lebanon Israeli Defence Minister Israel Katz has threatened further attacks in southern Lebanon, saying: \"No account in any arena will remain open. We will strike with full force at those who harm our soldiers and our citizens.\" The Israeli military killed at least 11 people and wounded 19 others in southern Lebanon on Saturday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
           "title": "Israeli army besieges Palestinian homes in occupied West Bank",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/israeli-army-besieges-palestinian-homes-in-occupied-west-bank?traffic_source=rss",
           "date": "2026-08-16T17:45:52.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israeli troops have raided the village of Qusra, south of Nablus, in the occupied West Bank.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -487,7 +491,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Pope calls for end to Israeli violence against Palestinians in occupied West Bank Pope Leo XIV renewed his call for an end “to the repeated acts of violence against the Palestinian population of the West Bank,\" Vatican News reported. The leader added an urgent appeal to the international community “to ensure that progress is made toward a two-state solution, for a just and lasting peace.” &nbsp;",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -519,6 +523,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israel threatens further attacks on Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-fresh-attacks-lebanon",
+          "date": "2026-08-16T08:45:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel threatens further attacks on Lebanon Israeli Defence Minister Israel Katz has threatened further attacks in southern Lebanon, saying: \"No account in any arena will remain open. We will strike with full force at those who harm our soldiers and our citizens.\" The Israeli military killed at least 11 people and wounded 19 others in southern Lebanon on Saturday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 22
         },
@@ -729,6 +754,27 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
+          },
+          "score": 20
+        },
+        {
+          "title": "Gaza genocide: How Israel made horror a ritual of daily life",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/how-israel-made-horror-ritual-daily-life",
+          "date": "2026-08-16T13:18:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Gaza genocide: How Israel made horror a ritual of daily life Life&nbsp;under genocide has its familiar daily rituals. A discerning eye detects latent horrors in the scenes that unfold in succession across screens. Elsewhere, the scene itself disappears beneath rubble, entombing the bodies of thousands of Palestinians whose breath was cut off below, while their families remain unable to retrieve th",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "score": 20
         },
@@ -1865,48 +1911,6 @@
             "label": "Opfer"
           },
           "score": 11
-        },
-        {
-          "title": "OIC warns of ‘grave risks’ posed by Israel’s West Bank policies",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/oic-warns-grave-risks-posed-israels-west-bank-policies",
-          "date": "2026-08-15T00:22:24.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "OIC warns of ‘grave risks’ posed by Israel’s West Bank policies The Organisation of Islamic Cooperation (OIC) has warned of the “grave risks” posed by Israeli announcements aimed at annexing West Bank areas. In a statement, the 57-member OIC said: “The Israeli occupation and colonial settlement enterprise, as well as all measures, entities and institutions associated with it, are illegal”. “And al",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Israeli settlers shoot and wound two Palestinians east of Hebron",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-shoot-and-wound-two-palestinians-east-hebron",
-          "date": "2026-08-14T22:45:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli settlers shoot and wound two Palestinians east of Hebron Israeli settlers shot and wounded two Palestinians in Bani Na’im, east of Hebron in the occupied West Bank on Friday evening, the Wafa news agency reported, citing the Palestine Red Crescent Society. Red Crescent crews treated the two men and transferred them to hospital after settlers opened fire in the town’s al-Edisa area. One man",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -1938,10 +1942,16 @@
         "Kursk",
         "Krim"
       ],
-      "activity": 85,
-      "severity": 80,
-      "newCount": 0,
+      "activity": 90,
+      "severity": 82,
+      "newCount": 1,
       "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 7
+        },
         {
           "key": "displacement",
           "label": "Vertreibung",
@@ -1949,26 +1959,20 @@
           "count": 7
         },
         {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 6
-        },
-        {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 3
+          "count": 4
         },
         {
-          "key": "sanctions",
-          "label": "Sanktionen",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 1
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "sanctions",
+          "label": "Sanktionen",
           "dir": "up",
           "count": 1
         }
@@ -1997,8 +2001,8 @@
             37.665,
             55.668
           ],
-          "count": 7,
-          "newCount": 0,
+          "count": 8,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -2196,6 +2200,37 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 32
+        },
+        {
+          "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
+          "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
+          "date": "2026-08-16T19:12:31.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 19 people were killed Sunday in drone and missile strikes in Russia and Ukraine which destroyed a book market in Kyiv while Moscow faced one of the most massive attacks since the start of the war. Ukraine and Russia have been escalating their long-range strikes for months, resulting in a growing number of civilian casualties, more than four years after the start of the Russian invasion.",
+          "isNew": true,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 32
         },
@@ -3025,7 +3060,7 @@
           "score": 0
         }
       ],
-      "itemCount": 39
+      "itemCount": 40
     },
     {
       "id": "sudan",
@@ -4059,7 +4094,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "escalation",
@@ -4121,27 +4156,6 @@
       ],
       "items": [
         {
-          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
-          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
-          "date": "2026-08-16T13:17:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 29
-        },
-        {
           "title": "West Bank: Activist recounts life under settler siege in Qusra",
           "url": "https://www.france24.com/en/west-bank-activist-recounts-life-under-settler-siege-in-qusra",
           "date": "2026-08-16T14:38:57.000Z",
@@ -4169,6 +4183,27 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 26
+        },
+        {
+          "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
+          "url": "https://www.aljazeera.com/gallery/2026/8/16/timeline-the-one-week-siege-of-qusra-by-israeli-settlers-in-the-west-bank?traffic_source=rss",
+          "date": "2026-08-16T13:17:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone.",
           "isNew": false,
           "region": null,
           "event": {
@@ -4253,7 +4288,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israeli troops have raided the village of Qusra, south of Nablus, in the occupied West Bank.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -4316,7 +4351,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Pope calls for end to Israeli violence against Palestinians in occupied West Bank Pope Leo XIV renewed his call for an end “to the repeated acts of violence against the Palestinian population of the West Bank,\" Vatican News reported. The leader added an urgent appeal to the international community “to ensure that progress is made toward a two-state solution, for a just and lasting peace.” &nbsp;",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -5421,7 +5456,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Israeli army claims it killed senior Hezbollah commander in southern Lebanon",
@@ -7250,27 +7285,6 @@
           "score": 11
         },
         {
-          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
-          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-13T19:46:27.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
           "title": "Romania Shuts Nuclear Reactor on Danube as Power Crisis Deepens",
           "url": "https://balkaninsight.com/2026/08/13/romania-shuts-nuclear-reactor-on-danube-as-power-crisis-deepens/bi/",
           "date": "2026-08-13T10:41:03.000Z",
@@ -7290,6 +7304,27 @@
             "label": "Bericht"
           },
           "score": 9
+        },
+        {
+          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-13T19:46:27.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
         },
         {
           "title": "South Korean airport becomes busiest in world for global traffic amid Iran war",
@@ -7453,7 +7488,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 22
+          "score": 24
         },
         {
           "title": "Joint statement on 6th meeting of the Joint Security Coordination Mechanism for the Peace Agreement between the Democratic Republic of the Congo and the Republic of Rwanda",
@@ -8771,7 +8806,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 32
+          "score": 29
         },
         {
           "title": "Houthi missile barrage hits Mocha port as fighting escalates in Yemen",
@@ -11016,27 +11051,6 @@
       ],
       "items": [
         {
-          "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
-          "url": "https://allafrica.com/stories/202608140172.html",
-          "date": "2026-08-14T10:39:57.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Troops of the Nigerian Army have apprehended a high-profile terrorist operative linked to a notorious terrorist leader and 60 suspected collaborators in separate operations across theatres.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Ghana: 10 Officers, 17 Bandits Killed in Clash in Kebbi State",
           "url": "https://allafrica.com/stories/202608140580.html",
           "date": "2026-08-14T20:57:47.000Z",
@@ -11065,7 +11079,28 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 20
+        },
+        {
+          "title": "Nigeria: Troops Nab High-Profile Terrorist, 60 Collaborators in Fresh Operations",
+          "url": "https://allafrica.com/stories/202608140172.html",
+          "date": "2026-08-14T10:39:57.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Troops of the Nigerian Army have apprehended a high-profile terrorist operative linked to a notorious terrorist leader and 60 suspected collaborators in separate operations across theatres.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
         },
         {
           "title": "Nigeria: Benin Artifacts - How Museum Attack, Handover to Oba Is Threatening US-Nigeria Treaty",
@@ -12814,6 +12849,699 @@
       "itemCount": 12
     },
     {
+      "id": "taiwan-strait",
+      "name": "Taiwanstraße",
+      "nameEn": "Taiwan Strait",
+      "region": "Asien (Ost)",
+      "countries": [
+        "Taiwan"
+      ],
+      "lat": 24,
+      "lon": 120.5,
+      "tier": "medium",
+      "since": "laufende Spannungen",
+      "parties": [
+        "China (VBA)",
+        "Taiwan",
+        "USA",
+        "Japan"
+      ],
+      "background": "Zunehmende chinesische Militärübungen, Luftraumverletzungen und Grauzonen-Operationen inklusive Kabelsabotage rund um Taiwan.",
+      "hotspots": [
+        "Taiwanstraße",
+        "Kinmen",
+        "Medianlinie",
+        "ADIZ"
+      ],
+      "activity": 74,
+      "severity": 45,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 5
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 3
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "TWN",
+      "extraCountries": [
+        "CHN"
+      ],
+      "regions": [
+        {
+          "id": "TWN-1167",
+          "name": "New Taipei",
+          "nameDe": "Neu-Taipeh",
+          "type": "Special Municipality",
+          "anchor": [
+            121.586,
+            24.999
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          }
+        },
+        {
+          "id": "CHN-1155",
+          "name": "Beijing",
+          "nameDe": "Peking",
+          "type": "Municipality",
+          "anchor": [
+            116.406,
+            40.174
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": " 《 TAIPEI TIMES 》 Missile production passes key test : source - 焦點",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5541263",
+          "date": "2026-08-15T20:00:00.000Z",
+          "source": "news.ltn.com.tw",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "TWN-1167",
+            "name": "New Taipei",
+            "nameDe": "Neu-Taipeh",
+            "type": "Special Municipality",
+            "anchor": [
+              121.586,
+              24.999
+            ],
+            "matched": "Taipei"
+          },
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "UAE, Saudi Arabia, others condemn Israel's rejection of Trump Gaza plan",
+          "url": "https://www.dw.com/en/uae-saudi-arabia-others-condemn-israel-s-rejection-of-trump-gaza-plan/a-78389399?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-16T17:31:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The statement came as US envoy Jared Kushner and Gaza peace envoy Nickolay Mladenov held ceasefire and implementation talks with regional mediators in Egypt.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 19
+        },
+        {
+          "title": "Hamas says it asked Board of Peace to 'compel' Israel to accept Gaza plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-it-asked-board-peace-compel-israel-accept-gaza-plan",
+          "date": "2026-08-16T19:45:52.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hamas says it asked Board of Peace to 'compel' Israel to accept Gaza plan Hamas said on Sunday that it had asked the US-backed Board of Peace to \"compel\"&nbsp;Israel&nbsp;to accept a peace plan for Gaza after its leader met with US President Donald Trump's envoy Jared Kushner in Egypt. In a statement, the group said it had called on the Board and mediating countries to \"compel the occupation to im",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 19
+        },
+        {
+          "title": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/five-arab-countries-condemn-israels-rejection-trumps-gaza-plan",
+          "date": "2026-08-16T16:39:02.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan Five Arab countries together with Turkey, Pakistan and Indonesia on Sunday condemned Israel's rejection&nbsp;of US President Donald Trump's plan for Gaza. In a joint statement, the countries including Egypt, Qatar, Saudi Arabia and UAE, said the rejection threatened Trump's intensified efforts to end Israel's war on Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
+          "date": "2026-08-12T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "The United Nations has once again urged warring parties in Sudan to protect civilians as the fighting continues to take a heavy toll on the population.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Fighting deepens needs and fuels further displacement in Sudan",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168109",
+          "date": "2026-08-10T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Ongoing conflict, displacement and funding shortages continue to deepen needs in Sudan, the UN Office for the Coordination of Humanitarian Affairs (OCHA) warned on Monday, underscoring the need for greater civilian protection.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
+          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
+          "date": "2026-08-15T11:43:15.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
+          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
+          "date": "2026-08-15T11:09:27.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Libya's Haftar played role in securing US hostage's release, report says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/libyas-haftar-played-role-securing-us-hostages-release-report-says",
+          "date": "2026-08-15T04:31:46.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Libya's Haftar played role in securing US hostage's release, report says Authorities in eastern Libya under military commander Khalifa Haftar helped secure the release of an American missionary held hostage held by an Islamic State affiliate in West Africa's Sahel region, escorting him to freedom through Libya, Reuters reported, citing five sources. Four of the sources said that a deal was brokere",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 18
+        },
+        {
+          "title": "Petroleum dealers postpone planned strike as govt approves margin revision",
+          "url": "https://www.dawn.com/news/2022816/petroleum-dealers-postpone-planned-strike-as-govt-approves-margin-revision",
+          "date": "2026-08-14T19:40:36.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The Pakistan Petroleum Dealers’ Association (PPDA) on Friday called off its plans to begin a strike on Saturday after the government approved a proposed revision in the dealers’ margins. The nod for the revision was also confirmed by the finance ministry in a statement. The Economic Coordination Committee had “deliberated on the matter regarding revision of dealers’ margins on motor spirit and hig",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
+          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
+          "date": "2026-08-16T11:14:23.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
+          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
+          "date": "2026-08-16T11:33:32.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A Hamas delegation held talks with Egyptian intelligence chief Hassan Rashad in Egypt on Sunday, followed by talks with US envoy Jared Kushner. Kushner had met shortly before with President Abdel Fattah al-Sisi in an effort to break the deadlock over the US-brockered peace plan for Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 16
+        },
+        {
+          "title": "Albania Could Face Costly Arbitration Battle After Scrapping Vlora Airport Plans",
+          "url": "https://balkaninsight.com/2026/08/10/albania-could-face-costly-arbitration-battle-after-scrapping-vlora-airport-plans/bi/",
+          "date": "2026-08-10T05:53:46.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Experts say the government's move to ditch a controversial concession contract to build Vlora International Airport, at significant cost to taxpayers, highlights structural weaknesses in Albania’s public-private partnership framework.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
+          "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/16/iran-war-live-talks-on-hormuz-strait-continue-israel-kills-11-in-lebanon?traffic_source=rss",
+          "date": "2026-08-16T00:00:45.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israel kills 11 in deadliest attacks on Lebanon since June truce as Iran and Oman continue talks on Hormuz.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
+          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
+          "date": "2026-08-14T21:38:17.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
+          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
+          "date": "2026-08-14T17:52:51.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
+          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
+          "date": "2026-08-15T11:30:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
+          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T21:21:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "'We are seeing the cracks of Israeli politics play out in the West Bank'",
+          "url": "https://www.france24.com/en/we-are-seeing-the-cracks-of-israeli-politics-play-out-in-the-west-bank",
+          "date": "2026-08-15T06:37:15.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Palestinian residents of three houses in Qusra near Nablus in the occupied West Bank say they have been effectively cut off from food and other supplies since the siege by Israeli settlers began on Sunday. But the Israeli military has not done anything to remove the settlers. \"We are seeing the cracks of Israeli politics, including a paralysed prime minister’s inability to condemn basic filmed vio",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Kennedy Center board approves Trump name on facade, renovation plan",
+          "url": "https://www.dw.com/en/kennedy-center-board-approves-trump-name-on-facade-renovation-plan/a-78359935?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-13T20:33:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The move appears designed to circumvent a judge's ruling that the US president's name should be removed, potentially setting the stage for a new legal fight over the Kennedy Center's name and future.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "India marks 80th Independence Day with military display",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/india-marks-80th-independence-day-with-military-display?traffic_source=rss",
+          "date": "2026-08-15T03:39:06.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "India marked its 80th Independence Day at Delhi’s historic Red Fort.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Trump signals plan to claim Hormuz ‘soon’",
+          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
+          "date": "2026-08-15T02:18:53.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 11
+        },
+        {
+          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
+          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
+          "date": "2026-08-14T21:50:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 11
+        },
+        {
+          "title": "Explained: The Mecca Pact, a safety net with no strings attached",
+          "url": "https://www.dawn.com/news/2022768/explained-the-mecca-pact-a-safety-net-with-no-strings-attached",
+          "date": "2026-08-14T07:34:36.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Rough summary: Enemies will think twice because an attack on one country could drag in all three Takes defense into their own hands as a backup without snubbing the US or leaning towards China. One-on-one rivalries with Iran converted to a three-front headache for Tehran Combines naval power to keep oil shipments and trade routes safe The Mecca Joint Defence Agreement, signed on August 7, 2026, by",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 11
+        },
+        {
+          "title": "Taiwan passes defence budget after record delay, retains drone funding",
+          "url": "https://www.aljazeera.com/economy/2026/8/15/taiwan-passes-defence-budget-after-record-delay-retains-drone-funding?traffic_source=rss",
+          "date": "2026-08-15T04:44:14.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Taiwan parliament ends deadlock, ensuring vital drone programme funding amid rising cross-strait tensions with Beijing.",
+          "isNew": false,
+          "region": {
+            "id": "CHN-1155",
+            "name": "Beijing",
+            "nameDe": "Peking",
+            "type": "Municipality",
+            "anchor": [
+              116.406,
+              40.174
+            ],
+            "matched": "Beijing"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 9
+        },
+        {
+          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
+          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
+          "date": "2026-08-11T13:25:46.000Z",
+          "source": "ReliefWeb Headlines (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Somalia Source: Médecins Sans Frontières The survey, across 888 households in 14 displacement sites in Baidoa, also found that one-third of families are surviving on just one meal a day, while only two per cent can afford three meals a day.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-13T19:46:27.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 27
+    },
+    {
       "id": "venezuela",
       "name": "Venezuela / Essequibo",
       "nameEn": "Venezuela & Essequibo",
@@ -13531,878 +14259,6 @@
       "itemCount": 11
     },
     {
-      "id": "taiwan-strait",
-      "name": "Taiwanstraße",
-      "nameEn": "Taiwan Strait",
-      "region": "Asien (Ost)",
-      "countries": [
-        "Taiwan"
-      ],
-      "lat": 24,
-      "lon": 120.5,
-      "tier": "medium",
-      "since": "laufende Spannungen",
-      "parties": [
-        "China (VBA)",
-        "Taiwan",
-        "USA",
-        "Japan"
-      ],
-      "background": "Zunehmende chinesische Militärübungen, Luftraumverletzungen und Grauzonen-Operationen inklusive Kabelsabotage rund um Taiwan.",
-      "hotspots": [
-        "Taiwanstraße",
-        "Kinmen",
-        "Medianlinie",
-        "ADIZ"
-      ],
-      "activity": 70,
-      "severity": 43,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 4
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 3
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "TWN",
-      "extraCountries": [
-        "CHN"
-      ],
-      "regions": [
-        {
-          "id": "TWN-1167",
-          "name": "New Taipei",
-          "nameDe": "Neu-Taipeh",
-          "type": "Special Municipality",
-          "anchor": [
-            121.586,
-            24.999
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          }
-        },
-        {
-          "id": "CHN-1155",
-          "name": "Beijing",
-          "nameDe": "Peking",
-          "type": "Municipality",
-          "anchor": [
-            116.406,
-            40.174
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": " 《 TAIPEI TIMES 》 Missile production passes key test : source - 焦點",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5541263",
-          "date": "2026-08-15T20:00:00.000Z",
-          "source": "news.ltn.com.tw",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "TWN-1167",
-            "name": "New Taipei",
-            "nameDe": "Neu-Taipeh",
-            "type": "Special Municipality",
-            "anchor": [
-              121.586,
-              24.999
-            ],
-            "matched": "Taipei"
-          },
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "UAE, Saudi Arabia, others condemn Israel's rejection of Trump Gaza plan",
-          "url": "https://www.dw.com/en/uae-saudi-arabia-others-condemn-israel-s-rejection-of-trump-gaza-plan/a-78389399?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-16T17:31:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "The statement came as US envoy Jared Kushner and Gaza peace envoy Nickolay Mladenov held ceasefire and implementation talks with regional mediators in Egypt.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 19
-        },
-        {
-          "title": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/five-arab-countries-condemn-israels-rejection-trumps-gaza-plan",
-          "date": "2026-08-16T16:39:02.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Five Arab countries condemn Israel's rejection of Trump's Gaza plan Five Arab countries together with Turkey, Pakistan and Indonesia on Sunday condemned Israel's rejection&nbsp;of US President Donald Trump's plan for Gaza. In a joint statement, the countries including Egypt, Qatar, Saudi Arabia and UAE, said the rejection threatened Trump's intensified efforts to end Israel's war on Gaza.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Sudan: Attacks and further displacement in Blue Nile and North Kordofan",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168126",
-          "date": "2026-08-12T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "The United Nations has once again urged warring parties in Sudan to protect civilians as the fighting continues to take a heavy toll on the population.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Fighting deepens needs and fuels further displacement in Sudan",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168109",
-          "date": "2026-08-10T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Ongoing conflict, displacement and funding shortages continue to deepen needs in Sudan, the UN Office for the Coordination of Humanitarian Affairs (OCHA) warned on Monday, underscoring the need for greater civilian protection.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
-          "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
-          "date": "2026-08-15T11:43:15.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukraine ⁠struck industrial infrastructure ​in Russia's ​Samara region on Saturday, local authorities said. Ukrainian President Volodymyr Zelensky confirmed the attack, saying a rocket plant and air base were hit.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
-          "url": "https://www.aljazeera.com/news/2026/8/15/japanese-minister-visits-shrine-to-war-dead-angering-china-south-korea?traffic_source=rss",
-          "date": "2026-08-15T11:09:27.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Defence Minister Koizumi's visit to Yasukuni Shrine comes on the 81st anniversary of Japan's surrender in WWII.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Libya's Haftar played role in securing US hostage's release, report says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/libyas-haftar-played-role-securing-us-hostages-release-report-says",
-          "date": "2026-08-15T04:31:46.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Libya's Haftar played role in securing US hostage's release, report says Authorities in eastern Libya under military commander Khalifa Haftar helped secure the release of an American missionary held hostage held by an Islamic State affiliate in West Africa's Sahel region, escorting him to freedom through Libya, Reuters reported, citing five sources. Four of the sources said that a deal was brokere",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 18
-        },
-        {
-          "title": "Petroleum dealers postpone planned strike as govt approves margin revision",
-          "url": "https://www.dawn.com/news/2022816/petroleum-dealers-postpone-planned-strike-as-govt-approves-margin-revision",
-          "date": "2026-08-14T19:40:36.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The Pakistan Petroleum Dealers’ Association (PPDA) on Friday called off its plans to begin a strike on Saturday after the government approved a proposed revision in the dealers’ margins. The nod for the revision was also confirmed by the finance ministry in a statement. The Economic Coordination Committee had “deliberated on the matter regarding revision of dealers’ margins on motor spirit and hig",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
-          "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
-          "date": "2026-08-16T11:14:23.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US president has yet another outlandish threat for Iran, with no end to war in sight.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Kushner, Hamas delegation in Egypt for talks on Gaza peace plan",
-          "url": "https://www.france24.com/en/middle-east/20260816-hamas-begins-crucial-talks-with-egypt-on-trump-s-gaza-peace-plan",
-          "date": "2026-08-16T11:33:32.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A Hamas delegation held talks with Egyptian intelligence chief Hassan Rashad in Egypt on Sunday, followed by talks with US envoy Jared Kushner. Kushner had met shortly before with President Abdel Fattah al-Sisi in an effort to break the deadlock over the US-brockered peace plan for Gaza.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 16
-        },
-        {
-          "title": "Albania Could Face Costly Arbitration Battle After Scrapping Vlora Airport Plans",
-          "url": "https://balkaninsight.com/2026/08/10/albania-could-face-costly-arbitration-battle-after-scrapping-vlora-airport-plans/bi/",
-          "date": "2026-08-10T05:53:46.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Experts say the government's move to ditch a controversial concession contract to build Vlora International Airport, at significant cost to taxpayers, highlights structural weaknesses in Albania’s public-private partnership framework.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 16
-        },
-        {
-          "title": "Iran war live: Talks on Hormuz Strait continue; Israel kills 11 in Lebanon",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/16/iran-war-live-talks-on-hormuz-strait-continue-israel-kills-11-in-lebanon?traffic_source=rss",
-          "date": "2026-08-16T00:00:45.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel kills 11 in deadliest attacks on Lebanon since June truce as Iran and Oman continue talks on Hormuz.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
-          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
-          "date": "2026-08-14T21:38:17.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Israeli military plans to transfer law enforcement in occupied West Bank to police",
-          "url": "https://www.theguardian.com/world/2026/aug/14/israeli-military-plans-transfer-law-enforcement-in-occupied-west-bank-to-police",
-          "date": "2026-08-14T17:52:51.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Palestine’s vice-president calls plan ‘flagrant violation of international law’ and a step towards full Israeli annexation Israel’s defence minister wants to transfer law enforcement powers for Israelis in the occupied West Bank over to the police, a plan that Palestine’s vice-president described as a “flagrant violation of international law” and step towards full Israeli annexation. Israel Katz a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
-          "url": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
-          "date": "2026-08-15T11:30:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
-          "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T21:21:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Romania has shut down its only nuclear plant in a rare move prompted by the lack of cooling water from the Danube River. Hungary, meanwhile, is racing to dam the Danube, trying to keep its Paks plant online.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "'We are seeing the cracks of Israeli politics play out in the West Bank'",
-          "url": "https://www.france24.com/en/we-are-seeing-the-cracks-of-israeli-politics-play-out-in-the-west-bank",
-          "date": "2026-08-15T06:37:15.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Palestinian residents of three houses in Qusra near Nablus in the occupied West Bank say they have been effectively cut off from food and other supplies since the siege by Israeli settlers began on Sunday. But the Israeli military has not done anything to remove the settlers. \"We are seeing the cracks of Israeli politics, including a paralysed prime minister’s inability to condemn basic filmed vio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Kennedy Center board approves Trump name on facade, renovation plan",
-          "url": "https://www.dw.com/en/kennedy-center-board-approves-trump-name-on-facade-renovation-plan/a-78359935?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-13T20:33:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "The move appears designed to circumvent a judge's ruling that the US president's name should be removed, potentially setting the stage for a new legal fight over the Kennedy Center's name and future.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "India marks 80th Independence Day with military display",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/india-marks-80th-independence-day-with-military-display?traffic_source=rss",
-          "date": "2026-08-15T03:39:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "India marked its 80th Independence Day at Delhi’s historic Red Fort.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Trump signals plan to claim Hormuz ‘soon’",
-          "url": "https://www.dawn.com/news/2022956/trump-signals-plan-to-claim-hormuz-soon",
-          "date": "2026-08-15T02:18:53.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• Urges Americans to accept higher gas prices to stop Iran going nuclear • UAE accuses Tehran of attacking two vessels; shipping in the strait comes to near standstill • Riyadh, Abu Dhabi, Doha condemn strikes, demand unconditional return to free navigation • Houthis strike Saudi oil site, Yemen’s Mocha port; eight killed • JD Vance confirms keeping US energy prices down is ‘goal number one’; Bess",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
-          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
-          "date": "2026-08-14T21:50:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 11
-        },
-        {
-          "title": "Explained: The Mecca Pact, a safety net with no strings attached",
-          "url": "https://www.dawn.com/news/2022768/explained-the-mecca-pact-a-safety-net-with-no-strings-attached",
-          "date": "2026-08-14T07:34:36.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Rough summary: Enemies will think twice because an attack on one country could drag in all three Takes defense into their own hands as a backup without snubbing the US or leaning towards China. One-on-one rivalries with Iran converted to a three-front headache for Tehran Combines naval power to keep oil shipments and trade routes safe The Mecca Joint Defence Agreement, signed on August 7, 2026, by",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
-          "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-13T19:46:27.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The Cernavodă plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Taiwan passes defence budget after record delay, retains drone funding",
-          "url": "https://www.aljazeera.com/economy/2026/8/15/taiwan-passes-defence-budget-after-record-delay-retains-drone-funding?traffic_source=rss",
-          "date": "2026-08-15T04:44:14.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Taiwan parliament ends deadlock, ensuring vital drone programme funding amid rising cross-strait tensions with Beijing.",
-          "isNew": false,
-          "region": {
-            "id": "CHN-1155",
-            "name": "Beijing",
-            "nameDe": "Peking",
-            "type": "Municipality",
-            "anchor": [
-              116.406,
-              40.174
-            ],
-            "matched": "Beijing"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 9
-        },
-        {
-          "title": "Somalia: Survey of people displaced in Baidoa finds every second child malnourished",
-          "url": "https://reliefweb.int/report/somalia/somalia-survey-people-displaced-baidoa-finds-every-second-child-malnourished",
-          "date": "2026-08-11T13:25:46.000Z",
-          "source": "ReliefWeb Headlines (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Somalia Source: Médecins Sans Frontières The survey, across 888 households in 14 displacement sites in Baidoa, also found that one-third of families are surviving on just one meal a day, while only two per cent can afford three meals a day.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 26
-    },
-    {
-      "id": "south-sudan",
-      "name": "Südsudan",
-      "nameEn": "South Sudan",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "S. Sudan"
-      ],
-      "lat": 7.5,
-      "lon": 30.5,
-      "tier": "high",
-      "since": "2013 / Krise 2025",
-      "parties": [
-        "Regierung (Kiir/SPLM)",
-        "SPLM-IO (Machar)",
-        "White Army",
-        "Milizen"
-      ],
-      "background": "Das Friedensabkommen von 2018 steht vor dem Kollaps: Festsetzung Machars, Luftangriffe in Upper Nile und Kämpfe mit der White Army.",
-      "hotspots": [
-        "Upper Nile",
-        "Nasir",
-        "Juba",
-        "Jonglei"
-      ],
-      "activity": 10,
-      "severity": 42,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "SSD",
-      "extraCountries": [
-        "SDN"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "South Sudan: UN mission decries deadly attacks, works to calm tensions after ‘nothing but devastation’",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168118",
-          "date": "2026-08-11T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "The UN Mission in South Sudan (UNMISS) has condemned recent armed group attacks in Warrap state which reportedly left more than 60 civilians dead and 50 others injured.&nbsp;",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Joint News Release - WFP/UNHCR: Refugees in South Sudan face extreme hunger as funds run out",
-          "url": "https://reliefweb.int/report/south-sudan/joint-news-release-wfpunhcr-refugees-south-sudan-face-extreme-hunger-funds-run-out",
-          "date": "2026-08-14T10:03:10.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: South Sudan, Sudan Sources: UN High Commissioner for Refugees, World Food Programme JUBA, South Sudan – More than 650,000 refugees and asylum seekers in South Sudan risk losing further access to lifesaving food, nutrition and other assistance due to critical funding shortfalls, leaving families who fled war and hunger with nowhere else to turn, UNHCR, the UN Refugee Agency, and the Unit",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "South Sudan - Operation Overview, April - June 2026",
-          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-april-june-2026",
-          "date": "2026-08-14T00:35:24.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached file. Background South Sudan continues to face a complex humanitarian crisis driven by conflict, climate-related shocks, disease outbreaks, displacement, food insecurity and economic deterioration. Access to affected communities remains constrained by poor road conditions, seasonal flooding, and limi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
-          "title": "UNHCR South Sudan Population Overview of Refugees and Asylum-seekers (As of 31 July 2026)",
-          "url": "https://reliefweb.int/report/south-sudan/unhcr-south-sudan-population-overview-refugees-and-asylum-seekers-31-july-2026",
-          "date": "2026-08-13T08:03:17.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Eritrea, Ethiopia, Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "WHO Weekly Situation Update on Ongoing Health Emergency Events in South Sudan - Week #32, Date: 03–09 Aug 2026",
-          "url": "https://reliefweb.int/report/south-sudan/who-weekly-situation-update-ongoing-health-emergency-events-south-sudan-week-32-date-03-09-aug-2026",
-          "date": "2026-08-13T02:30:29.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Uganda Source: World Health Organization Please refer to the attached file. PRIORITY ACTIONS ▸ Operationalize the new Tier 1A/1B/1C county framework, prioritizing Ezo, Yambio, Juba, Yei, Morobo and Nzara for EVD/BVD IPC supplies, case management capacity and RCCE under the area-based readiness approach. ▸ Expedite the ICG application for OC",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "South Sudan - Operation Overview Infographic, April - June 2026",
-          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-infographic-april-june-2026",
-          "date": "2026-08-14T00:31:05.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached Infographic. Summary This infographic report from April-June 2026 details logistics achievements in South Sudan, including cargo transport by various means, funding status, and participating organizations in humanitarian efforts, highlighting key responses and operational data.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 3
-        },
-        {
-          "title": "South Sudan: Humanitarian Access Snapshot - July 2026",
-          "url": "https://reliefweb.int/report/south-sudan/south-sudan-humanitarian-access-snapshot-july-2026",
-          "date": "2026-08-11T15:12:02.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: South Sudan Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. Humanitarian access in South Sudan remained severely constrained in July 2026 by ongoing conflict and insecurity, violence against humanitarian personnel and assets, bureaucratic and administrative impediments (BAIs), and deteriorating physical access. A total of 65 humanit",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 0
-        }
-      ],
-      "itemCount": 7
-    },
-    {
       "id": "korea",
       "name": "Koreanische Halbinsel",
       "nameEn": "Korean Peninsula",
@@ -14426,9 +14282,9 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 66,
-      "severity": 42,
-      "newCount": 0,
+      "activity": 70,
+      "severity": 43,
+      "newCount": 1,
       "signals": [
         {
           "key": "talks",
@@ -14440,23 +14296,23 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 5
+          "count": 6
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
         },
         {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 1
+          "count": 2
         },
         {
           "key": "displacement",
           "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
           "dir": "up",
           "count": 1
         }
@@ -14487,6 +14343,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
+          "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
+          "date": "2026-08-16T19:12:31.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 19 people were killed Sunday in drone and missile strikes in Russia and Ukraine which destroyed a book market in Kyiv while Moscow faced one of the most massive attacks since the start of the war. Ukraine and Russia have been escalating their long-range strikes for months, resulting in a growing number of civilian casualties, more than four years after the start of the Russian invasion.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
         {
           "title": "Troops from North Korea to boost Russia's Ukraine forces",
           "url": "https://www.dw.com/en/troops-from-north-korea-to-boost-russia-s-ukraine-forces/a-78385524?maca=en-rss-en-world-4025-rdf",
@@ -14897,7 +14774,207 @@
           "score": 8
         }
       ],
-      "itemCount": 19
+      "itemCount": 20
+    },
+    {
+      "id": "south-sudan",
+      "name": "Südsudan",
+      "nameEn": "South Sudan",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "S. Sudan"
+      ],
+      "lat": 7.5,
+      "lon": 30.5,
+      "tier": "high",
+      "since": "2013 / Krise 2025",
+      "parties": [
+        "Regierung (Kiir/SPLM)",
+        "SPLM-IO (Machar)",
+        "White Army",
+        "Milizen"
+      ],
+      "background": "Das Friedensabkommen von 2018 steht vor dem Kollaps: Festsetzung Machars, Luftangriffe in Upper Nile und Kämpfe mit der White Army.",
+      "hotspots": [
+        "Upper Nile",
+        "Nasir",
+        "Juba",
+        "Jonglei"
+      ],
+      "activity": 10,
+      "severity": 42,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "SSD",
+      "extraCountries": [
+        "SDN"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "South Sudan: UN mission decries deadly attacks, works to calm tensions after ‘nothing but devastation’",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168118",
+          "date": "2026-08-11T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "The UN Mission in South Sudan (UNMISS) has condemned recent armed group attacks in Warrap state which reportedly left more than 60 civilians dead and 50 others injured.&nbsp;",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Joint News Release - WFP/UNHCR: Refugees in South Sudan face extreme hunger as funds run out",
+          "url": "https://reliefweb.int/report/south-sudan/joint-news-release-wfpunhcr-refugees-south-sudan-face-extreme-hunger-funds-run-out",
+          "date": "2026-08-14T10:03:10.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: South Sudan, Sudan Sources: UN High Commissioner for Refugees, World Food Programme JUBA, South Sudan – More than 650,000 refugees and asylum seekers in South Sudan risk losing further access to lifesaving food, nutrition and other assistance due to critical funding shortfalls, leaving families who fled war and hunger with nowhere else to turn, UNHCR, the UN Refugee Agency, and the Unit",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "South Sudan - Operation Overview, April - June 2026",
+          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-april-june-2026",
+          "date": "2026-08-14T00:35:24.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached file. Background South Sudan continues to face a complex humanitarian crisis driven by conflict, climate-related shocks, disease outbreaks, displacement, food insecurity and economic deterioration. Access to affected communities remains constrained by poor road conditions, seasonal flooding, and limi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 12
+        },
+        {
+          "title": "UNHCR South Sudan Population Overview of Refugees and Asylum-seekers (As of 31 July 2026)",
+          "url": "https://reliefweb.int/report/south-sudan/unhcr-south-sudan-population-overview-refugees-and-asylum-seekers-31-july-2026",
+          "date": "2026-08-13T08:03:17.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Eritrea, Ethiopia, Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "WHO Weekly Situation Update on Ongoing Health Emergency Events in South Sudan - Week #32, Date: 03–09 Aug 2026",
+          "url": "https://reliefweb.int/report/south-sudan/who-weekly-situation-update-ongoing-health-emergency-events-south-sudan-week-32-date-03-09-aug-2026",
+          "date": "2026-08-13T02:30:29.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: South Sudan, Democratic Republic of the Congo, Uganda Source: World Health Organization Please refer to the attached file. PRIORITY ACTIONS ▸ Operationalize the new Tier 1A/1B/1C county framework, prioritizing Ezo, Yambio, Juba, Yei, Morobo and Nzara for EVD/BVD IPC supplies, case management capacity and RCCE under the area-based readiness approach. ▸ Expedite the ICG application for OC",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "South Sudan - Operation Overview Infographic, April - June 2026",
+          "url": "https://reliefweb.int/report/south-sudan/south-sudan-operation-overview-infographic-april-june-2026",
+          "date": "2026-08-14T00:31:05.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: South Sudan Sources: Logistics Cluster, World Food Programme Please refer to the attached Infographic. Summary This infographic report from April-June 2026 details logistics achievements in South Sudan, including cargo transport by various means, funding status, and participating organizations in humanitarian efforts, highlighting key responses and operational data.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 3
+        },
+        {
+          "title": "South Sudan: Humanitarian Access Snapshot - July 2026",
+          "url": "https://reliefweb.int/report/south-sudan/south-sudan-humanitarian-access-snapshot-july-2026",
+          "date": "2026-08-11T15:12:02.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: South Sudan Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. Humanitarian access in South Sudan remained severely constrained in July 2026 by ongoing conflict and insecurity, violence against humanitarian personnel and assets, bureaucratic and administrative impediments (BAIs), and deteriorating physical access. A total of 65 humanit",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 0
+        }
+      ],
+      "itemCount": 7
     },
     {
       "id": "somalia",
@@ -15476,10 +15553,22 @@
         "Chisinau",
         "Gagausien"
       ],
-      "activity": 63,
-      "severity": 29,
-      "newCount": 0,
+      "activity": 68,
+      "severity": 31,
+      "newCount": 1,
       "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        },
         {
           "key": "displacement",
           "label": "Vertreibung",
@@ -15487,14 +15576,8 @@
           "count": 2
         },
         {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 1
         },
@@ -15592,6 +15675,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
+          "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
+          "date": "2026-08-16T19:12:31.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 19 people were killed Sunday in drone and missile strikes in Russia and Ukraine which destroyed a book market in Kyiv while Moscow faced one of the most massive attacks since the start of the war. Ukraine and Russia have been escalating their long-range strikes for months, resulting in a growing number of civilian casualties, more than four years after the start of the Russian invasion.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 26
         },
@@ -15869,7 +15973,7 @@
           "score": 3
         }
       ],
-      "itemCount": 17
+      "itemCount": 18
     },
     {
       "id": "libya",
@@ -16686,19 +16790,25 @@
         "Südossetien",
         "Tbilissi"
       ],
-      "activity": 54,
-      "severity": 27,
-      "newCount": 0,
+      "activity": 58,
+      "severity": 28,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 1
+          "count": 2
         },
         {
           "key": "escalation",
           "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 1
         },
@@ -16796,6 +16906,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
+          "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
+          "date": "2026-08-16T19:12:31.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "At least 19 people were killed Sunday in drone and missile strikes in Russia and Ukraine which destroyed a book market in Kyiv while Moscow faced one of the most massive attacks since the start of the war. Ukraine and Russia have been escalating their long-range strikes for months, resulting in a growing number of civilian casualties, more than four years after the start of the Russian invasion.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 26
         },
@@ -17010,7 +17141,281 @@
           "score": 9
         }
       ],
-      "itemCount": 14
+      "itemCount": 15
+    },
+    {
+      "id": "cameroon",
+      "name": "Kamerun (Anglophone Krise)",
+      "nameEn": "Cameroon – Anglophone Crisis",
+      "region": "Afrika (Zentral)",
+      "countries": [
+        "Cameroon"
+      ],
+      "lat": 5.9,
+      "lon": 10.1,
+      "tier": "medium",
+      "since": "2017",
+      "parties": [
+        "Regierung",
+        "Ambazonische Separatisten",
+        "Boko Haram (Norden)"
+      ],
+      "background": "Separatistenkonflikt in den anglophonen Regionen Nordwest und Südwest, zusätzlich Boko-Haram-Angriffe im Norden; angespannte Lage nach der Wahl.",
+      "hotspots": [
+        "Bamenda",
+        "Buea",
+        "Nordwest",
+        "Südwest",
+        "Far North"
+      ],
+      "activity": 13,
+      "severity": 26,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 5
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "CMR",
+      "extraCountries": [
+        "NGA"
+      ],
+      "regions": [
+        {
+          "id": "CMR-1477",
+          "name": "Northwest",
+          "nameDe": "Nord-Ouest",
+          "type": "Province",
+          "anchor": [
+            10.365,
+            6.37
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Malawi , Cameroon Set For Historic WAFCON Final Clash",
+          "url": "https://leadership.ng/malawi-cameroon-set-for-historic-wafcon-final-clash/",
+          "date": "2026-08-16T08:45:00.000Z",
+          "source": "leadership.ng",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 21
+        },
+        {
+          "title": "Cameroon journalist held incommunicado for publishing photo",
+          "url": "https://www.premiumtimesng.com/foreign/903184-cameroon-journalist-held-incommunicado-for-publishing-photo.html",
+          "date": "2026-08-15T18:34:41.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The Anglophone crisis began in 2016 with protests by lawyers and teachers over the appointment of French-speaking officials in the minority English-speaking Northwest and Southwest regions, triggering a crackdown by the majority French-speaking government and a secessionist rebellion. The post Cameroon journalist held incommunicado for publishing photo appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 11
+        },
+        {
+          "title": "Cameroon : North-West and South-West regions - Humanitarian Access Severity Overview | July 2026",
+          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-humanitarian-access-severity-overview-july-2026",
+          "date": "2026-08-12T15:23:08.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": {
+            "id": "CMR-1477",
+            "name": "Northwest",
+            "nameDe": "Nord-Ouest",
+            "type": "Province",
+            "anchor": [
+              10.365,
+              6.37
+            ],
+            "matched": "North-West"
+          },
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Cameroon : North-West and South-West regions - Overview of the Humanitarian Access, January to June 2026",
+          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-overview-humanitarian-access-january-june-2026",
+          "date": "2026-08-12T15:19:58.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": {
+            "id": "CMR-1477",
+            "name": "Northwest",
+            "nameDe": "Nord-Ouest",
+            "type": "Province",
+            "anchor": [
+              10.365,
+              6.37
+            ],
+            "matched": "North-West"
+          },
+          "event": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Japan Contributes USD 1.25 Million to Support WFP Food Assistance for Displaced People in Cameroon | World Food Programme",
+          "url": "https://reliefweb.int/report/cameroon/japan-contributes-usd-125-million-support-wfp-food-assistance-displaced-people-cameroon-world-food-programme",
+          "date": "2026-08-12T13:03:05.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Nigeria Source: World Food Programme YAOUNDE – 12 August 2026 – The Government of Japan has contributed JPY 200 million (approximately USD 1.25 million or XAF 708,000,000) to support the United Nations World Food Programme (WFP) in providing emergency food assistance to more than 13,000 refugees and internally displaced people affected by food insecurity in Cameroon. This Japa",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Cameroon: Locations of forcibly displaced persons (July 2026)",
+          "url": "https://reliefweb.int/map/cameroon/cameroon-locations-forcibly-displaced-persons-july-2026",
+          "date": "2026-08-10T14:03:29.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Central African Republic, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "UNHCR Cameroon Multi Country Office: Forcibly displaced persons movements (July 2026)",
+          "url": "https://reliefweb.int/map/cameroon/unhcr-cameroon-multi-country-office-forcibly-displaced-persons-movements-july-2026",
+          "date": "2026-08-10T14:03:26.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Central African Republic, Chad, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "Refugees and Internally Displaced Persons in Cameroon Multi Country Office (July 2026)",
+          "url": "https://reliefweb.int/report/cameroon/refugees-and-internally-displaced-persons-cameroon-multi-country-office-july-2026",
+          "date": "2026-08-10T14:03:24.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Congo, Equatorial Guinea, Gabon, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "MCO Cameroon: Refugee and asylum-seeker statistics (July 2026)",
+          "url": "https://reliefweb.int/report/cameroon/mco-cameroon-refugee-and-asylum-seeker-statistics-july-2026",
+          "date": "2026-08-10T14:03:20.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Cameroon, Central African Republic, Chad, Congo, Equatorial Guinea, Gabon, Nigeria, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        }
+      ],
+      "itemCount": 9
     },
     {
       "id": "rohingya-bangladesh",
@@ -17303,259 +17708,6 @@
         }
       ],
       "itemCount": 10
-    },
-    {
-      "id": "cameroon",
-      "name": "Kamerun (Anglophone Krise)",
-      "nameEn": "Cameroon – Anglophone Crisis",
-      "region": "Afrika (Zentral)",
-      "countries": [
-        "Cameroon"
-      ],
-      "lat": 5.9,
-      "lon": 10.1,
-      "tier": "medium",
-      "since": "2017",
-      "parties": [
-        "Regierung",
-        "Ambazonische Separatisten",
-        "Boko Haram (Norden)"
-      ],
-      "background": "Separatistenkonflikt in den anglophonen Regionen Nordwest und Südwest, zusätzlich Boko-Haram-Angriffe im Norden; angespannte Lage nach der Wahl.",
-      "hotspots": [
-        "Bamenda",
-        "Buea",
-        "Nordwest",
-        "Südwest",
-        "Far North"
-      ],
-      "activity": 8,
-      "severity": 25,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 5
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "CMR",
-      "extraCountries": [
-        "NGA"
-      ],
-      "regions": [
-        {
-          "id": "CMR-1477",
-          "name": "Northwest",
-          "nameDe": "Nord-Ouest",
-          "type": "Province",
-          "anchor": [
-            10.365,
-            6.37
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Cameroon journalist held incommunicado for publishing photo",
-          "url": "https://www.premiumtimesng.com/foreign/903184-cameroon-journalist-held-incommunicado-for-publishing-photo.html",
-          "date": "2026-08-15T18:34:41.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The Anglophone crisis began in 2016 with protests by lawyers and teachers over the appointment of French-speaking officials in the minority English-speaking Northwest and Southwest regions, triggering a crackdown by the majority French-speaking government and a secessionist rebellion. The post Cameroon journalist held incommunicado for publishing photo appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 11
-        },
-        {
-          "title": "Cameroon : North-West and South-West regions - Humanitarian Access Severity Overview | July 2026",
-          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-humanitarian-access-severity-overview-july-2026",
-          "date": "2026-08-12T15:23:08.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": {
-            "id": "CMR-1477",
-            "name": "Northwest",
-            "nameDe": "Nord-Ouest",
-            "type": "Province",
-            "anchor": [
-              10.365,
-              6.37
-            ],
-            "matched": "North-West"
-          },
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Cameroon : North-West and South-West regions - Overview of the Humanitarian Access, January to June 2026",
-          "url": "https://reliefweb.int/report/cameroon/cameroon-north-west-and-south-west-regions-overview-humanitarian-access-january-june-2026",
-          "date": "2026-08-12T15:19:58.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Cameroon Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": {
-            "id": "CMR-1477",
-            "name": "Northwest",
-            "nameDe": "Nord-Ouest",
-            "type": "Province",
-            "anchor": [
-              10.365,
-              6.37
-            ],
-            "matched": "North-West"
-          },
-          "event": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Japan Contributes USD 1.25 Million to Support WFP Food Assistance for Displaced People in Cameroon | World Food Programme",
-          "url": "https://reliefweb.int/report/cameroon/japan-contributes-usd-125-million-support-wfp-food-assistance-displaced-people-cameroon-world-food-programme",
-          "date": "2026-08-12T13:03:05.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Nigeria Source: World Food Programme YAOUNDE – 12 August 2026 – The Government of Japan has contributed JPY 200 million (approximately USD 1.25 million or XAF 708,000,000) to support the United Nations World Food Programme (WFP) in providing emergency food assistance to more than 13,000 refugees and internally displaced people affected by food insecurity in Cameroon. This Japa",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Cameroon: Locations of forcibly displaced persons (July 2026)",
-          "url": "https://reliefweb.int/map/cameroon/cameroon-locations-forcibly-displaced-persons-july-2026",
-          "date": "2026-08-10T14:03:29.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Central African Republic, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "UNHCR Cameroon Multi Country Office: Forcibly displaced persons movements (July 2026)",
-          "url": "https://reliefweb.int/map/cameroon/unhcr-cameroon-multi-country-office-forcibly-displaced-persons-movements-july-2026",
-          "date": "2026-08-10T14:03:26.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Central African Republic, Chad, Nigeria Source: UN High Commissioner for Refugees Please refer to the attached Map.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "Refugees and Internally Displaced Persons in Cameroon Multi Country Office (July 2026)",
-          "url": "https://reliefweb.int/report/cameroon/refugees-and-internally-displaced-persons-cameroon-multi-country-office-july-2026",
-          "date": "2026-08-10T14:03:24.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Congo, Equatorial Guinea, Gabon, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "MCO Cameroon: Refugee and asylum-seeker statistics (July 2026)",
-          "url": "https://reliefweb.int/report/cameroon/mco-cameroon-refugee-and-asylum-seeker-statistics-july-2026",
-          "date": "2026-08-10T14:03:20.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Cameroon, Central African Republic, Chad, Congo, Equatorial Guinea, Gabon, Nigeria, Sao Tome and Principe Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        }
-      ],
-      "itemCount": 8
     },
     {
       "id": "iraq",
