@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-19T00:02:54.807Z",
-  "durationSec": 389,
+  "generatedAt": "2026-08-19T03:33:18.638Z",
+  "durationSec": 434,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 29,
+        "count": 34,
         "error": null
       },
       {
@@ -49,7 +49,7 @@
       {
         "id": "dw",
         "ok": true,
-        "count": 11,
+        "count": 13,
         "error": null
       },
       {
@@ -114,36 +114,32 @@
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 7,
+      "ok": 5,
+      "failed": 6,
       "skipped": 5,
       "errors": [
         {
           "id": "drc-m23",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "south-china-sea",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "afghanistan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "venezuela",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "nigeria",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "yemen",
           "error": "fetch failed"
         },
         {
+          "id": "venezuela",
+          "error": "fetch failed"
+        },
+        {
+          "id": "ethiopia",
+          "error": "HTTP 429"
+        },
+        {
           "id": "haiti",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "myanmar",
+          "error": "fetch failed"
+        },
+        {
+          "id": "iran-israel",
           "error": "fetch failed"
         }
       ]
@@ -152,8 +148,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 976,
-    "newArticles": 4
+    "articles": 981,
+    "newArticles": 18
   },
   "conflicts": [
     {
@@ -334,23 +330,6 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           }
-        },
-        {
-          "id": "UKR-4827",
-          "name": "Kherson",
-          "nameDe": "Cherson",
-          "type": "Oblast'",
-          "anchor": [
-            33.604,
-            46.67
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
         }
       ],
       "items": [
@@ -383,7 +362,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 33
+          "score": 30
         },
         {
           "title": "Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant",
@@ -414,7 +393,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 32
+          "score": 29
         },
         {
           "title": "Ukraine, Russia trade strikes; Wildberries site hit again",
@@ -446,37 +425,6 @@
             "label": "Drohnenangriff"
           },
           "score": 29
-        },
-        {
-          "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
-          "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T12:36:11.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 27
         },
         {
           "title": "BBC visits smouldering Kyiv market after Russian strikes",
@@ -532,6 +480,37 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
+          "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T12:36:11.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "regionEvent": {
             "type": "drone",
@@ -2069,40 +2048,9 @@
             "label": "Bericht"
           },
           "score": 0
-        },
-        {
-          "title": "Ukraine: Gender in Humanitarian Action Working Group Statement: Funding cuts to WLO and WROs cannot undermine duty of care [EN/UK]",
-          "url": "https://reliefweb.int/report/ukraine/gender-humanitarian-action-working-group-statement-funding-cuts-wlo-and-wros-cannot-undermine-duty-care-enuk",
-          "date": "2026-08-12T03:25:45.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Ukraine Sources: CARE, NGO Girls, Ukraine Gender in Humanitarian Action Working Group, UN Women Please refer to the attached files. Last week alone, two women humanitarian workers delivering essential support to women and girls in Kherson were injured. Two staff members of the women-led organization Culture of Democracy were injured in a drone attack while returning from responding to a d",
-          "isNew": false,
-          "region": {
-            "id": "UKR-4827",
-            "name": "Kherson",
-            "nameDe": "Cherson",
-            "type": "Oblast'",
-            "anchor": [
-              33.604,
-              46.67
-            ],
-            "matched": "Kherson"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 0
         }
       ],
-      "itemCount": 67
+      "itemCount": 66
     },
     {
       "id": "gaza",
@@ -2131,30 +2079,30 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 6,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 16
+          "count": 12
         },
         {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 11
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 8
+          "count": 9
         },
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
+          "count": 8
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
           "count": 8
         },
         {
@@ -2216,13 +2164,13 @@
       ],
       "items": [
         {
-          "title": "Israeli strike on Gaza City cafe kills six, including child",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-strike-on-gaza-city-cafe-kills-six-including-child?traffic_source=rss",
-          "date": "2026-08-18T18:32:24.000Z",
-          "source": "Al Jazeera",
+          "title": "Turkey denies Israeli claims of posing a threat, says Netanyahu seeks to justify Syria strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-denies-israeli-claims-posing-threat",
+          "date": "2026-08-19T00:09:12.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "An Israeli strike hit a cafe in the port area west of Gaza City, killing six Palestinians, including a child.",
-          "isNew": false,
+          "summary": "Turkey denies Israeli claims of posing a threat, says Netanyahu seeks to justify Syria strikes Turkey has denied Israeli allegations that it posed a threat by preparing to send troops to a base in Syria. \"The frivolous allegations put forward by the Israeli Prime Minister's office aim to legitimize Israel's unlawful airstrikes targeting Syria's sovereignty and territorial integrity,\" Turkey's Comm",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -2230,11 +2178,11 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
-          "score": 30
+          "score": 29
         },
         {
           "title": "Israeli strike reported to kill at least six in Gaza City",
@@ -2255,7 +2203,91 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 29
+          "score": 26
+        },
+        {
+          "title": "Iranian academic writes of US detention 'hell' over link to 1979 hostage crisis",
+          "url": "https://www.bbc.co.uk/news/articles/cgjeped6ewxo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-19T03:12:06.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The immigration status of Maryam Tahmasebi was revoked because her husband is the son of a prominent figure in Iran.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 26
+        },
+        {
+          "title": "Middle East live: Turkey rejects Israeli claims after strike on Syria air base",
+          "url": "https://www.france24.com/en/middle-east/20260819-middle-east-live-turkey-rejects-israeli-claims-after-strike-on-syria-air-base",
+          "date": "2026-08-19T03:05:51.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey rejected on Wednesday Israeli allegations that it posed a threat by preparing to send troops to a base in Syria, which was hit in a strike that the United States blamed on Israel. Follow our liveblog for the latest developments.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
+          "title": "Report: Syria denies security agreement with Israel after strike on airbase",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-syria-denies-security-agreement-israel-after-strike-airbase",
+          "date": "2026-08-19T03:16:08.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Report: Syria denies security agreement with Israel after strike on airbase A Syrian Foreign Ministry diplomatic source has denied the existence of a&nbsp;&nbsp;security arrangement&nbsp;agreement between Syria and Israel, Al Jazeera reported. The source told the network that Israel targeted the Abu al-Duhur military airport in Irbil despite having been informed that no foreign force was present a",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
+          "title": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-envoy-deeply-concerned-israeli-strikes-syrian-air-base",
+          "date": "2026-08-19T02:13:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base US special envoy for Syria Tom Barrack defended the Syrian government on Tuesday after Israeli air strikes targeted the Abu al-Duhur military air base in northern Syria, calling it an \"unnecessary escalation\".&nbsp; \"The Al-Sharaa government has neither adopted a predatory posture nor maintained proxy forces. It has, in fact, rep",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
         },
         {
           "title": "UAE condemns Israeli strikes on Syrian air base",
@@ -2277,69 +2309,6 @@
             "label": "Luftangriff"
           },
           "score": 26
-        },
-        {
-          "title": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-syria-acceptance-turkish-troops-posed-threat",
-          "date": "2026-08-18T21:17:40.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat' Israel's prime minister's office said in a statement on X on Tuesday that Syria's acceptance of Turkish troops at its air base posed a \"threat\" to its security after&nbsp;Israeli&nbsp;air strikes&nbsp;on the Abu al-Duhur air base in northwestern Syria. \"Israel and&nbsp;Syria agreed to a status quo in security matters, ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base",
-          "url": "https://www.middleeasteye.net/news/trump-syria-envoy-deeply-concerned-israeli-strikes-syria-air-base",
-          "date": "2026-08-18T19:03:00.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base Submitted by MEE staff on Tue, 08/18/2026 - 18:11 In rare pushback against Israel, Tom Barrack said Syria did nothing to provoke the attack US special envoy for Syria and US ambassador to Turkey Tom Barrack speaks onstage during the 5th edition of the Antalya Diplomacy Forum in Antalya, Turkey, on 17 April 2026 (Antalya Diplomacy",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
-          "title": "Israeli strike on Gaza port kills at least seven, including a child",
-          "url": "https://www.middleeasteye.net/news/child-among-six-killed-israeli-air-strike-gazas-port",
-          "date": "2026-08-18T18:22:45.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strike on Gaza port kills at least seven, including a child Submitted by MEE staff on Tue, 08/18/2026 - 18:42 At least six people were killed, including a child, and dozens injured in an Israeli bombing of a port west of Gaza City A boy walks carrying a table on his back past salvage workers scrapping the rubble of a building destroyed by an Israeli strike in Gaza City on 16 August 2026 (O",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 25
         },
         {
           "title": "Qusra siege eases as UN reaches trapped families, but crisis deepens in Gaza",
@@ -2403,6 +2372,69 @@
             "label": "Bericht"
           },
           "score": 23
+        },
+        {
+          "title": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-syria-acceptance-turkish-troops-posed-threat",
+          "date": "2026-08-18T21:17:40.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat' Israel's prime minister's office said in a statement on X on Tuesday that Syria's acceptance of Turkish troops at its air base posed a \"threat\" to its security after&nbsp;Israeli&nbsp;air strikes&nbsp;on the Abu al-Duhur air base in northwestern Syria. \"Israel and&nbsp;Syria agreed to a status quo in security matters, ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 23
+        },
+        {
+          "title": "Israeli strike on Gaza City cafe kills six, including child",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-strike-on-gaza-city-cafe-kills-six-including-child?traffic_source=rss",
+          "date": "2026-08-18T18:32:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "An Israeli strike hit a cafe in the port area west of Gaza City, killing six Palestinians, including a child.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli strike on Gaza port kills at least seven, including a child",
+          "url": "https://www.middleeasteye.net/news/child-among-six-killed-israeli-air-strike-gazas-port",
+          "date": "2026-08-18T18:22:45.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strike on Gaza port kills at least seven, including a child Submitted by MEE staff on Tue, 08/18/2026 - 18:42 At least six people were killed, including a child, and dozens injured in an Israeli bombing of a port west of Gaza City A boy walks carrying a table on his back past salvage workers scrapping the rubble of a building destroyed by an Israeli strike in Gaza City on 16 August 2026 (O",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 22
         },
         {
           "title": "Analysis: Syrian airbase attack is an Israeli message to Damascus, Ankara",
@@ -2709,6 +2741,27 @@
           "score": 19
         },
         {
+          "title": "US ambassador to Israel calls settler violence ‘terror’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/us-ambassador-to-israel-calls-settler-violence?traffic_source=rss",
+          "date": "2026-08-19T00:49:10.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US Ambassador to Israel Mike Huckabee says Israeli settler violence in the occupied West Bank",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
           "title": "Palestinian American challenges Israeli army outside his home in the West Bank",
           "url": "https://www.france24.com/en/palestinian-american-challenges-israeli-army-outside-his-home-in-the-west-bank",
           "date": "2026-08-18T15:43:42.000Z",
@@ -2730,58 +2783,6 @@
           "score": 19
         },
         {
-          "title": "Israel issues tender for 1,234 settlement units in occupied Jerusalem",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-issues-tender-1234-settlement-units-occupied-jerusalem",
-          "date": "2026-08-18T20:54:39.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel issues tender for 1,234 settlement units in occupied Jerusalem Israel issued a tender on Tuesday for the construction of 1,234 settlement units in the southern part of the E1 plan east of occupied Jerusalem, moving one of the most controversial settlement schemes from the approval and planning stage towards land marketing and practical implementation. The tender covers seven settlement comp",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "US envoy calls out Israeli settler 'terrorism' in interview",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-envoy-calls-out-israeli-settler-terrorism-interview",
-          "date": "2026-08-18T19:28:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US envoy calls out Israeli settler 'terrorism' in interview US ambassador to Israel Mike Huckabee said on Tuesday that&nbsp;“terrorism” is the most accurate term to describe the actions of Israeli settlers in the occupied West Bank. He said in an interview to Israeli public broadcaster Kaan that settlers are engaged “in a process aimed at changing behavior and creating fear in an individual, a pop",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Netanyahu and Kushner talks make no breakthrough on stalled Gaza deal",
           "url": "https://www.theguardian.com/world/2026/aug/17/netanyahu-kushner-talks-gaza-israel-us-board-of-peace",
           "date": "2026-08-17T16:42:04.000Z",
@@ -2799,27 +2800,6 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israeli minister shows construction of 'death row and hanging' facility for Palestinians",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-shows-construction-dedicated-execution-unit",
-          "date": "2026-08-18T18:24:52.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli minister shows construction of 'death row and hanging' facility for Palestinians Israeli National Security Minister Itamar Ben-Gvir shared a video on Telegram on Tuesday showing the construction of a dedicated execution facility for Palestinians, after the death penalty law for detainees in the occupied Palestine was passed. “We promised – we are keeping it. I promised to worsen the condit",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
           },
           "score": 18
         },
@@ -3380,46 +3360,56 @@
           "score": 18
         },
         {
-          "title": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-lebanons-nabatieh-israel-continues-strikes",
-          "date": "2026-08-16T02:27:53.000Z",
+          "title": "Israel issues tender for 1,234 settlement units in occupied Jerusalem",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-issues-tender-1234-settlement-units-occupied-jerusalem",
+          "date": "2026-08-18T20:54:39.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes Explosions were heard in the area between Ali al-Taher Heights and the Dabsha area in the Nabatieh district of southern Lebanon, Al Jazeera reported. Al Manar TV said the blasts were a result of Israeli air attacks in the area, while the Nabatieh Channel said the raids took place in the vicinity of the town of Kfar Reman. The attac",
+          "summary": "Israel issues tender for 1,234 settlement units in occupied Jerusalem Israel issued a tender on Tuesday for the construction of 1,234 settlement units in the southern part of the E1 plan east of occupied Jerusalem, moving one of the most controversial settlement schemes from the approval and planning stage towards land marketing and practical implementation. The tender covers seven settlement comp",
           "isNew": false,
-          "region": null,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
           "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 18
+          "score": 16
         },
         {
-          "title": "11 dead , 19 injured in Israeli strikes on southern Lebanon",
-          "url": "http://www.russiaherald.com/news/279244187/11-dead-19-injured-in-israeli-strikes-on-southern-lebanon",
-          "date": "2026-08-16T01:00:00.000Z",
-          "source": "russiaherald.com",
+          "title": "US envoy calls out Israeli settler 'terrorism' in interview",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-envoy-calls-out-israeli-settler-terrorism-interview",
+          "date": "2026-08-18T19:28:28.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "",
+          "summary": "US envoy calls out Israeli settler 'terrorism' in interview US ambassador to Israel Mike Huckabee said on Tuesday that&nbsp;“terrorism” is the most accurate term to describe the actions of Israeli settlers in the occupied West Bank. He said in an interview to Israeli public broadcaster Kaan that settlers are engaged “in a process aimed at changing behavior and creating fear in an individual, a pop",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 18
+          "score": 16
         },
         {
           "title": "Israel/OPT: Siege of Palestinian homes in Qusra marks relentless escalation in state-backed settler violence",
@@ -3462,6 +3452,69 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Israeli minister shows construction of 'death row and hanging' facility for Palestinians",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-shows-construction-dedicated-execution-unit",
+          "date": "2026-08-18T18:24:52.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli minister shows construction of 'death row and hanging' facility for Palestinians Israeli National Security Minister Itamar Ben-Gvir shared a video on Telegram on Tuesday showing the construction of a dedicated execution facility for Palestinians, after the death penalty law for detainees in the occupied Palestine was passed. “We promised – we are keeping it. I promised to worsen the condit",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
+        },
+        {
+          "title": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-lebanons-nabatieh-israel-continues-strikes",
+          "date": "2026-08-16T02:27:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Explosions heard in Lebanon's Nabatieh as Israel continues strikes Explosions were heard in the area between Ali al-Taher Heights and the Dabsha area in the Nabatieh district of southern Lebanon, Al Jazeera reported. Al Manar TV said the blasts were a result of Israeli air attacks in the area, while the Nabatieh Channel said the raids took place in the vicinity of the town of Kfar Reman. The attac",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
+          "title": "11 dead , 19 injured in Israeli strikes on southern Lebanon",
+          "url": "http://www.russiaherald.com/news/279244187/11-dead-19-injured-in-israeli-strikes-on-southern-lebanon",
+          "date": "2026-08-16T01:00:00.000Z",
+          "source": "russiaherald.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
         },
         {
           "title": "As the world fixates on Hamas, who will disarm the Israeli settlers storming West Bank villages?",
@@ -3847,111 +3900,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanon says 11 killed in Israeli airstrikes",
-          "url": "https://www.dw.com/en/lebanon-says-11-killed-in-israeli-airstrikes/a-78383713?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-15T15:35:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Lebanon's prime minister denounced the attacks on villages in southern Lebanon for targeting civilians in their homes. Israel said it was firing on Hezbollah infrastructure.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-pilot-zones-withdrawal-paper-continued-occupation-south-lebanon",
-          "date": "2026-08-15T15:58:42.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel’s ‘pilot zones’: Withdrawal on paper, continued occupation of south Lebanon At the entrance to Zawtar al-Gharbiyeh, a village in southern&nbsp; Lebanon , a Lebanese Army checkpoint marks the edge of what is now officially known as a \"pilot zone\". It is one of three villages - along with Froun and Srifa - designated as such under the framework agreement between&nbsp; Israel , the United Stat",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-11-south-lebanon-health-ministry-says",
-          "date": "2026-08-15T15:21:14.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strikes kill 11 in southern Lebanon, Lebanese health ministry says​ We earlier reported that Israeli attacks had killed nine people in southern Lebanon. Lebanon's health ministry now says at least 11 people were killed in Israeli strikes in southern Lebanon on Saturday. Seven people were killed when Israeli warplanes struck a house in the southern town of Ansar, while four others were kill",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Deadly Israeli strikes in Lebanon put peace talks at risk",
-          "url": "https://www.france24.com/en/deadly-israeli-strikes-in-lebanon-put-peace-talks-at-risk",
-          "date": "2026-08-15T15:29:52.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "At least 11 people, including three children, have been killed in Israeli strikes on southern Lebanon, according to Lebanon’s state news agency, in the deadliest attacks since a US-mediated peace framework was agreed in June. Israel says it targeted Hezbollah infrastructure, while Lebanese officials condemned the strikes as a threat to ongoing negotiations and the country’s sovereignty.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-parliament-speaker-condemns-israeli-massacre",
-          "date": "2026-08-15T14:19:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre\" and said Israel was waging a \"war aimed at extermination\". Hezbollah accused Israel of an \"act of aggressive escalation\" ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
           },
           "score": 15
         }
@@ -5102,7 +5050,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "offensive",
@@ -5203,7 +5151,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "West Bank siege exposes Israel army inaction on settler violence",
@@ -5353,13 +5301,13 @@
           "score": 21
         },
         {
-          "title": "US envoy calls out Israeli settler 'terrorism' in interview",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-envoy-calls-out-israeli-settler-terrorism-interview",
-          "date": "2026-08-18T19:28:28.000Z",
-          "source": "Middle East Eye",
+          "title": "US ambassador to Israel calls settler violence ‘terror’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/us-ambassador-to-israel-calls-settler-violence?traffic_source=rss",
+          "date": "2026-08-19T00:49:10.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "US envoy calls out Israeli settler 'terrorism' in interview US ambassador to Israel Mike Huckabee said on Tuesday that&nbsp;“terrorism” is the most accurate term to describe the actions of Israeli settlers in the occupied West Bank. He said in an interview to Israeli public broadcaster Kaan that settlers are engaged “in a process aimed at changing behavior and creating fear in an individual, a pop",
-          "isNew": false,
+          "summary": "US Ambassador to Israel Mike Huckabee says Israeli settler violence in the occupied West Bank",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -5372,37 +5320,6 @@
             "label": "Bericht"
           },
           "score": 20
-        },
-        {
-          "title": "Israel issues tender for 1,234 settlement units in occupied Jerusalem",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-issues-tender-1234-settlement-units-occupied-jerusalem",
-          "date": "2026-08-18T20:54:39.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel issues tender for 1,234 settlement units in occupied Jerusalem Israel issued a tender on Tuesday for the construction of 1,234 settlement units in the southern part of the E1 plan east of occupied Jerusalem, moving one of the most controversial settlement schemes from the approval and planning stage towards land marketing and practical implementation. The tender covers seven settlement comp",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
         },
         {
           "title": "Palestinian American returns to West Bank to defend his home under siege by Israeli settlers",
@@ -5699,6 +5616,58 @@
           "score": 17
         },
         {
+          "title": "US envoy calls out Israeli settler 'terrorism' in interview",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-envoy-calls-out-israeli-settler-terrorism-interview",
+          "date": "2026-08-18T19:28:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US envoy calls out Israeli settler 'terrorism' in interview US ambassador to Israel Mike Huckabee said on Tuesday that&nbsp;“terrorism” is the most accurate term to describe the actions of Israeli settlers in the occupied West Bank. He said in an interview to Israeli public broadcaster Kaan that settlers are engaged “in a process aimed at changing behavior and creating fear in an individual, a pop",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "Israel issues tender for 1,234 settlement units in occupied Jerusalem",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-issues-tender-1234-settlement-units-occupied-jerusalem",
+          "date": "2026-08-18T20:54:39.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel issues tender for 1,234 settlement units in occupied Jerusalem Israel issued a tender on Tuesday for the construction of 1,234 settlement units in the southern part of the E1 plan east of occupied Jerusalem, moving one of the most controversial settlement schemes from the approval and planning stage towards land marketing and practical implementation. The tender covers seven settlement comp",
+          "isNew": false,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "Israel/OPT: Siege of Palestinian homes in Qusra marks relentless escalation in state-backed settler violence",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/israelopt-siege-palestinian-homes-qusra-marks-relentless-escalation-state-backed-settler-violence",
           "date": "2026-08-14T13:48:00.000Z",
@@ -5951,27 +5920,6 @@
           "score": 15
         },
         {
-          "title": "IDF arrests terrorists in brigade - wide West Bank operation",
-          "url": "https://www.jpost.com/israel-news/defense-news/article-905821",
-          "date": "2026-08-18T02:00:00.000Z",
-          "source": "jpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "US ambassador calls Israeli settler West Bank siege act of terror",
           "url": "https://arynews.tv/us-ambassador-calls-israeli-settler-west-bank-siege-act-of-terror",
           "date": "2026-08-15T08:30:00.000Z",
@@ -6104,6 +6052,27 @@
           "source": "UN News – Peace & Security",
           "sourceType": "institutional",
           "summary": "Humanitarians continue to provide life-saving assistance to people across the Occupied Palestinian Territory despite facing obstacles such as checkpoints, instability and access restrictions, the United Nations said on Friday.&nbsp;",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "IDF arrests terrorists in brigade - wide West Bank operation",
+          "url": "https://www.jpost.com/israel-news/defense-news/article-905821",
+          "date": "2026-08-18T02:00:00.000Z",
+          "source": "jpost.com",
+          "sourceType": "news",
+          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
@@ -6841,27 +6810,6 @@
             "label": "Belagerung"
           },
           "score": 8
-        },
-        {
-          "title": "West Bank: Palestinians families trapped in home",
-          "url": "https://www.france24.com/en/west-bank-palestinians-families-trapped-in-home",
-          "date": "2026-08-14T11:33:16.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israeli settlers are carrying out a campaign of violence and intimidation against the Palestinian village of Qusra in the occupied West Bank, where families have had their electricity and water supplies cut off, in what residents say is an attempt to force them from their homes. France 24 Senior Reporter Catherine Norris Trent recalls reporting from Qusra in 2023, when villagers told her that Isra",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -6895,7 +6843,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 4,
       "signals": [
         {
           "key": "displacement",
@@ -6907,24 +6855,24 @@
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 2
+          "count": 3
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
         },
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
           "count": 1
         }
       ],
@@ -6974,23 +6922,6 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
-          }
-        },
-        {
-          "id": "TUR-2271",
-          "name": "Antalya",
-          "nameDe": "Antalya",
-          "type": "Province",
-          "anchor": [
-            30.932,
-            36.799
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           }
         },
         {
@@ -7047,6 +6978,27 @@
       ],
       "items": [
         {
+          "title": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-envoy-deeply-concerned-israeli-strikes-syrian-air-base",
+          "date": "2026-08-19T02:13:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base US special envoy for Syria Tom Barrack defended the Syrian government on Tuesday after Israeli air strikes targeted the Abu al-Duhur military air base in northern Syria, calling it an \"unnecessary escalation\".&nbsp; \"The Al-Sharaa government has neither adopted a predatory posture nor maintained proxy forces. It has, in fact, rep",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 30
+        },
+        {
           "title": "UAE condemns Israeli strikes on Syrian air base",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-condemns-israeli-strikes-abu-al-duhur-airbase-idlib",
           "date": "2026-08-18T22:54:18.000Z",
@@ -7068,6 +7020,69 @@
           "score": 29
         },
         {
+          "title": "Report: Syria denies security agreement with Israel after strike on airbase",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-syria-denies-security-agreement-israel-after-strike-airbase",
+          "date": "2026-08-19T03:16:08.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Report: Syria denies security agreement with Israel after strike on airbase A Syrian Foreign Ministry diplomatic source has denied the existence of a&nbsp;&nbsp;security arrangement&nbsp;agreement between Syria and Israel, Al Jazeera reported. The source told the network that Israel targeted the Abu al-Duhur military airport in Irbil despite having been informed that no foreign force was present a",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 27
+        },
+        {
+          "title": "Middle East live: Turkey rejects Israeli claims after strike on Syria air base",
+          "url": "https://www.france24.com/en/middle-east/20260819-middle-east-live-turkey-rejects-israeli-claims-after-strike-on-syria-air-base",
+          "date": "2026-08-19T03:05:51.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey rejected on Wednesday Israeli allegations that it posed a threat by preparing to send troops to a base in Syria, which was hit in a strike that the United States blamed on Israel. Follow our liveblog for the latest developments.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
+          "title": "Turkey denies Israeli claims of posing a threat, says Netanyahu seeks to justify Syria strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-denies-israeli-claims-posing-threat",
+          "date": "2026-08-19T00:09:12.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey denies Israeli claims of posing a threat, says Netanyahu seeks to justify Syria strikes Turkey has denied Israeli allegations that it posed a threat by preparing to send troops to a base in Syria. \"The frivolous allegations put forward by the Israeli Prime Minister's office aim to legitimize Israel's unlawful airstrikes targeting Syria's sovereignty and territorial integrity,\" Turkey's Comm",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
           "title": "Syrian petroleum company says explosion of gas pipeline 'deliberate act of sabotage'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrian-petroleum-company-says-explosion-gas-pipeline-deliberate-act",
           "date": "2026-08-18T20:11:13.000Z",
@@ -7085,58 +7100,6 @@
             "type": "explosion",
             "icon": "💣",
             "label": "Explosion/Anschlag"
-          },
-          "score": 29
-        },
-        {
-          "title": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base",
-          "url": "https://www.middleeasteye.net/news/trump-syria-envoy-deeply-concerned-israeli-strikes-syria-air-base",
-          "date": "2026-08-18T19:03:00.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base Submitted by MEE staff on Tue, 08/18/2026 - 18:11 In rare pushback against Israel, Tom Barrack said Syria did nothing to provoke the attack US special envoy for Syria and US ambassador to Turkey Tom Barrack speaks onstage during the 5th edition of the Antalya Diplomacy Forum in Antalya, Turkey, on 17 April 2026 (Antalya Diplomacy",
-          "isNew": false,
-          "region": {
-            "id": "TUR-2271",
-            "name": "Antalya",
-            "nameDe": "Antalya",
-            "type": "Province",
-            "anchor": [
-              30.932,
-              36.799
-            ],
-            "matched": "Antalya"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 29
-        },
-        {
-          "title": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-syria-acceptance-turkish-troops-posed-threat",
-          "date": "2026-08-18T21:17:40.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat' Israel's prime minister's office said in a statement on X on Tuesday that Syria's acceptance of Turkish troops at its air base posed a \"threat\" to its security after&nbsp;Israeli&nbsp;air strikes&nbsp;on the Abu al-Duhur air base in northwestern Syria. \"Israel and&nbsp;Syria agreed to a status quo in security matters, ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
           },
           "score": 26
         },
@@ -7158,6 +7121,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 23
+        },
+        {
+          "title": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-syria-acceptance-turkish-troops-posed-threat",
+          "date": "2026-08-18T21:17:40.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat' Israel's prime minister's office said in a statement on X on Tuesday that Syria's acceptance of Turkish troops at its air base posed a \"threat\" to its security after&nbsp;Israeli&nbsp;air strikes&nbsp;on the Abu al-Duhur air base in northwestern Syria. \"Israel and&nbsp;Syria agreed to a status quo in security matters, ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
           "score": 23
         },
@@ -7297,27 +7281,6 @@
           "score": 22
         },
         {
-          "title": "Iran's Araghchi says no justification for 'reckless attack' on Iraq’s Kurdish region",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-araghchi-says-no-justification-reckless-attack-iraqs-kurdish",
-          "date": "2026-08-18T00:21:54.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran's Araghchi says no justification for 'reckless attack' on Iraq’s Kurdish region Iranian foreign minister Abbas Araghchi said that \"nothing justifies the reckless attack\" that targeted the Iraqi Kurdistan prime minister's office overnight.&nbsp; \"Kurdish friends should be vigilant against false-flag ploys to sow discord between neighbors,\" he said in a post on X.&nbsp; \"We protected our Kurdis",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "'Tons' of nuclear material found at undisclosed Syrian site, IAEA chief says",
           "url": "https://www.france24.com/en/middle-east/20260818-tons-of-nuclear-materials-found-at-undisclosed-syrian-site-iaea-chief-says",
           "date": "2026-08-18T15:50:02.000Z",
@@ -7349,25 +7312,25 @@
           "score": 20
         },
         {
-          "title": "Syria opens Assad-era nuclear programme to UN probe",
-          "url": "https://www.aljazeera.com/news/2026/8/18/syria-opens-assad-era-nuclear-programme-to-un-probe?traffic_source=rss",
-          "date": "2026-08-18T21:25:06.000Z",
-          "source": "Al Jazeera",
+          "title": "Iran's Araghchi says no justification for 'reckless attack' on Iraq’s Kurdish region",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-araghchi-says-no-justification-reckless-attack-iraqs-kurdish",
+          "date": "2026-08-18T00:21:54.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "UN watchdog reports that it found large amounts of material at undisclosed sites in Syria.",
+          "summary": "Iran's Araghchi says no justification for 'reckless attack' on Iraq’s Kurdish region Iranian foreign minister Abbas Araghchi said that \"nothing justifies the reckless attack\" that targeted the Iraqi Kurdistan prime minister's office overnight.&nbsp; \"Kurdish friends should be vigilant against false-flag ploys to sow discord between neighbors,\" he said in a post on X.&nbsp; \"We protected our Kurdis",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Iraq, Iran discuss drone attack on Kurdish PM's office",
@@ -7462,6 +7425,27 @@
             "label": "Proteste/Unruhen"
           },
           "score": 17
+        },
+        {
+          "title": "Syria opens Assad-era nuclear programme to UN probe",
+          "url": "https://www.aljazeera.com/news/2026/8/18/syria-opens-assad-era-nuclear-programme-to-un-probe?traffic_source=rss",
+          "date": "2026-08-18T21:25:06.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "UN watchdog reports that it found large amounts of material at undisclosed sites in Syria.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Bashar al-Assad’s cousin Wassim sentenced to death in Syria",
@@ -7641,37 +7625,6 @@
           "score": 11
         },
         {
-          "title": "Army drops roses on Syrian crowds in a far cry from war",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/08-16-26-damascus-summer-festival-sv?traffic_source=rss",
-          "date": "2026-08-16T00:50:12.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Syrian army helicopters dropped roses on crowds at Damascus Citadel’s Summer Syria festival.",
-          "isNew": false,
-          "region": {
-            "id": "SYR-144",
-            "name": "Rif Dimashq",
-            "nameDe": "Gouvernement Rif Dimaschq",
-            "type": "Province",
-            "anchor": [
-              37.009,
-              33.461
-            ],
-            "matched": "Damascus"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
           "title": "Syrian Arab Republic: Protecting food production systems and livestock assets of high-severity food‑insecure households in the northeast I Project update | August 2026",
           "url": "https://reliefweb.int/report/syrian-arab-republic/syrian-arab-republic-protecting-food-production-systems-and-livestock-assets-high-severity-food-insecure-households-northeast-i-project-update-august-2026",
           "date": "2026-08-14T08:03:27.000Z",
@@ -7818,6 +7771,37 @@
           "score": 9
         },
         {
+          "title": "Army drops roses on Syrian crowds in a far cry from war",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/08-16-26-damascus-summer-festival-sv?traffic_source=rss",
+          "date": "2026-08-16T00:50:12.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Syrian army helicopters dropped roses on crowds at Damascus Citadel’s Summer Syria festival.",
+          "isNew": false,
+          "region": {
+            "id": "SYR-144",
+            "name": "Rif Dimashq",
+            "nameDe": "Gouvernement Rif Dimaschq",
+            "type": "Province",
+            "anchor": [
+              37.009,
+              33.461
+            ],
+            "matched": "Damascus"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
           "title": "Israeli Minister warns  with absolute certainty  that Syria could become  next war  ",
           "url": "https://www.azernews.az/region/262436.html",
           "date": "2026-08-15T19:00:00.000Z",
@@ -7902,7 +7886,7 @@
           "score": 0
         }
       ],
-      "itemCount": 35
+      "itemCount": 38
     },
     {
       "id": "iran-israel",
@@ -7930,7 +7914,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 2,
       "signals": [
         {
           "key": "talks",
@@ -7948,7 +7932,7 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 8
+          "count": 7
         },
         {
           "key": "casualties",
@@ -7979,8 +7963,8 @@
             51.831,
             35.568
           ],
-          "count": 10,
-          "newCount": 0,
+          "count": 11,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -8058,55 +8042,65 @@
       ],
       "items": [
         {
-          "title": "Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant",
-          "url": "https://www.aljazeera.com/news/2026/8/18/russia-reports-ukrainian-drone-strike-near-zaporizhzhia-nuclear-plant?traffic_source=rss",
-          "date": "2026-08-18T20:45:42.000Z",
-          "source": "Al Jazeera",
+          "title": "Iranian academic writes of US detention 'hell' over link to 1979 hostage crisis",
+          "url": "https://www.bbc.co.uk/news/articles/cgjeped6ewxo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-19T03:12:06.000Z",
+          "source": "BBC World",
           "sourceType": "news",
-          "summary": "Concern over the security of Europe's largest nuclear plant has been rife since Russia launched its full-scale war.",
-          "isNew": false,
+          "summary": "The immigration status of Maryam Tahmasebi was revoked because her husband is the son of a prominent figure in Iran.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
           },
           "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
           },
-          "score": 26
+          "score": 29
         },
         {
-          "title": "Iran rejects UAE statement on missile launches originating from Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-rejects-uae-statement-missile-launches-originating-iran",
-          "date": "2026-08-18T21:04:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran rejects UAE statement on missile launches originating from Iran Iran's foreign ministry spokesperson Esmaeil Baghaei rejected a statement by the UAE on Tuesday that said Iran was behind missiles launched against the Gulf country a day earlier, saying the&nbsp;\"accusations\" were \"baseless.\" The UAE accused Iran of launching two ballistic missiles at maritime traffic in its territory, and subse",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Trump says no Iran talks planned, insists Strait of Hormuz remains open",
+          "title": "Trump says no Iran talks planned as UAE suspends trade with Tehran",
           "url": "https://www.france24.com/en/middle-east/20260818-trump-says-no-iran-talks-planned-insists-strait-of-hormuz-remains-open",
           "date": "2026-08-18T22:22:09.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "US President Donald Trump said on Tuesday there were no talks planned with Iran and insisted the Strait of Hormuz remained open, despite limited traffic and a reported attack on a ship. Trump also threatened Oman as it sought to broker a shipping agreement with Tehran, regional officials said.",
+          "summary": "US President Donald Trump said Tuesday no talks with Iran were planned and insisted the Strait of Hormuz remained open despite reduced shipping traffic. Oman and Iran neared a deal on the waterway as a projectile struck a vessel, while the UAE said two Iranian ballistic missiles landed in or near its waters.",
           "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 24
+        },
+        {
+          "title": "Iran war live: Trump denies Iran talks, Tehran claims US ‘begging’",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/19/iran-war-live-trump-denies-iran-talks-tehran-claims-us-begging?traffic_source=rss",
+          "date": "2026-08-19T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Trump says no talks with Tehran scheduled; Iranian Foreign Minister Abbas Araghchi claims US 'begging' for negotiations.",
+          "isNew": true,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -8131,44 +8125,65 @@
           "score": 23
         },
         {
+          "title": "Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant",
+          "url": "https://www.aljazeera.com/news/2026/8/18/russia-reports-ukrainian-drone-strike-near-zaporizhzhia-nuclear-plant?traffic_source=rss",
+          "date": "2026-08-18T20:45:42.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Concern over the security of Europe's largest nuclear plant has been rife since Russia launched its full-scale war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 23
+        },
+        {
+          "title": "Iran rejects UAE statement on missile launches originating from Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-rejects-uae-statement-missile-launches-originating-iran",
+          "date": "2026-08-18T21:04:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran rejects UAE statement on missile launches originating from Iran Iran's foreign ministry spokesperson Esmaeil Baghaei rejected a statement by the UAE on Tuesday that said Iran was behind missiles launched against the Gulf country a day earlier, saying the&nbsp;\"accusations\" were \"baseless.\" The UAE accused Iran of launching two ballistic missiles at maritime traffic in its territory, and subse",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 23
+        },
+        {
           "title": "Iran’s top negotiator says Hormuz Strait will remain closed until US abides by MoU",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-top-negotiator-says-hormuz-strait-will-remain-closed-until-us",
           "date": "2026-08-18T23:36:30.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Iran’s top negotiator says Hormuz Strait will remain closed until US abides by MoU Iran’s top negotiator, Mohammad Bagher Ghalibaf, said on Tuesday that the Strait of Hormuz would remain closed until the US meets the commitments stipulated in the memorandum of understanding, including lifting its naval blockade. \"I want to state clearly that the Strait of Hormuz will not be opened until the Americ",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 22
-        },
-        {
-          "title": "Iranian-American comedian Max Amini sparks backlash over 'species' remarks on Iranian people",
-          "url": "https://www.middleeasteye.net/trending/iranian-american-comedian-max-amini-sparks-backlash-over-species-remarks-iranian-people",
-          "date": "2026-08-18T19:37:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian-American comedian Max Amini sparks backlash over 'species' remarks on Iranian people Submitted by MEE staff on Tue, 08/18/2026 - 19:33 Amini told Bill Maher that those fighting the US and Israel are a 'species with no morals', prompting accusations of dehumanisation Max Amini attends the 'Cast Aside The Clouds' Los Angeles premiere at Lumiere Cinema in Beverly Hills, California, on 4 June ",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "score": 22
         },
@@ -8246,6 +8261,58 @@
           "score": 22
         },
         {
+          "title": "Trump threatens to bomb Oman if it ‘gets in the way’ of Iran deal as Kushner meets Netanyahu – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/17/trump-kushner-netanyahu-hamas-gaza-israel-blair-us-iran-hormuz-oil-latest-news-updates",
+          "date": "2026-08-17T16:48:26.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "US president makes threat in comments to Fox News, as his son-in-law meets the Israeli leader in Jerusalem in effort to push Gaza peace plan Trump threatens to bomb Oman if it ‘gets in the way’ of ending Iran war Netanyahu and Kushner talks make no breakthrough on stalled Gaza deal The UN rights chief voiced alarm Monday at the rising civilian toll of escalating hostilities in Yemen , urging restr",
+          "isNew": false,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 19
+        },
+        {
+          "title": "Iranian-American comedian Max Amini sparks backlash over 'species' remarks on Iranian people",
+          "url": "https://www.middleeasteye.net/trending/iranian-american-comedian-max-amini-sparks-backlash-over-species-remarks-iranian-people",
+          "date": "2026-08-18T19:37:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian-American comedian Max Amini sparks backlash over 'species' remarks on Iranian people Submitted by MEE staff on Tue, 08/18/2026 - 19:33 Amini told Bill Maher that those fighting the US and Israel are a 'species with no morals', prompting accusations of dehumanisation Max Amini attends the 'Cast Aside The Clouds' Los Angeles premiere at Lumiere Cinema in Beverly Hills, California, on 4 June ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
           "title": "Damage, crew casualty reported onboard vessel hit in Hormuz Strait, UKMTO says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/damage-crew-casualty-reported-onboard-vessel-hit-hormuz-strait-ukmto",
           "date": "2026-08-18T03:26:01.000Z",
@@ -8264,7 +8331,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Iran's Araghchi says no justification for 'reckless attack' on Iraq’s Kurdish region",
@@ -8295,80 +8362,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
-        },
-        {
-          "title": "US mulls shrinking military footprint in Gulf as a result of war on Iran: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-mulls-shrinking-military-footprint-gulf-result-war-iran-report",
-          "date": "2026-08-18T19:48:00.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US mulls shrinking military footprint in Gulf as a result of war on Iran: Report The Trump administration is examining whether to pull troops out of the Gulf as a result of the US-Israeli&nbsp;war on Iran, with the Pentagon weighing the risks facing large&nbsp;US&nbsp;bases in the region that have come under&nbsp;Iranian&nbsp;drone and missile attack. The evaluation is being led by the Department ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 20
-        },
-        {
-          "title": "Syria opens Assad-era nuclear programme to UN probe",
-          "url": "https://www.aljazeera.com/news/2026/8/18/syria-opens-assad-era-nuclear-programme-to-un-probe?traffic_source=rss",
-          "date": "2026-08-18T21:25:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "UN watchdog reports that it found large amounts of material at undisclosed sites in Syria.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Trump threatens to bomb Oman if it ‘gets in the way’ of Iran deal as Kushner meets Netanyahu – as it happened",
-          "url": "https://www.theguardian.com/world/live/2026/aug/17/trump-kushner-netanyahu-hamas-gaza-israel-blair-us-iran-hormuz-oil-latest-news-updates",
-          "date": "2026-08-17T16:48:26.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "US president makes threat in comments to Fox News, as his son-in-law meets the Israeli leader in Jerusalem in effort to push Gaza peace plan Trump threatens to bomb Oman if it ‘gets in the way’ of ending Iran war Netanyahu and Kushner talks make no breakthrough on stalled Gaza deal The UN rights chief voiced alarm Monday at the rising civilian toll of escalating hostilities in Yemen , urging restr",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Trump threatens to bomb Oman over Strait of Hormuz",
@@ -8715,6 +8709,48 @@
           "score": 18
         },
         {
+          "title": "US mulls shrinking military footprint in Gulf as a result of war on Iran: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-mulls-shrinking-military-footprint-gulf-result-war-iran-report",
+          "date": "2026-08-18T19:48:00.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US mulls shrinking military footprint in Gulf as a result of war on Iran: Report The Trump administration is examining whether to pull troops out of the Gulf as a result of the US-Israeli&nbsp;war on Iran, with the Pentagon weighing the risks facing large&nbsp;US&nbsp;bases in the region that have come under&nbsp;Iranian&nbsp;drone and missile attack. The evaluation is being led by the Department ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 17
+        },
+        {
+          "title": "Syria opens Assad-era nuclear programme to UN probe",
+          "url": "https://www.aljazeera.com/news/2026/8/18/syria-opens-assad-era-nuclear-programme-to-un-probe?traffic_source=rss",
+          "date": "2026-08-18T21:25:06.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "UN watchdog reports that it found large amounts of material at undisclosed sites in Syria.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "'Tons' of nuclear material found at undisclosed Syrian site, IAEA chief says",
           "url": "https://www.france24.com/en/middle-east/20260818-tons-of-nuclear-materials-found-at-undisclosed-syrian-site-iaea-chief-says",
           "date": "2026-08-18T15:50:02.000Z",
@@ -8976,27 +9012,6 @@
           "score": 15
         },
         {
-          "title": "Iranian official warns shipping companies against backing US",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-official-warns-shipping-companies-against-backing-us",
-          "date": "2026-08-18T02:38:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian official warns shipping companies against backing US An Iranian military official has warned that&nbsp;shipping companies involved in \"meeting US military needs\" against the country will face consequences, Nournews reported.&nbsp; \"Iran is closely monitoring the commercial and maritime network supporting US operations, and any company, ship owner, or service provider that knowingly plays a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Vessel hit by ‘unknown projectile’ in Strait of Hormuz, UKMTO says",
           "url": "https://www.aljazeera.com/news/2026/8/18/vessel-hit-by-unknown-projectile-in-strait-of-hormuz-ukmto-says?traffic_source=rss",
           "date": "2026-08-18T06:35:43.000Z",
@@ -9121,6 +9136,27 @@
             "label": "Drohnenangriff"
           },
           "score": 15
+        },
+        {
+          "title": "Iranian official warns shipping companies against backing US",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-official-warns-shipping-companies-against-backing-us",
+          "date": "2026-08-18T02:38:25.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian official warns shipping companies against backing US An Iranian military official has warned that&nbsp;shipping companies involved in \"meeting US military needs\" against the country will face consequences, Nournews reported.&nbsp; \"Iran is closely monitoring the commercial and maritime network supporting US operations, and any company, ship owner, or service provider that knowingly plays a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 11
         },
         {
           "title": "Iran war live: Vessel struck in Strait of Hormuz, crew member injured",
@@ -9864,48 +9900,6 @@
             "label": "Explosion/Anschlag"
           },
           "score": 8
-        },
-        {
-          "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
-          "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
-          "date": "2026-08-14T21:38:17.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Seriousness of remark made in New York on Friday, and whether it signaled new policy ​position, not clear Donald Trump has threatened to declare the strait of Hormuz as “a territory of the United States” as his administration struggles to conclude the war with Iran. During a speech at a police academy on Long Island, New York, on Friday, the US president said he would “pretty soon” designate the w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
-          "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
-          "date": "2026-08-14T21:50:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -9934,7 +9928,7 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 98,
+      "activity": 97,
       "severity": 68,
       "newCount": 0,
       "signals": [
@@ -10065,7 +10059,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "After 44 years , Israel retrieves remains of soldier killed in Lebanon : What to know",
@@ -10566,7 +10560,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Report : Hezbollah rejects US - Arab proposal for ceding Ali al - Taher to army",
@@ -10587,7 +10581,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Hezbollah Threat to Mobilize the Street : Venting Anger or a Pressure Tactic ? ",
@@ -13152,8 +13146,8 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 87,
-      "severity": 65,
+      "activity": 83,
+      "severity": 63,
       "newCount": 0,
       "signals": [
         {
@@ -13333,7 +13327,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 29
+          "score": 22
         },
         {
           "title": "Yemeni forces shoot down Houthi drone in Hadramout",
@@ -13660,6 +13654,27 @@
           "score": 18
         },
         {
+          "title": "Yemen: Türk alarmed by rising civilian toll, urges restraint",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168151",
+          "date": "2026-08-17T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Escalating conflict in Yemen is killing and injuring a growing number of civilians, the UN human rights chief warned on Monday, as Houthi rebels also strike Saudi Arabia and Red Sea shipping linked to the wider Iran–US confrontation.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 16
+        },
+        {
           "title": "Houthis launch sixth ballistic missile at Marib city",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-launch-sixth-ballistic-missile-marib-city",
           "date": "2026-08-16T02:57:38.000Z",
@@ -13688,28 +13703,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 18
-        },
-        {
-          "title": "Yemen: Türk alarmed by rising civilian toll, urges restraint",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168151",
-          "date": "2026-08-17T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Escalating conflict in Yemen is killing and injuring a growing number of civilians, the UN human rights chief warned on Monday, as Houthi rebels also strike Saudi Arabia and Red Sea shipping linked to the wider Iran–US confrontation.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Yemen’s government says Houthi strikes hit residential areas in Marib",
@@ -13847,27 +13841,6 @@
           "score": 15
         },
         {
-          "title": "Yemen’s armed forces say 133 operations carried out against Houthis",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-armed-forces-say-133-operations-carried-out-against-houthis",
-          "date": "2026-08-18T03:20:34.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemen’s armed forces say 133 operations carried out against Houthis Yemen’s armed forces announced that they carried out&nbsp;133 military operations against Houthis over the past day. In a post on X,&nbsp;spokesperson Majed al-Nuzaili said that troops used rocket artillery, field artillery and drone aviation to target Houthi what he called \"sources of threat\". \"The operation was carried out with ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemeni government says Houthi attack on al-Mokha killed four civilians",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-says-houthi-attack-al-mokha-killed-four-civilians",
           "date": "2026-08-15T03:21:07.000Z",
@@ -13971,6 +13944,27 @@
             "label": "Seeangriff"
           },
           "score": 15
+        },
+        {
+          "title": "Yemen’s armed forces say 133 operations carried out against Houthis",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-armed-forces-say-133-operations-carried-out-against-houthis",
+          "date": "2026-08-18T03:20:34.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemen’s armed forces say 133 operations carried out against Houthis Yemen’s armed forces announced that they carried out&nbsp;133 military operations against Houthis over the past day. In a post on X,&nbsp;spokesperson Majed al-Nuzaili said that troops used rocket artillery, field artillery and drone aviation to target Houthi what he called \"sources of threat\". \"The operation was carried out with ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 11
         },
         {
           "title": "US envoy backs Yemen government’s fight against Houthis",
@@ -16082,7 +16076,7 @@
         "Artibonite",
         "Cité Soleil"
       ],
-      "activity": 13,
+      "activity": 12,
       "severity": 58,
       "newCount": 0,
       "signals": [
@@ -16090,7 +16084,7 @@
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 3
+          "count": 2
         },
         {
           "key": "casualties",
@@ -16243,30 +16237,9 @@
             "label": "Vertreibung"
           },
           "score": 0
-        },
-        {
-          "title": "UNHCR Haiti Factsheet, April - June 2026",
-          "url": "https://reliefweb.int/report/haiti/unhcr-haiti-factsheet-april-june-2026",
-          "date": "2026-08-12T00:32:53.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Haiti Source: UN High Commissioner for Refugees Please refer to the attached file. Highlights UNHCR strengthened inter-agency coordination by deploying dedicated protection sta to reinforce capacity and providing temporary support to the Protection Cluster. This has included UNHCR participation in inter-agency field visits in response to recent displacement from Cité Soleil to identify pr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
         }
       ],
-      "itemCount": 7
+      "itemCount": 6
     },
     {
       "id": "burkina-faso",
@@ -16354,7 +16327,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -16449,7 +16422,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Daghestani Islamic singer Khadizha Magomedova attacked at own home by ‘stalker of 2 years’",
@@ -16473,12 +16446,12 @@
           "score": 23
         },
         {
-          "title": "Trump says no Iran talks planned, insists Strait of Hormuz remains open",
+          "title": "Trump says no Iran talks planned as UAE suspends trade with Tehran",
           "url": "https://www.france24.com/en/middle-east/20260818-trump-says-no-iran-talks-planned-insists-strait-of-hormuz-remains-open",
           "date": "2026-08-18T22:22:09.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "US President Donald Trump said on Tuesday there were no talks planned with Iran and insisted the Strait of Hormuz remained open, despite limited traffic and a reported attack on a ship. Trump also threatened Oman as it sought to broker a shipping agreement with Tehran, regional officials said.",
+          "summary": "US President Donald Trump said Tuesday no talks with Iran were planned and insisted the Strait of Hormuz remained open despite reduced shipping traffic. Oman and Iran neared a deal on the waterway as a projectile struck a vessel, while the UAE said two Iranian ballistic missiles landed in or near its waters.",
           "isNew": false,
           "region": null,
           "event": {
@@ -16491,28 +16464,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 22
-        },
-        {
-          "title": "Damage, crew casualty reported onboard vessel hit in Hormuz Strait, UKMTO says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/damage-crew-casualty-reported-onboard-vessel-hit-hormuz-strait-ukmto",
-          "date": "2026-08-18T03:26:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Damage, crew casualty reported onboard vessel hit in Hormuz Strait, UKMTO says The United Kingdom Maritime Trade Operations (UKMTO) received a report on Tuesday that a vessel was&nbsp;struck by an unknown projectile while it was&nbsp;transiting in the&nbsp;Strait of Hormuz. The hit resulted in damage to the engine room as well as&nbsp;crew casualty. Remaining crew are being&nbsp;assisted by the Om",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
+          "score": 20
         },
         {
           "title": "The Indian activist jailed after taking on a luxury hotel plan",
@@ -16521,7 +16473,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "An activist's detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -16563,7 +16515,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Iran’s top negotiator says Hormuz Strait will remain closed until US abides by MoU Iran’s top negotiator, Mohammad Bagher Ghalibaf, said on Tuesday that the Strait of Hormuz would remain closed until the US meets the commitments stipulated in the memorandum of understanding, including lifting its naval blockade. \"I want to state clearly that the Strait of Hormuz will not be opened until the Americ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -16616,6 +16568,27 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 18
+        },
+        {
+          "title": "Damage, crew casualty reported onboard vessel hit in Hormuz Strait, UKMTO says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/damage-crew-casualty-reported-onboard-vessel-hit-hormuz-strait-ukmto",
+          "date": "2026-08-18T03:26:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Damage, crew casualty reported onboard vessel hit in Hormuz Strait, UKMTO says The United Kingdom Maritime Trade Operations (UKMTO) received a report on Tuesday that a vessel was&nbsp;struck by an unknown projectile while it was&nbsp;transiting in the&nbsp;Strait of Hormuz. The hit resulted in damage to the engine room as well as&nbsp;crew casualty. Remaining crew are being&nbsp;assisted by the Om",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 18
         },
@@ -16774,28 +16747,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 16
-        },
-        {
-          "title": "Bondi library removes book How to Sell a Genocide from shelves after complaint",
-          "url": "https://www.theguardian.com/culture/2026/aug/18/sydney-waverley-library-removes-book-how-to-sell-a-genocide-from-shelves-ntwnfb",
-          "date": "2026-08-18T00:55:38.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Author Adam Johnson criticises Waverley council saying ‘reality is often upsetting’ while Palestinian group says libraries should hold ‘challenging’ books Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast A Sydney library has removed a book critical of Israel called How to Sell a Genocide, following a complaint reportedly from a sur",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Trump labels Strait of Hormuz ‘US territory’ as Iran says Israel is biggest obstacle to negotiations",
@@ -16934,27 +16886,6 @@
           "score": 15
         },
         {
-          "title": "Report: Kushner opposes Netanyahu's plans for ongoing targeted killings in Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-kushner-opposes-netanyahus-plans-ongoing-targeted-killings-gaza",
-          "date": "2026-08-18T01:14:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Report: Kushner opposes Netanyahu's plans for ongoing targeted killings in Gaza Israeli Prime Minister Benjamin Netanyahu told US President Donald Trump’s envoy Jared Kushner that the army will continue targeted killings in the Gaza Strip, according to Israeli channel Channel 15. Kushner opposed the continuation of Israeli&nbsp;assassination operations in the besieged enclave, one source was cited",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 15
-        },
-        {
           "title": "Ukraine attacks Russian air base and rocket plant in Samara region",
           "url": "https://www.france24.com/en/europe/20260815-ukraine-attacks-russian-air-base-and-rocket-plant-in-samara-region",
           "date": "2026-08-15T11:43:15.000Z",
@@ -17037,6 +16968,48 @@
             "label": "Bericht"
           },
           "score": 15
+        },
+        {
+          "title": "Bondi library removes book How to Sell a Genocide from shelves after complaint",
+          "url": "https://www.theguardian.com/culture/2026/aug/18/sydney-waverley-library-removes-book-how-to-sell-a-genocide-from-shelves-ntwnfb",
+          "date": "2026-08-18T00:55:38.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Author Adam Johnson criticises Waverley council saying ‘reality is often upsetting’ while Palestinian group says libraries should hold ‘challenging’ books Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast A Sydney library has removed a book critical of Israel called How to Sell a Genocide, following a complaint reportedly from a sur",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Report: Kushner opposes Netanyahu's plans for ongoing targeted killings in Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-kushner-opposes-netanyahus-plans-ongoing-targeted-killings-gaza",
+          "date": "2026-08-18T01:14:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Report: Kushner opposes Netanyahu's plans for ongoing targeted killings in Gaza Israeli Prime Minister Benjamin Netanyahu told US President Donald Trump’s envoy Jared Kushner that the army will continue targeted killings in the Gaza Strip, according to Israeli channel Channel 15. Kushner opposed the continuation of Israeli&nbsp;assassination operations in the besieged enclave, one source was cited",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
         },
         {
           "title": "Iran war live: Vessel struck in Strait of Hormuz, crew member injured",
@@ -17644,7 +17617,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "airstrike",
@@ -17656,7 +17629,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 12
+          "count": 13
         },
         {
           "key": "casualties",
@@ -17722,7 +17695,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Iran rejects UAE statement on missile launches originating from Iran",
@@ -17743,7 +17716,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Houthi ballistic missile hits house near Yemen’s Taiz",
@@ -17764,7 +17737,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 22
         },
         {
           "title": "UAE says Iran fired two ballistic missiles at territory",
@@ -17828,6 +17801,27 @@
             "label": "Raketenangriff"
           },
           "score": 22
+        },
+        {
+          "title": "US-led drills to end six days early, South Korea says, amid Trump push for Kim Jong-un talks",
+          "url": "https://www.theguardian.com/world/2026/aug/19/us-south-korea-army-drills-cut-trump-push-kim-jong-un-talks",
+          "date": "2026-08-19T02:18:25.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "South Korea’s joint chiefs of staff said the Ulchi Freedom Shield exercise would end on 21 August at the request of the US South Korea’s military has confirmed that joint military drills with the US will be cut short, days after Donald Trump ordered the Pentagon to scale back the exercises. In a statement on Wednesday, South Korea’s joint chiefs of staff said at the request of the US side, the Ulc",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 19
         },
         {
           "title": "Trump's North Korea overture triggers fears for US alliances",
@@ -18050,27 +18044,6 @@
           "score": 18
         },
         {
-          "title": "Houthis launch sixth ballistic missile at Marib city",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-launch-sixth-ballistic-missile-marib-city",
-          "date": "2026-08-16T02:57:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Houthis launch sixth ballistic missile at Marib city Houthis have fired a sixth ballistic missile on the Yemeni city of Marib, according to the Marib governorate. In a post on X, the governorate published photos of a crater in the ground as well as the mangled remains of a vehicle.&nbsp; The statement added that ongoing assault “threatens the lives of civilians, displaced persons’ camps, and resid",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "South Korea president calls for military independence in wake of Trump call to cut joint drills",
           "url": "https://www.theguardian.com/world/2026/aug/18/south-korea-president-trump-military-drills-control-opcon-kim-jong-un",
           "date": "2026-08-18T05:50:33.000Z",
@@ -18090,6 +18063,27 @@
             "label": "Bericht"
           },
           "score": 17
+        },
+        {
+          "title": "Houthis launch sixth ballistic missile at Marib city",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-launch-sixth-ballistic-missile-marib-city",
+          "date": "2026-08-16T02:57:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Houthis launch sixth ballistic missile at Marib city Houthis have fired a sixth ballistic missile on the Yemeni city of Marib, according to the Marib governorate. In a post on X, the governorate published photos of a crater in the ground as well as the mangled remains of a vehicle.&nbsp; The statement added that ongoing assault “threatens the lives of civilians, displaced persons’ camps, and resid",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 15
         },
         {
           "title": "South Korea calls for solid US alliance after Trump says 'good relationship' with Kim Jong Un",
@@ -18130,27 +18124,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump says Kim Jong-un has responded to his overtures when asked about scaling back US drills with South Korea – as it happened",
-          "url": "https://www.theguardian.com/us-news/live/2026/aug/17/politics-trump-south-korea-military-pentagon-republicans-democrats",
-          "date": "2026-08-18T01:57:12.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "This blog is now closed. Read more here Sign up for the Breaking News US email Republican senator Thom Tillis deplored Trump’s decision to cut US military drills with South Korea , which comes despite military officials from both countries warning that Kim Jong-un ’s regime is learning new battlefield expertise, including new drone tactics, from assisting Russia with its war in Ukraine . Tillis wr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 15
         },
@@ -18216,6 +18189,27 @@
             "label": "Bericht"
           },
           "score": 14
+        },
+        {
+          "title": "Trump says Kim Jong-un has responded to his overtures when asked about scaling back US drills with South Korea – as it happened",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/17/politics-trump-south-korea-military-pentagon-republicans-democrats",
+          "date": "2026-08-18T01:57:12.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "This blog is now closed. Read more here Sign up for the Breaking News US email Republican senator Thom Tillis deplored Trump’s decision to cut US military drills with South Korea , which comes despite military officials from both countries warning that Kim Jong-un ’s regime is learning new battlefield expertise, including new drone tactics, from assisting Russia with its war in Ukraine . Tillis wr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 11
         },
         {
           "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
@@ -18941,502 +18935,7 @@
           "score": 8
         }
       ],
-      "itemCount": 57
-    },
-    {
-      "id": "pakistan",
-      "name": "Pakistan (TTP / Belutschistan)",
-      "nameEn": "Pakistan – TTP & Balochistan",
-      "region": "Asien (Süd)",
-      "countries": [
-        "Pakistan"
-      ],
-      "lat": 30,
-      "lon": 67.5,
-      "tier": "high",
-      "since": "2007 / Eskalation seit 2022",
-      "parties": [
-        "Pakistanische Armee",
-        "TTP",
-        "BLA",
-        "ISKP",
-        "Afghanistan"
-      ],
-      "background": "Stark gestiegene TTP-Anschläge in Khyber Pakhtunkhwa und BLA-Angriffe in Belutschistan; wiederholte Grenzschläge gegen Afghanistan.",
-      "hotspots": [
-        "Khyber Pakhtunkhwa",
-        "Belutschistan",
-        "Waziristan",
-        "Quetta"
-      ],
-      "activity": 36,
-      "severity": 49,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "PAK",
-      "extraCountries": [
-        "AFG"
-      ],
-      "regions": [
-        {
-          "id": "PAK-1108",
-          "name": "Balochistan",
-          "nameDe": "Belutschistan",
-          "type": "Province",
-          "anchor": [
-            65.869,
-            28.318
-          ],
-          "count": 6,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "PAK-1110",
-          "name": "Islamabad Capital Territory",
-          "nameDe": "Hauptstadtterritorium Islamabad",
-          "type": "Capital Territory",
-          "anchor": [
-            73.085,
-            33.66
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Pakistan top court orders Imran Khan’s hospital transfer amid access battle",
-          "url": "https://www.aljazeera.com/news/2026/8/18/pakistan-top-court-orders-imran-khans-hospital-transfer-amid-access-battle?traffic_source=rss",
-          "date": "2026-08-18T09:15:03.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Supreme Court grants jailed ex-PM transfer to hospital for nearly a month after concerns raised over his blood pressure.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Jon Ossoff blasts ‘draft-dodging, crook president’ in latest war of words with Trump – US politics live",
-          "url": "https://www.theguardian.com/us-news/live/2026/aug/18/donald-trump-florida-alaska-wyoming-primaries-midterms-white-house-ballroom-iran-cnn-latest-news-updates",
-          "date": "2026-08-18T22:47:35.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "The Democratic senator, who is currently running for re-election in Georgia, says Trump ‘has plunged our nation recklessly into a war he knows not how to end or to win’ Sign up for the US Breaking News email President Donald Trump posted an image of a map of the strait of Hormuz on his social media platform Truth Social, with a circle around the strait and the words “New US Territory” as the title",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 18
-        },
-        {
-          "title": "India Tracked Chinese and Turkish Drone Supplies to Pakistan Before Operation Sindoor , Sources Say",
-          "url": "https://idrw.org/india-tracked-chinese-and-turkish-drone-supplies-to-pakistan-before-operation-sindoor-sources-say/",
-          "date": "2026-08-17T17:15:00.000Z",
-          "source": "idrw.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Balochistan CM announces govt jobs for men who helped acid attack victim",
-          "url": "https://www.radio.gov.pk/16-08-2026/balochistan-cm-announces-govt-jobs-for-men-who-helped-acid-attack-victim",
-          "date": "2026-08-16T14:15:00.000Z",
-          "source": "radio.gov.pk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Security Forces Kill Two Terrorists in Balochistan",
-          "url": "https://newsmakers.pk/security-forces-kill-two-terrorists-in-balochistan/",
-          "date": "2026-08-18T19:15:00.000Z",
-          "source": "newsmakers.pk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Balochistan home minister unhurt as convoy comes under attack in Mastung",
-          "url": "https://www.dawn.com/news/2022775/balochistan-home-minister-unhurt-as-convoy-comes-under-attack-in-mastung",
-          "date": "2026-08-14T08:54:57.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "QUETTA: Six people, including three police personnel, were injured in an armed attack on the convoy of Balochistan Home Minister Mir Ziaullah Langove in Mastung on Friday. A senior police official told Dawn that the home minister remained unhurt in the attack, which occurred as his convoy reached the Khad Kocha area of Mastung. He said that Langove was on his way to Quetta from Kalat. The official",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Pakistan – UN envoy warns Taliban support fuels militant threa",
-          "url": "https://www.pakistantoday.com.pk/2026/08/17/pakistan-un-envoy-warns-taliban-support-for-militants-destabilising-region",
-          "date": "2026-08-16T23:45:00.000Z",
-          "source": "pakistantoday.com.pk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact",
-          "url": "https://www.middleeasteye.net/news/emirati-academics-barbed-tweet-pakistan-exposes-uae-unease-over-mecca-pact",
-          "date": "2026-08-16T07:19:35.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Remarks by the political analyst on Pakistan's poverty, illiteracy and nuclear arsenal have sparked online backlash Turkish President Recep Tayyip Erdogan, Saudi Crown Prince Mohammed bin Salman and Pakistani Prime Minister Shehbaz Sharif meet in Mecca on 7 August 2",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Balochistan’s wounds",
-          "url": "https://www.dawn.com/news/2023135/balochistans-wounds",
-          "date": "2026-08-16T03:47:54.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "ALTHOUGH Balochistan has been experiencing varying degrees of tumult for over two decades now, currently, the troubled province is witnessing near-constant terrorist activity and lawlessness. The rulers in both Islamabad and Quetta often downplay the situation, but there are moments when they themselves admit that all is not well in Balochistan. For instance, on Friday, when the nation was celebra",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "‘No no-go areas’ across Balochistan, says Home Minister Langove",
-          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-home-minister-langove",
-          "date": "2026-08-16T03:33:14.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "‘No no-go areas’ across Balochistan, says Langove",
-          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-langove",
-          "date": "2026-08-16T03:26:39.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Pakistan | Joint IOM and UNHCR border monitoring report on inflows from the Islamic republic of Iran #18 (1 March - 6 August 2026)",
-          "url": "https://reliefweb.int/report/pakistan/pakistan-joint-iom-and-unhcr-border-monitoring-report-inflows-islamic-republic-iran-18-1-march-6-august-2026",
-          "date": "2026-08-13T04:03:09.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Pakistan, Iran (Islamic Republic of) Sources: International Organization for Migration, UN High Commissioner for Refugees Please refer to the attached Infographic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
-          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
-          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
-          "date": "2026-08-15T11:12:08.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "Pakistan's leadership stresses need for unity, reforms as nation celebrates Independence Day",
-          "url": "https://www.dawn.com/news/2022742/pakistans-leadership-stresses-need-for-unity-reforms-as-nation-celebrates-independence-day",
-          "date": "2026-08-14T18:23:04.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Pakistan’s civilian and military leadership has stressed the need for unity and reforms as the nation celebrates 79 years of independence today. According to state-run Radio Pakistan , the day dawned with a 31-gun salute in Islamabad and a 21-gun salute at the provincial headquarters. A change of guards ceremony was also held at the mausoleum of Quaid-i-Azam Mohammad Ali Jinnah in Karachi. Flag ho",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1110",
-            "name": "Islamabad Capital Territory",
-            "nameDe": "Hauptstadtterritorium Islamabad",
-            "type": "Capital Territory",
-            "anchor": [
-              73.085,
-              33.66
-            ],
-            "matched": "Islamabad"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Afghan soil being used against Pakistan, Naqvi tells Norway FM as two discuss counterterrorism cooperation",
-          "url": "https://www.dawn.com/news/2022764/afghan-soil-being-used-against-pakistan-naqvi-tells-norway-fm-as-two-discuss-counterterrorism-cooperation",
-          "date": "2026-08-14T07:19:39.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Interior Minister Mohsin Naqvi on Friday met with Norwegian Foreign Minister Espen Barth Eide, where the two sides discussed counterterrorism cooperation, particularly the use of Afghan soil in terror attacks against Pakistan. Eide arrived in Pakistan a day earlier on a two-day visit — the first by a Norwegian foreign minister in a decade. According to a handout issued by the interior ministry, th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Pakistan: UNHCR-IOM Flash update #106 Arrest and detention by years - Key findings and limitations 15 Sep 2023 to 8 Aug 2026",
-          "url": "https://reliefweb.int/report/pakistan/unhcr-iom-flash-update-106-arrest-and-detention-years-key-findings-and-limitations-15-sep-2023-8-aug-2026",
-          "date": "2026-08-13T12:03:09.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Countries: Pakistan, Afghanistan Source: UN High Commissioner for Refugees Please refer to the attached file. Introduction Prior to 2023, there was no data collected on the arrest and detention of ACC holders or undocumented Afghan nationals. Since January 2023, IOM has started to collect this data. The figures, particularly of undocumented Afghan nationals, should be considered underreported. • D",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 0
-        }
-      ],
-      "itemCount": 16
+      "itemCount": 58
     },
     {
       "id": "somalia",
@@ -19838,6 +19337,501 @@
       "itemCount": 12
     },
     {
+      "id": "pakistan",
+      "name": "Pakistan (TTP / Belutschistan)",
+      "nameEn": "Pakistan – TTP & Balochistan",
+      "region": "Asien (Süd)",
+      "countries": [
+        "Pakistan"
+      ],
+      "lat": 30,
+      "lon": 67.5,
+      "tier": "high",
+      "since": "2007 / Eskalation seit 2022",
+      "parties": [
+        "Pakistanische Armee",
+        "TTP",
+        "BLA",
+        "ISKP",
+        "Afghanistan"
+      ],
+      "background": "Stark gestiegene TTP-Anschläge in Khyber Pakhtunkhwa und BLA-Angriffe in Belutschistan; wiederholte Grenzschläge gegen Afghanistan.",
+      "hotspots": [
+        "Khyber Pakhtunkhwa",
+        "Belutschistan",
+        "Waziristan",
+        "Quetta"
+      ],
+      "activity": 33,
+      "severity": 48,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "PAK",
+      "extraCountries": [
+        "AFG"
+      ],
+      "regions": [
+        {
+          "id": "PAK-1108",
+          "name": "Balochistan",
+          "nameDe": "Belutschistan",
+          "type": "Province",
+          "anchor": [
+            65.869,
+            28.318
+          ],
+          "count": 6,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "PAK-1110",
+          "name": "Islamabad Capital Territory",
+          "nameDe": "Hauptstadtterritorium Islamabad",
+          "type": "Capital Territory",
+          "anchor": [
+            73.085,
+            33.66
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Pakistan top court orders Imran Khan’s hospital transfer amid access battle",
+          "url": "https://www.aljazeera.com/news/2026/8/18/pakistan-top-court-orders-imran-khans-hospital-transfer-amid-access-battle?traffic_source=rss",
+          "date": "2026-08-18T09:15:03.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Supreme Court grants jailed ex-PM transfer to hospital for nearly a month after concerns raised over his blood pressure.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Jon Ossoff blasts ‘draft-dodging, crook president’ in latest war of words with Trump – US politics live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/18/donald-trump-florida-alaska-wyoming-primaries-midterms-white-house-ballroom-iran-cnn-latest-news-updates",
+          "date": "2026-08-18T22:47:35.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "The Democratic senator, who is currently running for re-election in Georgia, says Trump ‘has plunged our nation recklessly into a war he knows not how to end or to win’ Sign up for the US Breaking News email President Donald Trump posted an image of a map of the strait of Hormuz on his social media platform Truth Social, with a circle around the strait and the words “New US Territory” as the title",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 18
+        },
+        {
+          "title": "India Tracked Chinese and Turkish Drone Supplies to Pakistan Before Operation Sindoor , Sources Say",
+          "url": "https://idrw.org/india-tracked-chinese-and-turkish-drone-supplies-to-pakistan-before-operation-sindoor-sources-say/",
+          "date": "2026-08-17T17:15:00.000Z",
+          "source": "idrw.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Balochistan CM announces govt jobs for men who helped acid attack victim",
+          "url": "https://www.radio.gov.pk/16-08-2026/balochistan-cm-announces-govt-jobs-for-men-who-helped-acid-attack-victim",
+          "date": "2026-08-16T14:15:00.000Z",
+          "source": "radio.gov.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Security Forces Kill Two Terrorists in Balochistan",
+          "url": "https://newsmakers.pk/security-forces-kill-two-terrorists-in-balochistan/",
+          "date": "2026-08-18T19:15:00.000Z",
+          "source": "newsmakers.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Balochistan home minister unhurt as convoy comes under attack in Mastung",
+          "url": "https://www.dawn.com/news/2022775/balochistan-home-minister-unhurt-as-convoy-comes-under-attack-in-mastung",
+          "date": "2026-08-14T08:54:57.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "QUETTA: Six people, including three police personnel, were injured in an armed attack on the convoy of Balochistan Home Minister Mir Ziaullah Langove in Mastung on Friday. A senior police official told Dawn that the home minister remained unhurt in the attack, which occurred as his convoy reached the Khad Kocha area of Mastung. He said that Langove was on his way to Quetta from Kalat. The official",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Pakistan – UN envoy warns Taliban support fuels militant threa",
+          "url": "https://www.pakistantoday.com.pk/2026/08/17/pakistan-un-envoy-warns-taliban-support-for-militants-destabilising-region",
+          "date": "2026-08-16T23:45:00.000Z",
+          "source": "pakistantoday.com.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact",
+          "url": "https://www.middleeasteye.net/news/emirati-academics-barbed-tweet-pakistan-exposes-uae-unease-over-mecca-pact",
+          "date": "2026-08-16T07:19:35.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Remarks by the political analyst on Pakistan's poverty, illiteracy and nuclear arsenal have sparked online backlash Turkish President Recep Tayyip Erdogan, Saudi Crown Prince Mohammed bin Salman and Pakistani Prime Minister Shehbaz Sharif meet in Mecca on 7 August 2",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Balochistan’s wounds",
+          "url": "https://www.dawn.com/news/2023135/balochistans-wounds",
+          "date": "2026-08-16T03:47:54.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "ALTHOUGH Balochistan has been experiencing varying degrees of tumult for over two decades now, currently, the troubled province is witnessing near-constant terrorist activity and lawlessness. The rulers in both Islamabad and Quetta often downplay the situation, but there are moments when they themselves admit that all is not well in Balochistan. For instance, on Friday, when the nation was celebra",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Pakistan | Joint IOM and UNHCR border monitoring report on inflows from the Islamic republic of Iran #18 (1 March - 6 August 2026)",
+          "url": "https://reliefweb.int/report/pakistan/pakistan-joint-iom-and-unhcr-border-monitoring-report-inflows-islamic-republic-iran-18-1-march-6-august-2026",
+          "date": "2026-08-13T04:03:09.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Pakistan, Iran (Islamic Republic of) Sources: International Organization for Migration, UN High Commissioner for Refugees Please refer to the attached Infographic.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 9
+        },
+        {
+          "title": "‘No no-go areas’ across Balochistan, says Home Minister Langove",
+          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-home-minister-langove",
+          "date": "2026-08-16T03:33:14.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "‘No no-go areas’ across Balochistan, says Langove",
+          "url": "https://www.dawn.com/news/2023162/no-no-go-areas-across-balochistan-says-langove",
+          "date": "2026-08-16T03:26:39.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "QUETTA: Balochistan Home Minister Mir Ziaullah Langove has said there were no “no-go areas” in the province, though terrorists remained active along the Quetta-Karachi national highway and security forces were conducting operations against them. Speaking at a press conference here on Saturday, Mr Langove accused armed groups of carrying out terrorism and extortion in the name of an “independence s",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
+          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
+          "date": "2026-08-15T11:12:08.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 8
+        },
+        {
+          "title": "Pakistan's leadership stresses need for unity, reforms as nation celebrates Independence Day",
+          "url": "https://www.dawn.com/news/2022742/pakistans-leadership-stresses-need-for-unity-reforms-as-nation-celebrates-independence-day",
+          "date": "2026-08-14T18:23:04.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Pakistan’s civilian and military leadership has stressed the need for unity and reforms as the nation celebrates 79 years of independence today. According to state-run Radio Pakistan , the day dawned with a 31-gun salute in Islamabad and a 21-gun salute at the provincial headquarters. A change of guards ceremony was also held at the mausoleum of Quaid-i-Azam Mohammad Ali Jinnah in Karachi. Flag ho",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Afghan soil being used against Pakistan, Naqvi tells Norway FM as two discuss counterterrorism cooperation",
+          "url": "https://www.dawn.com/news/2022764/afghan-soil-being-used-against-pakistan-naqvi-tells-norway-fm-as-two-discuss-counterterrorism-cooperation",
+          "date": "2026-08-14T07:19:39.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Interior Minister Mohsin Naqvi on Friday met with Norwegian Foreign Minister Espen Barth Eide, where the two sides discussed counterterrorism cooperation, particularly the use of Afghan soil in terror attacks against Pakistan. Eide arrived in Pakistan a day earlier on a two-day visit — the first by a Norwegian foreign minister in a decade. According to a handout issued by the interior ministry, th",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Pakistan: UNHCR-IOM Flash update #106 Arrest and detention by years - Key findings and limitations 15 Sep 2023 to 8 Aug 2026",
+          "url": "https://reliefweb.int/report/pakistan/unhcr-iom-flash-update-106-arrest-and-detention-years-key-findings-and-limitations-15-sep-2023-8-aug-2026",
+          "date": "2026-08-13T12:03:09.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Countries: Pakistan, Afghanistan Source: UN High Commissioner for Refugees Please refer to the attached file. Introduction Prior to 2023, there was no data collected on the arrest and detention of ACC holders or undocumented Afghan nationals. Since January 2023, IOM has started to collect this data. The figures, particularly of undocumented Afghan nationals, should be considered underreported. • D",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 0
+        }
+      ],
+      "itemCount": 16
+    },
+    {
       "id": "india-pakistan",
       "name": "Indien–Pakistan / Kaschmir",
       "nameEn": "India–Pakistan / Kashmir",
@@ -19863,7 +19857,7 @@
       ],
       "activity": 21,
       "severity": 45,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -19997,7 +19991,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "An activist's detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -20261,7 +20255,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "National Liberation Army (ELN)",
@@ -21401,7 +21395,7 @@
         "Karibik",
         "Caracas"
       ],
-      "activity": 12,
+      "activity": 11,
       "severity": 42,
       "newCount": 0,
       "signals": [
@@ -21614,30 +21608,9 @@
             "label": "Bericht"
           },
           "score": 0
-        },
-        {
-          "title": "UNFPA Situation Report: Earthquakes in Venezuela (24 June – 7 August 2026)",
-          "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/unfpa-situation-report-earthquakes-venezuela-24-june-7-august-2026",
-          "date": "2026-08-12T03:07:27.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Venezuela (Bolivarian Republic of) Source: United Nations Population Fund Please refer to the attached file. Venezuela continues to face significant humanitarian needs following the earthquakes of 24 June 2026. The most urgent needs among affected populations include healthcare, including sexual and reproductive health (SRH); food and safe water; mental health and psychosocial support; sh",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 0
         }
       ],
-      "itemCount": 10
+      "itemCount": 9
     },
     {
       "id": "south-sudan",
@@ -21914,7 +21887,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Russian missile strike kills 10 civilians in Kharkiv",
@@ -21934,27 +21907,6 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
-          "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T12:36:11.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 23
         },
@@ -21978,6 +21930,27 @@
             "label": "Drohnenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
+          "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T12:36:11.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
         },
         {
           "title": "‘Our task is to laugh at these enemies’: the Ukrainian unit posting drone videos of Russian soldiers’ last moments",
@@ -22768,7 +22741,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Russian missile strike kills 10 civilians in Kharkiv",
@@ -22788,27 +22761,6 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
-          "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T12:36:11.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 23
         },
@@ -22832,6 +22784,27 @@
             "label": "Drohnenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
+          "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T12:36:11.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
         },
         {
           "title": "‘Our task is to laugh at these enemies’: the Ukrainian unit posting drone videos of Russian soldiers’ last moments",
@@ -23754,8 +23727,8 @@
         "Erbil",
         "Diyala"
       ],
-      "activity": 45,
-      "severity": 36,
+      "activity": 42,
+      "severity": 35,
       "newCount": 0,
       "signals": [
         {
@@ -23896,7 +23869,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Iraq, Iran discuss drone attack on Kurdish PM's office",
@@ -24154,10 +24127,16 @@
         "Kandil",
         "Nordsyrien"
       ],
-      "activity": 35,
-      "severity": 33,
-      "newCount": 0,
+      "activity": 42,
+      "severity": 35,
+      "newCount": 2,
       "signals": [
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
         {
           "key": "escalation",
           "label": "Eskalation",
@@ -24228,6 +24207,48 @@
       ],
       "items": [
         {
+          "title": "Middle East live: Turkey rejects Israeli claims after strike on Syria air base",
+          "url": "https://www.france24.com/en/middle-east/20260819-middle-east-live-turkey-rejects-israeli-claims-after-strike-on-syria-air-base",
+          "date": "2026-08-19T03:05:51.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey rejected on Wednesday Israeli allegations that it posed a threat by preparing to send troops to a base in Syria, which was hit in a strike that the United States blamed on Israel. Follow our liveblog for the latest developments.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
+          "title": "Turkey denies Israeli claims of posing a threat, says Netanyahu seeks to justify Syria strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-denies-israeli-claims-posing-threat",
+          "date": "2026-08-19T00:09:12.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey denies Israeli claims of posing a threat, says Netanyahu seeks to justify Syria strikes Turkey has denied Israeli allegations that it posed a threat by preparing to send troops to a base in Syria. \"The frivolous allegations put forward by the Israeli Prime Minister's office aim to legitimize Israel's unlawful airstrikes targeting Syria's sovereignty and territorial integrity,\" Turkey's Comm",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
           "title": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-syria-acceptance-turkish-troops-posed-threat",
           "date": "2026-08-18T21:17:40.000Z",
@@ -24246,7 +24267,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Turkey condemns Israeli air strikes on Syrian base",
@@ -24288,28 +24309,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
-        },
-        {
-          "title": "Turkish politician Melih Meric stabbed",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/turkish-politician-melih-meric-stabbed?traffic_source=rss",
-          "date": "2026-08-18T19:51:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Footage shows the moment Turkish New Party MP Melih Meric got into an argument with a man who stabbed him.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Iraq, Iran discuss drone attack on Kurdish PM's office",
@@ -24383,6 +24383,27 @@
             "label": "Drohnenangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Turkish politician Melih Meric stabbed",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/turkish-politician-melih-meric-stabbed?traffic_source=rss",
+          "date": "2026-08-18T19:51:17.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Footage shows the moment Turkish New Party MP Melih Meric got into an argument with a man who stabbed him.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Sudan: Turkish Defense Minister Receives Sudanese Army Chief of Staff",
@@ -24479,7 +24500,7 @@
           "score": 9
         }
       ],
-      "itemCount": 11
+      "itemCount": 13
     },
     {
       "id": "west-papua",
@@ -24504,21 +24525,21 @@
         "Intan Jaya",
         "Timika"
       ],
-      "activity": 26,
-      "severity": 30,
-      "newCount": 0,
+      "activity": 30,
+      "severity": 31,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 8
+          "count": 9
         },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 1
+          "count": 2
         },
         {
           "key": "sanctions",
@@ -24580,7 +24601,28 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 22
+        },
+        {
+          "title": "Al Jazeera reports from Indonesia’s quake zone, desperate for help",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/al-jazeera-reports-from-indonesias-quake-zone-desperate-for-help?traffic_source=rss",
+          "date": "2026-08-18T23:59:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Thousands are still displaced on Indonesia’s Flores Island after a 7.7-magnitude earthquake killed at least 70 people.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 19
         },
         {
           "title": "Photos: Indonesia earthquake rescue efforts continue as death toll hits 68",
@@ -24877,7 +24919,7 @@
           "score": 8
         }
       ],
-      "itemCount": 15
+      "itemCount": 16
     },
     {
       "id": "libya",
@@ -25178,170 +25220,6 @@
       "itemCount": 12
     },
     {
-      "id": "south-china-sea",
-      "name": "Südchinesisches Meer",
-      "nameEn": "South China Sea",
-      "region": "Asien (Südost)",
-      "countries": [
-        "Philippines"
-      ],
-      "lat": 12,
-      "lon": 116,
-      "tier": "medium",
-      "since": "laufende Spannungen",
-      "parties": [
-        "China",
-        "Philippinen",
-        "Vietnam",
-        "USA"
-      ],
-      "background": "Wiederholte Zusammenstöße zwischen chinesischer Küstenwache und philippinischen Schiffen an Second Thomas Shoal und Scarborough Shoal.",
-      "hotspots": [
-        "Second Thomas Shoal",
-        "Scarborough Shoal",
-        "Spratly-Inseln"
-      ],
-      "activity": 14,
-      "severity": 27,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "PHL",
-      "extraCountries": [
-        "CHN"
-      ],
-      "regions": [
-        {
-          "id": "PHL-4932",
-          "name": "Zamboanga Peninsula",
-          "nameDe": "Zamboanga Peninsula",
-          "type": "Highly Urbanized City",
-          "anchor": [
-            122.136,
-            7.149
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Student killed in Philippines Catholic school shooting",
-          "url": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T03:43:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The alleged shooter, also a student, later took his own life.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Two students killed in Philippines school shooting",
-          "url": "https://www.aljazeera.com/news/2026/8/18/two-killed-as-gunman-opens-fire-at-philippines-high-school-official-says?traffic_source=rss",
-          "date": "2026-08-18T02:51:22.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Mayor Khymer Adan Olaso says the casualties in Zamboanga were both students and included the gunman.",
-          "isNew": false,
-          "region": {
-            "id": "PHL-4932",
-            "name": "Zamboanga Peninsula",
-            "nameDe": "Zamboanga Peninsula",
-            "type": "Highly Urbanized City",
-            "anchor": [
-              122.136,
-              7.149
-            ],
-            "matched": "Zamboanga"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "US Navy destroyer adrift in South China Sea for four days after losing power",
-          "url": "https://www.theguardian.com/us-news/2026/aug/17/us-navy-destroyer-south-china-sea",
-          "date": "2026-08-17T21:01:20.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "USS Benfold lost power after ‘engineering casualty’ leaving sailors without galley services, toilets and air conditioning A US guided-missile destroyer reportedly spent four days adrift and without power in the South China Sea in July, furthering concerns about strain being placed on deployed military members. The USS Benfold, an Arleigh Burke-class guided-missile destroyer which had been sailing ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "USS Benfold lost power in South China Sea , leaving crew of the US Navy warship without toilets , hot food and AC for 4 days",
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/uss-benfold-lost-power-in-south-china-sea-leaving-crew-of-the-us-navy-warship-without-toilets-hot-food-and-ac-for-4-days/articleshow/133296597.cms",
-          "date": "2026-08-17T12:45:00.000Z",
-          "source": "economictimes.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        }
-      ],
-      "itemCount": 4
-    },
-    {
       "id": "mozambique",
       "name": "Mosambik / Cabo Delgado",
       "nameEn": "Mozambique – Cabo Delgado",
@@ -25575,6 +25453,170 @@
         }
       ],
       "itemCount": 6
+    },
+    {
+      "id": "south-china-sea",
+      "name": "Südchinesisches Meer",
+      "nameEn": "South China Sea",
+      "region": "Asien (Südost)",
+      "countries": [
+        "Philippines"
+      ],
+      "lat": 12,
+      "lon": 116,
+      "tier": "medium",
+      "since": "laufende Spannungen",
+      "parties": [
+        "China",
+        "Philippinen",
+        "Vietnam",
+        "USA"
+      ],
+      "background": "Wiederholte Zusammenstöße zwischen chinesischer Küstenwache und philippinischen Schiffen an Second Thomas Shoal und Scarborough Shoal.",
+      "hotspots": [
+        "Second Thomas Shoal",
+        "Scarborough Shoal",
+        "Spratly-Inseln"
+      ],
+      "activity": 12,
+      "severity": 26,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "PHL",
+      "extraCountries": [
+        "CHN"
+      ],
+      "regions": [
+        {
+          "id": "PHL-4932",
+          "name": "Zamboanga Peninsula",
+          "nameDe": "Zamboanga Peninsula",
+          "type": "Highly Urbanized City",
+          "anchor": [
+            122.136,
+            7.149
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Student killed in Philippines Catholic school shooting",
+          "url": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T03:43:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The alleged shooter, also a student, later took his own life.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Two students killed in Philippines school shooting",
+          "url": "https://www.aljazeera.com/news/2026/8/18/two-killed-as-gunman-opens-fire-at-philippines-high-school-official-says?traffic_source=rss",
+          "date": "2026-08-18T02:51:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Mayor Khymer Adan Olaso says the casualties in Zamboanga were both students and included the gunman.",
+          "isNew": false,
+          "region": {
+            "id": "PHL-4932",
+            "name": "Zamboanga Peninsula",
+            "nameDe": "Zamboanga Peninsula",
+            "type": "Highly Urbanized City",
+            "anchor": [
+              122.136,
+              7.149
+            ],
+            "matched": "Zamboanga"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "US Navy destroyer adrift in South China Sea for four days after losing power",
+          "url": "https://www.theguardian.com/us-news/2026/aug/17/us-navy-destroyer-south-china-sea",
+          "date": "2026-08-17T21:01:20.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "USS Benfold lost power after ‘engineering casualty’ leaving sailors without galley services, toilets and air conditioning A US guided-missile destroyer reportedly spent four days adrift and without power in the South China Sea in July, furthering concerns about strain being placed on deployed military members. The USS Benfold, an Arleigh Burke-class guided-missile destroyer which had been sailing ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 11
+        },
+        {
+          "title": "USS Benfold lost power in South China Sea , leaving crew of the US Navy warship without toilets , hot food and AC for 4 days",
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/uss-benfold-lost-power-in-south-china-sea-leaving-crew-of-the-us-navy-warship-without-toilets-hot-food-and-ac-for-4-days/articleshow/133296597.cms",
+          "date": "2026-08-17T12:45:00.000Z",
+          "source": "economictimes.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        }
+      ],
+      "itemCount": 4
     },
     {
       "id": "ecuador",
@@ -26151,6 +26193,117 @@
       "itemCount": 2
     },
     {
+      "id": "rohingya-bangladesh",
+      "name": "Bangladesch / Rohingya-Krise",
+      "nameEn": "Bangladesh & Rohingya",
+      "region": "Asien (Süd)",
+      "countries": [
+        "Bangladesh"
+      ],
+      "lat": 21.4,
+      "lon": 92.2,
+      "tier": "medium",
+      "since": "2017",
+      "parties": [
+        "Bangladesch",
+        "Rohingya-Flüchtlinge",
+        "ARSA/RSO",
+        "Arakan Army",
+        "Myanmar"
+      ],
+      "background": "Über eine Million Rohingya in Cox's Bazar bei sinkender Finanzierung; Gewalt in den Lagern und Grenzspannungen mit der Arakan Army.",
+      "hotspots": [
+        "Cox's Bazar",
+        "Teknaf",
+        "Naf-Fluss",
+        "Grenze zu Rakhine"
+      ],
+      "activity": 6,
+      "severity": 24,
+      "newCount": 1,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "BGD",
+      "extraCountries": [
+        "MMR"
+      ],
+      "regions": [
+        {
+          "id": "MMR-3273",
+          "name": "Rakhine State",
+          "nameDe": "Rakhaing-Staat",
+          "type": "State",
+          "anchor": [
+            93.744,
+            19.742
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Bangladesh long battle against yaba pills",
+          "url": "https://theweek.com/health/bangladeshs-long-battle-against-yaba-pills",
+          "date": "2026-08-18T23:30:00.000Z",
+          "source": "theweek.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
+          "title": "Rohingya Muslims face violence in Myanmar Rakhine State – Shafaqna English | International Shia News & Fatwas",
+          "url": "https://en.shafaqna.com/471190/rohingya-muslims-face-violence-in-myanmars-rakhine-state/",
+          "date": "2026-08-15T20:00:00.000Z",
+          "source": "en.shafaqna.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Rakhine State"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 2
+    },
+    {
       "id": "car",
       "name": "Zentralafrikanische Republik",
       "nameEn": "Central African Republic",
@@ -26371,96 +26524,6 @@
             "label": "Bericht"
           },
           "score": 11
-        }
-      ],
-      "itemCount": 1
-    },
-    {
-      "id": "rohingya-bangladesh",
-      "name": "Bangladesch / Rohingya-Krise",
-      "nameEn": "Bangladesh & Rohingya",
-      "region": "Asien (Süd)",
-      "countries": [
-        "Bangladesh"
-      ],
-      "lat": 21.4,
-      "lon": 92.2,
-      "tier": "medium",
-      "since": "2017",
-      "parties": [
-        "Bangladesch",
-        "Rohingya-Flüchtlinge",
-        "ARSA/RSO",
-        "Arakan Army",
-        "Myanmar"
-      ],
-      "background": "Über eine Million Rohingya in Cox's Bazar bei sinkender Finanzierung; Gewalt in den Lagern und Grenzspannungen mit der Arakan Army.",
-      "hotspots": [
-        "Cox's Bazar",
-        "Teknaf",
-        "Naf-Fluss",
-        "Grenze zu Rakhine"
-      ],
-      "activity": 1,
-      "severity": 23,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "BGD",
-      "extraCountries": [
-        "MMR"
-      ],
-      "regions": [
-        {
-          "id": "MMR-3273",
-          "name": "Rakhine State",
-          "nameDe": "Rakhaing-Staat",
-          "type": "State",
-          "anchor": [
-            93.744,
-            19.742
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Rohingya Muslims face violence in Myanmar Rakhine State – Shafaqna English | International Shia News & Fatwas",
-          "url": "https://en.shafaqna.com/471190/rohingya-muslims-face-violence-in-myanmars-rakhine-state/",
-          "date": "2026-08-15T20:00:00.000Z",
-          "source": "en.shafaqna.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Rakhine State"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
       "itemCount": 1
