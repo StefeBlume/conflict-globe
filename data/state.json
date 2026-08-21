@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-21T22:05:41.463Z",
-  "durationSec": 407,
+  "generatedAt": "2026-08-21T23:08:47.200Z",
+  "durationSec": 439,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -115,27 +115,31 @@
     ],
     "gdelt": {
       "ok": 4,
-      "failed": 5,
-      "skipped": 7,
+      "failed": 6,
+      "skipped": 6,
       "errors": [
         {
           "id": "burkina-faso",
           "error": "fetch failed"
         },
         {
-          "id": "sahel-mali",
+          "id": "haiti",
           "error": "fetch failed"
         },
         {
-          "id": "west-papua",
+          "id": "colombia",
           "error": "fetch failed"
         },
         {
-          "id": "sinai-egypt",
-          "error": "fetch failed"
+          "id": "india-pakistan",
+          "error": "HTTP 429"
         },
         {
-          "id": "turkey-pkk",
+          "id": "cameroon",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "drc-m23",
           "error": "HTTP 429"
         }
       ]
@@ -144,8 +148,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1213,
-    "newArticles": 3
+    "articles": 1207,
+    "newArticles": 5
   },
   "conflicts": [
     {
@@ -177,19 +181,19 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 4,
       "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 23
-        },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 22
+          "count": 23
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 21
         },
         {
           "key": "offensive",
@@ -235,11 +239,11 @@
             50.29
           ],
           "count": 18,
-          "newCount": 0,
+          "newCount": 1,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           }
         },
         {
@@ -251,7 +255,7 @@
             37.665,
             55.668
           ],
-          "count": 16,
+          "count": 14,
           "newCount": 0,
           "event": {
             "type": "drone",
@@ -294,23 +298,6 @@
           }
         },
         {
-          "id": "RUS-2370",
-          "name": "Belgorod",
-          "nameDe": "Belgorod",
-          "type": "Region",
-          "anchor": [
-            37.473,
-            50.664
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          }
-        },
-        {
           "id": "RUS-2303",
           "name": "Republic of Ingushetia",
           "nameDe": "Inguschetien",
@@ -325,6 +312,23 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          }
+        },
+        {
+          "id": "UKR-4827",
+          "name": "Kherson",
+          "nameDe": "Cherson",
+          "type": "Oblast'",
+          "anchor": [
+            33.604,
+            46.67
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           }
         },
         {
@@ -345,20 +349,20 @@
           }
         },
         {
-          "id": "UKR-4827",
-          "name": "Kherson",
-          "nameDe": "Cherson",
-          "type": "Oblast'",
+          "id": "RUS-2370",
+          "name": "Belgorod",
+          "nameDe": "Belgorod",
+          "type": "Region",
           "anchor": [
-            33.604,
-            46.67
+            37.473,
+            50.664
           ],
           "count": 1,
           "newCount": 0,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           }
         }
       ],
@@ -416,6 +420,37 @@
           "score": 33
         },
         {
+          "title": "Russian airstrike kills 16 in Kyiv ; Zelenskyy demands Patriots",
+          "url": "http://www.californiatelegraph.com/news/279254643/zelenskyy-says-air-defense-delays-cost-lives-as-russia-bombs-kyiv",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "californiatelegraph.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 33
+        },
+        {
           "title": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
           "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T19:49:56.000Z",
@@ -435,6 +470,48 @@
             "label": "Drohnenangriff"
           },
           "score": 32
+        },
+        {
+          "title": "Russian strike kills at least 15 at shopping centre in Zelensky home city",
+          "url": "https://www.newsandstar.co.uk/news/national/26486438.russian-strike-kills-least-15-shopping-centre-zelenskys-home-city/",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "newsandstar.co.uk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 30
+        },
+        {
+          "title": "14 killed , over 100 injured in Russian drone strike on Kryvyi Rih shopping mall : Zelenskyy",
+          "url": "http://www.russiaherald.com/news/279256987/14-killed-over-100-injured-in-russian-drone-strike-on-kryvyi-rih-shopping-mall-zelenskyy",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "russiaherald.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 30
         },
         {
           "title": "Russian missiles kill 17 more in Ukraine as Guterres calls for ceasefire",
@@ -487,6 +564,27 @@
             "label": "Drohnenangriff"
           },
           "score": 28
+        },
+        {
+          "title": "Japan protests Russian missile tests off disputed islands",
+          "url": "https://japantoday.com/category/politics/japan-protests-russian-missile-tests-off-disputed-islands",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "japantoday.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 27
         },
         {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
@@ -582,37 +680,6 @@
           "score": 22
         },
         {
-          "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
-          "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack",
-          "date": "2026-08-20T22:15:02.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Missile and drone attack one of heaviest since war began, with children’s hospital and residential areas hit A heavy Russian missile and drone bombardment has killed at least 16 people in and around Kyiv in one of the most intense aerial attacks on Ukraine’s capital since the start of the war. Vitali Klitschko, the city’s mayor, said homes, a school and a children’s medical centre were among the b",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
           "title": "Russian Despatch: Kremlin’s Policy Inertia Exposed by Zelensky’s Belgrade Visit",
           "url": "https://balkaninsight.com/2026/08/20/russian-despatch-kremlins-policy-inertia-exposed-by-zelenskys-belgrade-visit/bi/",
           "date": "2026-08-20T06:21:58.000Z",
@@ -642,37 +709,6 @@
             "label": "Bericht"
           },
           "score": 21
-        },
-        {
-          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:26:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 20
         },
         {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
@@ -810,54 +846,33 @@
           "score": 18
         },
         {
-          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
-          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
-          "date": "2026-08-21T16:53:57.000Z",
-          "source": "Al Jazeera",
+          "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
+          "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack",
+          "date": "2026-08-20T22:15:02.000Z",
+          "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "summary": "Missile and drone attack one of heaviest since war began, with children’s hospital and residential areas hit A heavy Russian missile and drone bombardment has killed at least 16 people in and around Kyiv in one of the most intense aerial attacks on Ukraine’s capital since the start of the war. Vitali Klitschko, the city’s mayor, said homes, a school and a children’s medical centre were among the b",
           "isNew": false,
           "region": {
-            "id": "UKR-327",
-            "name": "Donetsk",
-            "nameDe": "Donezk",
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
             "type": "Region",
             "anchor": [
-              37.666,
-              48.045
+              30.448,
+              50.29
             ],
-            "matched": "Donetsk"
+            "matched": "Kyiv"
           },
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
-          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
-          "date": "2026-08-21T16:38:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "score": 18
         },
@@ -1600,6 +1615,37 @@
           "score": 18
         },
         {
+          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T16:26:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 17
+        },
+        {
           "title": "Gun stash in German forest believed to be linked to Russia, say reports",
           "url": "https://www.theguardian.com/world/2026/aug/21/gun-stash-germany-forest-berlin-believed-linked-russia-reports",
           "date": "2026-08-21T14:51:05.000Z",
@@ -1633,6 +1679,58 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
+          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
+          "date": "2026-08-21T16:53:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "isNew": false,
+          "region": {
+            "id": "UKR-327",
+            "name": "Donetsk",
+            "nameDe": "Donezk",
+            "type": "Region",
+            "anchor": [
+              37.666,
+              48.045
+            ],
+            "matched": "Donetsk"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
+          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
+          "date": "2026-08-21T16:38:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -2378,130 +2476,6 @@
             "label": "Drohnenangriff"
           },
           "score": 15
-        },
-        {
-          "title": "At least six people killed in Ukrainian missile attack on Russia’s Belgorod",
-          "url": "https://www.aljazeera.com/news/2026/8/17/at-least-six-people-killed-in-ukrainian-missile-attack-on-russias-belgorod?traffic_source=rss",
-          "date": "2026-08-17T08:00:05.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Overnight Russian missile and drone attacks across Ukraine kill two people and injure 19.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2370",
-            "name": "Belgorod",
-            "nameDe": "Belgorod",
-            "type": "Region",
-            "anchor": [
-              37.473,
-              50.664
-            ],
-            "matched": "Belgorod"
-          },
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Drone and missile strikes kill 19 in Russia and Ukraine",
-          "url": "https://www.france24.com/en/europe/20260816-drone-and-missile-strikes-kill-19-in-russia-and-ukraine",
-          "date": "2026-08-16T19:12:31.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "At least 19 people were killed Sunday in drone and missile strikes in Russia and Ukraine which destroyed a book market in Kyiv while Moscow faced one of the most massive attacks since the start of the war. Ukraine and Russia have been escalating their long-range strikes for months, resulting in a growing number of civilian casualties, more than four years after the start of the Russian invasion.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
-          "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-16T19:03:04.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "BBC visits smouldering Kyiv market after Russian strikes",
-          "url": "https://www.bbc.co.uk/news/videos/c8dnn05e90lo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-16T12:18:09.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Six people were injured in the strike on the market selling second-hand records, posters, toys and tools.",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -2533,7 +2507,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -2708,7 +2682,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israel launches attacks in southern Lebanon Israeli warplanes carried out two strikes on southern Lebanon five minutes apart, targeting the Ali al-Taher ridge in Nabatieh province, Lebanon’s National News Agency reported. The ridge overlooks southern Lebanon and northern Israel. The agency also reported an attack near the town of Deir Siryan, a raid on Doha Kafr Rumman and a bombing in the al-Mans",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2782,27 +2756,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli army, settlers kill 2 Palestinians in separate West Bank incidents",
-          "url": "https://www.aljazeera.com/news/2026/8/21/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents?traffic_source=rss",
-          "date": "2026-08-21T17:17:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli settlers fatally shot 17-year-old Karim Sanad Shalaldeh while Israeli forces killed 58-year-old Fathi Khazem.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
           },
           "score": 22
         },
@@ -2996,27 +2949,6 @@
           "score": 22
         },
         {
-          "title": "Israeli strikes target southern Lebanon and Syria",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-target-southern-lebanon-and-syria",
-          "date": "2026-08-20T22:52:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strikes target southern Lebanon and Syria An Israeli strike targeted the heights of the Ali al-Taher area in south Lebanon, Al Jazeera reported. The network also reported that Israeli forces also fired artillery shells at agricultural land south of the village of Jubata al-Khashab in Syria’s Golan Heights.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
           "title": "Australia news live: Israel ambassador insists IDF strike that killed Zomi Frankcom a ‘reasonable mistake’; body of hiker Lily Hooper recovered from bush",
           "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
           "date": "2026-08-20T23:39:50.000Z",
@@ -3164,27 +3096,6 @@
           "score": 20
         },
         {
-          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
-          "date": "2026-08-21T16:09:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
           "title": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza",
           "url": "https://www.bbc.co.uk/news/articles/cvgl2pe09eno?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T15:58:57.000Z",
@@ -3246,6 +3157,48 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Israeli army, settlers kill 2 Palestinians in separate West Bank incidents",
+          "url": "https://www.aljazeera.com/news/2026/8/21/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents?traffic_source=rss",
+          "date": "2026-08-21T17:17:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers fatally shot 17-year-old Karim Sanad Shalaldeh while Israeli forces killed 58-year-old Fathi Khazem.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli strikes target southern Lebanon and Syria",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-target-southern-lebanon-and-syria",
+          "date": "2026-08-20T22:52:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strikes target southern Lebanon and Syria An Israeli strike targeted the heights of the Ali al-Taher area in south Lebanon, Al Jazeera reported. The network also reported that Israeli forces also fired artillery shells at agricultural land south of the village of Jubata al-Khashab in Syria’s Golan Heights.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 18
         },
         {
           "title": "In photos: Funeral of 17-year-old Palestinian killed by Israel in March",
@@ -4171,27 +4124,6 @@
           "score": 18
         },
         {
-          "title": "UAE condemns Israeli strikes on Syrian air base",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-condemns-israeli-strikes-abu-al-duhur-airbase-idlib",
-          "date": "2026-08-18T22:54:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE condemns Israeli strikes on Syrian air base The UAE condemned Israeli air strikes on Abu al-Duhur air base in northwestern Syria&nbsp;on Tuesday, calling the attacks a “flagrant violation” of international law. In a statement, the country's foreign ministry said it “rejects in the strongest terms” the violation of Syria’s sovereignty and threats to its security and stability, adding that the o",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "Middle East: 94 per cent need shelter in Gaza, Israel ramps up demolitions in Lebanon",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168180",
           "date": "2026-08-20T12:00:00.000Z",
@@ -4244,6 +4176,27 @@
           "score": 17
         },
         {
+          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
+          "date": "2026-08-21T16:09:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
           "title": "Why is Israel's military presence growing in Syria?",
           "url": "https://www.dw.com/en/why-is-israel-s-military-presence-growing-in-syria/a-78435811?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-21T08:33:00.000Z",
@@ -4282,6 +4235,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "UAE condemns Israeli strikes on Syrian air base",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-condemns-israeli-strikes-abu-al-duhur-airbase-idlib",
+          "date": "2026-08-18T22:54:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UAE condemns Israeli strikes on Syrian air base The UAE condemned Israeli air strikes on Abu al-Duhur air base in northwestern Syria&nbsp;on Tuesday, calling the attacks a “flagrant violation” of international law. In a statement, the country's foreign ministry said it “rejects in the strongest terms” the violation of Syria’s sovereignty and threats to its security and stability, adding that the o",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
           "score": 15
         },
@@ -4510,7 +4484,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 28
+          "score": 22
         },
         {
           "title": "UN Body Warns Myanmar Junta Using  Double - Tap  Airstrikes to Target First Responders",
@@ -4531,7 +4505,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 28
+          "score": 22
         },
         {
           "title": "Myanmar military strike kills 14 people at a Buddhist monastery , opposition group says",
@@ -4552,7 +4526,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Myanmar Airstrike On Monastery Kills 14 In Sagaing",
@@ -4583,7 +4557,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Myanmar military strike kills 14 people at a Buddhist monastery in Sagaing , opposition group says",
@@ -4614,7 +4588,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Myanmar Military Strike Kills 14 at Buddhist Monastery : Opposition Group",
@@ -4678,27 +4652,6 @@
             "label": "Bodenoffensive"
           },
           "score": 22
-        },
-        {
-          "title": "Myanmar Junta Arrests Citizens for Commenting on Resistance Group Facebook Page",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-arrests-citizens-commenting-resistance-groups-facebook-page",
-          "date": "2026-08-21T05:45:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 21
         },
         {
           "title": "Myanmar military chief visits Bangkok as diplomatic offensive continues",
@@ -4803,6 +4756,27 @@
             "label": "Drohnenangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Myanmar Junta Arrests Citizens for Commenting on Resistance Group Facebook Page",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-arrests-citizens-commenting-resistance-groups-facebook-page",
+          "date": "2026-08-21T05:45:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Nigeria: Catholic Priest Allegedly Attacked After Mass in Enugu",
@@ -5988,15 +5962,15 @@
           "count": 7
         },
         {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 2
-        },
-        {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
           "count": 1
         }
       ],
@@ -6028,27 +6002,6 @@
       ],
       "items": [
         {
-          "title": "Ebola outbreak  growing faster , ⁠⁠wider  as DRC death toll passes 2 , 500 : UN | Ebola News",
-          "url": "https://www.aljazeera.com/news/2026/8/21/ebola-outbreak-growing-faster-%E2%81%A0%E2%81%A0wider-as-drc-death-toll-passes-2500-un",
-          "date": "2026-08-21T16:15:00.000Z",
-          "source": "aljazeera.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 28
-        },
-        {
           "title": "Ebola outbreak in DR Congo growing 'exponentially' as death toll passes 2,500",
           "url": "https://www.france24.com/en/africa/20260821-ebola-outbreak-in-dr-congo-growing-exponentially-as-death-toll-passes-2-500",
           "date": "2026-08-21T12:55:58.000Z",
@@ -6068,6 +6021,27 @@
             "label": "Opfer"
           },
           "score": 23
+        },
+        {
+          "title": "Ebola outbreak  growing faster , ⁠⁠wider  as DRC death toll passes 2 , 500 : UN | Ebola News",
+          "url": "https://www.aljazeera.com/news/2026/8/21/ebola-outbreak-growing-faster-%E2%81%A0%E2%81%A0wider-as-drc-death-toll-passes-2500-un",
+          "date": "2026-08-21T16:15:00.000Z",
+          "source": "aljazeera.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
         },
         {
           "title": "Ebola spreading exponentially in Congo as death toll tops 2 , 500 , UN says",
@@ -6255,27 +6229,6 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
-          "title": "Joint statement on 6th meeting of the Joint Security Coordination Mechanism for the Peace Agreement between the Democratic Republic of the Congo and the Republic of Rwanda",
-          "url": "http://thepeninsulaqatar.com/article/14/08/2026/joint-statement-on-6th-meeting-of-the-joint-security-coordination-mechanism-for-the-peace-agreement-between-the-democratic-republic-of-the-congo-and-the-republic-of-rwanda",
-          "date": "2026-08-14T22:30:00.000Z",
-          "source": "thepeninsulaqatar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
           },
           "score": 15
         },
@@ -6478,7 +6431,7 @@
           "score": 8
         }
       ],
-      "itemCount": 20
+      "itemCount": 19
     },
     {
       "id": "west-bank",
@@ -6617,27 +6570,6 @@
           "score": 26
         },
         {
-          "title": "Israeli army, settlers kill 2 Palestinians in separate West Bank incidents",
-          "url": "https://www.aljazeera.com/news/2026/8/21/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents?traffic_source=rss",
-          "date": "2026-08-21T17:17:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli settlers fatally shot 17-year-old Karim Sanad Shalaldeh while Israeli forces killed 58-year-old Fathi Khazem.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "How Israel is expanding settlements in drive to reshape West Bank",
           "url": "https://www.bbc.co.uk/news/articles/c2lq5g4dedpo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T19:31:47.000Z",
@@ -6676,27 +6608,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
-          "date": "2026-08-21T16:09:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 22
         },
@@ -6772,6 +6683,48 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
+          "date": "2026-08-21T16:09:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Israeli army, settlers kill 2 Palestinians in separate West Bank incidents",
+          "url": "https://www.aljazeera.com/news/2026/8/21/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents?traffic_source=rss",
+          "date": "2026-08-21T17:17:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli settlers fatally shot 17-year-old Karim Sanad Shalaldeh while Israeli forces killed 58-year-old Fathi Khazem.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
         },
         {
           "title": "2 Palestinian women injured as Israeli raids , occupier attacks escalate across West Bank",
@@ -8510,7 +8463,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Syrian rights group says survivors of 2013 Ghouta chemical attack still suffering",
@@ -8531,7 +8484,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Israeli shelling in Syrian Golan Heights sparks fire",
@@ -8586,27 +8539,6 @@
           "score": 22
         },
         {
-          "title": "Israeli strikes target southern Lebanon and Syria",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-target-southern-lebanon-and-syria",
-          "date": "2026-08-20T22:52:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strikes target southern Lebanon and Syria An Israeli strike targeted the heights of the Ali al-Taher area in south Lebanon, Al Jazeera reported. The network also reported that Israeli forces also fired artillery shells at agricultural land south of the village of Jubata al-Khashab in Syria’s Golan Heights.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
           "title": "Netanyahu defends Syria strike , warns Turkey against military buildup",
           "url": "https://www.dailyexcelsior.com/netanyahu-defends-syria-strike-warns-turkey-against-military-buildup/",
           "date": "2026-08-21T03:00:00.000Z",
@@ -8647,6 +8579,27 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Israeli strikes target southern Lebanon and Syria",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-target-southern-lebanon-and-syria",
+          "date": "2026-08-20T22:52:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strikes target southern Lebanon and Syria An Israeli strike targeted the heights of the Ali al-Taher area in south Lebanon, Al Jazeera reported. The network also reported that Israeli forces also fired artillery shells at agricultural land south of the village of Jubata al-Khashab in Syria’s Golan Heights.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 18
         },
         {
           "title": "Israeli opinion article says Turkey's Nato protection does not apply to troops in Syria",
@@ -9255,27 +9208,6 @@
           "score": 18
         },
         {
-          "title": "UAE condemns Israeli strikes on Syrian air base",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-condemns-israeli-strikes-abu-al-duhur-airbase-idlib",
-          "date": "2026-08-18T22:54:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE condemns Israeli strikes on Syrian air base The UAE condemned Israeli air strikes on Abu al-Duhur air base in northwestern Syria&nbsp;on Tuesday, calling the attacks a “flagrant violation” of international law. In a statement, the country's foreign ministry said it “rejects in the strongest terms” the violation of Syria’s sovereignty and threats to its security and stability, adding that the o",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "Why is Israel's military presence growing in Syria?",
           "url": "https://www.dw.com/en/why-is-israel-s-military-presence-growing-in-syria/a-78435811?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-21T08:33:00.000Z",
@@ -9295,6 +9227,27 @@
             "label": "Gefechte"
           },
           "score": 17
+        },
+        {
+          "title": "UAE condemns Israeli strikes on Syrian air base",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-condemns-israeli-strikes-abu-al-duhur-airbase-idlib",
+          "date": "2026-08-18T22:54:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UAE condemns Israeli strikes on Syrian air base The UAE condemned Israeli air strikes on Abu al-Duhur air base in northwestern Syria&nbsp;on Tuesday, calling the attacks a “flagrant violation” of international law. In a statement, the country's foreign ministry said it “rejects in the strongest terms” the violation of Syria’s sovereignty and threats to its security and stability, adding that the o",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
         },
         {
           "title": "Israel says Syria acceptance of Turkish troops at its air base posed a 'threat'",
@@ -9464,27 +9417,6 @@
           "score": 15
         },
         {
-          "title": "The cost of rebuilding family homes in war-ravaged Syria",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/the-cost-of-rebuilding-family-homes-in-war-ravaged-syria?traffic_source=rss",
-          "date": "2026-08-20T22:51:51.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "What does rebuilding look like for families after war? Al Jazeera’s Hannah Raslan reports from Syria.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Watch: Netanyahu warns Turkey over presence in Syria",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-netanyahu-warns-turkey-over-presence-syria",
           "date": "2026-08-21T00:06:35.000Z",
@@ -9640,6 +9572,27 @@
             "label": "Bericht"
           },
           "score": 15
+        },
+        {
+          "title": "The cost of rebuilding family homes in war-ravaged Syria",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/the-cost-of-rebuilding-family-homes-in-war-ravaged-syria?traffic_source=rss",
+          "date": "2026-08-20T22:51:51.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "What does rebuilding look like for families after war? Al Jazeera’s Hannah Raslan reports from Syria.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Assad officer extradited to Syria on war crimes charges for first time",
@@ -10191,7 +10144,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -10353,7 +10306,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Trump says Iran not ready to make the 'right deal' US President Donald Trump said on Friday he did not think that Iran was ready make the \"right deal,\" and that Washington was observing \"what happens\" in the war. \"It just means that we're seeing what happens,\" Trump told reporters when asked if US military options with Iran were limited. \"We have total control of that entire region having to do wi",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -11495,27 +11448,6 @@
           "score": 15
         },
         {
-          "title": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uaes-adnoc-says-one-its-vessels-came-under-attack-while-transiting",
-          "date": "2026-08-14T22:33:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE's Adnoc says one of its vessels came under attack while transiting Hormuz UAE's Abu Dhabi National Oil Company said on Saturday that one of its vessels came under attack while transiting the Strait of Hormuz a day earlier. The state oil company said no injuries were reported, with the situation now under control.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Somalia: Somali Army Ground Forces Commander Visits Front Lines in Hiran Region",
           "url": "https://allafrica.com/stories/202608190423.html",
           "date": "2026-08-19T12:02:09.000Z",
@@ -12185,7 +12117,7 @@
           "score": 11
         }
       ],
-      "itemCount": 80
+      "itemCount": 79
     },
     {
       "id": "pakistan",
@@ -12325,28 +12257,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 30
-        },
-        {
-          "title": "‘Shouldn’t be renamed at all’: senator attacks Navy’s reported consideration of honoring Trump instead of Black war hero – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/aug/21/democrats-progressive-election-politics-live",
-          "date": "2026-08-21T16:53:26.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Mark Kelly, an Arizona Democrat and retired Navy officer, slams Navy’s mulling of naming a carrier for Trump instead of WWII hero Doris Miller US navy carrier set to honor Black war hero may reportedly be renamed after Trump Sign up for the US Breaking News email US Senator Tim Sheehy, a Montana Republican and a cattle rancher, has come out against a plan announced Friday by Donald Trump to allow ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
+          "score": 27
         },
         {
           "title": "49 terrorists killed in IBOs in KP, Balochistan: ISPR",
@@ -12378,6 +12289,27 @@
             "label": "Opfer"
           },
           "score": 24
+        },
+        {
+          "title": "‘Shouldn’t be renamed at all’: senator attacks Navy’s reported consideration of honoring Trump instead of Black war hero – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/21/democrats-progressive-election-politics-live",
+          "date": "2026-08-21T16:53:26.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Mark Kelly, an Arizona Democrat and retired Navy officer, slams Navy’s mulling of naming a carrier for Trump instead of WWII hero Doris Miller US navy carrier set to honor Black war hero may reportedly be renamed after Trump Sign up for the US Breaking News email US Senator Tim Sheehy, a Montana Republican and a cattle rancher, has come out against a plan announced Friday by Donald Trump to allow ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Ongoing Israeli air strikes, massive blasts reported in south Lebanon",
@@ -12881,37 +12813,6 @@
           "score": 15
         },
         {
-          "title": "Jailed former Pakistani prime minister Imran Khan taken to hospital",
-          "url": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan",
-          "date": "2026-08-20T22:47:00.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Move may signal attempt to improve relations between military-backed government and ex-leader’s party The jailed former Pakistani prime minister Imran Khan has been ⁠transferred to a hospital in Islamabad for medical examination, fulfilling a longstanding demand by supporters who ⁠say his health has deteriorated during more than three years in prison. The move ​followed a supreme court order ‌this",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1110",
-            "name": "Islamabad Capital Territory",
-            "nameDe": "Hauptstadtterritorium Islamabad",
-            "type": "Capital Territory",
-            "anchor": [
-              73.085,
-              33.66
-            ],
-            "matched": "Islamabad"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
           "title": "India Tracked Chinese and Turkish Drone Supplies to Pakistan Before Operation Sindoor , Sources Say",
           "url": "https://idrw.org/india-tracked-chinese-and-turkish-drone-supplies-to-pakistan-before-operation-sindoor-sources-say/",
           "date": "2026-08-17T17:15:00.000Z",
@@ -12962,6 +12863,37 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "Jailed former Pakistani prime minister Imran Khan taken to hospital",
+          "url": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan",
+          "date": "2026-08-20T22:47:00.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Move may signal attempt to improve relations between military-backed government and ex-leader’s party The jailed former Pakistani prime minister Imran Khan has been ⁠transferred to a hospital in Islamabad for medical examination, fulfilling a longstanding demand by supporters who ⁠say his health has deteriorated during more than three years in prison. The move ​followed a supreme court order ‌this",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Robinson double rocks Pakistan in first Test before rain stops play",
@@ -13076,7 +13008,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Security Forces Kill Two Terrorists in Balochistan",
@@ -13292,7 +13224,7 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 91,
+      "activity": 92,
       "severity": 66,
       "newCount": 1,
       "signals": [
@@ -13312,7 +13244,7 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 10
+          "count": 9
         },
         {
           "key": "escalation",
@@ -13361,7 +13293,7 @@
             33.3
           ],
           "count": 5,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -13377,7 +13309,7 @@
             35.508,
             33.888
           ],
-          "count": 2,
+          "count": 1,
           "newCount": 0,
           "event": {
             "type": "ceasefire",
@@ -13388,13 +13320,34 @@
       ],
       "items": [
         {
+          "title": "Lebanon death toll rises to 4,348",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-death-toll-rises-4",
+          "date": "2026-08-21T22:38:15.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanon death toll rises to 4,348 Israeli attacks have killed at least 4,348 people in Lebanon since 2 March and injured more than 12,300, according to the latest figures published by the Lebanese ministry of health. The ministry also said at least 8,915 people had been killed and more than 30,540 injured since the war began on October 2023.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 27
+        },
+        {
           "title": "Israel launches attacks in southern Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-attacks-southern-lebanon-0",
           "date": "2026-08-21T21:13:42.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israel launches attacks in southern Lebanon Israeli warplanes carried out two strikes on southern Lebanon five minutes apart, targeting the Ali al-Taher ridge in Nabatieh province, Lebanon’s National News Agency reported. The ridge overlooks southern Lebanon and northern Israel. The agency also reported an attack near the town of Deir Siryan, a raid on Doha Kafr Rumman and a bombing in the al-Mans",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "LBN-3059",
             "name": "Nabatieh",
@@ -13509,7 +13462,7 @@
             "icon": "💥",
             "label": "Beschuss"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Israeli strikes hit southern Lebanon",
@@ -14536,58 +14489,6 @@
           "score": 15
         },
         {
-          "title": "9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops",
-          "url": "https://www.timesofisrael.com/liveblog-august-15-2026/",
-          "date": "2026-08-14T22:51:07.000Z",
-          "source": "Times of Israel",
-          "sourceType": "news",
-          "summary": "Military doesn't give details on terror group's attack * IDF troops join search and rescue ops in Colombia quake zone * Anan Khalaili signs with Crystal Palace in most expensive deal for an Israeli soccer player The post 9 said killed in Lebanon strikes; IDF says it targeted Hezbollah sites after attack on troops appeared first on The Times of Israel .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanon’s PM urges timetable for Israeli withdrawal as Hezbollah slams deal",
-          "url": "https://www.aljazeera.com/news/2026/8/14/lebanons-pm-urges-timetable-for-israeli-withdrawal-as-hezbollah-slams-deal?traffic_source=rss",
-          "date": "2026-08-14T23:02:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Hezbollah criticises Beirut’s approach, accusing officials of exposing the Lebanese army to risks and Israeli pressure.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3024",
-            "name": "Beirut",
-            "nameDe": "Beirut",
-            "type": "Province",
-            "anchor": [
-              35.508,
-              33.888
-            ],
-            "matched": "Beirut"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
           "title": "Middle East: 94 per cent need shelter in Gaza, Israel ramps up demolitions in Lebanon",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168180",
           "date": "2026-08-20T12:00:00.000Z",
@@ -14913,7 +14814,7 @@
           "score": 6
         }
       ],
-      "itemCount": 65
+      "itemCount": 64
     },
     {
       "id": "sahel-mali",
@@ -14942,7 +14843,7 @@
         "Mopti",
         "Kidal"
       ],
-      "activity": 35,
+      "activity": 33,
       "severity": 65,
       "newCount": 0,
       "signals": [
@@ -14993,7 +14894,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "HRW says Russian paramilitaries killed 9 civilians in Mali",
@@ -15057,27 +14958,6 @@
             "label": "Entführung/Geiseln"
           },
           "score": 18
-        },
-        {
-          "title": "Russian paramilitaries in Mali kill nine , including children : HRW",
-          "url": "https://www.aljazeera.com/news/2026/8/20/russian-paramilitaries-in-mali-kill-nine-including-children-hrw",
-          "date": "2026-08-20T22:45:00.000Z",
-          "source": "aljazeera.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
         },
         {
           "title": "Somali army repels troops loyal to ousted leader and Islamist insurgents",
@@ -15204,6 +15084,27 @@
             "label": "Drohnenangriff"
           },
           "score": 15
+        },
+        {
+          "title": "Russian paramilitaries in Mali kill nine , including children : HRW",
+          "url": "https://www.aljazeera.com/news/2026/8/20/russian-paramilitaries-in-mali-kill-nine-including-children-hrw",
+          "date": "2026-08-20T22:45:00.000Z",
+          "source": "aljazeera.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 14
         },
         {
           "title": "Somalia: Somali Army Ground Forces Commander Visits Front Lines in Hiran Region",
@@ -17140,7 +17041,7 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 52,
+      "activity": 50,
       "severity": 54,
       "newCount": 0,
       "signals": [
@@ -17881,48 +17782,6 @@
           "score": 15
         },
         {
-          "title": "Houthi attack on port kills four eroding truce with Yemen’s government",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/houthi-attack-on-port-kills-four-eroding-truce-with-yemens-government?traffic_source=rss",
-          "date": "2026-08-14T22:58:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Six Houthi ballistic missiles struck Yemen's government-held al-Makha port, killing at least four.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Yemen’s government says Houthi attack on al-Makha kills at least four",
-          "url": "https://www.aljazeera.com/news/2026/8/14/yemens-government-says-houthi-attack-on-al-makha-kills-at-least-four?traffic_source=rss",
-          "date": "2026-08-14T22:45:19.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Hostilities are rising between Iran-backed Houthis and Yemen's internationally recognised government.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemen: Türk alarmed by rising civilian toll, urges restraint",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168151",
           "date": "2026-08-17T12:00:00.000Z",
@@ -18185,7 +18044,7 @@
           "score": 8
         }
       ],
-      "itemCount": 39
+      "itemCount": 37
     },
     {
       "id": "niger",
@@ -19542,27 +19401,6 @@
           "score": 19
         },
         {
-          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
-          "date": "2026-08-21T16:09:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Woman charged with planning IS-inspired attack on New York state capitol building",
           "url": "https://www.theguardian.com/us-news/2026/aug/20/woman-charged-attack-new-york-capitol",
           "date": "2026-08-20T20:19:01.000Z",
@@ -19687,6 +19525,27 @@
             "label": "Luftangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
+          "date": "2026-08-21T16:09:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "China calls for US-Iran dialogue",
@@ -20629,7 +20488,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Trump says no Iran talks planned as UAE suspends trade with Tehran",
@@ -20650,7 +20509,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Trump labels Strait of Hormuz ‘US territory’ as Iran says Israel is biggest obstacle to negotiations",
@@ -23350,8 +23209,8 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 35,
-      "severity": 49,
+      "activity": 31,
+      "severity": 48,
       "newCount": 0,
       "signals": [
         {
@@ -23625,7 +23484,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 15
+          "score": 11
         },
         {
           "title": "Israeli soldier visiting India accused of war crimes in Gaza's Khan Younis",
@@ -23740,7 +23599,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact",
@@ -23846,7 +23705,7 @@
         "Jubaland",
         "Somaliland"
       ],
-      "activity": 26,
+      "activity": 24,
       "severity": 46,
       "newCount": 0,
       "signals": [
@@ -24081,27 +23940,6 @@
           "score": 15
         },
         {
-          "title": "6 Indians on board hijacked cargo ship carrying Turkish weapons off Somalia coast",
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/6-indians-on-board-hijacked-cargo-ship-carrying-turkish-weapons-off-somalias-coast/articleshow/133387586.cms",
-          "date": "2026-08-20T22:15:00.000Z",
-          "source": "timesofindia.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Somalia: Somali Army Ground Forces Commander Visits Front Lines in Hiran Region",
           "url": "https://allafrica.com/stories/202608190423.html",
           "date": "2026-08-19T12:02:09.000Z",
@@ -24131,6 +23969,27 @@
             "label": "Bodenoffensive"
           },
           "score": 13
+        },
+        {
+          "title": "6 Indians on board hijacked cargo ship carrying Turkish weapons off Somalia coast",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/6-indians-on-board-hijacked-cargo-ship-carrying-turkish-weapons-off-somalias-coast/articleshow/133387586.cms",
+          "date": "2026-08-20T22:15:00.000Z",
+          "source": "timesofindia.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 11
         },
         {
           "title": "6 Indians Among Crew Of Pirate - Hijacked Ship Carrying Turkish Weapons Off Somalia",
@@ -24302,200 +24161,6 @@
       "itemCount": 15
     },
     {
-      "id": "venezuela",
-      "name": "Venezuela / Essequibo",
-      "nameEn": "Venezuela & Essequibo",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Venezuela",
-        "Guyana"
-      ],
-      "lat": 7,
-      "lon": -63,
-      "tier": "high",
-      "since": "2023 / Zuspitzung 2025",
-      "parties": [
-        "Venezuela (Maduro)",
-        "Guyana",
-        "USA",
-        "Opposition"
-      ],
-      "background": "Gebietsstreit um Essequibo und massiver militärischer Druck der USA in der Karibik nach der umstrittenen Wahl 2024.",
-      "hotspots": [
-        "Essequibo",
-        "Karibik",
-        "Caracas"
-      ],
-      "activity": 19,
-      "severity": 44,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 2
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "VEN",
-      "extraCountries": [
-        "GUY"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "A Third Voice Enters Venezuela Transition Fight and He Wants Machado Blessing . Who Is Enrique Márquez ? ",
-          "url": "https://www.latintimes.com/third-voice-enters-venezuelas-transition-fight-he-wants-machados-blessing-who-enrique-598708",
-          "date": "2026-08-21T14:15:00.000Z",
-          "source": "latintimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "US pummels Cuban economy with new sanctions on mining , construction - Grenada Chronicle – Daily Grenada And Caribbean News",
-          "url": "https://grenadachronicle.com/us-pummels-cuban-economy-with-new-sanctions-on-mining-construction/",
-          "date": "2026-08-20T22:30:00.000Z",
-          "source": "grenadachronicle.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "US pummels Cuban economy with new sanctions on mining , construction - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
-          "url": "https://dominicanrepublicpost.com/us-pummels-cuban-economy-with-new-sanctions-on-mining-construction/",
-          "date": "2026-08-20T22:15:00.000Z",
-          "source": "dominicanrepublicpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Permanent U . S . Military Presence in the Caribbean Recommended to Counter Cuba",
-          "url": "https://www.cubaheadlines.com/articles/338216",
-          "date": "2026-08-19T21:00:00.000Z",
-          "source": "cubaheadlines.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Terremotos en Venezuela: Reporte de situación #33 (14 de agosto de 2026, Hora: 02:00 pm)",
-          "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/terremotos-en-venezuela-reporte-de-situacion-33-14-de-agosto-de-2026-hora-0200-pm",
-          "date": "2026-08-14T23:08:50.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Venezuela (Bolivarian Republic of) Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. Reporte de situación N.º 33 Terremotos en Venezuela 14 de agosto de 2026 Hora: 2:00 pm Destacados Más de 304.000 personas afectadas por los terremotos (57% mujeres y niñas) han accedido a asistencia humanitaria y servicios esenciales mediante una respuesta m",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Hacking Back : What the U . S . shift toward private cyber warfare means for Guyana",
-          "url": "https://kaieteurnewsonline.com/2026/08/18/hacking-back-what-the-u-s-shift-toward-private-cyber-warfare-means-for-guyana/",
-          "date": "2026-08-18T15:45:00.000Z",
-          "source": "kaieteurnewsonline.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Earthquakes in Venezuela: Situation Report #33 (14 August 2026, Time: 02:00 pm)",
-          "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-33-14-august-2026-time-0200-pm",
-          "date": "2026-08-14T23:04:35.000Z",
-          "source": "ReliefWeb (UN OCHA)",
-          "sourceType": "humanitarian",
-          "summary": "Country: Venezuela (Bolivarian Republic of) Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. Situation Report No. 33 Earthquakes in Venezuela 14 August 2026 Time: 2:00 pm Highlights Over 304,000 people affected by the earthquakes have accessed humanitarian assistance and essential services through a coordinated multi-sector response involving humani",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 0
-        }
-      ],
-      "itemCount": 7
-    },
-    {
       "id": "ethiopia",
       "name": "Äthiopien",
       "nameEn": "Ethiopia",
@@ -24641,7 +24306,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 29
+          "score": 26
         },
         {
           "title": "Ethiopia : Drone Strikes in Two Locations in Mekelle , 13 Casualties Received At Ayder Hospital",
@@ -25030,6 +24695,179 @@
       "itemCount": 8
     },
     {
+      "id": "venezuela",
+      "name": "Venezuela / Essequibo",
+      "nameEn": "Venezuela & Essequibo",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Venezuela",
+        "Guyana"
+      ],
+      "lat": 7,
+      "lon": -63,
+      "tier": "high",
+      "since": "2023 / Zuspitzung 2025",
+      "parties": [
+        "Venezuela (Maduro)",
+        "Guyana",
+        "USA",
+        "Opposition"
+      ],
+      "background": "Gebietsstreit um Essequibo und massiver militärischer Druck der USA in der Karibik nach der umstrittenen Wahl 2024.",
+      "hotspots": [
+        "Essequibo",
+        "Karibik",
+        "Caracas"
+      ],
+      "activity": 14,
+      "severity": 43,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "VEN",
+      "extraCountries": [
+        "GUY"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "A Third Voice Enters Venezuela Transition Fight and He Wants Machado Blessing . Who Is Enrique Márquez ? ",
+          "url": "https://www.latintimes.com/third-voice-enters-venezuelas-transition-fight-he-wants-machados-blessing-who-enrique-598708",
+          "date": "2026-08-21T14:15:00.000Z",
+          "source": "latintimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "US pummels Cuban economy with new sanctions on mining , construction - Grenada Chronicle – Daily Grenada And Caribbean News",
+          "url": "https://grenadachronicle.com/us-pummels-cuban-economy-with-new-sanctions-on-mining-construction/",
+          "date": "2026-08-20T22:30:00.000Z",
+          "source": "grenadachronicle.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "US pummels Cuban economy with new sanctions on mining , construction - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+          "url": "https://dominicanrepublicpost.com/us-pummels-cuban-economy-with-new-sanctions-on-mining-construction/",
+          "date": "2026-08-20T22:15:00.000Z",
+          "source": "dominicanrepublicpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Permanent U . S . Military Presence in the Caribbean Recommended to Counter Cuba",
+          "url": "https://www.cubaheadlines.com/articles/338216",
+          "date": "2026-08-19T21:00:00.000Z",
+          "source": "cubaheadlines.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Terremotos en Venezuela: Reporte de situación #33 (14 de agosto de 2026, Hora: 02:00 pm)",
+          "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/terremotos-en-venezuela-reporte-de-situacion-33-14-de-agosto-de-2026-hora-0200-pm",
+          "date": "2026-08-14T23:08:50.000Z",
+          "source": "ReliefWeb (UN OCHA)",
+          "sourceType": "humanitarian",
+          "summary": "Country: Venezuela (Bolivarian Republic of) Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. Reporte de situación N.º 33 Terremotos en Venezuela 14 de agosto de 2026 Hora: 2:00 pm Destacados Más de 304.000 personas afectadas por los terremotos (57% mujeres y niñas) han accedido a asistencia humanitaria y servicios esenciales mediante una respuesta m",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Hacking Back : What the U . S . shift toward private cyber warfare means for Guyana",
+          "url": "https://kaieteurnewsonline.com/2026/08/18/hacking-back-what-the-u-s-shift-toward-private-cyber-warfare-means-for-guyana/",
+          "date": "2026-08-18T15:45:00.000Z",
+          "source": "kaieteurnewsonline.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 6
+    },
+    {
       "id": "colombia",
       "name": "Kolumbien",
       "nameEn": "Colombia",
@@ -25395,27 +25233,6 @@
           "score": 22
         },
         {
-          "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
-          "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack",
-          "date": "2026-08-20T22:15:02.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Missile and drone attack one of heaviest since war began, with children’s hospital and residential areas hit A heavy Russian missile and drone bombardment has killed at least 16 people in and around Kyiv in one of the most intense aerial attacks on Ukraine’s capital since the start of the war. Vitali Klitschko, the city’s mayor, said homes, a school and a children’s medical centre were among the b",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
           "title": "Russian missiles kill 17 more in Ukraine as Guterres calls for ceasefire",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168181",
           "date": "2026-08-20T12:00:00.000Z",
@@ -25435,27 +25252,6 @@
             "label": "Raketenangriff"
           },
           "score": 21
-        },
-        {
-          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:26:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
         },
         {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
@@ -25500,44 +25296,23 @@
           "score": 19
         },
         {
-          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
-          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
-          "date": "2026-08-21T16:53:57.000Z",
-          "source": "Al Jazeera",
+          "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
+          "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack",
+          "date": "2026-08-20T22:15:02.000Z",
+          "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "summary": "Missile and drone attack one of heaviest since war began, with children’s hospital and residential areas hit A heavy Russian missile and drone bombardment has killed at least 16 people in and around Kyiv in one of the most intense aerial attacks on Ukraine’s capital since the start of the war. Vitali Klitschko, the city’s mayor, said homes, a school and a children’s medical centre were among the b",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
-          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
-          "date": "2026-08-21T16:38:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "score": 18
         },
@@ -25815,6 +25590,27 @@
           "score": 18
         },
         {
+          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T16:26:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 16
+        },
+        {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
           "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T13:07:00.000Z",
@@ -25855,6 +25651,48 @@
             "label": "Drohnenangriff"
           },
           "score": 16
+        },
+        {
+          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
+          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
+          "date": "2026-08-21T16:53:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
+          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
+          "date": "2026-08-21T16:38:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
         },
         {
           "title": "Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant",
@@ -26963,27 +26801,6 @@
           "score": 22
         },
         {
-          "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
-          "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack",
-          "date": "2026-08-20T22:15:02.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Missile and drone attack one of heaviest since war began, with children’s hospital and residential areas hit A heavy Russian missile and drone bombardment has killed at least 16 people in and around Kyiv in one of the most intense aerial attacks on Ukraine’s capital since the start of the war. Vitali Klitschko, the city’s mayor, said homes, a school and a children’s medical centre were among the b",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
           "title": "Russian missiles kill 17 more in Ukraine as Guterres calls for ceasefire",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168181",
           "date": "2026-08-20T12:00:00.000Z",
@@ -27003,27 +26820,6 @@
             "label": "Raketenangriff"
           },
           "score": 21
-        },
-        {
-          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:26:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
         },
         {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
@@ -27068,44 +26864,23 @@
           "score": 19
         },
         {
-          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
-          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
-          "date": "2026-08-21T16:53:57.000Z",
-          "source": "Al Jazeera",
+          "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
+          "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack",
+          "date": "2026-08-20T22:15:02.000Z",
+          "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "summary": "Missile and drone attack one of heaviest since war began, with children’s hospital and residential areas hit A heavy Russian missile and drone bombardment has killed at least 16 people in and around Kyiv in one of the most intense aerial attacks on Ukraine’s capital since the start of the war. Vitali Klitschko, the city’s mayor, said homes, a school and a children’s medical centre were among the b",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
-          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
-          "date": "2026-08-21T16:38:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "score": 18
         },
@@ -27383,6 +27158,27 @@
           "score": 18
         },
         {
+          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T16:26:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 16
+        },
+        {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
           "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T13:07:00.000Z",
@@ -27423,6 +27219,48 @@
             "label": "Drohnenangriff"
           },
           "score": 16
+        },
+        {
+          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
+          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
+          "date": "2026-08-21T16:53:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
+          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
+          "date": "2026-08-21T16:38:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
         },
         {
           "title": "Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant",
@@ -30091,7 +29929,28 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 22
+          "score": 25
+        },
+        {
+          "title": "Over 100 labourers killed in gold mine collapse in Central African Republic",
+          "url": "https://www.premiumtimesng.com/news/top-news/904366-over-100-labourers-killed-in-gold-mine-collapse-in-central-african-republic.html",
+          "date": "2026-08-20T21:15:00.000Z",
+          "source": "premiumtimesng.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 21
         },
         {
           "title": "More than 100 dead after goldmine collapses in Central African Republic",
@@ -30113,27 +29972,6 @@
             "label": "Opfer"
           },
           "score": 19
-        },
-        {
-          "title": "Over 100 labourers killed in gold mine collapse in Central African Republic",
-          "url": "https://www.premiumtimesng.com/news/top-news/904366-over-100-labourers-killed-in-gold-mine-collapse-in-central-african-republic.html",
-          "date": "2026-08-20T21:15:00.000Z",
-          "source": "premiumtimesng.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
         },
         {
           "title": "Gold mine collapse in Central African Republic leaves at least 100 dead",
@@ -30586,7 +30424,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Five Americans, Ecuador intelligence chief killed in helicopter crash in Kenya",
