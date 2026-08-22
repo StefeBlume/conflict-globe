@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T16:02:03.575Z",
-  "durationSec": 406,
+  "generatedAt": "2026-08-22T17:06:27.106Z",
+  "durationSec": 375,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -54,9 +54,9 @@
       },
       {
         "id": "france24",
-        "ok": true,
-        "count": 24,
-        "error": null
+        "ok": false,
+        "count": 0,
+        "error": "HTTP 404"
       },
       {
         "id": "timesofisrael",
@@ -115,36 +115,32 @@
     ],
     "gdelt": {
       "ok": 4,
-      "failed": 7,
-      "skipped": 5,
+      "failed": 6,
+      "skipped": 6,
       "errors": [
         {
           "id": "burkina-faso",
-          "error": "HTTP 429"
+          "error": "fetch failed"
         },
         {
           "id": "haiti",
-          "error": "HTTP 429"
+          "error": "fetch failed"
         },
         {
-          "id": "ethiopia",
-          "error": "HTTP 429"
+          "id": "mozambique",
+          "error": "fetch failed"
         },
         {
-          "id": "pakistan",
-          "error": "HTTP 429"
+          "id": "turkey-pkk",
+          "error": "fetch failed"
         },
         {
-          "id": "armenia-azerbaijan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "somalia",
-          "error": "HTTP 429"
+          "id": "ecuador",
+          "error": "fetch failed"
         },
         {
           "id": "venezuela",
-          "error": "fetch failed"
+          "error": "HTTP 429"
         }
       ]
     },
@@ -153,7 +149,7 @@
   "totals": {
     "conflicts": 44,
     "articles": 1207,
-    "newArticles": 7
+    "newArticles": 2
   },
   "conflicts": [
     {
@@ -185,7 +181,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -376,37 +372,6 @@
           "score": 35
         },
         {
-          "title": "France to deliver interceptor missiles to Ukraine after fresh wave of Russian strikes",
-          "url": "https://www.france24.com/en/france-to-deliver-interceptor-missiles-to-ukraine-after-fresh-wave-of-russian-strikes",
-          "date": "2026-08-22T13:26:28.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "This Saturday saw a continued exchange of fire between Kyiv and Moscow. French President Emmanuel Macron announced Paris would deliver new interceptor missiles to Ukraine, whose air defences are running short after the latest round of deadly Russian attacks. Details from the ground by FRANCE 24 correspondent in Ukraine, Emmanuelle Chaze.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 34
-        },
-        {
           "title": "Russian strikes kill 6 people in Ukraine, day after shopping complex attack",
           "url": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss",
           "date": "2026-08-22T12:09:09.000Z",
@@ -426,37 +391,6 @@
             "label": "Gefechte"
           },
           "score": 33
-        },
-        {
-          "title": "Children among wounded in Zelensky's hometown, struck by Russian drones",
-          "url": "https://www.france24.com/en/children-among-wounded-in-zelensky-s-hometown-struck-by-russian-drones",
-          "date": "2026-08-22T09:38:57.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Early this Saturday, Russian strikes killed at least two people in Ukraine. In Zaporizhzhia, a drone killed a man and wounded four, according to officials, while a warehouse was on fire in Kyiv. It comes after a Russian bombing killed at least 20 people on Friday, 16 of them in two successive strikes on a busy shopping centre in Kryvyi Rih. Details by FRANCE 24 correspondent in Kiyv, Emmanuelle Ch",
-          "isNew": false,
-          "region": {
-            "id": "UKR-331",
-            "name": "Zaporizhzhia",
-            "nameDe": "Saporischschja",
-            "type": "Region",
-            "anchor": [
-              35.691,
-              47.266
-            ],
-            "matched": "Zaporizhzhia"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 32
         },
         {
           "title": "Russian missiles kill 17 more in Ukraine as Guterres calls for ceasefire",
@@ -511,6 +445,37 @@
           "score": 26
         },
         {
+          "title": "France to deliver interceptor missiles to Ukraine after fresh wave of Russian strikes",
+          "url": "https://www.france24.com/en/france-to-deliver-interceptor-missiles-to-ukraine-after-fresh-wave-of-russian-strikes",
+          "date": "2026-08-22T13:26:28.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "This Saturday saw a continued exchange of fire between Kyiv and Moscow. French President Emmanuel Macron announced Paris would deliver new interceptor missiles to Ukraine, whose air defences are running short after the latest round of deadly Russian attacks. Details from the ground by FRANCE 24 correspondent in Ukraine, Emmanuelle Chaze.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 25
+        },
+        {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
           "url": "https://www.dw.com/en/masha-and-the-bear-ukraine-sanctions-russian-cartoon/a-78464406?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-21T18:59:00.000Z",
@@ -540,6 +505,37 @@
             "label": "Sanktionen/Recht"
           },
           "score": 23
+        },
+        {
+          "title": "Children among wounded in Zelensky's hometown, struck by Russian drones",
+          "url": "https://www.france24.com/en/children-among-wounded-in-zelensky-s-hometown-struck-by-russian-drones",
+          "date": "2026-08-22T09:38:57.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Early this Saturday, Russian strikes killed at least two people in Ukraine. In Zaporizhzhia, a drone killed a man and wounded four, according to officials, while a warehouse was on fire in Kyiv. It comes after a Russian bombing killed at least 20 people on Friday, 16 of them in two successive strikes on a busy shopping centre in Kryvyi Rih. Details by FRANCE 24 correspondent in Kiyv, Emmanuelle Ch",
+          "isNew": false,
+          "region": {
+            "id": "UKR-331",
+            "name": "Zaporizhzhia",
+            "nameDe": "Saporischschja",
+            "type": "Region",
+            "anchor": [
+              35.691,
+              47.266
+            ],
+            "matched": "Zaporizhzhia"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
         },
         {
           "title": "Russian strikes Zelensky's hometown in Ukraine, killing 15 people, wounding 130",
@@ -1488,37 +1484,6 @@
           "score": 18
         },
         {
-          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:26:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 17
-        },
-        {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
           "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T13:07:00.000Z",
@@ -1640,27 +1605,6 @@
             "type": "explosion",
             "icon": "💣",
             "label": "Explosion/Anschlag"
-          },
-          "score": 15
-        },
-        {
-          "title": "Does Putin travel without security?",
-          "url": "https://www.france24.com/en/europe/20260821-does-putin-travel-without-security",
-          "date": "2026-08-21T16:05:17.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In order to create an image of Russian President Vladimir Putin as a leader beloved by his people, pro-Russia social media users have been claiming that he travels without a security team, unlike other heads of state. To illustrate this claim, they shared a video of his latest trip to Siberia. The footage, however, shows him with a large security contingent.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -1796,58 +1740,6 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
-          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
-          "date": "2026-08-21T16:53:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
-          "isNew": false,
-          "region": {
-            "id": "UKR-327",
-            "name": "Donetsk",
-            "nameDe": "Donezk",
-            "type": "Region",
-            "anchor": [
-              37.666,
-              48.045
-            ],
-            "matched": "Donetsk"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
-          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
-          "date": "2026-08-21T16:38:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -2444,6 +2336,37 @@
           "score": 15
         },
         {
+          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T16:26:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 13
+        },
+        {
           "title": "Gun stash in German forest believed to be linked to Russia, say reports",
           "url": "https://www.theguardian.com/world/2026/aug/21/gun-stash-germany-forest-berlin-believed-linked-russia-reports",
           "date": "2026-08-21T14:51:05.000Z",
@@ -2463,6 +2386,79 @@
             "label": "Drohnenangriff"
           },
           "score": 13
+        },
+        {
+          "title": "Russian Propaganda Thrives in Greek Media Via ‘Disinformation Laundering’",
+          "url": "https://balkaninsight.com/2026/08/19/russian-propaganda-thrives-in-greek-media-via-disinformation-laundering/bi/",
+          "date": "2026-08-19T05:57:42.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Despite a ban on Russian media outlets in Greece in line with EU sanctions, pro-Kremlin content often finds its way into the country’s news as fringe claims are ‘laundered’ into mainstream outlets.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Does Putin travel without security?",
+          "url": "https://www.france24.com/en/europe/20260821-does-putin-travel-without-security",
+          "date": "2026-08-21T16:05:17.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In order to create an image of Russian President Vladimir Putin as a leader beloved by his people, pro-Russia social media users have been claiming that he travels without a security team, unlike other heads of state. To illustrate this claim, they shared a video of his latest trip to Siberia. The footage, however, shows him with a large security contingent.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
+          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
+          "date": "2026-08-21T16:53:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "isNew": false,
+          "region": {
+            "id": "UKR-327",
+            "name": "Donetsk",
+            "nameDe": "Donezk",
+            "type": "Region",
+            "anchor": [
+              37.666,
+              48.045
+            ],
+            "matched": "Donetsk"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         }
       ],
       "itemCount": 80
@@ -2494,7 +2490,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -2631,7 +2627,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Syria condemns attack in southwest as a 'flagrant violation of sovereignty' and a 'blatant breach of international law'.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -2730,48 +2726,6 @@
           "score": 26
         },
         {
-          "title": "Israel kills at least two Palestinians in Gaza in last 48 hours",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-least-two-palestinians-gaza-last-48-hours",
-          "date": "2026-08-22T10:53:59.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel kills at least two Palestinians in Gaza in last 48 hours Israeli forces have killed at least two Palestinians and wounded four others in attacks across Gaza in the last 48 hours, the enclave's health ministry is reporting. It said that at least&nbsp;1,285 Palestinians have been killed and 4,252 wounded since the so-called ceasefire was implemented in October 2025.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
-          "title": "Israeli drone strike in Syria wounds at least one person",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-syria-wounds-least-one-person",
-          "date": "2026-08-22T10:28:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli drone strike in Syria wounds at least one person An Israeli drone strike targeting a truck in Beit Jinn village in southwestern Syria has wounded at least one person, Al Jazeera Arabic is reporting. The latest attack follows a series of Israeli strikes on Syria’s Abu al-Duhur military airbase on 18 August.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
           "title": "US says intelligence behind Israeli strike on Syria air base was wrong",
           "url": "https://www.dawn.com/news/2024580/us-says-intelligence-behind-israeli-strike-on-syria-air-base-was-wrong",
           "date": "2026-08-22T14:03:40.000Z",
@@ -2814,12 +2768,12 @@
           "score": 25
         },
         {
-          "title": "Turkey accuses Netanyahu of 'genocide', Israeli PM calls Erdogan 'antisemitic dictator'",
-          "url": "https://www.france24.com/en/video/20260822-turkey-accuses-netanyahu-of-genocide-israeli-pm-calls-erdogan-antisemitic-dictator-1",
-          "date": "2026-08-22T10:38:30.000Z",
-          "source": "France 24",
+          "title": "Israel kills at least two Palestinians in Gaza in last 48 hours",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-least-two-palestinians-gaza-last-48-hours",
+          "date": "2026-08-22T10:53:59.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Turkey and Israel traded barbs on Friday after Ankara announced it had sought an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" linked to the interception of a Gaza-bound aid flotilla. Turkey is one of Israel's fiercest critics over its war in Gaza, sparked by the Hamas-led October 7 attacks on southern Israel. Story by Charlotte Lam.",
+          "summary": "Israel kills at least two Palestinians in Gaza in last 48 hours Israeli forces have killed at least two Palestinians and wounded four others in attacks across Gaza in the last 48 hours, the enclave's health ministry is reporting. It said that at least&nbsp;1,285 Palestinians have been killed and 4,252 wounded since the so-called ceasefire was implemented in October 2025.",
           "isNew": false,
           "region": null,
           "event": {
@@ -2832,26 +2786,26 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 23
         },
         {
-          "title": "Turkey seeks arrest warrant for Israeli PM Netanyahu, fueling tensions",
-          "url": "https://www.france24.com/en/video/20260822-turkey-seeks-arrest-warrant-for-israeli-pm-netanyahu-fueling-tensions",
-          "date": "2026-08-22T10:57:12.000Z",
-          "source": "France 24",
+          "title": "Israeli drone strike in Syria wounds at least one person",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-syria-wounds-least-one-person",
+          "date": "2026-08-22T10:28:56.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Turkey and Israel traded insults on Friday, after Ankara announced it was seeking an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" because of the interception of an aid flotilla bound for Gaza. Netanyahu's office accused Turkey of hypocrisy. Our correspondent in Turkey Jasper Mortimer analyses the situation.",
+          "summary": "Israeli drone strike in Syria wounds at least one person An Israeli drone strike targeting a truck in Beit Jinn village in southwestern Syria has wounded at least one person, Al Jazeera Arabic is reporting. The latest attack follows a series of Israeli strikes on Syria’s Abu al-Duhur military airbase on 18 August.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 23
         },
@@ -3093,7 +3047,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Guilt, grief and strength: Gaza’s ‘sole survivor’ children face life alone Submitted by Huda Skaik on Fri, 08/21/2026 - 13:25 Thousands of children who lost their families in Israeli strikes navigate grief, trauma and adulthood with little support A Palestinian mourns the death of Al Jazeera journalist Ahmed Wishah, who was killed in an Israeli strike, at Al-Aqsa Martyrs Hospital in Deir el-Balah ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -3135,7 +3089,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Palestinians in Qaryut say Israeli settlers, backed by the military, are forcing families from their homes.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -3177,48 +3131,6 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Jewish activists provide a ‘protective presence’ to deter settler violence in parts of the Occupied West Bank.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Israeli settlers kill Palestinian teen in the occupied West Bank",
-          "url": "https://www.france24.com/en/israeli-settlers-kill-palestinian-teen-in-the-occupied-west-bank",
-          "date": "2026-08-22T09:10:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Two Palestinians were killed Friday in the West Bank, one in Jenin, in the north, by Israeli army gunfire, and the other in the southern part of the territory by a settler, according to Palestinian sources and the army.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
-        },
-        {
-          "title": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-turkey-breaks-washington-israels-occupation-syrias-golan",
-          "date": "2026-08-22T10:24:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights US&nbsp; ambassador to Turkey Tom Barrack has said&nbsp; Israel’s&nbsp; occupation of&nbsp; Syria’s&nbsp; Golan Heights continues even though it ran against UN resolutions and international law. Barrack’s remarks put him at odds with his own government, as US President Donald Trump recognised Israeli sov",
           "isNew": false,
           "region": null,
           "event": {
@@ -3874,27 +3786,6 @@
           "score": 18
         },
         {
-          "title": "Report: Israeli settlers seize near-total control of Ramallah village land",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-israeli-settlers-seize-near-total-control-ramallah-village-land",
-          "date": "2026-08-19T16:29:20.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Report: Israeli settlers seize near-total control of Ramallah village land More than 4,700 of the 4,800 dunams of land in the Palestinian village of Um al-Safa, west of Ramallah in the occupied West Bank, have been confiscated, Al Jazeera reported, as Israeli settlers expand outposts and infrastructure on the village's land. The village, whose population is fewer than 1,000 people, has seen settle",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
           "title": "Middle East: 94 per cent need shelter in Gaza, Israel ramps up demolitions in Lebanon",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168180",
           "date": "2026-08-20T12:00:00.000Z",
@@ -3979,6 +3870,27 @@
           "score": 16
         },
         {
+          "title": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-turkey-breaks-washington-israels-occupation-syrias-golan",
+          "date": "2026-08-22T10:24:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights US&nbsp; ambassador to Turkey Tom Barrack has said&nbsp; Israel’s&nbsp; occupation of&nbsp; Syria’s&nbsp; Golan Heights continues even though it ran against UN resolutions and international law. Barrack’s remarks put him at odds with his own government, as US President Donald Trump recognised Israeli sov",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza",
           "url": "https://www.bbc.co.uk/news/articles/cvgl2pe09eno?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T15:58:57.000Z",
@@ -4017,6 +3929,90 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Turkey accuses Netanyahu of 'genocide', Israeli PM calls Erdogan 'antisemitic dictator'",
+          "url": "https://www.france24.com/en/video/20260822-turkey-accuses-netanyahu-of-genocide-israeli-pm-calls-erdogan-antisemitic-dictator-1",
+          "date": "2026-08-22T10:38:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey and Israel traded barbs on Friday after Ankara announced it had sought an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" linked to the interception of a Gaza-bound aid flotilla. Turkey is one of Israel's fiercest critics over its war in Gaza, sparked by the Hamas-led October 7 attacks on southern Israel. Story by Charlotte Lam.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Turkey seeks arrest warrant for Israeli PM Netanyahu, fueling tensions",
+          "url": "https://www.france24.com/en/video/20260822-turkey-seeks-arrest-warrant-for-israeli-pm-netanyahu-fueling-tensions",
+          "date": "2026-08-22T10:57:12.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey and Israel traded insults on Friday, after Ankara announced it was seeking an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" because of the interception of an aid flotilla bound for Gaza. Netanyahu's office accused Turkey of hypocrisy. Our correspondent in Turkey Jasper Mortimer analyses the situation.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli settlers kill Palestinian teen in the occupied West Bank",
+          "url": "https://www.france24.com/en/israeli-settlers-kill-palestinian-teen-in-the-occupied-west-bank",
+          "date": "2026-08-22T09:10:38.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Two Palestinians were killed Friday in the West Bank, one in Jenin, in the north, by Israeli army gunfire, and the other in the southern part of the territory by a settler, according to Palestinian sources and the army.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Report: Israeli settlers seize near-total control of Ramallah village land",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-israeli-settlers-seize-near-total-control-ramallah-village-land",
+          "date": "2026-08-19T16:29:20.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Report: Israeli settlers seize near-total control of Ramallah village land More than 4,700 of the 4,800 dunams of land in the Palestinian village of Um al-Safa, west of Ramallah in the occupied West Bank, have been confiscated, Al Jazeera reported, as Israeli settlers expand outposts and infrastructure on the village's land. The village, whose population is fewer than 1,000 people, has seen settle",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
           "score": 15
         },
@@ -5036,7 +5032,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -5152,7 +5148,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Palestinians in Qaryut say Israeli settlers, backed by the military, are forcing families from their homes.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -5314,27 +5310,6 @@
           "score": 20
         },
         {
-          "title": "Israeli settlers kill Palestinian teen in the occupied West Bank",
-          "url": "https://www.france24.com/en/israeli-settlers-kill-palestinian-teen-in-the-occupied-west-bank",
-          "date": "2026-08-22T09:10:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Two Palestinians were killed Friday in the West Bank, one in Jenin, in the north, by Israeli army gunfire, and the other in the southern part of the territory by a settler, according to Palestinian sources and the army.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 20
-        },
-        {
           "title": "How Israel is expanding settlements in drive to reshape West Bank",
           "url": "https://www.bbc.co.uk/news/articles/c2lq5g4dedpo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T19:31:47.000Z",
@@ -5419,27 +5394,6 @@
           "score": 18
         },
         {
-          "title": "Report: Israeli settlers seize near-total control of Ramallah village land",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-israeli-settlers-seize-near-total-control-ramallah-village-land",
-          "date": "2026-08-19T16:29:20.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Report: Israeli settlers seize near-total control of Ramallah village land More than 4,700 of the 4,800 dunams of land in the Palestinian village of Um al-Safa, west of Ramallah in the occupied West Bank, have been confiscated, Al Jazeera reported, as Israeli settlers expand outposts and infrastructure on the village's land. The village, whose population is fewer than 1,000 people, has seen settle",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
           "title": "Muslim World League denounces new Israeli E1 settlement tender",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/muslim-world-league-denounces-new-israeli-e1-settlement-tender",
           "date": "2026-08-22T09:07:10.000Z",
@@ -5459,6 +5413,48 @@
             "label": "Bericht"
           },
           "score": 17
+        },
+        {
+          "title": "Israeli settlers kill Palestinian teen in the occupied West Bank",
+          "url": "https://www.france24.com/en/israeli-settlers-kill-palestinian-teen-in-the-occupied-west-bank",
+          "date": "2026-08-22T09:10:38.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Two Palestinians were killed Friday in the West Bank, one in Jenin, in the north, by Israeli army gunfire, and the other in the southern part of the territory by a settler, according to Palestinian sources and the army.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Report: Israeli settlers seize near-total control of Ramallah village land",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-israeli-settlers-seize-near-total-control-ramallah-village-land",
+          "date": "2026-08-19T16:29:20.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Report: Israeli settlers seize near-total control of Ramallah village land More than 4,700 of the 4,800 dunams of land in the Palestinian village of Um al-Safa, west of Ramallah in the occupied West Bank, have been confiscated, Al Jazeera reported, as Israeli settlers expand outposts and infrastructure on the village's land. The village, whose population is fewer than 1,000 people, has seen settle",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
         },
         {
           "title": "UK MP renews call to ban Israeli goods produced in occupied West Bank settlements",
@@ -5593,27 +5589,6 @@
           "source": "dominicanrepublicpost.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
-          "date": "2026-08-21T16:09:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
           "isNew": false,
           "region": null,
           "event": {
@@ -6068,6 +6043,27 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
+          "date": "2026-08-21T16:09:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Pakistan, seven other Muslim states condemn Israel’s illegal settlement policies in occupied Palestinian territory",
@@ -6865,7 +6861,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -7068,7 +7064,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Syria condemns attack in southwest as a 'flagrant violation of sovereignty' and a 'blatant breach of international law'.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -7143,7 +7139,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Israeli forces make fresh incursion into Syria's Quneitra, search home",
@@ -7198,48 +7194,6 @@
           "score": 22
         },
         {
-          "title": "Syrian foreign minister vows to pursue those responsible for 2013 chemical attacks",
-          "url": "https://aa.com.tr/en/middle-east/syrian-foreign-minister-vows-to-pursue-those-responsible-for-2013-chemical-attacks/4034110",
-          "date": "2026-08-21T17:00:00.000Z",
-          "source": "aa.com.tr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Syrian rights group says survivors of 2013 Ghouta chemical attack still suffering",
-          "url": "https://aa.com.tr/en/europe/syrian-rights-group-says-survivors-of-2013-ghouta-chemical-attack-still-suffering/4034059",
-          "date": "2026-08-21T17:00:00.000Z",
-          "source": "aa.com.tr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Israel defends Syria strike , warns against Turkish military expansion",
           "url": "https://www.ynetnews.com/article/hyunk48wfx",
           "date": "2026-08-21T21:30:00.000Z",
@@ -7261,25 +7215,46 @@
           "score": 22
         },
         {
-          "title": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-turkey-breaks-washington-israels-occupation-syrias-golan",
-          "date": "2026-08-22T10:24:55.000Z",
-          "source": "Middle East Eye",
+          "title": "Syrian foreign minister vows to pursue those responsible for 2013 chemical attacks",
+          "url": "https://aa.com.tr/en/middle-east/syrian-foreign-minister-vows-to-pursue-those-responsible-for-2013-chemical-attacks/4034110",
+          "date": "2026-08-21T17:00:00.000Z",
+          "source": "aa.com.tr",
           "sourceType": "news",
-          "summary": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights US&nbsp; ambassador to Turkey Tom Barrack has said&nbsp; Israel’s&nbsp; occupation of&nbsp; Syria’s&nbsp; Golan Heights continues even though it ran against UN resolutions and international law. Barrack’s remarks put him at odds with his own government, as US President Donald Trump recognised Israeli sov",
+          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 19
+          "score": 18
+        },
+        {
+          "title": "Syrian rights group says survivors of 2013 Ghouta chemical attack still suffering",
+          "url": "https://aa.com.tr/en/europe/syrian-rights-group-says-survivors-of-2013-ghouta-chemical-attack-still-suffering/4034059",
+          "date": "2026-08-21T17:00:00.000Z",
+          "source": "aa.com.tr",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Israeli shelling in Syrian Golan Heights sparks fire",
@@ -7562,6 +7537,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-turkey-breaks-washington-israels-occupation-syrias-golan",
+          "date": "2026-08-22T10:24:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights US&nbsp; ambassador to Turkey Tom Barrack has said&nbsp; Israel’s&nbsp; occupation of&nbsp; Syria’s&nbsp; Golan Heights continues even though it ran against UN resolutions and international law. Barrack’s remarks put him at odds with his own government, as US President Donald Trump recognised Israeli sov",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Turkey slams Israel's 'untenable' claims after strikes on Syrian base",
@@ -9009,27 +9005,6 @@
       ],
       "items": [
         {
-          "title": "Iranian official urges Qatar to move detained pilots to hospital on land, Tasnim says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-official-urges-qatar-move-detained-pilots-hospital-land-tasnim",
-          "date": "2026-08-22T10:22:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian official urges Qatar to move detained pilots to hospital on land, Tasnim says An Iranian military official on Saturday called on Qatar to transfer detained Iranian pilots to a hospital on land, saying they were being held on water and were in \"poor physical condition\", Tasnim news agency reported. Last week, Mohammad Baqerzadeh, commander of the Committee for the Search for Missing Persons",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 22
-        },
-        {
           "title": "Trump threatens Iran’s trade partners, as military strikes make way for economic pressure",
           "url": "https://www.theguardian.com/world/2026/aug/20/trump-threatens-crush-iran-economy-war-hormuz",
           "date": "2026-08-20T04:53:44.000Z",
@@ -9082,27 +9057,6 @@
           "score": 19
         },
         {
-          "title": "Middle East live: Iran allows several Iraqi oil tankers to pass through Hormuz strait",
-          "url": "https://www.france24.com/en/middle-east/20260822-middle-east-live-iran-allows-several-iraqi-oil-tankers-to-pass-through-hormuz",
-          "date": "2026-08-22T09:48:45.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Iran has allowed a ​number of Iraqi oil tankers to pass through the Strait of Hormuz following repeated requests from Baghdad, ​Iran’s ‌state news agency reported ⁠on Saturday. Meanwhile, the United States and Iran exchanged defiant messages ahead of Monday's scheduled announcement of new US economic sanctions. Follow our liveblog for the latest updates.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 19
-        },
-        {
           "title": "Iran says repair of South Pars refinery 70 percent complete",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-repair-south-pars-refinery-70-percent-complete",
           "date": "2026-08-22T14:43:28.000Z",
@@ -9120,6 +9074,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
+          "title": "Iranian official urges Qatar to move detained pilots to hospital on land, Tasnim says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-official-urges-qatar-move-detained-pilots-hospital-land-tasnim",
+          "date": "2026-08-22T10:22:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian official urges Qatar to move detained pilots to hospital on land, Tasnim says An Iranian military official on Saturday called on Qatar to transfer detained Iranian pilots to a hospital on land, saying they were being held on water and were in \"poor physical condition\", Tasnim news agency reported. Last week, Mohammad Baqerzadeh, commander of the Committee for the Search for Missing Persons",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
           },
           "score": 19
         },
@@ -9145,6 +9120,27 @@
           "score": 18
         },
         {
+          "title": "Middle East live: Iran allows several Iraqi oil tankers to pass through Hormuz strait",
+          "url": "https://www.france24.com/en/middle-east/20260822-middle-east-live-iran-allows-several-iraqi-oil-tankers-to-pass-through-hormuz",
+          "date": "2026-08-22T09:48:45.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Iran has allowed a ​number of Iraqi oil tankers to pass through the Strait of Hormuz following repeated requests from Baghdad, ​Iran’s ‌state news agency reported ⁠on Saturday. Meanwhile, the United States and Iran exchanged defiant messages ahead of Monday's scheduled announcement of new US economic sanctions. Follow our liveblog for the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 15
+        },
+        {
           "title": "Iran says new US sanctions violate sovereignty of other states",
           "url": "https://www.aljazeera.com/news/2026/8/22/iran-says-new-us-sanctions-violate-sovereignty-of-other-states?traffic_source=rss",
           "date": "2026-08-22T09:14:09.000Z",
@@ -9163,7 +9159,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Trump says he views strait of Hormuz as ‘American territory’",
@@ -10927,7 +10923,7 @@
       ],
       "activity": 49,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -11025,7 +11021,7 @@
             18.34
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -11062,7 +11058,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[Ayin Network] In Sudan's war, ground fighting has intensified on more than one front in the last few days. The fighting led to a shift in the map of control, particularly in the Blue Nile and Kordofan regions. At the same time, the army's leadership has initiated steps to facilitate political dialogue in areas under its control.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SDN-877",
             "name": "River Nile",
@@ -13196,8 +13192,8 @@
         "Süd-Kivu",
         "Ituri"
       ],
-      "activity": 30,
-      "severity": 64,
+      "activity": 27,
+      "severity": 63,
       "newCount": 0,
       "signals": [
         {
@@ -13265,7 +13261,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Ebola spreading exponentially in Congo as death toll tops 2 , 500 , UN says",
@@ -13642,8 +13638,8 @@
         "Mopti",
         "Kidal"
       ],
-      "activity": 31,
-      "severity": 64,
+      "activity": 29,
+      "severity": 63,
       "newCount": 0,
       "signals": [
         {
@@ -13693,7 +13689,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "HRW says Russian paramilitaries killed 9 civilians in Mali",
@@ -14125,13 +14121,13 @@
       ],
       "activity": 69,
       "severity": 59,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 7
+          "count": 8
         },
         {
           "key": "airstrike",
@@ -14201,6 +14197,27 @@
       ],
       "items": [
         {
+          "title": "Two police officers killed in North Yorkshire crash named as Matthew Blades and Tom Clough",
+          "url": "https://www.theguardian.com/uk-news/2026/aug/22/people-die-in-crash-involving-police-vehicle-and-car-in-north-yorkshire",
+          "date": "2026-08-22T16:09:07.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Watchdog launches inquiry into collision in which seven people died involving police car and another vehicle Two police officers who died in a car crash near Middlesbrough in the early hours of Saturday have been named. Police constables Matthew Blades and Tom Clough were among seven people killed after their marked police car collided with a Volkswagen Passat travelling the wrong way along the A6",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
           "title": "US judge strikes down policy suspending immigrant visa processing for 75 nations, including Pakistan",
           "url": "https://www.dawn.com/news/2024551/us-judge-strikes-down-policy-suspending-immigrant-visa-processing-for-75-nations-including-pakistan",
           "date": "2026-08-22T05:36:46.000Z",
@@ -14220,6 +14237,27 @@
             "label": "Bericht"
           },
           "score": 23
+        },
+        {
+          "title": "Romania Destroys Drone Near Major Gas Project in the Black Sea",
+          "url": "https://balkaninsight.com/2026/08/20/romania-destroys-drone-near-major-gas-project-in-the-black-sea/bi/",
+          "date": "2026-08-20T13:20:15.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "President Nicusor Dan blamed Russia for the explosive-laden maritime drone in the Black Sea - another indication of the security risks that Romania faces as the war in neighbouring Ukraine continues.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 19
         },
         {
           "title": "At least 4 killed, 3 injured in blast in Balochistan's Mastung: police",
@@ -14250,7 +14288,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "‘Shouldn’t be renamed at all’: senator attacks Navy’s reported consideration of honoring Trump instead of Black war hero – live",
@@ -14271,28 +14309,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
-        },
-        {
-          "title": "Romania Destroys Drone Near Major Gas Project in the Black Sea",
-          "url": "https://balkaninsight.com/2026/08/20/romania-destroys-drone-near-major-gas-project-in-the-black-sea/bi/",
-          "date": "2026-08-20T13:20:15.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "President Nicusor Dan blamed Russia for the explosive-laden maritime drone in the Black Sea - another indication of the security risks that Romania faces as the war in neighbouring Ukraine continues.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "49 terrorists killed in IBOs in KP, Balochistan: ISPR",
@@ -15191,7 +15208,7 @@
           "score": 8
         }
       ],
-      "itemCount": 40
+      "itemCount": 41
     },
     {
       "id": "nigeria",
@@ -16201,7 +16218,7 @@
             "icon": "📣",
             "label": "Proteste/Unruhen"
           },
-          "score": 11
+          "score": 12
         },
         {
           "title": "Boko Haram Fighter Surrenders with AK - 47 Rifle , 26 Rounds of Ammunition in Borno - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
@@ -16966,9 +16983,9 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 50,
-      "severity": 54,
-      "newCount": 1,
+      "activity": 49,
+      "severity": 53,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -16986,7 +17003,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 5
+          "count": 4
         },
         {
           "key": "offensive",
@@ -17108,7 +17125,7 @@
           "source": "wdtimes.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -17120,7 +17137,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Houthis and government trade attacks as Yemen slides back to full-scale war",
@@ -17686,27 +17703,6 @@
           "score": 15
         },
         {
-          "title": "Yemen's Mocha port suspends operations after Houthi attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-mocha-port-halts-operations-after-houthi-attacks-port-director",
-          "date": "2026-08-15T16:24:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemen's Mocha port suspends operations after Houthi attacks Yemen's Mocha port has suspended commercial and maritime operations after being hit by more than 25 missiles in Houthi attacks in recent days, the port's director said on Saturday. The attacks killed seven people and caused an estimated $16m in losses, the director told a news conference.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemen: Türk alarmed by rising civilian toll, urges restraint",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168151",
           "date": "2026-08-17T12:00:00.000Z",
@@ -17948,7 +17944,7 @@
           "score": 8
         }
       ],
-      "itemCount": 36
+      "itemCount": 35
     },
     {
       "id": "niger",
@@ -18769,7 +18765,7 @@
             "icon": "📣",
             "label": "Proteste/Unruhen"
           },
-          "score": 11
+          "score": 12
         },
         {
           "title": "Nigeria: Defence Minister Meets Protesting Military Veterans, Promises Improved Pension Package",
@@ -19284,27 +19280,6 @@
           "score": 26
         },
         {
-          "title": "Eight killed in plane crash at remote Alaskan military site, air force says",
-          "url": "https://www.bbc.co.uk/news/articles/cj9dmw8183wo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:05:09.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "It is unclear why the civilian-contracted plane was at the radar site on Alaska's south-west coast.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "Sudan: IOM - 200k+ Displaced Across Kordofan As Fighting Intensifies",
           "url": "https://allafrica.com/stories/202608210013.html",
           "date": "2026-08-21T04:54:18.000Z",
@@ -19343,6 +19318,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Eight killed in plane crash at remote Alaskan military site, air force says",
+          "url": "https://www.bbc.co.uk/news/articles/cj9dmw8183wo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T16:05:09.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "It is unclear why the civilian-contracted plane was at the radar site on Alaska's south-west coast.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 18
         },
@@ -19452,27 +19448,6 @@
           "score": 18
         },
         {
-          "title": "Middle East live: Iran allows several Iraqi oil tankers to pass through Hormuz strait",
-          "url": "https://www.france24.com/en/middle-east/20260822-middle-east-live-iran-allows-several-iraqi-oil-tankers-to-pass-through-hormuz",
-          "date": "2026-08-22T09:48:45.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Iran has allowed a ​number of Iraqi oil tankers to pass through the Strait of Hormuz following repeated requests from Baghdad, ​Iran’s ‌state news agency reported ⁠on Saturday. Meanwhile, the United States and Iran exchanged defiant messages ahead of Monday's scheduled announcement of new US economic sanctions. Follow our liveblog for the latest updates.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 16
-        },
-        {
           "title": "Families Displaced by the Ardillos Return Home in Guerrero, Mexico",
           "url": "https://insightcrime.org/news/families-displaced-by-the-ardillos-return-home-in-guerrero-mexico/",
           "date": "2026-08-17T19:01:55.000Z",
@@ -19490,6 +19465,27 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 15
+        },
+        {
+          "title": "Middle East live: Iran allows several Iraqi oil tankers to pass through Hormuz strait",
+          "url": "https://www.france24.com/en/middle-east/20260822-middle-east-live-iran-allows-several-iraqi-oil-tankers-to-pass-through-hormuz",
+          "date": "2026-08-22T09:48:45.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Iran has allowed a ​number of Iraqi oil tankers to pass through the Strait of Hormuz following repeated requests from Baghdad, ​Iran’s ‌state news agency reported ⁠on Saturday. Meanwhile, the United States and Iran exchanged defiant messages ahead of Monday's scheduled announcement of new US economic sanctions. Follow our liveblog for the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 15
         },
@@ -19626,27 +19622,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "EU's von der Leyen joins European countries to condemn Israel's West Bank plan European Commission President Ursula von der Leyen on Friday joined European countries to condemn plans by&nbsp;Israel&nbsp;to open up construction tenders for a settlement project called 'E1' in the occupied West Bank. \"The&nbsp;Israeli Government's decision to publish construction tenders for the E1 settlement project",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
-          "date": "2026-08-21T16:09:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
           "isNew": false,
           "region": null,
           "event": {
@@ -19932,6 +19907,27 @@
             "label": "Gefechte"
           },
           "score": 12
+        },
+        {
+          "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/middle-eastern-powers-condemn-israeli-settlement-plans-reject-e1-west",
+          "date": "2026-08-21T16:09:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan The foreign ministers of Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and the UAE condemned&nbsp;Israel's settlement policies in Palestinian territories and said they categorically rejected the Israeli construction called \"E1\" in the occupied West Bank. \"The Ministers call for immediate action ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "China calls for US-Iran dialogue",
@@ -20322,6 +20318,27 @@
           "score": 11
         },
         {
+          "title": "Displaced Lebanese watch southern Lebanon’s ‘pilot zones’ from afar",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/displaced-lebanese-watch-southern-lebanons-pilot-zones-from-afar-2?traffic_source=rss",
+          "date": "2026-08-19T21:10:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "“You can't do anything. Just stand here and watch.” Al Jazeera’s Ali Hashem watched Israeli attacks near his home town.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 11
+        },
+        {
           "title": "Is the US actually too chicken to take on China for trade?",
           "url": "https://www.theguardian.com/us-news/2026/aug/19/china-trump-trade-weak-yuan",
           "date": "2026-08-19T16:42:08.000Z",
@@ -20350,28 +20367,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 11
-        },
-        {
-          "title": "Displaced Lebanese watch southern Lebanon’s ‘pilot zones’ from afar",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/displaced-lebanese-watch-southern-lebanons-pilot-zones-from-afar-2?traffic_source=rss",
-          "date": "2026-08-19T21:10:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "“You can't do anything. Just stand here and watch.” Al Jazeera’s Ali Hashem watched Israeli attacks near his home town.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Israel’s Ben Gvir boasts of planned execution facility for Palestinian prisoners",
@@ -21068,7 +21064,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Ukraine Invasion Day 1 , 640 : Missile and drone attacks continue with RU targeting civilians . ",
@@ -23285,8 +23281,8 @@
         "Juba",
         "Jonglei"
       ],
-      "activity": 25,
-      "severity": 46,
+      "activity": 23,
+      "severity": 45,
       "newCount": 0,
       "signals": [
         {
@@ -23323,7 +23319,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "As elections near, South Sudan risks new atrocity crimes, warns rights probe",
@@ -24175,89 +24171,6 @@
           "score": 27
         },
         {
-          "title": "Turkey seeks arrest warrant for Israeli PM Netanyahu, fueling tensions",
-          "url": "https://www.france24.com/en/video/20260822-turkey-seeks-arrest-warrant-for-israeli-pm-netanyahu-fueling-tensions",
-          "date": "2026-08-22T10:57:12.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Turkey and Israel traded insults on Friday, after Ankara announced it was seeking an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" because of the interception of an aid flotilla bound for Gaza. Netanyahu's office accused Turkey of hypocrisy. Our correspondent in Turkey Jasper Mortimer analyses the situation.",
-          "isNew": false,
-          "region": {
-            "id": "TUR-3008",
-            "name": "Ankara",
-            "nameDe": "Ankara",
-            "type": "Province",
-            "anchor": [
-              32.61,
-              39.781
-            ],
-            "matched": "Ankara"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Turkey accuses Netanyahu of 'genocide', Israeli PM calls Erdogan 'antisemitic dictator'",
-          "url": "https://www.france24.com/en/video/20260822-turkey-accuses-netanyahu-of-genocide-israeli-pm-calls-erdogan-antisemitic-dictator-1",
-          "date": "2026-08-22T10:38:30.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Turkey and Israel traded barbs on Friday after Ankara announced it had sought an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" linked to the interception of a Gaza-bound aid flotilla. Turkey is one of Israel's fiercest critics over its war in Gaza, sparked by the Hamas-led October 7 attacks on southern Israel. Story by Charlotte Lam.",
-          "isNew": false,
-          "region": {
-            "id": "TUR-3008",
-            "name": "Ankara",
-            "nameDe": "Ankara",
-            "type": "Province",
-            "anchor": [
-              32.61,
-              39.781
-            ],
-            "matched": "Ankara"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
-        },
-        {
-          "title": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-turkey-breaks-washington-israels-occupation-syrias-golan",
-          "date": "2026-08-22T10:24:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights US&nbsp; ambassador to Turkey Tom Barrack has said&nbsp; Israel’s&nbsp; occupation of&nbsp; Syria’s&nbsp; Golan Heights continues even though it ran against UN resolutions and international law. Barrack’s remarks put him at odds with his own government, as US President Donald Trump recognised Israeli sov",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Israeli opinion article says Turkey's Nato protection does not apply to troops in Syria",
           "url": "https://www.middleeasteye.net/news/israeli-opinion-article-warns-turkey-against-further-deployments-syria-where-nato-protections-do-not",
           "date": "2026-08-20T20:02:03.000Z",
@@ -24360,6 +24273,89 @@
             "label": "Bericht"
           },
           "score": 18
+        },
+        {
+          "title": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-turkey-breaks-washington-israels-occupation-syrias-golan",
+          "date": "2026-08-22T10:24:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US ambassador to Turkey breaks with Washington on Israel's occupation of Syria's Golan Heights US&nbsp; ambassador to Turkey Tom Barrack has said&nbsp; Israel’s&nbsp; occupation of&nbsp; Syria’s&nbsp; Golan Heights continues even though it ran against UN resolutions and international law. Barrack’s remarks put him at odds with his own government, as US President Donald Trump recognised Israeli sov",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Turkey seeks arrest warrant for Israeli PM Netanyahu, fueling tensions",
+          "url": "https://www.france24.com/en/video/20260822-turkey-seeks-arrest-warrant-for-israeli-pm-netanyahu-fueling-tensions",
+          "date": "2026-08-22T10:57:12.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey and Israel traded insults on Friday, after Ankara announced it was seeking an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" because of the interception of an aid flotilla bound for Gaza. Netanyahu's office accused Turkey of hypocrisy. Our correspondent in Turkey Jasper Mortimer analyses the situation.",
+          "isNew": false,
+          "region": {
+            "id": "TUR-3008",
+            "name": "Ankara",
+            "nameDe": "Ankara",
+            "type": "Province",
+            "anchor": [
+              32.61,
+              39.781
+            ],
+            "matched": "Ankara"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Turkey accuses Netanyahu of 'genocide', Israeli PM calls Erdogan 'antisemitic dictator'",
+          "url": "https://www.france24.com/en/video/20260822-turkey-accuses-netanyahu-of-genocide-israeli-pm-calls-erdogan-antisemitic-dictator-1",
+          "date": "2026-08-22T10:38:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey and Israel traded barbs on Friday after Ankara announced it had sought an international arrest warrant for Prime Minister Benjamin Netanyahu, accusing him of \"genocide\" linked to the interception of a Gaza-bound aid flotilla. Turkey is one of Israel's fiercest critics over its war in Gaza, sparked by the Hamas-led October 7 attacks on southern Israel. Story by Charlotte Lam.",
+          "isNew": false,
+          "region": {
+            "id": "TUR-3008",
+            "name": "Ankara",
+            "nameDe": "Ankara",
+            "type": "Province",
+            "anchor": [
+              32.61,
+              39.781
+            ],
+            "matched": "Ankara"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Turkey slams Israel's 'untenable' claims after strikes on Syrian base",
@@ -24929,271 +24925,6 @@
       "itemCount": 32
     },
     {
-      "id": "ethiopia",
-      "name": "Äthiopien",
-      "nameEn": "Ethiopia",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "Ethiopia"
-      ],
-      "lat": 11.5,
-      "lon": 39,
-      "tier": "high",
-      "since": "2020 (Tigray) / Amhara seit 2023",
-      "parties": [
-        "Bundesregierung",
-        "Fano (Amhara)",
-        "OLA (Oromia)",
-        "TPLF/Tigray-Fraktionen",
-        "Eritrea"
-      ],
-      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
-      "hotspots": [
-        "Amhara",
-        "Oromia",
-        "Tigray",
-        "Afar",
-        "Assab"
-      ],
-      "activity": 10,
-      "severity": 42,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "ETH",
-      "extraCountries": [
-        "ERI",
-        "SOM"
-      ],
-      "regions": [
-        {
-          "id": "ETH-3110",
-          "name": "Tigray",
-          "nameDe": "Tigray",
-          "type": "Administrative State",
-          "anchor": [
-            38.442,
-            13.778
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        },
-        {
-          "id": "ETH-3133",
-          "name": "Addis Ababa",
-          "nameDe": "Addis Abeba",
-          "type": "Administrative State",
-          "anchor": [
-            38.786,
-            8.978
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "ETH-3132",
-          "name": "Benishangul-Gumuz",
-          "nameDe": "Benishangul-Gumuz",
-          "type": "Administrative State",
-          "anchor": [
-            35.454,
-            10.584
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Ethiopia's Virgin Mary festival in Tigray cancelled over drone strike fears",
-          "url": "https://www.bbc.co.uk/news/articles/c24me64n31qo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:20:55.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "An eagerly anticipated gathering of women will not be taking place following recent aerial strikes.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Ethiopia : Drone Strikes in Two Locations in Mekelle , 13 Casualties Received At Ayder Hospital",
-          "url": "https://allafrica.com/stories/202608210036.html",
-          "date": "2026-08-21T09:15:00.000Z",
-          "source": "allafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ethiopia: Fighting Erupts in Somalia's Baidoa Between Federal Forces, Former Southwest President Loyalists",
-          "url": "https://allafrica.com/stories/202608180111.html",
-          "date": "2026-08-18T05:33:28.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Heavy fighting erupted in central Baidoa on Monday between Somali federal forces and armed groups loyal to former South West State President Abdiaziz Hassan Mohamed Laftagareen, marking a renewed escalation in the political and security crisis that has gripped the regional capital since March.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone",
-          "url": "https://www.middleeasteye.net/news/uae-backed-chinese-company-acquires-stake-ethiopian-gold-mine-near-sudan-warzone",
-          "date": "2026-08-19T09:45:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone Submitted by Zecharias Zelalem on Tue, 08/18/2026 - 09:00 Deal between Canada's Allied Gold and China's Zijin includes gold site on Sudan-Ethiopia border An elderly Sudanese refugee woman stands on the main road at the Ura Refugee Site in Asosa Zone, Benishangul-Gumuz region, Ethiopia, on 19 June 2026 (Marco Simon",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3132",
-            "name": "Benishangul-Gumuz",
-            "nameDe": "Benishangul-Gumuz",
-            "type": "Administrative State",
-            "anchor": [
-              35.454,
-              10.584
-            ],
-            "matched": "Benishangul-Gumuz Region"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 8
-        },
-        {
-          "title": "Ethiopia: The Tigray War - Lines of Fire Extending to the Sudanese Border",
-          "url": "https://allafrica.com/stories/202608160012.html",
-          "date": "2026-08-16T15:58:02.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 5
-    },
-    {
       "id": "venezuela",
       "name": "Venezuela / Essequibo",
       "nameEn": "Venezuela & Essequibo",
@@ -25339,6 +25070,265 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "ethiopia",
+      "name": "Äthiopien",
+      "nameEn": "Ethiopia",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "Ethiopia"
+      ],
+      "lat": 11.5,
+      "lon": 39,
+      "tier": "high",
+      "since": "2020 (Tigray) / Amhara seit 2023",
+      "parties": [
+        "Bundesregierung",
+        "Fano (Amhara)",
+        "OLA (Oromia)",
+        "TPLF/Tigray-Fraktionen",
+        "Eritrea"
+      ],
+      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
+      "hotspots": [
+        "Amhara",
+        "Oromia",
+        "Tigray",
+        "Afar",
+        "Assab"
+      ],
+      "activity": 7,
+      "severity": 41,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "ETH",
+      "extraCountries": [
+        "ERI",
+        "SOM"
+      ],
+      "regions": [
+        {
+          "id": "ETH-3110",
+          "name": "Tigray",
+          "nameDe": "Tigray",
+          "type": "Administrative State",
+          "anchor": [
+            38.442,
+            13.778
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        },
+        {
+          "id": "ETH-3133",
+          "name": "Addis Ababa",
+          "nameDe": "Addis Abeba",
+          "type": "Administrative State",
+          "anchor": [
+            38.786,
+            8.978
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "ETH-3132",
+          "name": "Benishangul-Gumuz",
+          "nameDe": "Benishangul-Gumuz",
+          "type": "Administrative State",
+          "anchor": [
+            35.454,
+            10.584
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Ethiopia Ashenda festival : Tigray cancels event celebrating the Virgin Mary over drone attack fears",
+          "url": "https://www.bbc.co.uk/news/articles/c24me64n31qo",
+          "date": "2026-08-21T16:45:00.000Z",
+          "source": "bbc.co.uk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3110",
+            "name": "Tigray",
+            "nameDe": "Tigray",
+            "type": "Administrative State",
+            "anchor": [
+              38.442,
+              13.778
+            ],
+            "matched": "Tigray"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 24
+        },
+        {
+          "title": "Ethiopia : Drone Strikes in Two Locations in Mekelle , 13 Casualties Received At Ayder Hospital",
+          "url": "https://allafrica.com/stories/202608210036.html",
+          "date": "2026-08-21T09:15:00.000Z",
+          "source": "allafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 21
+        },
+        {
+          "title": "Ethiopia: Fighting Erupts in Somalia's Baidoa Between Federal Forces, Former Southwest President Loyalists",
+          "url": "https://allafrica.com/stories/202608180111.html",
+          "date": "2026-08-18T05:33:28.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Heavy fighting erupted in central Baidoa on Monday between Somali federal forces and armed groups loyal to former South West State President Abdiaziz Hassan Mohamed Laftagareen, marking a renewed escalation in the political and security crisis that has gripped the regional capital since March.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
+            "type": "Administrative State",
+            "anchor": [
+              38.786,
+              8.978
+            ],
+            "matched": "Addis Abeba"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone",
+          "url": "https://www.middleeasteye.net/news/uae-backed-chinese-company-acquires-stake-ethiopian-gold-mine-near-sudan-warzone",
+          "date": "2026-08-19T09:45:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone Submitted by Zecharias Zelalem on Tue, 08/18/2026 - 09:00 Deal between Canada's Allied Gold and China's Zijin includes gold site on Sudan-Ethiopia border An elderly Sudanese refugee woman stands on the main road at the Ura Refugee Site in Asosa Zone, Benishangul-Gumuz region, Ethiopia, on 19 June 2026 (Marco Simon",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3132",
+            "name": "Benishangul-Gumuz",
+            "nameDe": "Benishangul-Gumuz",
+            "type": "Administrative State",
+            "anchor": [
+              35.454,
+              10.584
+            ],
+            "matched": "Benishangul-Gumuz Region"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 8
+        },
+        {
+          "title": "Ethiopia: The Tigray War - Lines of Fire Extending to the Sudanese Border",
+          "url": "https://allafrica.com/stories/202608160012.html",
+          "date": "2026-08-16T15:58:02.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Ayin Network] In northwestern Ethiopia, war doesn't need to cross the border to reach Sudan. Near the Tekeze-Setit River, villages on the Sudanese side can hear the explosions, and civilians begin searching for ways to flee towards the border. There, in the geography stretching between the Shiraro, Humera, and Tekeze regions, the Ethiopian-Sudanese border appears as a thin line on a map, but it i",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3110",
+            "name": "Tigray",
+            "nameDe": "Tigray",
+            "type": "Administrative State",
+            "anchor": [
+              38.442,
+              13.778
+            ],
+            "matched": "Tigray"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
           },
           "score": 8
         }
@@ -25754,7 +25744,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Children among wounded in Zelensky's hometown, struck by Russian drones",
@@ -25775,7 +25765,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Russian strikes Zelensky's hometown in Ukraine, killing 15 people, wounding 130",
@@ -26219,27 +26209,6 @@
           "score": 18
         },
         {
-          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:26:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 16
-        },
-        {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
           "url": "https://www.dw.com/en/masha-and-the-bear-ukraine-sanctions-russian-cartoon/a-78464406?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-21T18:59:00.000Z",
@@ -26330,48 +26299,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
-          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
-          "date": "2026-08-21T16:53:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
-          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
-          "date": "2026-08-21T16:38:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -26922,6 +26849,27 @@
           "score": 15
         },
         {
+          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T16:26:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
+        },
+        {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
           "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T13:07:00.000Z",
@@ -27004,6 +26952,48 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
+          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
+          "date": "2026-08-21T16:53:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
+          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
+          "date": "2026-08-21T16:38:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Russia says ready for ‘new ideas’ on Ukraine war that match Putin’s goals",
@@ -27416,7 +27406,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Children among wounded in Zelensky's hometown, struck by Russian drones",
@@ -27437,7 +27427,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Russian strikes Zelensky's hometown in Ukraine, killing 15 people, wounding 130",
@@ -27881,27 +27871,6 @@
           "score": 18
         },
         {
-          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
-          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T16:26:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 16
-        },
-        {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
           "url": "https://www.dw.com/en/masha-and-the-bear-ukraine-sanctions-russian-cartoon/a-78464406?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-21T18:59:00.000Z",
@@ -27961,48 +27930,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
-          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
-          "date": "2026-08-21T16:53:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
-          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
-          "date": "2026-08-21T16:38:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -28553,6 +28480,27 @@
           "score": 15
         },
         {
+          "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T16:26:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
+        },
+        {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
           "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T13:07:00.000Z",
@@ -28635,6 +28583,48 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
+          "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
+          "date": "2026-08-21T16:53:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Shakhtar have not played at home since 2014 when Russia annexed the Donetsk region and now switch to Stamford Bridge.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’",
+          "url": "https://www.aljazeera.com/news/2026/8/21/ukraine-sanctions-popular-russian-cartoon-masha-and-the?traffic_source=rss",
+          "date": "2026-08-21T16:38:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading 'pro-Russian propaganda'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Russia says ready for ‘new ideas’ on Ukraine war that match Putin’s goals",
@@ -29486,7 +29476,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 17
+          "score": 15
         },
         {
           "title": "Iran’s Ghalibaf: ‘We stay out of Iraq’s affairs’",
@@ -29982,27 +29972,6 @@
           "score": 19
         },
         {
-          "title": "Dozens missing after gold mine collapse in Central African Republic",
-          "url": "https://www.france24.com/en/dozens-missing-after-gold-mine-collapse-in-central-african-republic",
-          "date": "2026-08-22T10:06:49.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In the Central African Republic, the search for victims continues following Tuesday’s gold mine collapse. The government says the incident has claimed at least 49 lives but local sources estimate the death toll to be much higher. Cameroonian and Chadian nationals are also among the victims. Several witnesses spoke to our correspondent Marcel Amoko.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
-        },
-        {
           "title": "Central African Republic : Over 100 Labourers Killed in Gold Mine Collapse in Central African Republic",
           "url": "https://allafrica.com/stories/202608210071.html",
           "date": "2026-08-21T07:00:00.000Z",
@@ -30087,6 +30056,27 @@
           "score": 18
         },
         {
+          "title": "Dozens missing after gold mine collapse in Central African Republic",
+          "url": "https://www.france24.com/en/dozens-missing-after-gold-mine-collapse-in-central-african-republic",
+          "date": "2026-08-22T10:06:49.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In the Central African Republic, the search for victims continues following Tuesday’s gold mine collapse. The government says the incident has claimed at least 49 lives but local sources estimate the death toll to be much higher. Cameroonian and Chadian nationals are also among the victims. Several witnesses spoke to our correspondent Marcel Amoko.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
           "title": "At least 100 feared dead in gold mine collapse in Central African Republic",
           "url": "https://www.aljazeera.com/news/2026/8/19/dozens-killed-after-gold-mine-collapse-in-central-african-republic?traffic_source=rss",
           "date": "2026-08-19T12:38:22.000Z",
@@ -30151,459 +30141,6 @@
         }
       ],
       "itemCount": 9
-    },
-    {
-      "id": "ecuador",
-      "name": "Ecuador",
-      "nameEn": "Ecuador",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Ecuador"
-      ],
-      "lat": -1.5,
-      "lon": -78.5,
-      "tier": "medium",
-      "since": "2023",
-      "parties": [
-        "Regierung (Noboa)",
-        "Los Choneros",
-        "Los Lobos",
-        "transnationale Kartelle"
-      ],
-      "background": "\"Interner bewaffneter Konflikt\" gegen Drogenbanden mit Militäreinsatz, Rekordmordraten und Ausnahmezuständen.",
-      "hotspots": [
-        "Guayaquil",
-        "Esmeraldas",
-        "Durán"
-      ],
-      "activity": 14,
-      "severity": 27,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 2
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "ECU",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Choneros",
-          "url": "https://insightcrime.org/ecuador-organized-crime-news/los-choneros/",
-          "date": "2026-08-21T16:40:10.000Z",
-          "source": "InSight Crime",
-          "sourceType": "analysis",
-          "summary": "Choneros The Choneros are one of Ecuador’s most prominent criminal groups and a leading actor in the violence that has destabilized the country in recent years. The post Choneros appeared first on InSight Crime .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 23
-        },
-        {
-          "title": "Five Americans, Ecuador intelligence chief killed in helicopter crash in Kenya",
-          "url": "https://www.premiumtimesng.com/foreign/904217-five-americans-ecuador-intelligence-chief-killed-in-helicopter-crash-in-kenya.html",
-          "date": "2026-08-20T11:14:11.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The accident occurred on Wednesday morning at Mount Ololokwe in Samburu County, north of Nairobi, the capital. The post Five Americans, Ecuador intelligence chief killed in helicopter crash in Kenya appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ecuador intelligence chief and five Americans killed in Kenya helicopter crash",
-          "url": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-20T10:41:25.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Michele Sensi-Contugi and his wife Stephany Hollihan are among the seven people killed in the crash.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Trapped between cartel violence and US boat strikes , Ecuador fishers left with no way out",
-          "url": "https://icsf.net/newss/trapped-between-cartel-violence-and-us-boat-strikes-ecuadors-fishers-left-with-no-way-out/",
-          "date": "2026-08-17T08:45:00.000Z",
-          "source": "icsf.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Fears grow in Amazon village as Brazilian drug gangs push into Bolivia",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/fears-grow-in-amazon-village-as-brazilian-drug-gangs-push-into-bolivia?traffic_source=rss",
-          "date": "2026-08-20T02:16:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Fears are growing in a remote Bolivian village as Brazilian drug gangs fight for control of trafficking routes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Inside secret police warehouse as Germany targets small boats gangs",
-          "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T05:02:58.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "mozambique",
-      "name": "Mosambik / Cabo Delgado",
-      "nameEn": "Mozambique – Cabo Delgado",
-      "region": "Afrika (Süd)",
-      "countries": [
-        "Mozambique"
-      ],
-      "lat": -12.5,
-      "lon": 39.8,
-      "tier": "medium",
-      "since": "2017",
-      "parties": [
-        "Mosambikanische Streitkräfte",
-        "IS-Mosambik (Al-Shabaab lokal)",
-        "Ruanda",
-        "SAMIM-Nachfolger"
-      ],
-      "background": "Dschihadistischer Aufstand in Cabo Delgado nahe den LNG-Projekten; erneute Angriffswellen und Vertreibungen.",
-      "hotspots": [
-        "Cabo Delgado",
-        "Mocímboa da Praia",
-        "Palma",
-        "Macomia"
-      ],
-      "activity": 12,
-      "severity": 26,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MOZ",
-      "extraCountries": [],
-      "regions": [
-        {
-          "id": "MOZ-1200",
-          "name": "Nampula",
-          "nameDe": "Nampula",
-          "type": "Province",
-          "anchor": [
-            39.25,
-            -14.959
-          ],
-          "count": 4,
-          "newCount": 0,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          }
-        },
-        {
-          "id": "MOZ-1198",
-          "name": "Cabo Delgado",
-          "nameDe": "Cabo Delgado",
-          "type": "Province",
-          "anchor": [
-            39.365,
-            -12.46
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Mozambique: Islamist Terrorists Have Stepped Up Recruitment in Cabo Delgado - UN",
-          "url": "https://allafrica.com/stories/202608200275.html",
-          "date": "2026-08-20T10:12:09.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[AIM] Maputo -- An United Nations report submitted to the Security Council points out that the Islamist terrorists have stepped up recruitment in the northern Mozambican province of Cabo Delgado, growing to between 400 and 500 fighters.",
-          "isNew": false,
-          "region": {
-            "id": "MOZ-1198",
-            "name": "Cabo Delgado",
-            "nameDe": "Cabo Delgado",
-            "type": "Province",
-            "anchor": [
-              39.365,
-              -12.46
-            ],
-            "matched": "Cabo Delgado"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Somali army repels troops loyal to ousted leader and Islamist insurgents",
-          "url": "https://www.france24.com/en/somali-army-repels-troups-loyal-to-ousted-leader-and-islamist-insurgents",
-          "date": "2026-08-18T10:02:18.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Somali national forces repelled an assault by troops loyal to an ousted regional leader and Islamist insurgents on Monday over control of the key city of Baidoa. The assault involved \"vehicles laden with explosives\" according to the government, which said its troops killed nearly 30 militants in their response. Details by Laurent Berstecher.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Mozambique: Nine Senior Lam Officials to Face Trial for Mismanagement",
-          "url": "https://allafrica.com/stories/202608190591.html",
-          "date": "2026-08-19T16:51:46.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[AIM] Maputo -- The Central Office for the Fight against Corruption (GCCC) has announced that nine senior officials of the publicly-owned company Air Mozambique (formerly known as Mozambique Airlines, LAM) will face court proceedings over alleged mismanagement.",
-          "isNew": false,
-          "region": {
-            "id": "MOZ-1200",
-            "name": "Nampula",
-            "nameDe": "Nampula",
-            "type": "Province",
-            "anchor": [
-              39.25,
-              -14.959
-            ],
-            "matched": "Mozambique"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Mozambique New Terrorism Center Faces Test",
-          "url": "https://www.africa.com/top-10-news/mozambiques-new-terrorism-center-faces-test",
-          "date": "2026-08-20T20:45:00.000Z",
-          "source": "africa.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MOZ-1200",
-            "name": "Nampula",
-            "nameDe": "Nampula",
-            "type": "Province",
-            "anchor": [
-              39.25,
-              -14.959
-            ],
-            "matched": "Mozambique"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Can Mozambique new counter - terrorism centre deliver ? ",
-          "url": "https://defenceweb.co.za/joint/diplomacy-a-peace/can-mozambiques-new-counter-terrorism-centre-deliver/",
-          "date": "2026-08-20T14:45:00.000Z",
-          "source": "defenceweb.co.za",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MOZ-1200",
-            "name": "Nampula",
-            "nameDe": "Nampula",
-            "type": "Province",
-            "anchor": [
-              39.25,
-              -14.959
-            ],
-            "matched": "Mozambique"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Unusual RLNG price drives up electricity cost",
-          "url": "https://www.dawn.com/news/2023808/unusual-rlng-price-drives-up-electricity-cost",
-          "date": "2026-08-19T03:11:06.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "ISLAMABAD: The cost of regasified liquefied natural gas (RLNG)-based power generation surged by record 242 per cent to Rs47.4 per unit in July, from less than Rs14 in April, after the government purchased five expensive cargoes from the spot market in the month due to the suspension of supplies from Qatar following the US-Iran war. Chiefly because of LNG factor, the power companies have sought a R",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Mozambique : Can Mozambique New Counter - Terrorism Centre Deliver ? ",
-          "url": "https://allafrica.com/stories/202608180563.html",
-          "date": "2026-08-18T15:00:00.000Z",
-          "source": "allafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MOZ-1200",
-            "name": "Nampula",
-            "nameDe": "Nampula",
-            "type": "Province",
-            "anchor": [
-              39.25,
-              -14.959
-            ],
-            "matched": "Mozambique"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 7
     },
     {
       "id": "chad",
@@ -30734,6 +30271,182 @@
         }
       ],
       "itemCount": 4
+    },
+    {
+      "id": "ecuador",
+      "name": "Ecuador",
+      "nameEn": "Ecuador",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Ecuador"
+      ],
+      "lat": -1.5,
+      "lon": -78.5,
+      "tier": "medium",
+      "since": "2023",
+      "parties": [
+        "Regierung (Noboa)",
+        "Los Choneros",
+        "Los Lobos",
+        "transnationale Kartelle"
+      ],
+      "background": "\"Interner bewaffneter Konflikt\" gegen Drogenbanden mit Militäreinsatz, Rekordmordraten und Ausnahmezuständen.",
+      "hotspots": [
+        "Guayaquil",
+        "Esmeraldas",
+        "Durán"
+      ],
+      "activity": 11,
+      "severity": 26,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "ECU",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Choneros",
+          "url": "https://insightcrime.org/ecuador-organized-crime-news/los-choneros/",
+          "date": "2026-08-21T16:40:10.000Z",
+          "source": "InSight Crime",
+          "sourceType": "analysis",
+          "summary": "Choneros The Choneros are one of Ecuador’s most prominent criminal groups and a leading actor in the violence that has destabilized the country in recent years. The post Choneros appeared first on InSight Crime .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Five Americans, Ecuador intelligence chief killed in helicopter crash in Kenya",
+          "url": "https://www.premiumtimesng.com/foreign/904217-five-americans-ecuador-intelligence-chief-killed-in-helicopter-crash-in-kenya.html",
+          "date": "2026-08-20T11:14:11.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The accident occurred on Wednesday morning at Mount Ololokwe in Samburu County, north of Nairobi, the capital. The post Five Americans, Ecuador intelligence chief killed in helicopter crash in Kenya appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Ecuador intelligence chief and five Americans killed in Kenya helicopter crash",
+          "url": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-20T10:41:25.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Michele Sensi-Contugi and his wife Stephany Hollihan are among the seven people killed in the crash.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Trapped between cartel violence and US boat strikes , Ecuador fishers left with no way out",
+          "url": "https://icsf.net/newss/trapped-between-cartel-violence-and-us-boat-strikes-ecuadors-fishers-left-with-no-way-out/",
+          "date": "2026-08-17T08:45:00.000Z",
+          "source": "icsf.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Fears grow in Amazon village as Brazilian drug gangs push into Bolivia",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/fears-grow-in-amazon-village-as-brazilian-drug-gangs-push-into-bolivia?traffic_source=rss",
+          "date": "2026-08-20T02:16:17.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Fears are growing in a remote Bolivian village as Brazilian drug gangs fight for control of trafficking routes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Inside secret police warehouse as Germany targets small boats gangs",
+          "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T05:02:58.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 6
     },
     {
       "id": "west-papua",
@@ -31021,6 +30734,283 @@
         }
       ],
       "itemCount": 10
+    },
+    {
+      "id": "mozambique",
+      "name": "Mosambik / Cabo Delgado",
+      "nameEn": "Mozambique – Cabo Delgado",
+      "region": "Afrika (Süd)",
+      "countries": [
+        "Mozambique"
+      ],
+      "lat": -12.5,
+      "lon": 39.8,
+      "tier": "medium",
+      "since": "2017",
+      "parties": [
+        "Mosambikanische Streitkräfte",
+        "IS-Mosambik (Al-Shabaab lokal)",
+        "Ruanda",
+        "SAMIM-Nachfolger"
+      ],
+      "background": "Dschihadistischer Aufstand in Cabo Delgado nahe den LNG-Projekten; erneute Angriffswellen und Vertreibungen.",
+      "hotspots": [
+        "Cabo Delgado",
+        "Mocímboa da Praia",
+        "Palma",
+        "Macomia"
+      ],
+      "activity": 10,
+      "severity": 25,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MOZ",
+      "extraCountries": [],
+      "regions": [
+        {
+          "id": "MOZ-1200",
+          "name": "Nampula",
+          "nameDe": "Nampula",
+          "type": "Province",
+          "anchor": [
+            39.25,
+            -14.959
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          }
+        },
+        {
+          "id": "MOZ-1198",
+          "name": "Cabo Delgado",
+          "nameDe": "Cabo Delgado",
+          "type": "Province",
+          "anchor": [
+            39.365,
+            -12.46
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Mozambique: Islamist Terrorists Have Stepped Up Recruitment in Cabo Delgado - UN",
+          "url": "https://allafrica.com/stories/202608200275.html",
+          "date": "2026-08-20T10:12:09.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[AIM] Maputo -- An United Nations report submitted to the Security Council points out that the Islamist terrorists have stepped up recruitment in the northern Mozambican province of Cabo Delgado, growing to between 400 and 500 fighters.",
+          "isNew": false,
+          "region": {
+            "id": "MOZ-1198",
+            "name": "Cabo Delgado",
+            "nameDe": "Cabo Delgado",
+            "type": "Province",
+            "anchor": [
+              39.365,
+              -12.46
+            ],
+            "matched": "Cabo Delgado"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Somali army repels troops loyal to ousted leader and Islamist insurgents",
+          "url": "https://www.france24.com/en/somali-army-repels-troups-loyal-to-ousted-leader-and-islamist-insurgents",
+          "date": "2026-08-18T10:02:18.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Somali national forces repelled an assault by troops loyal to an ousted regional leader and Islamist insurgents on Monday over control of the key city of Baidoa. The assault involved \"vehicles laden with explosives\" according to the government, which said its troops killed nearly 30 militants in their response. Details by Laurent Berstecher.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Mozambique New Terrorism Center Faces Test",
+          "url": "https://www.africa.com/top-10-news/mozambiques-new-terrorism-center-faces-test",
+          "date": "2026-08-20T20:45:00.000Z",
+          "source": "africa.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MOZ-1200",
+            "name": "Nampula",
+            "nameDe": "Nampula",
+            "type": "Province",
+            "anchor": [
+              39.25,
+              -14.959
+            ],
+            "matched": "Mozambique"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Can Mozambique new counter - terrorism centre deliver ? ",
+          "url": "https://defenceweb.co.za/joint/diplomacy-a-peace/can-mozambiques-new-counter-terrorism-centre-deliver/",
+          "date": "2026-08-20T14:45:00.000Z",
+          "source": "defenceweb.co.za",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MOZ-1200",
+            "name": "Nampula",
+            "nameDe": "Nampula",
+            "type": "Province",
+            "anchor": [
+              39.25,
+              -14.959
+            ],
+            "matched": "Mozambique"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Mozambique: Nine Senior Lam Officials to Face Trial for Mismanagement",
+          "url": "https://allafrica.com/stories/202608190591.html",
+          "date": "2026-08-19T16:51:46.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[AIM] Maputo -- The Central Office for the Fight against Corruption (GCCC) has announced that nine senior officials of the publicly-owned company Air Mozambique (formerly known as Mozambique Airlines, LAM) will face court proceedings over alleged mismanagement.",
+          "isNew": false,
+          "region": {
+            "id": "MOZ-1200",
+            "name": "Nampula",
+            "nameDe": "Nampula",
+            "type": "Province",
+            "anchor": [
+              39.25,
+              -14.959
+            ],
+            "matched": "Mozambique"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Unusual RLNG price drives up electricity cost",
+          "url": "https://www.dawn.com/news/2023808/unusual-rlng-price-drives-up-electricity-cost",
+          "date": "2026-08-19T03:11:06.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "ISLAMABAD: The cost of regasified liquefied natural gas (RLNG)-based power generation surged by record 242 per cent to Rs47.4 per unit in July, from less than Rs14 in April, after the government purchased five expensive cargoes from the spot market in the month due to the suspension of supplies from Qatar following the US-Iran war. Chiefly because of LNG factor, the power companies have sought a R",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Mozambique : Can Mozambique New Counter - Terrorism Centre Deliver ? ",
+          "url": "https://allafrica.com/stories/202608180563.html",
+          "date": "2026-08-18T15:00:00.000Z",
+          "source": "allafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MOZ-1200",
+            "name": "Nampula",
+            "nameDe": "Nampula",
+            "type": "Province",
+            "anchor": [
+              39.25,
+              -14.959
+            ],
+            "matched": "Mozambique"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 7
     },
     {
       "id": "cameroon",
