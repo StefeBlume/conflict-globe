@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T03:17:25.012Z",
-  "durationSec": 357,
+  "generatedAt": "2026-08-22T05:05:41.094Z",
+  "durationSec": 381,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -97,7 +97,7 @@
       {
         "id": "dawn",
         "ok": true,
-        "count": 28,
+        "count": 29,
         "error": null
       },
       {
@@ -114,8 +114,8 @@
       }
     ],
     "gdelt": {
-      "ok": 2,
-      "failed": 7,
+      "ok": 0,
+      "failed": 9,
       "skipped": 7,
       "errors": [
         {
@@ -124,26 +124,34 @@
         },
         {
           "id": "haiti",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "sahel-mali",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "somalia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "kosovo-serbia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "venezuela",
           "error": "fetch failed"
         },
         {
-          "id": "ethiopia",
+          "id": "sahel-mali",
+          "error": "fetch failed"
+        },
+        {
+          "id": "pakistan",
+          "error": "fetch failed"
+        },
+        {
+          "id": "drc-m23",
+          "error": "fetch failed"
+        },
+        {
+          "id": "south-china-sea",
+          "error": "fetch failed"
+        },
+        {
+          "id": "thailand-cambodia",
+          "error": "GDELT gedrosselt"
+        },
+        {
+          "id": "chad",
+          "error": "fetch failed"
+        },
+        {
+          "id": "mozambique",
           "error": "HTTP 429"
         }
       ]
@@ -152,8 +160,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1207,
-    "newArticles": 25
+    "articles": 1202,
+    "newArticles": 5
   },
   "conflicts": [
     {
@@ -185,17 +193,17 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
+          "key": "casualties",
+          "label": "Opfer",
           "dir": "up",
           "count": 23
         },
         {
-          "key": "casualties",
-          "label": "Opfer",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 22
         },
@@ -355,23 +363,23 @@
       ],
       "items": [
         {
-          "title": "Russian double-tap drone strike kills 16 in Ukrainian mall, officials say",
+          "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
           "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-22T01:47:54.000Z",
+          "date": "2026-08-22T03:17:29.000Z",
           "source": "BBC World",
           "sourceType": "news",
-          "summary": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head.",
+          "summary": "Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 32
         },
@@ -444,7 +452,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ukraine’s president accuses Russia of a ‘cowardly and deliberate’ attack on a mall in his hometown of Kryvyi Rih.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -465,7 +473,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Kaja Kallas, the EU’s top diplomat, threatens harshest sanctions yet on Russia after strike on Kryvyi Rih, the home town of Volodymyr Zelenskyy Russian drones have slammed into a busy shopping centre in central Ukraine, killing 16 people in an attack that Volodymyr Zelenskyy condemned as “cynical and despicable”. The EU’s foreign policy chief, Kaja Kallas, condemned Friday’s attack on Kryvyi Rih –",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -478,131 +486,6 @@
             "label": "Gefechte"
           },
           "score": 29
-        },
-        {
-          "title": "Russia’s missile tests around disputed islands anger Japan",
-          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
-          "date": "2026-08-21T04:54:01.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 25
-        },
-        {
-          "title": "Russian airstrike kills 16 in Kyiv ; Zelenskyy demands Patriots",
-          "url": "http://www.californiatelegraph.com/news/279254643/zelenskyy-says-air-defense-delays-cost-lives-as-russia-bombs-kyiv",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "californiatelegraph.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 25
-        },
-        {
-          "title": "Russian strike kills at least 15 at shopping centre in Zelensky home city",
-          "url": "https://www.newsandstar.co.uk/news/national/26486438.russian-strike-kills-least-15-shopping-centre-zelenskys-home-city/",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "newsandstar.co.uk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 25
-        },
-        {
-          "title": "14 killed , over 100 injured in Russian drone strike on Kryvyi Rih shopping mall : Zelenskyy",
-          "url": "http://www.russiaherald.com/news/279256987/14-killed-over-100-injured-in-russian-drone-strike-on-kryvyi-rih-shopping-mall-zelenskyy",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "russiaherald.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 25
-        },
-        {
-          "title": "Japan protests Russian missile tests off disputed islands",
-          "url": "https://japantoday.com/category/politics/japan-protests-russian-missile-tests-off-disputed-islands",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "japantoday.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 25
         },
         {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
@@ -634,6 +517,100 @@
             "label": "Sanktionen/Recht"
           },
           "score": 23
+        },
+        {
+          "title": "Russian airstrike kills 16 in Kyiv ; Zelenskyy demands Patriots",
+          "url": "http://www.californiatelegraph.com/news/279254643/zelenskyy-says-air-defense-delays-cost-lives-as-russia-bombs-kyiv",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "californiatelegraph.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Russian strike kills at least 15 at shopping centre in Zelensky home city",
+          "url": "https://www.newsandstar.co.uk/news/national/26486438.russian-strike-kills-least-15-shopping-centre-zelenskys-home-city/",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "newsandstar.co.uk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "14 killed , over 100 injured in Russian drone strike on Kryvyi Rih shopping mall : Zelenskyy",
+          "url": "http://www.russiaherald.com/news/279256987/14-killed-over-100-injured-in-russian-drone-strike-on-kryvyi-rih-shopping-mall-zelenskyy",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "russiaherald.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Japan protests Russian missile tests off disputed islands",
+          "url": "https://japantoday.com/category/politics/japan-protests-russian-missile-tests-off-disputed-islands",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "japantoday.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
         },
         {
           "title": "Drone strike on Ukraine shopping centre kills 14, over 100 injured",
@@ -707,6 +684,37 @@
             "label": "Opfer"
           },
           "score": 22
+        },
+        {
+          "title": "Russia’s missile tests around disputed islands anger Japan",
+          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
+          "date": "2026-08-21T04:54:01.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 21
         },
         {
           "title": "Russian Despatch: Kremlin’s Policy Inertia Exposed by Zelensky’s Belgrade Visit",
@@ -1509,89 +1517,6 @@
           "score": 18
         },
         {
-          "title": "A warehouse burns near Moscow . In Ukraine , drone crews prepare to strike again – Winnipeg Free Press",
-          "url": "https://www.winnipegfreepress.com/arts-and-life/life/sci-tech/2026/08/18/a-warehouse-burns-near-moscow-in-ukraine-drone-crews-prepare-to-strike-again",
-          "date": "2026-08-19T04:45:00.000Z",
-          "source": "winnipegfreepress.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ukraine Invasion Day 1 , 637 : high - volume strikes continue",
-          "url": "https://www.dailykos.com/stories/2026/8/18/800086336/community/1637/",
-          "date": "2026-08-19T04:30:00.000Z",
-          "source": "dailykos.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Drone attack on Zaporizhzhia nuclear plant bus stop kills 1 , injures 17 -- China Economic Net",
-          "url": "http://en.ce.cn/main/latest/202608/t20260819_3156363.shtml",
-          "date": "2026-08-19T04:15:00.000Z",
-          "source": "en.ce.cn",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "UKR-331",
-            "name": "Zaporizhzhia",
-            "nameDe": "Saporischschja",
-            "type": "Region",
-            "anchor": [
-              35.691,
-              47.266
-            ],
-            "matched": "Zaporizhzhia"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
           "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T16:26:53.000Z",
@@ -1682,6 +1607,89 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
+          },
+          "score": 15
+        },
+        {
+          "title": "A warehouse burns near Moscow . In Ukraine , drone crews prepare to strike again – Winnipeg Free Press",
+          "url": "https://www.winnipegfreepress.com/arts-and-life/life/sci-tech/2026/08/18/a-warehouse-burns-near-moscow-in-ukraine-drone-crews-prepare-to-strike-again",
+          "date": "2026-08-19T04:45:00.000Z",
+          "source": "winnipegfreepress.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukraine Invasion Day 1 , 637 : high - volume strikes continue",
+          "url": "https://www.dailykos.com/stories/2026/8/18/800086336/community/1637/",
+          "date": "2026-08-19T04:30:00.000Z",
+          "source": "dailykos.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Drone attack on Zaporizhzhia nuclear plant bus stop kills 1 , injures 17 -- China Economic Net",
+          "url": "http://en.ce.cn/main/latest/202608/t20260819_3156363.shtml",
+          "date": "2026-08-19T04:15:00.000Z",
+          "source": "en.ce.cn",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "UKR-331",
+            "name": "Zaporizhzhia",
+            "nameDe": "Saporischschja",
+            "type": "Region",
+            "anchor": [
+              35.691,
+              47.266
+            ],
+            "matched": "Zaporizhzhia"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 15
         },
@@ -2185,27 +2193,6 @@
           "score": 15
         },
         {
-          "title": "Australia news live: Brethren church denies paying far-right activists; Russian dual citizen charged with alleged foreign interference",
-          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
-          "date": "2026-08-21T03:28:28.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want money. All I care about is justice. I’m going to stand up for what is right. An",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Ukraine, Russia trade strikes; Wildberries site hit again",
           "url": "https://www.dw.com/en/ukraine-russia-trade-strikes-wildberries-site-hit-again/a-78408178?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-18T09:29:00.000Z",
@@ -2453,6 +2440,27 @@
             "label": "Opfer"
           },
           "score": 15
+        },
+        {
+          "title": "Australia news live: Brethren church denies paying far-right activists; Russian dual citizen charged with alleged foreign interference",
+          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
+          "date": "2026-08-21T03:28:28.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want money. All I care about is justice. I’m going to stand up for what is right. An",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
         }
       ],
       "itemCount": 80
@@ -2511,9 +2519,9 @@
           "count": 6
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
           "count": 6
         }
       ],
@@ -2569,6 +2577,27 @@
       ],
       "items": [
         {
+          "title": "Palestinian teen shot and killed in West Bank attack, UN responds",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss",
+          "date": "2026-08-22T04:30:20.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A 17-year-old Palestinian was killed and another person critically injured in a settler attack in the occupied West Bank",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Israeli settler attacks shift focus to West Bank areas under direct Palestinian rule",
           "url": "https://www.theguardian.com/world/2026/aug/21/israeli-settler-attacks-shift-to-heart-of-territory-earmarked-for-palestinian-state",
           "date": "2026-08-21T06:00:26.000Z",
@@ -2596,7 +2625,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli forces make fresh incursion into Syria's Quneitra, search home Israeli forces entered the village of al-Basali in Syria’s Quneitra region and carried out a search operation in one of the houses before withdrawing from the area, state television reported. Since 2024, when Israel moved troops into a UN-monitored buffer zone and seized Syrian territory there, Israeli military vehicles frequen",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2617,7 +2646,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "'Shameful:' UK, Canada and Australia condemn Israel's refusal to investigate aid worker attack Submitted by MEE staff on Fri, 08/21/2026 - 18:45 Israel sidelining death of aid workers is 'egregious', allies say A boy walks carrying a table on his back past salvage workers scrapping the rubble of a building that was destroyed during Israel's war against Hamas in Gaza, to use the recycled remains in",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2630,48 +2659,6 @@
             "label": "Gefechte"
           },
           "score": 25
-        },
-        {
-          "title": "Mother of murdered October 7 Gaza hostage represents terror victims at UN",
-          "url": "https://www.jpost.com/diaspora/article-906220",
-          "date": "2026-08-21T22:45:00.000Z",
-          "source": "jpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 25
-        },
-        {
-          "title": "Western allies slam Israel for ending World Central Kitchen strike probe",
-          "url": "https://www.aljazeera.com/news/2026/8/21/western-allies-slam-israel-for-ending-world-central-kitchen-strike-probe?traffic_source=rss",
-          "date": "2026-08-21T20:03:35.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "UK, Australia and Canada call Israel’s decision not to investigate deadly 2024 strike on a Gaza aid convoy 'shameful'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "aid",
-            "icon": "📦",
-            "label": "Hilfslieferung"
-          },
-          "score": 24
         },
         {
           "title": "Israel launches attacks in southern Lebanon",
@@ -2695,13 +2682,13 @@
           "score": 23
         },
         {
-          "title": "Multiple deadly Israeli strikes in Gaza in under 24 hours",
-          "url": "https://www.bbc.co.uk/news/videos/cp3rgxzk5x2o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-19T17:46:01.000Z",
-          "source": "BBC World",
+          "title": "Turkey requests international arrest warrant for Netanyahu over Gaza flotilla arrest",
+          "url": "https://www.premiumtimesng.com/foreign/904560-turkey-requests-international-arrest-warrant-for-netanyahu-over-gaza-flotilla-arrest.html",
+          "date": "2026-08-22T04:15:40.000Z",
+          "source": "Premium Times (Nigeria)",
           "sourceType": "news",
-          "summary": "BBC Verify looks at footage from two deadly strikes in under 24 hours in Gaza.",
-          "isNew": false,
+          "summary": "Turkey has strongly criticised Israel’s genocidal war on Gaza since 2023. The post Turkey requests international arrest warrant for Netanyahu over Gaza flotilla arrest appeared first on Premium Times Nigeria .",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -2712,6 +2699,48 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 23
+        },
+        {
+          "title": "Mother of murdered October 7 Gaza hostage represents terror victims at UN",
+          "url": "https://www.jpost.com/diaspora/article-906220",
+          "date": "2026-08-21T22:45:00.000Z",
+          "source": "jpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Western allies slam Israel for ending World Central Kitchen strike probe",
+          "url": "https://www.aljazeera.com/news/2026/8/21/western-allies-slam-israel-for-ending-world-central-kitchen-strike-probe?traffic_source=rss",
+          "date": "2026-08-21T20:03:35.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "UK, Australia and Canada call Israel’s decision not to investigate deadly 2024 strike on a Gaza aid convoy 'shameful'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "aid",
+            "icon": "📦",
+            "label": "Hilfslieferung"
           },
           "score": 22
         },
@@ -2775,48 +2804,6 @@
             "type": "shelling",
             "icon": "💥",
             "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
-          "title": "Hamas told to be 'sensitive' to Netanyahu ahead of Israeli elections as attacks on Gaza escalate",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-told-be-sensitive-netanyahu-ahead-israeli-elections-amid-ongoing",
-          "date": "2026-08-21T03:51:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hamas told to be 'sensitive' to Netanyahu ahead of Israeli elections as attacks on Gaza escalate Senior Hamas official Bassem Naim told CNN that the movement remains committed to a peace roadmap for Gaza. \"We are still ready to continue this way to give our people on the ground the chance to revive their life, and to reach the minimum of calm, stability and peace,\" he said during his interview.&nb",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli forces kill Palestinian man during raid in Jenin",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-jenin",
-          "date": "2026-08-21T04:37:44.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces kill Palestinian man during raid in Jenin The Israeli military killed a Palestinian man during a raid in Jenin&nbsp;after he resisted an arrest attempt, according to Al Jazeera citing health sources. The Palestinian, identified as Fathi Khazem, was directly shot inside his home in al-Masarwa neighbourhood of central Jenin. Earlier, Israeli media alleged that the man was shot by the ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 22
         },
@@ -3010,27 +2997,6 @@
           "score": 20
         },
         {
-          "title": "Turkey to seek Interpol notice for Netanyahu in Gaza flotilla case",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-seek-interpol-notice-netanyahu-gaza-flotilla-case",
-          "date": "2026-08-21T17:37:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey to seek Interpol notice for Netanyahu in Gaza flotilla case Turkey said on Friday it would seek an Interpol red notice for the arrest of&nbsp;Israeli Prime Minister Benjamin Netanyahu as part of a domestic criminal case linked to an attack on activists seeking to deliver humanitarian aid to Gaza. Nato member Turkey has been one of the fiercest critics of&nbsp;Israel's war on Gaza and has pr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 20
-        },
-        {
           "title": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza",
           "url": "https://www.bbc.co.uk/news/articles/cvgl2pe09eno?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T15:58:57.000Z",
@@ -3092,6 +3058,69 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Multiple deadly Israeli strikes in Gaza in under 24 hours",
+          "url": "https://www.bbc.co.uk/news/videos/cp3rgxzk5x2o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-19T17:46:01.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "BBC Verify looks at footage from two deadly strikes in under 24 hours in Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Hamas told to be 'sensitive' to Netanyahu ahead of Israeli elections as attacks on Gaza escalate",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-told-be-sensitive-netanyahu-ahead-israeli-elections-amid-ongoing",
+          "date": "2026-08-21T03:51:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hamas told to be 'sensitive' to Netanyahu ahead of Israeli elections as attacks on Gaza escalate Senior Hamas official Bassem Naim told CNN that the movement remains committed to a peace roadmap for Gaza. \"We are still ready to continue this way to give our people on the ground the chance to revive their life, and to reach the minimum of calm, stability and peace,\" he said during his interview.&nb",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli forces kill Palestinian man during raid in Jenin",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-jenin",
+          "date": "2026-08-21T04:37:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces kill Palestinian man during raid in Jenin The Israeli military killed a Palestinian man during a raid in Jenin&nbsp;after he resisted an arrest attempt, according to Al Jazeera citing health sources. The Palestinian, identified as Fathi Khazem, was directly shot inside his home in al-Masarwa neighbourhood of central Jenin. Earlier, Israeli media alleged that the man was shot by the ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Australia news live: Israel ambassador insists IDF strike that killed Zomi Frankcom a ‘reasonable mistake’; body of hiker Lily Hooper recovered from bush",
@@ -4069,6 +4098,27 @@
           "score": 15
         },
         {
+          "title": "Turkey to seek Interpol notice for Netanyahu in Gaza flotilla case",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-seek-interpol-notice-netanyahu-gaza-flotilla-case",
+          "date": "2026-08-21T17:37:25.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey to seek Interpol notice for Netanyahu in Gaza flotilla case Turkey said on Friday it would seek an Interpol red notice for the arrest of&nbsp;Israeli Prime Minister Benjamin Netanyahu as part of a domestic criminal case linked to an attack on activists seeking to deliver humanitarian aid to Gaza. Nato member Turkey has been one of the fiercest critics of&nbsp;Israel's war on Gaza and has pr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
           "title": "Turkiye accuses Israel’s Netanyahu of ‘genocide’, seeks Interpol warrant",
           "url": "https://www.aljazeera.com/news/2026/8/21/turkiye-accuses-israels-netanyahu-of-genocide-seeks-interpol-warrant?traffic_source=rss",
           "date": "2026-08-21T19:08:30.000Z",
@@ -4235,48 +4285,6 @@
             "label": "Bericht"
           },
           "score": 15
-        },
-        {
-          "title": "EXCLUSIVE : Committee to Protect Journalists Still Has Dozens of Violent Militants on Its List of  Journalist Slain in Gaza , 120 Names Have Terror Ties",
-          "url": "https://freebeacon.com/israel/exclusive-committee-to-protect-journalists-still-has-dozens-of-violent-militants-on-its-list-of-journalists-slain-in-gaza-120-names-have-terror-ties/",
-          "date": "2026-08-21T21:15:00.000Z",
-          "source": "freebeacon.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli army, settlers kill 2 Palestinians in separate West Bank incidents",
-          "url": "https://www.aljazeera.com/news/2026/8/21/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents?traffic_source=rss",
-          "date": "2026-08-21T17:17:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli settlers fatally shot 17-year-old Karim Sanad Shalaldeh while Israeli forces killed 58-year-old Fathi Khazem.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4313,7 +4321,7 @@
       ],
       "activity": 72,
       "severity": 76,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -4439,7 +4447,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "More than 100 people were in the monastery for a religious retreat, according to a local resident.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "airstrike",
@@ -5033,8 +5041,8 @@
         "Khartum",
         "Kordofan"
       ],
-      "activity": 65,
-      "severity": 74,
+      "activity": 59,
+      "severity": 72,
       "newCount": 0,
       "signals": [
         {
@@ -5144,7 +5152,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 29
+          "score": 25
         },
         {
           "title": "Sudan war: 200,000 newly displaced as fighting and floods intensify",
@@ -5166,6 +5174,27 @@
             "label": "Gefechte"
           },
           "score": 21
+        },
+        {
+          "title": "Sudan: 6th Infantry Division Vows to Liberate El Fasher From RSF",
+          "url": "https://allafrica.com/stories/202608200188.html",
+          "date": "2026-08-20T06:33:26.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[SNA] Commander of the 6th Infantry Division, Maj. Gen. Omar Mansour Hassan, said the Sudanese Armed Forces (SAF) and supporting forces are fighting exceptional battles to clear every part of Sudan from the RSF militia, particularly El-Fasher, stressing that the division would not fail the Sudanese people.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 19
         },
         {
           "title": "Sudan: Dr. Nowara Expresses Confidence in Armed Forces' Ability to Achieve Complete Victory Over Rebel Militia",
@@ -5252,37 +5281,6 @@
           "score": 18
         },
         {
-          "title": "Sudan: 'SAF Shoots Down Two RSF Long-Range Drones in North Kordofan'",
-          "url": "https://allafrica.com/stories/202608190083.html",
-          "date": "2026-08-19T04:48:42.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Dabanga] El Obeid / Jargeira / Bara / Jabra El Sheikh -- The Sudanese Armed Forces (SAF) said on Monday that its air defences shot down two long-range drones operated by the paramilitary Rapid Support Forces (RSF) over North Kordofan, as the paramilitary group steps up drone attacks across the state.",
-          "isNew": false,
-          "region": {
-            "id": "SDN-883",
-            "name": "North Kordofan",
-            "nameDe": "Schamal Kurdufan",
-            "type": "State",
-            "anchor": [
-              29.382,
-              14.438
-            ],
-            "matched": "North Kordofan"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "Sudan: 'Takaya' Community Kitchen Closures Threaten 50,000 Families in Sudan Capital",
           "url": "https://allafrica.com/stories/202608210428.html",
           "date": "2026-08-21T12:06:10.000Z",
@@ -5312,6 +5310,37 @@
             "label": "Bodenoffensive"
           },
           "score": 17
+        },
+        {
+          "title": "Sudan: 'SAF Shoots Down Two RSF Long-Range Drones in North Kordofan'",
+          "url": "https://allafrica.com/stories/202608190083.html",
+          "date": "2026-08-19T04:48:42.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Dabanga] El Obeid / Jargeira / Bara / Jabra El Sheikh -- The Sudanese Armed Forces (SAF) said on Monday that its air defences shot down two long-range drones operated by the paramilitary Rapid Support Forces (RSF) over North Kordofan, as the paramilitary group steps up drone attacks across the state.",
+          "isNew": false,
+          "region": {
+            "id": "SDN-883",
+            "name": "North Kordofan",
+            "nameDe": "Schamal Kurdufan",
+            "type": "State",
+            "anchor": [
+              29.382,
+              14.438
+            ],
+            "matched": "North Kordofan"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
         },
         {
           "title": "Sudan’s displacement crisis deepens as violence escalates",
@@ -5481,27 +5510,6 @@
           "score": 12
         },
         {
-          "title": "Sudan: 6th Infantry Division Vows to Liberate El Fasher From RSF",
-          "url": "https://allafrica.com/stories/202608200188.html",
-          "date": "2026-08-20T06:33:26.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[SNA] Commander of the 6th Infantry Division, Maj. Gen. Omar Mansour Hassan, said the Sudanese Armed Forces (SAF) and supporting forces are fighting exceptional battles to clear every part of Sudan from the RSF militia, particularly El-Fasher, stressing that the division would not fail the Sudanese people.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 11
-        },
-        {
           "title": "The road to el-Obeid, Sudan’s besieged city sheltering thousands",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/the-road-to-el-obeid-sudans-besieged-city-sheltering-thousands?traffic_source=rss",
           "date": "2026-08-20T18:16:55.000Z",
@@ -5519,6 +5527,27 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
+          },
+          "score": 11
+        },
+        {
+          "title": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone",
+          "url": "https://www.middleeasteye.net/news/uae-backed-chinese-company-acquires-stake-ethiopian-gold-mine-near-sudan-warzone",
+          "date": "2026-08-19T09:45:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone Submitted by Zecharias Zelalem on Tue, 08/18/2026 - 09:00 Deal between Canada's Allied Gold and China's Zijin includes gold site on Sudan-Ethiopia border An elderly Sudanese refugee woman stands on the main road at the Ura Refugee Site in Asosa Zone, Benishangul-Gumuz region, Ethiopia, on 19 June 2026 (Marco Simon",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
           "score": 11
         },
@@ -5551,28 +5580,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
-        },
-        {
-          "title": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone",
-          "url": "https://www.middleeasteye.net/news/uae-backed-chinese-company-acquires-stake-ethiopian-gold-mine-near-sudan-warzone",
-          "date": "2026-08-19T09:45:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone Submitted by Zecharias Zelalem on Tue, 08/18/2026 - 09:00 Deal between Canada's Allied Gold and China's Zijin includes gold site on Sudan-Ethiopia border An elderly Sudanese refugee woman stands on the main road at the Ura Refugee Site in Asosa Zone, Benishangul-Gumuz region, Ethiopia, on 19 June 2026 (Marco Simon",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Sudan: Salva Kiir Discusses Sudan War and Peace Efforts With Minawi",
@@ -5949,13 +5957,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 6,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 4
+          "count": 5
         },
         {
           "key": "offensive",
@@ -5964,14 +5972,14 @@
           "count": 4
         },
         {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 4
-        },
-        {
           "key": "escalation",
           "label": "Eskalation",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
           "dir": "up",
           "count": 3
         },
@@ -6017,6 +6025,27 @@
       ],
       "items": [
         {
+          "title": "Palestinian teen shot and killed in West Bank attack, UN responds",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss",
+          "date": "2026-08-22T04:30:20.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A 17-year-old Palestinian was killed and another person critically injured in a settler attack in the occupied West Bank",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
           "title": "Israeli settler attacks shift focus to West Bank areas under direct Palestinian rule",
           "url": "https://www.theguardian.com/world/2026/aug/21/israeli-settler-attacks-shift-to-heart-of-territory-earmarked-for-palestinian-state",
           "date": "2026-08-21T06:00:26.000Z",
@@ -6038,13 +6067,34 @@
           "score": 27
         },
         {
+          "title": "UK MP urges government to ban goods produced in West Bank settlements",
+          "url": "https://www.middleeasteye.net/news/uk-mp-urges-government-ban-goods-produced-west-bank-settlements",
+          "date": "2026-08-22T03:20:46.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UK MP urges government to ban goods produced in West Bank settlements Submitted by MEE staff on Sat, 08/22/2026 - 04:01 Emily Thornberry said the level of settler violence is the 'worst we have ever seen' Thornberry said the Israeli government is doing its best to try to extinguish the hope of a Palestinian state. (AFP) Off Emily Thornberry, chair of the UK Parliament’s Foreign Affairs Committee, ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 23
+        },
+        {
           "title": "Attacks on West Bank Palestinians by Israeli occupiers surge in 2026 : Commission",
           "url": "https://www.middleeastmonitor.com/20260821-attacks-on-west-bank-palestinians-by-israeli-occupiers-surge-in-2026-commission/",
           "date": "2026-08-21T21:30:00.000Z",
           "source": "middleeastmonitor.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -6056,7 +6106,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Settlers kill a Palestinian teen in a West Bank clash , and other Middle East developments",
@@ -6065,7 +6115,7 @@
           "source": "wboc.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -6077,7 +6127,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Burnham urged to act on Israel as a 17 - year - old Palestinian boy shot dead by illegal settlers in occupied West Bank",
@@ -6086,7 +6136,7 @@
           "source": "morningstaronline.co.uk",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -6098,7 +6148,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Palestinian victims of Israeli settler attacks face battle for justice",
@@ -6122,34 +6172,13 @@
           "score": 22
         },
         {
-          "title": "Israeli forces kill Palestinian man during raid in Jenin",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-jenin",
-          "date": "2026-08-21T04:37:44.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces kill Palestinian man during raid in Jenin The Israeli military killed a Palestinian man during a raid in Jenin&nbsp;after he resisted an arrest attempt, according to Al Jazeera citing health sources. The Palestinian, identified as Fathi Khazem, was directly shot inside his home in al-Masarwa neighbourhood of central Jenin. Earlier, Israeli media alleged that the man was shot by the ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Palestinian Teen Killed by Israeli Settlers After Rock Throwing Incident",
           "url": "https://english.aawsat.com/arab-world/5309650-palestinian-teen-killed-israeli-settlers-after-rock-throwing-incident",
           "date": "2026-08-21T19:30:00.000Z",
           "source": "english.aawsat.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -6161,7 +6190,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "How Israel is expanding settlements in drive to reshape West Bank",
@@ -6235,6 +6264,27 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Israeli forces kill Palestinian man during raid in Jenin",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-jenin",
+          "date": "2026-08-21T04:37:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces kill Palestinian man during raid in Jenin The Israeli military killed a Palestinian man during a raid in Jenin&nbsp;after he resisted an arrest attempt, according to Al Jazeera citing health sources. The Palestinian, identified as Fathi Khazem, was directly shot inside his home in al-Masarwa neighbourhood of central Jenin. Earlier, Israeli media alleged that the man was shot by the ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "2 Palestinian women injured as Israeli raids , occupier attacks escalate across West Bank",
@@ -6342,12 +6392,12 @@
           "score": 18
         },
         {
-          "title": "EU's von der Leyen joins European countries to condemn Israel's West Bank plan",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eus-von-der-leyen-joins-european-countries-condemn-israels-west-bank",
-          "date": "2026-08-21T20:42:40.000Z",
-          "source": "Middle East Eye",
+          "title": "TERRORIST ELIMINATED : Knife - Wielding Terrorist Charges IDF Paratroopers In Jenin",
+          "url": "https://www.theyeshivaworld.com/news/israel-news/2588491/terrorist-eliminated-knife-wielding-terrorist-charges-idf-paratroopers-in-jenin.html",
+          "date": "2026-08-21T23:45:00.000Z",
+          "source": "theyeshivaworld.com",
           "sourceType": "news",
-          "summary": "EU's von der Leyen joins European countries to condemn Israel's West Bank plan European Commission President Ursula von der Leyen on Friday joined European countries to condemn plans by&nbsp;Israel&nbsp;to open up construction tenders for a settlement project called 'E1' in the occupied West Bank. \"The&nbsp;Israeli Government's decision to publish construction tenders for the E1 settlement project",
+          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
@@ -6360,37 +6410,16 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
+          "score": 18
         },
         {
-          "title": "TERRORIST ELIMINATED : Knife - Wielding Terrorist Charges IDF Paratroopers In Jenin",
-          "url": "https://www.theyeshivaworld.com/news/israel-news/2588491/terrorist-eliminated-knife-wielding-terrorist-charges-idf-paratroopers-in-jenin.html",
-          "date": "2026-08-21T23:45:00.000Z",
-          "source": "theyeshivaworld.com",
+          "title": "EU's von der Leyen joins European countries to condemn Israel's West Bank plan",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eus-von-der-leyen-joins-european-countries-condemn-israels-west-bank",
+          "date": "2026-08-21T20:42:40.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 17
-        },
-        {
-          "title": "Israeli army , settlers kill 2 Palestinians in separate West Bank incidents - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
-          "url": "https://dominicanrepublicpost.com/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents/",
-          "date": "2026-08-21T19:15:00.000Z",
-          "source": "dominicanrepublicpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
+          "summary": "EU's von der Leyen joins European countries to condemn Israel's West Bank plan European Commission President Ursula von der Leyen on Friday joined European countries to condemn plans by&nbsp;Israel&nbsp;to open up construction tenders for a settlement project called 'E1' in the occupied West Bank. \"The&nbsp;Israeli Government's decision to publish construction tenders for the E1 settlement project",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6424,6 +6453,27 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "Israeli army , settlers kill 2 Palestinians in separate West Bank incidents - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+          "url": "https://dominicanrepublicpost.com/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents/",
+          "date": "2026-08-21T19:15:00.000Z",
+          "source": "dominicanrepublicpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Middle Eastern powers condemn Israeli settlement policies, reject 'E1' West Bank plan",
@@ -7087,27 +7137,6 @@
           "score": 15
         },
         {
-          "title": "Siege of West Bank families 'state-backed settler terror', Amnesty official says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/siege-west-bank-families-state-backed-settler-terror-amnesty-official",
-          "date": "2026-08-15T03:56:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Siege of West Bank families 'state-backed settler terror', Amnesty official says The ongoing siege of a several Palestinian families in the West Bank “is not an isolated incident”, but “part of an accelerating pattern of state-backed settler terror and forced displacement across the occupied West Bank,” an Amnesty International official said. In a post on X, Erika Guevara Rosas, Amnesty Internatio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 15
-        },
-        {
           "title": "France, Germany, UK and Italy slam Israel's 'E1' West Bank settler project",
           "url": "https://www.france24.com/en/middle-east/20260820-france-germany-uk-italy-slam-israel-illegal-e1-west-bank-settler-project",
           "date": "2026-08-20T18:52:15.000Z",
@@ -7398,7 +7427,7 @@
             "icon": "🛡️",
             "label": "Belagerung"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "US ambassador to Israel calls settler violence ‘terror’",
@@ -7724,27 +7753,6 @@
             "label": "Opfer"
           },
           "score": 8
-        },
-        {
-          "title": "When settler violence becomes a tool of power in the West Bank",
-          "url": "https://weeklyblitz.net/2026/08/18/when-settler-violence-becomes-a-tool-of-power-in-the-west-bank/",
-          "date": "2026-08-17T22:45:00.000Z",
-          "source": "weeklyblitz.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -7778,7 +7786,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -7852,7 +7860,7 @@
             33.094
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -7919,7 +7927,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli forces make fresh incursion into Syria's Quneitra, search home Israeli forces entered the village of al-Basali in Syria’s Quneitra region and carried out a search operation in one of the houses before withdrawing from the area, state television reported. Since 2024, when Israel moved troops into a UN-monitored buffer zone and seized Syrian territory there, Israeli military vehicles frequen",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SYR-145",
             "name": "Quneitra",
@@ -9664,7 +9672,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 7,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -9682,7 +9690,7 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 6
+          "count": 5
         },
         {
           "key": "ceasefire",
@@ -9714,7 +9722,7 @@
             35.568
           ],
           "count": 16,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -9764,7 +9772,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Omani and Iranian foreign ministers hold a call as Washington prepares economic sanctions.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9785,7 +9793,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "US president says Iran 'would love to make a deal, but they’re not ready to make the right deal in my opinion'.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9806,7 +9814,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Trump: 'I view Hormuz as American territory right now' US President Donald Trump once again described the Strait of Hormuz as “an American territory” and reiterated that the US “cannot let Iran have a nuclear weapon”, Al Jazeera reported. Addressing a rally in Myrtle Beach, South Carolina, Trump said: “We cannot let them have a nuclear weapon, we cannot let Iran have a nuclear weapon, or you will ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9858,7 +9866,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "President at rally in South Carolina makes comments on key strategic waterway and jokes about bombing Iran Donald Trump called the strait of Hormuz “an American territory” on Friday, as the US continues its military blockade of Iran’s shipping and ports while Trump’s administration struggles to end its war with the country. “We don’t even know if we won, because I view the strait of Hormuz as an A",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9879,7 +9887,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Donald Trump repeated claims that Iran is weakened economically and militarily and ‘would love’ to make a deal.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "sanctions",
@@ -9900,7 +9908,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "This blog is now closed. Read the latest here Pentagon fires publisher and editor of Stars &amp; Stripes Backlash as navy carrier set to honor Black war hero could be named after Trump Sign up for the US Breaking News email US Senator Tim Sheehy, a Montana Republican and a cattle rancher, has come out against a plan announced Friday by Donald Trump to allow for an increase in imported ground beef.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -9957,34 +9965,13 @@
           "score": 19
         },
         {
-          "title": "Trump says Iran not ready to make the 'right deal'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-not-ready-make-right-deal",
-          "date": "2026-08-21T21:37:52.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Trump says Iran not ready to make the 'right deal' US President Donald Trump said on Friday he did not think that Iran was ready make the \"right deal,\" and that Washington was observing \"what happens\" in the war. \"It just means that we're seeing what happens,\" Trump told reporters when asked if US military options with Iran were limited. \"We have total control of that entire region having to do wi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Iran president says time to end war while in position of strength",
           "url": "https://www.dawn.com/news/2024360/iran-president-says-time-to-end-war-while-in-position-of-strength",
           "date": "2026-08-21T14:08:17.000Z",
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Iranian President Masoud Pezeshkian said on Friday it was time to end the months-long Middle East war with the United States because Tehran appeared to be in a stronger position than Washington. Talks between the decades-old foes remain on hold, with both sides in the war started by the US and Israel in February locked in a stalemate. Tehran is keeping the key Strait of Hormuz partially shut and W",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -10082,25 +10069,25 @@
           "score": 18
         },
         {
-          "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
-          "url": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
-          "date": "2026-08-19T03:34:40.000Z",
-          "source": "Al Jazeera",
+          "title": "Trump says Iran not ready to make the 'right deal'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-not-ready-make-right-deal",
+          "date": "2026-08-21T21:37:52.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Iran denies launching missiles at the UAE, suggesting the incident was a 'false flag operation'.",
+          "summary": "Trump says Iran not ready to make the 'right deal' US President Donald Trump said on Friday he did not think that Iran was ready make the \"right deal,\" and that Washington was observing \"what happens\" in the war. \"It just means that we're seeing what happens,\" Trump told reporters when asked if US military options with Iran were limited. \"We have total control of that entire region having to do wi",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 18
+          "score": 16
         },
         {
           "title": "Iran’s Ghalibaf: ‘We stay out of Iraq’s affairs’",
@@ -10122,6 +10109,27 @@
             "label": "Verhandlungen"
           },
           "score": 16
+        },
+        {
+          "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
+          "url": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
+          "date": "2026-08-19T03:34:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran denies launching missiles at the UAE, suggesting the incident was a 'false flag operation'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 15
         },
         {
           "title": "Iranian academic writes of US detention 'hell' over link to 1979 hostage crisis",
@@ -10969,27 +10977,6 @@
           "score": 15
         },
         {
-          "title": "Did the US really destroy Iran’s ballistic missile capability?",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
-          "date": "2026-08-15T03:52:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "How much could Trump's 'economic D-Day' hurt Iran?",
           "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-20T23:16:45.000Z",
@@ -11648,7 +11635,7 @@
           "score": 11
         }
       ],
-      "itemCount": 80
+      "itemCount": 79
     },
     {
       "id": "drc-m23",
@@ -12725,7 +12712,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Nine terrorists killed in Balochistan",
@@ -13378,7 +13365,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 27
+          "score": 24
         },
         {
           "title": "Israel launches attacks in southern Lebanon",
@@ -15344,7 +15331,7 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 63,
+      "activity": 62,
       "severity": 57,
       "newCount": 0,
       "signals": [
@@ -15706,37 +15693,6 @@
           "score": 18
         },
         {
-          "title": "Attackers go ‘house to house’ killing 25 villagers in central Nigeria",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss",
-          "date": "2026-08-19T04:25:26.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "An attack on a village in Nigeria’s central Plateau state has killed at least 25 people.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2866",
-            "name": "Plateau State",
-            "nameDe": "Plateau",
-            "type": "State",
-            "anchor": [
-              9.547,
-              9.21
-            ],
-            "matched": "Plateau State"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Nigeria: Military Moves Plateau Headquarters After Killings",
           "url": "https://allafrica.com/stories/202608200239.html",
           "date": "2026-08-20T09:35:39.000Z",
@@ -15795,6 +15751,37 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Attackers go ‘house to house’ killing 25 villagers in central Nigeria",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss",
+          "date": "2026-08-19T04:25:26.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "An attack on a village in Nigeria’s central Plateau state has killed at least 25 people.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2866",
+            "name": "Plateau State",
+            "nameDe": "Plateau",
+            "type": "State",
+            "anchor": [
+              9.547,
+              9.21
+            ],
+            "matched": "Plateau State"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 15
         },
@@ -17060,9 +17047,9 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 52,
+      "activity": 51,
       "severity": 54,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -17080,7 +17067,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 6
+          "count": 5
         },
         {
           "key": "offensive",
@@ -17202,7 +17189,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Tanker traffic at Saudi Arabia's Yanbu port falls by a third, report says Tanker traffic at Yanbu, Saudi Arabia's main Red Sea oil terminal, has fallen by more than a third since Yemen’s Houthis announced a blockade of Saudi vessels through the Bab al-Mandeb strait on July 20, Lloyd's List Intelligence reports. To deal with the blockade, Saudi energy giant Aramco relies on a three-part operation t",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -17801,27 +17788,6 @@
           "score": 15
         },
         {
-          "title": "Yemeni government says Houthi attack on al-Mokha killed four civilians",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-says-houthi-attack-al-mokha-killed-four-civilians",
-          "date": "2026-08-15T03:21:07.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemeni government says Houthi attack on al-Mokha killed four civilians At least four civilians were killed when Houthis fired six ballistic missiles at the Red Sea port of al-Mokha on Friday, Yemen's internationally recognised government said. The Yemeni armed forces aligned with the government said in a statement that the attack on the port targeted a civilian facility and economic and maritime i",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemen: Türk alarmed by rising civilian toll, urges restraint",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168151",
           "date": "2026-08-17T12:00:00.000Z",
@@ -18063,7 +18029,7 @@
           "score": 8
         }
       ],
-      "itemCount": 37
+      "itemCount": 36
     },
     {
       "id": "niger",
@@ -18090,7 +18056,7 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 49,
+      "activity": 47,
       "severity": 53,
       "newCount": 0,
       "signals": [
@@ -18417,7 +18383,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Nigeria: Two Shot As Troops Foil Attempted Mass Abduction in Zamfara - Military",
@@ -19259,7 +19225,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -19336,27 +19302,6 @@
       ],
       "items": [
         {
-          "title": "Sudan: IOM - 200k+ Displaced Across Kordofan As Fighting Intensifies",
-          "url": "https://allafrica.com/stories/202608210013.html",
-          "date": "2026-08-21T04:54:18.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Dabanga] El Obeid / Sheikan Locality / Heiban Locality -- More than 200,000 people have been displaced across Sudan's Kordofan region since the end of 2025 as fighting between the Sudanese Armed Forces (SAF) and the paramilitary Rapid Support Forces (RSF) intensifies, the International Organization for Migration (IOM) said.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
           "title": "Eight killed in plane crash at remote Alaskan military site, air force says",
           "url": "https://www.bbc.co.uk/news/articles/cj9dmw8183wo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T16:05:09.000Z",
@@ -19405,7 +19350,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "This blog is now closed. Read the latest here Pentagon fires publisher and editor of Stars &amp; Stripes Backlash as navy carrier set to honor Black war hero could be named after Trump Sign up for the US Breaking News email US Senator Tim Sheehy, a Montana Republican and a cattle rancher, has come out against a plan announced Friday by Donald Trump to allow for an increase in imported ground beef.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -19426,7 +19371,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "US president says Iran 'would love to make a deal, but they’re not ready to make the right deal in my opinion'.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -19447,7 +19392,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "President at rally in South Carolina makes comments on key strategic waterway and jokes about bombing Iran Donald Trump called the strait of Hormuz “an American territory” on Friday, as the US continues its military blockade of Iran’s shipping and ports while Trump’s administration struggles to end its war with the country. “We don’t even know if we won, because I view the strait of Hormuz as an A",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -19458,6 +19403,27 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "score": 19
+        },
+        {
+          "title": "Sudan: IOM - 200k+ Displaced Across Kordofan As Fighting Intensifies",
+          "url": "https://allafrica.com/stories/202608210013.html",
+          "date": "2026-08-21T04:54:18.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Dabanga] El Obeid / Sheikan Locality / Heiban Locality -- More than 200,000 people have been displaced across Sudan's Kordofan region since the end of 2025 as fighting between the Sudanese Armed Forces (SAF) and the paramilitary Rapid Support Forces (RSF) intensifies, the International Organization for Migration (IOM) said.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 19
         },
@@ -20091,27 +20057,6 @@
           "score": 15
         },
         {
-          "title": "Libya's Haftar played role in securing US hostage's release, report says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/libyas-haftar-played-role-securing-us-hostages-release-report-says",
-          "date": "2026-08-15T04:31:46.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Libya's Haftar played role in securing US hostage's release, report says Authorities in eastern Libya under military commander Khalifa Haftar helped secure the release of an American missionary held hostage held by an Islamic State affiliate in West Africa's Sahel region, escorting him to freedom through Libya, Reuters reported, citing five sources. Four of the sources said that a deal was brokere",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
           "title": "Nigeria: Military Moves Plateau Headquarters After Killings",
           "url": "https://allafrica.com/stories/202608200239.html",
           "date": "2026-08-20T09:35:39.000Z",
@@ -20528,7 +20473,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Iran’s top negotiator says Hormuz Strait will remain closed until US abides by MoU",
@@ -21056,7 +21001,7 @@
           "score": 8
         }
       ],
-      "itemCount": 80
+      "itemCount": 79
     },
     {
       "id": "korea",
@@ -21090,7 +21035,7 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 24
+          "count": 23
         },
         {
           "key": "talks",
@@ -21175,27 +21120,6 @@
           "score": 26
         },
         {
-          "title": "Russia’s missile tests around disputed islands anger Japan",
-          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
-          "date": "2026-08-21T04:54:01.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 23
-        },
-        {
           "title": "Russian missiles kill 17 more in Ukraine as Guterres calls for ceasefire",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168181",
           "date": "2026-08-20T12:00:00.000Z",
@@ -21215,6 +21139,27 @@
             "label": "Raketenangriff"
           },
           "score": 21
+        },
+        {
+          "title": "Russia’s missile tests around disputed islands anger Japan",
+          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
+          "date": "2026-08-21T04:54:01.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 19
         },
         {
           "title": "North Korea fires ballistic missiles as US-South Korea drills near end",
@@ -21517,7 +21462,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Iran rejects UAE statement on missile launches originating from Iran",
@@ -21877,27 +21822,6 @@
           "score": 15
         },
         {
-          "title": "Did the US really destroy Iran’s ballistic missile capability?",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
-          "date": "2026-08-15T03:52:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The US claims it destroyed Iran’s missile capability, but a former White House adviser calls that a “pipe dream\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Trump wants to be friends with Kim - but South Korea could pay the price",
           "url": "https://www.bbc.co.uk/news/articles/c4gj1vje8dxo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-20T22:01:26.000Z",
@@ -22094,7 +22018,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "US-led drills to end six days early, South Korea says, amid Trump push for Kim Jong-un talks",
@@ -22924,7 +22848,7 @@
           "score": 8
         }
       ],
-      "itemCount": 80
+      "itemCount": 79
     },
     {
       "id": "south-sudan",
@@ -23203,498 +23127,6 @@
         }
       ],
       "itemCount": 11
-    },
-    {
-      "id": "india-pakistan",
-      "name": "Indien–Pakistan / Kaschmir",
-      "nameEn": "India–Pakistan / Kashmir",
-      "region": "Asien (Süd)",
-      "countries": [
-        "India"
-      ],
-      "lat": 34.1,
-      "lon": 76.5,
-      "tier": "high",
-      "since": "1947 / Eskalation Mai 2025",
-      "parties": [
-        "Indien",
-        "Pakistan",
-        "Militante Gruppen in Kaschmir"
-      ],
-      "background": "Nach dem Pahalgam-Anschlag und der militärischen Eskalation im Mai 2025 angespanntes Verhältnis zweier Atommächte; Indus-Wasservertrag ausgesetzt.",
-      "hotspots": [
-        "Line of Control",
-        "Kaschmirtal",
-        "Pahalgam",
-        "Jammu"
-      ],
-      "activity": 29,
-      "severity": 47,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "IND",
-      "extraCountries": [
-        "PAK"
-      ],
-      "regions": [
-        {
-          "id": "PAK-1110",
-          "name": "Islamabad Capital Territory",
-          "nameDe": "Hauptstadtterritorium Islamabad",
-          "type": "Capital Territory",
-          "anchor": [
-            73.085,
-            33.66
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          }
-        },
-        {
-          "id": "IND-3256",
-          "name": "Jharkhand",
-          "nameDe": "Jharkhand",
-          "type": "State",
-          "anchor": [
-            85.533,
-            23.642
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "famine",
-            "icon": "🍽️",
-            "label": "Hunger/Versorgung"
-          }
-        },
-        {
-          "id": "IND-2431",
-          "name": "Jammu and Kashmir",
-          "nameDe": "Jammu und Kashmir",
-          "type": "Union Territory",
-          "anchor": [
-            75.08,
-            33.558
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
-          "id": "IND-2428",
-          "name": "Delhi",
-          "nameDe": "Delhi",
-          "type": "Union Territory",
-          "anchor": [
-            77.108,
-            28.661
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Dar says Pakistanis injured in Houthi attack in Red Sea have returned safely",
-          "url": "https://www.dawn.com/news/2024098/dar-says-pakistanis-injured-in-houthi-attack-in-red-sea-have-returned-safely",
-          "date": "2026-08-20T07:39:03.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Deputy Prime Minister and Foreign Minister Ishaq Dar said on Thursday that six Pakistani sailors injured in an attack by Yemen’s Houthi rebels in the Red Sea earlier this month have returned to Pakistan. The Aug 11 attack had targeted a Tanzania-flagged vessel, Tihamah, causing deaths and injuries among its crew. At the time, Dar had said that 3 nationals were killed and that reports had been rece",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Pakistan condemns ‘unprovoked’ Israeli attack on Syria air base",
-          "url": "https://www.dawn.com/news/2023864/pakistan-condemns-unprovoked-israeli-attack-on-syria-air-base",
-          "date": "2026-08-19T06:49:45.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The Foreign Office (FO) on Wednesday strongly condemned the “unprovoked” attack carried out by Israel on an air base in Syria, saying such acts had the potential to “further undermine regional peace and stability”. Syria’s state-run Ekhbariya television, citing a military source, said on Tuesday that Israel carried out eight airstrikes on the runway and storage facilities at the Abu al-Duhur base ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Pakistan, seven other Muslim states condemn Israel’s illegal settlement policies in occupied Palestinian territory",
-          "url": "https://www.dawn.com/news/2024377/pakistan-seven-other-muslim-states-condemn-israels-illegal-settlement-policies-in-occupied-palestinian-territory",
-          "date": "2026-08-21T15:48:29.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Pakistan, along with seven Muslim states, on Friday condemned Israel’s “continued illegal settlement policies in the occupied Palestinian territory”, according to a joint statement issued by the Foreign Office (FO). The foreign ministers of Pakistan, Egypt, Turkiye, Indonesia, Jordan, Qatar, Saudi Arabia and the United Arab Emirates “unequivocally condemn Israel’s continued illegal settlement poli",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Pakistan top court orders Imran Khan’s hospital transfer amid access battle",
-          "url": "https://www.aljazeera.com/news/2026/8/18/pakistan-top-court-orders-imran-khans-hospital-transfer-amid-access-battle?traffic_source=rss",
-          "date": "2026-08-18T09:15:03.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Supreme Court grants jailed ex-PM transfer to hospital for nearly a month after concerns raised over his blood pressure.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Indian student leader ends hunger strike after 16 days",
-          "url": "https://www.bbc.co.uk/news/articles/cly8m31nvmgo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T07:27:32.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Devendra Nath Mahto was part of a larger protest which began weeks ago, demanding exam reforms in Jharkhand state.",
-          "isNew": false,
-          "region": {
-            "id": "IND-3256",
-            "name": "Jharkhand",
-            "nameDe": "Jharkhand",
-            "type": "State",
-            "anchor": [
-              85.533,
-              23.642
-            ],
-            "matched": "Jharkhand"
-          },
-          "event": {
-            "type": "famine",
-            "icon": "🍽️",
-            "label": "Hunger/Versorgung"
-          },
-          "regionEvent": {
-            "type": "famine",
-            "icon": "🍽️",
-            "label": "Hunger/Versorgung"
-          },
-          "score": 15
-        },
-        {
-          "title": "AJK president, rights body deplore US envoy’s Kashmir remarks",
-          "url": "https://www.dawn.com/news/2024216/ajk-president-rights-body-deplore-us-envoys-kashmir-remarks",
-          "date": "2026-08-21T02:29:15.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "MUZAFFARABAD: Azad Jammu and Kashmir (AJK) President Chaudhry Latif Akbar and the Jammu and Kashmir Council for Human Rights (JKCHR) on Thursday criticised US Ambassador to India Sergio Gor for describing occupied Kashmir as an “important part of India”, saying the remarks were at variance with the territory’s disputed status and Washington’s historical position on the issue. In separate statement",
-          "isNew": false,
-          "region": {
-            "id": "IND-2431",
-            "name": "Jammu and Kashmir",
-            "nameDe": "Jammu und Kashmir",
-            "type": "Union Territory",
-            "anchor": [
-              75.08,
-              33.558
-            ],
-            "matched": "Jammu and Kashmir"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Jailed former Pakistani prime minister Imran Khan taken to hospital",
-          "url": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan",
-          "date": "2026-08-20T22:47:00.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Move may signal attempt to improve relations between military-backed government and ex-leader’s party The jailed former Pakistani prime minister Imran Khan has been ⁠transferred to a hospital in Islamabad for medical examination, fulfilling a longstanding demand by supporters who ⁠say his health has deteriorated during more than three years in prison. The move ​followed a supreme court order ‌this",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1110",
-            "name": "Islamabad Capital Territory",
-            "nameDe": "Hauptstadtterritorium Islamabad",
-            "type": "Capital Territory",
-            "anchor": [
-              73.085,
-              33.66
-            ],
-            "matched": "Islamabad"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Israeli soldier visiting India accused of war crimes in Gaza's Khan Younis",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-soldier-visiting-india-accused-war-crimes-gazas-khan-younis",
-          "date": "2026-08-19T17:26:10.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli soldier visiting India accused of war crimes in Gaza's Khan Younis The Hind Rajab Foundation (HRF) has filed a war crimes complaint in India against an Israeli soldier accused of deliberately demolishing civilian property in Gaza. The complaint,&nbsp; filed on Tuesday , is the second brought by the HRF against an Israeli soldier visiting India. In June, the organisation filed a&nbsp; compl",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Robinson double rocks Pakistan in first Test before rain stops play",
-          "url": "https://www.dawn.com/news/2023886/robinson-double-rocks-pakistan-in-first-test-before-rain-stops-play",
-          "date": "2026-08-19T11:50:32.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "England bowler Ollie Robinson took a wicket with the first ball of the match as his double strike left Pakistan reeling before rain stopped play in the first Test at Headingley on Wednesday. Robinson celebrated his recall in style in England’s first Test since the exits of Ben Stokes, their former captain, and Brendon McCullum, sacked as red-ball coach. By the time rain halted play after 50 minute",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Pakistan extends airspace ban on Indian aircraft until Sept 24",
-          "url": "https://www.dawn.com/news/2023856/pakistan-extends-airspace-ban-on-indian-aircraft-until-sept-24",
-          "date": "2026-08-19T05:12:51.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Pakistan has extended its airspace ban on Indian aircraft for until Sep 24, according to a Notice to Airmen (Notam) issued by the Pakistan Airports Authority (PAA). The extension comes as the previous restriction was due to expire on Aug 23. “Pakistan airspace not available for Indian-registered aircraft and aircraft operated or leased by Indian airlines/operators, including military flights,” the",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "India’s quest for narrative dominance over 2025 conflict finds no takers",
-          "url": "https://www.dawn.com/news/2023799/indias-quest-for-narrative-dominance-over-2025-conflict-finds-no-takers",
-          "date": "2026-08-19T03:33:39.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• US think tanks, independent researchers question Indian claims about ‘Operation Sindoor’ • ISPR says ‘cinematic perjury’ won’t afford New Delhi any face-saving ISLAMABAD: More than 15 months after India and Pakistan’s most serious military confrontation in decades, New Delhi’s attempt to secure narrative dominance is finding few takers across the globe. A documentary titled Declassified : Operat",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1110",
-            "name": "Islamabad Capital Territory",
-            "nameDe": "Hauptstadtterritorium Islamabad",
-            "type": "Capital Territory",
-            "anchor": [
-              73.085,
-              33.66
-            ],
-            "matched": "Islamabad"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "The Indian activist jailed after taking on a luxury hotel plan",
-          "url": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T22:18:50.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "An activist's detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact",
-          "url": "https://www.middleeasteye.net/news/emirati-academics-barbed-tweet-pakistan-exposes-uae-unease-over-mecca-pact",
-          "date": "2026-08-16T07:19:35.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Remarks by the political analyst on Pakistan's poverty, illiteracy and nuclear arsenal have sparked online backlash Turkish President Recep Tayyip Erdogan, Saudi Crown Prince Mohammed bin Salman and Pakistani Prime Minister Shehbaz Sharif meet in Mecca on 7 August 2",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
-          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
-          "date": "2026-08-15T11:12:08.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "India marks 80th Independence Day with military display",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/india-marks-80th-independence-day-with-military-display?traffic_source=rss",
-          "date": "2026-08-15T03:39:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "India marked its 80th Independence Day at Delhi’s historic Red Fort.",
-          "isNew": false,
-          "region": {
-            "id": "IND-2428",
-            "name": "Delhi",
-            "nameDe": "Delhi",
-            "type": "Union Territory",
-            "anchor": [
-              77.108,
-              28.661
-            ],
-            "matched": "Delhi"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 15
     },
     {
       "id": "somalia",
@@ -24178,6 +23610,450 @@
         }
       ],
       "itemCount": 15
+    },
+    {
+      "id": "india-pakistan",
+      "name": "Indien–Pakistan / Kaschmir",
+      "nameEn": "India–Pakistan / Kashmir",
+      "region": "Asien (Süd)",
+      "countries": [
+        "India"
+      ],
+      "lat": 34.1,
+      "lon": 76.5,
+      "tier": "high",
+      "since": "1947 / Eskalation Mai 2025",
+      "parties": [
+        "Indien",
+        "Pakistan",
+        "Militante Gruppen in Kaschmir"
+      ],
+      "background": "Nach dem Pahalgam-Anschlag und der militärischen Eskalation im Mai 2025 angespanntes Verhältnis zweier Atommächte; Indus-Wasservertrag ausgesetzt.",
+      "hotspots": [
+        "Line of Control",
+        "Kaschmirtal",
+        "Pahalgam",
+        "Jammu"
+      ],
+      "activity": 26,
+      "severity": 46,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "IND",
+      "extraCountries": [
+        "PAK"
+      ],
+      "regions": [
+        {
+          "id": "PAK-1110",
+          "name": "Islamabad Capital Territory",
+          "nameDe": "Hauptstadtterritorium Islamabad",
+          "type": "Capital Territory",
+          "anchor": [
+            73.085,
+            33.66
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          }
+        },
+        {
+          "id": "IND-3256",
+          "name": "Jharkhand",
+          "nameDe": "Jharkhand",
+          "type": "State",
+          "anchor": [
+            85.533,
+            23.642
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "famine",
+            "icon": "🍽️",
+            "label": "Hunger/Versorgung"
+          }
+        },
+        {
+          "id": "IND-2431",
+          "name": "Jammu and Kashmir",
+          "nameDe": "Jammu und Kashmir",
+          "type": "Union Territory",
+          "anchor": [
+            75.08,
+            33.558
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Dar says Pakistanis injured in Houthi attack in Red Sea have returned safely",
+          "url": "https://www.dawn.com/news/2024098/dar-says-pakistanis-injured-in-houthi-attack-in-red-sea-have-returned-safely",
+          "date": "2026-08-20T07:39:03.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Deputy Prime Minister and Foreign Minister Ishaq Dar said on Thursday that six Pakistani sailors injured in an attack by Yemen’s Houthi rebels in the Red Sea earlier this month have returned to Pakistan. The Aug 11 attack had targeted a Tanzania-flagged vessel, Tihamah, causing deaths and injuries among its crew. At the time, Dar had said that 3 nationals were killed and that reports had been rece",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Pakistan condemns ‘unprovoked’ Israeli attack on Syria air base",
+          "url": "https://www.dawn.com/news/2023864/pakistan-condemns-unprovoked-israeli-attack-on-syria-air-base",
+          "date": "2026-08-19T06:49:45.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The Foreign Office (FO) on Wednesday strongly condemned the “unprovoked” attack carried out by Israel on an air base in Syria, saying such acts had the potential to “further undermine regional peace and stability”. Syria’s state-run Ekhbariya television, citing a military source, said on Tuesday that Israel carried out eight airstrikes on the runway and storage facilities at the Abu al-Duhur base ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Pakistan, seven other Muslim states condemn Israel’s illegal settlement policies in occupied Palestinian territory",
+          "url": "https://www.dawn.com/news/2024377/pakistan-seven-other-muslim-states-condemn-israels-illegal-settlement-policies-in-occupied-palestinian-territory",
+          "date": "2026-08-21T15:48:29.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Pakistan, along with seven Muslim states, on Friday condemned Israel’s “continued illegal settlement policies in the occupied Palestinian territory”, according to a joint statement issued by the Foreign Office (FO). The foreign ministers of Pakistan, Egypt, Turkiye, Indonesia, Jordan, Qatar, Saudi Arabia and the United Arab Emirates “unequivocally condemn Israel’s continued illegal settlement poli",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Pakistan top court orders Imran Khan’s hospital transfer amid access battle",
+          "url": "https://www.aljazeera.com/news/2026/8/18/pakistan-top-court-orders-imran-khans-hospital-transfer-amid-access-battle?traffic_source=rss",
+          "date": "2026-08-18T09:15:03.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Supreme Court grants jailed ex-PM transfer to hospital for nearly a month after concerns raised over his blood pressure.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Indian student leader ends hunger strike after 16 days",
+          "url": "https://www.bbc.co.uk/news/articles/cly8m31nvmgo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T07:27:32.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Devendra Nath Mahto was part of a larger protest which began weeks ago, demanding exam reforms in Jharkhand state.",
+          "isNew": false,
+          "region": {
+            "id": "IND-3256",
+            "name": "Jharkhand",
+            "nameDe": "Jharkhand",
+            "type": "State",
+            "anchor": [
+              85.533,
+              23.642
+            ],
+            "matched": "Jharkhand"
+          },
+          "event": {
+            "type": "famine",
+            "icon": "🍽️",
+            "label": "Hunger/Versorgung"
+          },
+          "regionEvent": {
+            "type": "famine",
+            "icon": "🍽️",
+            "label": "Hunger/Versorgung"
+          },
+          "score": 15
+        },
+        {
+          "title": "AJK president, rights body deplore US envoy’s Kashmir remarks",
+          "url": "https://www.dawn.com/news/2024216/ajk-president-rights-body-deplore-us-envoys-kashmir-remarks",
+          "date": "2026-08-21T02:29:15.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "MUZAFFARABAD: Azad Jammu and Kashmir (AJK) President Chaudhry Latif Akbar and the Jammu and Kashmir Council for Human Rights (JKCHR) on Thursday criticised US Ambassador to India Sergio Gor for describing occupied Kashmir as an “important part of India”, saying the remarks were at variance with the territory’s disputed status and Washington’s historical position on the issue. In separate statement",
+          "isNew": false,
+          "region": {
+            "id": "IND-2431",
+            "name": "Jammu and Kashmir",
+            "nameDe": "Jammu und Kashmir",
+            "type": "Union Territory",
+            "anchor": [
+              75.08,
+              33.558
+            ],
+            "matched": "Jammu and Kashmir"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Jailed former Pakistani prime minister Imran Khan taken to hospital",
+          "url": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan",
+          "date": "2026-08-20T22:47:00.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Move may signal attempt to improve relations between military-backed government and ex-leader’s party The jailed former Pakistani prime minister Imran Khan has been ⁠transferred to a hospital in Islamabad for medical examination, fulfilling a longstanding demand by supporters who ⁠say his health has deteriorated during more than three years in prison. The move ​followed a supreme court order ‌this",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Israeli soldier visiting India accused of war crimes in Gaza's Khan Younis",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-soldier-visiting-india-accused-war-crimes-gazas-khan-younis",
+          "date": "2026-08-19T17:26:10.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli soldier visiting India accused of war crimes in Gaza's Khan Younis The Hind Rajab Foundation (HRF) has filed a war crimes complaint in India against an Israeli soldier accused of deliberately demolishing civilian property in Gaza. The complaint,&nbsp; filed on Tuesday , is the second brought by the HRF against an Israeli soldier visiting India. In June, the organisation filed a&nbsp; compl",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Robinson double rocks Pakistan in first Test before rain stops play",
+          "url": "https://www.dawn.com/news/2023886/robinson-double-rocks-pakistan-in-first-test-before-rain-stops-play",
+          "date": "2026-08-19T11:50:32.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "England bowler Ollie Robinson took a wicket with the first ball of the match as his double strike left Pakistan reeling before rain stopped play in the first Test at Headingley on Wednesday. Robinson celebrated his recall in style in England’s first Test since the exits of Ben Stokes, their former captain, and Brendon McCullum, sacked as red-ball coach. By the time rain halted play after 50 minute",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Pakistan extends airspace ban on Indian aircraft until Sept 24",
+          "url": "https://www.dawn.com/news/2023856/pakistan-extends-airspace-ban-on-indian-aircraft-until-sept-24",
+          "date": "2026-08-19T05:12:51.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Pakistan has extended its airspace ban on Indian aircraft for until Sep 24, according to a Notice to Airmen (Notam) issued by the Pakistan Airports Authority (PAA). The extension comes as the previous restriction was due to expire on Aug 23. “Pakistan airspace not available for Indian-registered aircraft and aircraft operated or leased by Indian airlines/operators, including military flights,” the",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "India’s quest for narrative dominance over 2025 conflict finds no takers",
+          "url": "https://www.dawn.com/news/2023799/indias-quest-for-narrative-dominance-over-2025-conflict-finds-no-takers",
+          "date": "2026-08-19T03:33:39.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "• US think tanks, independent researchers question Indian claims about ‘Operation Sindoor’ • ISPR says ‘cinematic perjury’ won’t afford New Delhi any face-saving ISLAMABAD: More than 15 months after India and Pakistan’s most serious military confrontation in decades, New Delhi’s attempt to secure narrative dominance is finding few takers across the globe. A documentary titled Declassified : Operat",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "The Indian activist jailed after taking on a luxury hotel plan",
+          "url": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T22:18:50.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "An activist's detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact",
+          "url": "https://www.middleeasteye.net/news/emirati-academics-barbed-tweet-pakistan-exposes-uae-unease-over-mecca-pact",
+          "date": "2026-08-16T07:19:35.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Former UAE presidential aide's post mocking Pakistan exposes unease over Mecca pact Submitted by MEE staff on Sun, 08/16/2026 - 06:02 Remarks by the political analyst on Pakistan's poverty, illiteracy and nuclear arsenal have sparked online backlash Turkish President Recep Tayyip Erdogan, Saudi Crown Prince Mohammed bin Salman and Pakistani Prime Minister Shehbaz Sharif meet in Mecca on 7 August 2",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "The strategic imperative: Why Europe cannot afford to sideline Pakistan",
+          "url": "https://www.dawn.com/news/2023032/the-strategic-imperative-why-europe-cannot-afford-to-sideline-pakistan",
+          "date": "2026-08-15T11:12:08.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The European Union faces a sobering geopolitical reality: its influence in regions, such as the Middle East and the Persian Gulf, that directly affect its security and economic interests is diminishing. The Iranian dossier serves as the clearest example. Once a primary architect of the Iran nuclear deal, the EU now finds itself marginalised as US-Iran backchannel negotiations and regional security",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 14
     },
     {
       "id": "ethiopia",
@@ -25026,19 +24902,19 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 22
+          "count": 23
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 18
+          "count": 17
         },
         {
           "key": "sanctions",
@@ -25107,7 +24983,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ukraine’s president accuses Russia of a ‘cowardly and deliberate’ attack on a mall in his hometown of Kryvyi Rih.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -25122,46 +24998,25 @@
           "score": 26
         },
         {
-          "title": "Russian double-tap drone strike kills 16 in Ukrainian mall, officials say",
+          "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
           "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-22T01:47:54.000Z",
+          "date": "2026-08-22T03:17:29.000Z",
           "source": "BBC World",
           "sourceType": "news",
-          "summary": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head.",
+          "summary": "Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 26
-        },
-        {
-          "title": "Russia’s missile tests around disputed islands anger Japan",
-          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
-          "date": "2026-08-21T04:54:01.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 23
         },
         {
           "title": "Deadly 'double-tap' Russian drone strikes target Ukraine shopping centre",
@@ -25277,6 +25132,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 21
+        },
+        {
+          "title": "Russia’s missile tests around disputed islands anger Japan",
+          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
+          "date": "2026-08-21T04:54:01.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 19
         },
         {
           "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
@@ -25930,27 +25806,6 @@
           "score": 15
         },
         {
-          "title": "Australia news live: Brethren church denies paying far-right activists; Russian dual citizen charged with alleged foreign interference",
-          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
-          "date": "2026-08-21T03:28:28.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want money. All I care about is justice. I’m going to stand up for what is right. An",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Ukraine, Russia trade strikes; Wildberries site hit again",
           "url": "https://www.dw.com/en/ukraine-russia-trade-strikes-wildberries-site-hit-again/a-78408178?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-18T09:29:00.000Z",
@@ -26432,6 +26287,27 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Australia news live: Brethren church denies paying far-right activists; Russian dual citizen charged with alleged foreign interference",
+          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
+          "date": "2026-08-21T03:28:28.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want money. All I care about is justice. I’m going to stand up for what is right. An",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
         },
         {
           "title": "Russian paramilitaries in Mali kill nine, including children: HRW",
@@ -26681,19 +26557,19 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 22
+          "count": 23
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 18
+          "count": 17
         },
         {
           "key": "sanctions",
@@ -26727,7 +26603,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ukraine’s president accuses Russia of a ‘cowardly and deliberate’ attack on a mall in his hometown of Kryvyi Rih.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -26742,46 +26618,25 @@
           "score": 26
         },
         {
-          "title": "Russian double-tap drone strike kills 16 in Ukrainian mall, officials say",
+          "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
           "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-22T01:47:54.000Z",
+          "date": "2026-08-22T03:17:29.000Z",
           "source": "BBC World",
           "sourceType": "news",
-          "summary": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head.",
+          "summary": "Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 26
-        },
-        {
-          "title": "Russia’s missile tests around disputed islands anger Japan",
-          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
-          "date": "2026-08-21T04:54:01.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 23
         },
         {
           "title": "Deadly 'double-tap' Russian drone strikes target Ukraine shopping centre",
@@ -26866,6 +26721,27 @@
             "label": "Raketenangriff"
           },
           "score": 21
+        },
+        {
+          "title": "Russia’s missile tests around disputed islands anger Japan",
+          "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
+          "date": "2026-08-21T04:54:01.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Pacific fleet launched missile drills near what Moscow calls the Kuril Islands but Japan regards as its Northern Territories Japan has criticised missile tests carried out by Russia’s navy around the disputed islands visited by Vladimir Putin last week amid continuing tensions between the two countries. Russia’s Pacific fleet said on Thursday that it had fired Bastion surface-to-ship missiles from",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 19
         },
         {
           "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
@@ -27519,27 +27395,6 @@
           "score": 15
         },
         {
-          "title": "Australia news live: Brethren church denies paying far-right activists; Russian dual citizen charged with alleged foreign interference",
-          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
-          "date": "2026-08-21T03:28:28.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want money. All I care about is justice. I’m going to stand up for what is right. An",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Ukraine, Russia trade strikes; Wildberries site hit again",
           "url": "https://www.dw.com/en/ukraine-russia-trade-strikes-wildberries-site-hit-again/a-78408178?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-18T09:29:00.000Z",
@@ -28021,6 +27876,27 @@
             "label": "Vertreibung"
           },
           "score": 12
+        },
+        {
+          "title": "Australia news live: Brethren church denies paying far-right activists; Russian dual citizen charged with alleged foreign interference",
+          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
+          "date": "2026-08-21T03:28:28.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want money. All I care about is justice. I’m going to stand up for what is right. An",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
         },
         {
           "title": "US vows to 'collapse' Iran with new sanctions as energy prices spike",
@@ -28384,9 +28260,9 @@
         "Kandil",
         "Nordsyrien"
       ],
-      "activity": 54,
-      "severity": 39,
-      "newCount": 0,
+      "activity": 59,
+      "severity": 40,
+      "newCount": 1,
       "signals": [
         {
           "key": "escalation",
@@ -28514,6 +28390,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Turkey requests international arrest warrant for Netanyahu over Gaza flotilla arrest",
+          "url": "https://www.premiumtimesng.com/foreign/904560-turkey-requests-international-arrest-warrant-for-netanyahu-over-gaza-flotilla-arrest.html",
+          "date": "2026-08-22T04:15:40.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Turkey has strongly criticised Israel’s genocidal war on Gaza since 2023. The post Turkey requests international arrest warrant for Netanyahu over Gaza flotilla arrest appeared first on Premium Times Nigeria .",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
         {
           "title": "Israeli opinion article says Turkey's Nato protection does not apply to troops in Syria",
           "url": "https://www.middleeasteye.net/news/israeli-opinion-article-warns-turkey-against-further-deployments-syria-where-nato-protections-do-not",
@@ -28762,7 +28659,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Middle East live: Turkey rejects Israeli claims after strike on Syria air base",
@@ -29162,7 +29059,7 @@
           "score": 8
         }
       ],
-      "itemCount": 27
+      "itemCount": 28
     },
     {
       "id": "mexico-cartels",
@@ -30461,7 +30358,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 12
+          "score": 11
         },
         {
           "title": "Mozambique New Terrorism Center Faces Test",
@@ -31062,115 +30959,6 @@
       "itemCount": 4
     },
     {
-      "id": "libya",
-      "name": "Libyen",
-      "nameEn": "Libya",
-      "region": "Afrika (Nord)",
-      "countries": [
-        "Libya"
-      ],
-      "lat": 27,
-      "lon": 17.5,
-      "tier": "medium",
-      "since": "2011",
-      "parties": [
-        "GNU (Tripolis)",
-        "LNA/Haftar (Osten)",
-        "Milizen",
-        "Türkei",
-        "Russland"
-      ],
-      "background": "Geteiltes Land mit rivalisierenden Regierungen; wiederkehrende Milizkämpfe in Tripolis, Streit um Ölerlöse und Zentralbank.",
-      "hotspots": [
-        "Tripolis",
-        "Bengasi",
-        "Sirte",
-        "Ölhalbmond"
-      ],
-      "activity": 4,
-      "severity": 24,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "LBY",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Security Council LIVE: Drone strikes and political impasse in Libya",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168158",
-          "date": "2026-08-18T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "As Libya faces a political impasse delaying long-planned elections alongside clashes and drone strikes that left a major oil refinery ablaze, the Security Council heard the latest updates, with an activist warning that the collision of extreme heat, water scarcity and environmental shocks with political division, armed insecurity and struggling institutions clearly makes the situation a peace and ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Libya's Haftar played role in securing US hostage's release, report says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/libyas-haftar-played-role-securing-us-hostages-release-report-says",
-          "date": "2026-08-15T04:31:46.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Libya's Haftar played role in securing US hostage's release, report says Authorities in eastern Libya under military commander Khalifa Haftar helped secure the release of an American missionary held hostage held by an Islamic State affiliate in West Africa's Sahel region, escorting him to freedom through Libya, Reuters reported, citing five sources. Four of the sources said that a deal was brokere",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
-          "title": "Libyan government in Tunisia for crisis talks",
-          "url": "https://www.france24.com/en/video/20260819-libyan-government-in-tunisia-for-crisis-talks",
-          "date": "2026-08-19T15:40:46.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "On Tuesday, Libya's national oil corporation said the country needs around 40 billion dollars in investment to make the most of its energy resources. The country's unreliable access to energy is feeding into instability stemming from fighting between rival factions and political rivalries. Members of one of the country's governments, the one internationally recognised and led by PM Abdulhamid Dbei",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        }
-      ],
-      "itemCount": 3
-    },
-    {
       "id": "chad",
       "name": "Tschad / Tschadseebecken",
       "nameEn": "Chad & Lake Chad Basin",
@@ -31579,6 +31367,94 @@
         }
       ],
       "itemCount": 4
+    },
+    {
+      "id": "libya",
+      "name": "Libyen",
+      "nameEn": "Libya",
+      "region": "Afrika (Nord)",
+      "countries": [
+        "Libya"
+      ],
+      "lat": 27,
+      "lon": 17.5,
+      "tier": "medium",
+      "since": "2011",
+      "parties": [
+        "GNU (Tripolis)",
+        "LNA/Haftar (Osten)",
+        "Milizen",
+        "Türkei",
+        "Russland"
+      ],
+      "background": "Geteiltes Land mit rivalisierenden Regierungen; wiederkehrende Milizkämpfe in Tripolis, Streit um Ölerlöse und Zentralbank.",
+      "hotspots": [
+        "Tripolis",
+        "Bengasi",
+        "Sirte",
+        "Ölhalbmond"
+      ],
+      "activity": 3,
+      "severity": 23,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "LBY",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Security Council LIVE: Drone strikes and political impasse in Libya",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168158",
+          "date": "2026-08-18T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "As Libya faces a political impasse delaying long-planned elections alongside clashes and drone strikes that left a major oil refinery ablaze, the Security Council heard the latest updates, with an activist warning that the collision of extreme heat, water scarcity and environmental shocks with political division, armed insecurity and struggling institutions clearly makes the situation a peace and ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Libyan government in Tunisia for crisis talks",
+          "url": "https://www.france24.com/en/video/20260819-libyan-government-in-tunisia-for-crisis-talks",
+          "date": "2026-08-19T15:40:46.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "On Tuesday, Libya's national oil corporation said the country needs around 40 billion dollars in investment to make the most of its energy resources. The country's unreliable access to energy is feeding into instability stemming from fighting between rival factions and political rivalries. Members of one of the country's governments, the one internationally recognised and led by PM Abdulhamid Dbei",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        }
+      ],
+      "itemCount": 2
     },
     {
       "id": "cameroon",
