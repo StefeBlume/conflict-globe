@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T21:05:51.450Z",
-  "durationSec": 359,
+  "generatedAt": "2026-08-22T22:02:38.463Z",
+  "durationSec": 418,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,40 +114,36 @@
       }
     ],
     "gdelt": {
-      "ok": 1,
-      "failed": 8,
-      "skipped": 7,
+      "ok": 3,
+      "failed": 7,
+      "skipped": 6,
       "errors": [
         {
           "id": "haiti",
-          "error": "fetch failed"
-        },
-        {
-          "id": "sahel-mali",
-          "error": "fetch failed"
-        },
-        {
-          "id": "drc-m23",
-          "error": "fetch failed"
-        },
-        {
-          "id": "venezuela",
-          "error": "fetch failed"
-        },
-        {
-          "id": "ethiopia",
-          "error": "fetch failed"
-        },
-        {
-          "id": "car",
           "error": "HTTP 429"
         },
         {
-          "id": "afghanistan",
-          "error": "fetch failed"
+          "id": "sahel-mali",
+          "error": "HTTP 429"
         },
         {
-          "id": "somalia",
+          "id": "drc-m23",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "venezuela",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "ethiopia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "india-pakistan",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "west-bank",
           "error": "HTTP 429"
         }
       ]
@@ -156,8 +152,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1211,
-    "newArticles": 3
+    "articles": 1210,
+    "newArticles": 2
   },
   "conflicts": [
     {
@@ -2471,19 +2467,19 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 23
+          "count": 22
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 18
+          "count": 17
         },
         {
           "key": "ceasefire",
@@ -2654,27 +2650,6 @@
           "score": 26
         },
         {
-          "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
-          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss",
-          "date": "2026-08-22T14:37:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Syria condemns attack in southwest as a 'flagrant violation of sovereignty' and a 'blatant breach of international law'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 23
-        },
-        {
           "title": "Israeli forces reportedly use phosphorus shells in attacks on southern Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-reportedly-use-phosphorus-shells-attacks-southern-lebanon",
           "date": "2026-08-22T14:38:14.000Z",
@@ -2822,6 +2797,27 @@
           "score": 23
         },
         {
+          "title": "Israeli army and settlers injure several Palestinians across West Bank",
+          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-army-and-settlers-injure-several-palestinians-across-west-bank?traffic_source=rss",
+          "date": "2026-08-22T21:02:29.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Palestinians face attacks and forced displacement as settlers expand control, backed by military raids and inaction.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
           "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
           "date": "2026-08-22T16:41:43.000Z",
@@ -2860,6 +2856,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
+          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss",
+          "date": "2026-08-22T14:37:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Syria condemns attack in southwest as a 'flagrant violation of sovereignty' and a 'blatant breach of international law'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 22
         },
@@ -2969,27 +2986,6 @@
           "score": 22
         },
         {
-          "title": "Israel launches attacks in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-attacks-southern-lebanon-0",
-          "date": "2026-08-21T21:13:42.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel launches attacks in southern Lebanon Israeli warplanes carried out two strikes on southern Lebanon five minutes apart, targeting the Ali al-Taher ridge in Nabatieh province, Lebanon’s National News Agency reported. The ridge overlooks southern Lebanon and northern Israel. The agency also reported an attack near the town of Deir Siryan, a raid on Doha Kafr Rumman and a bombing in the al-Mans",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Mother of murdered October 7 Gaza hostage represents terror victims at UN",
           "url": "https://www.jpost.com/diaspora/article-906220",
           "date": "2026-08-21T22:45:00.000Z",
@@ -3053,27 +3049,6 @@
           "score": 21
         },
         {
-          "title": "Guilt, grief and strength: Gaza’s ‘sole survivor’ children face life alone",
-          "url": "https://www.middleeasteye.net/news/guilt-grief-and-strength-gazas-sole-survivor-children-face-life-alone",
-          "date": "2026-08-22T15:10:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Guilt, grief and strength: Gaza’s ‘sole survivor’ children face life alone Submitted by Huda Skaik on Fri, 08/21/2026 - 13:25 Thousands of children who lost their families in Israeli strikes navigate grief, trauma and adulthood with little support A Palestinian mourns the death of Al Jazeera journalist Ahmed Wishah, who was killed in an Israeli strike, at Al-Aqsa Martyrs Hospital in Deir el-Balah ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 21
-        },
-        {
           "title": "Qusra siege eases as UN reaches trapped families, but crisis deepens in Gaza",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168155",
           "date": "2026-08-17T12:00:00.000Z",
@@ -3091,27 +3066,6 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
-          },
-          "score": 20
-        },
-        {
-          "title": "Settlers target Palestinian homes in Occupied West Bank’s Area B",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-reported-nida-live-westbank-ps?traffic_source=rss",
-          "date": "2026-08-22T15:45:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Palestinians in Qaryut say Israeli settlers, backed by the military, are forcing families from their homes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 20
         },
@@ -3198,6 +3152,48 @@
             "label": "Beschuss"
           },
           "score": 19
+        },
+        {
+          "title": "Guilt, grief and strength: Gaza’s ‘sole survivor’ children face life alone",
+          "url": "https://www.middleeasteye.net/news/guilt-grief-and-strength-gazas-sole-survivor-children-face-life-alone",
+          "date": "2026-08-22T15:10:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Guilt, grief and strength: Gaza’s ‘sole survivor’ children face life alone Submitted by Huda Skaik on Fri, 08/21/2026 - 13:25 Thousands of children who lost their families in Israeli strikes navigate grief, trauma and adulthood with little support A Palestinian mourns the death of Al Jazeera journalist Ahmed Wishah, who was killed in an Israeli strike, at Al-Aqsa Martyrs Hospital in Deir el-Balah ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israel launches attacks in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-attacks-southern-lebanon-0",
+          "date": "2026-08-21T21:13:42.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel launches attacks in southern Lebanon Israeli warplanes carried out two strikes on southern Lebanon five minutes apart, targeting the Ali al-Taher ridge in Nabatieh province, Lebanon’s National News Agency reported. The ridge overlooks southern Lebanon and northern Israel. The agency also reported an attack near the town of Deir Siryan, a raid on Doha Kafr Rumman and a bombing in the al-Mans",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Western allies slam Israel for ending World Central Kitchen strike probe",
@@ -3693,90 +3689,6 @@
           "score": 18
         },
         {
-          "title": "Bahrain says Israeli attack on Syrian air base violates international law",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-israeli-attack-syrian-air-base-violates-international-law",
-          "date": "2026-08-19T21:29:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Bahrain says Israeli attack on Syrian air base violates international law Bahrain has condemned Tuesday’s Israeli air strikes on Syria’s Abu al-Duhur air base as “a flagrant violation of Syria’s sovereignty and territorial integrity\", saying that it is \"a clear violation of the rules of international law and the Charter of the United Nations, and a threat to the security and stability of the regio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israeli strike on Gaza City police headquarters kills women’s police chief",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israeli-strike-on-gaza-city-police-headquarters-kills-womens-police-chief?traffic_source=rss",
-          "date": "2026-08-19T21:22:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "An Israeli strike on Gaza City’s police headquarters has killed the women’s police chief and several officers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israeli airstrike kills nine Palestinians at police post in Gaza",
-          "url": "https://www.middle-east-online.com/en/israeli-airstrike-kills-nine-palestinians-police-post-gaza",
-          "date": "2026-08-19T21:15:00.000Z",
-          "source": "middle-east-online.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israel military clears soldiers of criminal wrongdoing in Gaza strike that killed Zomi Frankcom - 20 - Aug - 2026",
-          "url": "https://home.nzcity.co.nz/news/article.aspx?id=452321&fm=psp,tst",
-          "date": "2026-08-19T21:30:00.000Z",
-          "source": "home.nzcity.co.nz",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
           "title": "Middle East: 94 per cent need shelter in Gaza, Israel ramps up demolitions in Lebanon",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168180",
           "date": "2026-08-20T12:00:00.000Z",
@@ -3857,6 +3769,111 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Settlers target Palestinian homes in Occupied West Bank’s Area B",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-reported-nida-live-westbank-ps?traffic_source=rss",
+          "date": "2026-08-22T15:45:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Palestinians in Qaryut say Israeli settlers, backed by the military, are forcing families from their homes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Bahrain says Israeli attack on Syrian air base violates international law",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-israeli-attack-syrian-air-base-violates-international-law",
+          "date": "2026-08-19T21:29:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Bahrain says Israeli attack on Syrian air base violates international law Bahrain has condemned Tuesday’s Israeli air strikes on Syria’s Abu al-Duhur air base as “a flagrant violation of Syria’s sovereignty and territorial integrity\", saying that it is \"a clear violation of the rules of international law and the Charter of the United Nations, and a threat to the security and stability of the regio",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli strike on Gaza City police headquarters kills women’s police chief",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israeli-strike-on-gaza-city-police-headquarters-kills-womens-police-chief?traffic_source=rss",
+          "date": "2026-08-19T21:22:17.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "An Israeli strike on Gaza City’s police headquarters has killed the women’s police chief and several officers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli airstrike kills nine Palestinians at police post in Gaza",
+          "url": "https://www.middle-east-online.com/en/israeli-airstrike-kills-nine-palestinians-police-post-gaza",
+          "date": "2026-08-19T21:15:00.000Z",
+          "source": "middle-east-online.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israel military clears soldiers of criminal wrongdoing in Gaza strike that killed Zomi Frankcom - 20 - Aug - 2026",
+          "url": "https://home.nzcity.co.nz/news/article.aspx?id=452321&fm=psp,tst",
+          "date": "2026-08-19T21:30:00.000Z",
+          "source": "home.nzcity.co.nz",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 15
         },
@@ -4214,27 +4231,6 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli drone strike kills nine in Gaza City",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-nine-gaza-city",
-          "date": "2026-08-19T12:57:42.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli drone strike kills nine in Gaza City The number of people killed in an Israeli drone strike on central Gaza City has increased to nine, an ambulance official has told Al Jazeera correspondents. The latest update raises the death toll from six reported earlier in the attack.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 15
         }
@@ -6006,13 +6002,19 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
           "count": 6
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 4
         },
         {
           "key": "offensive",
@@ -6023,12 +6025,6 @@
         {
           "key": "sanctions",
           "label": "Sanktionen",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
           "dir": "up",
           "count": 3
         },
@@ -6116,23 +6112,23 @@
           "score": 23
         },
         {
-          "title": "Settlers target Palestinian homes in Occupied West Bank’s Area B",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-reported-nida-live-westbank-ps?traffic_source=rss",
-          "date": "2026-08-22T15:45:40.000Z",
+          "title": "Israeli army and settlers injure several Palestinians across West Bank",
+          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-army-and-settlers-injure-several-palestinians-across-west-bank?traffic_source=rss",
+          "date": "2026-08-22T21:02:29.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Palestinians in Qaryut say Israeli settlers, backed by the military, are forcing families from their homes.",
-          "isNew": false,
+          "summary": "Palestinians face attacks and forced displacement as settlers expand control, backed by military raids and inaction.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 22
         },
@@ -6143,27 +6139,6 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "A 17-year-old Palestinian was killed and another person critically injured in a settler attack in the occupied West Bank",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Attacks on West Bank Palestinians by Israeli occupiers surge in 2026 : Commission",
-          "url": "https://www.middleeastmonitor.com/20260821-attacks-on-west-bank-palestinians-by-israeli-occupiers-surge-in-2026-commission/",
-          "date": "2026-08-21T21:30:00.000Z",
-          "source": "middleeastmonitor.com",
-          "sourceType": "news",
-          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
@@ -6219,6 +6194,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 19
+        },
+        {
+          "title": "Attacks on West Bank Palestinians by Israeli occupiers surge in 2026 : Commission",
+          "url": "https://www.middleeastmonitor.com/20260821-attacks-on-west-bank-palestinians-by-israeli-occupiers-surge-in-2026-commission/",
+          "date": "2026-08-21T21:30:00.000Z",
+          "source": "middleeastmonitor.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Settlers kill a Palestinian teen in a West Bank clash , and other Middle East developments",
@@ -6374,6 +6370,27 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "There has been a significant expansion of building and road construction on Palestinian land occupied by Israel in recent years.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Settlers target Palestinian homes in Occupied West Bank’s Area B",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-reported-nida-live-westbank-ps?traffic_source=rss",
+          "date": "2026-08-22T15:45:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Palestinians in Qaryut say Israeli settlers, backed by the military, are forcing families from their homes.",
           "isNew": false,
           "region": null,
           "event": {
@@ -6962,27 +6979,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Several Palestinians injured as settlers continue attacks in West Bank Israeli settlers continued their assaults on Palestinians and their property in the occupied West Bank, injuring several people. Here are the details of some of these attacks, reported by Wafa. •&nbsp;&nbsp;&nbsp;&nbsp;Israeli settlers beat up three Palestinians and sprayed them with pepper spray in the al-Masoudiya area, on th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli settlers injure five Palestinians in Masafer Yatta attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-five-palestinians-masafer-yatta-attacks",
-          "date": "2026-08-15T21:15:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli settlers injure five Palestinians in Masafer Yatta attacks Five Palestinians, including two women, two men and a child, suffered bruises and contusions when Israeli settlers attacked residents of Umm al-Khair village in Masafer Yatta, south of Hebron in the occupied West Bank, the Wafa news agency reported. Anti-settlement activist Osama Makhamrehn told the agency that the settlers also hu",
           "isNew": false,
           "region": null,
           "event": {
@@ -8084,27 +8080,6 @@
           "score": 24
         },
         {
-          "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
-          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss",
-          "date": "2026-08-22T14:37:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Syria condemns attack in southwest as a 'flagrant violation of sovereignty' and a 'blatant breach of international law'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 23
-        },
-        {
           "title": "Israel says Syria air base strike motivated by alleged Turkish plans to deploy forces there",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/katz-says-syria-air-base-strike-motivated-alleged-turkish-plans-deploy",
           "date": "2026-08-22T13:41:32.000Z",
@@ -8166,6 +8141,27 @@
             "label": "Drohnenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
+          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss",
+          "date": "2026-08-22T14:37:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Syria condemns attack in southwest as a 'flagrant violation of sovereignty' and a 'blatant breach of international law'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
         },
         {
           "title": "Middle East live: Syria denounces Israeli strike as 'flagrant violation of sovereignty'",
@@ -8248,7 +8244,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Secret tunnel becomes museum for Syria chemical attack and siege of Ghouta",
@@ -8551,7 +8547,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "UK ‘deeply concerned’ about Israeli strikes on Syrian air base",
@@ -9868,7 +9864,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -9918,7 +9914,7 @@
             35.568
           ],
           "count": 14,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -9985,7 +9981,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Iran threatens to block Hormuz if neighbours join US sanctions Tehran would target the interests of countries that help the United States in its economic pressure campaign against Iran , the secretary of Iran's Supreme National Security Council, Mohsen Rezaei, stated on Saturday. \"We are telling all nearby countries not to join the US economic war, otherwise we will consider them as enemies,\" Reza",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -10016,7 +10012,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Iraqi President Nizar Amidi says his country's territory will not be used to launch attacks against any other state.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -10466,27 +10462,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump says Iran not ready to make the 'right deal'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-not-ready-make-right-deal",
-          "date": "2026-08-21T21:37:52.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Trump says Iran not ready to make the 'right deal' US President Donald Trump said on Friday he did not think that Iran was ready make the \"right deal,\" and that Washington was observing \"what happens\" in the war. \"It just means that we're seeing what happens,\" Trump told reporters when asked if US military options with Iran were limited. \"We have total control of that entire region having to do wi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -11146,6 +11121,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 12
+        },
+        {
+          "title": "Trump says Iran not ready to make the 'right deal'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-not-ready-make-right-deal",
+          "date": "2026-08-21T21:37:52.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Trump says Iran not ready to make the 'right deal' US President Donald Trump said on Friday he did not think that Iran was ready make the \"right deal,\" and that Washington was observing \"what happens\" in the war. \"It just means that we're seeing what happens,\" Trump told reporters when asked if US military options with Iran were limited. \"We have total control of that entire region having to do wi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Iran’s Ghalibaf: ‘We stay out of Iraq’s affairs’",
@@ -11885,8 +11881,8 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 93,
-      "severity": 66,
+      "activity": 89,
+      "severity": 65,
       "newCount": 0,
       "signals": [
         {
@@ -12076,7 +12072,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Israeli army advances into southern Lebanese town, shelling reported",
@@ -12995,7 +12991,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Lebanon Says Received French Invitation to Meeting on Army Support",
@@ -18242,7 +18238,7 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 49,
+      "activity": 48,
       "severity": 53,
       "newCount": 0,
       "signals": [
@@ -18259,14 +18255,14 @@
           "count": 7
         },
         {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 4
-        },
-        {
           "key": "offensive",
           "label": "Offensive",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
           "dir": "up",
           "count": 3
         },
@@ -18308,23 +18304,6 @@
           }
         },
         {
-          "id": "YEM-158",
-          "name": "Ta'izz",
-          "nameDe": "Gouvernement Ta'izz",
-          "type": "Governorate",
-          "anchor": [
-            43.787,
-            13.41
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        },
-        {
           "id": "YEM-3510",
           "name": "'Adan",
           "nameDe": "Gouvernement Adan",
@@ -18339,6 +18318,23 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "YEM-158",
+          "name": "Ta'izz",
+          "nameDe": "Gouvernement Ta'izz",
+          "type": "Governorate",
+          "anchor": [
+            43.787,
+            13.41
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           }
         },
         {
@@ -18931,37 +18927,6 @@
           "score": 15
         },
         {
-          "title": "Report: Drone strikes kill three Houthi fighters and wound commanders in southwest Yemen",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/report-drone-strikes-kill-three-houthi-fighters-and-wound-commanders",
-          "date": "2026-08-15T21:52:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Report: Drone strikes kill three Houthi fighters and wound commanders in southwest Yemen Yemeni government forces said at least three Houthis have been killed during drone strikes west of Taiz governorate, in the southwest of the country, according to the Yemen News Agency. The air strikes wounded several others, including field commanders.",
-          "isNew": false,
-          "region": {
-            "id": "YEM-158",
-            "name": "Ta'izz",
-            "nameDe": "Gouvernement Ta'izz",
-            "type": "Governorate",
-            "anchor": [
-              43.787,
-              13.41
-            ],
-            "matched": "Taiz"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemen: Türk alarmed by rising civilian toll, urges restraint",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168151",
           "date": "2026-08-17T12:00:00.000Z",
@@ -19203,7 +19168,7 @@
           "score": 8
         }
       ],
-      "itemCount": 35
+      "itemCount": 34
     },
     {
       "id": "taiwan-strait",
@@ -20397,7 +20362,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Is the US actually too chicken to take on China for trade?",
@@ -29379,7 +29344,7 @@
       ],
       "activity": 33,
       "severity": 32,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -29473,7 +29438,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Iraqi President Nizar Amidi says his country's territory will not be used to launch attacks against any other state.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -31352,7 +31317,7 @@
         "N'Djamena",
         "Ost-Tschad"
       ],
-      "activity": 10,
+      "activity": 8,
       "severity": 25,
       "newCount": 0,
       "signals": [
@@ -31390,7 +31355,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "10 killed , multiple injured in Chad intercommunal clashes",
