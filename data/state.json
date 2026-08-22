@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T22:02:38.463Z",
-  "durationSec": 418,
+  "generatedAt": "2026-08-22T23:04:36.696Z",
+  "durationSec": 385,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,10 +114,14 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
-      "failed": 7,
+      "ok": 5,
+      "failed": 5,
       "skipped": 6,
       "errors": [
+        {
+          "id": "burkina-faso",
+          "error": "HTTP 429"
+        },
         {
           "id": "haiti",
           "error": "HTTP 429"
@@ -127,24 +131,12 @@
           "error": "HTTP 429"
         },
         {
-          "id": "drc-m23",
-          "error": "HTTP 429"
+          "id": "thailand-cambodia",
+          "error": "fetch failed"
         },
         {
-          "id": "venezuela",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "ethiopia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "india-pakistan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "west-bank",
-          "error": "HTTP 429"
+          "id": "chad",
+          "error": "fetch failed"
         }
       ]
     },
@@ -153,7 +145,7 @@
   "totals": {
     "conflicts": 44,
     "articles": 1210,
-    "newArticles": 2
+    "newArticles": 1
   },
   "conflicts": [
     {
@@ -557,100 +549,6 @@
           "score": 22
         },
         {
-          "title": "Russian airstrike kills 16 in Kyiv ; Zelenskyy demands Patriots",
-          "url": "http://www.californiatelegraph.com/news/279254643/zelenskyy-says-air-defense-delays-cost-lives-as-russia-bombs-kyiv",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "californiatelegraph.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Russian strike kills at least 15 at shopping centre in Zelensky home city",
-          "url": "https://www.newsandstar.co.uk/news/national/26486438.russian-strike-kills-least-15-shopping-centre-zelenskys-home-city/",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "newsandstar.co.uk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 22
-        },
-        {
-          "title": "14 killed , over 100 injured in Russian drone strike on Kryvyi Rih shopping mall : Zelenskyy",
-          "url": "http://www.russiaherald.com/news/279256987/14-killed-over-100-injured-in-russian-drone-strike-on-kryvyi-rih-shopping-mall-zelenskyy",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "russiaherald.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Japan protests Russian missile tests off disputed islands",
-          "url": "https://japantoday.com/category/politics/japan-protests-russian-missile-tests-off-disputed-islands",
-          "date": "2026-08-21T22:30:00.000Z",
-          "source": "japantoday.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Russia’s missile tests around disputed islands anger Japan",
           "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
           "date": "2026-08-21T04:54:01.000Z",
@@ -771,6 +669,100 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 18
+        },
+        {
+          "title": "Russian airstrike kills 16 in Kyiv ; Zelenskyy demands Patriots",
+          "url": "http://www.californiatelegraph.com/news/279254643/zelenskyy-says-air-defense-delays-cost-lives-as-russia-bombs-kyiv",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "californiatelegraph.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Russian strike kills at least 15 at shopping centre in Zelensky home city",
+          "url": "https://www.newsandstar.co.uk/news/national/26486438.russian-strike-kills-least-15-shopping-centre-zelenskys-home-city/",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "newsandstar.co.uk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "14 killed , over 100 injured in Russian drone strike on Kryvyi Rih shopping mall : Zelenskyy",
+          "url": "http://www.russiaherald.com/news/279256987/14-killed-over-100-injured-in-russian-drone-strike-on-kryvyi-rih-shopping-mall-zelenskyy",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "russiaherald.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Japan protests Russian missile tests off disputed islands",
+          "url": "https://japantoday.com/category/politics/japan-protests-russian-missile-tests-off-disputed-islands",
+          "date": "2026-08-21T22:30:00.000Z",
+          "source": "japantoday.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           },
           "score": 18
         },
@@ -2467,7 +2459,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -2755,27 +2747,6 @@
           "score": 23
         },
         {
-          "title": "Israeli drone strike in Syria wounds at least one person",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-syria-wounds-least-one-person",
-          "date": "2026-08-22T10:28:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli drone strike in Syria wounds at least one person An Israeli drone strike targeting a truck in Beit Jinn village in southwestern Syria has wounded at least one person, Al Jazeera Arabic is reporting. The latest attack follows a series of Israeli strikes on Syria’s Abu al-Duhur military airbase on 18 August.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 23
-        },
-        {
           "title": "US says intelligence behind Israeli strike on Syria air base was wrong",
           "url": "https://www.dawn.com/news/2024580/us-says-intelligence-behind-israeli-strike-on-syria-air-base-was-wrong",
           "date": "2026-08-22T14:03:40.000Z",
@@ -2803,38 +2774,17 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Palestinians face attacks and forced displacement as settlers expand control, backed by military raids and inaction.",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
-          "date": "2026-08-22T16:41:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 22
         },
@@ -2856,6 +2806,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli drone strike in Syria wounds at least one person",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-syria-wounds-least-one-person",
+          "date": "2026-08-22T10:28:56.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli drone strike in Syria wounds at least one person An Israeli drone strike targeting a truck in Beit Jinn village in southwestern Syria has wounded at least one person, Al Jazeera Arabic is reporting. The latest attack follows a series of Israeli strikes on Syria’s Abu al-Duhur military airbase on 18 August.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 22
         },
@@ -2986,27 +2957,6 @@
           "score": 22
         },
         {
-          "title": "Mother of murdered October 7 Gaza hostage represents terror victims at UN",
-          "url": "https://www.jpost.com/diaspora/article-906220",
-          "date": "2026-08-21T22:45:00.000Z",
-          "source": "jpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "Russian missiles kill 17 more in Ukraine as Guterres calls for ceasefire",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168181",
           "date": "2026-08-20T12:00:00.000Z",
@@ -3133,6 +3083,27 @@
           "score": 19
         },
         {
+          "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
+          "date": "2026-08-22T16:41:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 19
+        },
+        {
           "title": "After Israel's annihilation of Gaza, can I ever return home?",
           "url": "https://www.middleeasteye.net/opinion/after-israels-annihilation-gaza-can-i-ever-return-home",
           "date": "2026-08-22T12:38:47.000Z",
@@ -3166,6 +3137,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Mother of murdered October 7 Gaza hostage represents terror victims at UN",
+          "url": "https://www.jpost.com/diaspora/article-906220",
+          "date": "2026-08-21T22:45:00.000Z",
+          "source": "jpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "regionEvent": {
             "type": "casualties",
@@ -3668,27 +3660,6 @@
           "score": 18
         },
         {
-          "title": "Zomi Frankcom: Penny Wong condemns ‘insulting’ decision to clear IDF over Gaza strikes that killed Australian aid worker",
-          "url": "https://www.theguardian.com/australia-news/2026/aug/20/australia-idf-reaction-gaza-strike-zomi-frankcom-penny-wong-statement-ntwnfb",
-          "date": "2026-08-19T22:39:32.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Foreign affairs minister says Australia is ‘outraged’ after Israeli government decided not to pursue criminal proceedings over 2024 triple drone strike on humanitarian convoy Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Australia’s foreign affairs minister has expressed “outrage” and will call in the Israeli ambassador over the",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
           "title": "Middle East: 94 per cent need shelter in Gaza, Israel ramps up demolitions in Lebanon",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168180",
           "date": "2026-08-20T12:00:00.000Z",
@@ -3769,6 +3740,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Zomi Frankcom: Penny Wong condemns ‘insulting’ decision to clear IDF over Gaza strikes that killed Australian aid worker",
+          "url": "https://www.theguardian.com/australia-news/2026/aug/20/australia-idf-reaction-gaza-strike-zomi-frankcom-penny-wong-statement-ntwnfb",
+          "date": "2026-08-19T22:39:32.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Foreign affairs minister says Australia is ‘outraged’ after Israeli government decided not to pursue criminal proceedings over 2024 triple drone strike on humanitarian convoy Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Australia’s foreign affairs minister has expressed “outrage” and will call in the Israeli ambassador over the",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 15
         },
@@ -4395,27 +4387,6 @@
       ],
       "items": [
         {
-          "title": "Fourteen Dead as Myanmar Military Strikes Monastery in Dawn Attack",
-          "url": "https://www.lankanewspapers.com/2026/08/22/fourteen-dead-as-myanmar-military-strikes-monastery-in-dawn-attack",
-          "date": "2026-08-22T16:15:00.000Z",
-          "source": "lankanewspapers.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
           "title": "Fourteen killed in strike on Myanmar monastery",
           "url": "https://www.bbc.co.uk/news/articles/cqlxlvz01z1o?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-22T13:48:06.000Z",
@@ -4456,6 +4427,27 @@
             "label": "Luftangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Fourteen Dead as Myanmar Military Strikes Monastery in Dawn Attack",
+          "url": "https://www.lankanewspapers.com/2026/08/22/fourteen-dead-as-myanmar-military-strikes-monastery-in-dawn-attack",
+          "date": "2026-08-22T16:15:00.000Z",
+          "source": "lankanewspapers.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "  They dropped bombs when we were praying : Opposition group shocked Myanmar military could bomb a Buddhist temple that killed 14",
@@ -6002,7 +5994,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -6118,7 +6110,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Palestinians face attacks and forced displacement as settlers expand control, backed by military raids and inaction.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -6173,27 +6165,6 @@
             "label": "Bericht"
           },
           "score": 20
-        },
-        {
-          "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
-          "date": "2026-08-22T16:41:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
         },
         {
           "title": "Attacks on West Bank Palestinians by Israeli occupiers surge in 2026 : Commission",
@@ -6362,6 +6333,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
+          "date": "2026-08-22T16:41:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 16
         },
         {
           "title": "How Israel is expanding settlements in drive to reshape West Bank",
@@ -7987,37 +7979,6 @@
           "score": 29
         },
         {
-          "title": "Blast on security forces’ bus near Damascus causes injuries",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/blast-security-forces-bus-near-damascus-causes-injuries",
-          "date": "2026-08-22T17:01:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Blast on security forces’ bus near Damascus causes injuries An explosive device detonated on a bus carrying security forces near the Syrian capital Damascus on Saturday, according to Syrian state media. “An explosive device targeted a bus carrying Internal Security Forces personnel on the Maarounah–al-Tal road in Damascus countryside, leaving several personnel injured,” SANA news agency reported. ",
-          "isNew": false,
-          "region": {
-            "id": "SYR-144",
-            "name": "Rif Dimashq",
-            "nameDe": "Gouvernement Rif Dimaschq",
-            "type": "Province",
-            "anchor": [
-              37.009,
-              33.461
-            ],
-            "matched": "Damascus"
-          },
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 28
-        },
-        {
           "title": "Syria condemns Israeli strike on 'civilian vehicle' near Damascus",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syria-condemns-israeli-strike-civilian-vehicle-near-damascus",
           "date": "2026-08-22T14:31:06.000Z",
@@ -8047,6 +8008,37 @@
             "label": "Gefechte"
           },
           "score": 27
+        },
+        {
+          "title": "Blast on security forces’ bus near Damascus causes injuries",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/blast-security-forces-bus-near-damascus-causes-injuries",
+          "date": "2026-08-22T17:01:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Blast on security forces’ bus near Damascus causes injuries An explosive device detonated on a bus carrying security forces near the Syrian capital Damascus on Saturday, according to Syrian state media. “An explosive device targeted a bus carrying Internal Security Forces personnel on the Maarounah–al-Tal road in Damascus countryside, leaving several personnel injured,” SANA news agency reported. ",
+          "isNew": false,
+          "region": {
+            "id": "SYR-144",
+            "name": "Rif Dimashq",
+            "nameDe": "Gouvernement Rif Dimaschq",
+            "type": "Province",
+            "anchor": [
+              37.009,
+              33.461
+            ],
+            "matched": "Damascus"
+          },
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 25
         },
         {
           "title": "US says intelligence behind Israeli strike on Syria air base was wrong",
@@ -8140,7 +8132,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
@@ -9864,13 +9856,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 19
+          "count": 20
         },
         {
           "key": "talks",
@@ -9913,8 +9905,8 @@
             51.831,
             35.568
           ],
-          "count": 14,
-          "newCount": 0,
+          "count": 15,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -10077,6 +10069,37 @@
             "label": "Vertreibung"
           },
           "score": 20
+        },
+        {
+          "title": "Evening recap",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/evening-recap-605",
+          "date": "2026-08-22T22:28:31.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Evening recap Good evening, Middle East Eye readers. If you're just joining us, here are key developments from the day: Tehran warned that it would target the interests of any countries that help the US sanctions against Iran, threatening to block oil exports through Hormuz. Israeli attacks across villages in southern Lebanon continued throughout the day. An explosive device detonated on a bus car",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
         },
         {
           "title": "Iran warns states joining US sanctions will be considered enemies",
@@ -11832,27 +11855,6 @@
             "label": "Bericht"
           },
           "score": 11
-        },
-        {
-          "title": "Alarm in South Korea as Iran dispute with Trump shakes a 72-year alliance",
-          "url": "https://www.aljazeera.com/news/2026/8/20/alarm-in-south-korea-as-iran-dispute-with-trump-shakes-a-72-year-alliance?traffic_source=rss",
-          "date": "2026-08-20T01:56:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Trump's order to scale back military drills rattles Seoul, reviving doubts over US security guarantees.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -11881,8 +11883,8 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 89,
-      "severity": 65,
+      "activity": 86,
+      "severity": 64,
       "newCount": 0,
       "signals": [
         {
@@ -12041,7 +12043,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Israel launches attacks in southern Lebanon",
@@ -14224,7 +14226,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Blast on security forces’ bus near Damascus causes injuries",
@@ -14245,7 +14247,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "US judge strikes down policy suspending immigrant visa processing for 75 nations, including Pakistan",
@@ -25069,7 +25071,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 18
+          "score": 24
         },
         {
           "title": "Ethiopia : Drone Strikes in Two Locations in Mekelle , 13 Casualties Received At Ayder Hospital",
@@ -30281,7 +30283,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Philippines - Japan military logistics pact now in force",
