@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-23T16:02:28.812Z",
-  "durationSec": 371,
+  "generatedAt": "2026-08-23T17:08:57.332Z",
+  "durationSec": 391,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 35,
+        "count": 36,
         "error": null
       },
       {
@@ -54,9 +54,9 @@
       },
       {
         "id": "france24",
-        "ok": false,
-        "count": 0,
-        "error": "HTTP 403"
+        "ok": true,
+        "count": 23,
+        "error": null
       },
       {
         "id": "timesofisrael",
@@ -109,38 +109,30 @@
       {
         "id": "premiumtimes",
         "ok": true,
-        "count": 0,
+        "count": 15,
         "error": null
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 7,
+      "ok": 6,
+      "failed": 5,
       "skipped": 5,
       "errors": [
         {
           "id": "burkina-faso",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "haiti",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "sahel-mali",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "korea",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "rohingya-bangladesh",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "myanmar",
           "error": "fetch failed"
+        },
+        {
+          "id": "india-pakistan",
+          "error": "fetch failed"
+        },
+        {
+          "id": "colombia",
+          "error": "fetch failed"
+        },
+        {
+          "id": "west-bank",
+          "error": "HTTP 429"
         },
         {
           "id": "somalia",
@@ -152,8 +144,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1187,
-    "newArticles": 22
+    "articles": 1185,
+    "newArticles": 8
   },
   "conflicts": [
     {
@@ -185,7 +177,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -206,14 +198,14 @@
           "count": 4
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
+          "key": "displacement",
+          "label": "Vertreibung",
           "dir": "up",
           "count": 2
         },
         {
-          "key": "displacement",
-          "label": "Vertreibung",
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 2
         }
@@ -459,14 +451,24 @@
           "score": 24
         },
         {
-          "title": "Ukraine: Zelenskyy rejects wartime elections",
-          "url": "https://www.dw.com/en/ukraine-zelenskyy-rejects-wartime-elections/a-78475087?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-23T10:23:00.000Z",
-          "source": "Deutsche Welle",
+          "title": "President Zelensky says having elections in Ukraine would 'destroy the country'",
+          "url": "https://www.france24.com/en/president-zelensky-says-having-elections-in-ukraine-would-destroy-the-country",
+          "date": "2026-08-23T13:07:13.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "The Ukrainian president says wartime elections, as called for by the ex-defense minister, could \"split Ukraine.\" He also said Russia was planning to mobilize hundreds of thousands of troops after September polls there.",
+          "summary": "In remarks on Sunday, Ukrainian President Volodymyr Zelensky spoke out against holding war time elections. He believes it would be too dangerous for the country, that would ‘split’ Ukraine. The remarks came after his former defense minister publicly called for a vote. Details and analysis by FRANCE 24 correspondent in Kyiv, Emmanuelle Chaze.",
           "isNew": false,
-          "region": null,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
           "event": {
             "type": "election",
             "icon": "🗳️",
@@ -486,7 +488,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Empty pumps, long waits: Attacks on oil refineries have left Russia increasingly short of fuel. Dissident Russian economists say growing anger about shortages among ordinary Russians could help end the Ukraine war.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -637,6 +639,69 @@
           "score": 21
         },
         {
+          "title": "Ukraine: Zelenskyy rejects wartime elections",
+          "url": "https://www.dw.com/en/ukraine-zelenskyy-rejects-wartime-elections/a-78475087?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-23T10:23:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The Ukrainian president says wartime elections, as called for by the ex-defense minister, could \"split Ukraine.\" He also said Russia was planning to mobilize hundreds of thousands of troops after September polls there.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 21
+        },
+        {
+          "title": "The week in pictures: a French woman in space, wildfires in Europe and the war in Ukraine",
+          "url": "https://www.france24.com/en/science/20260823-the-week-in-pictures-frenchwoman-space-nasa-wildfires-europe-war-ukraine",
+          "date": "2026-08-23T13:09:15.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Russian drones carry out deadly strikes in Ukraine, astronaut Sophie Adenot becomes the first French woman to spacewalk, fires rage in Belgium and across Europe, and torrential rain hits the Philippines: FRANCE 24 takes a look at the week's most striking images.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 21
+        },
+        {
+          "title": "Ukraine: Zelensky asks for more Patriot interceptors as civilian deaths hit highest level since 2022",
+          "url": "https://www.france24.com/en/ukraine-zelensky-asks-for-more-patriot-interceptors-as-civilian-deaths-hit-highest-level-since-2022",
+          "date": "2026-08-23T09:05:59.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Kryvyi Rih is still digging through the wreckage. The Russian strike on a shopping centre there, in President Zelensky's own hometown, has now claimed at least sixteen lives, with several people still unaccounted for. It has added urgency to the request Zelensky has been making for months: he needs Patriot interceptors as the threat of winter looms. Camille Knight has more.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 21
+        },
+        {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
           "url": "https://www.dw.com/en/masha-and-the-bear-ukraine-sanctions-russian-cartoon/a-78464406?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-21T18:59:00.000Z",
@@ -695,58 +760,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "President Zelensky says having elections in Ukraine would 'destroy the country'",
-          "url": "https://www.france24.com/en/president-zelensky-says-having-elections-in-ukraine-would-destroy-the-country",
-          "date": "2026-08-23T13:07:13.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In remarks on Sunday, Ukrainian President Volodymyr Zelensky spoke out against holding war time elections. He believes it would be too dangerous for the country, that would ‘split’ Ukraine. The remarks came after his former defense minister publicly called for a vote. Details and analysis by FRANCE 24 correspondent in Kyiv, Emmanuelle Chaze.",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 18
-        },
-        {
-          "title": "The week in pictures: a French woman in space, wildfires in Europe and the war in Ukraine",
-          "url": "https://www.france24.com/en/science/20260823-the-week-in-pictures-frenchwoman-space-nasa-wildfires-europe-war-ukraine",
-          "date": "2026-08-23T13:09:15.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Russian drones carry out deadly strikes in Ukraine, astronaut Sophie Adenot becomes the first French woman to spacewalk, fires rage in Belgium and across Europe, and torrential rain hits the Philippines: FRANCE 24 takes a look at the week's most striking images.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 18
         },
@@ -1236,27 +1249,6 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine: Zelensky asks for more Patriot interceptors as civilian deaths hit highest level since 2022",
-          "url": "https://www.france24.com/en/ukraine-zelensky-asks-for-more-patriot-interceptors-as-civilian-deaths-hit-highest-level-since-2022",
-          "date": "2026-08-23T09:05:59.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Kryvyi Rih is still digging through the wreckage. The Russian strike on a shopping centre there, in President Zelensky's own hometown, has now claimed at least sixteen lives, with several people still unaccounted for. It has added urgency to the request Zelensky has been making for months: he needs Patriot interceptors as the threat of winter looms. Camille Knight has more.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -2434,7 +2426,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
@@ -2603,13 +2595,34 @@
           "score": 29
         },
         {
+          "title": "Middle East live: Israeli strikes kill three, including child, in Gaza Strip",
+          "url": "https://www.france24.com/en/middle-east/20260823-middle-east-live-iran-s-president-says-country-facing-many-problems-as-us-sanctions-loom",
+          "date": "2026-08-23T09:23:01.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israeli strikes in the central Gaza Strip killed three people, including a child, on Sunday, according to rescuers. The strikes came two days after a Palestinian teenager was killed by Israeli settlers in the occupied West Bank following a rock-throwing incident. Follow our liveblog for the latest updates.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 27
+        },
+        {
           "title": "Israeli drone strike north of Khan Younis wounds six",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-north-khan-younis-wounds-six",
           "date": "2026-08-23T15:09:43.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli drone strike north of Khan Younis wounds six At least six Palestinians have been wounded in an Israeli drone strike north of Khan Younis, Wafa news agency reports. According to the report, two missiles struck a tent near the Albanian mosque. It added that earlier, another four civilians were wounded in a separate Israeli attack targeting an area outside the Israeli-controlled areas north o",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -2630,27 +2643,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Child shot dead by Israeli forces during raid in Nablus A 14-year-old Palestinian was shot dead by Israeli forces during a raid on&nbsp;the Askar refugee camp, east of Nablus, Al Jazeera is reporting, citing a medical source. According to the source, the child was shot in the chest.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israeli military raids continue across the West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
-          "date": "2026-08-23T10:09:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
           "isNew": false,
           "region": null,
           "event": {
@@ -2687,25 +2679,25 @@
           "score": 27
         },
         {
-          "title": "Israel’s war on Gaza forces Palestinians to rely on ‘Stone Age’ toilets",
-          "url": "https://www.aljazeera.com/features/2026/8/23/israels-war-on-gaza-forces-palestinians-to-rely-on-stone-age-toilets?traffic_source=rss",
-          "date": "2026-08-23T11:00:18.000Z",
-          "source": "Al Jazeera",
+          "title": "Israeli military raids continue across the West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
+          "date": "2026-08-23T10:09:25.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "The displaced in Gaza are struggling to find safe, discreet and sanitary toilets amid health crisis.",
+          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 25
+          "score": 24
         },
         {
           "title": "Syria says Israeli strike near Damascus violation of international law",
@@ -2750,12 +2742,12 @@
           "score": 23
         },
         {
-          "title": "Israel kills 3 Palestinians, including four-year-old child, in central Gaza",
-          "url": "https://www.aljazeera.com/news/2026/8/23/israeli-air-strike-near-gaza-refugee-camp-kills-one-person-and-injures-two?traffic_source=rss",
-          "date": "2026-08-23T09:43:47.000Z",
+          "title": "Israel’s war on Gaza forces Palestinians to rely on ‘Stone Age’ toilets",
+          "url": "https://www.aljazeera.com/features/2026/8/23/israels-war-on-gaza-forces-palestinians-to-rely-on-stone-age-toilets?traffic_source=rss",
+          "date": "2026-08-23T11:00:18.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Air attack on az-Zawayda town kills two Palestinians, while another strike kills one person in Nuseirat refugee camp.",
+          "summary": "The displaced in Gaza are struggling to find safe, discreet and sanitary toilets amid health crisis.",
           "isNew": false,
           "region": null,
           "event": {
@@ -2764,9 +2756,9 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
           "score": 22
         },
@@ -2804,6 +2796,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli forces open fire on Palestinians across West Bank in separate incidents",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-open-fire-palestinians-across-west-bank-separate",
+          "date": "2026-08-23T16:34:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces open fire on Palestinians across West Bank in separate incidents The Israeli army said it apprehended a 16-year-old Palestinian suspected of stabbing an Israeli on Sunday in Al-Auja in the occupied West Bank. Hani Najum, the head of the Al-Auja village council, told AFP that \"the Israeli army raided the village, deployed in its streets,\" and imposed a curfew. The same day, the Israe",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "clash",
@@ -2949,34 +2962,13 @@
           "score": 20
         },
         {
-          "title": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon",
-          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
-          "date": "2026-08-23T10:47:21.000Z",
-          "source": "Middle East Eye",
+          "title": "Gaza families search for children missing after years of war",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/gaza-families-search-for-children-missing-after-years-of-war?traffic_source=rss",
+          "date": "2026-08-23T15:42:04.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon Submitted by Rogger Oliveira on Tue, 08/18/2026 - 09:25 A handful of border villages have been spared Israel’s ethnic cleansing, but that comes at a price Kfarchouba residents set up a makeshift barricade on the outskirts of their village to prevent the entry of 'outsiders' (Rogger Oliveira/MEE) Off Within the Israeli ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Disabled, elderly Palestinian beaten with club by Israeli settler",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/disabled-elderly-palestinian-beaten-club-israeli-settler",
-          "date": "2026-08-23T04:46:48.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Disabled, elderly Palestinian beaten with club by Israeli settler An elderly, disabled Palestinian man was beaten by an Israeli settler with a club in Hebron, in the occupied West Bank, according to Quds News Network. QNN released footage showing the settler repeatedly hitting Saeed Al-Omour as he tried to walk away on his crutches. Al-Omour lost his leg after being shot by Israeli settlers more t",
-          "isNew": false,
+          "summary": "Families in Gaza continue searching for children and relatives missing in the war.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -3669,7 +3661,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Joint statement issued after IDF said it will not pursue criminal investigations into April 2024 strike that killed seven humanitarian workers Britain, Australia and Canada have called the decision of the Israeli military authorities not to open a criminal investigation into the April 2024 airstrikes that hit a convoy of aid vehicles in Gaza “shameful”. The strikes killed seven humanitarian worker",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "aid",
@@ -3680,6 +3672,48 @@
             "type": "aid",
             "icon": "📦",
             "label": "Hilfslieferung"
+          },
+          "score": 16
+        },
+        {
+          "title": "Hundreds of Gaza children join a mass swimming lesson to cope with trauma",
+          "url": "https://www.france24.com/en/hundreds-of-gaza-children-join-a-mass-swimming-lesson-to-cope-with-trauma",
+          "date": "2026-08-23T09:46:24.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In Gaza, the war has upended the lives of an entire generation of children. In an effort to help them cope with the trauma of the conflict, an NGO has launched a project in Khan Younis: a huge swimming lesson that could even set a world record. Hundreds of children have gathered on the beach to learn how to swim. Story by Charlotte Hughes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon",
+          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
+          "date": "2026-08-23T10:47:21.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon Submitted by Rogger Oliveira on Tue, 08/18/2026 - 09:25 A handful of border villages have been spared Israel’s ethnic cleansing, but that comes at a price Kfarchouba residents set up a makeshift barricade on the outskirts of their village to prevent the entry of 'outsiders' (Rogger Oliveira/MEE) Off Within the Israeli ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 16
         },
@@ -3705,12 +3739,33 @@
           "score": 16
         },
         {
-          "title": "Hundreds of Gaza children join a mass swimming lesson to cope with trauma",
-          "url": "https://www.france24.com/en/hundreds-of-gaza-children-join-a-mass-swimming-lesson-to-cope-with-trauma",
-          "date": "2026-08-23T09:46:24.000Z",
-          "source": "France 24",
+          "title": "Israel kills 3 Palestinians, including four-year-old child, in central Gaza",
+          "url": "https://www.aljazeera.com/news/2026/8/23/israeli-air-strike-near-gaza-refugee-camp-kills-one-person-and-injures-two?traffic_source=rss",
+          "date": "2026-08-23T09:43:47.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "In Gaza, the war has upended the lives of an entire generation of children. In an effort to help them cope with the trauma of the conflict, an NGO has launched a project in Khan Younis: a huge swimming lesson that could even set a world record. Hundreds of children have gathered on the beach to learn how to swim. Story by Charlotte Hughes.",
+          "summary": "Air attack on az-Zawayda town kills two Palestinians, while another strike kills one person in Nuseirat refugee camp.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Disabled, elderly Palestinian beaten with club by Israeli settler",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/disabled-elderly-palestinian-beaten-club-israeli-settler",
+          "date": "2026-08-23T04:46:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Disabled, elderly Palestinian beaten with club by Israeli settler An elderly, disabled Palestinian man was beaten by an Israeli settler with a club in Hebron, in the occupied West Bank, according to Quds News Network. QNN released footage showing the settler repeatedly hitting Saeed Al-Omour as he tried to walk away on his crutches. Al-Omour lost his leg after being shot by Israeli settlers more t",
           "isNew": false,
           "region": null,
           "event": {
@@ -4145,27 +4200,6 @@
           "score": 15
         },
         {
-          "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
-          "date": "2026-08-22T16:41:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
           "title": "Zomi Frankcom: Penny Wong condemns ‘insulting’ decision to clear IDF over Gaza strikes that killed Australian aid worker",
           "url": "https://www.theguardian.com/australia-news/2026/aug/20/australia-idf-reaction-gaza-strike-zomi-frankcom-penny-wong-statement-ntwnfb",
           "date": "2026-08-19T22:39:32.000Z",
@@ -4178,48 +4212,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Bahrain says Israeli attack on Syrian air base violates international law",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-israeli-attack-syrian-air-base-violates-international-law",
-          "date": "2026-08-19T21:29:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Bahrain says Israeli attack on Syrian air base violates international law Bahrain has condemned Tuesday’s Israeli air strikes on Syria’s Abu al-Duhur air base as “a flagrant violation of Syria’s sovereignty and territorial integrity\", saying that it is \"a clear violation of the rules of international law and the Charter of the United Nations, and a threat to the security and stability of the regio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli strike on Gaza City police headquarters kills women’s police chief",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israeli-strike-on-gaza-city-police-headquarters-kills-womens-police-chief?traffic_source=rss",
-          "date": "2026-08-19T21:22:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "An Israeli strike on Gaza City’s police headquarters has killed the women’s police chief and several officers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "casualties",
@@ -4260,7 +4252,7 @@
       ],
       "activity": 62,
       "severity": 73,
-      "newCount": 5,
+      "newCount": 0,
       "signals": [
         {
           "key": "ceasefire",
@@ -4310,11 +4302,11 @@
       "items": [
         {
           "title": "DR Congo and M23 rebels agree roadmap for peace talks",
-          "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "bbc.co.uk",
+          "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-23T12:52:08.000Z",
+          "source": "BBC World",
           "sourceType": "news",
-          "summary": "",
+          "summary": "Representatives met in Switzerland to work out next steps to resolve the conflict.",
           "isNew": false,
           "region": null,
           "event": {
@@ -4327,7 +4319,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 31
+          "score": 29
         },
         {
           "title": "DR Congo , M23 rebels agree on roadmap for peace talks",
@@ -4348,7 +4340,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 31
+          "score": 25
         },
         {
           "title": "DR Congo , M23 fighters agree roadmap for peace talks : joint statement",
@@ -4357,7 +4349,7 @@
           "source": "bssnews.net",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -4369,7 +4361,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 27
+          "score": 25
         },
         {
           "title": "DR Congo govt , M23 agree on roadmap for peace talks - Xinhua",
@@ -4378,7 +4370,7 @@
           "source": "english.news.cn",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -4390,49 +4382,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 27
-        },
-        {
-          "title": "DR Congo , M23 rebels agree on roadmap for peace talks - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
-          "url": "https://dominicanrepublicpost.com/dr-congo-m23-rebels-agree-on-roadmap-for-peace-talks/",
-          "date": "2026-08-23T10:30:00.000Z",
-          "source": "dominicanrepublicpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 27
-        },
-        {
-          "title": "Congo , M23 rebels agree to peace roadmap",
-          "url": "https://www.dw.com/en/congo-m23-rebels-agree-to-peace-roadmap/a-78476169",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "dw.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Eastern Congo Ceasefire Verification Begins Monday",
@@ -4441,7 +4391,7 @@
           "source": "riotimesonline.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -4453,7 +4403,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "DR Congo, AFC/M23 group agree on roadmap for peace negotiations after Swiss talks",
@@ -4473,6 +4423,48 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
+          },
+          "score": 23
+        },
+        {
+          "title": "DR Congo , M23 rebels agree on roadmap for peace talks - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+          "url": "https://dominicanrepublicpost.com/dr-congo-m23-rebels-agree-on-roadmap-for-peace-talks/",
+          "date": "2026-08-23T10:30:00.000Z",
+          "source": "dominicanrepublicpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 22
+        },
+        {
+          "title": "Congo , M23 rebels agree to peace roadmap",
+          "url": "https://www.dw.com/en/congo-m23-rebels-agree-to-peace-roadmap/a-78476169",
+          "date": "2026-08-23T13:30:00.000Z",
+          "source": "dw.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 18
         },
@@ -4854,8 +4846,8 @@
         "Karen",
         "Chin"
       ],
-      "activity": 61,
-      "severity": 73,
+      "activity": 58,
+      "severity": 72,
       "newCount": 0,
       "signals": [
         {
@@ -4982,27 +4974,6 @@
       ],
       "items": [
         {
-          "title": "Fourteen Dead as Myanmar Military Strikes Monastery in Dawn Attack",
-          "url": "https://www.lankanewspapers.com/2026/08/22/fourteen-dead-as-myanmar-military-strikes-monastery-in-dawn-attack",
-          "date": "2026-08-22T16:15:00.000Z",
-          "source": "lankanewspapers.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Fourteen killed in strike on Myanmar monastery",
           "url": "https://www.bbc.co.uk/news/articles/cqlxlvz01z1o?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-22T13:48:06.000Z",
@@ -5043,6 +5014,27 @@
             "label": "Luftangriff"
           },
           "score": 19
+        },
+        {
+          "title": "Fourteen Dead as Myanmar Military Strikes Monastery in Dawn Attack",
+          "url": "https://www.lankanewspapers.com/2026/08/22/fourteen-dead-as-myanmar-military-strikes-monastery-in-dawn-attack",
+          "date": "2026-08-22T16:15:00.000Z",
+          "source": "lankanewspapers.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "  They dropped bombs when we were praying : Opposition group shocked Myanmar military could bomb a Buddhist temple that killed 14",
@@ -5701,7 +5693,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -5716,14 +5708,14 @@
           "count": 6
         },
         {
-          "key": "sanctions",
-          "label": "Sanktionen",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
           "count": 3
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "sanctions",
+          "label": "Sanktionen",
           "dir": "up",
           "count": 3
         },
@@ -5790,27 +5782,6 @@
           "score": 27
         },
         {
-          "title": "Israeli military raids continue across the West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
-          "date": "2026-08-23T10:09:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
           "title": "Child shot dead by Israeli forces during raid in Nablus",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/child-shot-dead-israeli-forces-during-raid-nablus",
           "date": "2026-08-23T12:26:57.000Z",
@@ -5830,6 +5801,27 @@
             "label": "Gefechte"
           },
           "score": 26
+        },
+        {
+          "title": "Israeli military raids continue across the West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
+          "date": "2026-08-23T10:09:25.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
         },
         {
           "title": "Israeli settler attacks shift focus to West Bank areas under direct Palestinian rule",
@@ -5895,13 +5887,13 @@
           "score": 22
         },
         {
-          "title": "Disabled, elderly Palestinian beaten with club by Israeli settler",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/disabled-elderly-palestinian-beaten-club-israeli-settler",
-          "date": "2026-08-23T04:46:48.000Z",
+          "title": "Israeli forces open fire on Palestinians across West Bank in separate incidents",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-open-fire-palestinians-across-west-bank-separate",
+          "date": "2026-08-23T16:34:01.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Disabled, elderly Palestinian beaten with club by Israeli settler An elderly, disabled Palestinian man was beaten by an Israeli settler with a club in Hebron, in the occupied West Bank, according to Quds News Network. QNN released footage showing the settler repeatedly hitting Saeed Al-Omour as he tried to walk away on his crutches. Al-Omour lost his leg after being shot by Israeli settlers more t",
-          "isNew": false,
+          "summary": "Israeli forces open fire on Palestinians across West Bank in separate incidents The Israeli army said it apprehended a 16-year-old Palestinian suspected of stabbing an Israeli on Sunday in Al-Auja in the occupied West Bank. Hani Najum, the head of the Al-Auja village council, told AFP that \"the Israeli army raided the village, deployed in its streets,\" and imposed a curfew. The same day, the Israe",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -5909,11 +5901,11 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 18
+          "score": 19
         },
         {
           "title": "Two Palestinians wounded in Israeli raid near Nablus, settlers and troops storm towns in Ramallah and Jenin",
@@ -6126,6 +6118,27 @@
           "score": 15
         },
         {
+          "title": "Disabled, elderly Palestinian beaten with club by Israeli settler",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/disabled-elderly-palestinian-beaten-club-israeli-settler",
+          "date": "2026-08-23T04:46:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Disabled, elderly Palestinian beaten with club by Israeli settler An elderly, disabled Palestinian man was beaten by an Israeli settler with a club in Hebron, in the occupied West Bank, according to Quds News Network. QNN released footage showing the settler repeatedly hitting Saeed Al-Omour as he tried to walk away on his crutches. Al-Omour lost his leg after being shot by Israeli settlers more t",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
           "title": "Palestinian commission: Illegal Israeli settlements in West Bank reach 592 by July",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-commission-illegal-israeli-settlements-west-bank-reach-592",
           "date": "2026-08-23T03:25:44.000Z",
@@ -6258,27 +6271,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
-          "date": "2026-08-22T16:41:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -6701,6 +6693,27 @@
             "label": "Belagerung"
           },
           "score": 15
+        },
+        {
+          "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
+          "date": "2026-08-22T16:41:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Settlers target Palestinian homes in Occupied West Bank’s Area B",
@@ -7486,27 +7499,6 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "US envoy calls out Israeli settler 'terrorism' in interview",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-envoy-calls-out-israeli-settler-terrorism-interview",
-          "date": "2026-08-18T19:28:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US envoy calls out Israeli settler 'terrorism' in interview US ambassador to Israel Mike Huckabee said on Tuesday that&nbsp;“terrorism” is the most accurate term to describe the actions of Israeli settlers in the occupied West Bank. He said in an interview to Israeli public broadcaster Kaan that settlers are engaged “in a process aimed at changing behavior and creating fear in an individual, a pop",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -7540,7 +7532,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 7,
+      "newCount": 1,
       "signals": [
         {
           "key": "airstrike",
@@ -7570,7 +7562,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 2
+          "count": 3
         }
       ],
       "acled": null,
@@ -7597,7 +7589,7 @@
             33.461
           ],
           "count": 10,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -7675,58 +7667,6 @@
       ],
       "items": [
         {
-          "title": "Israel claims strikes at Syrian military base deterred growing Turkish threat",
-          "url": "https://www.jpost.com/israel-news/defense-news/article-906306",
-          "date": "2026-08-23T12:15:00.000Z",
-          "source": "jpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 31
-        },
-        {
-          "title": "Saudi Arabia , Jordan condemn  terrorist attack  on Syrian security bus near Damascus",
-          "url": "https://aa.com.tr/en/middle-east/saudi-arabia-jordan-condemn-terrorist-attack-on-syrian-security-bus-near-damascus/4034879",
-          "date": "2026-08-23T12:00:00.000Z",
-          "source": "aa.com.tr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": {
-            "id": "SYR-144",
-            "name": "Rif Dimashq",
-            "nameDe": "Gouvernement Rif Dimaschq",
-            "type": "Province",
-            "anchor": [
-              37.009,
-              33.461
-            ],
-            "matched": "Damascus"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 30
-        },
-        {
           "title": "Syria says Israeli strike near Damascus violation of international law",
           "url": "https://www.bbc.co.uk/news/articles/c2dkdegr2xeo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-22T21:42:42.000Z",
@@ -7756,6 +7696,163 @@
             "label": "Bericht"
           },
           "score": 26
+        },
+        {
+          "title": "Israel claims strikes at Syrian military base deterred growing Turkish threat",
+          "url": "https://www.jpost.com/israel-news/defense-news/article-906306",
+          "date": "2026-08-23T12:15:00.000Z",
+          "source": "jpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 25
+        },
+        {
+          "title": "Saudi Arabia , Jordan condemn  terrorist attack  on Syrian security bus near Damascus",
+          "url": "https://aa.com.tr/en/middle-east/saudi-arabia-jordan-condemn-terrorist-attack-on-syrian-security-bus-near-damascus/4034879",
+          "date": "2026-08-23T12:00:00.000Z",
+          "source": "aa.com.tr",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "SYR-144",
+            "name": "Rif Dimashq",
+            "nameDe": "Gouvernement Rif Dimaschq",
+            "type": "Province",
+            "anchor": [
+              37.009,
+              33.461
+            ],
+            "matched": "Damascus"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
+        },
+        {
+          "title": "A US Envoy Says Israel Did Not Give a Warning to the US Ahead of a Recent Syria Air Strike",
+          "url": "https://www.military.com/a-us-envoy-says-israel-did-not-give-a-warning-to-the-us-ahead-of-a-recent-syria-air-strike",
+          "date": "2026-08-23T15:15:00.000Z",
+          "source": "military.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 25
+        },
+        {
+          "title": "Israeli newspaper slams Netanyahu over Syria strikes , warns of  pointless conflict  with Türkiye – Middle East Monitor",
+          "url": "https://www.middleeastmonitor.com/20260823-israeli-newspaper-slams-netanyahu-over-syria-strikes-warns-of-pointless-conflict-with-turkiye/",
+          "date": "2026-08-23T13:45:00.000Z",
+          "source": "middleeastmonitor.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 25
+        },
+        {
+          "title": "Turkey - Israel Syria clash risks spilling into Aegean for Greece",
+          "url": "https://www.bankingnews.gr/amyna-diplomatia/articles/895174/turkey-israel-syria-clash-risks-spilling-into-aegean-for-greece",
+          "date": "2026-08-23T13:30:00.000Z",
+          "source": "bankingnews.gr",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
+        },
+        {
+          "title": "Two killed , 21 injured in traffic accidents , fires across Syria",
+          "url": "https://sana.sy/en/syria/2338046/",
+          "date": "2026-08-23T13:15:00.000Z",
+          "source": "sana.sy",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 25
+        },
+        {
+          "title": "Qatar condemns terrorist attack on Internal Security Forces bus in Syria",
+          "url": "https://sana.sy/en/syria/2337990/",
+          "date": "2026-08-23T13:15:00.000Z",
+          "source": "sana.sy",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
         },
         {
           "title": "Israel conducts fresh strike in Syria after US criticism",
@@ -7789,33 +7886,12 @@
           "score": 24
         },
         {
-          "title": "A US Envoy Says Israel Did Not Give a Warning to the US Ahead of a Recent Syria Air Strike",
-          "url": "https://www.military.com/a-us-envoy-says-israel-did-not-give-a-warning-to-the-us-ahead-of-a-recent-syria-air-strike",
-          "date": "2026-08-23T15:15:00.000Z",
-          "source": "military.com",
+          "title": "Mossad chief met Syrian foreign minister to ease tensions, Haaretz reports",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/mossad-chief-met-syrian-foreign-minister-ease-tensions-haaretz-reports",
+          "date": "2026-08-23T15:57:08.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 24
-        },
-        {
-          "title": "Israeli newspaper slams Netanyahu over Syria strikes , warns of  pointless conflict  with Türkiye – Middle East Monitor",
-          "url": "https://www.middleeastmonitor.com/20260823-israeli-newspaper-slams-netanyahu-over-syria-strikes-warns-of-pointless-conflict-with-turkiye/",
-          "date": "2026-08-23T13:45:00.000Z",
-          "source": "middleeastmonitor.com",
-          "sourceType": "news",
-          "summary": "",
+          "summary": "Mossad chief met Syrian foreign minister to ease tensions, Haaretz reports Mossad chief Roman Gofman met with Syrian Foreign Minister Asaad al-Shaibani, Haaretz reported on Sunday, citing a source with knowledge of the meeting. The talks were part of an effort to ease tensions following the Israeli air strike on Syria's Abu al-Duhur airbase earlier this week, according to the Israeli news outlet.",
           "isNew": true,
           "region": null,
           "event": {
@@ -7824,74 +7900,11 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
-          "score": 24
-        },
-        {
-          "title": "Turkey - Israel Syria clash risks spilling into Aegean for Greece",
-          "url": "https://www.bankingnews.gr/amyna-diplomatia/articles/895174/turkey-israel-syria-clash-risks-spilling-into-aegean-for-greece",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "bankingnews.gr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
-          "title": "Two killed , 21 injured in traffic accidents , fires across Syria",
-          "url": "https://sana.sy/en/syria/2338046/",
-          "date": "2026-08-23T13:15:00.000Z",
-          "source": "sana.sy",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 24
-        },
-        {
-          "title": "Qatar condemns terrorist attack on Internal Security Forces bus in Syria",
-          "url": "https://sana.sy/en/syria/2337990/",
-          "date": "2026-08-23T13:15:00.000Z",
-          "source": "sana.sy",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Envoy says Israel did not give the US notice before strikes on Syrian base",
@@ -7943,7 +7956,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "US says intelligence behind Israeli strike on Syria air base was wrong",
@@ -9522,27 +9535,6 @@
             "label": "Proteste/Unruhen"
           },
           "score": 8
-        },
-        {
-          "title": "Middle East live: Israel warns Turkey against ‘dangerous adventures’ in Syria",
-          "url": "https://www.france24.com/en/middle-east/20260819-middle-east-live-trump-threatens-economic-punishment-on-any-country-helping-iran",
-          "date": "2026-08-19T23:26:20.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel’s defence minister on Thursday said Turkish President Recep Tayyip Erdogan was “dragging Turkey into dangerous adventures in Syria”, after the Israeli military bombed an air base in Syria earlier this week. Netanyahu previously claimed Turkey was looking to establish military presence in Syria. Follow our live blog for the latest updates.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -9573,13 +9565,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 23
+          "count": 22
         },
         {
           "key": "talks",
@@ -9742,7 +9734,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Iranian President Masoud Pezeshkian says Iran has stood firm despite what he calls a full-scale war.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "sanctions",
@@ -9809,13 +9801,34 @@
           "score": 20
         },
         {
-          "title": "Iran government signals fuel price hike on eve of new US sanctions",
+          "title": "Can Nigeria cash in on Iran war?",
+          "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/8/23/can-nigeria-cash-in-on-iran-war?traffic_source=rss",
+          "date": "2026-08-23T16:07:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ekperikpe Ekpo says the US-Israel war on Iran has pushed Nigeria to expand its gas production.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Iran’s government signals fuel price hike on eve of new US sanctions",
           "url": "https://www.aljazeera.com/economy/2026/8/23/iran-government-signals-fuel-price-hike-on-eve-of-new-us-sanctions?traffic_source=rss",
           "date": "2026-08-23T15:38:16.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Prices for food and other items are soaring, and there is a history of unrest, so any increase is being considered.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "sanctions",
@@ -9903,6 +9916,37 @@
           "score": 18
         },
         {
+          "title": "Iran escalates threats as US pushes economic isolation",
+          "url": "https://www.france24.com/en/iran-escalates-threats-as-us-pushes-economic-isolation",
+          "date": "2026-08-23T09:02:14.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Tensions between Iran and the United States continue to escalate. Tehran is threatening to regard as enemies any countries that join the US sanctions, in response to Washington’s calls to isolate its economy. A press conference is scheduled for Monday to outline the US strategy. Story by Camille Corcoran.",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 17
+        },
+        {
           "title": "Pezeshkian says Iran’s 'power and cohesion had astonished the world'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-says-irans-power-and-unity-has-defied-predictions-collapse",
           "date": "2026-08-23T06:45:39.000Z",
@@ -9967,37 +10011,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran escalates threats as US pushes economic isolation",
-          "url": "https://www.france24.com/en/iran-escalates-threats-as-us-pushes-economic-isolation",
-          "date": "2026-08-23T09:02:14.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Tensions between Iran and the United States continue to escalate. Tehran is threatening to regard as enemies any countries that join the US sanctions, in response to Washington’s calls to isolate its economy. A press conference is scheduled for Monday to outline the US strategy. Story by Camille Corcoran.",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -11591,27 +11604,6 @@
             "label": "Vertreibung"
           },
           "score": 11
-        },
-        {
-          "title": "US vows to 'collapse' Iran with new sanctions as energy prices spike",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-vows-collapse-iran-new-sanctions-energy-prices-spike",
-          "date": "2026-08-21T02:21:02.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US vows to 'collapse' Iran with new sanctions as energy prices spike The US will impose \"the toughest sanctions in history” on Iran, Secretary of the Treasury Scott Bessent said on Thursday, vowing to ramp up economic pressure on the Islamic Republic even as the economic toll of the war builds. \"It is a one-two punch. We have the blockade [on Iran], and we are going to have the toughest sanctions ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -12467,8 +12459,8 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 82,
-      "severity": 63,
+      "activity": 78,
+      "severity": 62,
       "newCount": 0,
       "signals": [
         {
@@ -12551,37 +12543,6 @@
       ],
       "items": [
         {
-          "title": "Road in Duki to be named after female doctor who survived acid attack: Balochistan CM Bugti",
-          "url": "https://www.dawn.com/news/2024757/road-in-duki-to-be-named-after-female-doctor-who-survived-acid-attack-balochistan-cm-bugti",
-          "date": "2026-08-23T10:44:15.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Balochistan Chief Minister Mir Sarfraz Bugti announced on Sunday that a major road in the Duki district will be named after Dr Mahnoor Nasir, a doctor who suffered an acid attack in June, in honour of her “bravery, resilience and services as a medical professional”. Dr Nasir, a 29-year-old female doctor at Quetta’s Civil Hospital, was seriously injured in June when a hospital employee allegedly th",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
           "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
           "url": "https://www.theguardian.com/world/2026/aug/23/iran-linked-hackers-blamed-cyber-attack-british-power-plant",
           "date": "2026-08-23T14:46:56.000Z",
@@ -12634,6 +12595,37 @@
           "score": 25
         },
         {
+          "title": "Road in Duki to be named after female doctor who survived acid attack: Balochistan CM Bugti",
+          "url": "https://www.dawn.com/news/2024757/road-in-duki-to-be-named-after-female-doctor-who-survived-acid-attack-balochistan-cm-bugti",
+          "date": "2026-08-23T10:44:15.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Balochistan Chief Minister Mir Sarfraz Bugti announced on Sunday that a major road in the Duki district will be named after Dr Mahnoor Nasir, a doctor who suffered an acid attack in June, in honour of her “bravery, resilience and services as a medical professional”. Dr Nasir, a 29-year-old female doctor at Quetta’s Civil Hospital, was seriously injured in June when a hospital employee allegedly th",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
           "title": "Blast on security forces’ bus near Damascus causes injuries",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/blast-security-forces-bus-near-damascus-causes-injuries",
           "date": "2026-08-22T17:01:01.000Z",
@@ -12652,7 +12644,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Two police officers killed in North Yorkshire crash named as Matthew Blades and Tom Clough",
@@ -12673,7 +12665,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "US judge strikes down policy suspending immigrant visa processing for 75 nations, including Pakistan",
@@ -14084,7 +14076,7 @@
       ],
       "activity": 74,
       "severity": 61,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -14361,27 +14353,6 @@
           "score": 22
         },
         {
-          "title": "Dozens of people abducted in attacks on villages in Nigeria , police say",
-          "url": "https://www.bbc.co.uk/news/articles/c4g4gpgm1m4o",
-          "date": "2026-08-22T16:15:00.000Z",
-          "source": "bbc.co.uk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Jihadis in Nigeria Are Now Attacking Other Muslims for Insufficient Zeal",
           "url": "https://redstate.com/wardclark/2026/08/22/now-nigerian-jihadis-are-attacking-other-muslims-for-insufficient-zeal-n2205939",
           "date": "2026-08-22T22:00:00.000Z",
@@ -14445,6 +14416,48 @@
           "score": 22
         },
         {
+          "title": "Can Nigeria cash in on Iran war?",
+          "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/8/23/can-nigeria-cash-in-on-iran-war?traffic_source=rss",
+          "date": "2026-08-23T16:07:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ekperikpe Ekpo says the US-Israel war on Iran has pushed Nigeria to expand its gas production.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Dozens of people abducted in attacks on villages in Nigeria , police say",
+          "url": "https://www.bbc.co.uk/news/articles/c4g4gpgm1m4o",
+          "date": "2026-08-22T16:15:00.000Z",
+          "source": "bbc.co.uk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "Dozens abducted after gunmen attack mosque in central Nigeria",
           "url": "http://www.nigeriasun.com/news/279257990/dozens-abducted-after-gunmen-attack-mosque-in-central-nigeria",
           "date": "2026-08-22T17:00:00.000Z",
@@ -14463,7 +14476,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Xenophobia: 83 Nigerians return from South Africa, FG says 90 killed since 2022",
@@ -15027,27 +15040,6 @@
           "score": 9
         },
         {
-          "title": "Energy Transition: Nigeria must turn policies into bankable projects — official",
-          "url": "https://www.premiumtimesng.com/business/business-news/904296-energy-transition-nigeria-must-turn-policies-into-bankable-projects-official.html",
-          "date": "2026-08-20T13:52:39.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Mr Shelleng said Nigeria had the policies, natural resources and investment opportunities needed to transform its energy sector but lacked a reliable link between policy commitments and projects capable of attracting investment The post Energy Transition: Nigeria must turn policies into bankable projects — official appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 8
-        },
-        {
           "title": "Nigeria: Army, DSS, Vigilantes Kill 24 Bandits, Foil Mass Kidnap in Katsina Community, Rescue Victims",
           "url": "https://allafrica.com/stories/202608200196.html",
           "date": "2026-08-20T06:33:32.000Z",
@@ -15075,6 +15067,27 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 9
+        },
+        {
+          "title": "Energy Transition: Nigeria must turn policies into bankable projects — official",
+          "url": "https://www.premiumtimesng.com/business/business-news/904296-energy-transition-nigeria-must-turn-policies-into-bankable-projects-official.html",
+          "date": "2026-08-20T13:52:39.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Mr Shelleng said Nigeria had the policies, natural resources and investment opportunities needed to transform its energy sector but lacked a reliable link between policy commitments and projects capable of attracting investment The post Energy Transition: Nigeria must turn policies into bankable projects — official appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "score": 8
         },
@@ -15432,7 +15445,7 @@
           "score": 8
         }
       ],
-      "itemCount": 43
+      "itemCount": 44
     },
     {
       "id": "lebanon-hezbollah",
@@ -15458,8 +15471,8 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 60,
-      "severity": 57,
+      "activity": 58,
+      "severity": 56,
       "newCount": 0,
       "signals": [
         {
@@ -15469,16 +15482,16 @@
           "count": 9
         },
         {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 3
-        },
-        {
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
           "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
         },
         {
           "key": "talks",
@@ -15526,7 +15539,7 @@
             35.512,
             33.3
           ],
-          "count": 3,
+          "count": 2,
           "newCount": 0,
           "event": {
             "type": "offensive",
@@ -15556,37 +15569,6 @@
             "label": "Gefechte"
           },
           "score": 22
-        },
-        {
-          "title": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon",
-          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
-          "date": "2026-08-23T10:47:21.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon Submitted by Rogger Oliveira on Tue, 08/18/2026 - 09:25 A handful of border villages have been spared Israel’s ethnic cleansing, but that comes at a price Kfarchouba residents set up a makeshift barricade on the outskirts of their village to prevent the entry of 'outsiders' (Rogger Oliveira/MEE) Off Within the Israeli ",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
         },
         {
           "title": "Israeli forces reportedly use phosphorus shells in attacks on southern Lebanon",
@@ -15774,6 +15756,37 @@
             "label": "Beschuss"
           },
           "score": 18
+        },
+        {
+          "title": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon",
+          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
+          "date": "2026-08-23T10:47:21.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon Submitted by Rogger Oliveira on Tue, 08/18/2026 - 09:25 A handful of border villages have been spared Israel’s ethnic cleansing, but that comes at a price Kfarchouba residents set up a makeshift barricade on the outskirts of their village to prevent the entry of 'outsiders' (Rogger Oliveira/MEE) Off Within the Israeli ",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Israeli strikes hit southern Lebanon",
@@ -16024,58 +16037,6 @@
           "summary": "Turkish President Recep Tayyip Erdogan said continued Israeli attacks on Lebanon are a source of serious concern.",
           "isNew": false,
           "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Death toll increases in Lebanon since Israeli invasion",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-increases-lebanon-israeli-invasion",
-          "date": "2026-08-16T16:25:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Death toll increases in Lebanon since Israeli invasion Israeli attacks have killed at least 4,346 people and wounded more than 12,000 in Lebanon since invading the south on 2 March, according to the Lebanese health ministry. The ministry said those killed include 393 women, 257 children and at least 135 medical workers. Israeli strikes on the towns of Deir al-Zahrani&nbsp;and Ansar killed 11 peopl",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli military attacks strategic hill in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-attacks-southern-lebanon",
-          "date": "2026-08-16T17:05:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military attacks strategic hill in southern Lebanon The Israeli military has attacked&nbsp;Ali al-Taher Hill in southern Lebanon with explosives, according to the National News Agency. The strategically important high ground on the outskirts of Nabatieh al-Fawqa has seen intense Israeli military action.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3059",
-            "name": "Nabatieh",
-            "nameDe": "Nabatäa",
-            "type": "Province",
-            "anchor": [
-              35.512,
-              33.3
-            ],
-            "matched": "Nabatieh"
-          },
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -16404,185 +16365,7 @@
           "score": 2
         }
       ],
-      "itemCount": 37
-    },
-    {
-      "id": "burkina-faso",
-      "name": "Burkina Faso",
-      "nameEn": "Burkina Faso",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Burkina Faso"
-      ],
-      "lat": 12.6,
-      "lon": -1.7,
-      "tier": "war",
-      "since": "2015",
-      "parties": [
-        "Militärregierung (Traoré)",
-        "JNIM",
-        "IS-Sahel",
-        "VDP-Milizen"
-      ],
-      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
-      "hotspots": [
-        "Djibo",
-        "Sahel-Region",
-        "Est",
-        "Ouagadougou"
-      ],
-      "activity": 0,
-      "severity": 55,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "BFA",
-      "extraCountries": [],
-      "regions": [],
-      "items": [],
-      "itemCount": 0
-    },
-    {
-      "id": "haiti",
-      "name": "Haiti",
-      "nameEn": "Haiti Gang Crisis",
-      "region": "Amerika (Karibik)",
-      "countries": [
-        "Haiti"
-      ],
-      "lat": 18.9,
-      "lon": -72.4,
-      "tier": "war",
-      "since": "2021",
-      "parties": [
-        "Übergangsrat",
-        "Gang-Allianz Viv Ansanm",
-        "Polizei/PNH",
-        "internationale Mission"
-      ],
-      "background": "Banden kontrollieren große Teile von Port-au-Prince; Staatszerfall, Massenvertreibung und eine unterfinanzierte internationale Sicherheitsmission.",
-      "hotspots": [
-        "Port-au-Prince",
-        "Artibonite",
-        "Cité Soleil"
-      ],
-      "activity": 3,
-      "severity": 55,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": {
-        "headline": "Vertreibung durch Bandengewalt, Gesundheitsversorgung bricht weg",
-        "text": "Die IOM verzeichnet neue Vertreibungen nach bewaffneter Gewalt in den Gemeinden um Saint-Marc. Ärzte ohne Grenzen musste den Betrieb der Entbindungsklinik Isaïe Jeanty erneut wegen Gewalt aussetzen. Ein aktueller Bericht kommt zu dem Schluss, dass die Bedingungen für Rückführungen weiterhin unsicher sind; Konflikt und hohe Preise schränken den Zugang zu Nahrungsmitteln weiter ein.",
-        "sources": [
-          "https://reliefweb.int/country/hti"
-        ],
-        "updatedAt": "2026-08-14T20:35:27.679Z"
-      },
-      "iso3": "HTI",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Fears grow in Amazon village as Brazilian drug gangs push into Bolivia",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/fears-grow-in-amazon-village-as-brazilian-drug-gangs-push-into-bolivia?traffic_source=rss",
-          "date": "2026-08-20T02:16:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Fears are growing in a remote Bolivian village as Brazilian drug gangs fight for control of trafficking routes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Haiti : Do everything possible to protect the population from the effects of escalating armed violence",
-          "url": "https://www.icrc.org/en/article/haiti-do-everything-possible-protect-population-effects-escalating-armed-violence",
-          "date": "2026-08-19T10:00:00.000Z",
-          "source": "icrc.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Inside secret police warehouse as Germany targets small boats gangs",
-          "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T05:02:58.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "Tupac Shakur murder trial: gang leader plotted killing to avenge beating of nephew, court hears",
-          "url": "https://www.theguardian.com/music/2026/aug/17/tupac-shakur-murder-trial-duane-davis",
-          "date": "2026-08-17T22:50:50.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Prosecutors accuse Duane Davis of orchestrating 1996 shooting in retaliation for attack by rapper’s entourage The trial of a former gang leader accused of orchestrating the 1996 killing of rap star Tupac Shakur began in a Las Vegas courtroom on Monday, featuring testimony from a witness to the shooting and a former police officer. Duane “Keffe D” Davis is on trial for murder for his alleged role i",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 4
+      "itemCount": 35
     },
     {
       "id": "nigeria",
@@ -16611,9 +16394,9 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 53,
-      "severity": 54,
-      "newCount": 0,
+      "activity": 58,
+      "severity": 56,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -16827,23 +16610,6 @@
           }
         },
         {
-          "id": "NGA-2839",
-          "name": "Borno State",
-          "nameDe": "Borno",
-          "type": "State",
-          "anchor": [
-            13.171,
-            11.891
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
           "id": "NGA-2870",
           "name": "Katsina State",
           "nameDe": "Katsina",
@@ -16858,6 +16624,23 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          }
+        },
+        {
+          "id": "NGA-2839",
+          "name": "Borno State",
+          "nameDe": "Borno",
+          "type": "State",
+          "anchor": [
+            13.171,
+            11.891
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         },
         {
@@ -16988,6 +16771,27 @@
             "label": "Gefechte"
           },
           "score": 22
+        },
+        {
+          "title": "Can Nigeria cash in on Iran war?",
+          "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/8/23/can-nigeria-cash-in-on-iran-war?traffic_source=rss",
+          "date": "2026-08-23T16:07:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ekperikpe Ekpo says the US-Israel war on Iran has pushed Nigeria to expand its gas production.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
         },
         {
           "title": "2027 Kaduna: Uba Sani, Ashiru clash over KASU-ASUU crisis",
@@ -17570,6 +17374,37 @@
           "score": 12
         },
         {
+          "title": "Nigeria: Army, DSS, Vigilantes Kill 24 Bandits, Foil Mass Kidnap in Katsina Community, Rescue Victims",
+          "url": "https://allafrica.com/stories/202608200196.html",
+          "date": "2026-08-20T06:33:32.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] At least 24 bandits were killed on Tuesday after soldiers of the Nigerian Army, operatives of the Department of State Services (DSS), Katsina Community Watch Corps foiled an attempt to mass-kidnap persons in Gidan Bawa village, Kandarawa Ward, Bakori Local Government Area of the state.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2870",
+            "name": "Katsina State",
+            "nameDe": "Katsina",
+            "type": "State",
+            "anchor": [
+              7.63,
+              12.377
+            ],
+            "matched": "Katsina"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 12
+        },
+        {
           "title": "Army arrests suspected gunrunner in Plateau, rescues kidnap victim in Edo",
           "url": "https://www.premiumtimesng.com/regional/north-central/904590-army-arrests-suspected-gunrunner-in-plateau-rescues-kidnap-victim-in-edo.html",
           "date": "2026-08-22T08:34:29.000Z",
@@ -17722,37 +17557,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Nigeria: Army, DSS, Vigilantes Kill 24 Bandits, Foil Mass Kidnap in Katsina Community, Rescue Victims",
-          "url": "https://allafrica.com/stories/202608200196.html",
-          "date": "2026-08-20T06:33:32.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] At least 24 bandits were killed on Tuesday after soldiers of the Nigerian Army, operatives of the Department of State Services (DSS), Katsina Community Watch Corps foiled an attempt to mass-kidnap persons in Gidan Bawa village, Kandarawa Ward, Bakori Local Government Area of the state.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2870",
-            "name": "Katsina State",
-            "nameDe": "Katsina",
-            "type": "State",
-            "anchor": [
-              7.63,
-              12.377
-            ],
-            "matched": "Katsina"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
           },
           "score": 8
         },
@@ -18182,7 +17986,185 @@
           "score": 8
         }
       ],
-      "itemCount": 45
+      "itemCount": 46
+    },
+    {
+      "id": "burkina-faso",
+      "name": "Burkina Faso",
+      "nameEn": "Burkina Faso",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Burkina Faso"
+      ],
+      "lat": 12.6,
+      "lon": -1.7,
+      "tier": "war",
+      "since": "2015",
+      "parties": [
+        "Militärregierung (Traoré)",
+        "JNIM",
+        "IS-Sahel",
+        "VDP-Milizen"
+      ],
+      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
+      "hotspots": [
+        "Djibo",
+        "Sahel-Region",
+        "Est",
+        "Ouagadougou"
+      ],
+      "activity": 0,
+      "severity": 55,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "BFA",
+      "extraCountries": [],
+      "regions": [],
+      "items": [],
+      "itemCount": 0
+    },
+    {
+      "id": "haiti",
+      "name": "Haiti",
+      "nameEn": "Haiti Gang Crisis",
+      "region": "Amerika (Karibik)",
+      "countries": [
+        "Haiti"
+      ],
+      "lat": 18.9,
+      "lon": -72.4,
+      "tier": "war",
+      "since": "2021",
+      "parties": [
+        "Übergangsrat",
+        "Gang-Allianz Viv Ansanm",
+        "Polizei/PNH",
+        "internationale Mission"
+      ],
+      "background": "Banden kontrollieren große Teile von Port-au-Prince; Staatszerfall, Massenvertreibung und eine unterfinanzierte internationale Sicherheitsmission.",
+      "hotspots": [
+        "Port-au-Prince",
+        "Artibonite",
+        "Cité Soleil"
+      ],
+      "activity": 3,
+      "severity": 55,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": {
+        "headline": "Vertreibung durch Bandengewalt, Gesundheitsversorgung bricht weg",
+        "text": "Die IOM verzeichnet neue Vertreibungen nach bewaffneter Gewalt in den Gemeinden um Saint-Marc. Ärzte ohne Grenzen musste den Betrieb der Entbindungsklinik Isaïe Jeanty erneut wegen Gewalt aussetzen. Ein aktueller Bericht kommt zu dem Schluss, dass die Bedingungen für Rückführungen weiterhin unsicher sind; Konflikt und hohe Preise schränken den Zugang zu Nahrungsmitteln weiter ein.",
+        "sources": [
+          "https://reliefweb.int/country/hti"
+        ],
+        "updatedAt": "2026-08-14T20:35:27.679Z"
+      },
+      "iso3": "HTI",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Fears grow in Amazon village as Brazilian drug gangs push into Bolivia",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/fears-grow-in-amazon-village-as-brazilian-drug-gangs-push-into-bolivia?traffic_source=rss",
+          "date": "2026-08-20T02:16:17.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Fears are growing in a remote Bolivian village as Brazilian drug gangs fight for control of trafficking routes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Haiti : Do everything possible to protect the population from the effects of escalating armed violence",
+          "url": "https://www.icrc.org/en/article/haiti-do-everything-possible-protect-population-effects-escalating-armed-violence",
+          "date": "2026-08-19T10:00:00.000Z",
+          "source": "icrc.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Inside secret police warehouse as Germany targets small boats gangs",
+          "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T05:02:58.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "Tupac Shakur murder trial: gang leader plotted killing to avenge beating of nephew, court hears",
+          "url": "https://www.theguardian.com/music/2026/aug/17/tupac-shakur-murder-trial-duane-davis",
+          "date": "2026-08-17T22:50:50.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Prosecutors accuse Duane Davis of orchestrating 1996 shooting in retaliation for attack by rapper’s entourage The trial of a former gang leader accused of orchestrating the 1996 killing of rap star Tupac Shakur began in a Las Vegas courtroom on Monday, featuring testimony from a witness to the shooting and a former police officer. Duane “Keffe D” Davis is on trial for murder for his alleged role i",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 4
     },
     {
       "id": "taiwan-strait",
@@ -18351,27 +18333,6 @@
           "score": 22
         },
         {
-          "title": "Pine-cone grenades and planet-baking carbon: the French fires 170 years in the making – a visual guide",
-          "url": "https://www.theguardian.com/world/2026/aug/23/french-fires-150-years-in-the-making-visual-guide",
-          "date": "2026-08-23T11:00:32.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "An 1857 decree to drain swamps and plant a monoculture, detritus from the trees and global heating combined to produce the conditions for the Gironde inferno The ruinous fires that overran parts of France this summer have burned more land than ever recorded, forced more people from their homes than at any point since the second world war and caused what scientists suspect is the country’s first fi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 19
-        },
-        {
           "title": "Sudan: IOM - 200k+ Displaced Across Kordofan As Fighting Intensifies",
           "url": "https://allafrica.com/stories/202608210013.html",
           "date": "2026-08-21T04:54:18.000Z",
@@ -18517,6 +18478,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Pine-cone grenades and planet-baking carbon: the French fires 170 years in the making – a visual guide",
+          "url": "https://www.theguardian.com/world/2026/aug/23/french-fires-150-years-in-the-making-visual-guide",
+          "date": "2026-08-23T11:00:32.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "An 1857 decree to drain swamps and plant a monoculture, detritus from the trees and global heating combined to produce the conditions for the Gironde inferno The ruinous fires that overran parts of France this summer have burned more land than ever recorded, forced more people from their homes than at any point since the second world war and caused what scientists suspect is the country’s first fi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 16
         },
         {
           "title": "Iranian hackers shut down UK power plant for four days, The Telegraph reports",
@@ -20028,7 +20010,7 @@
       ],
       "activity": 43,
       "severity": 51,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -20151,7 +20133,7 @@
           "source": "alsahwa-yemen.net",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -20163,7 +20145,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Somali Pirates Hijack Oil Tanker Off Yemen in Latest Attack",
@@ -20172,7 +20154,7 @@
           "source": "theyeshivaworld.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -20184,7 +20166,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "Houthis and government trade attacks as Yemen slides back to full-scale war",
@@ -21331,8 +21313,8 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 78,
-      "severity": 46,
+      "activity": 74,
+      "severity": 45,
       "newCount": 0,
       "signals": [
         {
@@ -21498,6 +21480,27 @@
           "score": 18
         },
         {
+          "title": "South Korea tests Arctic route with a first container shipped to Europe",
+          "url": "https://www.france24.com/en/south-korea-tests-arctic-route-with-a-first-container-shipped-to-europe",
+          "date": "2026-08-23T09:03:56.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Reaching Europe from Asia via the Arctic is nothing new... Russia and China have used this route for years. But yesterday, South Korea sent its first container ship along this path to avoid the traffic blockade in the Middle East. Experts warn the shift could further accelerate the melting of polar ice.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 16
+        },
+        {
           "title": "North Korea fires ballistic missiles as US-South Korea drills near end",
           "url": "https://www.aljazeera.com/news/2026/8/20/north-korea-launches-ballistic-missiles-as-us-south-korea-drills-end?traffic_source=rss",
           "date": "2026-08-20T17:00:12.000Z",
@@ -21526,7 +21529,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "North Korea launches missiles, Seoul says, after Trump floats Kim meet",
@@ -21577,27 +21580,6 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "South Korea tests Arctic route with a first container shipped to Europe",
-          "url": "https://www.france24.com/en/south-korea-tests-arctic-route-with-a-first-container-shipped-to-europe",
-          "date": "2026-08-23T09:03:56.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Reaching Europe from Asia via the Arctic is nothing new... Russia and China have used this route for years. But yesterday, South Korea sent its first container ship along this path to avoid the traffic blockade in the Middle East. Experts warn the shift could further accelerate the melting of polar ice.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
           },
           "score": 15
         },
@@ -22081,7 +22063,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 15
+          "score": 11
         },
         {
           "title": "South Korea ship to test alternative Arctic route as Mideast conflict disrupts shipping",
@@ -23760,7 +23742,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Ex-Colombian president: Restoring Israeli ties applauds Gaza genocide",
@@ -23876,7 +23858,7 @@
       ],
       "activity": 14,
       "severity": 43,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -23900,7 +23882,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Iranian President Masoud Pezeshkian says Iran has stood firm despite what he calls a full-scale war.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "sanctions",
@@ -24323,7 +24305,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -24467,7 +24449,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Empty pumps, long waits: Attacks on oil refineries have left Russia increasingly short of fuel. Dissident Russian economists say growing anger about shortages among ordinary Russians could help end the Ukraine war.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -25364,27 +25346,6 @@
           "score": 15
         },
         {
-          "title": "Ukrainian drone attack on Russia kills at least six, says Moscow",
-          "url": "https://www.theguardian.com/world/2026/aug/16/ukrainian-drone-attack-on-russia-wildberries-warehouse-fire",
-          "date": "2026-08-16T16:10:19.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Kyiv launches what may be its largest attack wave of war, with fire breaking out at warehouse near Russian capital Ukraine has launched one of its largest drone attacks since the start of the war, causing a fire at a distribution warehouse near Moscow and killing at least six people overnight, according to Russian authorities. The defence ministry in Moscow said it had shot down 1,478 Ukrainian dr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
           "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T13:07:00.000Z",
@@ -25888,7 +25849,7 @@
           "score": 8
         }
       ],
-      "itemCount": 70
+      "itemCount": 69
     },
     {
       "id": "moldova-transnistria",
@@ -25915,7 +25876,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -25994,7 +25955,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Rescuers dig through Ukraine mall wreckage as Zelensky condemns 'despicable' Russian strike",
@@ -26045,7 +26006,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "Empty pumps, long waits: Attacks on oil refineries have left Russia increasingly short of fuel. Dissident Russian economists say growing anger about shortages among ordinary Russians could help end the Ukraine war.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -27005,27 +26966,6 @@
           "score": 15
         },
         {
-          "title": "Ukrainian drone attack on Russia kills at least six, says Moscow",
-          "url": "https://www.theguardian.com/world/2026/aug/16/ukrainian-drone-attack-on-russia-wildberries-warehouse-fire",
-          "date": "2026-08-16T16:10:19.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Kyiv launches what may be its largest attack wave of war, with fire breaking out at warehouse near Russian capital Ukraine has launched one of its largest drone attacks since the start of the war, causing a fire at a distribution warehouse near Moscow and killing at least six people overnight, according to Russian authorities. The defence ministry in Moscow said it had shot down 1,478 Ukrainian dr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
           "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-21T13:07:00.000Z",
@@ -27551,7 +27491,7 @@
           "score": 8
         }
       ],
-      "itemCount": 76
+      "itemCount": 75
     },
     {
       "id": "ethiopia",
@@ -29710,260 +29650,6 @@
       "itemCount": 9
     },
     {
-      "id": "south-china-sea",
-      "name": "Südchinesisches Meer",
-      "nameEn": "South China Sea",
-      "region": "Asien (Südost)",
-      "countries": [
-        "Philippines"
-      ],
-      "lat": 12,
-      "lon": 116,
-      "tier": "medium",
-      "since": "laufende Spannungen",
-      "parties": [
-        "China",
-        "Philippinen",
-        "Vietnam",
-        "USA"
-      ],
-      "background": "Wiederholte Zusammenstöße zwischen chinesischer Küstenwache und philippinischen Schiffen an Second Thomas Shoal und Scarborough Shoal.",
-      "hotspots": [
-        "Second Thomas Shoal",
-        "Scarborough Shoal",
-        "Spratly-Inseln"
-      ],
-      "activity": 13,
-      "severity": 26,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "PHL",
-      "extraCountries": [
-        "CHN"
-      ],
-      "regions": [
-        {
-          "id": "CHN-1155",
-          "name": "Beijing",
-          "nameDe": "Peking",
-          "type": "Municipality",
-          "anchor": [
-            116.406,
-            40.174
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
-          "id": "PHL-4932",
-          "name": "Zamboanga Peninsula",
-          "nameDe": "Zamboanga Peninsula",
-          "type": "Highly Urbanized City",
-          "anchor": [
-            122.136,
-            7.149
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "China J - 16 Fighters Land in Africa , Expanding Beijing Military Reach – Sri Lanka Guardian",
-          "url": "https://slguardian.org/chinas-j-16-fighters-land-in-africa-expanding-beijings-military-reach/",
-          "date": "2026-08-22T16:30:00.000Z",
-          "source": "slguardian.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "CHN-1155",
-            "name": "Beijing",
-            "nameDe": "Peking",
-            "type": "Municipality",
-            "anchor": [
-              116.406,
-              40.174
-            ],
-            "matched": "Beijing"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Student killed in Philippines Catholic school shooting",
-          "url": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T03:43:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The alleged shooter, also a student, later took his own life.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Two students killed in Philippines school shooting",
-          "url": "https://www.aljazeera.com/news/2026/8/18/two-killed-as-gunman-opens-fire-at-philippines-high-school-official-says?traffic_source=rss",
-          "date": "2026-08-18T02:51:22.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Mayor Khymer Adan Olaso says the casualties in Zamboanga were both students and included the gunman.",
-          "isNew": false,
-          "region": {
-            "id": "PHL-4932",
-            "name": "Zamboanga Peninsula",
-            "nameDe": "Zamboanga Peninsula",
-            "type": "Highly Urbanized City",
-            "anchor": [
-              122.136,
-              7.149
-            ],
-            "matched": "Zamboanga"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Philippines - Japan military logistics pact now in force",
-          "url": "https://www.straitstimes.com/asia/philippines-says-military-logistics-pact-with-japan-now-in-force",
-          "date": "2026-08-22T09:15:00.000Z",
-          "source": "straitstimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Philippines conducts resupply mission to military outpost at Ayungin Shoal",
-          "url": "https://www.manilatimes.net/2026/08/22/news/philippines-conducts-resupply-mission-to-military-outpost-at-ayungin-shoal/2410286",
-          "date": "2026-08-22T09:15:00.000Z",
-          "source": "manilatimes.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "US Navy destroyer adrift in South China Sea for four days after losing power",
-          "url": "https://www.theguardian.com/us-news/2026/aug/17/us-navy-destroyer-south-china-sea",
-          "date": "2026-08-17T21:01:20.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "USS Benfold lost power after ‘engineering casualty’ leaving sailors without galley services, toilets and air conditioning A US guided-missile destroyer reportedly spent four days adrift and without power in the South China Sea in July, furthering concerns about strain being placed on deployed military members. The USS Benfold, an Arleigh Burke-class guided-missile destroyer which had been sailing ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 8
-        },
-        {
-          "title": "USS Benfold lost power in South China Sea , leaving crew of the US Navy warship without toilets , hot food and AC for 4 days",
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/uss-benfold-lost-power-in-south-china-sea-leaving-crew-of-the-us-navy-warship-without-toilets-hot-food-and-ac-for-4-days/articleshow/133296597.cms",
-          "date": "2026-08-17T12:45:00.000Z",
-          "source": "economictimes.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 7
-    },
-    {
       "id": "thailand-cambodia",
       "name": "Thailand–Kambodscha",
       "nameEn": "Thailand–Cambodia Border",
@@ -30336,7 +30022,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 9
+          "score": 8
         },
         {
           "title": "Can Mozambique new counter - terrorism centre deliver ? ",
@@ -30684,6 +30370,260 @@
         }
       ],
       "itemCount": 4
+    },
+    {
+      "id": "south-china-sea",
+      "name": "Südchinesisches Meer",
+      "nameEn": "South China Sea",
+      "region": "Asien (Südost)",
+      "countries": [
+        "Philippines"
+      ],
+      "lat": 12,
+      "lon": 116,
+      "tier": "medium",
+      "since": "laufende Spannungen",
+      "parties": [
+        "China",
+        "Philippinen",
+        "Vietnam",
+        "USA"
+      ],
+      "background": "Wiederholte Zusammenstöße zwischen chinesischer Küstenwache und philippinischen Schiffen an Second Thomas Shoal und Scarborough Shoal.",
+      "hotspots": [
+        "Second Thomas Shoal",
+        "Scarborough Shoal",
+        "Spratly-Inseln"
+      ],
+      "activity": 10,
+      "severity": 25,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "PHL",
+      "extraCountries": [
+        "CHN"
+      ],
+      "regions": [
+        {
+          "id": "PHL-4932",
+          "name": "Zamboanga Peninsula",
+          "nameDe": "Zamboanga Peninsula",
+          "type": "Highly Urbanized City",
+          "anchor": [
+            122.136,
+            7.149
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          }
+        },
+        {
+          "id": "CHN-1155",
+          "name": "Beijing",
+          "nameDe": "Peking",
+          "type": "Municipality",
+          "anchor": [
+            116.406,
+            40.174
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Student killed in Philippines Catholic school shooting",
+          "url": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T03:43:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The alleged shooter, also a student, later took his own life.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Two students killed in Philippines school shooting",
+          "url": "https://www.aljazeera.com/news/2026/8/18/two-killed-as-gunman-opens-fire-at-philippines-high-school-official-says?traffic_source=rss",
+          "date": "2026-08-18T02:51:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Mayor Khymer Adan Olaso says the casualties in Zamboanga were both students and included the gunman.",
+          "isNew": false,
+          "region": {
+            "id": "PHL-4932",
+            "name": "Zamboanga Peninsula",
+            "nameDe": "Zamboanga Peninsula",
+            "type": "Highly Urbanized City",
+            "anchor": [
+              122.136,
+              7.149
+            ],
+            "matched": "Zamboanga"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "China J - 16 Fighters Land in Africa , Expanding Beijing Military Reach – Sri Lanka Guardian",
+          "url": "https://slguardian.org/chinas-j-16-fighters-land-in-africa-expanding-beijings-military-reach/",
+          "date": "2026-08-22T16:30:00.000Z",
+          "source": "slguardian.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "CHN-1155",
+            "name": "Beijing",
+            "nameDe": "Peking",
+            "type": "Municipality",
+            "anchor": [
+              116.406,
+              40.174
+            ],
+            "matched": "Beijing"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Philippines - Japan military logistics pact now in force",
+          "url": "https://www.straitstimes.com/asia/philippines-says-military-logistics-pact-with-japan-now-in-force",
+          "date": "2026-08-22T09:15:00.000Z",
+          "source": "straitstimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Philippines conducts resupply mission to military outpost at Ayungin Shoal",
+          "url": "https://www.manilatimes.net/2026/08/22/news/philippines-conducts-resupply-mission-to-military-outpost-at-ayungin-shoal/2410286",
+          "date": "2026-08-22T09:15:00.000Z",
+          "source": "manilatimes.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "US Navy destroyer adrift in South China Sea for four days after losing power",
+          "url": "https://www.theguardian.com/us-news/2026/aug/17/us-navy-destroyer-south-china-sea",
+          "date": "2026-08-17T21:01:20.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "USS Benfold lost power after ‘engineering casualty’ leaving sailors without galley services, toilets and air conditioning A US guided-missile destroyer reportedly spent four days adrift and without power in the South China Sea in July, furthering concerns about strain being placed on deployed military members. The USS Benfold, an Arleigh Burke-class guided-missile destroyer which had been sailing ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 8
+        },
+        {
+          "title": "USS Benfold lost power in South China Sea , leaving crew of the US Navy warship without toilets , hot food and AC for 4 days",
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/uss-benfold-lost-power-in-south-china-sea-leaving-crew-of-the-us-navy-warship-without-toilets-hot-food-and-ac-for-4-days/articleshow/133296597.cms",
+          "date": "2026-08-17T12:45:00.000Z",
+          "source": "economictimes.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 7
     },
     {
       "id": "west-papua",
