@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-23T19:18:03.483Z",
-  "durationSec": 407,
+  "generatedAt": "2026-08-23T19:58:08.261Z",
+  "durationSec": 372,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,24 +114,12 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
-      "failed": 7,
-      "skipped": 6,
+      "ok": 8,
+      "failed": 5,
+      "skipped": 3,
       "errors": [
         {
-          "id": "burkina-faso",
-          "error": "HTTP 429"
-        },
-        {
           "id": "haiti",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "sahel-mali",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "somalia",
           "error": "HTTP 429"
         },
         {
@@ -139,11 +127,15 @@
           "error": "HTTP 429"
         },
         {
-          "id": "armenia-azerbaijan",
+          "id": "afghanistan",
           "error": "fetch failed"
         },
         {
-          "id": "thailand-cambodia",
+          "id": "rohingya-bangladesh",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "sudan",
           "error": "fetch failed"
         }
       ]
@@ -152,8 +144,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1181,
-    "newArticles": 8
+    "articles": 1179,
+    "newArticles": 9
   },
   "conflicts": [
     {
@@ -185,7 +177,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
@@ -197,23 +189,23 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 21
+          "count": 20
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 3
         },
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 4
+          "count": 3
         },
         {
           "key": "displacement",
           "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
           "dir": "up",
           "count": 2
         }
@@ -382,6 +374,48 @@
             "type": "explosion",
             "icon": "💣",
             "label": "Explosion/Anschlag"
+          },
+          "score": 30
+        },
+        {
+          "title": "Russia likely to mobilise at least 300 , 000 more troops , Zelenskyy claims , highlighting Ukraine winter air defence needs",
+          "url": "http://www.batonrougepost.com/news/279260169/russia-likely-to-mobilise-at-least-300000-more-troops-zelenskyy-claims-highlighting-ukraine-winter-air-defence-needs",
+          "date": "2026-08-23T19:15:00.000Z",
+          "source": "batonrougepost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 30
+        },
+        {
+          "title": "Russia likely to mobilize at least 300 , 000 more troops to Ukraine war , Zelensky warns",
+          "url": "https://krdo.com/news/national-world/cnn-world/2026/08/23/russia-likely-to-mobilize-at-least-300000-more-troops-to-ukraine-war-zelensky-warns/",
+          "date": "2026-08-23T19:00:00.000Z",
+          "source": "krdo.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 30
         },
@@ -2351,48 +2385,6 @@
             "label": "Raketenangriff"
           },
           "score": 15
-        },
-        {
-          "title": "‘Our task is to laugh at these enemies’: the Ukrainian unit posting drone videos of Russian soldiers’ last moments",
-          "url": "https://www.theguardian.com/world/2026/aug/18/ukraine-drone-chase-videos-russian-soldiers",
-          "date": "2026-08-18T11:43:23.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Creators of chase compilations reject any moral qualms and say they show ‘death is waiting’ for those who join war To many observers they will appear dehumanising and offensive. To many Ukrainians, however, they are a brutal reminder of the fate that awaits Russian soldiers who take part in Vladimir Putin’s invasion, as well as a potent propaganda weapon. Over the past year and a half, videos of k",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Putin’s ‘illusion of victory:’ Russia ramps up missile attacks on Ukraine",
-          "url": "https://www.aljazeera.com/news/2026/8/18/putins-illusion-of-victory-russia-ramps-up-missile-attacks-on-ukraine?traffic_source=rss",
-          "date": "2026-08-18T10:45:37.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Deaths mount as Russia ramps up missile attacks on Ukraine, while Washington's promises of support remain elusive.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -2424,19 +2416,19 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 6,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 19
+          "count": 20
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 16
+          "count": 14
         },
         {
           "key": "displacement",
@@ -2448,7 +2440,7 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 5
+          "count": 4
         },
         {
           "key": "offensive",
@@ -2509,12 +2501,12 @@
       ],
       "items": [
         {
-          "title": "Israel threatens to intensify Gaza strikes, displace more Palestinians over kite launches",
+          "title": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-intensify-gaza-strikes-displace-more-palestinians-over",
           "date": "2026-08-23T17:10:12.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israel threatens to intensify Gaza strikes, displace more Palestinians over kite launches Israel warned Hamas it would intensify strikes in Gaza if drones, balloons and kites continue to be launched from the Strip toward Israeli settlements, Netanyahu's office said in a statement on Sunday. Over the weekend, Israeli media reported that several kites, believed to be launched from Gaza, had landed n",
+          "summary": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza Netanyahu's office said in a statement on Sunday that Israel gave Hamas a three-day deadline to halt the kite launches, threatening a broad air assault if they continued, and said it would evacuate areas of Gaza from which balloons, drones and paper kites are launched. Over the weekend, Israeli media reported ",
           "isNew": false,
           "region": null,
           "event": {
@@ -2528,27 +2520,6 @@
             "label": "Vertreibung"
           },
           "score": 34
-        },
-        {
-          "title": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza",
-          "url": "https://www.middleeasteye.net/news/israel-warns-strikes-evacuations-over-kites-launched-palestinian-children-gaza",
-          "date": "2026-08-23T19:00:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza Submitted by Ayse Betul Aytekin on Sun, 08/23/2026 - 19:51 Israeli officials hold a special security meeting over Gaza's paper kites, warning they would be treated as drones. Boys fly a kite against the backdrop of smoke rising from a shelter that houses displaced Palestinians, after an Israeli air strike in t",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 32
         },
         {
           "title": "Israeli forces kill three Palestinians in Gaza, shoot child dead in Nablus",
@@ -2572,6 +2543,48 @@
           "score": 32
         },
         {
+          "title": "Netanyahu warns Hamas to stop Gaza drone launches or face action",
+          "url": "https://www.israelnationalnews.com/news/432120",
+          "date": "2026-08-23T18:15:00.000Z",
+          "source": "israelnationalnews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 30
+        },
+        {
+          "title": "Palestinian teen killed in Israeli raid buried in Occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/23-08-sv-nablus-killing-teen-ps-fm?traffic_source=rss",
+          "date": "2026-08-23T18:47:11.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Hundreds attended the funeral of 14-year-old Islam Ahmad Maher Ajouri, who was killed by Israeli gunfire during a raid.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 29
+        },
+        {
           "title": "Four-year-old Palestinian killed in Israeli attack in Gaza",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/four-year-old-palestinian-killed-israeli-attack-gaza",
           "date": "2026-08-23T13:57:42.000Z",
@@ -2589,48 +2602,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 32
-        },
-        {
-          "title": "Palestinian teen killed in Israeli raid buried in Occupied West Bank",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/23-08-sv-nablus-killing-teen-ps-fm?traffic_source=rss",
-          "date": "2026-08-23T18:47:11.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Hundreds attended the funeral of 14-year-old Islam Ahmad Maher Ajouri, who was killed by Israeli gunfire during a raid.",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 29
-        },
-        {
-          "title": "Heavy Israeli air strike hits warehouse in central Gaza",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/heavy-israeli-air-strike-hits-warehouse-in-central-gaza?traffic_source=rss",
-          "date": "2026-08-23T13:20:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Heavy Israeli air strike hits warehouse in central Gaza",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
           },
           "score": 29
         },
@@ -2717,6 +2688,132 @@
             "label": "Luftangriff"
           },
           "score": 27
+        },
+        {
+          "title": "Israel warns Hamas over drone and balloon launches",
+          "url": "https://www.bordermail.com.au/story/9335740/israel-warns-hamas-over-drone-and-balloon-launches/",
+          "date": "2026-08-23T19:15:00.000Z",
+          "source": "bordermail.com.au",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 27
+        },
+        {
+          "title": "Palestinian teen  killed  during Israeli army raid at West Bank refugee camp",
+          "url": "https://www.hindustantimes.com/world-news/palestinian-teen-killed-during-israeli-army-raid-at-west-bank-refugee-camp-101787505228487.html",
+          "date": "2026-08-23T18:45:00.000Z",
+          "source": "hindustantimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli strikes in Gaza kill two , including 4 - year - old boy , medics say",
+          "url": "https://www.sowetan.co.za/news/world/2026-08-23-israeli-strikes-in-gaza-kill-two-including-4-year-old-boy-medics-say/",
+          "date": "2026-08-23T18:45:00.000Z",
+          "source": "sowetan.co.za",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 27
+        },
+        {
+          "title": "Gaza rescuers say Israeli strikes kill three , including a child",
+          "url": "https://thefrontierpost.com/gaza-rescuers-say-israeli-strikes-kill-three-including-a-child/",
+          "date": "2026-08-23T18:45:00.000Z",
+          "source": "thefrontierpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israel strike in Gaza Strip kills four - year - old : medics",
+          "url": "https://www.illawarramercury.com.au/story/9335740/israel-strike-in-gaza-strip-kills-four-year-old-medics/",
+          "date": "2026-08-23T18:00:00.000Z",
+          "source": "illawarramercury.com.au",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 27
+        },
+        {
+          "title": "Heavy Israeli air strike hits warehouse in central Gaza",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/heavy-israeli-air-strike-hits-warehouse-in-central-gaza?traffic_source=rss",
+          "date": "2026-08-23T13:20:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Heavy Israeli air strike hits warehouse in central Gaza",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
         },
         {
           "title": "Child shot dead by Israeli forces during raid in Nablus",
@@ -2887,79 +2984,6 @@
           "score": 22
         },
         {
-          "title": "Israeli strikes kill two and injure others as Gaza attacks continue",
-          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-strikes-kill-two-and-injure-others-as-gaza-attacks-continue?traffic_source=rss",
-          "date": "2026-08-22T19:24:51.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli drone attack targeted a family in the central city of Deir el-Balah, killing one person and wounding others.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Envoy says Israel did not give the US notice before strikes on Syrian base",
-          "url": "https://www.aljazeera.com/news/2026/8/22/envoy-says-israel-did-not-give-the-us-notice-before-strikes-on-syrian-base?traffic_source=rss",
-          "date": "2026-08-22T19:18:02.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US official Tom Barrack has criticised Israel for failing to give his country adequate warning, a claim Tel Aviv denies.",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3057",
-            "name": "Tel Aviv",
-            "nameDe": "Bezirk Tel Aviv",
-            "type": "District",
-            "anchor": [
-              34.81,
-              32.084
-            ],
-            "matched": "Tel Aviv"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israel continues attacks in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-continues-attacks-southern-lebanon",
-          "date": "2026-08-22T19:50:12.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel continues attacks in southern Lebanon Israeli attacks on civilian-populated areas in southern Lebanon continued throughout Saturday, according to Lebanese media. Two villages, Majdal Zoun in Tyre and Konin in Bint Jbeil, were struck by Israeli forces, Lebanon's National News Agency reported. Other strikes hit residential buildings in the Houshin area, on the outskirts of Meiss el-Jabal in t",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Qusra siege eases as UN reaches trapped families, but crisis deepens in Gaza",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168155",
           "date": "2026-08-17T12:00:00.000Z",
@@ -3040,6 +3064,79 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli strikes kill two and injure others as Gaza attacks continue",
+          "url": "https://www.aljazeera.com/news/2026/8/22/israeli-strikes-kill-two-and-injure-others-as-gaza-attacks-continue?traffic_source=rss",
+          "date": "2026-08-22T19:24:51.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli drone attack targeted a family in the central city of Deir el-Balah, killing one person and wounding others.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Envoy says Israel did not give the US notice before strikes on Syrian base",
+          "url": "https://www.aljazeera.com/news/2026/8/22/envoy-says-israel-did-not-give-the-us-notice-before-strikes-on-syrian-base?traffic_source=rss",
+          "date": "2026-08-22T19:18:02.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US official Tom Barrack has criticised Israel for failing to give his country adequate warning, a claim Tel Aviv denies.",
+          "isNew": false,
+          "region": {
+            "id": "ISR-3057",
+            "name": "Tel Aviv",
+            "nameDe": "Bezirk Tel Aviv",
+            "type": "District",
+            "anchor": [
+              34.81,
+              32.084
+            ],
+            "matched": "Tel Aviv"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israel continues attacks in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-continues-attacks-southern-lebanon",
+          "date": "2026-08-22T19:50:12.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel continues attacks in southern Lebanon Israeli attacks on civilian-populated areas in southern Lebanon continued throughout Saturday, according to Lebanese media. Two villages, Majdal Zoun in Tyre and Konin in Bint Jbeil, were struck by Israeli forces, Lebanon's National News Agency reported. Other strikes hit residential buildings in the Houshin area, on the outskirts of Meiss el-Jabal in t",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 18
         },
@@ -4102,111 +4199,6 @@
             "label": "Bericht"
           },
           "score": 15
-        },
-        {
-          "title": "Hamas says not obligated to implement Trump Gaza deal unless Israel accepts it",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-not-obligated-implement-trump-gaza-deal-unless-israel-accepts",
-          "date": "2026-08-22T23:14:34.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hamas says not obligated to implement Trump Gaza deal unless Israel accepts it Hamas leader Osama Hamdan said the group told US envoy Jared Kushner that it would not consider itself obligated to implement any part of president Trump’s Gaza peace deal unless Israel publicly accepts it and begins implementing its obligations, including halting attacks and withdrawing from Gaza. Speaking on an Iraqi ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli shelling targets southern Lebanese towns",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-shelling-targets-southern-lebanese-towns",
-          "date": "2026-08-20T08:56:58.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli shelling targets southern Lebanese towns Lebanese media is reporting heavy Israeli artillery shelling targeting a number of towns in the country's south. According to the National News Agency,&nbsp;the towns of Wadi al-Salouqi, al-Hujair, and the valleys of Qabrikha, Toulene and Hula were struck.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 15
-        },
-        {
-          "title": "Jordan caught in Iran - US - Israel war crossfire",
-          "url": "https://www.abc.net.au/news/2026-08-23/jordan-caught-in-the-iran-us-israel-war-crossfire/107064774",
-          "date": "2026-08-23T03:30:00.000Z",
-          "source": "abc.net.au",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Jordan caught in Iran - US - Israel war crossfire - 23 - Aug - 2026",
-          "url": "https://home.nzcity.co.nz/news/article.aspx?id=452520",
-          "date": "2026-08-23T03:30:00.000Z",
-          "source": "home.nzcity.co.nz",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Why is Israel building new illegal settlements?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/8/22/why-is-israel-building-new-illegal-settlements?traffic_source=rss",
-          "date": "2026-08-22T19:40:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel opens construction bids for new illegal housing units in the occupied West Bank.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4240,7 +4232,7 @@
       ],
       "activity": 66,
       "severity": 74,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "ceasefire",
@@ -4290,11 +4282,11 @@
       "items": [
         {
           "title": "DR Congo and M23 rebels agree roadmap for peace talks",
-          "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "bbc.co.uk",
+          "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-23T12:52:08.000Z",
+          "source": "BBC World",
           "sourceType": "news",
-          "summary": "",
+          "summary": "Representatives met in Switzerland to work out next steps to resolve the conflict.",
           "isNew": false,
           "region": null,
           "event": {
@@ -4307,28 +4299,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 31
-        },
-        {
-          "title": "DR Congo , M23 rebels agree on roadmap for peace talks",
-          "url": "https://www.aljazeera.com/news/2026/8/23/dr-congo-m23-rebels-agree-on-roadmap-for-peace-talks",
-          "date": "2026-08-23T13:00:00.000Z",
-          "source": "aljazeera.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 28
+          "score": 26
         },
         {
           "title": "DR Congo , M23 fighters agree road map for peace talks",
@@ -4337,7 +4308,7 @@
           "source": "omanobserver.om",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "talks",
@@ -4349,7 +4320,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 27
+          "score": 25
         },
         {
           "title": "DR Congo , M23 fighters agree roadmap for peace talks : joint statement",
@@ -4370,7 +4341,28 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 27
+          "score": 25
+        },
+        {
+          "title": "DR Congo , M23 rebels agree on roadmap for peace talks",
+          "url": "https://www.aljazeera.com/news/2026/8/23/dr-congo-m23-rebels-agree-on-roadmap-for-peace-talks",
+          "date": "2026-08-23T13:00:00.000Z",
+          "source": "aljazeera.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 22
         },
         {
           "title": "DR Congo govt , M23 agree on roadmap for peace talks - Xinhua",
@@ -4391,28 +4383,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 27
-        },
-        {
-          "title": "Congo , M23 rebels agree to peace roadmap",
-          "url": "https://www.dw.com/en/congo-m23-rebels-agree-to-peace-roadmap/a-78476169",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "dw.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 24
+          "score": 22
         },
         {
           "title": "DR Congo , M23 rebels agree on roadmap for peace talks - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
@@ -4433,7 +4404,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Eastern Congo Ceasefire Verification Begins Monday",
@@ -4581,6 +4552,27 @@
             "label": "Opfer"
           },
           "score": 18
+        },
+        {
+          "title": "Congo , M23 rebels agree to peace roadmap",
+          "url": "https://www.dw.com/en/congo-m23-rebels-agree-to-peace-roadmap/a-78476169",
+          "date": "2026-08-23T13:30:00.000Z",
+          "source": "dw.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "SKNVibes | UN Ebola fight being hampered by attacks in DRC",
@@ -4855,7 +4847,7 @@
         "Karen",
         "Chin"
       ],
-      "activity": 58,
+      "activity": 57,
       "severity": 72,
       "newCount": 0,
       "signals": [
@@ -5565,7 +5557,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "How Myanmar’s war drives the Rohingya crisis",
@@ -5702,7 +5694,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -5797,7 +5789,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Hundreds attended the funeral of 14-year-old Islam Ahmad Maher Ajouri, who was killed by Israeli gunfire during a raid.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -6229,27 +6221,6 @@
             ],
             "matched": "Jerusalem"
           },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Why is Israel building new illegal settlements?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/8/22/why-is-israel-building-new-illegal-settlements?traffic_source=rss",
-          "date": "2026-08-22T19:40:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel opens construction bids for new illegal housing units in the occupied West Bank.",
-          "isNew": false,
-          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -6702,6 +6673,27 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "Why is Israel building new illegal settlements?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/8/22/why-is-israel-building-new-illegal-settlements?traffic_source=rss",
+          "date": "2026-08-22T19:40:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israel opens construction bids for new illegal housing units in the occupied West Bank.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
@@ -7728,48 +7720,6 @@
           "score": 25
         },
         {
-          "title": "Israeli newspaper slams Netanyahu over Syria strikes , warns of  pointless conflict  with Türkiye – Middle East Monitor",
-          "url": "https://www.middleeastmonitor.com/20260823-israeli-newspaper-slams-netanyahu-over-syria-strikes-warns-of-pointless-conflict-with-turkiye/",
-          "date": "2026-08-23T13:45:00.000Z",
-          "source": "middleeastmonitor.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 25
-        },
-        {
-          "title": "Turkey - Israel Syria clash risks spilling into Aegean for Greece",
-          "url": "https://www.bankingnews.gr/amyna-diplomatia/articles/895174/turkey-israel-syria-clash-risks-spilling-into-aegean-for-greece",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "bankingnews.gr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
           "title": "Israel conducts fresh strike in Syria after US criticism",
           "url": "https://www.dawn.com/news/2024646/israel-conducts-fresh-strike-in-syria-after-us-criticism",
           "date": "2026-08-23T04:27:34.000Z",
@@ -7818,6 +7768,48 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli newspaper slams Netanyahu over Syria strikes , warns of  pointless conflict  with Türkiye – Middle East Monitor",
+          "url": "https://www.middleeastmonitor.com/20260823-israeli-newspaper-slams-netanyahu-over-syria-strikes-warns-of-pointless-conflict-with-turkiye/",
+          "date": "2026-08-23T13:45:00.000Z",
+          "source": "middleeastmonitor.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Turkey - Israel Syria clash risks spilling into Aegean for Greece",
+          "url": "https://www.bankingnews.gr/amyna-diplomatia/articles/895174/turkey-israel-syria-clash-risks-spilling-into-aegean-for-greece",
+          "date": "2026-08-23T13:30:00.000Z",
+          "source": "bankingnews.gr",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 22
         },
@@ -7934,7 +7926,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Blast on security forces’ bus near Damascus causes injuries",
@@ -9553,7 +9545,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
@@ -9737,34 +9729,13 @@
           "score": 20
         },
         {
-          "title": "Iran’s foreign minister calls threat of new US economic sanctions ‘desperate’",
-          "url": "https://www.theguardian.com/world/2026/aug/23/iran-new-security-chief-trump-economic-war-enemies-mohsen-rezaei",
-          "date": "2026-08-23T13:56:11.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Abbas Araghchi says country is unbowed but president Masoud Pezeshkian admits its people face ‘many problems’ Iran’s foreign minister has dismissed the threat of a fresh round of US economic sanctions as a “desperate” ploy, even as its president acknowledged that the Iranian people are facing “many problems” amid Washington’s efforts to isolate and debilitate the country’s economy. Last week, Dona",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 20
-        },
-        {
           "title": "Trump has ‘run out of options’ in Iran war: Stephen Walt",
           "url": "https://www.aljazeera.com/video/the-bottom-line/2026/8/23/trump-has-run-out-of-options-in-iran-war-stephen-walt?traffic_source=rss",
           "date": "2026-08-23T18:15:22.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Political scientist Stephen Walt says Trump promised to make US stronger, but many of his policies are making it weaker.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9785,7 +9756,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "House Speaker Mike Johnson, a Trump ally, admits it 'would be helpful' if conflict ends before elections in November.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9842,13 +9813,13 @@
           "score": 19
         },
         {
-          "title": "The Suez Crisis stopped the British Empire. Will Hormuz defeat the US?",
-          "url": "https://www.aljazeera.com/video/deja-vu-2/2026/8/23/the-suez-crisis-stopped-the-british-empire-will-hormuz-defeat-the-us?traffic_source=rss",
-          "date": "2026-08-23T13:37:50.000Z",
-          "source": "Al Jazeera",
+          "title": "Washington enters ‘new phase’ in Iran war, US House speaker says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/washington-enters-new-phase-iran-war-us-house-speaker-says",
+          "date": "2026-08-23T19:27:04.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "In the latest episode of Al Jazeera’s new podcast, Deja Vu looks at how oil, shipping and war shape the Gulf.",
-          "isNew": false,
+          "summary": "Washington enters ‘new phase’ in Iran war, US House speaker says The speaker of the US House of Representatives, Mike Johnson, said on Sunday that the United States is entering “a new phase” in the war with Iran. “I think we’re going to get into a new phase here very soon. I believe our allied nations are going to assist in the next phase, and we’ll get this finished,” Johnson said in an interview",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -9856,9 +9827,9 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 19
         },
@@ -9894,6 +9865,48 @@
           "score": 18
         },
         {
+          "title": "Iran’s foreign minister calls threat of new US economic sanctions ‘desperate’",
+          "url": "https://www.theguardian.com/world/2026/aug/23/iran-new-security-chief-trump-economic-war-enemies-mohsen-rezaei",
+          "date": "2026-08-23T13:56:11.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Abbas Araghchi says country is unbowed but president Masoud Pezeshkian admits its people face ‘many problems’ Iran’s foreign minister has dismissed the threat of a fresh round of US economic sanctions as a “desperate” ploy, even as its president acknowledged that the Iranian people are facing “many problems” amid Washington’s efforts to isolate and debilitate the country’s economy. Last week, Dona",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 17
+        },
+        {
+          "title": "The Suez Crisis stopped the British Empire. Will Hormuz defeat the US?",
+          "url": "https://www.aljazeera.com/video/deja-vu-2/2026/8/23/the-suez-crisis-stopped-the-british-empire-will-hormuz-defeat-the-us?traffic_source=rss",
+          "date": "2026-08-23T13:37:50.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "In the latest episode of Al Jazeera’s new podcast, Deja Vu looks at how oil, shipping and war shape the Gulf.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 16
+        },
+        {
           "title": "Iran escalates threats as US pushes economic isolation",
           "url": "https://www.france24.com/en/iran-escalates-threats-as-us-pushes-economic-isolation",
           "date": "2026-08-23T09:02:14.000Z",
@@ -9922,7 +9935,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 17
+          "score": 15
         },
         {
           "title": "Pezeshkian says Iran’s 'power and cohesion had astonished the world'",
@@ -9943,7 +9956,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Morning recap",
@@ -9974,7 +9987,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Can Iran retaliate against countries that join US ‘economic war’?",
@@ -11561,27 +11574,6 @@
             "label": "Politik/Wahl"
           },
           "score": 11
-        },
-        {
-          "title": "JD Vance says US economic pressure 'most effective tool' against Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jd-vance-says-us-economic-pressure-most-effective-tool-against-war-iran",
-          "date": "2026-08-21T06:19:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "JD Vance says US economic pressure 'most effective tool' against Iran US Vice President JD Vance said that the country has entered a \"new phase\" in its war on Iran, leading with economic pressure as Washington's \"most effective tool\". \"We're kind of now in a new phase where the most effective tool that we have is the economic pressure that we can apply to them,\" Vance said during an interview with",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -11610,9 +11602,9 @@
         "Khartum",
         "Kordofan"
       ],
-      "activity": 45,
-      "severity": 68,
-      "newCount": 1,
+      "activity": 42,
+      "severity": 67,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -11659,7 +11651,7 @@
             14.438
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -11726,7 +11718,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Mothers and their children are in dire need of food and safety in Sudan’s conflict-stricken Kordofan State.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SDN-883",
             "name": "North Kordofan",
@@ -11812,27 +11804,6 @@
             "label": "Gefechte"
           },
           "score": 18
-        },
-        {
-          "title": "More than 200,000 newly displaced in Sudan’s Kordofan region",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/more-than-200000-newly-displaced-in-sudans-kordofan-region?traffic_source=rss",
-          "date": "2026-08-22T19:29:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Intensified fighting in Sudan has displaced at least 200,000 people in the Kordofan region since late last year.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 15
         },
         {
           "title": "Over 200,000 people newly displaced in Sudan’s Kordofan as fighting rages",
@@ -12112,6 +12083,27 @@
             "type": "election",
             "icon": "🗳️",
             "label": "Politik/Wahl"
+          },
+          "score": 11
+        },
+        {
+          "title": "More than 200,000 newly displaced in Sudan’s Kordofan region",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/more-than-200000-newly-displaced-in-sudans-kordofan-region?traffic_source=rss",
+          "date": "2026-08-22T19:29:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Intensified fighting in Sudan has displaced at least 200,000 people in the Kordofan region since late last year.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
           "score": 11
         },
@@ -13867,27 +13859,6 @@
           "score": 11
         },
         {
-          "title": "Racism and sexism have become normalised in Britain, says equalities minister",
-          "url": "https://www.theguardian.com/politics/2026/aug/20/racism-and-sexism-have-become-normalised-in-britain-says-equalities-minister-bridget-phillipson",
-          "date": "2026-08-20T14:00:16.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Exclusive: Bridget Phillipson says politicians have helped fuel hatred and that police are not taking violence against women and girls seriously enough UK politics live – latest updates Racism and sexism have become normalised in Britain, the equalities minister has said, as she warned that young men were being sucked into violent misogyny by the “cesspit” of social media. Bridget Phillipson said ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
           "title": "Somalia: Somali Army Ground Forces Commander Visits Front Lines in Hiran Region",
           "url": "https://allafrica.com/stories/202608190423.html",
           "date": "2026-08-19T12:02:09.000Z",
@@ -13905,6 +13876,27 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
+          },
+          "score": 9
+        },
+        {
+          "title": "Racism and sexism have become normalised in Britain, says equalities minister",
+          "url": "https://www.theguardian.com/politics/2026/aug/20/racism-and-sexism-have-become-normalised-in-britain-says-equalities-minister-bridget-phillipson",
+          "date": "2026-08-20T14:00:16.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Exclusive: Bridget Phillipson says politicians have helped fuel hatred and that police are not taking violence against women and girls seriously enough UK politics live – latest updates Racism and sexism have become normalised in Britain, the equalities minister has said, as she warned that young men were being sucked into violent misogyny by the “cesspit” of social media. Bridget Phillipson said ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 8
         },
@@ -15464,7 +15456,7 @@
       ],
       "activity": 60,
       "severity": 57,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -15816,7 +15808,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "Her abductors are demanding ₦20 million and have reportedly used her TikTok account to communicate and publish posts. The post Bandits kidnap monarch’s wife, demand ₦20 million to free another woman, 23 appeared first on Premium Times Nigeria .",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -17078,6 +17070,184 @@
       "itemCount": 47
     },
     {
+      "id": "burkina-faso",
+      "name": "Burkina Faso",
+      "nameEn": "Burkina Faso",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Burkina Faso"
+      ],
+      "lat": 12.6,
+      "lon": -1.7,
+      "tier": "war",
+      "since": "2015",
+      "parties": [
+        "Militärregierung (Traoré)",
+        "JNIM",
+        "IS-Sahel",
+        "VDP-Milizen"
+      ],
+      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
+      "hotspots": [
+        "Djibo",
+        "Sahel-Region",
+        "Est",
+        "Ouagadougou"
+      ],
+      "activity": 0,
+      "severity": 55,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "BFA",
+      "extraCountries": [],
+      "regions": [],
+      "items": [],
+      "itemCount": 0
+    },
+    {
+      "id": "haiti",
+      "name": "Haiti",
+      "nameEn": "Haiti Gang Crisis",
+      "region": "Amerika (Karibik)",
+      "countries": [
+        "Haiti"
+      ],
+      "lat": 18.9,
+      "lon": -72.4,
+      "tier": "war",
+      "since": "2021",
+      "parties": [
+        "Übergangsrat",
+        "Gang-Allianz Viv Ansanm",
+        "Polizei/PNH",
+        "internationale Mission"
+      ],
+      "background": "Banden kontrollieren große Teile von Port-au-Prince; Staatszerfall, Massenvertreibung und eine unterfinanzierte internationale Sicherheitsmission.",
+      "hotspots": [
+        "Port-au-Prince",
+        "Artibonite",
+        "Cité Soleil"
+      ],
+      "activity": 3,
+      "severity": 55,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": {
+        "headline": "Vertreibung durch Bandengewalt, Gesundheitsversorgung bricht weg",
+        "text": "Die IOM verzeichnet neue Vertreibungen nach bewaffneter Gewalt in den Gemeinden um Saint-Marc. Ärzte ohne Grenzen musste den Betrieb der Entbindungsklinik Isaïe Jeanty erneut wegen Gewalt aussetzen. Ein aktueller Bericht kommt zu dem Schluss, dass die Bedingungen für Rückführungen weiterhin unsicher sind; Konflikt und hohe Preise schränken den Zugang zu Nahrungsmitteln weiter ein.",
+        "sources": [
+          "https://reliefweb.int/country/hti"
+        ],
+        "updatedAt": "2026-08-14T20:35:27.679Z"
+      },
+      "iso3": "HTI",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Fears grow in Amazon village as Brazilian drug gangs push into Bolivia",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/fears-grow-in-amazon-village-as-brazilian-drug-gangs-push-into-bolivia?traffic_source=rss",
+          "date": "2026-08-20T02:16:17.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Fears are growing in a remote Bolivian village as Brazilian drug gangs fight for control of trafficking routes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Haiti : Do everything possible to protect the population from the effects of escalating armed violence",
+          "url": "https://www.icrc.org/en/article/haiti-do-everything-possible-protect-population-effects-escalating-armed-violence",
+          "date": "2026-08-19T10:00:00.000Z",
+          "source": "icrc.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Inside secret police warehouse as Germany targets small boats gangs",
+          "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-18T05:02:58.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "Tupac Shakur murder trial: gang leader plotted killing to avenge beating of nephew, court hears",
+          "url": "https://www.theguardian.com/music/2026/aug/17/tupac-shakur-murder-trial-duane-davis",
+          "date": "2026-08-17T22:50:50.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Prosecutors accuse Duane Davis of orchestrating 1996 shooting in retaliation for attack by rapper’s entourage The trial of a former gang leader accused of orchestrating the 1996 killing of rap star Tupac Shakur began in a Las Vegas courtroom on Monday, featuring testimony from a witness to the shooting and a former police officer. Duane “Keffe D” Davis is on trial for murder for his alleged role i",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 4
+    },
+    {
       "id": "lebanon-hezbollah",
       "name": "Israel–Libanon / Hisbollah",
       "nameEn": "Israel–Hezbollah",
@@ -17101,8 +17271,8 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 55,
-      "severity": 55,
+      "activity": 52,
+      "severity": 54,
       "newCount": 0,
       "signals": [
         {
@@ -17180,6 +17350,37 @@
       ],
       "items": [
         {
+          "title": "In Kfarchouba , life is  a big prison  under Israeli occupation of south Lebanon",
+          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
+          "date": "2026-08-23T11:30:00.000Z",
+          "source": "middleeasteye.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
           "title": "Israel continues attacks in southern Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-continues-attacks-southern-lebanon",
           "date": "2026-08-22T19:50:12.000Z",
@@ -17198,7 +17399,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Israeli forces reportedly use phosphorus shells in attacks on southern Lebanon",
@@ -17386,37 +17587,6 @@
             "label": "Beschuss"
           },
           "score": 18
-        },
-        {
-          "title": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon",
-          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
-          "date": "2026-08-23T10:47:21.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon Submitted by Rogger Oliveira on Tue, 08/18/2026 - 09:25 A handful of border villages have been spared Israel’s ethnic cleansing, but that comes at a price Kfarchouba residents set up a makeshift barricade on the outskirts of their village to prevent the entry of 'outsiders' (Rogger Oliveira/MEE) Off Within the Israeli ",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
         },
         {
           "title": "Israeli strikes hit southern Lebanon",
@@ -17644,27 +17814,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Ongoing Israeli attacks across southern Lebanon, two injured in Bint Jbeil An Israeli attack&nbsp;targeted the outskirts of the southern Lebanese town of al-Qantara, according to state media.&nbsp; Reports of additional strikes and military activity were witnessed in the Ali al-Taher ridge, near Dawhat Kfar Rumman, in Deir Siryan,&nbsp; as well as in al-Qantara along Wadi al-Hujair. Israeli forces",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Erdogan says Israeli attacks on Lebanon are a serious concern for Türkiye",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/erdogan-says-israeli-attacks-on-lebanon-are-a-serious-concern-for-turkiye?traffic_source=rss",
-          "date": "2026-08-16T19:29:31.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Turkish President Recep Tayyip Erdogan said continued Israeli attacks on Lebanon are a source of serious concern.",
           "isNew": false,
           "region": null,
           "event": {
@@ -17995,185 +18144,7 @@
           "score": 2
         }
       ],
-      "itemCount": 35
-    },
-    {
-      "id": "burkina-faso",
-      "name": "Burkina Faso",
-      "nameEn": "Burkina Faso",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Burkina Faso"
-      ],
-      "lat": 12.6,
-      "lon": -1.7,
-      "tier": "war",
-      "since": "2015",
-      "parties": [
-        "Militärregierung (Traoré)",
-        "JNIM",
-        "IS-Sahel",
-        "VDP-Milizen"
-      ],
-      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
-      "hotspots": [
-        "Djibo",
-        "Sahel-Region",
-        "Est",
-        "Ouagadougou"
-      ],
-      "activity": 0,
-      "severity": 55,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "BFA",
-      "extraCountries": [],
-      "regions": [],
-      "items": [],
-      "itemCount": 0
-    },
-    {
-      "id": "haiti",
-      "name": "Haiti",
-      "nameEn": "Haiti Gang Crisis",
-      "region": "Amerika (Karibik)",
-      "countries": [
-        "Haiti"
-      ],
-      "lat": 18.9,
-      "lon": -72.4,
-      "tier": "war",
-      "since": "2021",
-      "parties": [
-        "Übergangsrat",
-        "Gang-Allianz Viv Ansanm",
-        "Polizei/PNH",
-        "internationale Mission"
-      ],
-      "background": "Banden kontrollieren große Teile von Port-au-Prince; Staatszerfall, Massenvertreibung und eine unterfinanzierte internationale Sicherheitsmission.",
-      "hotspots": [
-        "Port-au-Prince",
-        "Artibonite",
-        "Cité Soleil"
-      ],
-      "activity": 3,
-      "severity": 55,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": {
-        "headline": "Vertreibung durch Bandengewalt, Gesundheitsversorgung bricht weg",
-        "text": "Die IOM verzeichnet neue Vertreibungen nach bewaffneter Gewalt in den Gemeinden um Saint-Marc. Ärzte ohne Grenzen musste den Betrieb der Entbindungsklinik Isaïe Jeanty erneut wegen Gewalt aussetzen. Ein aktueller Bericht kommt zu dem Schluss, dass die Bedingungen für Rückführungen weiterhin unsicher sind; Konflikt und hohe Preise schränken den Zugang zu Nahrungsmitteln weiter ein.",
-        "sources": [
-          "https://reliefweb.int/country/hti"
-        ],
-        "updatedAt": "2026-08-14T20:35:27.679Z"
-      },
-      "iso3": "HTI",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Fears grow in Amazon village as Brazilian drug gangs push into Bolivia",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/fears-grow-in-amazon-village-as-brazilian-drug-gangs-push-into-bolivia?traffic_source=rss",
-          "date": "2026-08-20T02:16:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Fears are growing in a remote Bolivian village as Brazilian drug gangs fight for control of trafficking routes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Haiti : Do everything possible to protect the population from the effects of escalating armed violence",
-          "url": "https://www.icrc.org/en/article/haiti-do-everything-possible-protect-population-effects-escalating-armed-violence",
-          "date": "2026-08-19T10:00:00.000Z",
-          "source": "icrc.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Inside secret police warehouse as Germany targets small boats gangs",
-          "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-18T05:02:58.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "Tupac Shakur murder trial: gang leader plotted killing to avenge beating of nephew, court hears",
-          "url": "https://www.theguardian.com/music/2026/aug/17/tupac-shakur-murder-trial-duane-davis",
-          "date": "2026-08-17T22:50:50.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Prosecutors accuse Duane Davis of orchestrating 1996 shooting in retaliation for attack by rapper’s entourage The trial of a former gang leader accused of orchestrating the 1996 killing of rap star Tupac Shakur began in a Las Vegas courtroom on Monday, featuring testimony from a witness to the shooting and a former police officer. Duane “Keffe D” Davis is on trial for murder for his alleged role i",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 4
+      "itemCount": 34
     },
     {
       "id": "taiwan-strait",
@@ -18318,7 +18289,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Iranian cyber attack shuts down UK power plant for four days, report says",
@@ -18615,27 +18586,6 @@
           "score": 15
         },
         {
-          "title": "More than 200,000 newly displaced in Sudan’s Kordofan region",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/more-than-200000-newly-displaced-in-sudans-kordofan-region?traffic_source=rss",
-          "date": "2026-08-22T19:29:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Intensified fighting in Sudan has displaced at least 200,000 people in the Kordofan region since late last year.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 15
-        },
-        {
           "title": "Over 200,000 people newly displaced in Sudan’s Kordofan as fighting rages",
           "url": "https://www.aljazeera.com/news/2026/8/20/over-200000-people-newly-displaced-in-sudans-kordofan-as-fighting-rages?traffic_source=rss",
           "date": "2026-08-20T07:11:37.000Z",
@@ -18896,6 +18846,27 @@
             "label": "Drohnenangriff"
           },
           "score": 15
+        },
+        {
+          "title": "More than 200,000 newly displaced in Sudan’s Kordofan region",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/more-than-200000-newly-displaced-in-sudans-kordofan-region?traffic_source=rss",
+          "date": "2026-08-22T19:29:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Intensified fighting in Sudan has displaced at least 200,000 people in the Kordofan region since late last year.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 11
         },
         {
           "title": "Middle East live: Iran allows several Iraqi oil tankers to pass through Hormuz strait",
@@ -19276,6 +19247,27 @@
           "score": 11
         },
         {
+          "title": "Nigeria: Military Moves Plateau Headquarters After Killings",
+          "url": "https://allafrica.com/stories/202608200239.html",
+          "date": "2026-08-20T09:35:39.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The military has relocated the tactical headquarters of Operation Enduring Peace from Jos to Mangu Local Government Area of Plateau State following a series of deadly attacks in the area.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 9
+        },
+        {
           "title": "US Treasury chief urges China to back proposed Iran sanctions",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-urges-china-back-proposed-iran-sanctions",
           "date": "2026-08-20T19:36:16.000Z",
@@ -19304,28 +19296,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 11
-        },
-        {
-          "title": "Nigeria: Military Moves Plateau Headquarters After Killings",
-          "url": "https://allafrica.com/stories/202608200239.html",
-          "date": "2026-08-20T09:35:39.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The military has relocated the tactical headquarters of Operation Enduring Peace from Jos to Mangu Local Government Area of Plateau State following a series of deadly attacks in the area.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 9
+          "score": 8
         },
         {
           "title": "France, Germany, UK and Italy condemn Israel's 'E1' West Bank settlement plan",
@@ -22953,8 +22924,8 @@
         "Jubaland",
         "Somaliland"
       ],
-      "activity": 17,
-      "severity": 44,
+      "activity": 15,
+      "severity": 43,
       "newCount": 0,
       "signals": [
         {
@@ -23188,48 +23159,6 @@
           "score": 11
         },
         {
-          "title": "6 Indians Among Crew Of Pirate - Hijacked Ship Carrying Turkish Weapons Off Somalia",
-          "url": "https://www.freepressjournal.in/india/6-indians-among-crew-of-pirate-hijacked-ship-carrying-turkish-weapons-off-somalia",
-          "date": "2026-08-20T19:45:00.000Z",
-          "source": "freepressjournal.in",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "Pirates hijack cargo ship carrying Turkish weapons off Somalia coast , official says",
-          "url": "https://isp.netscape.com:443/news/world/story/0001/20260820/8b5799be6bbb2f6e42feeb85ba47f37a",
-          "date": "2026-08-20T14:45:00.000Z",
-          "source": "isp.netscape.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 8
-        },
-        {
           "title": "Somalia: Somali Army Ground Forces Commander Visits Front Lines in Hiran Region",
           "url": "https://allafrica.com/stories/202608190423.html",
           "date": "2026-08-19T12:02:09.000Z",
@@ -23257,6 +23186,48 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
+          },
+          "score": 10
+        },
+        {
+          "title": "6 Indians Among Crew Of Pirate - Hijacked Ship Carrying Turkish Weapons Off Somalia",
+          "url": "https://www.freepressjournal.in/india/6-indians-among-crew-of-pirate-hijacked-ship-carrying-turkish-weapons-off-somalia",
+          "date": "2026-08-20T19:45:00.000Z",
+          "source": "freepressjournal.in",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 8
+        },
+        {
+          "title": "Pirates hijack cargo ship carrying Turkish weapons off Somalia coast , official says",
+          "url": "https://isp.netscape.com:443/news/world/story/0001/20260820/8b5799be6bbb2f6e42feeb85ba47f37a",
+          "date": "2026-08-20T14:45:00.000Z",
+          "source": "isp.netscape.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 8
         },
@@ -23633,149 +23604,6 @@
         }
       ],
       "itemCount": 11
-    },
-    {
-      "id": "colombia",
-      "name": "Kolumbien",
-      "nameEn": "Colombia",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Colombia"
-      ],
-      "lat": 5,
-      "lon": -74,
-      "tier": "high",
-      "since": "1964 / Krise seit 2025",
-      "parties": [
-        "Regierung",
-        "ELN",
-        "FARC-Dissidenten",
-        "Clan del Golfo"
-      ],
-      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
-      "hotspots": [
-        "Catatumbo",
-        "Cauca",
-        "Arauca",
-        "Chocó"
-      ],
-      "activity": 14,
-      "severity": 43,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COL",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon",
-          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
-          "date": "2026-08-23T10:47:21.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon Submitted by Rogger Oliveira on Tue, 08/18/2026 - 09:25 A handful of border villages have been spared Israel’s ethnic cleansing, but that comes at a price Kfarchouba residents set up a makeshift barricade on the outskirts of their village to prevent the entry of 'outsiders' (Rogger Oliveira/MEE) Off Within the Israeli ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Ex-Colombian president: Restoring Israeli ties applauds Gaza genocide",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/ex-colombian-president-restoring-israeli-ties-applauds-gaza-genocide?traffic_source=rss",
-          "date": "2026-08-23T05:10:05.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ex-Colombian President, Gustavo Petro, says restoring ties with Israel amounts to applauding the Gaza genocide.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Syrian petroleum company says explosion of gas pipeline 'deliberate act of sabotage'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrian-petroleum-company-says-explosion-gas-pipeline-deliberate-act",
-          "date": "2026-08-18T20:11:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Syrian petroleum company says explosion of gas pipeline 'deliberate act of sabotage' Syria's petroleum company said on Tuesday that an explosion occurred at a gas export pipeline at the Al-Jabsah gas plant, halting oil flow through the pipeline. In a statement to Syria's state news agency, the company said that the explosion was the result of a 'deliberate act of sabotage', based on initial invest",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
-        },
-        {
-          "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
-          "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-21T13:07:00.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Drivers are waiting hours in fuel queues, as Moscow prepares to celebrate Russian Flag Day.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Colombia breaks with international consensus on occupied Syrian Golan",
-          "url": "https://sana.sy/en/syria/2336742/",
-          "date": "2026-08-16T19:45:00.000Z",
-          "source": "sana.sy",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 5
     },
     {
       "id": "venezuela",
@@ -24224,6 +24052,128 @@
         }
       ],
       "itemCount": 7
+    },
+    {
+      "id": "colombia",
+      "name": "Kolumbien",
+      "nameEn": "Colombia",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Colombia"
+      ],
+      "lat": 5,
+      "lon": -74,
+      "tier": "high",
+      "since": "1964 / Krise seit 2025",
+      "parties": [
+        "Regierung",
+        "ELN",
+        "FARC-Dissidenten",
+        "Clan del Golfo"
+      ],
+      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
+      "hotspots": [
+        "Catatumbo",
+        "Cauca",
+        "Arauca",
+        "Chocó"
+      ],
+      "activity": 13,
+      "severity": 42,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "COL",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon",
+          "url": "https://www.middleeasteye.net/news/kfarchouba-life-big-prison-under-israeli-occupation-south-lebanon",
+          "date": "2026-08-23T10:47:21.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "In Kfarchouba, life is 'a big prison' under Israeli occupation of south Lebanon Submitted by Rogger Oliveira on Tue, 08/18/2026 - 09:25 A handful of border villages have been spared Israel’s ethnic cleansing, but that comes at a price Kfarchouba residents set up a makeshift barricade on the outskirts of their village to prevent the entry of 'outsiders' (Rogger Oliveira/MEE) Off Within the Israeli ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Ex-Colombian president: Restoring Israeli ties applauds Gaza genocide",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/ex-colombian-president-restoring-israeli-ties-applauds-gaza-genocide?traffic_source=rss",
+          "date": "2026-08-23T05:10:05.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ex-Colombian President, Gustavo Petro, says restoring ties with Israel amounts to applauding the Gaza genocide.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Syrian petroleum company says explosion of gas pipeline 'deliberate act of sabotage'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrian-petroleum-company-says-explosion-gas-pipeline-deliberate-act",
+          "date": "2026-08-18T20:11:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Syrian petroleum company says explosion of gas pipeline 'deliberate act of sabotage' Syria's petroleum company said on Tuesday that an explosion occurred at a gas export pipeline at the Al-Jabsah gas plant, halting oil flow through the pipeline. In a statement to Syria's state news agency, the company said that the explosion was the result of a 'deliberate act of sabotage', based on initial invest",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
+          "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
+          "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-21T13:07:00.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Drivers are waiting hours in fuel queues, as Moscow prepares to celebrate Russian Flag Day.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        }
+      ],
+      "itemCount": 4
     },
     {
       "id": "georgia",
@@ -30077,7 +30027,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Over 100 killed in gold mine collapse on Cameroon - CAR border - Xinhua",
