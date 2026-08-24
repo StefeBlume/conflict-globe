@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-23T23:03:55.905Z",
-  "durationSec": 363,
+  "generatedAt": "2026-08-24T00:01:19.324Z",
+  "durationSec": 373,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,36 +114,36 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
+      "ok": 4,
       "failed": 7,
-      "skipped": 6,
+      "skipped": 5,
       "errors": [
+        {
+          "id": "burkina-faso",
+          "error": "HTTP 429"
+        },
         {
           "id": "haiti",
           "error": "HTTP 429"
         },
         {
-          "id": "ethiopia",
+          "id": "sahel-mali",
           "error": "HTTP 429"
         },
         {
           "id": "venezuela",
-          "error": "fetch failed"
+          "error": "HTTP 429"
         },
         {
-          "id": "colombia",
-          "error": "fetch failed"
+          "id": "india-pakistan",
+          "error": "HTTP 429"
         },
         {
-          "id": "drc-m23",
-          "error": "fetch failed"
+          "id": "sinai-egypt",
+          "error": "HTTP 429"
         },
         {
-          "id": "south-sudan",
-          "error": "fetch failed"
-        },
-        {
-          "id": "somalia",
+          "id": "mexico-cartels",
           "error": "fetch failed"
         }
       ]
@@ -153,7 +153,7 @@
   "totals": {
     "conflicts": 44,
     "articles": 1181,
-    "newArticles": 1
+    "newArticles": 6
   },
   "conflicts": [
     {
@@ -185,7 +185,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -197,7 +197,7 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 20
+          "count": 19
         },
         {
           "key": "escalation",
@@ -242,8 +242,8 @@
             30.448,
             50.29
           ],
-          "count": 17,
-          "newCount": 0,
+          "count": 18,
+          "newCount": 1,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -354,6 +354,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Burnham to visit Ukraine with promise of boost for Kyiv’s long-range missiles",
+          "url": "https://www.theguardian.com/politics/2026/aug/24/andy-burnham-ukraine-long-range-missile-technology-kyiv-visit",
+          "date": "2026-08-23T23:01:45.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "PM will use independence day trip to announce sharing of classified information about Storm Shadow components Britain will boost Ukraine’s capacity to make its own long-range missiles, Andy Burnham will announce on Monday, as he travels to Kyiv for the country’s independence day on his first foreign visit as prime minister. Burnham will arrive in the Ukrainian capital on Monday morning at a crucia",
+          "isNew": true,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 30
+        },
         {
           "title": "The ‘ordinary’ woman accused of assassinating a Russian commander in Crimea",
           "url": "https://www.theguardian.com/world/2026/aug/23/ordinary-woman-margarita-reutt-accused-assassinating-russian-commander-crimea",
@@ -729,27 +760,6 @@
             "label": "Gefechte"
           },
           "score": 20
-        },
-        {
-          "title": "Photos: Ukraine celebrates National Flag Day",
-          "url": "https://www.aljazeera.com/gallery/2026/8/23/photos-ukraine-observes-national-flag-day?traffic_source=rss",
-          "date": "2026-08-23T17:18:25.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "People observe a minute of silence for those killed in war to mark the holiday established in 2004.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
         },
         {
           "title": "'Masha and the Bear': Ukraine sanctions Russian cartoon",
@@ -1198,6 +1208,27 @@
             "label": "Opfer"
           },
           "score": 18
+        },
+        {
+          "title": "Photos: Ukraine celebrates National Flag Day",
+          "url": "https://www.aljazeera.com/gallery/2026/8/23/photos-ukraine-observes-national-flag-day?traffic_source=rss",
+          "date": "2026-08-23T17:18:25.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "People observe a minute of silence for those killed in war to mark the holiday established in 2004.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 16
         },
         {
           "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
@@ -2372,27 +2403,6 @@
             "label": "Bodenoffensive"
           },
           "score": 15
-        },
-        {
-          "title": "Putin sends hypersonic missile warship into NATO backyard - London Business News",
-          "url": "https://londonlovesbusiness.com/putin-sends-hypersonic-missile-warship-into-natos-backyard/",
-          "date": "2026-08-18T13:45:00.000Z",
-          "source": "londonlovesbusiness.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -2424,7 +2434,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -2436,7 +2446,7 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 14
+          "count": 15
         },
         {
           "key": "displacement",
@@ -2492,27 +2502,6 @@
       ],
       "items": [
         {
-          "title": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-intensify-gaza-strikes-displace-more-palestinians-over",
-          "date": "2026-08-23T17:10:12.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza Netanyahu's office said in a statement on Sunday that Israel gave Hamas a three-day deadline to halt the kite launches, threatening a broad air assault if they continued, and said it would evacuate areas of Gaza from which balloons, drones and paper kites are launched. Over the weekend, Israeli media reported ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 34
-        },
-        {
           "title": "Israel is using children’s kites as pretext to strike Gaza: Hamas",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-using-childrens-kites-pretext-strike-gaza-hamas",
           "date": "2026-08-23T21:23:56.000Z",
@@ -2532,6 +2521,27 @@
             "label": "Gefechte"
           },
           "score": 33
+        },
+        {
+          "title": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza",
+          "url": "https://www.middleeasteye.net/news/israel-warns-strikes-evacuations-over-kites-launched-palestinian-children-gaza",
+          "date": "2026-08-23T19:00:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel warns of strikes, evacuations over kites launched by Palestinian children in Gaza Submitted by Ayse Betul Aytekin on Sun, 08/23/2026 - 19:51 Israeli officials hold a special security meeting over Gaza's paper kites, warning they would be treated as drones. Boys fly a kite against the backdrop of smoke rising from a shelter that houses displaced Palestinians, after an Israeli air strike in t",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 32
         },
         {
           "title": "Palestinian teen killed in Israeli raid buried in Occupied West Bank",
@@ -2744,27 +2754,6 @@
           "score": 25
         },
         {
-          "title": "Israel strike in Gaza Strip kills four - year - old : medics",
-          "url": "https://www.illawarramercury.com.au/story/9335740/israel-strike-in-gaza-strip-kills-four-year-old-medics/",
-          "date": "2026-08-23T18:00:00.000Z",
-          "source": "illawarramercury.com.au",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 25
-        },
-        {
           "title": "Israeli drone strike north of Khan Younis wounds six",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-north-khan-younis-wounds-six",
           "date": "2026-08-23T15:09:43.000Z",
@@ -2807,27 +2796,6 @@
           "score": 24
         },
         {
-          "title": "Israeli military raids continue across the West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
-          "date": "2026-08-23T10:09:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
           "title": "Israel conducts fresh strike in Syria after US criticism",
           "url": "https://www.dawn.com/news/2024646/israel-conducts-fresh-strike-in-syria-after-us-criticism",
           "date": "2026-08-23T04:27:34.000Z",
@@ -2855,6 +2823,48 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Report says violence is moving from Israeli-controlled areas to those earmarked for a future Palestinian state Violent Israeli settler attacks in the two areas of the occupied West Bank under direct Palestinian rule have almost doubled since 2025, as settlers pursue a self-proclaimed “great settlement revolution” in the very heart of the territory earmarked for a Palestinian state. According to a ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israel strike in Gaza Strip kills four - year - old : medics",
+          "url": "https://www.illawarramercury.com.au/story/9335740/israel-strike-in-gaza-strip-kills-four-year-old-medics/",
+          "date": "2026-08-23T18:00:00.000Z",
+          "source": "illawarramercury.com.au",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli military raids continue across the West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
+          "date": "2026-08-23T10:09:25.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
           "isNew": false,
           "region": null,
           "event": {
@@ -3741,27 +3751,6 @@
           "score": 18
         },
         {
-          "title": "Australia news live: Israel ambassador insists IDF strike that killed Zomi Frankcom a ‘reasonable mistake’; body of hiker Lily Hooper recovered from bush",
-          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
-          "date": "2026-08-20T23:39:50.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Hillel Newman says killing ‘unintentional’ and Israel is a ‘robust’ democracy. Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
           "title": "Gaza families search for children missing after years of war",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/gaza-families-search-for-children-missing-after-years-of-war?traffic_source=rss",
           "date": "2026-08-23T15:42:04.000Z",
@@ -3844,6 +3833,27 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "Australia news live: Israel ambassador insists IDF strike that killed Zomi Frankcom a ‘reasonable mistake’; body of hiker Lily Hooper recovered from bush",
+          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb",
+          "date": "2026-08-20T23:39:50.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Hillel Newman says killing ‘unintentional’ and Israel is a ‘robust’ democracy. Follow today’s news live Get our breaking news email , free app or daily news podcast Woman behind allegation of sexual assault linked to Sydney Swans reportedly says she wants ‘justice’ The woman who alleges she was sexually assaulted in a Melbourne hotel told the Herald Sun “all I care about is justice”. I don’t want ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
         },
         {
           "title": "Israeli strikes target southern Lebanon and Syria",
@@ -4301,7 +4311,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "DR Congo , M23 fighters agree roadmap for peace talks : joint statement",
@@ -5806,27 +5816,6 @@
           "score": 24
         },
         {
-          "title": "Israeli military raids continue across the West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
-          "date": "2026-08-23T10:09:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
           "title": "Israeli settler attacks shift focus to West Bank areas under direct Palestinian rule",
           "url": "https://www.theguardian.com/world/2026/aug/21/israeli-settler-attacks-shift-to-heart-of-territory-earmarked-for-palestinian-state",
           "date": "2026-08-21T06:00:26.000Z",
@@ -5888,6 +5877,27 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "Israeli military raids continue across the West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-continue-across-west-bank",
+          "date": "2026-08-23T10:09:25.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli military raids continue across the West Bank Israeli military raids and settler violence across&nbsp;the occupied West Bank continued overnight and into Sunday. Wafa&nbsp;news agency reports that Israeli forces raided central Tulkarm&nbsp;late on Saturday, firing live ammunition and stun grenades at residents. According to the report, soldiers detained five Palestinians after raiding their",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Israeli forces kill Palestinian boy in occupied West Bank raid",
@@ -9527,7 +9537,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "sanctions",
@@ -9577,11 +9587,11 @@
             35.568
           ],
           "count": 19,
-          "newCount": 0,
+          "newCount": 1,
           "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           }
         },
         {
@@ -9690,6 +9700,37 @@
           "score": 24
         },
         {
+          "title": "Watch: Iranians express mixed opinions over war recovery",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-iranian-express-mixed-opinions-over-war-recovery",
+          "date": "2026-08-23T23:47:08.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Watch: Iranians express mixed opinions over war recovery Iranians in Tehran expressed divided opinions over how the country should move forward in the face of increased US sanctions threats and recovering from damage from US and Israeli strikes. On Saturday, Iran warned that any country participating in the US's \"economic war\" against it would be \"considered an enemy\" after US President Donald Tru",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 23
+        },
+        {
           "title": "Will Donald Trump’s new sanctions against Iran work?",
           "url": "https://www.aljazeera.com/video/inside-story/2026/8/23/will-donald-trumps-new-sanctions-against-iran-work?traffic_source=rss",
           "date": "2026-08-23T21:34:53.000Z",
@@ -9738,27 +9779,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Iran war: Top US lawmaker says Republicans can ‘absolutely’ win midterms",
-          "url": "https://www.aljazeera.com/news/2026/8/23/iran-war-top-us-lawmaker-says-republicans-can-absolutely-win-midterms?traffic_source=rss",
-          "date": "2026-08-23T17:53:31.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "House Speaker Mike Johnson, a Trump ally, admits it 'would be helpful' if conflict ends before elections in November.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
           },
           "score": 19
         },
@@ -9834,6 +9854,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 17
+        },
+        {
+          "title": "Iran war: Top US lawmaker says Republicans can ‘absolutely’ win midterms",
+          "url": "https://www.aljazeera.com/news/2026/8/23/iran-war-top-us-lawmaker-says-republicans-can-absolutely-win-midterms?traffic_source=rss",
+          "date": "2026-08-23T17:53:31.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "House Speaker Mike Johnson, a Trump ally, admits it 'would be helpful' if conflict ends before elections in November.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 16
         },
         {
           "title": "Can Nigeria cash in on Iran war?",
@@ -10124,79 +10165,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran war live: Tehran warns neighbours against joining US economic war",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/23/iran-war-live-tehran-warns-neighbours-against-joining-us-economic-war?traffic_source=rss",
-          "date": "2026-08-23T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Official says any state joining US would be considered an enemy and Tehran would target their interests in retaliation.",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran threatens countries that join US ‘economic D-Day’",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/iran-threatens-countries-that-join-us-economic-d?traffic_source=rss",
-          "date": "2026-08-22T23:56:32.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iran warns that countries joining the US economic war against Iran will face ‘tit-for-tat’ action.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran warns of retaliation against countries joining US ‘economic war’",
-          "url": "https://www.aljazeera.com/news/2026/8/22/iran-warns-nearby-nations-against-joining-us-economic-war-efforts?traffic_source=rss",
-          "date": "2026-08-22T23:26:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Warning comes after Trump said he will impose 'most crushing' sanctions to isolate Iran and weaken its government.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -10785,12 +10753,12 @@
           "score": 15
         },
         {
-          "title": "Iran war live: Tehran warns of shift to offensive posture as US MoU expires",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/17/iran-war-live-tehran-us-mou-set-to-expire-hamass-al-khayya-meets-kushner?traffic_source=rss",
-          "date": "2026-08-17T00:00:35.000Z",
+          "title": "Iran war live: Tehran warns neighbours against joining US economic war",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/23/iran-war-live-tehran-warns-neighbours-against-joining-us-economic-war?traffic_source=rss",
+          "date": "2026-08-23T00:00:00.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Hamas calls on Board of Peace to 'compel' Israel to accept the Gaza peace plan after meeting Jared Kushner in Cairo.",
+          "summary": "Official says any state joining US would be considered an enemy and Tehran would target their interests in retaliation.",
           "isNew": false,
           "region": {
             "id": "IRN-3216",
@@ -10804,16 +10772,58 @@
             "matched": "Tehran"
           },
           "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 15
+          "score": 11
+        },
+        {
+          "title": "Iran threatens countries that join US ‘economic D-Day’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/iran-threatens-countries-that-join-us-economic-d?traffic_source=rss",
+          "date": "2026-08-22T23:56:32.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran warns that countries joining the US economic war against Iran will face ‘tit-for-tat’ action.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran warns of retaliation against countries joining US ‘economic war’",
+          "url": "https://www.aljazeera.com/news/2026/8/22/iran-warns-nearby-nations-against-joining-us-economic-war-efforts?traffic_source=rss",
+          "date": "2026-08-22T23:26:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Warning comes after Trump said he will impose 'most crushing' sanctions to isolate Iran and weaken its government.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Evening recap",
@@ -11317,27 +11327,6 @@
           "score": 11
         },
         {
-          "title": "How much could Trump's 'economic D-Day' hurt Iran?",
-          "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-20T23:16:45.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Iran has so far proved adept at finding ways around years of already punishing sanctions on its economy.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
           "title": "Trump says Iran not ready to make the 'right deal'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-not-ready-make-right-deal",
           "date": "2026-08-21T21:37:52.000Z",
@@ -11576,6 +11565,27 @@
             "label": "Belagerung"
           },
           "score": 11
+        },
+        {
+          "title": "Somalia: Somali Army Ground Forces Commander Visits Front Lines in Hiran Region",
+          "url": "https://allafrica.com/stories/202608190423.html",
+          "date": "2026-08-19T12:02:09.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Hiiran -- The commander of the Somali Army Ground Forces, Brigadier General Sahal Abdullahi \"Gen. Khalid\", has visited frontline positions in Teedaan area of central Somalia's Hiran region, as government forces continue operations against al-Shabaab militants.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 9
         }
       ],
       "itemCount": 80
@@ -12441,7 +12451,7 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 76,
+      "activity": 75,
       "severity": 61,
       "newCount": 0,
       "signals": [
@@ -13524,30 +13534,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Pakistan – UN envoy warns Taliban support fuels militant threa",
-          "url": "https://www.pakistantoday.com.pk/2026/08/17/pakistan-un-envoy-warns-taliban-support-for-militants-destabilising-region",
-          "date": "2026-08-16T23:45:00.000Z",
-          "source": "pakistantoday.com.pk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 42
+      "itemCount": 41
     },
     {
       "id": "sahel-mali",
@@ -18266,27 +18255,6 @@
       ],
       "items": [
         {
-          "title": "Israel threatens to intensify Gaza strikes, displace more Palestinians over kite launches",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-intensify-gaza-strikes-displace-more-palestinians-over",
-          "date": "2026-08-23T17:10:12.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel threatens to intensify Gaza strikes, displace more Palestinians over kite launches Israel warned Hamas it would intensify strikes in Gaza if drones, balloons and kites continue to be launched from the Strip toward Israeli settlements, Netanyahu's office said in a statement on Sunday. Over the weekend, Israeli media reported that several kites, believed to be launched from Gaza, had landed n",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 25
-        },
-        {
           "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
           "url": "https://www.theguardian.com/world/2026/aug/23/iran-linked-hackers-blamed-cyber-attack-british-power-plant",
           "date": "2026-08-23T14:46:56.000Z",
@@ -18327,6 +18295,27 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "Israel threatens to intensify Gaza strikes, displace more Palestinians over kite launches",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-intensify-gaza-strikes-displace-more-palestinians-over",
+          "date": "2026-08-23T17:10:12.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel threatens to intensify Gaza strikes, displace more Palestinians over kite launches Israel warned Hamas it would intensify strikes in Gaza if drones, balloons and kites continue to be launched from the Strip toward Israeli settlements, Netanyahu's office said in a statement on Sunday. Over the weekend, Israeli media reported that several kites, believed to be launched from Gaza, had landed n",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 22
         },
         {
           "title": "Liberal plan to split Victorian appeals court attacked as ‘thought bubble’ that would politicise judiciary",
@@ -19211,27 +19200,6 @@
           "score": 11
         },
         {
-          "title": "Iran war live: Tehran says planned US sanctions threaten global economy",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/21/iran-war-live-us-vows-toughest-iran-sanctions-urges-china-support?traffic_source=rss",
-          "date": "2026-08-21T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iran says Washington's warning of an 'economic D-Day' threatens the entire global economy.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
           "title": "Nigeria: Military Moves Plateau Headquarters After Killings",
           "url": "https://allafrica.com/stories/202608200239.html",
           "date": "2026-08-20T09:35:39.000Z",
@@ -19251,6 +19219,27 @@
             "label": "Gefechte"
           },
           "score": 9
+        },
+        {
+          "title": "Iran war live: Tehran says planned US sanctions threaten global economy",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/21/iran-war-live-us-vows-toughest-iran-sanctions-urges-china-support?traffic_source=rss",
+          "date": "2026-08-21T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran says Washington's warning of an 'economic D-Day' threatens the entire global economy.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
         },
         {
           "title": "US places sanctions on 10 people over alleged Hezbollah cash-smuggling ring",
@@ -19952,9 +19941,9 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 42,
+      "activity": 40,
       "severity": 51,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -20077,7 +20066,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Yemen, US officials meet to discuss ‘countering Houthi propaganda’ Yemen's Minister of Information Moammar al-Eryani and the US Embassy's chargé d'affaires in Yemen, Neal H. Opdahl, met on Sunday, according to a post on X by the US Embassy in Yemen. The discussion between the two included “how countering Houthi lies and propaganda with timely, accurate facts is an important part of the battle,\" th",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -20152,7 +20141,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthi Rebels Claim Drone Attacks on Saudi Airport and Oil Facility",
@@ -21278,9 +21267,9 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 71,
-      "severity": 44,
-      "newCount": 0,
+      "activity": 76,
+      "severity": 45,
+      "newCount": 1,
       "signals": [
         {
           "key": "airstrike",
@@ -21339,6 +21328,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Burnham to visit Ukraine with promise of boost for Kyiv’s long-range missiles",
+          "url": "https://www.theguardian.com/politics/2026/aug/24/andy-burnham-ukraine-long-range-missile-technology-kyiv-visit",
+          "date": "2026-08-23T23:01:45.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "PM will use independence day trip to announce sharing of classified information about Storm Shadow components Britain will boost Ukraine’s capacity to make its own long-range missiles, Andy Burnham will announce on Monday, as he travels to Kyiv for the country’s independence day on his first foreign visit as prime minister. Burnham will arrive in the Ukrainian capital on Monday morning at a crucia",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 26
+        },
         {
           "title": "Russia’s missile tests around disputed islands anger Japan",
           "url": "https://www.theguardian.com/world/2026/aug/21/russia-launch-missiles-kuril-islands-japan",
@@ -22900,7 +22910,7 @@
           "score": 8
         }
       ],
-      "itemCount": 70
+      "itemCount": 71
     },
     {
       "id": "south-sudan",
@@ -23205,7 +23215,7 @@
         "Panjschir",
         "Kandahar"
       ],
-      "activity": 16,
+      "activity": 15,
       "severity": 43,
       "newCount": 0,
       "signals": [
@@ -23451,30 +23461,9 @@
             "label": "Sanktionen/Recht"
           },
           "score": 8
-        },
-        {
-          "title": "Pakistan – UN envoy warns Taliban support fuels militant threa",
-          "url": "https://www.pakistantoday.com.pk/2026/08/17/pakistan-un-envoy-warns-taliban-support-for-militants-destabilising-region",
-          "date": "2026-08-16T23:45:00.000Z",
-          "source": "pakistantoday.com.pk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 8
+      "itemCount": 7
     },
     {
       "id": "somalia",
@@ -23906,6 +23895,255 @@
         }
       ],
       "itemCount": 13
+    },
+    {
+      "id": "ethiopia",
+      "name": "Äthiopien",
+      "nameEn": "Ethiopia",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "Ethiopia"
+      ],
+      "lat": 11.5,
+      "lon": 39,
+      "tier": "high",
+      "since": "2020 (Tigray) / Amhara seit 2023",
+      "parties": [
+        "Bundesregierung",
+        "Fano (Amhara)",
+        "OLA (Oromia)",
+        "TPLF/Tigray-Fraktionen",
+        "Eritrea"
+      ],
+      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
+      "hotspots": [
+        "Amhara",
+        "Oromia",
+        "Tigray",
+        "Afar",
+        "Assab"
+      ],
+      "activity": 11,
+      "severity": 42,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "ETH",
+      "extraCountries": [
+        "ERI",
+        "SOM"
+      ],
+      "regions": [
+        {
+          "id": "ETH-3110",
+          "name": "Tigray",
+          "nameDe": "Tigray",
+          "type": "Administrative State",
+          "anchor": [
+            38.442,
+            13.778
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        },
+        {
+          "id": "ETH-3133",
+          "name": "Addis Ababa",
+          "nameDe": "Addis Abeba",
+          "type": "Administrative State",
+          "anchor": [
+            38.786,
+            8.978
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "ETH-3132",
+          "name": "Benishangul-Gumuz",
+          "nameDe": "Benishangul-Gumuz",
+          "type": "Administrative State",
+          "anchor": [
+            35.454,
+            10.584
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Sudan says it downed  hostile  drone near Ethiopian border",
+          "url": "https://www.radiotamazuj.org/en/news/article/sudan-says-it-downed-hostile-drone-near-ethiopian-border",
+          "date": "2026-08-23T21:30:00.000Z",
+          "source": "radiotamazuj.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 27
+        },
+        {
+          "title": "Ethiopia Ashenda festival : Tigray cancels event celebrating the Virgin Mary over drone attack fears",
+          "url": "https://www.bbc.co.uk/news/articles/c24me64n31qo",
+          "date": "2026-08-21T16:45:00.000Z",
+          "source": "bbc.co.uk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3110",
+            "name": "Tigray",
+            "nameDe": "Tigray",
+            "type": "Administrative State",
+            "anchor": [
+              38.442,
+              13.778
+            ],
+            "matched": "Tigray"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Ethiopia : Drone Strikes in Two Locations in Mekelle , 13 Casualties Received At Ayder Hospital",
+          "url": "https://allafrica.com/stories/202608210036.html",
+          "date": "2026-08-21T09:15:00.000Z",
+          "source": "allafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Ethiopia: Fighting Erupts in Somalia's Baidoa Between Federal Forces, Former Southwest President Loyalists",
+          "url": "https://allafrica.com/stories/202608180111.html",
+          "date": "2026-08-18T05:33:28.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Heavy fighting erupted in central Baidoa on Monday between Somali federal forces and armed groups loyal to former South West State President Abdiaziz Hassan Mohamed Laftagareen, marking a renewed escalation in the political and security crisis that has gripped the regional capital since March.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
+            "type": "Administrative State",
+            "anchor": [
+              38.786,
+              8.978
+            ],
+            "matched": "Addis Abeba"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone",
+          "url": "https://www.middleeasteye.net/news/uae-backed-chinese-company-acquires-stake-ethiopian-gold-mine-near-sudan-warzone",
+          "date": "2026-08-19T09:45:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone Submitted by Zecharias Zelalem on Tue, 08/18/2026 - 09:00 Deal between Canada's Allied Gold and China's Zijin includes gold site on Sudan-Ethiopia border An elderly Sudanese refugee woman stands on the main road at the Ura Refugee Site in Asosa Zone, Benishangul-Gumuz region, Ethiopia, on 19 June 2026 (Marco Simon",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3132",
+            "name": "Benishangul-Gumuz",
+            "nameDe": "Benishangul-Gumuz",
+            "type": "Administrative State",
+            "anchor": [
+              35.454,
+              10.584
+            ],
+            "matched": "Benishangul-Gumuz Region"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 5
     },
     {
       "id": "colombia",
@@ -27352,234 +27590,6 @@
         }
       ],
       "itemCount": 74
-    },
-    {
-      "id": "ethiopia",
-      "name": "Äthiopien",
-      "nameEn": "Ethiopia",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "Ethiopia"
-      ],
-      "lat": 11.5,
-      "lon": 39,
-      "tier": "high",
-      "since": "2020 (Tigray) / Amhara seit 2023",
-      "parties": [
-        "Bundesregierung",
-        "Fano (Amhara)",
-        "OLA (Oromia)",
-        "TPLF/Tigray-Fraktionen",
-        "Eritrea"
-      ],
-      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
-      "hotspots": [
-        "Amhara",
-        "Oromia",
-        "Tigray",
-        "Afar",
-        "Assab"
-      ],
-      "activity": 6,
-      "severity": 40,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "ETH",
-      "extraCountries": [
-        "ERI",
-        "SOM"
-      ],
-      "regions": [
-        {
-          "id": "ETH-3110",
-          "name": "Tigray",
-          "nameDe": "Tigray",
-          "type": "Administrative State",
-          "anchor": [
-            38.442,
-            13.778
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        },
-        {
-          "id": "ETH-3133",
-          "name": "Addis Ababa",
-          "nameDe": "Addis Abeba",
-          "type": "Administrative State",
-          "anchor": [
-            38.786,
-            8.978
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "ETH-3132",
-          "name": "Benishangul-Gumuz",
-          "nameDe": "Benishangul-Gumuz",
-          "type": "Administrative State",
-          "anchor": [
-            35.454,
-            10.584
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Ethiopia Ashenda festival : Tigray cancels event celebrating the Virgin Mary over drone attack fears",
-          "url": "https://www.bbc.co.uk/news/articles/c24me64n31qo",
-          "date": "2026-08-21T16:45:00.000Z",
-          "source": "bbc.co.uk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ethiopia : Drone Strikes in Two Locations in Mekelle , 13 Casualties Received At Ayder Hospital",
-          "url": "https://allafrica.com/stories/202608210036.html",
-          "date": "2026-08-21T09:15:00.000Z",
-          "source": "allafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Ethiopia: Fighting Erupts in Somalia's Baidoa Between Federal Forces, Former Southwest President Loyalists",
-          "url": "https://allafrica.com/stories/202608180111.html",
-          "date": "2026-08-18T05:33:28.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Heavy fighting erupted in central Baidoa on Monday between Somali federal forces and armed groups loyal to former South West State President Abdiaziz Hassan Mohamed Laftagareen, marking a renewed escalation in the political and security crisis that has gripped the regional capital since March.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone",
-          "url": "https://www.middleeasteye.net/news/uae-backed-chinese-company-acquires-stake-ethiopian-gold-mine-near-sudan-warzone",
-          "date": "2026-08-19T09:45:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE-backed Chinese company acquires stake in Ethiopian gold mine near Sudan war zone Submitted by Zecharias Zelalem on Tue, 08/18/2026 - 09:00 Deal between Canada's Allied Gold and China's Zijin includes gold site on Sudan-Ethiopia border An elderly Sudanese refugee woman stands on the main road at the Ura Refugee Site in Asosa Zone, Benishangul-Gumuz region, Ethiopia, on 19 June 2026 (Marco Simon",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3132",
-            "name": "Benishangul-Gumuz",
-            "nameDe": "Benishangul-Gumuz",
-            "type": "Administrative State",
-            "anchor": [
-              35.454,
-              10.584
-            ],
-            "matched": "Benishangul-Gumuz Region"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 4
     },
     {
       "id": "mexico-cartels",
