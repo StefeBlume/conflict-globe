@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30T13:29:55.402Z",
-  "durationSec": 417,
+  "generatedAt": "2026-08-30T14:29:37.266Z",
+  "durationSec": 394,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -115,15 +115,19 @@
     ],
     "gdelt": {
       "ok": 4,
-      "failed": 2,
-      "skipped": 10,
+      "failed": 3,
+      "skipped": 9,
       "errors": [
         {
-          "id": "burkina-faso",
+          "id": "iraq",
           "error": "fetch failed"
         },
         {
-          "id": "somalia",
+          "id": "haiti",
+          "error": "fetch failed"
+        },
+        {
+          "id": "ethiopia",
           "error": "fetch failed"
         }
       ]
@@ -132,8 +136,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 979,
-    "newArticles": 11
+    "articles": 980,
+    "newArticles": 9
   },
   "conflicts": [
     {
@@ -165,7 +169,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -341,7 +345,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Russia's Defence Ministry announces plans to launch 'massive strikes' against Ukraine's infrastructure before winter.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -385,68 +389,6 @@
             "label": "Opfer"
           },
           "score": 24
-        },
-        {
-          "title": "Deadly strike on Kyiv warehouse prompts evacuations",
-          "url": "https://www.bbc.co.uk/news/videos/cy8z979y9e4o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-29T13:55:55.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Ukraine correspondent Dan Johnson reports from Kyiv after the deadly strike, which authorities said killed more than 30 people.",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 24
-        },
-        {
-          "title": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
-          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
-          "date": "2026-08-29T13:34:02.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukrainian prosecutors open investigation into why munitions were stored so close to residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in ",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
         },
         {
           "title": "Turkiye summons Ukraine ambassador over Black Sea attacks",
@@ -675,6 +617,68 @@
             "label": "Gefechte"
           },
           "score": 22
+        },
+        {
+          "title": "Deadly strike on Kyiv warehouse prompts evacuations",
+          "url": "https://www.bbc.co.uk/news/videos/cy8z979y9e4o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-29T13:55:55.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Ukraine correspondent Dan Johnson reports from Kyiv after the deadly strike, which authorities said killed more than 30 people.",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 20
+        },
+        {
+          "title": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
+          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+          "date": "2026-08-29T13:34:02.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukrainian prosecutors open investigation into why munitions were stored so close to residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in ",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Warehouse hit by Russian attack stored munitions, Zelensky says",
@@ -2088,7 +2092,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -2103,16 +2107,16 @@
           "count": 13
         },
         {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 7
+        },
+        {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
           "count": 7
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 6
         },
         {
           "key": "escalation",
@@ -2183,7 +2187,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Palestinian mother in agony as Israeli attack kills her son",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2204,38 +2208,17 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli flare bombs ignite forest fires in southern Lebanon, local media reports Israeli forces dropped flare bombs over the Aita al-Jabal forest in southern Lebanon’s Bint Jbeil district on Sunday, sparking fires, Lebanon’s National News Agency reported.&nbsp; The agency also said the Israeli army caused a “massive explosion” in the southern town of Houla in the Marjeyoun district.&nbsp; The deve",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 26
-        },
-        {
-          "title": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/we-will-be-there-attack-israeli-minister-says-us-deal-will-not-stop",
-          "date": "2026-08-30T08:26:27.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran Israeli minister Eli Cohen said Israel would strike Iran again if Tehran attempts to rebuild its nuclear or ballistic missile programmes, even if it reaches an agreement with the United States. “If Iran makes the mistake and tries to renew its nuclear programme or ballistic missile programme, even if there is",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
           },
           "score": 26
         },
@@ -2282,33 +2265,12 @@
           "score": 25
         },
         {
-          "title": "Israeli Attacks Kill Four Palestinians and Injure Others in Gaza in Gaza",
-          "url": "https://imemc.org/article/israeli-attacks-kill-four-palestinians-and-injure-others-in-gaza-in-gaza/",
-          "date": "2026-08-30T08:00:00.000Z",
-          "source": "imemc.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
-          "title": "Israeli president calls Qusra settler attack 'stain on Israel's face'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-president-calls-qusra-settler-attack-stain-israels-face",
-          "date": "2026-08-30T02:31:53.000Z",
+          "title": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/we-will-be-there-attack-israeli-minister-says-us-deal-will-not-stop",
+          "date": "2026-08-30T08:26:27.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli president calls Qusra settler attack 'stain on Israel's face' Israeli President Isaac Herzog joined prime minister Benjamin Netanyahu in condemning settler violence in the occupied West Bank village of Qusra, saying it was unlawful. He said the attack was “a stain on Israel’s face” that demanded “firm and decisive action” against those responsible. Netanyahu also “strongly condemned the cr",
+          "summary": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran Israeli minister Eli Cohen said Israel would strike Iran again if Tehran attempts to rebuild its nuclear or ballistic missile programmes, even if it reaches an agreement with the United States. “If Iran makes the mistake and tries to renew its nuclear programme or ballistic missile programme, even if there is",
           "isNew": false,
           "region": null,
           "event": {
@@ -2321,7 +2283,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 23
         },
         {
           "title": "Four children killed as separate attacks in Gaza destroy aid supplies",
@@ -2362,6 +2324,48 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli Attacks Kill Four Palestinians and Injure Others in Gaza in Gaza",
+          "url": "https://imemc.org/article/israeli-attacks-kill-four-palestinians-and-injure-others-in-gaza-in-gaza/",
+          "date": "2026-08-30T08:00:00.000Z",
+          "source": "imemc.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli president calls Qusra settler attack 'stain on Israel's face'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-president-calls-qusra-settler-attack-stain-israels-face",
+          "date": "2026-08-30T02:31:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli president calls Qusra settler attack 'stain on Israel's face' Israeli President Isaac Herzog joined prime minister Benjamin Netanyahu in condemning settler violence in the occupied West Bank village of Qusra, saying it was unlawful. He said the attack was “a stain on Israel’s face” that demanded “firm and decisive action” against those responsible. Netanyahu also “strongly condemned the cr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 22
         },
@@ -2836,48 +2840,6 @@
             "label": "Gefechte"
           },
           "score": 19
-        },
-        {
-          "title": "Amnesty calls for Dr Abu Safiya's release as he completes 600 days in Israeli detention",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/amnesty-calls-dr-abu-safiyas-release-he-completes-600-days-israeli",
-          "date": "2026-08-30T02:55:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Amnesty calls for Dr Abu Safiya's release as he completes 600 days in Israeli detention Amnesty International has called for the release of Palestinian paediatrician Hussam&nbsp;Abu Safiya, who has completed 600 days in Israeli detention. Abu Safiya, director of Gaza’s Kamal Adwan Hospital, rose to international prominence during Israel's genocide due to his role in helping victims. He was abducte",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Toxic waste of war on Gaza reached Israel",
-          "url": "https://www.aljazeera.com/opinions/2026/8/30/the-toxic-waste-of-the-gaza-war-has-reached-israel?traffic_source=rss",
-          "date": "2026-08-30T07:41:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The Israeli government cannot insulate its citizens from the impact of the ecocide it wrought on the strip.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
         },
         {
           "title": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud",
@@ -3467,27 +3429,6 @@
           "score": 18
         },
         {
-          "title": "Board of Peace's Gaza envoy criticises Israeli strikes and Hamas actions",
-          "url": "https://www.bbc.co.uk/news/articles/cew92l07kwzo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-27T14:17:24.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Nickolay Mladenov warns that a collapse of last October's ceasefire would be \"a point of no return\" for the region.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 18
-        },
-        {
           "title": "Pakistan questions Gaza ceasefire as killings of Palestinians continue",
           "url": "https://www.dawn.com/news/2025534/pakistan-questions-gaza-ceasefire-as-killings-of-palestinians-continue",
           "date": "2026-08-27T16:15:16.000Z",
@@ -3612,6 +3553,69 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "Amnesty calls for Dr Abu Safiya's release as he completes 600 days in Israeli detention",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/amnesty-calls-dr-abu-safiyas-release-he-completes-600-days-israeli",
+          "date": "2026-08-30T02:55:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Amnesty calls for Dr Abu Safiya's release as he completes 600 days in Israeli detention Amnesty International has called for the release of Palestinian paediatrician Hussam&nbsp;Abu Safiya, who has completed 600 days in Israeli detention. Abu Safiya, director of Gaza’s Kamal Adwan Hospital, rose to international prominence during Israel's genocide due to his role in helping victims. He was abducte",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Toxic waste of war on Gaza reached Israel",
+          "url": "https://www.aljazeera.com/opinions/2026/8/30/the-toxic-waste-of-the-gaza-war-has-reached-israel?traffic_source=rss",
+          "date": "2026-08-30T07:41:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The Israeli government cannot insulate its citizens from the impact of the ecocide it wrought on the strip.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Board of Peace's Gaza envoy criticises Israeli strikes and Hamas actions",
+          "url": "https://www.bbc.co.uk/news/articles/cew92l07kwzo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-27T14:17:24.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Nickolay Mladenov warns that a collapse of last October's ceasefire would be \"a point of no return\" for the region.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
         },
         {
           "title": "Netanyahu condemns 'criminal acts of violence' by settlers in West Bank villages",
@@ -3761,27 +3765,6 @@
           "score": 15
         },
         {
-          "title": "Israel says 'Israeli rioters' removed from Qusra",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-said-it-removed-israeli-rioters-qusra",
-          "date": "2026-08-29T14:19:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel says 'Israeli rioters' removed from Qusra Israeli military and border police forces said they responded to clashes&nbsp;involving \"Israeli rioters\" in the Palestinian village of Qusra, where Israeli settlers have besieged a Palestinian home. According to a joint statement, dozens of Israeli settlers entered and barricaded themselves inside a Palestinian home. The authorities said several Pa",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 15
-        },
-        {
           "title": "Israeli forces slay three terrorists in Jenin area , including Hamas commander",
           "url": "https://www.jns.org/news/israel-news/israeli-forces-slay-three-terrorists-in-jenin-area-including-a-hamas-commander",
           "date": "2026-08-29T16:00:00.000Z",
@@ -3874,6 +3857,27 @@
             "label": "Bodenoffensive"
           },
           "score": 15
+        },
+        {
+          "title": "Security Council LIVE: Rising tensions in Gaza, West Bank",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168204",
+          "date": "2026-08-26T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Amid illegal Israeli settlement surges, continued attacks in Gaza and the West Bank alongside tensions throughout Occupied Palestinian Territory, the Security Council discussed the latest developments on Wednesday, with the UN Special Envoy stressing that “human dignity must be at the centre of all efforts” to overcome the current fragile ceasefire and continued suffering. UN News app users can fo",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 14
         }
       ],
       "itemCount": 80
@@ -4908,7 +4912,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 33
+          "score": 30
         },
         {
           "title": "Chad Blames Sudan’s Army for Strikes on Convoy",
@@ -5792,13 +5796,13 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 10
+          "count": 9
         },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 8
+          "count": 7
         },
         {
           "key": "escalation",
@@ -5952,7 +5956,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Israeli settlers attack international news team in occupied West Bank",
@@ -6963,27 +6967,6 @@
           "score": 15
         },
         {
-          "title": "Israeli forces kill three Palestinians in Gaza, shoot child dead in Nablus",
-          "url": "https://www.middleeasteye.net/news/israeli-forces-kill-three-palestinians-gaza-shoot-child-death-nablus",
-          "date": "2026-08-23T14:06:44.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces kill three Palestinians in Gaza, shoot child dead in Nablus Submitted by MEE staff on Sun, 08/23/2026 - 14:35 The child was shot in the chest during a raid on Askar refugee camp in the occupied West Bank A fireball rises during an Israeli strike in Maghazi, central Gaza, 23 August 2026 (Eyad Baba/AFP) Off A 14-year-old Palestinian was shot dead by Israeli forces during a raid on a r",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
           "title": "Security Council LIVE: Rising tensions in Gaza, West Bank",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168204",
           "date": "2026-08-26T12:00:00.000Z",
@@ -7424,7 +7407,7 @@
           "score": 8
         }
       ],
-      "itemCount": 73
+      "itemCount": 72
     },
     {
       "id": "iran-israel",
@@ -7529,37 +7512,6 @@
       ],
       "items": [
         {
-          "title": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/we-will-be-there-attack-israeli-minister-says-us-deal-will-not-stop",
-          "date": "2026-08-30T08:26:27.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran Israeli minister Eli Cohen said Israel would strike Iran again if Tehran attempts to rebuild its nuclear or ballistic missile programmes, even if it reaches an agreement with the United States. “If Iran makes the mistake and tries to renew its nuclear programme or ballistic missile programme, even if there is",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 28
-        },
-        {
           "title": "Six months on, what did the strikes on Iran achieve?",
           "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/8/30/six-months-on-what-did-the-strikes-on-iran-achieve?traffic_source=rss",
           "date": "2026-08-30T11:24:21.000Z",
@@ -7600,6 +7552,37 @@
             "label": "Gefechte"
           },
           "score": 27
+        },
+        {
+          "title": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/we-will-be-there-attack-israeli-minister-says-us-deal-will-not-stop",
+          "date": "2026-08-30T08:26:27.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "'We will be there to attack': Israeli minister says US deal will not stop strikes on Iran Israeli minister Eli Cohen said Israel would strike Iran again if Tehran attempts to rebuild its nuclear or ballistic missile programmes, even if it reaches an agreement with the United States. “If Iran makes the mistake and tries to renew its nuclear programme or ballistic missile programme, even if there is",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
         },
         {
           "title": "Tehran 28 August 2026 #1",
@@ -7911,37 +7894,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "War weighs on Iran's economy as US intensifies sanctions",
-          "url": "https://www.dawn.com/news/2025973/war-weighs-on-irans-economy-as-us-intensifies-sanctions",
-          "date": "2026-08-29T13:56:55.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Iranian leaders are acknowledging the economic toll of war with the US, with the supreme leader urging the government to address the hardship and the president saying foreign trade has shrunk by a third due to the American sanctions and blockade. Yet Tehran signalled no retreat on Saturday, vowing to withstand US pressure, pursue diplomacy and maintain what it said was control over the Strait of H",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -8528,6 +8480,37 @@
             "label": "Bodenoffensive"
           },
           "score": 12
+        },
+        {
+          "title": "War weighs on Iran's economy as US intensifies sanctions",
+          "url": "https://www.dawn.com/news/2025973/war-weighs-on-irans-economy-as-us-intensifies-sanctions",
+          "date": "2026-08-29T13:56:55.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Iranian leaders are acknowledging the economic toll of war with the US, with the supreme leader urging the government to address the hardship and the president saying foreign trade has shrunk by a third due to the American sanctions and blockade. Yet Tehran signalled no retreat on Saturday, vowing to withstand US pressure, pursue diplomacy and maintain what it said was control over the Strait of H",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Tehran prepared to engage with talks as equal partners, says Iran envoy",
@@ -9513,7 +9496,7 @@
       ],
       "activity": 44,
       "severity": 68,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -9622,7 +9605,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps The post Attempted Coup: Niger junta still in control, but situation remains tense appeared first on Premium Times Nigeria .",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "election",
@@ -9655,7 +9638,7 @@
             "icon": "🛡️",
             "label": "Belagerung"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Air raids, conscripts and China: How Myanmar’s military is regaining ground",
@@ -9721,27 +9704,6 @@
           "score": 18
         },
         {
-          "title": "Myanmar Junta Navy Conducts Live - Fire Drills in the Bay of Bengal , Panicking",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-navy-conducts-live-fire-drills-bay-bengal-panicking",
-          "date": "2026-08-30T08:00:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
           "title": "Arakan Army Strikes Three Myanmar Military Outposts Near Strategic Radar Base",
           "url": "https://www.bnionline.net/en/news/arakan-army-strikes-three-myanmar-military-outposts-near-strategic-radar-base",
           "date": "2026-08-28T08:15:00.000Z",
@@ -9771,6 +9733,27 @@
             "label": "Bericht"
           },
           "score": 18
+        },
+        {
+          "title": "Myanmar Junta Navy Conducts Live - Fire Drills in the Bay of Bengal , Panicking",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-navy-conducts-live-fire-drills-bay-bengal-panicking",
+          "date": "2026-08-30T08:00:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Myanmar Junta Airstrikes Push August Civilian Casualties Past 100 in Rakhine and Chin States",
@@ -10175,9 +10158,9 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 93,
+      "activity": 90,
       "severity": 66,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -10244,7 +10227,7 @@
             13.517
           ],
           "count": 7,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -10481,7 +10464,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps The post Attempted Coup: Niger junta still in control, but situation remains tense appeared first on Premium Times Nigeria .",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "election",
@@ -10502,7 +10485,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Dozens of soldiers arrested after apparent coup attempt in Niger’s capital",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "election",
@@ -10554,7 +10537,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Mutiny began at a military base in Niamey and spread to area near the presidential palace and state broadcaster.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "NER-94",
             "name": "Niamey",
@@ -10825,37 +10808,6 @@
             "label": "Opfer"
           },
           "score": 16
-        },
-        {
-          "title": "Situation in Niger 'not stabilised yet' as security forces deploy around airport",
-          "url": "https://www.france24.com/en/situation-in-niger-not-stabilised-yet-as-security-forces-deploy-around-airport",
-          "date": "2026-08-29T13:59:17.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A group of soldiers in Niger rebelled against officers at a key military base and fired at sensitive locations in the capital, Niamey, in an apparent mutiny marked by gunfire and explosions, authorities said Saturday, in what was seen as a major threat to the country's struggling junta. FRANCE 24's Wassim Nasr brings you this analysis.",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
         },
         {
           "title": "Nigeria: Many Bodies Recovered After Niger Mosque Attacks, LG Chairman Says, As Tinubu Orders Rescue Operation",
@@ -11523,6 +11475,37 @@
           "score": 15
         },
         {
+          "title": "Situation in Niger 'not stabilised yet' as security forces deploy around airport",
+          "url": "https://www.france24.com/en/situation-in-niger-not-stabilised-yet-as-security-forces-deploy-around-airport",
+          "date": "2026-08-29T13:59:17.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A group of soldiers in Niger rebelled against officers at a key military base and fired at sensitive locations in the capital, Niamey, in an apparent mutiny marked by gunfire and explosions, authorities said Saturday, in what was seen as a major threat to the country's struggling junta. FRANCE 24's Wassim Nasr brings you this analysis.",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 11
+        },
+        {
           "title": "Heavy gunshots, explosions in Niger capital",
           "url": "https://www.premiumtimesng.com/news/headlines/906119-heavy-gunshots-explosions-in-niger-capital.html",
           "date": "2026-08-29T09:40:53.000Z",
@@ -12031,7 +12014,7 @@
       ],
       "activity": 32,
       "severity": 64,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -12098,7 +12081,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps The post Attempted Coup: Niger junta still in control, but situation remains tense appeared first on Premium Times Nigeria .",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "election",
@@ -13507,489 +13490,6 @@
       "itemCount": 42
     },
     {
-      "id": "drc-m23",
-      "name": "DR Kongo / Ostkongo",
-      "nameEn": "DR Congo – M23",
-      "region": "Afrika (Zentral)",
-      "countries": [
-        "Dem. Rep. Congo"
-      ],
-      "lat": -1.7,
-      "lon": 29.2,
-      "tier": "war",
-      "since": "2021 (M23-Wiederaufleben)",
-      "parties": [
-        "DR Kongo (FARDC)",
-        "M23/AFC",
-        "Ruanda",
-        "Wazalendo",
-        "ADF"
-      ],
-      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
-      "hotspots": [
-        "Goma",
-        "Bukavu",
-        "Nord-Kivu",
-        "Süd-Kivu",
-        "Ituri"
-      ],
-      "activity": 16,
-      "severity": 59,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 9
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 8
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 2
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COD",
-      "extraCountries": [
-        "RWA",
-        "UGA"
-      ],
-      "regions": [
-        {
-          "id": "COD-1884",
-          "name": "Kinshasa",
-          "nameDe": "Kinshasa",
-          "type": "Neutral City",
-          "anchor": [
-            15.921,
-            -4.443
-          ],
-          "count": 4,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "COD-1894",
-          "name": "South Kivu",
-          "nameDe": "Sud-Kivu",
-          "type": "Province",
-          "anchor": [
-            28.246,
-            -3.217
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Congo-Kinshasa: DR Congo Peace Roadmap - Will the Fighting Finally End?",
-          "url": "https://allafrica.com/stories/202608250153.html",
-          "date": "2026-08-25T06:33:43.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[DW] A new roadmap sets out the conditions toward peace in the eastern Democratic Republic of Congo (DRC). But disagreements over M23 rebels, Rwanda's role and security concerns remain, and could still derail the process.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "DR Congo peace roadmap: Will the fighting finally end?",
-          "url": "https://www.dw.com/en/dr-congo-peace-roadmap-will-the-fighting-finally-end/a-78487489?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-24T16:25:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "A new roadmap sets out the conditions toward peace in the eastern Democratic Republic of Congo (DRC). But disagreements over M23 rebels, Rwanda's role and security concerns remain, and could still derail the process.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Congo-Kinshasa: AFC/M23, Kinshasa Agree On Roadmap to Move Peace Talks Forward",
-          "url": "https://allafrica.com/stories/202608240091.html",
-          "date": "2026-08-24T05:43:55.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] The AFC/M23 movement and DR Congo have agreed on a roadmap to move their peace process forward and a mechanism to track implementation of commitments under the Doha Framework.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "DRC’s constitutional battle: The fight over the 2028 vote",
-          "url": "https://www.aljazeera.com/news/2026/8/25/drcs-constitutional-battle-the-fight-over-the-2028-vote?traffic_source=rss",
-          "date": "2026-08-25T00:34:29.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "President Tshisekedi’s reform push is fuelling a battle over DRC’s 2028 succession.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ceasefire monitoring mission arrives in Democratic Republic of Congo",
-          "url": "https://www.aljazeera.com/news/2026/8/24/ceasefire-monitoring-mission-arrives-in-democratic-republic-of-congo?traffic_source=rss",
-          "date": "2026-08-24T20:48:09.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Fighting persists in the mineral-rich region despite ceasefire agreements.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ceasefire verification mission deploys to eastern DR Congo",
-          "url": "https://www.france24.com/en/africa/20260824-ceasefire-verification-mission-deploys-eastern-dr-congo",
-          "date": "2026-08-24T16:04:37.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A ceasefire verification mission comprised of representatives from DR Congo's government, the Rwanda-backed AFC/M23 rebel group, and observers from the International Conference on the Great Lakes Region (ICGLR) member nations arrived in South Kivu on Monday. The deployment came a day after the DRC and AFC/M23 agreed on a Switzerland-mediated roadmap for peace talks.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1894",
-            "name": "South Kivu",
-            "nameDe": "Sud-Kivu",
-            "type": "Province",
-            "anchor": [
-              28.246,
-              -3.217
-            ],
-            "matched": "South Kivu"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "DR Congo , M23 fighters agree road map for peace talks",
-          "url": "https://www.omanobserver.om/article/1194955/world/europe/dr-congo-m23-fighters-agree-road-map-for-peace-talks",
-          "date": "2026-08-23T17:30:00.000Z",
-          "source": "omanobserver.om",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "DR Congo , M23 fighters agree roadmap for peace talks : joint statement",
-          "url": "https://www.bssnews.net/international/417313",
-          "date": "2026-08-23T14:00:00.000Z",
-          "source": "bssnews.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "DR Congo govt , M23 agree on roadmap for peace talks - Xinhua",
-          "url": "https://english.news.cn/africa/20260823/a8dfb376763b46cc9a23467b84bc3005/c.html",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "english.news.cn",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "DRC President Tshisekedi calls for national dialogue excluding M23 rebels",
-          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20260828-drc-president-tshisekedi-calls-for-national-dialogue-excluding-m23-rebels",
-          "date": "2026-08-28T20:36:41.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In the Democratic Republic of Congo, President Félix Tshisekedi calls for a national dialogue to ease tensions, while excluding M23 rebels from taking part, as the government plans to suspend 11 public universities in rebel-controlled areas. Meanwhile, in Ghana, 23 people, including 11 children, have died after falling into abandoned illegal gold-mining pits, as the country faces an unprecedented ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "Dutch court sentences man to life over Rwanda genocide",
-          "url": "https://www.bbc.co.uk/news/articles/ce8x96rw79ro?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-28T12:15:46.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The court in The Hague convicted the 66-year-old of war crimes and the crime of genocide.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Rwanda accuses DR Congo of supporting an armed group on its soil",
-          "url": "https://www.aljazeera.com/news/2026/8/25/rwanda-accuses-dr-congo-of-supporting-an-armed-group-on-its-soil?traffic_source=rss",
-          "date": "2026-08-25T12:17:56.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Rwanda says FDLR threat justifies its continued involvement in eastern DRC, as efforts to verify a ceasefire advance.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "DR Congo sees breakthrough as officials and rebels agree to peace talk roadmap",
-          "url": "https://www.france24.com/en/dr-congo-sees-breakthrough-as-officials-and-rebels-agree-to-peace-talk-roadmap",
-          "date": "2026-08-25T09:24:14.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In eastern Democratic Republic of Congo, Rwanda-backed M23 rebels are still in control of swathes of territory. After months of stalled peace talks, both sides have agreed to get the ball rolling again. FRANCE 24's Emmet Livingstone, in Kinshasa, has more.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "Congo-Kinshasa: DR Congo and M23 Rebels Agree On Roadmap for Peace in Eastern Congo",
-          "url": "https://allafrica.com/stories/202608240052.html",
-          "date": "2026-08-24T05:17:24.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[RFI] The Democratic Republic of Congo government and the M23 rebel group have agreed on a roadmap for peace talks aimed at resolving the protracted conflict in eastern DRC. It marks the latest step in an internationally brokered peace process that has seen the parties make cautious concessions, without ending the fighting.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Congo-Brazzaville: Congo, M23 Rebels Agree to Peace Roadmap",
-          "url": "https://allafrica.com/stories/202608240163.html",
-          "date": "2026-08-24T06:48:43.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[DW] Negotiators representing the Democratic Republic of Congo and Rwanda-backed M23 rebels have agreed to a roadmap for peace. The US State Department, a mediator, released a joint statement.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "Congo , M23 rebels agree to peace roadmap",
-          "url": "https://www.dw.com/en/congo-m23-rebels-agree-to-peace-roadmap/a-78476169",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "dw.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 16
-    },
-    {
       "id": "nigeria",
       "name": "Nigeria",
       "nameEn": "Nigeria",
@@ -14016,9 +13516,9 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 60,
-      "severity": 57,
-      "newCount": 0,
+      "activity": 74,
+      "severity": 61,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
@@ -14110,12 +13610,12 @@
             6.258,
             12.091
           ],
-          "count": 3,
-          "newCount": 0,
+          "count": 4,
+          "newCount": 1,
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           }
         },
         {
@@ -14308,6 +13808,89 @@
       ],
       "items": [
         {
+          "title": "NYSC Abduction : Sister Pleads for Rescue of Corps Member",
+          "url": "https://punchng.com/i-just-lost-my-mum-cant-lose-my-sister-says-sibling-of-abducted-corps-member/",
+          "date": "2026-08-30T09:00:00.000Z",
+          "source": "punchng.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 24
+        },
+        {
+          "title": "Troops foil Boko Haram attack on Borno community , kill scores of insurgents",
+          "url": "https://dailypost.ng/2026/08/29/troops-foil-boko-haram-attack-on-borno-community-kill-scores-of-insurgents/",
+          "date": "2026-08-29T18:45:00.000Z",
+          "source": "dailypost.ng",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2839",
+            "name": "Borno State",
+            "nameDe": "Borno",
+            "type": "State",
+            "anchor": [
+              13.171,
+              11.891
+            ],
+            "matched": "Borno"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
+          "title": "Borno : 26 Boko Haram fighters killed as troops foil attack on Kukawa",
+          "url": "https://tribuneonlineng.com/borno-26-boko-haram-fighters-killed-as-troops-foil-attack-on-kukawa/",
+          "date": "2026-08-29T18:45:00.000Z",
+          "source": "tribuneonlineng.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2839",
+            "name": "Borno State",
+            "nameDe": "Borno",
+            "type": "State",
+            "anchor": [
+              13.171,
+              11.891
+            ],
+            "matched": "Borno"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
           "title": "Nigeria: Ophk Troops Kill Over 20 Boko Haram Terrorists, Destroy Camp in Adamawa",
           "url": "https://allafrica.com/stories/202608280191.html",
           "date": "2026-08-28T10:28:02.000Z",
@@ -14370,66 +13953,56 @@
           "score": 22
         },
         {
-          "title": "Troops foil Boko Haram attack on Borno community , kill scores of insurgents",
-          "url": "https://dailypost.ng/2026/08/29/troops-foil-boko-haram-attack-on-borno-community-kill-scores-of-insurgents/",
-          "date": "2026-08-29T18:45:00.000Z",
+          "title": "Niger : Dangerous to normalise mass abductions",
+          "url": "https://punchng.com/niger-dangerous-to-normalise-mass-abductions/",
+          "date": "2026-08-30T01:15:00.000Z",
+          "source": "punchng.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 21
+        },
+        {
+          "title": "Millitary bombards bandit hideouts Sokoto , Zamfara forests",
+          "url": "https://dailypost.ng/2026/08/29/millitary-bombards-bandit-hideouts-sokoto-zamfara-forests/",
+          "date": "2026-08-29T21:45:00.000Z",
           "source": "dailypost.ng",
           "sourceType": "news",
           "summary": "",
-          "isNew": false,
+          "isNew": true,
           "region": {
-            "id": "NGA-2839",
-            "name": "Borno State",
-            "nameDe": "Borno",
+            "id": "NGA-2872",
+            "name": "Zamfara State",
+            "nameDe": "Zamfara",
             "type": "State",
             "anchor": [
-              13.171,
-              11.891
+              6.258,
+              12.091
             ],
-            "matched": "Borno"
+            "matched": "Zamfara"
           },
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
-          "score": 22
-        },
-        {
-          "title": "Borno : 26 Boko Haram fighters killed as troops foil attack on Kukawa",
-          "url": "https://tribuneonlineng.com/borno-26-boko-haram-fighters-killed-as-troops-foil-attack-on-kukawa/",
-          "date": "2026-08-29T18:45:00.000Z",
-          "source": "tribuneonlineng.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2839",
-            "name": "Borno State",
-            "nameDe": "Borno",
-            "type": "State",
-            "anchor": [
-              13.171,
-              11.891
-            ],
-            "matched": "Borno"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
+          "score": 21
         },
         {
           "title": "Nigeria: Police Rescue Kidnapped Kwara Traditional Ruler, Two Others",
@@ -15511,7 +15084,427 @@
           "score": -1
         }
       ],
-      "itemCount": 43
+      "itemCount": 46
+    },
+    {
+      "id": "drc-m23",
+      "name": "DR Kongo / Ostkongo",
+      "nameEn": "DR Congo – M23",
+      "region": "Afrika (Zentral)",
+      "countries": [
+        "Dem. Rep. Congo"
+      ],
+      "lat": -1.7,
+      "lon": 29.2,
+      "tier": "war",
+      "since": "2021 (M23-Wiederaufleben)",
+      "parties": [
+        "DR Kongo (FARDC)",
+        "M23/AFC",
+        "Ruanda",
+        "Wazalendo",
+        "ADF"
+      ],
+      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
+      "hotspots": [
+        "Goma",
+        "Bukavu",
+        "Nord-Kivu",
+        "Süd-Kivu",
+        "Ituri"
+      ],
+      "activity": 14,
+      "severity": 59,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 7
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 6
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "COD",
+      "extraCountries": [
+        "RWA",
+        "UGA"
+      ],
+      "regions": [
+        {
+          "id": "COD-1884",
+          "name": "Kinshasa",
+          "nameDe": "Kinshasa",
+          "type": "Neutral City",
+          "anchor": [
+            15.921,
+            -4.443
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "COD-1894",
+          "name": "South Kivu",
+          "nameDe": "Sud-Kivu",
+          "type": "Province",
+          "anchor": [
+            28.246,
+            -3.217
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Congo-Kinshasa: DR Congo Peace Roadmap - Will the Fighting Finally End?",
+          "url": "https://allafrica.com/stories/202608250153.html",
+          "date": "2026-08-25T06:33:43.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[DW] A new roadmap sets out the conditions toward peace in the eastern Democratic Republic of Congo (DRC). But disagreements over M23 rebels, Rwanda's role and security concerns remain, and could still derail the process.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "DR Congo peace roadmap: Will the fighting finally end?",
+          "url": "https://www.dw.com/en/dr-congo-peace-roadmap-will-the-fighting-finally-end/a-78487489?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-24T16:25:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "A new roadmap sets out the conditions toward peace in the eastern Democratic Republic of Congo (DRC). But disagreements over M23 rebels, Rwanda's role and security concerns remain, and could still derail the process.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Congo-Kinshasa: AFC/M23, Kinshasa Agree On Roadmap to Move Peace Talks Forward",
+          "url": "https://allafrica.com/stories/202608240091.html",
+          "date": "2026-08-24T05:43:55.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] The AFC/M23 movement and DR Congo have agreed on a roadmap to move their peace process forward and a mechanism to track implementation of commitments under the Doha Framework.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "DRC’s constitutional battle: The fight over the 2028 vote",
+          "url": "https://www.aljazeera.com/news/2026/8/25/drcs-constitutional-battle-the-fight-over-the-2028-vote?traffic_source=rss",
+          "date": "2026-08-25T00:34:29.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "President Tshisekedi’s reform push is fuelling a battle over DRC’s 2028 succession.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ceasefire monitoring mission arrives in Democratic Republic of Congo",
+          "url": "https://www.aljazeera.com/news/2026/8/24/ceasefire-monitoring-mission-arrives-in-democratic-republic-of-congo?traffic_source=rss",
+          "date": "2026-08-24T20:48:09.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Fighting persists in the mineral-rich region despite ceasefire agreements.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ceasefire verification mission deploys to eastern DR Congo",
+          "url": "https://www.france24.com/en/africa/20260824-ceasefire-verification-mission-deploys-eastern-dr-congo",
+          "date": "2026-08-24T16:04:37.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A ceasefire verification mission comprised of representatives from DR Congo's government, the Rwanda-backed AFC/M23 rebel group, and observers from the International Conference on the Great Lakes Region (ICGLR) member nations arrived in South Kivu on Monday. The deployment came a day after the DRC and AFC/M23 agreed on a Switzerland-mediated roadmap for peace talks.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1894",
+            "name": "South Kivu",
+            "nameDe": "Sud-Kivu",
+            "type": "Province",
+            "anchor": [
+              28.246,
+              -3.217
+            ],
+            "matched": "South Kivu"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "DR Congo , M23 fighters agree road map for peace talks",
+          "url": "https://www.omanobserver.om/article/1194955/world/europe/dr-congo-m23-fighters-agree-road-map-for-peace-talks",
+          "date": "2026-08-23T17:30:00.000Z",
+          "source": "omanobserver.om",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "DRC President Tshisekedi calls for national dialogue excluding M23 rebels",
+          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20260828-drc-president-tshisekedi-calls-for-national-dialogue-excluding-m23-rebels",
+          "date": "2026-08-28T20:36:41.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In the Democratic Republic of Congo, President Félix Tshisekedi calls for a national dialogue to ease tensions, while excluding M23 rebels from taking part, as the government plans to suspend 11 public universities in rebel-controlled areas. Meanwhile, in Ghana, 23 people, including 11 children, have died after falling into abandoned illegal gold-mining pits, as the country faces an unprecedented ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "Dutch court sentences man to life over Rwanda genocide",
+          "url": "https://www.bbc.co.uk/news/articles/ce8x96rw79ro?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-28T12:15:46.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The court in The Hague convicted the 66-year-old of war crimes and the crime of genocide.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Rwanda accuses DR Congo of supporting an armed group on its soil",
+          "url": "https://www.aljazeera.com/news/2026/8/25/rwanda-accuses-dr-congo-of-supporting-an-armed-group-on-its-soil?traffic_source=rss",
+          "date": "2026-08-25T12:17:56.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Rwanda says FDLR threat justifies its continued involvement in eastern DRC, as efforts to verify a ceasefire advance.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "DR Congo sees breakthrough as officials and rebels agree to peace talk roadmap",
+          "url": "https://www.france24.com/en/dr-congo-sees-breakthrough-as-officials-and-rebels-agree-to-peace-talk-roadmap",
+          "date": "2026-08-25T09:24:14.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In eastern Democratic Republic of Congo, Rwanda-backed M23 rebels are still in control of swathes of territory. After months of stalled peace talks, both sides have agreed to get the ball rolling again. FRANCE 24's Emmet Livingstone, in Kinshasa, has more.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 8
+        },
+        {
+          "title": "Congo-Kinshasa: DR Congo and M23 Rebels Agree On Roadmap for Peace in Eastern Congo",
+          "url": "https://allafrica.com/stories/202608240052.html",
+          "date": "2026-08-24T05:17:24.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[RFI] The Democratic Republic of Congo government and the M23 rebel group have agreed on a roadmap for peace talks aimed at resolving the protracted conflict in eastern DRC. It marks the latest step in an internationally brokered peace process that has seen the parties make cautious concessions, without ending the fighting.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Congo-Brazzaville: Congo, M23 Rebels Agree to Peace Roadmap",
+          "url": "https://allafrica.com/stories/202608240163.html",
+          "date": "2026-08-24T06:48:43.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[DW] Negotiators representing the Democratic Republic of Congo and Rwanda-backed M23 rebels have agreed to a roadmap for peace. The US State Department, a mediator, released a joint statement.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 13
     },
     {
       "id": "syria",
@@ -15540,7 +15533,7 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 55,
+      "activity": 54,
       "severity": 55,
       "newCount": 0,
       "signals": [
@@ -15948,48 +15941,6 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli newspaper slams Netanyahu over Syria strikes , warns of  pointless conflict  with Türkiye – Middle East Monitor",
-          "url": "https://www.middleeastmonitor.com/20260823-israeli-newspaper-slams-netanyahu-over-syria-strikes-warns-of-pointless-conflict-with-turkiye/",
-          "date": "2026-08-23T13:45:00.000Z",
-          "source": "middleeastmonitor.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Turkey - Israel Syria clash risks spilling into Aegean for Greece",
-          "url": "https://www.bankingnews.gr/amyna-diplomatia/articles/895174/turkey-israel-syria-clash-risks-spilling-into-aegean-for-greece",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "bankingnews.gr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 15
         },
@@ -16891,7 +16842,7 @@
           "score": 8
         }
       ],
-      "itemCount": 51
+      "itemCount": 49
     },
     {
       "id": "burkina-faso",
@@ -16956,7 +16907,7 @@
       ],
       "activity": 42,
       "severity": 51,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -17027,7 +16978,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli flare bombs ignite forest fires in southern Lebanon, local media reports Israeli forces dropped flare bombs over the Aita al-Jabal forest in southern Lebanon’s Bint Jbeil district on Sunday, sparking fires, Lebanon’s National News Agency reported.&nbsp; The agency also said the Israeli army caused a “massive explosion” in the southern town of Houla in the Marjeyoun district.&nbsp; The deve",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "explosion",
@@ -18345,9 +18296,9 @@
         "Medianlinie",
         "ADIZ"
       ],
-      "activity": 91,
-      "severity": 50,
-      "newCount": 0,
+      "activity": 96,
+      "severity": 51,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
@@ -18359,7 +18310,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 9
+          "count": 10
         },
         {
           "key": "displacement",
@@ -18396,8 +18347,8 @@
             88.118,
             31.686
           ],
-          "count": 3,
-          "newCount": 0,
+          "count": 4,
+          "newCount": 1,
           "event": {
             "type": "casualties",
             "icon": "🚨",
@@ -18455,6 +18406,37 @@
           "score": 26
         },
         {
+          "title": "Nepal-China flood death toll rises to nearly 800, with over 3,000 missing",
+          "url": "https://www.dawn.com/news/2026152/nepal-china-flood-death-toll-rises-to-nearly-800-with-over-3000-missing",
+          "date": "2026-08-30T14:16:55.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Devastating floods near the border with China killed at least 781 people in Nepal, its disaster authority said on Sunday, with 2,502 people missing as rescue efforts continued for a fifth day. Chinese state media earlier confirmed 16 dead in Tibet and 546 people missing following Wednesday’s disaster , taking the overall toll to 797 dead and 3,048 unaccounted for. Nepal’s missing list includes 592",
+          "isNew": true,
+          "region": {
+            "id": "CHN-1662",
+            "name": "Tibet",
+            "nameDe": "Autonomes Gebiet Tibet",
+            "type": "Autonomous Region",
+            "anchor": [
+              88.118,
+              31.686
+            ],
+            "matched": "Tibet"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
           "title": "Air raids, conscripts and China: How Myanmar’s military is regaining ground",
           "url": "https://www.aljazeera.com/news/2026/8/30/air-raids-conscripts-and-china-how-myanmars-military-is-regaining-ground?traffic_source=rss",
           "date": "2026-08-30T04:28:10.000Z",
@@ -18474,27 +18456,6 @@
             "label": "Luftangriff"
           },
           "score": 22
-        },
-        {
-          "title": "Rescuers race to find thousands missing after Nepal-China glacier collapse",
-          "url": "https://www.dawn.com/news/2026152/rescuers-race-to-find-thousands-missing-after-nepal-china-glacier-collapse",
-          "date": "2026-08-30T08:22:34.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Rescuers in Nepal and China raced on Sunday to find thousands of people missing after a glacier collapse unleashed a catastrophic mudslide across the Himalayas, as they faced challenging weather conditions and rising water levels. Authorities said the death toll rose to 750 by Sunday morning, with more than 3,000 people missing on both sides of the Nepal-China border after a torrent of ice, rock, ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
         },
         {
           "title": "Rescuers claw through mud as Nepal, China flood death toll climbs to 675",
@@ -18589,6 +18550,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Rescuers race to find thousands missing after Nepal-China glacier collapse",
+          "url": "https://www.dawn.com/news/2026152/rescuers-race-to-find-thousands-missing-after-nepal-china-glacier-collapse",
+          "date": "2026-08-30T08:22:34.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Rescuers in Nepal and China raced on Sunday to find thousands of people missing after a glacier collapse unleashed a catastrophic mudslide across the Himalayas, as they faced challenging weather conditions and rising water levels. Authorities said the death toll rose to 750 by Sunday morning, with more than 3,000 people missing on both sides of the Nepal-China border after a torrent of ice, rock, ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
         },
         {
           "title": "Putin, Xi set for Central Asia summit as Russia, China seek to counter Western influence",
@@ -19723,7 +19705,7 @@
           "score": 8
         }
       ],
-      "itemCount": 59
+      "itemCount": 60
     },
     {
       "id": "yemen",
@@ -19751,9 +19733,9 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 19,
-      "severity": 44,
-      "newCount": 0,
+      "activity": 34,
+      "severity": 49,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
@@ -19824,6 +19806,27 @@
       ],
       "items": [
         {
+          "title": "Yemen air raids exceed rate last year : UN",
+          "url": "https://spacewar.com/yemen-air-raids-exceed-rate-last-year-un-999/",
+          "date": "2026-08-30T10:00:00.000Z",
+          "source": "spacewar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 24
+        },
+        {
           "title": "Board of Peace envoy Mladenov warns Gaza ceasefire risks ‘collapse’",
           "url": "https://www.aljazeera.com/news/2026/8/28/board-of-peace-envoy-mladenov-warns-gaza-ceasefire-risks-collapse?traffic_source=rss",
           "date": "2026-08-28T16:44:45.000Z",
@@ -19874,6 +19877,48 @@
             "label": "Opfer"
           },
           "score": 18
+        },
+        {
+          "title": "Yemen upheaval deals blow to US fight against AQAP",
+          "url": "https://spacewar.com/yemen-upheaval-deals-blow-to-us-fight-against-aqap-999/",
+          "date": "2026-08-30T10:00:00.000Z",
+          "source": "spacewar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "Yemen rebel long - range arsenal grows lethal",
+          "url": "https://spacewar.com/yemen-rebel-long-range-arsenal-grows-lethal-999/",
+          "date": "2026-08-30T10:00:00.000Z",
+          "source": "spacewar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
         },
         {
           "title": "Giorgia on their minds: Farage and Badenoch scrap to be mates with Meloni",
@@ -20179,7 +20224,7 @@
           "score": 8
         }
       ],
-      "itemCount": 15
+      "itemCount": 18
     },
     {
       "id": "colombia",
@@ -21785,9 +21830,9 @@
         "Chisinau",
         "Gagausien"
       ],
-      "activity": 83,
+      "activity": 81,
       "severity": 35,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -21833,7 +21878,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Russia's Defence Ministry announces plans to launch 'massive strikes' against Ukraine's infrastructure before winter.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -21869,27 +21914,6 @@
           "score": 22
         },
         {
-          "title": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
-          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
-          "date": "2026-08-29T13:34:02.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukrainian prosecutors open investigation into why munitions were stored so close to residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss",
           "date": "2026-08-29T16:53:55.000Z",
@@ -21909,6 +21933,27 @@
             "label": "Explosion/Anschlag"
           },
           "score": 22
+        },
+        {
+          "title": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
+          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+          "date": "2026-08-29T13:34:02.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukrainian prosecutors open investigation into why munitions were stored so close to residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Warehouse hit by Russian attack stored munitions, Zelensky says",
@@ -22966,9 +23011,9 @@
         "Südossetien",
         "Tbilissi"
       ],
-      "activity": 73,
+      "activity": 70,
       "severity": 32,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -23014,7 +23059,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Russia's Defence Ministry announces plans to launch 'massive strikes' against Ukraine's infrastructure before winter.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -23027,27 +23072,6 @@
             "label": "Opfer"
           },
           "score": 26
-        },
-        {
-          "title": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
-          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
-          "date": "2026-08-29T13:34:02.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukrainian prosecutors open investigation into why munitions were stored so close to residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
         },
         {
           "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
@@ -23069,6 +23093,27 @@
             "label": "Explosion/Anschlag"
           },
           "score": 22
+        },
+        {
+          "title": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
+          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+          "date": "2026-08-29T13:34:02.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukrainian prosecutors open investigation into why munitions were stored so close to residential buildings At least 37 people have been killed after a Russian drone struck a warehouse near Kyiv’s western suburbs that was storing “explosive objects”. The attack damaged at least 50 residential buildings, including a care home for elderly and disabled people, and sparked a huge fire and explosions in ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Warehouse hit by Russian attack stored munitions, Zelensky says",
@@ -25293,7 +25338,7 @@
         "Naf-Fluss",
         "Grenze zu Rakhine"
       ],
-      "activity": 10,
+      "activity": 7,
       "severity": 25,
       "newCount": 0,
       "signals": [
@@ -25366,7 +25411,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 15
+          "score": 11
         },
         {
           "title": "Water crisis makes life in Sudan’s El Obeid refugee camps even worse",
@@ -25790,116 +25835,6 @@
       "itemCount": 6
     },
     {
-      "id": "cameroon",
-      "name": "Kamerun (Anglophone Krise)",
-      "nameEn": "Cameroon – Anglophone Crisis",
-      "region": "Afrika (Zentral)",
-      "countries": [
-        "Cameroon"
-      ],
-      "lat": 5.9,
-      "lon": 10.1,
-      "tier": "medium",
-      "since": "2017",
-      "parties": [
-        "Regierung",
-        "Ambazonische Separatisten",
-        "Boko Haram (Norden)"
-      ],
-      "background": "Separatistenkonflikt in den anglophonen Regionen Nordwest und Südwest, zusätzlich Boko-Haram-Angriffe im Norden; angespannte Lage nach der Wahl.",
-      "hotspots": [
-        "Bamenda",
-        "Buea",
-        "Nordwest",
-        "Südwest",
-        "Far North"
-      ],
-      "activity": 4,
-      "severity": 24,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "CMR",
-      "extraCountries": [
-        "NGA"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "10 killed in Cameroon road accident - Xinhua",
-          "url": "https://english.news.cn/20260823/2d63fff235694880a221f8fc167a7615/c.html",
-          "date": "2026-08-23T13:30:00.000Z",
-          "source": "english.news.cn",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "APO Group - Africa Newsroom / Press release | Cameroon Grapples with Gender - Based Violence , Increased Femicides",
-          "url": "https://www.africa-newsroom.com/press/cameroon-grapples-with-genderbased-violence-increased-femicides",
-          "date": "2026-08-29T12:15:00.000Z",
-          "source": "africa-newsroom.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Cameroon youth caught in Russia war recruitment drive",
-          "url": "https://www.dw.com/en/cameroons-youth-caught-in-russias-war-recruitment-drive/audio-78488563",
-          "date": "2026-08-24T19:45:00.000Z",
-          "source": "dw.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 3
-    },
-    {
       "id": "car",
       "name": "Zentralafrikanische Republik",
       "nameEn": "Central African Republic",
@@ -26181,6 +26116,88 @@
       "itemCount": 2
     },
     {
+      "id": "cameroon",
+      "name": "Kamerun (Anglophone Krise)",
+      "nameEn": "Cameroon – Anglophone Crisis",
+      "region": "Afrika (Zentral)",
+      "countries": [
+        "Cameroon"
+      ],
+      "lat": 5.9,
+      "lon": 10.1,
+      "tier": "medium",
+      "since": "2017",
+      "parties": [
+        "Regierung",
+        "Ambazonische Separatisten",
+        "Boko Haram (Norden)"
+      ],
+      "background": "Separatistenkonflikt in den anglophonen Regionen Nordwest und Südwest, zusätzlich Boko-Haram-Angriffe im Norden; angespannte Lage nach der Wahl.",
+      "hotspots": [
+        "Bamenda",
+        "Buea",
+        "Nordwest",
+        "Südwest",
+        "Far North"
+      ],
+      "activity": 3,
+      "severity": 23,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "CMR",
+      "extraCountries": [
+        "NGA"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "APO Group - Africa Newsroom / Press release | Cameroon Grapples with Gender - Based Violence , Increased Femicides",
+          "url": "https://www.africa-newsroom.com/press/cameroon-grapples-with-genderbased-violence-increased-femicides",
+          "date": "2026-08-29T12:15:00.000Z",
+          "source": "africa-newsroom.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Cameroon youth caught in Russia war recruitment drive",
+          "url": "https://www.dw.com/en/cameroons-youth-caught-in-russias-war-recruitment-drive/audio-78488563",
+          "date": "2026-08-24T19:45:00.000Z",
+          "source": "dw.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 2
+    },
+    {
       "id": "thailand-cambodia",
       "name": "Thailand–Kambodscha",
       "nameEn": "Thailand–Cambodia Border",
@@ -26285,7 +26302,7 @@
         "Sjunik/Sangesur-Korridor",
         "Grenzabschnitte"
       ],
-      "activity": 3,
+      "activity": 2,
       "severity": 23,
       "newCount": 0,
       "signals": [],
@@ -26316,7 +26333,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 12
+          "score": 9
         },
         {
           "title": "Armenian army suffers fourth non-combat death in one month",
@@ -26531,7 +26548,7 @@
         "Sarajevo",
         "Brčko"
       ],
-      "activity": 29,
+      "activity": 27,
       "severity": 19,
       "newCount": 0,
       "signals": [
@@ -26631,27 +26648,6 @@
             "label": "Bericht"
           },
           "score": 15
-        },
-        {
-          "title": "Ratko Mladic: Genocide Convict Who Left Trail of Blood Across Bosnia",
-          "url": "https://balkaninsight.com/2026/08/27/ratko-mladic-genocide-convict-who-left-trail-of-blood-across-bosnia/btj/",
-          "date": "2026-08-27T14:03:49.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Former Bosnian Serb Army general Ratko Mladic will be remembered by most as a ruthless war criminal, but despite his convictions for genocide and crimes against humanity, he is still seen a hero by Serb ultranationalists.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
         },
         {
           "title": "Bosnian Serb General Ratko Mladic has died",
@@ -26778,6 +26774,27 @@
             "label": "Bericht"
           },
           "score": 11
+        },
+        {
+          "title": "Ratko Mladic: Genocide Convict Who Left Trail of Blood Across Bosnia",
+          "url": "https://balkaninsight.com/2026/08/27/ratko-mladic-genocide-convict-who-left-trail-of-blood-across-bosnia/btj/",
+          "date": "2026-08-27T14:03:49.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Former Bosnian Serb Army general Ratko Mladic will be remembered by most as a ruthless war criminal, but despite his convictions for genocide and crimes against humanity, he is still seen a hero by Serb ultranationalists.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
         },
         {
           "title": "Ratko Mladic, Convicted Bosnian Serb War Criminal, Has Died",
@@ -27117,15 +27134,27 @@
         "Rafah-Grenzübergang",
         "El-Arish"
       ],
-      "activity": 9,
-      "severity": 13,
-      "newCount": 0,
+      "activity": 14,
+      "severity": 15,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 2
+          "count": 3
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
         },
         {
           "key": "offensive",
@@ -27158,6 +27187,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Banque Misr, Egypt’s second-largest, hit by US sanctions: What to know",
+          "url": "https://www.aljazeera.com/news/2026/8/30/banque-misr-egypts-second-largest-hit-by-us-sanctions-what-to-know?traffic_source=rss",
+          "date": "2026-08-30T13:23:48.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Move comes as Washington steps up its efforts to economically pressure Iran amid deadlock in truce talks.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 19
+        },
         {
           "title": "Egyptian queen’s 673-diamond necklace stolen in Vienna smash-and-grab raid",
           "url": "https://www.theguardian.com/artanddesign/2026/aug/28/egyptian-queen-diamond-necklace-stolen-vienna-raid",
@@ -27274,7 +27324,7 @@
           "score": 8
         }
       ],
-      "itemCount": 5
+      "itemCount": 6
     }
   ]
 }
