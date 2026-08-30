@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-29T23:30:40.636Z",
-  "durationSec": 460,
+  "generatedAt": "2026-08-30T00:29:40.808Z",
+  "durationSec": 402,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,12 +114,20 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
-      "failed": 2,
+      "ok": 1,
+      "failed": 4,
       "skipped": 11,
       "errors": [
         {
-          "id": "rohingya-bangladesh",
+          "id": "venezuela",
+          "error": "fetch failed"
+        },
+        {
+          "id": "south-sudan",
+          "error": "fetch failed"
+        },
+        {
+          "id": "myanmar",
           "error": "fetch failed"
         },
         {
@@ -132,8 +140,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 972,
-    "newArticles": 3
+    "articles": 976,
+    "newArticles": 12
   },
   "conflicts": [
     {
@@ -165,7 +173,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -248,6 +256,23 @@
           }
         },
         {
+          "id": "UKR-331",
+          "name": "Zaporizhzhia",
+          "nameDe": "Saporischschja",
+          "type": "Region",
+          "anchor": [
+            35.691,
+            47.266
+          ],
+          "count": 2,
+          "newCount": 1,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        },
+        {
           "id": "UKR-327",
           "name": "Donetsk",
           "nameDe": "Donezk",
@@ -279,23 +304,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          }
-        },
-        {
-          "id": "UKR-331",
-          "name": "Zaporizhzhia",
-          "nameDe": "Saporischschja",
-          "type": "Region",
-          "anchor": [
-            35.691,
-            47.266
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           }
         },
         {
@@ -497,27 +505,6 @@
           "score": 29
         },
         {
-          "title": "Turkiye summons Ukraine ambassador over Black Sea attacks",
-          "url": "https://www.aljazeera.com/news/2026/8/29/turkiye-summons-ukraine-ambassador-over-black-sea-attacks-2?traffic_source=rss",
-          "date": "2026-08-29T17:41:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Two Turkish-operated vessels have been struck this week as a result of the war between Russia and Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
           "title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
           "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-29T20:13:16.000Z",
@@ -580,6 +567,27 @@
           "score": 27
         },
         {
+          "title": "Turkiye summons Ukraine ambassador over Black Sea attacks",
+          "url": "https://www.aljazeera.com/news/2026/8/29/turkiye-summons-ukraine-ambassador-over-black-sea-attacks-2?traffic_source=rss",
+          "date": "2026-08-29T17:41:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Two Turkish-operated vessels have been struck this week as a result of the war between Russia and Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
           "title": "Deadly strike on Kyiv warehouse prompts evacuations",
           "url": "https://www.bbc.co.uk/news/videos/cy8z979y9e4o?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-29T13:55:55.000Z",
@@ -609,6 +617,37 @@
             "label": "Vertreibung"
           },
           "score": 24
+        },
+        {
+          "title": "Ukrainian nuclear power plant without external power for over a week",
+          "url": "https://www.aljazeera.com/news/2026/8/29/ukrainian-nuclear-power-plant-without-external-power-for-over-a-week?traffic_source=rss",
+          "date": "2026-08-29T23:25:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "This is the 27th time since Russia invaded Ukraine that Zaporizhzhia plant has had to rely on emergency diesel supplies.",
+          "isNew": true,
+          "region": {
+            "id": "UKR-331",
+            "name": "Zaporizhzhia",
+            "nameDe": "Saporischschja",
+            "type": "Region",
+            "anchor": [
+              35.691,
+              47.266
+            ],
+            "matched": "Zaporizhzhia"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
         },
         {
           "title": "Russian strike on ammunition depot near Kyiv kills dozens",
@@ -2139,7 +2178,7 @@
           "score": 8
         }
       ],
-      "itemCount": 67
+      "itemCount": 68
     },
     {
       "id": "gaza",
@@ -2168,13 +2207,19 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 4,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 24
+          "count": 23
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 16
         },
         {
           "key": "displacement",
@@ -2183,21 +2228,15 @@
           "count": 16
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 14
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 6
         },
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 8
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
           "count": 6
         }
       ],
@@ -2225,7 +2264,7 @@
             35.035,
             31.753
           ],
-          "count": 11,
+          "count": 9,
           "newCount": 0,
           "event": {
             "type": "offensive",
@@ -2236,13 +2275,13 @@
       ],
       "items": [
         {
-          "title": "Second Palestinian confirmed killed in Israeli strike on Gaza’s Tal al-Hawa",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/second-palestinian-confirmed-killed-israeli-strike-gazas-tal-al-hawa",
-          "date": "2026-08-29T18:13:42.000Z",
+          "title": "Palestinian injured in Israeli strike on Khan Younis succumbs, report says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-injured-israeli-strike-khan-younis-succumbs-report-says",
+          "date": "2026-08-29T23:41:47.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Second Palestinian confirmed killed in Israeli strike on Gaza’s Tal al-Hawa The death toll from an earlier Israeli drone strike in Gaza City's Tal al-Hawa neighbourhood has risen to two, Wafa news agency reported. A separate Israeli drone strike west of Khan Younis injured Palestinians, Gaza's ambulance and emergency services said.",
-          "isNew": false,
+          "summary": "Palestinian injured in Israeli strike on Khan Younis succumbs, report says A Palestinian has succumbed to wounds sustained in an Israeli bombing on the al-Amal neighborhood in Khan Younis, Al Jazeera reported, citing the city’s Nasser Hospital. This takes the death toll in a fresh wave of Israeli strikes on Gaza to three. Earlier, two Palestinians were killed in a drone strike in Gaza City's Tal a",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "casualties",
@@ -2254,7 +2293,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 32
+          "score": 30
         },
         {
           "title": "Gaza runs out of cancer medicines, as Israeli strikes continue",
@@ -2299,6 +2338,27 @@
           "score": 29
         },
         {
+          "title": "Second Palestinian confirmed killed in Israeli strike on Gaza’s Tal al-Hawa",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/second-palestinian-confirmed-killed-israeli-strike-gazas-tal-al-hawa",
+          "date": "2026-08-29T18:13:42.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Second Palestinian confirmed killed in Israeli strike on Gaza’s Tal al-Hawa The death toll from an earlier Israeli drone strike in Gaza City's Tal al-Hawa neighbourhood has risen to two, Wafa news agency reported. A separate Israeli drone strike west of Khan Younis injured Palestinians, Gaza's ambulance and emergency services said.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 29
+        },
+        {
           "title": "Palestinian woman and NBC News team reportedly attacked in West Bank",
           "url": "https://www.theguardian.com/world/2026/aug/29/nbc-news-team-attacked-west-bank",
           "date": "2026-08-29T21:55:08.000Z",
@@ -2320,54 +2380,33 @@
           "score": 28
         },
         {
+          "title": "Israeli settlers attack international news team in occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-settlers-attack-international-news-team-in-occupied-west-bank?traffic_source=rss",
+          "date": "2026-08-29T23:48:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A news team, working for the US network NBC and a Palestinian woman were injured in an attack by masked Israeli settler",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
           "title": "Netanyahu condemns Qusra settler attacks, calling them ‘criminal acts of violence’",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-condemns-qusra-attacks-calling-them-criminal-acts-violence",
           "date": "2026-08-29T19:12:13.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Netanyahu condemns Qusra settler attacks, calling them ‘criminal acts of violence’ Israeli Prime Minister Benjamin Netanyahu issued a condemnation regarding intensifying settler attacks in the occupied West Bank villages of Qusra and Jalud, which he described as “criminal acts of violence.” \"I strongly condemn the criminal acts of violence committed in the villages of Qusra and Jalud by a handful ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israeli settlers, army continue attacks in West Bank towns",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-army-continue-attacks-west-bank-towns",
-          "date": "2026-08-29T18:26:10.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli settlers, army continue attacks in West Bank towns Israeli settler violence across occupied West Bank continued later on Saturday as settler groups launched new attacks on Palestinians in the villages of Burqa and Arrabeh, Palestine’s Wafa news agency reported. In Burqa, Israeli settlers attacked local farmers, fired shots in their direction, and attempted to torch one of their vehicles. I",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-attack-fourth-qusra-home-today-residents-try-fit",
-          "date": "2026-08-29T17:39:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting Israeli settlers targeted a fourth house under construction in Qusra on Saturday, after six Palestinian residents went to the property to install metal netting for protection, according to a report by Al Jazeera. The residents were attempting to shield the house from intensifying settler attacks, which have ",
           "isNew": false,
           "region": null,
           "event": {
@@ -2414,27 +2453,6 @@
           "score": 27
         },
         {
-          "title": "Israeli attacks in Gaza kill four people, hit hospital supply warehouse",
-          "url": "https://www.aljazeera.com/news/2026/8/29/israeli-attacks-across-gaza-kill-two-people-hit-hospital-supply-warehouse?traffic_source=rss",
-          "date": "2026-08-29T15:25:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Gaza’s Health Ministry reports rising casualties amid escalated Israeli attacks, with victims trapped under rubble.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Several killed in Israeli strikes on Gaza and West Bank",
           "url": "https://www.france24.com/en/several-killed-in-israeli-strikes-on-gaza-and-west-bank",
           "date": "2026-08-29T10:34:58.000Z",
@@ -2462,7 +2480,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israel would strike Iran even with a US deal, minister says Israel will attack Iran again if it tries to rebuild its nuclear or missile programmes, Israeli Energy Minister Eli Cohen said Saturday. Speaking to Israeli media, Cohen said Israel would strike Iran in such a case, regardless of a deal between Tehran and Washington. He said Iran would already have nuclear weapons had Israel not intervene",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2498,12 +2516,12 @@
           "score": 26
         },
         {
-          "title": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-surround-another-palestinian-home-qusra-attack",
-          "date": "2026-08-29T12:44:02.000Z",
+          "title": "Israeli settlers, army continue attacks in West Bank towns",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-army-continue-attacks-west-bank-towns",
+          "date": "2026-08-29T18:26:10.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud Israeli settlers, backed by their military, have surrounded another Palestinian home in Qusra, south of Nablus, with at least four people trapped inside, Al Jazeera Arabic is reporting.&nbsp; The settlers also reportedly set fire to nearby land, while efforts were underway to allow ambulances to evacuate a wou",
+          "summary": "Israeli settlers, army continue attacks in West Bank towns Israeli settler violence across occupied West Bank continued later on Saturday as settler groups launched new attacks on Palestinians in the villages of Burqa and Arrabeh, Palestine’s Wafa news agency reported. In Burqa, Israeli settlers attacked local farmers, fired shots in their direction, and attempted to torch one of their vehicles. I",
           "isNew": false,
           "region": null,
           "event": {
@@ -2516,7 +2534,28 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 24
+        },
+        {
+          "title": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-attack-fourth-qusra-home-today-residents-try-fit",
+          "date": "2026-08-29T17:39:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting Israeli settlers targeted a fourth house under construction in Qusra on Saturday, after six Palestinian residents went to the property to install metal netting for protection, according to a report by Al Jazeera. The residents were attempting to shield the house from intensifying settler attacks, which have ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
         },
         {
           "title": "Witnesses describe tear gas, stones in Israeli settler attack in Qusra",
@@ -2540,12 +2579,96 @@
           "score": 24
         },
         {
+          "title": "Israeli forces shoot at girl, two young men in Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-shoot-girl-two-young-men-gaza",
+          "date": "2026-08-29T23:32:23.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces shoot at girl, two young men in Gaza Israeli forces shot at a girl and a young man in Gaza and targeted the northwest of Rafah city with artillery shelling, Wafa reported. In Jabalia refugee camp in the northern Gaza Strip, a child was wounded by Israeli forces, Wafa reported, adding that another young man was shot in the Al-Tuam area, northwest of Gaza City. The Israeli military al",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 23
+        },
+        {
           "title": "Four children killed as separate attacks in Gaza destroy aid supplies",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168229",
           "date": "2026-08-28T12:00:00.000Z",
           "source": "UN News – Peace & Security",
           "sourceType": "institutional",
           "summary": "Israeli attacks killed four children and destroyed humanitarian aid supplies in what turned out to be a deadly week in war-ravaged Gaza, the UN emergency relief agency, OCHA, said on Friday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli settlers beat two elderly Palestinian sisters in Ramallah",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-beat-two-elderly-palestinian-sisters-ramallah",
+          "date": "2026-08-30T00:15:07.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers beat two elderly Palestinian sisters in Ramallah Two elderly Palestinian sisters were injured after being attacked by Israeli settlers while picking figs from their land in the town of Silwad, northeast of Ramallah, Wafa news agency reported Local sources told Wafa that the settlers brutally attacked the sisters, Mona and Alia Mahmoud Hamed, aged 75 and 65, before stealing their m",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli attacks in Gaza kill four people, hit hospital supply warehouse",
+          "url": "https://www.aljazeera.com/news/2026/8/29/israeli-attacks-across-gaza-kill-two-people-hit-hospital-supply-warehouse?traffic_source=rss",
+          "date": "2026-08-29T15:25:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Gaza’s Health Ministry reports rising casualties amid escalated Israeli attacks, with victims trapped under rubble.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-surround-another-palestinian-home-qusra-attack",
+          "date": "2026-08-29T12:44:02.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud Israeli settlers, backed by their military, have surrounded another Palestinian home in Qusra, south of Nablus, with at least four people trapped inside, Al Jazeera Arabic is reporting.&nbsp; The settlers also reportedly set fire to nearby land, while efforts were underway to allow ambulances to evacuate a wou",
           "isNew": false,
           "region": null,
           "event": {
@@ -3920,110 +4043,6 @@
             "label": "Luftangriff"
           },
           "score": 15
-        },
-        {
-          "title": "Gaza marks one year since Mariam Dagga was killed in Israeli strike",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/25/gaza-marks-one-year-since-mariam-dagga-was-killed-in-israeli-strike?traffic_source=rss",
-          "date": "2026-08-25T15:23:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A ceremony was held in Gaza to mark one year since an Israeli double strike killed 22 Palestinians in a hospital.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "One year since Gaza journalist killed by Israel",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/25/one-year-since-gaza-journalist-killed-by-israel?traffic_source=rss",
-          "date": "2026-08-25T15:09:10.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "It’s been one year since AP journalist Mariam Dagga was killed in Israeli strikes on Gaza’s Nasser Hospital.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli forces raid Unrwa centres serving 16,000 Palestinian refugees",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-unrwa-centres-serving-16000-palestinian-refugees",
-          "date": "2026-08-25T11:25:12.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces raid Unrwa centres serving 16,000 Palestinian refugees Israeli forces have stormed Unrwa vocational centres in Qalandiya and Kufr Aqab that serve about 16,000 Palestinian refugees across the occupied West Bank. The raids follow Israel’s assault on Unrwa’s headquarters in occupied East Jerusalem several months ago, when forces expelled staff and demolished sections of the building. I",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli forces raid UNRWA training centre in occupied East Jerusalem",
-          "url": "https://www.aljazeera.com/news/2026/8/25/israeli-forces-raid-unrwa-training-centre-in-occupied-east-jerusalem?traffic_source=rss",
-          "date": "2026-08-25T12:59:32.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli forces raid and seize the Qalandiya Training Centre, a key UNRWA facility, in the Kafr Aqab neighbourhood.",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4055,17 +4074,17 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 3,
       "signals": [
         {
-          "key": "displacement",
-          "label": "Vertreibung",
+          "key": "casualties",
+          "label": "Opfer",
           "dir": "up",
           "count": 10
         },
         {
-          "key": "casualties",
-          "label": "Opfer",
+          "key": "displacement",
+          "label": "Vertreibung",
           "dir": "up",
           "count": 10
         },
@@ -4112,7 +4131,7 @@
             35.035,
             31.753
           ],
-          "count": 2,
+          "count": 1,
           "newCount": 0,
           "event": {
             "type": "sanctions",
@@ -4161,13 +4180,13 @@
           "score": 30
         },
         {
-          "title": "Israeli settlers, army continue attacks in West Bank towns",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-army-continue-attacks-west-bank-towns",
-          "date": "2026-08-29T18:26:10.000Z",
-          "source": "Middle East Eye",
+          "title": "Israeli settlers attack international news team in occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-settlers-attack-international-news-team-in-occupied-west-bank?traffic_source=rss",
+          "date": "2026-08-29T23:48:22.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Israeli settlers, army continue attacks in West Bank towns Israeli settler violence across occupied West Bank continued later on Saturday as settler groups launched new attacks on Palestinians in the villages of Burqa and Arrabeh, Palestine’s Wafa news agency reported. In Burqa, Israeli settlers attacked local farmers, fired shots in their direction, and attempted to torch one of their vehicles. I",
-          "isNew": false,
+          "summary": "A news team, working for the US network NBC and a Palestinian woman were injured in an attack by masked Israeli settler",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "clash",
@@ -4224,12 +4243,12 @@
           "score": 27
         },
         {
-          "title": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-attack-fourth-qusra-home-today-residents-try-fit",
-          "date": "2026-08-29T17:39:33.000Z",
+          "title": "Israeli settlers, army continue attacks in West Bank towns",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-army-continue-attacks-west-bank-towns",
+          "date": "2026-08-29T18:26:10.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting Israeli settlers targeted a fourth house under construction in Qusra on Saturday, after six Palestinian residents went to the property to install metal netting for protection, according to a report by Al Jazeera. The residents were attempting to shield the house from intensifying settler attacks, which have ",
+          "summary": "Israeli settlers, army continue attacks in West Bank towns Israeli settler violence across occupied West Bank continued later on Saturday as settler groups launched new attacks on Palestinians in the villages of Burqa and Arrabeh, Palestine’s Wafa news agency reported. In Burqa, Israeli settlers attacked local farmers, fired shots in their direction, and attempted to torch one of their vehicles. I",
           "isNew": false,
           "region": null,
           "event": {
@@ -4287,48 +4306,6 @@
           "score": 25
         },
         {
-          "title": "Israeli settlers attack homes in West Bank Qusra , witnesses say",
-          "url": "https://www.theglobeandmail.com/world/article-israeli-settlers-attack-homes-in-west-banks-qusra-witnesses-say/",
-          "date": "2026-08-29T18:15:00.000Z",
-          "source": "theglobeandmail.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
-          "title": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-surround-another-palestinian-home-qusra-attack",
-          "date": "2026-08-29T12:44:02.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud Israeli settlers, backed by their military, have surrounded another Palestinian home in Qusra, south of Nablus, with at least four people trapped inside, Al Jazeera Arabic is reporting.&nbsp; The settlers also reportedly set fire to nearby land, while efforts were underway to allow ambulances to evacuate a wou",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
           "title": "Several killed in Israeli strikes on Gaza and West Bank",
           "url": "https://www.france24.com/en/several-killed-in-israeli-strikes-on-gaza-and-west-bank",
           "date": "2026-08-29T10:34:58.000Z",
@@ -4346,6 +4323,27 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 23
+        },
+        {
+          "title": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-attack-fourth-qusra-home-today-residents-try-fit",
+          "date": "2026-08-29T17:39:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers attack fourth Qusra home today as residents try to fit protective netting Israeli settlers targeted a fourth house under construction in Qusra on Saturday, after six Palestinian residents went to the property to install metal netting for protection, according to a report by Al Jazeera. The residents were attempting to shield the house from intensifying settler attacks, which have ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 23
         },
@@ -4383,6 +4381,69 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli settlers beat two elderly Palestinian sisters in Ramallah",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-beat-two-elderly-palestinian-sisters-ramallah",
+          "date": "2026-08-30T00:15:07.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers beat two elderly Palestinian sisters in Ramallah Two elderly Palestinian sisters were injured after being attacked by Israeli settlers while picking figs from their land in the town of Silwad, northeast of Ramallah, Wafa news agency reported Local sources told Wafa that the settlers brutally attacked the sisters, Mona and Alia Mahmoud Hamed, aged 75 and 65, before stealing their m",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli settlers attack homes in West Bank Qusra , witnesses say",
+          "url": "https://www.theglobeandmail.com/world/article-israeli-settlers-attack-homes-in-west-banks-qusra-witnesses-say/",
+          "date": "2026-08-29T18:15:00.000Z",
+          "source": "theglobeandmail.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-surround-another-palestinian-home-qusra-attack",
+          "date": "2026-08-29T12:44:02.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers surround another Palestinian home in Qusra, attack journalists in Jalud Israeli settlers, backed by their military, have surrounded another Palestinian home in Qusra, south of Nablus, with at least four people trapped inside, Al Jazeera Arabic is reporting.&nbsp; The settlers also reportedly set fire to nearby land, while efforts were underway to allow ambulances to evacuate a wou",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
             "type": "clash",
@@ -4560,6 +4621,27 @@
           "score": 22
         },
         {
+          "title": "Iran war live: Tehran stands firm over US sanctions; settlers besiege Qusra",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/30/iran-war-live-iran-pledges-to-stand-firm-against-unjust-us-sanctions?traffic_source=rss",
+          "date": "2026-08-30T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran says it will rely equally on diplomacy and defence to protect its interests.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 19
+        },
+        {
           "title": "Israeli army arrests six Palestinians after settler violence in West Bank",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-army-arrests-six-palestinians-after-settler-violence-in-west-bank?traffic_source=rss",
           "date": "2026-08-29T17:09:10.000Z",
@@ -4619,27 +4701,6 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Palestinian Foreign Ministry calls For international deterrent measures against occupation , settler crimes",
-          "url": "http://thepeninsulaqatar.com/article/29/08/2026/palestinian-foreign-ministry-calls-for-international-deterrent-measures-against-occupation-settler-crimes",
-          "date": "2026-08-29T17:45:00.000Z",
-          "source": "thepeninsulaqatar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 18
         },
@@ -4808,6 +4869,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Palestinian Foreign Ministry calls For international deterrent measures against occupation , settler crimes",
+          "url": "http://thepeninsulaqatar.com/article/29/08/2026/palestinian-foreign-ministry-calls-for-international-deterrent-measures-against-occupation-settler-crimes",
+          "date": "2026-08-29T17:45:00.000Z",
+          "source": "thepeninsulaqatar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 15
         },
@@ -5649,40 +5731,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "GCC, Abu Dhabi-based Muslim Council of Elders condemn Israeli settlement plans",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gcc-abu-dhabi-based-muslim-council-elders-condemn-israeli-settlement",
-          "date": "2026-08-23T00:21:19.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "GCC, Abu Dhabi-based Muslim Council of Elders condemn Israeli settlement plans Abu Dhabi-based Muslim Council of Elders and Gulf Cooperation Council have condemned Israeli plans to build a so-called E1 settlement in the occupied West Bank and settlement activities east of occupied Jerusalem. In a statement carried by Emirates News Agency, the Council said these settlement plans “constitute a flagr",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 72
+      "itemCount": 74
     },
     {
       "id": "iran-israel",
@@ -5710,7 +5761,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 2,
       "signals": [
         {
           "key": "sanctions",
@@ -5722,7 +5773,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 15
+          "count": 14
         },
         {
           "key": "airstrike",
@@ -5759,7 +5810,7 @@
             51.831,
             35.568
           ],
-          "count": 26,
+          "count": 27,
           "newCount": 1,
           "event": {
             "type": "offensive",
@@ -5793,7 +5844,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israel would strike Iran even with a US deal, minister says Israel will attack Iran again if it tries to rebuild its nuclear or missile programmes, Israeli Energy Minister Eli Cohen said Saturday. Speaking to Israeli media, Cohen said Israel would strike Iran in such a case, regardless of a deal between Tehran and Washington. He said Iran would already have nuclear weapons had Israel not intervene",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -5860,6 +5911,37 @@
           "score": 23
         },
         {
+          "title": "Iran war live: Tehran stands firm over US sanctions; settlers besiege Qusra",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/30/iran-war-live-iran-pledges-to-stand-firm-against-unjust-us-sanctions?traffic_source=rss",
+          "date": "2026-08-30T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran says it will rely equally on diplomacy and defence to protect its interests.",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 22
+        },
+        {
           "title": "Hormuz remains closed until US military actions end, Iran says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hormuz-remains-closed-until-us-military-actions-end-iran-says",
           "date": "2026-08-29T21:23:38.000Z",
@@ -5900,6 +5982,27 @@
             "label": "Opfer"
           },
           "score": 22
+        },
+        {
+          "title": "Ukrainian nuclear power plant without external power for over a week",
+          "url": "https://www.aljazeera.com/news/2026/8/29/ukrainian-nuclear-power-plant-without-external-power-for-over-a-week?traffic_source=rss",
+          "date": "2026-08-29T23:25:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "This is the 27th time since Russia invaded Ukraine that Zaporizhzhia plant has had to rely on emergency diesel supplies.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
         },
         {
           "title": "War weighs on Iran's economy as US intensifies sanctions",
@@ -6306,37 +6409,6 @@
             "type": "naval",
             "icon": "🚢",
             "label": "Seeangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran war live: Tehran pledges to stand firm against ‘unjust’ US sanctions",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?traffic_source=rss",
-          "date": "2026-08-29T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iran says it will rely equally on diplomacy and defence to protect its interests.",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -6776,6 +6848,37 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "Iran war live: Tehran pledges to stand firm against ‘unjust’ US sanctions",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?traffic_source=rss",
+          "date": "2026-08-29T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran says it will rely equally on diplomacy and defence to protect its interests.",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Iran ready for regional cooperation, Pezeshkian says",
@@ -7686,48 +7789,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "New US sanctions signal Trump desperation on Iran, experts say",
-          "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
-          "date": "2026-08-25T20:34:49.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Economic escalation is unlikely to force the Iranian government to capitulate to US demands, according to experts.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Iran foreign minister holds talks with Pakistani, Qatari officials",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-foreign-minister-holds-talks-pakistani-qatari-officials",
-          "date": "2026-08-25T19:20:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran foreign minister holds talks with Pakistani, Qatari officials Iran’s Foreign Minister Abbas Araghchi has held separate phone conversations with&nbsp;Pakistan army chief Asim Munir and&nbsp;Qatari Prime Minister and Minister of Foreign Affairs Mohammed bin Abdulrahman Al Thani. A statement issued by Araghchi on Tuesday said that, during his conversation with his Qatari counterpart, the two rev",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
           },
           "regionEvent": {
             "type": "talks",
@@ -10801,27 +10862,6 @@
           "score": 15
         },
         {
-          "title": "Two-year curfew lifted in Sudan's capital",
-          "url": "https://www.bbc.co.uk/news/articles/c2076gxr0llo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-28T14:18:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The military authorities retook control of the city 18 months ago, but the conflict continues elsewhere.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 12
-        },
-        {
           "title": "Security Council LIVE: War, hunger, flooding escalates in Sudan",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168188",
           "date": "2026-08-24T12:00:00.000Z",
@@ -10839,6 +10879,27 @@
             "type": "famine",
             "icon": "🍽️",
             "label": "Hunger/Versorgung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Two-year curfew lifted in Sudan's capital",
+          "url": "https://www.bbc.co.uk/news/articles/c2076gxr0llo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-28T14:18:53.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The military authorities retook control of the city 18 months ago, but the conflict continues elsewhere.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
           "score": 11
         },
@@ -12785,58 +12846,6 @@
       ],
       "items": [
         {
-          "title": "Pakistan suspends eight officials over hospital fire that killed 14 babies",
-          "url": "https://www.aljazeera.com/news/2026/8/29/pakistan-suspends-eight-officials-over-hospital-fire-that-killed-14-babies?traffic_source=rss",
-          "date": "2026-08-29T18:26:29.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Interim inquiry finds lack of fire safety protocols at Islamabad hospital, prompting suspensions and criminal probe.",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1110",
-            "name": "Islamabad Capital Territory",
-            "nameDe": "Hauptstadtterritorium Islamabad",
-            "type": "Capital Territory",
-            "anchor": [
-              73.085,
-              33.66
-            ],
-            "matched": "Islamabad"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 26
-        },
-        {
-          "title": "Turkiye summons Ukraine ambassador over Black Sea attacks",
-          "url": "https://www.aljazeera.com/news/2026/8/29/turkiye-summons-ukraine-ambassador-over-black-sea-attacks-2?traffic_source=rss",
-          "date": "2026-08-29T17:41:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Two Turkish-operated vessels have been struck this week as a result of the war between Russia and Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Two minor girls being prepared for suicide attacks rescued in Balochistan, home minister claims",
           "url": "https://www.dawn.com/news/2025976/two-minor-girls-being-prepared-for-suicide-attacks-rescued-in-balochistan-home-minister-claims",
           "date": "2026-08-29T15:05:50.000Z",
@@ -12866,6 +12875,58 @@
             "label": "Gefechte"
           },
           "score": 25
+        },
+        {
+          "title": "Pakistan suspends eight officials over hospital fire that killed 14 babies",
+          "url": "https://www.aljazeera.com/news/2026/8/29/pakistan-suspends-eight-officials-over-hospital-fire-that-killed-14-babies?traffic_source=rss",
+          "date": "2026-08-29T18:26:29.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Interim inquiry finds lack of fire safety protocols at Islamabad hospital, prompting suspensions and criminal probe.",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 23
+        },
+        {
+          "title": "Turkiye summons Ukraine ambassador over Black Sea attacks",
+          "url": "https://www.aljazeera.com/news/2026/8/29/turkiye-summons-ukraine-ambassador-over-black-sea-attacks-2?traffic_source=rss",
+          "date": "2026-08-29T17:41:57.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Two Turkish-operated vessels have been struck this week as a result of the war between Russia and Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 23
         },
         {
           "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
@@ -15438,9 +15499,9 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 46,
-      "severity": 52,
-      "newCount": 0,
+      "activity": 51,
+      "severity": 54,
+      "newCount": 1,
       "signals": [
         {
           "key": "escalation",
@@ -15496,8 +15557,8 @@
             37.009,
             33.461
           ],
-          "count": 9,
-          "newCount": 0,
+          "count": 10,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -15557,6 +15618,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Spectacular fireworks over Damascus as ‘Syria Shines Again’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/spectacular-fireworks-over-damascus-as-syria-shines?traffic_source=rss",
+          "date": "2026-08-29T23:34:11.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Footage shows fireworks lighting up Damascus as the Syrian capital hosts the Damascus International Fair.",
+          "isNew": true,
+          "region": {
+            "id": "SYR-144",
+            "name": "Rif Dimashq",
+            "nameDe": "Gouvernement Rif Dimaschq",
+            "type": "Province",
+            "anchor": [
+              37.009,
+              33.461
+            ],
+            "matched": "Damascus"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 23
+        },
         {
           "title": "Local sources report clashes in Syria's Suwaida",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/local-sources-report-clashes-syrias-suwaida",
@@ -16810,7 +16902,7 @@
           "score": 8
         }
       ],
-      "itemCount": 52
+      "itemCount": 53
     },
     {
       "id": "india-pakistan",
@@ -16960,7 +17052,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "India signs deal with US to buy Javelin anti-tank missile systems",
@@ -17065,7 +17157,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Door was locked at Pakistan hospital where fire killed 14 babies, witnesses say",
@@ -18189,9 +18281,9 @@
         "Medianlinie",
         "ADIZ"
       ],
-      "activity": 91,
+      "activity": 93,
       "severity": 50,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
@@ -18320,6 +18412,27 @@
           "score": 22
         },
         {
+          "title": "Ukrainian nuclear power plant without external power for over a week",
+          "url": "https://www.aljazeera.com/news/2026/8/29/ukrainian-nuclear-power-plant-without-external-power-for-over-a-week?traffic_source=rss",
+          "date": "2026-08-29T23:25:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "This is the 27th time since Russia invaded Ukraine that Zaporizhzhia plant has had to rely on emergency diesel supplies.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
           "title": "Ukraine’s Zelenskyy plans to hit Russia with ‘1,000 drones’ a day",
           "url": "https://www.aljazeera.com/news/2026/8/28/ukraines-zelenskyy-plans-to-hit-russia-with-1000-drones-a-day?traffic_source=rss",
           "date": "2026-08-28T19:03:02.000Z",
@@ -18414,27 +18527,6 @@
           "score": 16
         },
         {
-          "title": "How the military-industrial complex is waging war on the planet",
-          "url": "https://www.middleeasteye.net/opinion/how-military-industrial-complex-waging-war-planet",
-          "date": "2026-08-29T12:39:44.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "How the military-industrial complex is waging war on the planet Submitted by John Rees on Wed, 08/19/2026 - 20:52 Nato's rearmament drive will impose severe environmental costs, including a massive projected increase in carbon emissions Parts of cannons are stored at an armament factory in Bourges, France, on 21 March 2025 (Jean-Francois Monier/AFP) On The scale of the arms industry’s contribution",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "No safe place",
           "url": "https://www.dawn.com/news/2025855/no-safe-place",
           "date": "2026-08-29T11:15:46.000Z",
@@ -18454,6 +18546,27 @@
             "label": "Opfer"
           },
           "score": 16
+        },
+        {
+          "title": "How the military-industrial complex is waging war on the planet",
+          "url": "https://www.middleeasteye.net/opinion/how-military-industrial-complex-waging-war-planet",
+          "date": "2026-08-29T12:39:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "How the military-industrial complex is waging war on the planet Submitted by John Rees on Wed, 08/19/2026 - 20:52 Nato's rearmament drive will impose severe environmental costs, including a massive projected increase in carbon emissions Parts of cannons are stored at an armament factory in Bourges, France, on 21 March 2025 (Jean-Francois Monier/AFP) On The scale of the arms industry’s contribution",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Faster, higher, funnier: what we learned from China’s robot games",
@@ -18525,27 +18638,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran war live: IRGC asserts strait control, US enforces blockade",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?traffic_source=rss",
-          "date": "2026-08-29T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iran's IRGC claims decisive control over the Strait of Hormuz as the US maintains its naval blockade.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
           },
           "score": 15
         },
@@ -18819,6 +18911,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran war live: IRGC asserts strait control, US enforces blockade",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?traffic_source=rss",
+          "date": "2026-08-29T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran's IRGC claims decisive control over the Strait of Hormuz as the US maintains its naval blockade.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "score": 11
         },
@@ -19521,27 +19634,6 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ex-Colombian President, Gustavo Petro, says restoring ties with Israel amounts to applauding the Gaza genocide.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "GCC, Abu Dhabi-based Muslim Council of Elders condemn Israeli settlement plans",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gcc-abu-dhabi-based-muslim-council-elders-condemn-israeli-settlement",
-          "date": "2026-08-23T00:21:19.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "GCC, Abu Dhabi-based Muslim Council of Elders condemn Israeli settlement plans Abu Dhabi-based Muslim Council of Elders and Gulf Cooperation Council have condemned Israeli plans to build a so-called E1 settlement in the occupied West Bank and settlement activities east of occupied Jerusalem. In a statement carried by Emirates News Agency, the Council said these settlement plans “constitute a flagr",
           "isNew": false,
           "region": null,
           "event": {
@@ -20405,7 +20497,7 @@
       ],
       "activity": 14,
       "severity": 43,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -20487,7 +20579,7 @@
           "source": "timesofoman.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -20499,7 +20591,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
+          "score": 18
         },
         {
           "title": "Australian War Memorial : Honouring the legacy of Lance Corporal Mervyn McDonald and Afghanistan veterans",
@@ -24417,7 +24509,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "US revokes visa of former Iraqi minister after watchlist listing",
