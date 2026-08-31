@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-31T19:31:14.647Z",
-  "durationSec": 489,
+  "generatedAt": "2026-08-31T20:30:45.740Z",
+  "durationSec": 467,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,21 +114,21 @@
       }
     ],
     "gdelt": {
-      "ok": 2,
+      "ok": 3,
       "failed": 3,
-      "skipped": 11,
+      "skipped": 10,
       "errors": [
         {
-          "id": "sudan",
+          "id": "pakistan",
           "error": "fetch failed"
         },
         {
-          "id": "haiti",
+          "id": "drc-m23",
           "error": "fetch failed"
         },
         {
-          "id": "armenia-azerbaijan",
-          "error": "fetch failed"
+          "id": "india-pakistan",
+          "error": "GDELT gedrosselt"
         }
       ]
     },
@@ -169,13 +169,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 16
+          "count": 17
         },
         {
           "key": "talks",
@@ -305,12 +305,33 @@
       ],
       "items": [
         {
+          "title": "Ukrainians mourn community leader killed in Russian strike on Myla",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/ukrainians-mourn-community-leader-killed-in-russian-strike-on-myla?traffic_source=rss",
+          "date": "2026-08-31T19:51:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukrainians gathered to mourn Taras Didych, who was killed while rushing to help after a Russian strike.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 32
+        },
+        {
           "title": "Deceived and deployed: How young Cameroonians end up fighting in Russia's war in Ukraine",
           "url": "https://www.dw.com/en/deceived-and-deployed-how-young-cameroonians-end-up-fighting-in-russia-s-war-in-ukraine/a-78513256?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-31T13:39:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences. Does the Cameroonian government need to act more decisively?",
+          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences.",
           "isNew": false,
           "region": null,
           "event": {
@@ -322,27 +343,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 30
-        },
-        {
-          "title": "Germany poised to identify suspect in Leipzig drone attack on Ukrainian plane",
-          "url": "https://www.theguardian.com/world/2026/aug/31/germany-leipzig-drone-attack-ukrainian-plane",
-          "date": "2026-08-31T14:14:56.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Berlin expected to outline response to incident this month widely speculated to have been coordinated by Russia The German government is imminently expected to announce who it believes was behind a suspected drone attack on a Ukrainian cargo plane earlier this month and to outline its response to the incident in coordination with its European and Nato partners. The chancellor, Friedrich Merz, told",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 27
         },
@@ -366,6 +366,27 @@
             "label": "Verhandlungen"
           },
           "score": 26
+        },
+        {
+          "title": "Germany poised to identify suspect in Leipzig drone attack on Ukrainian plane",
+          "url": "https://www.theguardian.com/world/2026/aug/31/germany-leipzig-drone-attack-ukrainian-plane",
+          "date": "2026-08-31T14:14:56.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Berlin expected to outline response to incident this month widely speculated to have been coordinated by Russia The German government is imminently expected to announce who it believes was behind a suspected drone attack on a Ukrainian cargo plane earlier this month and to outline its response to the incident in coordination with its European and Nato partners. The chancellor, Friedrich Merz, told",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 24
         },
         {
           "title": "Niger: Russia Helped Foil Coup in Niger - - Official",
@@ -2082,7 +2103,7 @@
           "score": 8
         }
       ],
-      "itemCount": 67
+      "itemCount": 68
     },
     {
       "id": "gaza",
@@ -2111,7 +2132,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 4,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -2160,6 +2181,23 @@
       ],
       "regions": [
         {
+          "id": "ISR-3058",
+          "name": "Jerusalem",
+          "nameDe": "Bezirk Jerusalem",
+          "type": "District",
+          "anchor": [
+            35.035,
+            31.753
+          ],
+          "count": 3,
+          "newCount": 1,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
           "id": "ISR-3057",
           "name": "Tel Aviv",
           "nameDe": "Bezirk Tel Aviv",
@@ -2175,47 +2213,9 @@
             "icon": "🚢",
             "label": "Seeangriff"
           }
-        },
-        {
-          "id": "ISR-3058",
-          "name": "Jerusalem",
-          "nameDe": "Bezirk Jerusalem",
-          "type": "District",
-          "anchor": [
-            35.035,
-            31.753
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
         }
       ],
       "items": [
-        {
-          "title": "Israeli strikes kill at least five Palestinians in Gaza City",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/israeli-strikes-kill-at-least-five-palestinians-in-gaza-city?traffic_source=rss",
-          "date": "2026-08-31T15:20:18.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "At least five Palestinians have been killed in two Israeli attacks in Gaza City.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 32
-        },
         {
           "title": "Israeli air strikes on Gaza kill at least five people: Report",
           "url": "https://www.aljazeera.com/news/2026/8/31/israeli-air-strikes-on-gaza-kill-at-least-five-people?traffic_source=rss",
@@ -2238,13 +2238,34 @@
           "score": 30
         },
         {
+          "title": "Israeli strikes kill at least five Palestinians in Gaza City",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/israeli-strikes-kill-at-least-five-palestinians-in-gaza-city?traffic_source=rss",
+          "date": "2026-08-31T15:20:18.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "At least five Palestinians have been killed in two Israeli attacks in Gaza City.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
+        },
+        {
           "title": "UN  very concerned  over Gaza civilian deaths as Israel continues ceasefire breaches",
           "url": "https://aa.com.tr/en/middle-east/un-very-concerned-over-gaza-civilian-deaths-as-israel-continues-ceasefire-breaches/4043010",
           "date": "2026-08-31T18:15:00.000Z",
           "source": "aa.com.tr",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -2256,7 +2277,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 30
+          "score": 25
         },
         {
           "title": "5 Palestinians killed , several others injured in Israeli attacks on Gaza",
@@ -2265,7 +2286,7 @@
           "source": "aa.com.tr",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2277,7 +2298,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 30
+          "score": 25
         },
         {
           "title": "Israeli Strikes Kill Two Palestinians , Including 3 - Year - Old Boy , in Gaza",
@@ -2286,7 +2307,7 @@
           "source": "democracynow.org",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2298,7 +2319,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 30
+          "score": 25
         },
         {
           "title": "Why has Greece signed a $3.5bn missile deal with Israel?",
@@ -2319,7 +2340,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Masked Israeli settlers attack US news crew in West Bank",
@@ -2328,7 +2349,7 @@
           "source": "israelherald.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2340,7 +2361,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Israeli settlers attack Palestinian homes in West Bank",
@@ -2594,6 +2615,37 @@
           "score": 19
         },
         {
+          "title": "Israel’s Ben-Gvir storms Al-Aqsa mosque in occupied East Jerusalem",
+          "url": "https://www.aljazeera.com/news/2026/8/31/israeli-hardliner-storms-al-aqsa-mosque-in-occupied-east-jerusalem?traffic_source=rss",
+          "date": "2026-08-31T19:25:45.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Far-right minister entered Islam’s third-holiest site alongside settlers under protection of Israeli occupation forces.",
+          "isNew": true,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 19
+        },
+        {
           "title": "Latest flare-up between US and Iran bring conflict's lull to an end",
           "url": "https://www.france24.com/en/latest-flare-up-between-us-and-iran-bring-conflict-s-lull-to-an-end",
           "date": "2026-08-31T15:33:57.000Z",
@@ -2620,7 +2672,7 @@
           "date": "2026-08-31T17:58:58.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Ben Gvir storms Al-Aqsa alongside settlers and Israeli police Israeli security minister Itamar Ben Gvir stormed the Al-Aqsa mosque complex on Monday, accompanied by Israeli settlers and military police.&nbsp; Video circulated widely on social media appears to show Ben Gvir performing Jewish prayers at the site, which is among the holiest sites in Islam and which Jews are forbidden to enter in line",
+          "summary": "Ben Gvir storms Al-Aqsa alongside settlers and Israeli police Israeli Security Minister Itamar Ben Gvir stormed the Al-Aqsa Mosque complex on Monday, accompanied by Israeli settlers and military police.&nbsp; Video circulated widely on social media appearing to show Ben Gvir performing Jewish prayers at the site, which is among the holiest sites in Islam and which Jews are forbidden to enter in li",
           "isNew": false,
           "region": null,
           "event": {
@@ -3601,27 +3653,6 @@
           "score": 18
         },
         {
-          "title": "Three Palestinians injured in settler attack on Al-Mughayyir",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-injured-settler-attack-al-mughayyir",
-          "date": "2026-08-28T20:25:07.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Three Palestinians injured in settler attack on Al-Mughayyir Three Palestinians were injured on Friday night when Israeli settlers attacked the village of Al-Mughayyir, northeast of Ramallah, according to local sources and the Palestine Red Crescent Society (PRCS). Israeli soldiers shot and wounded one Palestinian while providing cover for settlers who raided the western part of the village and at",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Israeli army shoots first and finds reasons to justify mass killings later, veterans group says",
           "url": "https://www.middleeasteye.net/news/israeli-army-shoots-first-and-finds-reasons-justify-mass-killings-later-veterans-group-says",
           "date": "2026-08-31T12:57:33.000Z",
@@ -3641,6 +3672,27 @@
             "label": "Gefechte"
           },
           "score": 17
+        },
+        {
+          "title": "Three Palestinians injured in settler attack on Al-Mughayyir",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-injured-settler-attack-al-mughayyir",
+          "date": "2026-08-28T20:25:07.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Three Palestinians injured in settler attack on Al-Mughayyir Three Palestinians were injured on Friday night when Israeli settlers attacked the village of Al-Mughayyir, northeast of Ramallah, according to local sources and the Palestine Red Crescent Society (PRCS). Israeli soldiers shot and wounded one Palestinian while providing cover for settlers who raided the western part of the village and at",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Israeli drone attack hits southern Lebanon",
@@ -3891,27 +3943,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli settler rabbi says Palestinians should leave the occupied West Bank",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-settler-rabbi-says-palestinians-should-leave-the-occupied-west-bank?traffic_source=rss",
-          "date": "2026-08-30T19:33:18.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Video shows an Israeli settler rabbi telling peace activists that non-Jews in Israel have no national rights.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         }
@@ -5018,6 +5049,573 @@
       "itemCount": 41
     },
     {
+      "id": "sahel-mali",
+      "name": "Mali / Sahel",
+      "nameEn": "Mali",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Mali"
+      ],
+      "lat": 16.5,
+      "lon": -2.5,
+      "tier": "war",
+      "since": "2012",
+      "parties": [
+        "Militärjunta",
+        "JNIM (al-Qaida)",
+        "IS-Sahel",
+        "Tuareg/FLA",
+        "Africa Corps (Russland)"
+      ],
+      "background": "JNIM setzt die Junta mit Blockaden und Angriffen unter Druck, auch nahe Bamako; Tuareg-Rebellen im Norden, russische Africa-Corps-Söldner statt UN/Frankreich.",
+      "hotspots": [
+        "Bamako",
+        "Gao",
+        "Timbuktu",
+        "Mopti",
+        "Kidal"
+      ],
+      "activity": 62,
+      "severity": 73,
+      "newCount": 3,
+      "signals": [
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MLI",
+      "extraCountries": [
+        "BFA",
+        "NER"
+      ],
+      "regions": [
+        {
+          "id": "NER-94",
+          "name": "Niamey",
+          "nameDe": "Niamey",
+          "type": "Capital District",
+          "anchor": [
+            2.131,
+            13.517
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Nigeria : Attempted Coup - Niger Junta Still in Control , but Situation Remains Tense",
+          "url": "https://allafrica.com/stories/202608310094.html",
+          "date": "2026-08-31T05:15:00.000Z",
+          "source": "allafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 25
+        },
+        {
+          "title": "Niger: Failed coup exposes junta's weakness — and Russia's influence",
+          "url": "https://www.dw.com/en/niger-failed-coup-exposes-junta-s-weakness-and-russia-s-influence/a-78572278?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-31T11:32:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The failed coup in Niger brings deep divisions within the military to light. As Russia's support highlights the junta's fading influence, soldiers continue to face jihadist attacks, poor equipment and little pay.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 22
+        },
+        {
+          "title": "Niger mutiny suppressed , but questions remain over junta cohesion",
+          "url": "https://www.koreaherald.com/article/10857346",
+          "date": "2026-08-31T03:30:00.000Z",
+          "source": "koreaherald.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Attempted Coup : Niger junta still in control , but situation remains tense",
+          "url": "https://www.premiumtimesng.com/news/headlines/906327-attempted-coup-niger-junta-still-in-control-but-situation-remains-tense.html",
+          "date": "2026-08-30T16:30:00.000Z",
+          "source": "premiumtimesng.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 18
+        },
+        {
+          "title": "Clashes rock Niger capital , junta says back in control",
+          "url": "http://www.sierraleonetimes.com/news/279273202/clashes-rock-niger-capital-junta-says-back-in-control",
+          "date": "2026-08-29T18:45:00.000Z",
+          "source": "sierraleonetimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Niger's junta says 'regaining control' after clashes in capital",
+          "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital",
+          "date": "2026-08-29T12:33:03.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Niger's ​defense ​ministry said the armed forces were ​progressively ‌retaking ⁠control ‌of sites targeted in ⁠an overnight attack on ​the ‌capital Niamey, according to a ‌statement read ​on state television, which resumed broadcasting ​on ​Saturday after ​temporarily going ​offline.",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Russia cements its role as Africa junta protector after helping quell Niger mutiny",
+          "url": "https://www.news4jax.com/news/2026/08/31/russia-cements-its-role-as-africa-junta-protector-after-helping-quell-nigers-mutiny/",
+          "date": "2026-08-31T18:15:00.000Z",
+          "source": "news4jax.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "West Africa: 'We're Back in Control' - Russia Helps Niger Junta to Retake Military Base",
+          "url": "https://allafrica.com/stories/202608310447.html",
+          "date": "2026-08-31T12:08:27.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] Members of Niger's presidential guard, helped by Russian forces on Saturday, recaptured a key military base in the capital Niamey from mutinous soldiers.",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 16
+        },
+        {
+          "title": "Niger military mutiny : What we know as Russia Africa Corps helps suppress airbase uprising",
+          "url": "http://www.russiaherald.com/news/279276397/niger-military-mutiny-what-we-know-as-russia-africa-corps-helps-suppress-airbase-uprising",
+          "date": "2026-08-31T11:45:00.000Z",
+          "source": "russiaherald.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 14
+        },
+        {
+          "title": "Inside the 24 - hour mutiny that threatened Niger ruling junta and how Russian forces intervened",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/nigers-24-hour-mutiny-how-russian-forces-averted-a-military-coup-amid-growing-unrest/articleshow/133643508.cms",
+          "date": "2026-08-31T06:45:00.000Z",
+          "source": "economictimes.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 14
+        },
+        {
+          "title": "Niger junta puts down mutiny with help from Russia Africa Corps",
+          "url": "http://www.nigeriasun.com/news/279274970/niger-junta-puts-down-mutiny-with-help-from-russia-africa-corps",
+          "date": "2026-08-30T18:45:00.000Z",
+          "source": "nigeriasun.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 13
+        },
+        {
+          "title": "Inside 24 - hour mutiny that threatened Nigers ruling junta , how ... ",
+          "url": "https://dailypioneer.com/news/inside-24-hour-mutiny-that-threatened-nigers-ruling-junta-how-russian-forces-intervened",
+          "date": "2026-08-30T18:00:00.000Z",
+          "source": "dailypioneer.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Niger junta puts down mutiny with help from Russia's Africa Corps",
+          "url": "https://www.france24.com/en/africa/20260830-niger-junta-aided-by-russian-paramilitary-forces-regains-control-after-mutiny",
+          "date": "2026-08-30T15:20:01.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Life returned to normal in Niger's capital on Sunday, a day after mutineers stormed both the presidential palace and a military base at Niamey's main airport, resisting forces loyal to the ruling junta until Russia’s Africa Corps intervened. State TV reported that dozens of soldiers were killed or arrested, with some paraded in front of cameras live on television.",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
+        },
+        {
+          "title": "Somali piracy surges as the impact of the US-Iran war ripples outwards",
+          "url": "https://www.bbc.co.uk/news/articles/cr4vx4pneydo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-29T01:14:13.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Two ships were seized within four days last week raising to at least 13 the number attacked since January.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
+        },
+        {
+          "title": "Niger: Junta says back in control after mutiny",
+          "url": "https://www.france24.com/en/niger-junta-says-back-in-control-after-mutiny",
+          "date": "2026-08-30T08:41:57.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Gunfire and explosions have been reported in Niger, as mutinying soldiers attempted to storm the presidential palace in the capital, Niamey, in a challenge to the ruling junta. The government said it had regained control after hours of fighting on Saturday. Léo Paichard and Nick Rushworth report.",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
+        },
+        {
+          "title": "Turkiye, Somalia forces free cargo vessel hijacked by pirates",
+          "url": "https://www.aljazeera.com/news/2026/8/30/turkiye-somalia-forces-frees-cargo-vessel-hijacked-by-pirates?traffic_source=rss",
+          "date": "2026-08-30T00:16:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Somali authorities say 14 pirates were killed in the 10-day operation to free a Cameroon-flagged cargo vessel.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 11
+        },
+        {
+          "title": "Niger junta says it is back in control after soldiers' mutiny rocks capital",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "date": "2026-08-29T06:33:07.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Niger's junta said Saturday it was back in control after mutineers held soldiers hostage at a military base next to the capital's airport. Russian forces reportedly helped members of Niger's presidential guard recapture the air base, killing some of the mutineers, according to diplomatic and security sources.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
+        },
+        {
+          "title": "Tuareg rebels free more Malian soldiers in prisoner swap, sources say",
+          "url": "https://www.aljazeera.com/news/2026/8/29/tuareg-rebels-free-more-malian-soldiers-in-prisoner-swap-sources-say?traffic_source=rss",
+          "date": "2026-08-29T01:50:03.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Tuareg rebels have freed about 60 Malian soldiers in exchange for one of their own leaders, security sources said.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 11
+        },
+        {
+          "title": "  Heat and shackle : Russian soldiers freed from terrorist captivity in Mali talk to RT",
+          "url": "http://www.russiaherald.com/news/279265348/heat-and-shackles-russian-soldiers-freed-from-terrorist-captivity-in-mali-talk-to-rt",
+          "date": "2026-08-26T03:45:00.000Z",
+          "source": "russiaherald.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 8
+        },
+        {
+          "title": "Mali: Tuareg Rebels Release 22 Mali Soldiers - Sources",
+          "url": "https://allafrica.com/stories/202608250507.html",
+          "date": "2026-08-25T14:17:26.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Tuareg separatist rebels on Sunday freed 22 Mali government troops, some held for more than three years, adding to a steady flow of releases in recent weeks, according to security and junta sources.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Somalia: Somali Army Chief Concludes Training for Officers in Mogadishu",
+          "url": "https://allafrica.com/stories/202608250130.html",
+          "date": "2026-08-25T05:52:58.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Mogadishu -- Somalia's army chief, Brigadier General Ibrahim Mohamed Mahmoud, has concluded a training course for Somali National Army officers in Mogadishu, aimed at strengthening their military knowledge, professional skills and leadership capabilities.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 21
+    },
+    {
       "id": "haiti",
       "name": "Haiti",
       "nameEn": "Haiti Gang Crisis",
@@ -5041,8 +5639,8 @@
         "Artibonite",
         "Cité Soleil"
       ],
-      "activity": 64,
-      "severity": 74,
+      "activity": 61,
+      "severity": 73,
       "newCount": 0,
       "signals": [
         {
@@ -5129,27 +5727,6 @@
           "score": 22
         },
         {
-          "title": "Pakistan Condemns Latest Gang Attacks in Haiti",
-          "url": "https://newsmakers.pk/pakistan-condemns-latest-gang-attacks-in-haiti/",
-          "date": "2026-08-30T19:45:00.000Z",
-          "source": "newsmakers.pk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Security Council LIVE: Deadly gang attacks spike in Haiti",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168222",
           "date": "2026-08-28T12:00:00.000Z",
@@ -5169,6 +5746,27 @@
             "label": "Gefechte"
           },
           "score": 21
+        },
+        {
+          "title": "Pakistan Condemns Latest Gang Attacks in Haiti",
+          "url": "https://newsmakers.pk/pakistan-condemns-latest-gang-attacks-in-haiti/",
+          "date": "2026-08-30T19:45:00.000Z",
+          "source": "newsmakers.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Pope Leo XIV Appeals for Release of Haiti Hostages , Prays for Flood Victims in Nepal And Tibet",
@@ -5885,27 +6483,6 @@
           "score": 15
         },
         {
-          "title": "Violence flares in Haiti as gang attack kills 30 people",
-          "url": "https://www.aljazeera.com/news/2026/8/24/violence-flares-in-haiti-as-gang-attack-kills-30-people?traffic_source=rss",
-          "date": "2026-08-24T20:23:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Island nation grapples with violence as it seeks to hold first elections in more than a decade.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Haiti ramps up the fight against gangs in the capital, but violence spreads elsewhere",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168203",
           "date": "2026-08-25T12:00:00.000Z",
@@ -5990,532 +6567,7 @@
           "score": 8
         }
       ],
-      "itemCount": 44
-    },
-    {
-      "id": "sahel-mali",
-      "name": "Mali / Sahel",
-      "nameEn": "Mali",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Mali"
-      ],
-      "lat": 16.5,
-      "lon": -2.5,
-      "tier": "war",
-      "since": "2012",
-      "parties": [
-        "Militärjunta",
-        "JNIM (al-Qaida)",
-        "IS-Sahel",
-        "Tuareg/FLA",
-        "Africa Corps (Russland)"
-      ],
-      "background": "JNIM setzt die Junta mit Blockaden und Angriffen unter Druck, auch nahe Bamako; Tuareg-Rebellen im Norden, russische Africa-Corps-Söldner statt UN/Frankreich.",
-      "hotspots": [
-        "Bamako",
-        "Gao",
-        "Timbuktu",
-        "Mopti",
-        "Kidal"
-      ],
-      "activity": 50,
-      "severity": 70,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MLI",
-      "extraCountries": [
-        "BFA",
-        "NER"
-      ],
-      "regions": [
-        {
-          "id": "NER-94",
-          "name": "Niamey",
-          "nameDe": "Niamey",
-          "type": "Capital District",
-          "anchor": [
-            2.131,
-            13.517
-          ],
-          "count": 4,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Niger: Attempted Coup - Niger Junta Still in Control, but Situation Remains Tense",
-          "url": "https://allafrica.com/stories/202608310094.html",
-          "date": "2026-08-31T04:23:13.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 24
-        },
-        {
-          "title": "Niger: Failed coup exposes junta's weakness — and Russia's influence",
-          "url": "https://www.dw.com/en/niger-failed-coup-exposes-junta-s-weakness-and-russia-s-influence/a-78572278?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-31T11:32:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "The failed coup in Niger brings deep divisions within the military to light. As Russia's support highlights the junta's fading influence, soldiers continue to face jihadist attacks, poor equipment and little pay.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 22
-        },
-        {
-          "title": "Attempted Coup : Niger junta still in control , but situation remains tense",
-          "url": "https://www.premiumtimesng.com/news/headlines/906327-attempted-coup-niger-junta-still-in-control-but-situation-remains-tense.html",
-          "date": "2026-08-30T16:30:00.000Z",
-          "source": "premiumtimesng.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 18
-        },
-        {
-          "title": "Clashes rock Niger capital , junta says back in control",
-          "url": "http://www.sierraleonetimes.com/news/279273202/clashes-rock-niger-capital-junta-says-back-in-control",
-          "date": "2026-08-29T18:45:00.000Z",
-          "source": "sierraleonetimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Niger's junta says 'regaining control' after clashes in capital",
-          "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital",
-          "date": "2026-08-29T12:33:03.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Niger's ​defense ​ministry said the armed forces were ​progressively ‌retaking ⁠control ‌of sites targeted in ⁠an overnight attack on ​the ‌capital Niamey, according to a ‌statement read ​on state television, which resumed broadcasting ​on ​Saturday after ​temporarily going ​offline.",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "West Africa: 'We're Back in Control' - Russia Helps Niger Junta to Retake Military Base",
-          "url": "https://allafrica.com/stories/202608310447.html",
-          "date": "2026-08-31T12:08:27.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Vanguard] Members of Niger's presidential guard, helped by Russian forces on Saturday, recaptured a key military base in the capital Niamey from mutinous soldiers.",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 16
-        },
-        {
-          "title": "Niger mutiny suppressed , but questions remain over junta cohesion",
-          "url": "https://www.koreaherald.com/article/10857346",
-          "date": "2026-08-31T03:30:00.000Z",
-          "source": "koreaherald.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Niger junta puts down mutiny with help from Russia Africa Corps",
-          "url": "http://www.nigeriasun.com/news/279274970/niger-junta-puts-down-mutiny-with-help-from-russia-africa-corps",
-          "date": "2026-08-30T18:45:00.000Z",
-          "source": "nigeriasun.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Inside the 24 - hour mutiny that threatened Niger ruling junta and how Russian forces intervened | World News",
-          "url": "http://www.thegazette.com/news/world/inside-the-24-hour-mutiny-that-threatened-niger-s-ruling-junta-and-how-russian-forces/article_88440b07-ef68-552e-a4e7-4f4c40fda48d.html",
-          "date": "2026-08-30T18:30:00.000Z",
-          "source": "thegazette.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Inside 24 - hour mutiny that threatened Nigers ruling junta , how ... ",
-          "url": "https://dailypioneer.com/news/inside-24-hour-mutiny-that-threatened-nigers-ruling-junta-how-russian-forces-intervened",
-          "date": "2026-08-30T18:00:00.000Z",
-          "source": "dailypioneer.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Niger junta puts down mutiny with help from Russia's Africa Corps",
-          "url": "https://www.france24.com/en/africa/20260830-niger-junta-aided-by-russian-paramilitary-forces-regains-control-after-mutiny",
-          "date": "2026-08-30T15:20:01.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Life returned to normal in Niger's capital on Sunday, a day after mutineers stormed both the presidential palace and a military base at Niamey's main airport, resisting forces loyal to the ruling junta until Russia’s Africa Corps intervened. State TV reported that dozens of soldiers were killed or arrested, with some paraded in front of cameras live on television.",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 11
-        },
-        {
-          "title": "Somali piracy surges as the impact of the US-Iran war ripples outwards",
-          "url": "https://www.bbc.co.uk/news/articles/cr4vx4pneydo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-29T01:14:13.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Two ships were seized within four days last week raising to at least 13 the number attacked since January.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 11
-        },
-        {
-          "title": "Niger: Junta says back in control after mutiny",
-          "url": "https://www.france24.com/en/niger-junta-says-back-in-control-after-mutiny",
-          "date": "2026-08-30T08:41:57.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Gunfire and explosions have been reported in Niger, as mutinying soldiers attempted to storm the presidential palace in the capital, Niamey, in a challenge to the ruling junta. The government said it had regained control after hours of fighting on Saturday. Léo Paichard and Nick Rushworth report.",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 11
-        },
-        {
-          "title": "Turkiye, Somalia forces free cargo vessel hijacked by pirates",
-          "url": "https://www.aljazeera.com/news/2026/8/30/turkiye-somalia-forces-frees-cargo-vessel-hijacked-by-pirates?traffic_source=rss",
-          "date": "2026-08-30T00:16:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Somali authorities say 14 pirates were killed in the 10-day operation to free a Cameroon-flagged cargo vessel.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "Niger junta says it is back in control after soldiers' mutiny rocks capital",
-          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
-          "date": "2026-08-29T06:33:07.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Niger's junta said Saturday it was back in control after mutineers held soldiers hostage at a military base next to the capital's airport. Russian forces reportedly helped members of Niger's presidential guard recapture the air base, killing some of the mutineers, according to diplomatic and security sources.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 11
-        },
-        {
-          "title": "Tuareg rebels free more Malian soldiers in prisoner swap, sources say",
-          "url": "https://www.aljazeera.com/news/2026/8/29/tuareg-rebels-free-more-malian-soldiers-in-prisoner-swap-sources-say?traffic_source=rss",
-          "date": "2026-08-29T01:50:03.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Tuareg rebels have freed about 60 Malian soldiers in exchange for one of their own leaders, security sources said.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 11
-        },
-        {
-          "title": "  Heat and shackle : Russian soldiers freed from terrorist captivity in Mali talk to RT",
-          "url": "http://www.russiaherald.com/news/279265348/heat-and-shackles-russian-soldiers-freed-from-terrorist-captivity-in-mali-talk-to-rt",
-          "date": "2026-08-26T03:45:00.000Z",
-          "source": "russiaherald.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 8
-        },
-        {
-          "title": "Mali: Tuareg Rebels Release 22 Mali Soldiers - Sources",
-          "url": "https://allafrica.com/stories/202608250507.html",
-          "date": "2026-08-25T14:17:26.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Tuareg separatist rebels on Sunday freed 22 Mali government troops, some held for more than three years, adding to a steady flow of releases in recent weeks, according to security and junta sources.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Somalia: Somali Army Chief Concludes Training for Officers in Mogadishu",
-          "url": "https://allafrica.com/stories/202608250130.html",
-          "date": "2026-08-25T05:52:58.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Mogadishu -- Somalia's army chief, Brigadier General Ibrahim Mohamed Mahmoud, has concluded a training course for Somali National Army officers in Mogadishu, aimed at strengthening their military knowledge, professional skills and leadership capabilities.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 19
+      "itemCount": 43
     },
     {
       "id": "west-bank",
@@ -6823,7 +6875,7 @@
           "date": "2026-08-31T17:58:58.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Ben Gvir storms Al-Aqsa alongside settlers and Israeli police Israeli security minister Itamar Ben Gvir stormed the Al-Aqsa mosque complex on Monday, accompanied by Israeli settlers and military police.&nbsp; Video circulated widely on social media appears to show Ben Gvir performing Jewish prayers at the site, which is among the holiest sites in Islam and which Jews are forbidden to enter in line",
+          "summary": "Ben Gvir storms Al-Aqsa alongside settlers and Israeli police Israeli Security Minister Itamar Ben Gvir stormed the Al-Aqsa Mosque complex on Monday, accompanied by Israeli settlers and military police.&nbsp; Video circulated widely on social media appearing to show Ben Gvir performing Jewish prayers at the site, which is among the holiest sites in Islam and which Jews are forbidden to enter in li",
           "isNew": false,
           "region": null,
           "event": {
@@ -7403,7 +7455,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "In a town in the heart of the US , Israeli settler violence in West Bank hits close to home",
@@ -7486,48 +7538,6 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli settler rabbi says Palestinians should leave the occupied West Bank",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-settler-rabbi-says-palestinians-should-leave-the-occupied-west-bank?traffic_source=rss",
-          "date": "2026-08-30T19:33:18.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Video shows an Israeli settler rabbi telling peace activists that non-Jews in Israel have no national rights.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "British Arabs urge UK government to impose binding restrictions on Israeli settlements",
-          "url": "https://www.middleeasteye.net/news/british-arabs-urge-uk-government-impose-binding-rules-israeli-settlements",
-          "date": "2026-08-30T20:30:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "British Arabs urge UK government to impose binding restrictions on Israeli settlements Submitted by Ayse Betul Aytekin on Sun, 08/30/2026 - 21:21 Joint letter to Foreign Secretary Miliband urges the UK to close the gap between its stated legal position and its actions, while helping protect Palestinians from escalating settler violence A woman holds a placard outside Downing Street during a \"Natio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -7719,6 +7729,48 @@
             "label": "Gefechte"
           },
           "score": 12
+        },
+        {
+          "title": "Israeli settler rabbi says Palestinians should leave the occupied West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-settler-rabbi-says-palestinians-should-leave-the-occupied-west-bank?traffic_source=rss",
+          "date": "2026-08-30T19:33:18.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Video shows an Israeli settler rabbi telling peace activists that non-Jews in Israel have no national rights.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "British Arabs urge UK government to impose binding restrictions on Israeli settlements",
+          "url": "https://www.middleeasteye.net/news/british-arabs-urge-uk-government-impose-binding-rules-israeli-settlements",
+          "date": "2026-08-30T20:30:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "British Arabs urge UK government to impose binding restrictions on Israeli settlements Submitted by Ayse Betul Aytekin on Sun, 08/30/2026 - 21:21 Joint letter to Foreign Secretary Miliband urges the UK to close the gap between its stated legal position and its actions, while helping protect Palestinians from escalating settler violence A woman holds a placard outside Downing Street during a \"Natio",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "'Why would anyone shoot an infant?': Killing of Palestinian children, teens by Israel surges in West Bank",
@@ -8357,7 +8409,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -8445,27 +8497,6 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 30
-        },
-        {
-          "title": "US and Iran trade strikes for first time in weeks",
-          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-31T13:47:30.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The attack on Larak Island in the Strait of Hormuz - the first known US strike since late July - has killed two people and injured two others.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
           "score": 27
         },
         {
@@ -8486,27 +8517,6 @@
             "type": "explosion",
             "icon": "💣",
             "label": "Explosion/Anschlag"
-          },
-          "score": 26
-        },
-        {
-          "title": "Trump says Iran is ‘dead’, vows to respond after renewed clashes",
-          "url": "https://www.aljazeera.com/news/2026/8/31/trump-says-iran-is-dead-vows-to-respond-after-renewed-clashes?traffic_source=rss",
-          "date": "2026-08-31T15:11:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US president promises to hit Iran and calls for the country's leaders to be prosecuted for killing protesters.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 26
         },
@@ -8547,8 +8557,8 @@
           "date": "2026-08-31T18:25:40.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Oil prices jump amid resumption of US-Iran clashes Crude oil prices rose on Monday after the US attacked Iran's Larak Island, prompting Iran to retaliate in the first open fire between the two countries since July.&nbsp; Brent crude prices jumped over 2.5% on Monday alone, taking prices to $90.34 per barrel.&nbsp; The US-Israeli assault has caused oil prices to spike amid Iran's closure of the vit",
-          "isNew": true,
+          "summary": "Oil prices jump amid resumption of US-Iran clashes Crude oil prices rose on Monday after the US attacked Iran's Larak Island, prompting Iran to retaliate in the first open fire between the two countries since July.&nbsp; Brent crude prices jumped over 2.5 percent on Monday alone, taking prices to $90.34 per barrel.&nbsp; The US-Israeli assault has caused oil prices to spike amid Iran's closure of ",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -8594,35 +8604,46 @@
           "score": 25
         },
         {
-          "title": "Tehran 28 August 2026 #1",
-          "url": "https://www.crisisgroup.org/content/tehran-28-august-2026-1",
-          "date": "2026-08-28T19:53:08.000Z",
-          "source": "International Crisis Group",
-          "sourceType": "analysis",
-          "summary": "Tehran 28 August 2026 #1 lalasor Fri, 08/28/2026 - 21:53 Tehran Fri, 08/28/2026 - 12:00 28 August 2026 The U.S. announced&nbsp; sanctions against “the manager of the Dubai branch of Iran’s Bank Melli… [and] a Hong Kong-based company that has helped designated Iranian individuals and entities to access the international financial system”. The Treasury Department additionally “proposed a rule that w",
+          "title": "Trump says Iran is ‘dead’, vows to respond after renewed clashes",
+          "url": "https://www.aljazeera.com/news/2026/8/31/trump-says-iran-is-dead-vows-to-respond-after-renewed-clashes?traffic_source=rss",
+          "date": "2026-08-31T15:11:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US president promises to hit Iran and calls for the country's leaders to be prosecuted for killing protesters.",
           "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
+        },
+        {
+          "title": "US and Iran trade strikes for first time in weeks",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-31T13:47:30.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The attack on Larak Island in the Strait of Hormuz - the first known US strike since late July - has killed two people and injured two others.",
+          "isNew": false,
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 22
+          "score": 24
         },
         {
           "title": "Two killed in US attack on Larak: Iranian state media",
@@ -8896,27 +8917,6 @@
           "score": 22
         },
         {
-          "title": "US forces strike Iranian launchers on Larak island in Strait of Hormuz",
-          "url": "https://www.france24.com/en/middle-east/20260830-us-forces-strike-iranian-launchers-on-larak-island-in-strait-of-hormuz",
-          "date": "2026-08-30T20:27:09.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "US forces struck Iranian rocket launchers on the Strait of Hormuz in the first military action in a month, a US official said Sunday. ⁠Iran's ⁠Revolutionary ​Guards ​said the attack on Larak ​island ‌killed and wounded ⁠several Iranian fighters and ​civilians, and ‌vowed to punish those ​responsible.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Iran's IRGC says US MQ-9 drone downed over Hormuz Strait",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-us-mq-9-drone-downed-over-hormuz-strait",
           "date": "2026-08-31T04:25:46.000Z",
@@ -9136,27 +9136,6 @@
           "score": 22
         },
         {
-          "title": "Iran attacks US bases in Jordan after US strikes Larak Island",
-          "url": "https://www.aljazeera.com/news/2026/8/30/us-strikes-irans-lark-island-in-first-attack-in-weeks?traffic_source=rss",
-          "date": "2026-08-30T20:15:47.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The exchange of attacks is the first flare-up in violence between the two sides since late July.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "US forces strike two Iranian launchers on Iran's Larak island",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-forces-strike-two-iranian-launchers-irans-larak-island",
           "date": "2026-08-30T20:43:20.000Z",
@@ -9288,7 +9267,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Donald Trump threatened to hit Iran \"hard\" after the two foes traded fire for the first time in over a month, while Iran's president warned that more fighting with the US was not in his country's interest. After six months of war, the foes remain at an impasse, with Iran keeping the strategic Strait of Hormuz closed and the US persisting with a naval counter-blockade of Iran. FRANCE 24's Reza Saya",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9334,6 +9313,37 @@
           "score": 20
         },
         {
+          "title": "Tehran 28 August 2026 #1",
+          "url": "https://www.crisisgroup.org/content/tehran-28-august-2026-1",
+          "date": "2026-08-28T19:53:08.000Z",
+          "source": "International Crisis Group",
+          "sourceType": "analysis",
+          "summary": "Tehran 28 August 2026 #1 lalasor Fri, 08/28/2026 - 21:53 Tehran Fri, 08/28/2026 - 12:00 28 August 2026 The U.S. announced&nbsp; sanctions against “the manager of the Dubai branch of Iran’s Bank Melli… [and] a Hong Kong-based company that has helped designated Iranian individuals and entities to access the international financial system”. The Treasury Department additionally “proposed a rule that w",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 19
+        },
+        {
           "title": "Vance says Trump ‘sending a message’ to Iran with AI-generated video",
           "url": "https://www.aljazeera.com/economy/2026/8/31/vance-says-trump-sending-a-message-to-iran-with-ai-generated-video?traffic_source=rss",
           "date": "2026-08-31T17:11:54.000Z",
@@ -9376,12 +9386,12 @@
           "score": 19
         },
         {
-          "title": "Depleted US Strategic Petroleum Reserve loses potency as Iran war grinds on",
-          "url": "https://www.dawn.com/news/2026408/depleted-us-strategic-petroleum-reserve-loses-potency-as-iran-war-grinds-on",
-          "date": "2026-08-31T13:56:31.000Z",
-          "source": "Dawn (Pakistan)",
+          "title": "US forces strike Iranian launchers on Larak island in Strait of Hormuz",
+          "url": "https://www.france24.com/en/middle-east/20260830-us-forces-strike-iranian-launchers-on-larak-island-in-strait-of-hormuz",
+          "date": "2026-08-30T20:27:09.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "Six months into the US-Israeli war on Iran, Washington may find it harder to calm jittery oil markets after US presidents drained the ageing Strategic Petroleum Reserve (SPR) over the last five years. The SPR, which Washington created after the oil crises of the 1970s, holds crude in a series of 60 underground salt caverns along the coasts of Texas and Louisiana. After years of releases by former ",
+          "summary": "US forces struck Iranian rocket launchers on the Strait of Hormuz in the first military action in a month, a US official said Sunday. ⁠Iran's ⁠Revolutionary ​Guards ​said the attack on Larak ​island ‌killed and wounded ⁠several Iranian fighters and ​civilians, and ‌vowed to punish those ​responsible.",
           "isNew": false,
           "region": null,
           "event": {
@@ -9390,11 +9400,32 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           },
-          "score": 19
+          "score": 18
+        },
+        {
+          "title": "Iran attacks US bases in Jordan after US strikes Larak Island",
+          "url": "https://www.aljazeera.com/news/2026/8/30/us-strikes-irans-lark-island-in-first-attack-in-weeks?traffic_source=rss",
+          "date": "2026-08-30T20:15:47.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The exchange of attacks is the first flare-up in violence between the two sides since late July.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Six months on, what did the strikes on Iran achieve?",
@@ -9635,6 +9666,27 @@
             "label": "Vertreibung"
           },
           "score": 17
+        },
+        {
+          "title": "Depleted US Strategic Petroleum Reserve loses potency as Iran war grinds on",
+          "url": "https://www.dawn.com/news/2026408/depleted-us-strategic-petroleum-reserve-loses-potency-as-iran-war-grinds-on",
+          "date": "2026-08-31T13:56:31.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Six months into the US-Israeli war on Iran, Washington may find it harder to calm jittery oil markets after US presidents drained the ageing Strategic Petroleum Reserve (SPR) over the last five years. The SPR, which Washington created after the oil crises of the 1970s, holds crude in a series of 60 underground salt caverns along the coasts of Texas and Louisiana. After years of releases by former ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Strait of Hormuz accessibility at the centre of US-Iran war flare-up",
@@ -12663,7 +12715,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -12705,7 +12757,7 @@
             11.891
           ],
           "count": 7,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -13171,7 +13223,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "Askira-Uba’s education authority says 20 schools were shut after a recent security crisis. The post Terrorism: 57 primary schools shut, 80 students in captivity in Borno LGA – Official appeared first on Premium Times Nigeria .",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "NGA-2839",
             "name": "Borno State",
@@ -15049,8 +15101,8 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 78,
-      "severity": 62,
+      "activity": 76,
+      "severity": 61,
       "newCount": 0,
       "signals": [
         {
@@ -15117,7 +15169,7 @@
             65.869,
             28.318
           ],
-          "count": 6,
+          "count": 5,
           "newCount": 0,
           "event": {
             "type": "clash",
@@ -15729,37 +15781,6 @@
           "score": 15
         },
         {
-          "title": "BNM holds protest in Germany Gottingen over alleged Pakistan Air Force strikes in Balochistan",
-          "url": "http://www.southeastasiapost.com/news/279262396/bnm-holds-protest-in-germany-gottingen-over-alleged-pakistan-air-force-strikes-in-balochistan",
-          "date": "2026-08-24T19:45:00.000Z",
-          "source": "southeastasiapost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 15
-        },
-        {
           "title": "Top officials from Turkiye, Saudi Arabia, Pakistan to meet in Istanbul",
           "url": "https://www.aljazeera.com/news/2026/8/30/top-officials-from-turkiye-saudi-arabia-pakistan-to-meet-in-istanbul?traffic_source=rss",
           "date": "2026-08-30T18:19:03.000Z",
@@ -16112,30 +16133,9 @@
             "label": "Verhandlungen"
           },
           "score": 8
-        },
-        {
-          "title": "TTP : The Terrorist Network Pakistan Failed to Defeat",
-          "url": "https://slguardian.org/ttp-the-terrorist-network-pakistan-failed-to-defeat/",
-          "date": "2026-08-24T19:45:00.000Z",
-          "source": "slguardian.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 40
+      "itemCount": 38
     },
     {
       "id": "drc-m23",
@@ -18447,13 +18447,13 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 1,
+      "newCount": 2,
       "signals": [
         {
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 14
+          "count": 13
         },
         {
           "key": "casualties",
@@ -18541,6 +18541,27 @@
       ],
       "items": [
         {
+          "title": "Top US general says no plans to send troops to polls for November elections",
+          "url": "https://www.aljazeera.com/news/2026/8/31/top-us-general-says-no-plans-to-send-troops-to-polls-for-november-elections?traffic_source=rss",
+          "date": "2026-08-31T19:20:28.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Remarks come in response to concerns from Democrats that military could be used to interfere in elections.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 26
+        },
+        {
           "title": "Germany poised to identify suspect in Leipzig drone attack on Ukrainian plane",
           "url": "https://www.theguardian.com/world/2026/aug/31/germany-leipzig-drone-attack-ukrainian-plane",
           "date": "2026-08-31T14:14:56.000Z",
@@ -18559,7 +18580,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Iran hostilities flare after US strike in strait of Hormuz – Middle East crisis live",
@@ -18579,27 +18600,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "US forces strike Iranian launchers on Larak island in Strait of Hormuz",
-          "url": "https://www.france24.com/en/middle-east/20260830-us-forces-strike-iranian-launchers-on-larak-island-in-strait-of-hormuz",
-          "date": "2026-08-30T20:27:09.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "US forces struck Iranian rocket launchers on the Strait of Hormuz in the first military action in a month, a US official said Sunday. ⁠Iran's ⁠Revolutionary ​Guards ​said the attack on Larak ​island ‌killed and wounded ⁠several Iranian fighters and ​civilians, and ‌vowed to punish those ​responsible.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
           },
           "score": 22
         },
@@ -18677,35 +18677,25 @@
           "score": 22
         },
         {
-          "title": "How China buried Tibet flood images after Nepal disaster",
-          "url": "https://www.dw.com/en/how-china-buried-tibet-flood-images-after-nepal-disaster/a-78576472?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-31T14:19:00.000Z",
-          "source": "Deutsche Welle",
+          "title": "Marine Le Pen's National Rally plans to \"sanction\" the wearing of the veil with a fine",
+          "url": "https://www.france24.com/en/marine-le-pen-s-national-rally-plans-to-sanction-the-wearing-of-the-veil-with-a-fine",
+          "date": "2026-08-31T20:01:16.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "In Tibet, a digital crackdown followed the deadly flood that has devastated communities along the China-Nepal border. Censors erased viral footage while Chinese state media flooded platforms with official content.",
-          "isNew": false,
-          "region": {
-            "id": "CHN-1662",
-            "name": "Tibet",
-            "nameDe": "Autonomes Gebiet Tibet",
-            "type": "Autonomous Region",
-            "anchor": [
-              88.118,
-              31.686
-            ],
-            "matched": "Tibet"
-          },
+          "summary": "The National Rally plans to \"penalize the wearing of the Islamic veil\" with \"a fine\" if it comes to power, MP Jean-Philippe Tanguy, Marine Le Pen's lieutenant in the presidential election, stated on Sunday. \"We will obviously fight Islamist ideology and we will penalize the wearing of the veil, also in solidarity with all the women around the world who are forced to wear it and who die for this fr",
+          "isNew": true,
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
           },
-          "score": 20
+          "score": 19
         },
         {
           "title": "Hundreds feared stuck in hydropower tunnels as flood deaths surpass 950 in Nepal and China",
@@ -18714,7 +18704,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Rescuers raced Monday to free hundreds of workers believed to be trapped in tunnels at hydropower sites that were buried in mud by catastrophic flooding on the Nepal-China border, as the death toll climbed and increasingly desperate families searched for missing loved ones. FRANCE 24's Eliza Herbert reports.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -18727,6 +18717,27 @@
             "label": "Opfer"
           },
           "score": 19
+        },
+        {
+          "title": "US forces strike Iranian launchers on Larak island in Strait of Hormuz",
+          "url": "https://www.france24.com/en/middle-east/20260830-us-forces-strike-iranian-launchers-on-larak-island-in-strait-of-hormuz",
+          "date": "2026-08-30T20:27:09.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "US forces struck Iranian rocket launchers on the Strait of Hormuz in the first military action in a month, a US official said Sunday. ⁠Iran's ⁠Revolutionary ​Guards ​said the attack on Larak ​island ‌killed and wounded ⁠several Iranian fighters and ​civilians, and ‌vowed to punish those ​responsible.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Pentagon plays down report of Hegseth regularly overruling military advice",
@@ -18904,6 +18915,37 @@
             "label": "Opfer"
           },
           "score": 18
+        },
+        {
+          "title": "How China buried Tibet flood images after Nepal disaster",
+          "url": "https://www.dw.com/en/how-china-buried-tibet-flood-images-after-nepal-disaster/a-78576472?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-31T14:19:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "In Tibet, a digital crackdown followed the deadly flood that has devastated communities along the China-Nepal border. Censors erased viral footage while Chinese state media flooded platforms with official content.",
+          "isNew": false,
+          "region": {
+            "id": "CHN-1662",
+            "name": "Tibet",
+            "nameDe": "Autonomes Gebiet Tibet",
+            "type": "Autonomous Region",
+            "anchor": [
+              88.118,
+              31.686
+            ],
+            "matched": "Tibet"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
         },
         {
           "title": "Nigeria: Bishop of Kontagora Calls for Increased Security Measures At Places of Worship",
@@ -19430,27 +19472,6 @@
           "score": 11
         },
         {
-          "title": "US plans to cut off military aid to key Middle East ally, BBC told",
-          "url": "https://www.bbc.co.uk/news/articles/cn74m8e5rleo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-08-28T19:45:39.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Iraqi Kurdistan fears the Trump administration's plan will make the region more vulnerable to further attacks from Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 11
-        },
-        {
           "title": "Iran war live: IRGC asserts strait control, US enforces blockade",
           "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?traffic_source=rss",
           "date": "2026-08-29T00:00:00.000Z",
@@ -19491,6 +19512,27 @@
             "label": "Vertreibung"
           },
           "score": 9
+        },
+        {
+          "title": "US plans to cut off military aid to key Middle East ally, BBC told",
+          "url": "https://www.bbc.co.uk/news/articles/cn74m8e5rleo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-08-28T19:45:39.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Iraqi Kurdistan fears the Trump administration's plan will make the region more vulnerable to further attacks from Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 8
         },
         {
           "title": "Uganda: Police Warn Parents As Terror Groups Target Youth Through Online Platforms",
@@ -20036,30 +20078,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Iran has a 'two year plan' to counter sanctions, economic minister says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-has-two-year-plan-counter-sanctions-economic-minister-says",
-          "date": "2026-08-24T19:36:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran has a 'two year plan' to counter sanctions, economic minister says Iranian Economy Minister Ali Madanizadeh said that the country has a \"two-year plan\" to counter new US sanctions announced on Monday, predicting the US will suffer \"another defeat\" as a result.&nbsp; \"They have done everything they could to test the determination of the Iranian people and the country's officials, but they have",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 68
+      "itemCount": 69
     },
     {
       "id": "lebanon-hezbollah",
@@ -20085,7 +20106,7 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 41,
+      "activity": 40,
       "severity": 51,
       "newCount": 0,
       "signals": [
@@ -20537,27 +20558,6 @@
           "score": 15
         },
         {
-          "title": "Israel launches strikes across southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-strikes-across-southern-lebanon",
-          "date": "2026-08-24T19:45:00.000Z",
-          "source": "middleeasteye.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Lebanon: Civilian risks grow as military activity continues, UN says",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168215",
           "date": "2026-08-27T12:00:00.000Z",
@@ -20704,7 +20704,7 @@
           "score": 8
         }
       ],
-      "itemCount": 22
+      "itemCount": 21
     },
     {
       "id": "yemen",
@@ -20732,9 +20732,9 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 26,
+      "activity": 25,
       "severity": 46,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -20805,7 +20805,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "From a darling of the Tory right to a moderate former army officer, we profile the key players Andrew Griffith and Tom Tugendhat join Badenoch’s top team in Tory reshuffle Kemi Badenoch has kicked off the return to parliament with a reshuffle of her top team in order to take on Andy Burnham and Reform UK. She has made sweeping changes to the shadow cabinet and ruthlessly axed her shadow chancellor",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -20997,27 +20997,6 @@
           "score": 15
         },
         {
-          "title": "Yemen’s Houthis report attack on Saudi oil tanker in Red Sea",
-          "url": "https://www.aljazeera.com/news/2026/8/24/yemens-houthis-report-attack-on-saudi-ship?traffic_source=rss",
-          "date": "2026-08-24T19:44:23.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Saudi shipping company Bahri confirmed its vessel was struck, all crew members safe.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemen upheaval deals blow to US fight against AQAP",
           "url": "https://spacewar.com/yemen-upheaval-deals-blow-to-us-fight-against-aqap-999/",
           "date": "2026-08-30T10:00:00.000Z",
@@ -21133,7 +21112,7 @@
           "score": 8
         }
       ],
-      "itemCount": 14
+      "itemCount": 13
     },
     {
       "id": "colombia",
@@ -21262,7 +21241,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "French Foreign Legion soldier kidnapped in southwestern Colombia",
@@ -22655,72 +22634,6 @@
       "itemCount": 6
     },
     {
-      "id": "mexico-cartels",
-      "name": "Mexiko (Kartellgewalt)",
-      "nameEn": "Mexico – Cartel Violence",
-      "region": "Amerika (Nord)",
-      "countries": [
-        "Mexico"
-      ],
-      "lat": 23.5,
-      "lon": -102.5,
-      "tier": "high",
-      "since": "2006",
-      "parties": [
-        "Mexikanischer Staat",
-        "Sinaloa-Kartell",
-        "CJNG",
-        "US-Druck"
-      ],
-      "background": "Interner Krieg im Sinaloa-Kartell, CJNG-Expansion und massiver US-Druck nach der Einstufung von Kartellen als Terrororganisationen.",
-      "hotspots": [
-        "Sinaloa/Culiacán",
-        "Michoacán",
-        "Guerrero",
-        "Grenzregion"
-      ],
-      "activity": 1,
-      "severity": 39,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MEX",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Man killed in world’s largest annual bullfighting event in Mexico",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/25/man-killed-in-worlds-largest-annual-bullfighting-event-in-mexico?traffic_source=rss",
-          "date": "2026-08-25T01:51:16.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The world’s largest open road bullfighting event turned deadly when a 29-year-old man was killed.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        }
-      ],
-      "itemCount": 1
-    },
-    {
       "id": "georgia",
       "name": "Georgien (Abchasien / Südossetien)",
       "nameEn": "Georgia",
@@ -22744,15 +22657,15 @@
         "Südossetien",
         "Tbilissi"
       ],
-      "activity": 95,
-      "severity": 39,
-      "newCount": 0,
+      "activity": 100,
+      "severity": 41,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 11
+          "count": 12
         },
         {
           "key": "airstrike",
@@ -22786,12 +22699,33 @@
       "regions": [],
       "items": [
         {
+          "title": "Ukrainians mourn community leader killed in Russian strike on Myla",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/ukrainians-mourn-community-leader-killed-in-russian-strike-on-myla?traffic_source=rss",
+          "date": "2026-08-31T19:51:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukrainians gathered to mourn Taras Didych, who was killed while rushing to help after a Russian strike.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
           "title": "Deceived and deployed: How young Cameroonians end up fighting in Russia's war in Ukraine",
           "url": "https://www.dw.com/en/deceived-and-deployed-how-young-cameroonians-end-up-fighting-in-russia-s-war-in-ukraine/a-78513256?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-31T13:39:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences. Does the Cameroonian government need to act more decisively?",
+          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences.",
           "isNew": false,
           "region": null,
           "event": {
@@ -22804,7 +22738,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Niger's failed coup exposes cracks in the military — and Russia's influence",
@@ -23773,7 +23707,7 @@
           "score": 8
         }
       ],
-      "itemCount": 47
+      "itemCount": 48
     },
     {
       "id": "moldova-transnistria",
@@ -23798,15 +23732,15 @@
         "Chisinau",
         "Gagausien"
       ],
-      "activity": 96,
-      "severity": 39,
-      "newCount": 0,
+      "activity": 100,
+      "severity": 41,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 13
+          "count": 14
         },
         {
           "key": "airstrike",
@@ -23840,12 +23774,33 @@
       "regions": [],
       "items": [
         {
+          "title": "Ukrainians mourn community leader killed in Russian strike on Myla",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/ukrainians-mourn-community-leader-killed-in-russian-strike-on-myla?traffic_source=rss",
+          "date": "2026-08-31T19:51:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukrainians gathered to mourn Taras Didych, who was killed while rushing to help after a Russian strike.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
           "title": "Deceived and deployed: How young Cameroonians end up fighting in Russia's war in Ukraine",
           "url": "https://www.dw.com/en/deceived-and-deployed-how-young-cameroonians-end-up-fighting-in-russia-s-war-in-ukraine/a-78513256?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-31T13:39:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences. Does the Cameroonian government need to act more decisively?",
+          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences.",
           "isNew": false,
           "region": null,
           "event": {
@@ -23858,7 +23813,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Niger's failed coup exposes cracks in the military — and Russia's influence",
@@ -24911,7 +24866,73 @@
           "score": 8
         }
       ],
-      "itemCount": 51
+      "itemCount": 52
+    },
+    {
+      "id": "mexico-cartels",
+      "name": "Mexiko (Kartellgewalt)",
+      "nameEn": "Mexico – Cartel Violence",
+      "region": "Amerika (Nord)",
+      "countries": [
+        "Mexico"
+      ],
+      "lat": 23.5,
+      "lon": -102.5,
+      "tier": "high",
+      "since": "2006",
+      "parties": [
+        "Mexikanischer Staat",
+        "Sinaloa-Kartell",
+        "CJNG",
+        "US-Druck"
+      ],
+      "background": "Interner Krieg im Sinaloa-Kartell, CJNG-Expansion und massiver US-Druck nach der Einstufung von Kartellen als Terrororganisationen.",
+      "hotspots": [
+        "Sinaloa/Culiacán",
+        "Michoacán",
+        "Guerrero",
+        "Grenzregion"
+      ],
+      "activity": 1,
+      "severity": 39,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MEX",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Man killed in world’s largest annual bullfighting event in Mexico",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/25/man-killed-in-worlds-largest-annual-bullfighting-event-in-mexico?traffic_source=rss",
+          "date": "2026-08-25T01:51:16.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The world’s largest open road bullfighting event turned deadly when a 29-year-old man was killed.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        }
+      ],
+      "itemCount": 1
     },
     {
       "id": "korea",
@@ -24993,7 +25014,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Pentagon signs seven-year deals to boost missile production",
@@ -25996,7 +26017,7 @@
         "Südwest",
         "Far North"
       ],
-      "activity": 8,
+      "activity": 7,
       "severity": 25,
       "newCount": 0,
       "signals": [],
@@ -26014,7 +26035,7 @@
           "date": "2026-08-31T13:39:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences. Does the Cameroonian government need to act more decisively?",
+          "summary": "Analysts say economic desperation and fraudulent recruitment schemes are funneling Cameroonian youth into the Russian military — with deadly consequences.",
           "isNew": false,
           "region": null,
           "event": {
@@ -26027,7 +26048,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "APO Group - Africa Newsroom / Press release | Cameroon Grapples with Gender - Based Violence , Increased Femicides",
@@ -26049,30 +26070,9 @@
             "label": "Bericht"
           },
           "score": 11
-        },
-        {
-          "title": "Cameroon youth caught in Russia war recruitment drive",
-          "url": "https://www.dw.com/en/cameroons-youth-caught-in-russias-war-recruitment-drive/audio-78488563",
-          "date": "2026-08-24T19:45:00.000Z",
-          "source": "dw.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 3
+      "itemCount": 2
     },
     {
       "id": "chad",
@@ -27586,7 +27586,7 @@
         "Rafah-Grenzübergang",
         "El-Arish"
       ],
-      "activity": 15,
+      "activity": 14,
       "severity": 15,
       "newCount": 0,
       "signals": [
@@ -27783,7 +27783,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 11
+          "score": 8
         }
       ],
       "itemCount": 6
