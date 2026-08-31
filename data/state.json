@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-31T02:30:31.240Z",
-  "durationSec": 438,
+  "generatedAt": "2026-08-31T03:31:49.789Z",
+  "durationSec": 513,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,20 +114,20 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
+      "ok": 2,
       "failed": 3,
-      "skipped": 10,
+      "skipped": 11,
       "errors": [
         {
-          "id": "chad",
+          "id": "india-pakistan",
+          "error": "GDELT gedrosselt"
+        },
+        {
+          "id": "myanmar",
           "error": "fetch failed"
         },
         {
-          "id": "burkina-faso",
-          "error": "fetch failed"
-        },
-        {
-          "id": "gaza",
+          "id": "drc-m23",
           "error": "fetch failed"
         }
       ]
@@ -136,8 +136,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 992,
-    "newArticles": 9
+    "articles": 994,
+    "newArticles": 7
   },
   "conflicts": [
     {
@@ -169,7 +169,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -441,6 +441,27 @@
             "label": "Vertreibung"
           },
           "score": 20
+        },
+        {
+          "title": "Niger mutiny puts Russia’s expanding role in the Sahel to the test",
+          "url": "https://www.aljazeera.com/news/2026/8/31/niger-mutiny-puts-russias-expanding-role-in-the-sahel-to-the-test?traffic_source=rss",
+          "date": "2026-08-31T02:15:35.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Failed uprising in Niamey exposed tensions in Niger’s military, and the role of the Africa Corps in suppressing unrest.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 19
         },
         {
           "title": "Turkiye summons Ukraine ambassador over Black Sea attacks",
@@ -2032,7 +2053,7 @@
           "score": 8
         }
       ],
-      "itemCount": 63
+      "itemCount": 64
     },
     {
       "id": "gaza",
@@ -2061,7 +2082,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -2076,6 +2097,12 @@
           "count": 12
         },
         {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 6
+        },
+        {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
@@ -2085,12 +2112,6 @@
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 5
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
           "count": 5
         }
       ],
@@ -2147,27 +2168,6 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 30
-        },
-        {
-          "title": "Seven wounded in al-Mughayyir as Israeli forces besiege the village",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/seven-wounded-al-mughayyir-israeli-forces-besiege-village",
-          "date": "2026-08-30T21:15:17.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Seven wounded in al-Mughayyir as Israeli forces besiege the village Seven Palestinians have been wounded in the occupied West Bank village of al-Mughayyir, near Ramallah, most of them by live ammunition, local sources told Al Jazeera. It remains unclear whether the rounds were fired by Israeli forces or Israeli settlers. Residents said that Israeli forces who raided al-Mughayyir after the settler ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
           "score": 27
         },
         {
@@ -2190,6 +2190,27 @@
             "label": "Gefechte"
           },
           "score": 26
+        },
+        {
+          "title": "Seven wounded in al-Mughayyir as Israeli forces besiege the village",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/seven-wounded-al-mughayyir-israeli-forces-besiege-village",
+          "date": "2026-08-30T21:15:17.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Seven wounded in al-Mughayyir as Israeli forces besiege the village Seven Palestinians have been wounded in the occupied West Bank village of al-Mughayyir, near Ramallah, most of them by live ammunition, local sources told Al Jazeera. It remains unclear whether the rounds were fired by Israeli forces or Israeli settlers. Residents said that Israeli forces who raided al-Mughayyir after the settler ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 24
         },
         {
           "title": "British activist abducted by armed Israeli settlers in Masafer Yatta",
@@ -2360,27 +2381,6 @@
           "score": 22
         },
         {
-          "title": "Israeli president calls Qusra settler attack 'stain on Israel's face'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-president-calls-qusra-settler-attack-stain-israels-face",
-          "date": "2026-08-30T02:31:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli president calls Qusra settler attack 'stain on Israel's face' Israeli President Isaac Herzog joined prime minister Benjamin Netanyahu in condemning settler violence in the occupied West Bank village of Qusra, saying it was unlawful. He said the attack was “a stain on Israel’s face” that demanded “firm and decisive action” against those responsible. Netanyahu also “strongly condemned the cr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Amnesty urges action after Katz likens Gaza kites to drones",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/amnesty-urges-action-after-katz-likens-gaza-kites-drones",
           "date": "2026-08-30T05:22:22.000Z",
@@ -2421,27 +2421,6 @@
             "label": "Gefechte"
           },
           "score": 21
-        },
-        {
-          "title": "Jose Andres renews call for investigation into WCK Gaza staff killings",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/jose-andres-renews-call-for-investigation-into-wck-gaza-staff-killings?traffic_source=rss",
-          "date": "2026-08-30T20:50:04.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "World Central Kitchen founder José Andrés is renewing his call for an independent investigation into Israeli strikes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 20
         },
         {
           "title": "Israeli settler rabbi says Palestinians should leave the occupied West Bank",
@@ -2528,6 +2507,27 @@
           "score": 18
         },
         {
+          "title": "Israeli president calls Qusra settler attack 'stain on Israel's face'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-president-calls-qusra-settler-attack-stain-israels-face",
+          "date": "2026-08-30T02:31:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli president calls Qusra settler attack 'stain on Israel's face' Israeli President Isaac Herzog joined prime minister Benjamin Netanyahu in condemning settler violence in the occupied West Bank village of Qusra, saying it was unlawful. He said the attack was “a stain on Israel’s face” that demanded “firm and decisive action” against those responsible. Netanyahu also “strongly condemned the cr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "Palestinian injured in Israeli strike on Khan Younis succumbs , report says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-injured-israeli-strike-khan-younis-succumbs-report-says",
           "date": "2026-08-30T00:30:00.000Z",
@@ -2608,27 +2608,6 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "British Arabs urge UK government to impose binding restrictions on Israeli settlements",
-          "url": "https://www.middleeasteye.net/news/british-arabs-urge-uk-government-impose-binding-rules-israeli-settlements",
-          "date": "2026-08-30T20:30:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "British Arabs urge UK government to impose binding restrictions on Israeli settlements Submitted by Ayse Betul Aytekin on Sun, 08/30/2026 - 21:21 Joint letter to Foreign Secretary Miliband urges the UK to close the gap between its stated legal position and its actions, while helping protect Palestinians from escalating settler violence A woman holds a placard outside Downing Street during a \"Natio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 18
         },
@@ -3430,6 +3409,27 @@
           "score": 18
         },
         {
+          "title": "Jose Andres renews call for investigation into WCK Gaza staff killings",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/jose-andres-renews-call-for-investigation-into-wck-gaza-staff-killings?traffic_source=rss",
+          "date": "2026-08-30T20:50:04.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "World Central Kitchen founder José Andrés is renewing his call for an independent investigation into Israeli strikes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 17
+        },
+        {
           "title": "Israeli forces seal West Bank village for more than 20 hours as settler violence escalates",
           "url": "https://www.middleeasteye.net/news/israeli-army-intensifies-siege-west-bank-village",
           "date": "2026-08-30T15:07:16.000Z",
@@ -3449,6 +3449,27 @@
             "label": "Belagerung"
           },
           "score": 17
+        },
+        {
+          "title": "British Arabs urge UK government to impose binding restrictions on Israeli settlements",
+          "url": "https://www.middleeasteye.net/news/british-arabs-urge-uk-government-impose-binding-rules-israeli-settlements",
+          "date": "2026-08-30T20:30:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "British Arabs urge UK government to impose binding restrictions on Israeli settlements Submitted by Ayse Betul Aytekin on Sun, 08/30/2026 - 21:21 Joint letter to Foreign Secretary Miliband urges the UK to close the gap between its stated legal position and its actions, while helping protect Palestinians from escalating settler violence A woman holds a placard outside Downing Street during a \"Natio",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "New Israeli roadblocks entrench siege of homes in West Bank’s Qusra",
@@ -3776,27 +3797,6 @@
           "score": 15
         },
         {
-          "title": "Amnesty calls for Dr Abu Safiya's release as he completes 600 days in Israeli detention",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/amnesty-calls-dr-abu-safiyas-release-he-completes-600-days-israeli",
-          "date": "2026-08-30T02:55:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Amnesty calls for Dr Abu Safiya's release as he completes 600 days in Israeli detention Amnesty International has called for the release of Palestinian paediatrician Hussam&nbsp;Abu Safiya, who has completed 600 days in Israeli detention. Abu Safiya, director of Gaza’s Kamal Adwan Hospital, rose to international prominence during Israel's genocide due to his role in helping victims. He was abducte",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
           "title": "Toxic waste of war on Gaza reached Israel",
           "url": "https://www.aljazeera.com/opinions/2026/8/30/the-toxic-waste-of-the-gaza-war-has-reached-israel?traffic_source=rss",
           "date": "2026-08-30T07:41:08.000Z",
@@ -3837,6 +3837,27 @@
             "label": "Waffenruhe"
           },
           "score": 15
+        },
+        {
+          "title": "Security Council LIVE: Rising tensions in Gaza, West Bank",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168204",
+          "date": "2026-08-26T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Amid illegal Israeli settlement surges, continued attacks in Gaza and the West Bank alongside tensions throughout Occupied Palestinian Territory, the Security Council discussed the latest developments on Wednesday, with the UN Special Envoy stressing that “human dignity must be at the centre of all efforts” to overcome the current fragile ceasefire and continued suffering. UN News app users can fo",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 14
         }
       ],
       "itemCount": 80
@@ -3911,27 +3932,6 @@
           "score": 25
         },
         {
-          "title": "Hundreds attend funeral in Haiti for 4 victims of brutal gang attack that killed 47",
-          "url": "https://abcnews.com/International/wireStory/hundreds-attend-funeral-haiti-4-victims-brutal-gang-136073291",
-          "date": "2026-08-30T21:00:00.000Z",
-          "source": "abcnews.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
           "title": "Security Council LIVE: Deadly gang attacks spike in Haiti",
           "url": "https://news.un.org/feed/view/en/story/2026/08/1168222",
           "date": "2026-08-28T12:00:00.000Z",
@@ -3951,6 +3951,27 @@
             "label": "Gefechte"
           },
           "score": 24
+        },
+        {
+          "title": "Hundreds attend funeral in Haiti for 4 victims of brutal gang attack that killed 47",
+          "url": "https://abcnews.com/International/wireStory/hundreds-attend-funeral-haiti-4-victims-brutal-gang-136073291",
+          "date": "2026-08-30T21:00:00.000Z",
+          "source": "abcnews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Pakistan Condemns Latest Gang Attacks in Haiti",
@@ -4821,7 +4842,7 @@
       ],
       "activity": 66,
       "severity": 74,
-      "newCount": 4,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -4880,7 +4901,7 @@
             18.34
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -4897,7 +4918,7 @@
             15.844
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "displacement",
             "icon": "🚶",
@@ -5058,7 +5079,7 @@
           "source": "news.az",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SDN-877",
             "name": "River Nile",
@@ -5080,7 +5101,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "At least 49 people killed in armed cattle raid in South Sudan",
@@ -5089,7 +5110,7 @@
           "source": "sowetan.co.za",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -5101,7 +5122,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "People fleeing Sudan civil war face ‘dire and deteriorating’ conditions in refuge city",
@@ -5204,7 +5225,7 @@
           "source": "dabangasudan.org",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SDN-874",
             "name": "Khartoum",
@@ -5226,7 +5247,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 17
+          "score": 15
         },
         {
           "title": "Trump's Africa envoy condemns Chad strikes, 'external support' in Sudan war",
@@ -5475,7 +5496,7 @@
           "source": "dabangasudan.org",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -5487,7 +5508,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 14
+          "score": 15
         },
         {
           "title": "Security Council LIVE: War, hunger, flooding escalates in Sudan",
@@ -6512,27 +6533,6 @@
           "score": 27
         },
         {
-          "title": "Seven wounded in al-Mughayyir as Israeli forces besiege the village",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/seven-wounded-al-mughayyir-israeli-forces-besiege-village",
-          "date": "2026-08-30T21:15:17.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Seven wounded in al-Mughayyir as Israeli forces besiege the village Seven Palestinians have been wounded in the occupied West Bank village of al-Mughayyir, near Ramallah, most of them by live ammunition, local sources told Al Jazeera. It remains unclear whether the rounds were fired by Israeli forces or Israeli settlers. Residents said that Israeli forces who raided al-Mughayyir after the settler ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 26
-        },
-        {
           "title": "British activist abducted by armed Israeli settlers in Masafer Yatta",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/british-activist-abducted-armed-israeli-settlers-masafer-yatta",
           "date": "2026-08-30T16:54:46.000Z",
@@ -6552,6 +6552,27 @@
             "label": "Entführung/Geiseln"
           },
           "score": 24
+        },
+        {
+          "title": "Seven wounded in al-Mughayyir as Israeli forces besiege the village",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/seven-wounded-al-mughayyir-israeli-forces-besiege-village",
+          "date": "2026-08-30T21:15:17.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Seven wounded in al-Mughayyir as Israeli forces besiege the village Seven Palestinians have been wounded in the occupied West Bank village of al-Mughayyir, near Ramallah, most of them by live ammunition, local sources told Al Jazeera. It remains unclear whether the rounds were fired by Israeli forces or Israeli settlers. Residents said that Israeli forces who raided al-Mughayyir after the settler ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 23
         },
         {
           "title": "NBC journalists attacked as settler violence continues across occupied West Bank",
@@ -6592,27 +6613,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli president calls Qusra settler attack 'stain on Israel's face'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-president-calls-qusra-settler-attack-stain-israels-face",
-          "date": "2026-08-30T02:31:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli president calls Qusra settler attack 'stain on Israel's face' Israeli President Isaac Herzog joined prime minister Benjamin Netanyahu in condemning settler violence in the occupied West Bank village of Qusra, saying it was unlawful. He said the attack was “a stain on Israel’s face” that demanded “firm and decisive action” against those responsible. Netanyahu also “strongly condemned the cr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 22
         },
@@ -6680,6 +6680,27 @@
           "score": 19
         },
         {
+          "title": "Israeli president calls Qusra settler attack 'stain on Israel's face'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-president-calls-qusra-settler-attack-stain-israels-face",
+          "date": "2026-08-30T02:31:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli president calls Qusra settler attack 'stain on Israel's face' Israeli President Isaac Herzog joined prime minister Benjamin Netanyahu in condemning settler violence in the occupied West Bank village of Qusra, saying it was unlawful. He said the attack was “a stain on Israel’s face” that demanded “firm and decisive action” against those responsible. Netanyahu also “strongly condemned the cr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "Israeli settlers attack international news team in occupied West Bank",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-settlers-attack-international-news-team-in-occupied-west-bank?traffic_source=rss",
           "date": "2026-08-29T23:48:22.000Z",
@@ -6718,27 +6739,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "British Arabs urge UK government to impose binding restrictions on Israeli settlements",
-          "url": "https://www.middleeasteye.net/news/british-arabs-urge-uk-government-impose-binding-rules-israeli-settlements",
-          "date": "2026-08-30T20:30:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "British Arabs urge UK government to impose binding restrictions on Israeli settlements Submitted by Ayse Betul Aytekin on Sun, 08/30/2026 - 21:21 Joint letter to Foreign Secretary Miliband urges the UK to close the gap between its stated legal position and its actions, while helping protect Palestinians from escalating settler violence A woman holds a placard outside Downing Street during a \"Natio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 18
         },
@@ -7243,6 +7243,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "British Arabs urge UK government to impose binding restrictions on Israeli settlements",
+          "url": "https://www.middleeasteye.net/news/british-arabs-urge-uk-government-impose-binding-rules-israeli-settlements",
+          "date": "2026-08-30T20:30:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "British Arabs urge UK government to impose binding restrictions on Israeli settlements Submitted by Ayse Betul Aytekin on Sun, 08/30/2026 - 21:21 Joint letter to Foreign Secretary Miliband urges the UK to close the gap between its stated legal position and its actions, while helping protect Palestinians from escalating settler violence A woman holds a placard outside Downing Street during a \"Natio",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 15
         },
@@ -8163,7 +8184,7 @@
             51.831,
             35.568
           ],
-          "count": 23,
+          "count": 24,
           "newCount": 1,
           "event": {
             "type": "offensive",
@@ -8269,7 +8290,7 @@
           "date": "2026-08-30T23:53:03.000Z",
           "source": "BBC World",
           "sourceType": "news",
-          "summary": "Iran says the attack killed some civilians and is the first known US strike on Iran since late July.",
+          "summary": "Iran says the attack killed several civilians and is the first known US strike on Iran since late July.",
           "isNew": false,
           "region": null,
           "event": {
@@ -8306,35 +8327,24 @@
           "score": 29
         },
         {
-          "title": "US forces strike two Iranian launchers on Iran's Larak island",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-forces-strike-two-iranian-launchers-irans-larak-island",
-          "date": "2026-08-30T20:43:20.000Z",
-          "source": "Middle East Eye",
+          "title": "Iran strikes US military targets in Jordan after American attack on Larak Island in latest in latest flare-up",
+          "url": "https://www.dawn.com/news/2026311/iran-strikes-us-military-targets-in-jordan-after-american-attack-on-larak-island-in-latest-in-latest-flare-up",
+          "date": "2026-08-31T02:42:37.000Z",
+          "source": "Dawn (Pakistan)",
           "sourceType": "news",
-          "summary": "US forces strike two Iranian launchers on Iran's Larak island US forces struck two Iranian launchers on Iran's Larak island on Sunday, a US official said, marking the first known American strikes on Iran since late July. \"I can confirm that earlier today US forces struck two Iranian launchers on Larak Island. Islamic Revolutionary Guard Corps forces were observed preparing to launch rockets with s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+          "summary": "Iran said on Monday it attacked US military targets in Jordan in retaliation for the first American strikes on its territory in a month, marking a fresh flare-up in the six-month war. Tehran’s Revolutionary Guards (IRGC) said they struck two US military air bases with ballistic missiles in Washington-allied Jordan, causing “heavy damage”. Jordan’s army said it had intercepted eight missiles, witho",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
           },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 29
-        },
-        {
-          "title": "Iran vows response to US attack, calls it ‘fatal mistake’",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-vows-response-us-attack-calls-it-fatal-mistake",
-          "date": "2026-08-30T21:02:52.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran vows response to US attack, calls it ‘fatal mistake’ Iran's Islamic Revolutionary Guards Corps (IRGC) said the US attack on Larak island killed and wounded several Iranian fighters and civilians, and vowed to respond and punish those responsible, Iranian state broadcaster reported. IRGC spokesperson Sardar Mohebi accused the US of making “a strategic and fatal mistake”, for which it will pay ",
-          "isNew": false,
-          "region": null,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -8388,6 +8398,48 @@
             "label": "Gefechte"
           },
           "score": 26
+        },
+        {
+          "title": "US forces strike two Iranian launchers on Iran's Larak island",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-forces-strike-two-iranian-launchers-irans-larak-island",
+          "date": "2026-08-30T20:43:20.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US forces strike two Iranian launchers on Iran's Larak island US forces struck two Iranian launchers on Iran's Larak island on Sunday, a US official said, marking the first known American strikes on Iran since late July. \"I can confirm that earlier today US forces struck two Iranian launchers on Larak Island. Islamic Revolutionary Guard Corps forces were observed preparing to launch rockets with s",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Iran vows response to US attack, calls it ‘fatal mistake’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-vows-response-us-attack-calls-it-fatal-mistake",
+          "date": "2026-08-30T21:02:52.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran vows response to US attack, calls it ‘fatal mistake’ Iran's Islamic Revolutionary Guards Corps (IRGC) said the US attack on Larak island killed and wounded several Iranian fighters and civilians, and vowed to respond and punish those responsible, Iranian state broadcaster reported. IRGC spokesperson Sardar Mohebi accused the US of making “a strategic and fatal mistake”, for which it will pay ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
         },
         {
           "title": "Iran attacks US bases in Jordan after US strikes Larak Island",
@@ -8563,7 +8615,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Washington has recently stepped up efforts to economically pressure Tehran amid the deadlocked truce talks.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -9220,27 +9272,6 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iranian cyber attack shuts down UK power plant for four days, report says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-cyber-attack-shuts-down-uk-power-plant-four-days-report-says",
-          "date": "2026-08-24T02:55:08.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian cyber attack shuts down UK power plant for four days, report says Iranian hackers shut down a British power plant for four days in an unprecedented cyber attack, the Sunday Telegraph reported. According to the newspaper, the incident appears to mark the first time Iran-linked hackers have successfully shut down such a British facility. The incident occurred alongside a series of attacks on",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 15
         },
@@ -10813,9 +10844,9 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 84,
-      "severity": 64,
-      "newCount": 0,
+      "activity": 89,
+      "severity": 65,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -10864,8 +10895,8 @@
             2.131,
             13.517
           ],
-          "count": 8,
-          "newCount": 0,
+          "count": 9,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -11174,6 +11205,37 @@
             "label": "Politik/Wahl"
           },
           "score": 22
+        },
+        {
+          "title": "Niger mutiny puts Russia’s expanding role in the Sahel to the test",
+          "url": "https://www.aljazeera.com/news/2026/8/31/niger-mutiny-puts-russias-expanding-role-in-the-sahel-to-the-test?traffic_source=rss",
+          "date": "2026-08-31T02:15:35.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Failed uprising in Niamey exposed tensions in Niger’s military, and the role of the Africa Corps in suppressing unrest.",
+          "isNew": true,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 20
         },
         {
           "title": "Niger junta puts down mutiny with help from Russia's Africa Corps",
@@ -12534,7 +12596,7 @@
           "score": -1
         }
       ],
-      "itemCount": 51
+      "itemCount": 52
     },
     {
       "id": "drc-m23",
@@ -14585,7 +14647,7 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 62,
+      "activity": 61,
       "severity": 57,
       "newCount": 0,
       "signals": [
@@ -15674,30 +15736,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Fazl blames lack of joint opposition for unchecked legislation",
-          "url": "https://www.dawn.com/news/2024826/fazl-blames-lack-of-joint-opposition-for-unchecked-legislation",
-          "date": "2026-08-24T02:43:44.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "JUI-F chief Maulana Fazlur Rehman addresses a workers’ convention in Peshawar.—PPI PESHAWAR: JUI-F chief Maulana Fazlur Rehman on Sunday pointed out a structural weakness on opposition benches, noting that the opposition leader failed to unite parties to effectively challenge the recent government legislation on armed forces command. While noting that opposition walkouts without act­ive resistance",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 42
+      "itemCount": 41
     },
     {
       "id": "burkina-faso",
@@ -15765,7 +15806,7 @@
       ],
       "activity": 48,
       "severity": 53,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -15889,7 +15930,7 @@
           "source": "arabnews.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -15901,7 +15942,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 31
+          "score": 22
         },
         {
           "title": "One killed in traffic accident across Syria over past 24 hours",
@@ -16997,7 +17038,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -17226,7 +17267,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Washington has recently stepped up efforts to economically pressure Tehran amid the deadlocked truce talks.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -17587,27 +17628,6 @@
           "score": 15
         },
         {
-          "title": "Iranian cyber attack shuts down UK power plant for four days, report says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-cyber-attack-shuts-down-uk-power-plant-four-days-report-says",
-          "date": "2026-08-24T02:55:08.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian cyber attack shuts down UK power plant for four days, report says Iranian hackers shut down a British power plant for four days in an unprecedented cyber attack, the Sunday Telegraph reported. According to the newspaper, the incident appears to mark the first time Iran-linked hackers have successfully shut down such a British facility. The incident occurred alongside a series of attacks on",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
           "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-29T03:54:11.000Z",
@@ -17639,27 +17659,6 @@
           "score": 12
         },
         {
-          "title": "Explainer: UN peace operations work to create, preserve peace",
-          "url": "https://news.un.org/feed/view/en/story/2026/08/1168210",
-          "date": "2026-08-26T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Supporting the first democratic elections after brutal civil wars in Mozambique and Cambodia. Disarming thousands of child soldiers in Sierra Leone. Helping to secure Namibia’s independence from South Africa. These are some of the contributions of UN operations around the world to help countries transition from conflict to lasting peace.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 11
-        },
-        {
           "title": "Uganda: Police Warn Parents As Terror Groups Target Youth Through Online Platforms",
           "url": "https://allafrica.com/stories/202608280615.html",
           "date": "2026-08-28T17:09:30.000Z",
@@ -17677,6 +17676,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Explainer: UN peace operations work to create, preserve peace",
+          "url": "https://news.un.org/feed/view/en/story/2026/08/1168210",
+          "date": "2026-08-26T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Supporting the first democratic elections after brutal civil wars in Mozambique and Cambodia. Disarming thousands of child soldiers in Sierra Leone. Helping to secure Namibia’s independence from South Africa. These are some of the contributions of UN operations around the world to help countries transition from conflict to lasting peace.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           },
           "score": 11
         },
@@ -18446,7 +18466,7 @@
           "score": 8
         }
       ],
-      "itemCount": 62
+      "itemCount": 61
     },
     {
       "id": "india-pakistan",
@@ -18686,7 +18706,7 @@
             "icon": "📣",
             "label": "Proteste/Unruhen"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Smith and Cox revive England against Pakistan after Abbas strikes",
@@ -20340,9 +20360,9 @@
         "Arauca",
         "Chocó"
       ],
-      "activity": 24,
-      "severity": 46,
-      "newCount": 2,
+      "activity": 23,
+      "severity": 45,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -20388,7 +20408,7 @@
           "source": "the-messenger.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -20400,7 +20420,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "French Foreign Legion soldier kidnapped in southwestern Colombia",
@@ -20493,7 +20513,7 @@
           "source": "riotimesonline.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -20505,7 +20525,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 14
+          "score": 15
         },
         {
           "title": "Was it a mistake for 99 Colombian guerrillas to lay down their arms?",
@@ -20653,30 +20673,9 @@
             "label": "Gefechte"
           },
           "score": 8
-        },
-        {
-          "title": "Jamaat threatens march on Islamabad over petroleum levy",
-          "url": "https://www.dawn.com/news/2024806/jamaat-threatens-march-on-islamabad-over-petroleum-levy",
-          "date": "2026-08-24T03:05:46.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• Hafiz Naeem says sit-ins to be converted into shutter-down strike on 13th Rabiul Awwal • Party to stage indefinite protest outside Governor House in Quetta from 29th LAHORE / KARACHI: Jamaat-i-Islami chief Hafiz Naeemur Rehman on Sunday warned the government that the party would expand its ongoing sit-ins into a nationwide movement, culminating in a shutter-down strike and a possible march on Is",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 14
+      "itemCount": 13
     },
     {
       "id": "ethiopia",
@@ -21286,9 +21285,9 @@
         "Karibik",
         "Caracas"
       ],
-      "activity": 10,
-      "severity": 42,
-      "newCount": 0,
+      "activity": 15,
+      "severity": 43,
+      "newCount": 1,
       "signals": [],
       "acled": null,
       "briefing": null,
@@ -21318,6 +21317,27 @@
             "label": "Entführung/Geiseln"
           },
           "score": 24
+        },
+        {
+          "title": "Venezuela’s Maduro shares first photos from US detention",
+          "url": "https://www.aljazeera.com/news/2026/8/31/venezuelas-maduro-shares-first-photos-from-us-detention?traffic_source=rss",
+          "date": "2026-08-31T01:54:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Abducted Venezuelan leader's post appears to show him in US detention, published two days after US-Venezuela oil deal.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 22
         },
         {
           "title": "ICE agent embroiled in interstate extradition dispute after allegedly shooting Venezuelan man",
@@ -21383,7 +21403,7 @@
           "score": 11
         }
       ],
-      "itemCount": 4
+      "itemCount": 5
     },
     {
       "id": "somalia",
@@ -21975,9 +21995,9 @@
         "Chisinau",
         "Gagausien"
       ],
-      "activity": 83,
-      "severity": 35,
-      "newCount": 0,
+      "activity": 88,
+      "severity": 37,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -22078,6 +22098,27 @@
             "label": "Bericht"
           },
           "score": 22
+        },
+        {
+          "title": "Niger mutiny puts Russia’s expanding role in the Sahel to the test",
+          "url": "https://www.aljazeera.com/news/2026/8/31/niger-mutiny-puts-russias-expanding-role-in-the-sahel-to-the-test?traffic_source=rss",
+          "date": "2026-08-31T02:15:35.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Failed uprising in Niamey exposed tensions in Niger’s military, and the role of the Africa Corps in suppressing unrest.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 19
         },
         {
           "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
@@ -23130,7 +23171,7 @@
           "score": 8
         }
       ],
-      "itemCount": 53
+      "itemCount": 54
     },
     {
       "id": "georgia",
@@ -23156,9 +23197,9 @@
         "Südossetien",
         "Tbilissi"
       ],
-      "activity": 74,
-      "severity": 33,
-      "newCount": 0,
+      "activity": 78,
+      "severity": 34,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -23238,6 +23279,27 @@
             "label": "Opfer"
           },
           "score": 22
+        },
+        {
+          "title": "Niger mutiny puts Russia’s expanding role in the Sahel to the test",
+          "url": "https://www.aljazeera.com/news/2026/8/31/niger-mutiny-puts-russias-expanding-role-in-the-sahel-to-the-test?traffic_source=rss",
+          "date": "2026-08-31T02:15:35.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Failed uprising in Niamey exposed tensions in Niger’s military, and the role of the Africa Corps in suppressing unrest.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 19
         },
         {
           "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
@@ -24164,7 +24226,7 @@
           "score": 8
         }
       ],
-      "itemCount": 46
+      "itemCount": 47
     },
     {
       "id": "korea",
