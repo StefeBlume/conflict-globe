@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-02T16:37:48.381Z",
-  "durationSec": 467,
+  "generatedAt": "2026-09-02T17:33:44.430Z",
+  "durationSec": 438,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,16 +114,28 @@
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 2,
-      "skipped": 10,
+      "ok": 0,
+      "failed": 5,
+      "skipped": 11,
       "errors": [
+        {
+          "id": "burkina-faso",
+          "error": "fetch failed"
+        },
+        {
+          "id": "myanmar",
+          "error": "fetch failed"
+        },
+        {
+          "id": "ecuador",
+          "error": "fetch failed"
+        },
         {
           "id": "drc-m23",
           "error": "fetch failed"
         },
         {
-          "id": "sahel-mali",
+          "id": "afghanistan",
           "error": "fetch failed"
         }
       ]
@@ -132,8 +144,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1016,
-    "newArticles": 22
+    "articles": 1022,
+    "newArticles": 11
   },
   "conflicts": [
     {
@@ -165,7 +177,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
@@ -180,12 +192,6 @@
           "count": 10
         },
         {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 6
-        },
-        {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
@@ -195,6 +201,12 @@
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
+          "count": 5
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
           "count": 5
         }
       ],
@@ -222,12 +234,12 @@
             30.448,
             50.29
           ],
-          "count": 22,
+          "count": 21,
           "newCount": 0,
           "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           }
         },
         {
@@ -239,8 +251,8 @@
             37.665,
             55.668
           ],
-          "count": 17,
-          "newCount": 0,
+          "count": 18,
+          "newCount": 2,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -378,6 +390,110 @@
           "score": 32
         },
         {
+          "title": "Russian airspace becoming unsafe for commercial airlines, Zelenskyy says",
+          "url": "https://www.theguardian.com/world/2026/sep/02/russian-airspace-unsafe-commercial-airlines-zelenskyy",
+          "date": "2026-09-02T15:52:05.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukraine president says aviation industry needs to take account of growing number of Ukrainian drones in Russia Volodymyr Zelenskyy has declared that Russia’s airspace is becoming unsafe for commercial airlines, as Vladimir Putin promised to increase strikes against Ukraine’s energy facilities in the run-up to winter. The Ukrainian president said there was no intention to directly threaten civilian",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 28
+        },
+        {
+          "title": "Russia blamed for explosive-laden drone found at German airport",
+          "url": "https://www.france24.com/en/video/20260902-russia-blamed-for-explosive-laden-drone-found-at-german-airport",
+          "date": "2026-09-02T16:11:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "After #Germany blamed #Russia for the explosive-laden #drone found at #Leipzig airport on August 4, #Berlin has introduced new sanctions against #Moscow. Namely, its consulate in #Bonn and the Russian House - a cultural centre thought to be a Russian #spy hub - in #Berlin.",
+          "isNew": true,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 28
+        },
+        {
+          "title": "Leipzig airport attack fallout lays bare Germany’s polarisation on Russia",
+          "url": "https://www.theguardian.com/world/2026/sep/02/leipzig-airport-attack-fallout-lays-bare-germanys-polarisation-on-russia",
+          "date": "2026-09-02T17:07:21.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "The government’s increasingly hostile stance towards the Kremlin has drawn criticism from the far right – and the far left Even before the German government laid the blame this week on Russia for an attempted drone attack at Leipzig airport , the topic of German ties to Moscow was high on the political agenda. But the timing of the unsurprising yet explosive Leipzig announcement – days before a ke",
+          "isNew": true,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
+          "title": "EU summons Russian envoy over failed Leipzig drone attack",
+          "url": "https://www.dw.com/en/eu-summons-russian-envoy-over-failed-leipzig-drone-attack/a-78687280?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-02T08:00:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The EU's foreign policy chief Kaja Kallas said the attempted attack had \"all the hallmarks of state-sponsored terrorism.\" She said the EU was summoning a Russian envoy, with France announcing a similar step.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
           "title": "Pashinyan and Putin clash over Armenia’s EU aspirations, agree to continue talks in Moscow",
           "url": "https://oc-media.org/pashinyan-and-putin-clash-over-armenias-eu-aspirations-agree-to-continue-talks-in-moscow/",
           "date": "2026-09-02T11:18:05.000Z",
@@ -405,48 +521,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 29
-        },
-        {
-          "title": "Russian airspace becoming unsafe for commercial airlines, Zelenskyy says",
-          "url": "https://www.theguardian.com/world/2026/sep/02/russian-airspace-unsafe-commercial-airlines-zelenskyy",
-          "date": "2026-09-02T15:52:05.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukraine president says aviation industry needs to take account of growing number of Ukrainian drones in Russia Europe live – latest updates Volodymyr Zelenskyy has declared that Russia’s airspace is becoming unsafe for commercial airlines as Vladimir Putin promised to step up strikes against Ukraine’s energy facilities in the run-up to winter. The Ukrainian president said there was no intention to",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 28
-        },
-        {
-          "title": "EU summons Russian envoy over failed Leipzig drone attack",
-          "url": "https://www.dw.com/en/eu-summons-russian-envoy-over-failed-leipzig-drone-attack/a-78687280?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-09-02T08:00:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "The EU's foreign policy chief Kaja Kallas said the attempted attack had \"all the hallmarks of state-sponsored terrorism.\" She said the EU was summoning a Russian envoy, with France announcing a similar step.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 26
         },
@@ -598,37 +672,6 @@
           "score": 22
         },
         {
-          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
-          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
-          "date": "2026-09-01T17:00:58.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Germany blames Russia for drone attack at Leipzig airport",
           "url": "https://www.theguardian.com/world/2026/sep/01/germany-blames-russia-drone-attack-leipzig-airport",
           "date": "2026-09-02T01:45:56.000Z",
@@ -702,37 +745,6 @@
           "score": 22
         },
         {
-          "title": "اختلاف میان روسیه و اوکراین بر سر ادامه جنگ؛ پوتین خواستار پایان درگیری شد",
-          "url": "https://tolonews.com/fa/world-200682",
-          "date": "2026-09-02T11:07:16.000Z",
-          "source": "TOLOnews (Afghanistan)",
-          "sourceType": "news",
-          "summary": "Putin: Russia Wants Complete End to Ukraine War and Lasting Peace najibullah.lalzoy Wed, 09/02/2026 - 16:45 Author TOLOnews Profile Photo Author Short Bio TOLOnews is Afghanistan’s first 24-hour TV/online news channel covering national, regional and world affairs. Author Job TV Network World Russian President Vladimir Putin says Moscow wants a complete end to the war in Ukraine, rather than a temp",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 21
-        },
-        {
           "title": "Germany investigates suspected power substation sabotage, Russia summons German envoy",
           "url": "https://www.france24.com/en/europe/20260902-germany-ivestigates-suspected-power-substation-sabotage-russia-summons-german-envoy",
           "date": "2026-09-02T13:15:48.000Z",
@@ -787,7 +799,7 @@
         {
           "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
           "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-02T14:34:22.000Z",
+          "date": "2026-09-02T16:49:00.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
@@ -804,6 +816,68 @@
             "label": "Drohnenangriff"
           },
           "score": 19
+        },
+        {
+          "title": "اختلاف میان روسیه و اوکراین بر سر ادامه جنگ؛ پوتین خواستار پایان درگیری شد",
+          "url": "https://tolonews.com/fa/world-200682",
+          "date": "2026-09-02T11:07:16.000Z",
+          "source": "TOLOnews (Afghanistan)",
+          "sourceType": "news",
+          "summary": "Putin: Russia Wants Complete End to Ukraine War and Lasting Peace najibullah.lalzoy Wed, 09/02/2026 - 16:45 Author TOLOnews Profile Photo Author Short Bio TOLOnews is Afghanistan’s first 24-hour TV/online news channel covering national, regional and world affairs. Author Job TV Network World Russian President Vladimir Putin says Moscow wants a complete end to the war in Ukraine, rather than a temp",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
+          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
+          "date": "2026-09-01T17:00:58.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Six days of Russian strikes push Kyiv residents to consider leaving",
@@ -1482,37 +1556,6 @@
           "score": 15
         },
         {
-          "title": "Russia targets Ukraine’s rail network as war enters deadly new phase",
-          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
-          "date": "2026-09-01T17:23:15.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Six employees killed on Tuesday after Moscow escalates attacks on infrastructure and Ukrainian capital Russia has opened a deadly new phase in its war against Ukraine by deliberately targeting the country’s railway network, with six employees killed on Tuesday in the latest strikes on Kyiv. Ukraine’s state-owned railway company, Ukrzaliznytsia, said its workers died when a ballistic missile plunge",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
           "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
           "date": "2026-08-29T20:13:16.000Z",
@@ -2145,6 +2188,37 @@
           "score": 12
         },
         {
+          "title": "Russia targets Ukraine’s rail network as war enters deadly new phase",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+          "date": "2026-09-01T17:23:15.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Six employees killed on Tuesday after Moscow escalates attacks on infrastructure and Ukrainian capital Russia has opened a deadly new phase in its war against Ukraine by deliberately targeting the country’s railway network, with six employees killed on Tuesday in the latest strikes on Kyiv. Ukraine’s state-owned railway company, Ukrzaliznytsia, said its workers died when a ballistic missile plunge",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 11
+        },
+        {
           "title": "US irks Germany, Europe with Russian G20 invite, press bans",
           "url": "https://www.dw.com/en/us-irks-germany-europe-with-russian-g20-invite-press-bans/a-78583919?maca=en-rss-en-world-4025-rdf",
           "date": "2026-09-01T10:23:00.000Z",
@@ -2310,68 +2384,6 @@
             "label": "Bodenoffensive"
           },
           "score": 11
-        },
-        {
-          "title": "Modi-Putin meeting at SCO: Can India-Russia ties hold?",
-          "url": "https://www.dw.com/en/modi-putin-meeting-at-sco-can-india-russia-ties-hold/a-78575121?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-31T12:02:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Indian PM Modi and Russian President Putin are at the SCO summit in Bishkek as Moscow and New Delhi face rising tensions with Washington — Russia over war-related sanctions, and India over its energy and trade choices.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "‘Everything’s smashed to bits’: Ukrainians turn anger on those storing weapons near their villages",
-          "url": "https://www.theguardian.com/world/2026/aug/31/ukraine-anger-weapons-storage-russian-bombing-myla",
-          "date": "2026-08-31T04:00:17.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "As Russia hits another ammunition warehouse, killing at least 38, locals put blame on poorly placed depots It is a day and a half since a Russian jet-powered drone smashed into an ammunition dump in Myla , a village 15 miles outside central Kyiv. Volodymyr, 61, a security guard, leads visitors from his family’s badly damaged home, its roof blown off, back windows shattered, through the garden towa",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -2403,7 +2415,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -2498,7 +2510,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Two Palestinians killed in Israeli attacks in northern and central Gaza A Palestinian youth was killed on Wednesday in an Israeli drone strike on al-Hawja in ​​Jabalia refugee camp in northern Gaza, while a Palestinian woman succumbed to her injuries after being shot by Israeli forces in Deir al-Balah in central Gaza, Wafa news reported, citing medical sources. Medical sources at al-Shifa Hospital",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -3510,27 +3522,6 @@
           "score": 18
         },
         {
-          "title": "British activist abducted by armed Israeli settlers in Masafer Yatta",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/british-activist-abducted-armed-israeli-settlers-masafer-yatta",
-          "date": "2026-08-30T16:54:46.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "British activist abducted by armed Israeli settlers in Masafer Yatta Israeli settlers forcibly detained a British activist in the village of Umm al-Khair, in Masafer Yatta in the southern occupied West Bank. Footage circulating on social media showed the activist named Finn Joughin being grabbed by the arms and taken to an unknown location by armed Israeli settlers on Saturday. He could not be rea",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 18
-        },
-        {
           "title": "UK must end all trade with Israel, says co-founder of BDS movement",
           "url": "https://www.theguardian.com/world/2026/sep/02/uk-must-end-all-trade-with-israel-says-co-founder-of-bds-movement",
           "date": "2026-09-02T06:00:24.000Z",
@@ -3571,6 +3562,27 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "British activist abducted by armed Israeli settlers in Masafer Yatta",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/british-activist-abducted-armed-israeli-settlers-masafer-yatta",
+          "date": "2026-08-30T16:54:46.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "British activist abducted by armed Israeli settlers in Masafer Yatta Israeli settlers forcibly detained a British activist in the village of Umm al-Khair, in Masafer Yatta in the southern occupied West Bank. Footage circulating on social media showed the activist named Finn Joughin being grabbed by the arms and taken to an unknown location by armed Israeli settlers on Saturday. He could not be rea",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
         },
         {
           "title": "Israeli army says earlier interception likely 'false target'",
@@ -3951,48 +3963,6 @@
           "score": 15
         },
         {
-          "title": "WHO raises concerns over amputees and deteriorating water quality in Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/who-raises-concern-over-deteriorating-water-quality-water-contamination",
-          "date": "2026-09-01T17:02:24.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "WHO raises concerns over amputees and deteriorating water quality in Gaza The World Health Organization (WHO) on Tuesday raised concerns about deteriorating water quality, contamination and subsequent disease risks in the genocide-stricken Gaza Strip ahead of the upcoming winter. Addressing reporters from Gaza, Reinhilde Van de Weerdt, WHO representative for the occupied Palestinian territories, s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "UK foreign secretary pledges 'comprehensive reset' of UK policy on Israel",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-foreign-secretary-pledges-comprehensive-reset-uk-policy-israel",
-          "date": "2026-09-01T16:40:02.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UK foreign secretary pledges 'comprehensive reset' of UK policy on Israel British Foreign Secretary Ed Miliband laid out plans on Tuesday for a set of measures against illegal Israeli settlement expansion in the occupied West Bank, in what he said would be a \"comprehensive reset\" of UK policy on Israel in the \"coming weeks\". Speaking to lawmakers as foreign secretary for the first time since his a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Israel would strike Iran even with a US deal, minister says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-would-strike-iran-even-us-deal-minister-says",
           "date": "2026-08-29T22:51:18.000Z",
@@ -4117,6 +4087,48 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "WHO raises concerns over amputees and deteriorating water quality in Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/who-raises-concern-over-deteriorating-water-quality-water-contamination",
+          "date": "2026-09-01T17:02:24.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "WHO raises concerns over amputees and deteriorating water quality in Gaza The World Health Organization (WHO) on Tuesday raised concerns about deteriorating water quality, contamination and subsequent disease risks in the genocide-stricken Gaza Strip ahead of the upcoming winter. Addressing reporters from Gaza, Reinhilde Van de Weerdt, WHO representative for the occupied Palestinian territories, s",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "UK foreign secretary pledges 'comprehensive reset' of UK policy on Israel",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-foreign-secretary-pledges-comprehensive-reset-uk-policy-israel",
+          "date": "2026-09-01T16:40:02.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UK foreign secretary pledges 'comprehensive reset' of UK policy on Israel British Foreign Secretary Ed Miliband laid out plans on Tuesday for a set of measures against illegal Israeli settlement expansion in the occupied West Bank, in what he said would be a \"comprehensive reset\" of UK policy on Israel in the \"coming weeks\". Speaking to lawmakers as foreign secretary for the first time since his a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "UK Foreign Secretary condemns Israeli settlements in the occupied West Bank",
@@ -4552,7 +4564,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "UK vows anti-settler measures as Israel warns of retaliation",
@@ -4719,27 +4731,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Netanyahu just condemned settler violence – now what will he do about it ? ",
-          "url": "https://www.thejc.com/opinion/netanyahu-just-condemned-settler-violence-now-what-will-he-do-about-it-bil740s6",
-          "date": "2026-09-01T17:00:00.000Z",
-          "source": "thejc.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -5288,6 +5279,27 @@
             "label": "Bericht"
           },
           "score": 15
+        },
+        {
+          "title": "Netanyahu just condemned settler violence – now what will he do about it ? ",
+          "url": "https://www.thejc.com/opinion/netanyahu-just-condemned-settler-violence-now-what-will-he-do-about-it-bil740s6",
+          "date": "2026-09-01T17:00:00.000Z",
+          "source": "thejc.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "World Food Programme halves number of aid recipients in occupied West Bank",
@@ -5927,7 +5939,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 16,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -5951,7 +5963,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 5
+          "count": 4
         },
         {
           "key": "sanctions",
@@ -5977,7 +5989,7 @@
             35.568
           ],
           "count": 15,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -6055,58 +6067,6 @@
       ],
       "items": [
         {
-          "title": "Saudi Arabia accuses Iran of attacking Saudi tanker in Strait of Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-accuses-iran-attacking-saudi-tanker-strait-hormuz",
-          "date": "2026-09-02T11:21:05.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Saudi Arabia accuses Iran of attacking Saudi tanker in Strait of Hormuz Saudi Arabia has accused Iran of attacking a tanker in the Strait of Hormuz, leading to \"fatalities\" among the crew. \"The Ministry of Foreign Affairs expresses the Kingdom of Saudi Arabia's condemnation of the Islamic Republic of Iran's targeting of the Saudi tanker (Sder) while the tanker was passing through the Strait of Hor",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 29
-        },
-        {
-          "title": "Iran: US accused of hitting wedding party in latest strikes",
-          "url": "https://www.france24.com/en/video/20260902-iran-us-accused-of-hitting-wedding-party-in-latest-strikes",
-          "date": "2026-09-02T11:11:30.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "#Tehran says at least four people were killed and dozens more wounded in a #US strike on a town near in the south of #Iran, near the Strait of #Hormuz.",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 28
-        },
-        {
           "title": "Iran seizes ship smuggling fuel in Gulf",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-seizes-ship-smuggling-fuel-gulf-state-media-reports",
           "date": "2026-09-02T15:21:16.000Z",
@@ -6157,48 +6117,6 @@
             "label": "Gefechte"
           },
           "score": 28
-        },
-        {
-          "title": "Trump aides seek  quiet  in Iran war but say attacks may intensify after November elections",
-          "url": "https://www.al-monitor.com/originals/2026/09/trump-aides-seek-quiet-iran-war-say-attacks-may-intensify-after-november",
-          "date": "2026-09-02T15:30:00.000Z",
-          "source": "al-monitor.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 28
-        },
-        {
-          "title": "What do we know about the fatal US bombing of a wedding in Iran’s Sirik?",
-          "url": "https://www.aljazeera.com/news/2026/9/2/what-do-we-know-about-the-fatal-us-bombing-of-a-wedding-in-irans-sirik?traffic_source=rss",
-          "date": "2026-09-02T10:57:16.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A residential building and a telecom tower were struck overnight, as Iran and the US launched more strikes over Hormuz.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 27
         },
         {
           "title": "Iran says US strike killed four at wedding in 'war crime' as US denies targeting civilians",
@@ -6253,58 +6171,6 @@
           "score": 27
         },
         {
-          "title": "US pounds Iran , Tehran strikes back at bases in biggest exchange since July",
-          "url": "https://www.omanobserver.om/article/1195505/world/region/us-pounds-iran-tehran-strikes-back-at-bases-in-biggest-exchange-since-july",
-          "date": "2026-09-02T15:30:00.000Z",
-          "source": "omanobserver.om",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 27
-        },
-        {
-          "title": "What is Iran’s Castle Breaker missile, used against US bases?",
-          "url": "https://www.aljazeera.com/news/2026/9/2/what-is-irans-castle-breaker-missile-used-against-us-bases?traffic_source=rss",
-          "date": "2026-09-02T12:38:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Kheibar Shekan, Iran's medium-range missile, is said to play a pivotal role in escalating US-Israel tensions.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 26
-        },
-        {
           "title": "Iran accuses US of ‘war crime’ after missile blast kills four people at wedding",
           "url": "https://www.theguardian.com/world/2026/sep/02/iran-us-missile-blast-wedding",
           "date": "2026-09-02T15:19:04.000Z",
@@ -6322,6 +6188,27 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Saudi Arabia accuses Iran of attacking Saudi tanker in Strait of Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-accuses-iran-attacking-saudi-tanker-strait-hormuz",
+          "date": "2026-09-02T11:21:05.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Saudi Arabia accuses Iran of attacking Saudi tanker in Strait of Hormuz Saudi Arabia has accused Iran of attacking a tanker in the Strait of Hormuz, leading to \"fatalities\" among the crew. \"The Ministry of Foreign Affairs expresses the Kingdom of Saudi Arabia's condemnation of the Islamic Republic of Iran's targeting of the Saudi tanker (Sder) while the tanker was passing through the Strait of Hor",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 26
         },
@@ -6352,7 +6239,7 @@
           "date": "2026-09-02T01:06:08.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Attacks on Iran’s Revolutionary Guard and reprisals against US bases in Middle East quash hopes that flare-up last weekend was limited in nature The US has launched new airstrikes on Iranian targets, prompting counter strikes by Tehran targeting American interests in Bahrain, Kuwait, Jordan and Iraq, fuelling concerns about a ⁠wider renewal of hostilities. US Marine Corps base Camp Titin in Jordan",
+          "summary": "Attacks on Iran’s Revolutionary Guard and reprisals against US bases in Middle East quash hopes that flare-up last weekend was limited in nature The US has launched new airstrikes on Iranian targets, prompting counter strikes by Tehran targeting American interests in Bahrain, Kuwait, Jordan and Iraq, and fuelling concerns about a ⁠wider renewal of hostilities. The US Marine Corps base Camp Titin i",
           "isNew": false,
           "region": {
             "id": "IRN-3216",
@@ -6409,13 +6296,86 @@
           "score": 25
         },
         {
+          "title": "Trump aides seek  quiet  in Iran war but say attacks may intensify after November elections",
+          "url": "https://www.al-monitor.com/originals/2026/09/trump-aides-seek-quiet-iran-war-say-attacks-may-intensify-after-november",
+          "date": "2026-09-02T15:30:00.000Z",
+          "source": "al-monitor.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
+        },
+        {
+          "title": "US pounds Iran , Tehran strikes back at bases in biggest exchange since July",
+          "url": "https://www.omanobserver.om/article/1195505/world/region/us-pounds-iran-tehran-strikes-back-at-bases-in-biggest-exchange-since-july",
+          "date": "2026-09-02T15:30:00.000Z",
+          "source": "omanobserver.om",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 25
+        },
+        {
+          "title": "What is Iran’s Castle Breaker missile, used against US bases?",
+          "url": "https://www.aljazeera.com/news/2026/9/2/what-is-irans-castle-breaker-missile-used-against-us-bases?traffic_source=rss",
+          "date": "2026-09-02T12:38:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Kheibar Shekan, Iran's medium-range missile, is said to play a pivotal role in escalating US-Israel tensions.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 25
+        },
+        {
           "title": "Iran hits back after deadly US strike on wedding : As it happened",
           "url": "http://www.iranherald.com/news/279281144/iran-hits-back-after-deadly-us-strike-on-wedding-as-it-happened",
           "date": "2026-09-02T15:45:00.000Z",
           "source": "iranherald.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6427,7 +6387,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran fires on its Gulf neighbors , retaliating for US strikes after a monthlong lull - WSVN 7News | Miami News , Weather , Sports",
@@ -6436,7 +6396,7 @@
           "source": "wsvn.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6448,7 +6408,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Pakistan to Continue Diplomatic Efforts for US - Iran Peace Deal",
@@ -6457,7 +6417,7 @@
           "source": "pakobserver.net",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -6469,7 +6429,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran Retaliates Against New U . S . Strikes",
@@ -6478,7 +6438,7 @@
           "source": "kprcradio.iheart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6490,7 +6450,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran security chief says US to face new war strategy after strikes",
@@ -6499,7 +6459,7 @@
           "source": "freemalaysiatoday.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6511,7 +6471,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran Retaliates Against New U . S . Strikes | Newsradio WFLA Orlando",
@@ -6520,7 +6480,7 @@
           "source": "wflaorlando.iheart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6532,7 +6492,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran Retaliates Against New U . S . Strikes | News Radio 1190 KEX",
@@ -6541,7 +6501,7 @@
           "source": "1190kex.iheart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6553,7 +6513,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran fires on its Gulf neighbors after US military strikes Iran",
@@ -6562,7 +6522,7 @@
           "source": "pilotonline.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6574,7 +6534,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran Retaliates Against New U . S . Strikes | NewsRadio 1110 KFAB",
@@ -6583,7 +6543,7 @@
           "source": "kfab.iheart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6595,7 +6555,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran Retaliates Against New U . S . Strikes | NewsTalk WMEQ",
@@ -6604,7 +6564,7 @@
           "source": "wmeq.iheart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6616,7 +6576,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran Retaliates Against New U . S . Strikes | NEWSRADIO 1040 WHO",
@@ -6625,7 +6585,7 @@
           "source": "whoradio.iheart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6637,7 +6597,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Iran Retaliates Against New U . S . Strikes | NewsRadio 790 WAEB",
@@ -6646,7 +6606,7 @@
           "source": "790waeb.iheart.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6658,7 +6618,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "What we know about reported strike on Iran wedding celebrations",
@@ -6667,7 +6627,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "BBC Verify looks at footage showing the aftermath of a strike on a building in southern Iran.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6701,6 +6661,58 @@
             "label": "Seeangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Iran: US accused of hitting wedding party in latest strikes",
+          "url": "https://www.france24.com/en/video/20260902-iran-us-accused-of-hitting-wedding-party-in-latest-strikes",
+          "date": "2026-09-02T11:11:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "#Tehran says at least four people were killed and dozens more wounded in a #US strike on a town near in the south of #Iran, near the Strait of #Hormuz.",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "What do we know about the fatal US bombing of a wedding in Iran’s Sirik?",
+          "url": "https://www.aljazeera.com/news/2026/9/2/what-do-we-know-about-the-fatal-us-bombing-of-a-wedding-in-irans-sirik?traffic_source=rss",
+          "date": "2026-09-02T10:57:16.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A residential building and a telecom tower were struck overnight, as Iran and the US launched more strikes over Hormuz.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 22
         },
         {
           "title": "Kuwait says fire 'under control' after Iranian attacks, as IRGC claims strikes on US facilities",
@@ -7486,55 +7498,13 @@
           "score": 22
         },
         {
-          "title": "Explosions heard east of Bandar Abbas as US announces new strikes on Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-east-bandar-abbas-us-announces-new-strikes-iran",
-          "date": "2026-09-01T16:52:24.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Explosions heard east of Bandar Abbas as US announces new strikes on Iran Several explosions have been heard east of Bandar Abbas, according to reports from Iran’s IRIB news agency. US Central Command wrote in a post on X that US forces \"began striking Islamic Revolutionary Guard Corps (IRGC) targets in Iran,\" adding that the strikes were in response to \"recent attempted attacks by the IRGC agains",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 22
-        },
-        {
-          "title": "Iran promises to respond to new wave of US strikes despite Trump’s threats",
-          "url": "https://www.aljazeera.com/news/2026/9/1/us-military-says-launching-new-attacks-on-iran?traffic_source=rss",
-          "date": "2026-09-01T16:45:56.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Trump says the US attacks were 'large and powerful' and warns that Iran would be hit 'much harder' if it retaliates.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Trump suggests renaming Strait of Hormuz 'Trump Strait'",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-suggests-renaming-strait-hormuz-trump-strait",
           "date": "2026-09-02T16:05:04.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Trump suggests renaming Strait of Hormuz 'Trump Strait' US President Donald Trump suggested renaming the Strait of Hormuz the \"Trump Strait\" in a post to Truth Social on Wednesday, despite control of the waterway remaining contested amid the US war on Iran. \"Now that we have it under U.S.A. control, should we change the name Hormuz Strait to TRUMP STRAIT??? Like America itself, it would be 'hotter",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -7620,6 +7590,69 @@
             "label": "Verhandlungen"
           },
           "score": 19
+        },
+        {
+          "title": "Majority of Americans oppose US military action against Iran: poll",
+          "url": "https://www.dawn.com/news/2026942/majority-of-americans-oppose-us-military-action-against-iran-poll",
+          "date": "2026-09-02T17:11:35.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "WASHINGTON: Opposition to the US military campaign against Iran has reached its highest level in six months, with 54 per cent of Americans now opposing the military action, compared with 39pc who support it, according to a new poll released on Wednesday. The survey was conducted by Global Strategy Group, a US public-opinion and political research firm, for Navigator Research , a public-opinion res",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 19
+        },
+        {
+          "title": "Explosions heard east of Bandar Abbas as US announces new strikes on Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-heard-east-bandar-abbas-us-announces-new-strikes-iran",
+          "date": "2026-09-01T16:52:24.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Explosions heard east of Bandar Abbas as US announces new strikes on Iran Several explosions have been heard east of Bandar Abbas, according to reports from Iran’s IRIB news agency. US Central Command wrote in a post on X that US forces \"began striking Islamic Revolutionary Guard Corps (IRGC) targets in Iran,\" adding that the strikes were in response to \"recent attempted attacks by the IRGC agains",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 18
+        },
+        {
+          "title": "Iran promises to respond to new wave of US strikes despite Trump’s threats",
+          "url": "https://www.aljazeera.com/news/2026/9/1/us-military-says-launching-new-attacks-on-iran?traffic_source=rss",
+          "date": "2026-09-01T16:45:56.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Trump says the US attacks were 'large and powerful' and warns that Iran would be hit 'much harder' if it retaliates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "SCO slams attacks, sanctions on Iran: Key takeaways from Bishkek summit",
@@ -7915,27 +7948,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Iranian president says he still wants diplomatic end to war after US strikes on Hormuz – Middle East crisis live",
-          "url": "https://www.theguardian.com/world/live/2026/aug/31/us-iran-israel-hormuz-oil-donald-trump-larak-kharg-island-uae-jordan-latest-news-updates",
-          "date": "2026-08-31T13:13:39.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "US targets Iran’s Larak Island in first exchange of fire in more than a month as Masoud Pezeshkian says America ‘has not fulfilled its commitments’ First US military attacks on Iran in a month prompt retaliation Coinciding with this week’s G20 meeting , the EU has issued a statement saying it will work with the US and other allied countries to maintain economic pressure against Iran. “The ‌EU welc",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "clash",
@@ -8352,37 +8364,6 @@
           "score": 20
         },
         {
-          "title": "Algeria: Algeria Sends Fighter Jets to Niger After a Failed Military Coup",
-          "url": "https://allafrica.com/stories/202608310517.html",
-          "date": "2026-08-31T12:57:47.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Agenzia Fides] Niamey -- Four Su-30 fighter jets, accompanied by an Il-76 transport aircraft and an Il-78 aerial tanker, have been deployed by Algeria to Air Base 101, adjacent to Diori Hamani International Airport in Niamey, following the military uprising that broke out last weekend. This is the first overseas deployment of the Algerian military and demonstrates the importance Algiers attaches ",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 20
-        },
-        {
           "title": "Nigeria: Mental Resilience Critical to Combat Readiness - Coas",
           "url": "https://allafrica.com/stories/202609020444.html",
           "date": "2026-09-02T12:13:03.000Z",
@@ -8454,6 +8435,37 @@
             "label": "Politik/Wahl"
           },
           "score": 19
+        },
+        {
+          "title": "Algeria: Algeria Sends Fighter Jets to Niger After a Failed Military Coup",
+          "url": "https://allafrica.com/stories/202608310517.html",
+          "date": "2026-08-31T12:57:47.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Agenzia Fides] Niamey -- Four Su-30 fighter jets, accompanied by an Il-76 transport aircraft and an Il-78 aerial tanker, have been deployed by Algeria to Air Base 101, adjacent to Diori Hamani International Airport in Niamey, following the military uprising that broke out last weekend. This is the first overseas deployment of the Algerian military and demonstrates the importance Algiers attaches ",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
         },
         {
           "title": "Why US is withdrawing 200 troops from Nigeria – DHQ",
@@ -10309,7 +10321,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -10621,6 +10633,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Kenya: NPS Launches Probe to Identify Armed Men Behind Abduction of Standard Group Editor",
+          "url": "https://allafrica.com/stories/202609020640.html",
+          "date": "2026-09-02T16:47:14.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Capital FM] Nairobi -- The National Police Service has launched investigations to establish the identities of heavily armed men who allegedly abducted Standard Group Associate Editor Alex Kiprotich.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 26
+        },
         {
           "title": "Nigeria: Why U.S. Is Withdrawing 200 Troops From Nigeria - DHQ",
           "url": "https://allafrica.com/stories/202609020135.html",
@@ -12079,7 +12112,7 @@
           "score": 8
         }
       ],
-      "itemCount": 57
+      "itemCount": 58
     },
     {
       "id": "haiti",
@@ -12107,7 +12140,7 @@
       ],
       "activity": 47,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -12136,7 +12169,7 @@
           "source": "thestar.com.my",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "abduction",
@@ -12148,7 +12181,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Haitians Demand Answers After Gang Massacre Devastates Christian Community",
@@ -12169,7 +12202,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Security Council LIVE: Deadly gang attacks spike in Haiti",
@@ -12199,7 +12232,7 @@
           "source": "jamaica-gleaner.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -12211,7 +12244,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 20
+          "score": 18
         },
         {
           "title": "JD Vance under siege after Haitian student death :  Not enough Hail Marys in the world  ",
@@ -12786,7 +12819,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 22
+          "score": 19
         },
         {
           "title": "Somalia: Somali Intelligence Agency Says Airstrike Hits Al-Shabaab Vehicle in Lower Shabelle",
@@ -13319,9 +13352,9 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 97,
+      "activity": 99,
       "severity": 68,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -13342,14 +13375,14 @@
           "count": 3
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 2
-        },
-        {
           "key": "sanctions",
           "label": "Sanktionen",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 2
         }
@@ -13457,6 +13490,27 @@
           "score": 26
         },
         {
+          "title": "Russia blamed for explosive-laden drone found at German airport",
+          "url": "https://www.france24.com/en/video/20260902-russia-blamed-for-explosive-laden-drone-found-at-german-airport",
+          "date": "2026-09-02T16:11:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "After #Germany blamed #Russia for the explosive-laden #drone found at #Leipzig airport on August 4, #Berlin has introduced new sanctions against #Moscow. Namely, its consulate in #Bonn and the Russian House - a cultural centre thought to be a Russian #spy hub - in #Berlin.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
           "title": "Chad Blames Sudan’s Army for Strikes on Convoy",
           "url": "https://www.crisisgroup.org/anb/africa/chad-sudan/chad-blames-sudans-army-strikes-convoy",
           "date": "2026-08-28T10:46:49.000Z",
@@ -13520,27 +13574,6 @@
           "score": 22
         },
         {
-          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
-          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
-          "date": "2026-09-01T17:00:58.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Pakistan 'hopeful' despite US-Iran escalation, will continue to strive for dialogue and diplomacy: FO",
           "url": "https://www.dawn.com/news/2026852/pakistan-hopeful-despite-us-iran-escalation-will-continue-to-strive-for-dialogue-and-diplomacy-fo",
           "date": "2026-09-02T13:15:59.000Z",
@@ -13572,25 +13605,25 @@
           "score": 19
         },
         {
-          "title": "Pakistan Navy commences SEASPARK-2026 exercise to test combat readiness",
-          "url": "https://www.dawn.com/news/2026890/pakistan-navy-commences-seaspark-2026-exercise-to-test-combat-readiness",
-          "date": "2026-09-02T11:31:21.000Z",
-          "source": "Dawn (Pakistan)",
+          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
+          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
+          "date": "2026-09-01T17:00:58.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "The Pakistan Navy commenced a major maritime exercise in Karachi on Wednesday to test combat readiness against threats, according to the Inter-Services Public Relations (ISPR). The opening brief of the maritime exercise, named SEASPARK-2026, was presided over by Chief of the Naval Staff Admiral Naveed Ashraf and attended by senior officers from other branches of the armed forces, the military’s me",
+          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Andy Burnham blames Tory legacy for leaving UK economy vulnerable",
@@ -13758,6 +13791,27 @@
             "label": "Opfer"
           },
           "score": 18
+        },
+        {
+          "title": "Pakistan Navy commences SEASPARK-2026 exercise to test combat readiness",
+          "url": "https://www.dawn.com/news/2026890/pakistan-navy-commences-seaspark-2026-exercise-to-test-combat-readiness",
+          "date": "2026-09-02T11:31:21.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The Pakistan Navy commenced a major maritime exercise in Karachi on Wednesday to test combat readiness against threats, according to the Inter-Services Public Relations (ISPR). The opening brief of the maritime exercise, named SEASPARK-2026, was presided over by Chief of the Naval Staff Admiral Naveed Ashraf and attended by senior officers from other branches of the armed forces, the military’s me",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 16
         },
         {
           "title": "Pakistan 'hopeful' despite US-Iran escalation, will continue to continue to strive for dialogue: FO",
@@ -14468,7 +14522,7 @@
           "score": 8
         }
       ],
-      "itemCount": 43
+      "itemCount": 44
     },
     {
       "id": "sudan",
@@ -14644,7 +14698,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 29
+          "score": 26
         },
         {
           "title": "Chad Blames Sudan’s Army for Strikes on Convoy",
@@ -14664,27 +14718,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 24
-        },
-        {
-          "title": "Military buildup seen in Ethiopia near Sudanese border",
-          "url": "https://www.france24.com/en/video/20260902-military-buildup-seen-in-ethiopia-near-sudanese-border",
-          "date": "2026-09-02T10:57:17.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A major military buildup has been observed on the Ethiopian side of the Sudanese border. It comes amid intensified fighting between the Sudanese armed forces and the Rapid Support Forces (RSF). Sudan and Ethiopia have both accused each other of supporting rebels within their borders.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 24
         },
@@ -14718,6 +14751,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Military buildup seen in Ethiopia near Sudanese border",
+          "url": "https://www.france24.com/en/video/20260902-military-buildup-seen-in-ethiopia-near-sudanese-border",
+          "date": "2026-09-02T10:57:17.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A major military buildup has been observed on the Ethiopian side of the Sudanese border. It comes amid intensified fighting between the Sudanese armed forces and the Rapid Support Forces (RSF). Sudan and Ethiopia have both accused each other of supporting rebels within their borders.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Sudan Blue Nile sees mass displacement as clashes trigger crisis",
@@ -16731,10 +16785,558 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         }
       ],
       "itemCount": 1
+    },
+    {
+      "id": "yemen",
+      "name": "Jemen / Rotes Meer",
+      "nameEn": "Yemen & Red Sea",
+      "region": "Naher Osten",
+      "countries": [
+        "Yemen"
+      ],
+      "lat": 15.4,
+      "lon": 44.2,
+      "tier": "high",
+      "since": "2014",
+      "parties": [
+        "Huthis (Ansar Allah)",
+        "Regierung/PLC",
+        "Saudi-geführte Koalition",
+        "USA/UK"
+      ],
+      "background": "Bürgerkrieg mit brüchigem Waffenstillstand; Huthi-Angriffe auf Schifffahrt im Roten Meer und auf Israel, westliche Gegenschläge.",
+      "hotspots": [
+        "Sanaa",
+        "Marib",
+        "Hodeidah",
+        "Rotes Meer",
+        "Bab al-Mandab"
+      ],
+      "activity": 48,
+      "severity": 53,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 5
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": {
+        "headline": "Huthi-Angriffe auf Schifffahrt und Saudi-Arabien, Waffenruhe unter Druck",
+        "text": "Die Huthis erklärten, eine Aramco-Anlage im saudischen Najran mit einer Drohne angegriffen zu haben. Ein Angriff auf eine jemenitische Hafenstadt tötete nach Angaben eines Regierungsvertreters acht Menschen; die Waffenruhe gilt als stark belastet. Ein Schiff im Roten Meer wurde getroffen, Besatzungsmitglieder schilderten den Angriff öffentlich. Der UN-Sicherheitsrat warnte, die zunehmenden Angriffe gefährdeten den Friedensprozess.",
+        "sources": [
+          "https://www.middleeasteye.net/rss",
+          "https://news.un.org/en/story/2026/08"
+        ],
+        "updatedAt": "2026-08-14T20:35:27.621Z"
+      },
+      "iso3": "YEM",
+      "extraCountries": [],
+      "regions": [
+        {
+          "id": "YEM-158",
+          "name": "Ta'izz",
+          "nameDe": "Gouvernement Ta'izz",
+          "type": "Governorate",
+          "anchor": [
+            43.787,
+            13.41
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        },
+        {
+          "id": "YEM-150",
+          "name": "Sa'dah",
+          "nameDe": "Sa'da",
+          "type": "Governorate",
+          "anchor": [
+            43.923,
+            17.071
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "YEM-3496",
+          "name": "Sanaa",
+          "nameDe": "Sanaa",
+          "type": "Governorate",
+          "anchor": [
+            44.4,
+            15.334
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Russia blamed for explosive-laden drone found at German airport",
+          "url": "https://www.france24.com/en/video/20260902-russia-blamed-for-explosive-laden-drone-found-at-german-airport",
+          "date": "2026-09-02T16:11:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "After #Germany blamed #Russia for the explosive-laden #drone found at #Leipzig airport on August 4, #Berlin has introduced new sanctions against #Moscow. Namely, its consulate in #Bonn and the Russian House - a cultural centre thought to be a Russian #spy hub - in #Berlin.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Four Yemeni government members killed amid conflict with Houthis",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/four-yemeni-government-members-killed-amid-conflict-houthis",
+          "date": "2026-09-02T05:08:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Four Yemeni government members killed amid conflict with Houthis Four members of Yemen's government-aligned forces were killed during clashes with Houthis&nbsp;over the last few days,&nbsp;according to a statement on Tuesday carried by the Al-Joumhouria television channel.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Yemeni Armed Forces Down Houthi Suicide Drone Over Taiz Front",
+          "url": "https://www.khabaragency.net/news252345.html",
+          "date": "2026-09-02T05:30:00.000Z",
+          "source": "khabaragency.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "YEM-158",
+            "name": "Ta'izz",
+            "nameDe": "Gouvernement Ta'izz",
+            "type": "Governorate",
+            "anchor": [
+              43.787,
+              13.41
+            ],
+            "matched": "Taiz"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Iran claims 7 killed in US missile strike on Khuzestan ; Houthis warn US troop hosts of  repercussions  ",
+          "url": "https://aninews.in/news/world/middle-east/iran-claims-7-killed-in-us-missile-strike-on-khuzestan-houthis-warn-us-troop-hosts-of-repercussions20260902085459/",
+          "date": "2026-09-02T04:45:00.000Z",
+          "source": "aninews.in",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Bus crash on Egypt's Red Sea coast kills 22",
+          "url": "https://www.bbc.co.uk/news/articles/cn8mr1myy2ko?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-02T12:07:32.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Reports say Jordanian nationals are among those killed in the accident in the South Sinai governorate.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 19
+        },
+        {
+          "title": "Yemeni Forces Launch Offensive on Saudi Positions - Islamic Invitation Turkey",
+          "url": "https://www.islamicinvitationturkey.com/yemeni-forces-launch-offensive-on-saudi-positions/",
+          "date": "2026-09-01T15:45:00.000Z",
+          "source": "islamicinvitationturkey.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
+        },
+        {
+          "title": "Germany set to blame Russia for airport explosive-laden drone incident",
+          "url": "https://www.france24.com/en/video/20260901-germany-set-to-blame-russia-for-airport-explosive-laden-drone-incident",
+          "date": "2026-09-01T15:35:40.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Berlin is set to formally blame Russia for an incident involving drones at a strategic airport on the night of August 4-5, including one that was found carrying explosives. Foreign Minister Johann Wadephul and Interior Minister Alexander Dobrindt are expected to accuse a Russian intelligence service of being behind the incident. It would be the first time Germany formally blames Moscow for an inci",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "At least five killed as ammunition-laden vehicle explodes in Syria’s Idlib",
+          "url": "https://www.aljazeera.com/news/2026/9/1/two-killed-in-explosion-of-ammunition-laden-vehicle-in-syrias-idlib?traffic_source=rss",
+          "date": "2026-09-01T11:43:28.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Several also injured in incident that took place in Idlib countryside, state media reports.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Yemeni forces carry out attacks against Houthi positions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-carry-out-attacks-against-houthi-positions",
+          "date": "2026-09-01T01:12:58.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemeni forces carry out attacks against Houthi positions Yemen’s military says launched drone attacks targeted Houthi positions&nbsp;across several fronts. The army’s media centre shared footage showing&nbsp;drones dropping bombs in the Baqam district, north of the Yemen’s Saada governorate. The Yemeni navy also indicated that&nbsp;four Houthi drone boats were destroyed&nbsp;near the islands of Ha",
+          "isNew": false,
+          "region": {
+            "id": "YEM-150",
+            "name": "Sa'dah",
+            "nameDe": "Sa'da",
+            "type": "Governorate",
+            "anchor": [
+              43.923,
+              17.071
+            ],
+            "matched": "Saada"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Yemen air raids exceed rate last year : UN",
+          "url": "https://spacewar.com/yemen-air-raids-exceed-rate-last-year-un-999/",
+          "date": "2026-08-30T10:00:00.000Z",
+          "source": "spacewar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Board of Peace envoy Mladenov warns Gaza ceasefire risks ‘collapse’",
+          "url": "https://www.aljazeera.com/news/2026/8/28/board-of-peace-envoy-mladenov-warns-gaza-ceasefire-risks-collapse?traffic_source=rss",
+          "date": "2026-08-28T16:44:45.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "In an interview with Al Jazeera, Nicolay Mladenov says that a return to war would be 'devastating'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Yemeni forces say fighter killed on Taiz front lines against Houthis",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-say-fighter-killed-taiz-front-lines-against-houthis",
+          "date": "2026-08-27T17:19:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemeni forces say fighter killed on Taiz front lines against Houthis Yemen’s Saudi-backed government said on Thursday a fighter with one of its factions was killed on the al-Ahtoub front lines in the western countryside of Taiz governorate fighting against the Houthis, according to Yemen’s army media centre. This comes after the Houthis fired ballistic missiles at Yemeni government positions in al",
+          "isNew": false,
+          "region": {
+            "id": "YEM-158",
+            "name": "Ta'izz",
+            "nameDe": "Gouvernement Ta'izz",
+            "type": "Governorate",
+            "anchor": [
+              43.787,
+              13.41
+            ],
+            "matched": "Taiz"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Yemen rebels vow to avenge coalition killing of political head",
+          "url": "https://spacewar.com/yemen-rebels-vow-to-avenge-coalition-killing-of-political-head-999/",
+          "date": "2026-09-02T04:30:00.000Z",
+          "source": "spacewar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Conservative reshuffle: who’s who in Kemi Badenoch’s top team?",
+          "url": "https://www.theguardian.com/politics/2026/aug/31/conservative-reshuffle-whos-who-in-kemi-badenochs-top-team",
+          "date": "2026-08-31T18:45:40.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "From a darling of the Tory right to a moderate former army officer, we profile the key players Andrew Griffith and Tom Tugendhat join Badenoch’s top team in Tory reshuffle Kemi Badenoch has kicked off the return to parliament with a reshuffle of her top team in order to take on Andy Burnham and Reform UK. She has made sweeping changes to the shadow cabinet and ruthlessly axed her shadow chancellor",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 11
+        },
+        {
+          "title": "Yemen’s traditional arms trade has evolved into a modern, internet-driven marketplace",
+          "url": "https://www.middleeasteye.net/news/yemens-traditional-arms-trade-has-evolved-modern-internet-driven-marketplace",
+          "date": "2026-08-31T11:26:14.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemen’s traditional arms trade has evolved into a modern, internet-driven marketplace Submitted by MEE correspondent on Mon, 08/31/2026 - 09:45 For Yemenis, weapon ownership signals social status, driving dealers to open online stores to meet continued demand Yemenis brandish their rifles during a rally to commemorate the anniversary of the death of Shia Imam Zaid Ibn Ali in Sanaa, on 20 July 2025",
+          "isNew": false,
+          "region": {
+            "id": "YEM-3496",
+            "name": "Sanaa",
+            "nameDe": "Sanaa",
+            "type": "Governorate",
+            "anchor": [
+              44.4,
+              15.334
+            ],
+            "matched": "Sanaa"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Yemen upheaval deals blow to US fight against AQAP",
+          "url": "https://spacewar.com/yemen-upheaval-deals-blow-to-us-fight-against-aqap-999/",
+          "date": "2026-08-30T10:00:00.000Z",
+          "source": "spacewar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Yemen rebel long - range arsenal grows lethal",
+          "url": "https://spacewar.com/yemen-rebel-long-range-arsenal-grows-lethal-999/",
+          "date": "2026-08-30T10:00:00.000Z",
+          "source": "spacewar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Giorgia on their minds: Farage and Badenoch scrap to be mates with Meloni",
+          "url": "https://www.theguardian.com/politics/2026/aug/30/giorgia-meloni-farage-badenoch-row",
+          "date": "2026-08-30T04:00:45.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Tories accuse Reform of ‘peddling conspiracy theories’ as row erupts in wake of Conservative leader’s trip to Rome Nigel Farage and Kemi Badenoch have spent years trading barbs and fighting for the rightwing vote. But now the party leaders find themselves in a much more bizarre struggle – for the affections of the rightwing Italian prime minister, Giorgia Meloni. The row began on Monday when the T",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 18
     },
     {
       "id": "taiwan-strait",
@@ -16763,7 +17365,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -16875,7 +17477,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "China’s Xi urges new Middle East security framework during rare Egypt visit",
@@ -16884,7 +17486,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Chinese, Egyptian leaders discuss the US-Israel war on Iran, which has prompted regional powers to rethink defence.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -16926,7 +17528,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Trump suggests renaming Strait of Hormuz 'Trump Strait' US President Donald Trump suggested renaming the Strait of Hormuz the \"Trump Strait\" in a post to Truth Social on Wednesday, despite control of the waterway remaining contested amid the US war on Iran. \"Now that we have it under U.S.A. control, should we change the name Hormuz Strait to TRUMP STRAIT??? Like America itself, it would be 'hotter",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -18304,527 +18906,6 @@
       "itemCount": 64
     },
     {
-      "id": "yemen",
-      "name": "Jemen / Rotes Meer",
-      "nameEn": "Yemen & Red Sea",
-      "region": "Naher Osten",
-      "countries": [
-        "Yemen"
-      ],
-      "lat": 15.4,
-      "lon": 44.2,
-      "tier": "high",
-      "since": "2014",
-      "parties": [
-        "Huthis (Ansar Allah)",
-        "Regierung/PLC",
-        "Saudi-geführte Koalition",
-        "USA/UK"
-      ],
-      "background": "Bürgerkrieg mit brüchigem Waffenstillstand; Huthi-Angriffe auf Schifffahrt im Roten Meer und auf Israel, westliche Gegenschläge.",
-      "hotspots": [
-        "Sanaa",
-        "Marib",
-        "Hodeidah",
-        "Rotes Meer",
-        "Bab al-Mandab"
-      ],
-      "activity": 43,
-      "severity": 51,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 5
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": {
-        "headline": "Huthi-Angriffe auf Schifffahrt und Saudi-Arabien, Waffenruhe unter Druck",
-        "text": "Die Huthis erklärten, eine Aramco-Anlage im saudischen Najran mit einer Drohne angegriffen zu haben. Ein Angriff auf eine jemenitische Hafenstadt tötete nach Angaben eines Regierungsvertreters acht Menschen; die Waffenruhe gilt als stark belastet. Ein Schiff im Roten Meer wurde getroffen, Besatzungsmitglieder schilderten den Angriff öffentlich. Der UN-Sicherheitsrat warnte, die zunehmenden Angriffe gefährdeten den Friedensprozess.",
-        "sources": [
-          "https://www.middleeasteye.net/rss",
-          "https://news.un.org/en/story/2026/08"
-        ],
-        "updatedAt": "2026-08-14T20:35:27.621Z"
-      },
-      "iso3": "YEM",
-      "extraCountries": [],
-      "regions": [
-        {
-          "id": "YEM-158",
-          "name": "Ta'izz",
-          "nameDe": "Gouvernement Ta'izz",
-          "type": "Governorate",
-          "anchor": [
-            43.787,
-            13.41
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        },
-        {
-          "id": "YEM-150",
-          "name": "Sa'dah",
-          "nameDe": "Sa'da",
-          "type": "Governorate",
-          "anchor": [
-            43.923,
-            17.071
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "YEM-3496",
-          "name": "Sanaa",
-          "nameDe": "Sanaa",
-          "type": "Governorate",
-          "anchor": [
-            44.4,
-            15.334
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Four Yemeni government members killed amid conflict with Houthis",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/four-yemeni-government-members-killed-amid-conflict-houthis",
-          "date": "2026-09-02T05:08:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Four Yemeni government members killed amid conflict with Houthis Four members of Yemen's government-aligned forces were killed during clashes with Houthis&nbsp;over the last few days,&nbsp;according to a statement on Tuesday carried by the Al-Joumhouria television channel.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Yemeni Armed Forces Down Houthi Suicide Drone Over Taiz Front",
-          "url": "https://www.khabaragency.net/news252345.html",
-          "date": "2026-09-02T05:30:00.000Z",
-          "source": "khabaragency.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "YEM-158",
-            "name": "Ta'izz",
-            "nameDe": "Gouvernement Ta'izz",
-            "type": "Governorate",
-            "anchor": [
-              43.787,
-              13.41
-            ],
-            "matched": "Taiz"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Iran claims 7 killed in US missile strike on Khuzestan ; Houthis warn US troop hosts of  repercussions  ",
-          "url": "https://aninews.in/news/world/middle-east/iran-claims-7-killed-in-us-missile-strike-on-khuzestan-houthis-warn-us-troop-hosts-of-repercussions20260902085459/",
-          "date": "2026-09-02T04:45:00.000Z",
-          "source": "aninews.in",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Bus crash on Egypt's Red Sea coast kills 22",
-          "url": "https://www.bbc.co.uk/news/articles/cn8mr1myy2ko?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-02T12:07:32.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Reports say Jordanian nationals are among those killed in the accident in the South Sinai governorate.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
-        },
-        {
-          "title": "Yemeni Forces Launch Offensive on Saudi Positions - Islamic Invitation Turkey",
-          "url": "https://www.islamicinvitationturkey.com/yemeni-forces-launch-offensive-on-saudi-positions/",
-          "date": "2026-09-01T15:45:00.000Z",
-          "source": "islamicinvitationturkey.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Germany set to blame Russia for airport explosive-laden drone incident",
-          "url": "https://www.france24.com/en/video/20260901-germany-set-to-blame-russia-for-airport-explosive-laden-drone-incident",
-          "date": "2026-09-01T15:35:40.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Berlin is set to formally blame Russia for an incident involving drones at a strategic airport on the night of August 4-5, including one that was found carrying explosives. Foreign Minister Johann Wadephul and Interior Minister Alexander Dobrindt are expected to accuse a Russian intelligence service of being behind the incident. It would be the first time Germany formally blames Moscow for an inci",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "At least five killed as ammunition-laden vehicle explodes in Syria’s Idlib",
-          "url": "https://www.aljazeera.com/news/2026/9/1/two-killed-in-explosion-of-ammunition-laden-vehicle-in-syrias-idlib?traffic_source=rss",
-          "date": "2026-09-01T11:43:28.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Several also injured in incident that took place in Idlib countryside, state media reports.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Yemeni forces carry out attacks against Houthi positions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-carry-out-attacks-against-houthi-positions",
-          "date": "2026-09-01T01:12:58.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemeni forces carry out attacks against Houthi positions Yemen’s military says launched drone attacks targeted Houthi positions&nbsp;across several fronts. The army’s media centre shared footage showing&nbsp;drones dropping bombs in the Baqam district, north of the Yemen’s Saada governorate. The Yemeni navy also indicated that&nbsp;four Houthi drone boats were destroyed&nbsp;near the islands of Ha",
-          "isNew": false,
-          "region": {
-            "id": "YEM-150",
-            "name": "Sa'dah",
-            "nameDe": "Sa'da",
-            "type": "Governorate",
-            "anchor": [
-              43.923,
-              17.071
-            ],
-            "matched": "Saada"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Yemen air raids exceed rate last year : UN",
-          "url": "https://spacewar.com/yemen-air-raids-exceed-rate-last-year-un-999/",
-          "date": "2026-08-30T10:00:00.000Z",
-          "source": "spacewar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Board of Peace envoy Mladenov warns Gaza ceasefire risks ‘collapse’",
-          "url": "https://www.aljazeera.com/news/2026/8/28/board-of-peace-envoy-mladenov-warns-gaza-ceasefire-risks-collapse?traffic_source=rss",
-          "date": "2026-08-28T16:44:45.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "In an interview with Al Jazeera, Nicolay Mladenov says that a return to war would be 'devastating'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Yemeni forces say fighter killed on Taiz front lines against Houthis",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-say-fighter-killed-taiz-front-lines-against-houthis",
-          "date": "2026-08-27T17:19:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemeni forces say fighter killed on Taiz front lines against Houthis Yemen’s Saudi-backed government said on Thursday a fighter with one of its factions was killed on the al-Ahtoub front lines in the western countryside of Taiz governorate fighting against the Houthis, according to Yemen’s army media centre. This comes after the Houthis fired ballistic missiles at Yemeni government positions in al",
-          "isNew": false,
-          "region": {
-            "id": "YEM-158",
-            "name": "Ta'izz",
-            "nameDe": "Gouvernement Ta'izz",
-            "type": "Governorate",
-            "anchor": [
-              43.787,
-              13.41
-            ],
-            "matched": "Taiz"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Yemen rebels vow to avenge coalition killing of political head",
-          "url": "https://spacewar.com/yemen-rebels-vow-to-avenge-coalition-killing-of-political-head-999/",
-          "date": "2026-09-02T04:30:00.000Z",
-          "source": "spacewar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Conservative reshuffle: who’s who in Kemi Badenoch’s top team?",
-          "url": "https://www.theguardian.com/politics/2026/aug/31/conservative-reshuffle-whos-who-in-kemi-badenochs-top-team",
-          "date": "2026-08-31T18:45:40.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "From a darling of the Tory right to a moderate former army officer, we profile the key players Andrew Griffith and Tom Tugendhat join Badenoch’s top team in Tory reshuffle Kemi Badenoch has kicked off the return to parliament with a reshuffle of her top team in order to take on Andy Burnham and Reform UK. She has made sweeping changes to the shadow cabinet and ruthlessly axed her shadow chancellor",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 11
-        },
-        {
-          "title": "Yemen’s traditional arms trade has evolved into a modern, internet-driven marketplace",
-          "url": "https://www.middleeasteye.net/news/yemens-traditional-arms-trade-has-evolved-modern-internet-driven-marketplace",
-          "date": "2026-08-31T11:26:14.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemen’s traditional arms trade has evolved into a modern, internet-driven marketplace Submitted by MEE correspondent on Mon, 08/31/2026 - 09:45 For Yemenis, weapon ownership signals social status, driving dealers to open online stores to meet continued demand Yemenis brandish their rifles during a rally to commemorate the anniversary of the death of Shia Imam Zaid Ibn Ali in Sanaa, on 20 July 2025",
-          "isNew": false,
-          "region": {
-            "id": "YEM-3496",
-            "name": "Sanaa",
-            "nameDe": "Sanaa",
-            "type": "Governorate",
-            "anchor": [
-              44.4,
-              15.334
-            ],
-            "matched": "Sanaa"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Yemen upheaval deals blow to US fight against AQAP",
-          "url": "https://spacewar.com/yemen-upheaval-deals-blow-to-us-fight-against-aqap-999/",
-          "date": "2026-08-30T10:00:00.000Z",
-          "source": "spacewar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Yemen rebel long - range arsenal grows lethal",
-          "url": "https://spacewar.com/yemen-rebel-long-range-arsenal-grows-lethal-999/",
-          "date": "2026-08-30T10:00:00.000Z",
-          "source": "spacewar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Giorgia on their minds: Farage and Badenoch scrap to be mates with Meloni",
-          "url": "https://www.theguardian.com/politics/2026/aug/30/giorgia-meloni-farage-badenoch-row",
-          "date": "2026-08-30T04:00:45.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Tories accuse Reform of ‘peddling conspiracy theories’ as row erupts in wake of Conservative leader’s trip to Rome Nigel Farage and Kemi Badenoch have spent years trading barbs and fighting for the rightwing vote. But now the party leaders find themselves in a much more bizarre struggle – for the affections of the rightwing Italian prime minister, Giorgia Meloni. The row began on Monday when the T",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 17
-    },
-    {
       "id": "india-pakistan",
       "name": "Indien–Pakistan / Kaschmir",
       "nameEn": "India–Pakistan / Kashmir",
@@ -18975,27 +19056,6 @@
           "score": 19
         },
         {
-          "title": "Pakistan Navy commences SEASPARK-2026 exercise to test combat readiness",
-          "url": "https://www.dawn.com/news/2026890/pakistan-navy-commences-seaspark-2026-exercise-to-test-combat-readiness",
-          "date": "2026-09-02T11:31:21.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The Pakistan Navy commenced a major maritime exercise in Karachi on Wednesday to test combat readiness against threats, according to the Inter-Services Public Relations (ISPR). The opening brief of the maritime exercise, named SEASPARK-2026, was presided over by Chief of the Naval Staff Admiral Naveed Ashraf and attended by senior officers from other branches of the armed forces, the military’s me",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 19
-        },
-        {
           "title": "Pakistan wins Indus waters battle at The Hague, but India threat remains",
           "url": "https://www.aljazeera.com/news/2026/9/1/pakistan-wins-indus-waters-battle-at-the-hague-but-india-threat-remains?traffic_source=rss",
           "date": "2026-09-01T12:25:28.000Z",
@@ -19015,6 +19075,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Pakistan Navy commences SEASPARK-2026 exercise to test combat readiness",
+          "url": "https://www.dawn.com/news/2026890/pakistan-navy-commences-seaspark-2026-exercise-to-test-combat-readiness",
+          "date": "2026-09-02T11:31:21.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "The Pakistan Navy commenced a major maritime exercise in Karachi on Wednesday to test combat readiness against threats, according to the Inter-Services Public Relations (ISPR). The opening brief of the maritime exercise, named SEASPARK-2026, was presided over by Chief of the Naval Staff Admiral Naveed Ashraf and attended by senior officers from other branches of the armed forces, the military’s me",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 16
         },
         {
           "title": "Pakistan 'hopeful' despite US-Iran escalation, will continue to continue to strive for dialogue: FO",
@@ -20734,7 +20815,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 20
+          "score": 15
         },
         {
           "title": "Ethiopia: Tigray Education Bureau Decries 'Pattern of Drone Destruction'",
@@ -20967,27 +21048,6 @@
       "regions": [],
       "items": [
         {
-          "title": "What is Iran’s Castle Breaker missile, used against US bases?",
-          "url": "https://www.aljazeera.com/news/2026/9/2/what-is-irans-castle-breaker-missile-used-against-us-bases?traffic_source=rss",
-          "date": "2026-09-02T12:38:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Kheibar Shekan, Iran's medium-range missile, is said to play a pivotal role in escalating US-Israel tensions.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 26
-        },
-        {
           "title": "Iran accuses US of ‘war crime’ after missile blast kills four people at wedding",
           "url": "https://www.theguardian.com/world/2026/sep/02/iran-us-missile-blast-wedding",
           "date": "2026-09-02T15:19:04.000Z",
@@ -21007,6 +21067,27 @@
             "label": "Raketenangriff"
           },
           "score": 26
+        },
+        {
+          "title": "What is Iran’s Castle Breaker missile, used against US bases?",
+          "url": "https://www.aljazeera.com/news/2026/9/2/what-is-irans-castle-breaker-missile-used-against-us-bases?traffic_source=rss",
+          "date": "2026-09-02T12:38:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Kheibar Shekan, Iran's medium-range missile, is said to play a pivotal role in escalating US-Israel tensions.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 25
         },
         {
           "title": "From Defeated Power to Missile Power : Why Japan Is Rebuilding Its Military",
@@ -21832,19 +21913,25 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 17
+          "count": 16
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
           "count": 9
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 7
         },
         {
           "key": "escalation",
@@ -21856,12 +21943,6 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 6
-        },
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
           "count": 6
         }
       ],
@@ -21935,6 +22016,27 @@
           "score": 26
         },
         {
+          "title": "Leipzig airport attack fallout lays bare Germany’s polarisation on Russia",
+          "url": "https://www.theguardian.com/world/2026/sep/02/leipzig-airport-attack-fallout-lays-bare-germanys-polarisation-on-russia",
+          "date": "2026-09-02T17:07:21.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "The government’s increasingly hostile stance towards the Kremlin has drawn criticism from the far right – and the far left Even before the German government laid the blame this week on Russia for an attempted drone attack at Leipzig airport , the topic of German ties to Moscow was high on the political agenda. But the timing of the unsurprising yet explosive Leipzig announcement – days before a ke",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Russian ‘attempts to intimidate Europe will fail’, says EU’s Kallas as Germany blames Moscow for Leipzig drone incident – as it happened",
           "url": "https://www.theguardian.com/world/live/2026/sep/02/europe-eu-germany-leipzig-drone-attack-russia-ukraine-macron-latest-news-updates",
           "date": "2026-09-02T15:46:30.000Z",
@@ -21942,6 +22044,27 @@
           "sourceType": "news",
           "summary": "EU’s policy chief says drone incident at German airport ‘had the hallmarks of state-sponsored terrorism’ German police have opened a investigation into yesterday’s attempt to disrupt the operation of a power substation near Brandenburg. In a statement , Brandenburg police said they were leading a probe on suspicion of attempting to disrupt public services, causing an explosion and damaging critica",
           "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russia blamed for explosive-laden drone found at German airport",
+          "url": "https://www.france24.com/en/video/20260902-russia-blamed-for-explosive-laden-drone-found-at-german-airport",
+          "date": "2026-09-02T16:11:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "After #Germany blamed #Russia for the explosive-laden #drone found at #Leipzig airport on August 4, #Berlin has introduced new sanctions against #Moscow. Namely, its consulate in #Bonn and the Russian House - a cultural centre thought to be a Russian #spy hub - in #Berlin.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "drone",
@@ -22166,27 +22289,6 @@
           "score": 22
         },
         {
-          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
-          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
-          "date": "2026-09-01T17:00:58.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Zelenskyy warns airlines as Ukrainian drones target Russian airspace",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/zelenskyy-warns-airlines-as-ukrainian-drones-target-russian-airspace?traffic_source=rss",
           "date": "2026-09-01T21:03:45.000Z",
@@ -22210,7 +22312,7 @@
         {
           "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
           "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-02T14:34:22.000Z",
+          "date": "2026-09-02T16:49:00.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
@@ -22234,7 +22336,7 @@
           "date": "2026-09-02T15:52:05.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Ukraine president says aviation industry needs to take account of growing number of Ukrainian drones in Russia Europe live – latest updates Volodymyr Zelenskyy has declared that Russia’s airspace is becoming unsafe for commercial airlines as Vladimir Putin promised to step up strikes against Ukraine’s energy facilities in the run-up to winter. The Ukrainian president said there was no intention to",
+          "summary": "Ukraine president says aviation industry needs to take account of growing number of Ukrainian drones in Russia Volodymyr Zelenskyy has declared that Russia’s airspace is becoming unsafe for commercial airlines, as Vladimir Putin promised to increase strikes against Ukraine’s energy facilities in the run-up to winter. The Ukrainian president said there was no intention to directly threaten civilian",
           "isNew": false,
           "region": null,
           "event": {
@@ -22290,6 +22392,27 @@
             "label": "Politik/Wahl"
           },
           "score": 19
+        },
+        {
+          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
+          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
+          "date": "2026-09-01T17:00:58.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Six days of Russian strikes push Kyiv residents to consider leaving",
@@ -22754,27 +22877,6 @@
           "score": 15
         },
         {
-          "title": "Russia targets Ukraine’s rail network as war enters deadly new phase",
-          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
-          "date": "2026-09-01T17:23:15.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Six employees killed on Tuesday after Moscow escalates attacks on infrastructure and Ukrainian capital Russia has opened a deadly new phase in its war against Ukraine by deliberately targeting the country’s railway network, with six employees killed on Tuesday in the latest strikes on Kyiv. Ukraine’s state-owned railway company, Ukrzaliznytsia, said its workers died when a ballistic missile plunge",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss",
           "date": "2026-08-29T16:53:55.000Z",
@@ -23048,6 +23150,27 @@
           "score": 12
         },
         {
+          "title": "Russia targets Ukraine’s rail network as war enters deadly new phase",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+          "date": "2026-09-01T17:23:15.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Six employees killed on Tuesday after Moscow escalates attacks on infrastructure and Ukrainian capital Russia has opened a deadly new phase in its war against Ukraine by deliberately targeting the country’s railway network, with six employees killed on Tuesday in the latest strikes on Kyiv. Ukraine’s state-owned railway company, Ukrzaliznytsia, said its workers died when a ballistic missile plunge",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 11
+        },
+        {
           "title": "Niger's thwarted mutiny highlights junta's dependence on Russia",
           "url": "https://www.france24.com/en/africa/20260901-what-russia-helping-niger-junta-stop-mutiny-means-for-its-sovereignty",
           "date": "2026-09-01T15:16:08.000Z",
@@ -23298,30 +23421,9 @@
             "label": "Gefechte"
           },
           "score": 8
-        },
-        {
-          "title": "Trump claims CIA director’s surprise visit to Russia is ‘semi-routine’ despite mounting speculation – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/aug/26/darline-graham-lindsey-south-carolina-gop-post-office-voting-senate-midterms-donald-trump-latest-news-updates",
-          "date": "2026-08-26T16:41:49.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Trump administration had not formally announced John Ratcliffe’s trip, but various outlets captured the flight tracking data of the US jet and the Kremlin confirmed the meeting Darline Graham wins Republican primary for US Senate Sign up for the US Breaking News email A US military strike on an alleged drug trafficking boat in the Caribbean on Tuesday killed four people, officials said. US Souther",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 69
+      "itemCount": 70
     },
     {
       "id": "moldova-transnistria",
@@ -23348,19 +23450,25 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 16
+          "count": 15
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
           "count": 9
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 7
         },
         {
           "key": "escalation",
@@ -23372,12 +23480,6 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 6
-        },
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
           "count": 6
         }
       ],
@@ -23451,6 +23553,27 @@
           "score": 26
         },
         {
+          "title": "Leipzig airport attack fallout lays bare Germany’s polarisation on Russia",
+          "url": "https://www.theguardian.com/world/2026/sep/02/leipzig-airport-attack-fallout-lays-bare-germanys-polarisation-on-russia",
+          "date": "2026-09-02T17:07:21.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "The government’s increasingly hostile stance towards the Kremlin has drawn criticism from the far right – and the far left Even before the German government laid the blame this week on Russia for an attempted drone attack at Leipzig airport , the topic of German ties to Moscow was high on the political agenda. But the timing of the unsurprising yet explosive Leipzig announcement – days before a ke",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Russian ‘attempts to intimidate Europe will fail’, says EU’s Kallas as Germany blames Moscow for Leipzig drone incident – as it happened",
           "url": "https://www.theguardian.com/world/live/2026/sep/02/europe-eu-germany-leipzig-drone-attack-russia-ukraine-macron-latest-news-updates",
           "date": "2026-09-02T15:46:30.000Z",
@@ -23458,6 +23581,27 @@
           "sourceType": "news",
           "summary": "EU’s policy chief says drone incident at German airport ‘had the hallmarks of state-sponsored terrorism’ German police have opened a investigation into yesterday’s attempt to disrupt the operation of a power substation near Brandenburg. In a statement , Brandenburg police said they were leading a probe on suspicion of attempting to disrupt public services, causing an explosion and damaging critica",
           "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russia blamed for explosive-laden drone found at German airport",
+          "url": "https://www.france24.com/en/video/20260902-russia-blamed-for-explosive-laden-drone-found-at-german-airport",
+          "date": "2026-09-02T16:11:30.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "After #Germany blamed #Russia for the explosive-laden #drone found at #Leipzig airport on August 4, #Berlin has introduced new sanctions against #Moscow. Namely, its consulate in #Bonn and the Russian House - a cultural centre thought to be a Russian #spy hub - in #Berlin.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "drone",
@@ -23682,27 +23826,6 @@
           "score": 22
         },
         {
-          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
-          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
-          "date": "2026-09-01T17:00:58.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Zelenskyy warns airlines as Ukrainian drones target Russian airspace",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/zelenskyy-warns-airlines-as-ukrainian-drones-target-russian-airspace?traffic_source=rss",
           "date": "2026-09-01T21:03:45.000Z",
@@ -23729,7 +23852,7 @@
           "date": "2026-09-02T15:52:05.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Ukraine president says aviation industry needs to take account of growing number of Ukrainian drones in Russia Europe live – latest updates Volodymyr Zelenskyy has declared that Russia’s airspace is becoming unsafe for commercial airlines as Vladimir Putin promised to step up strikes against Ukraine’s energy facilities in the run-up to winter. The Ukrainian president said there was no intention to",
+          "summary": "Ukraine president says aviation industry needs to take account of growing number of Ukrainian drones in Russia Volodymyr Zelenskyy has declared that Russia’s airspace is becoming unsafe for commercial airlines, as Vladimir Putin promised to increase strikes against Ukraine’s energy facilities in the run-up to winter. The Ukrainian president said there was no intention to directly threaten civilian",
           "isNew": false,
           "region": null,
           "event": {
@@ -23747,7 +23870,7 @@
         {
           "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
           "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-02T14:34:22.000Z",
+          "date": "2026-09-02T16:49:00.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
@@ -23806,6 +23929,27 @@
             "label": "Politik/Wahl"
           },
           "score": 19
+        },
+        {
+          "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
+          "url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
+          "date": "2026-09-01T17:00:58.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Six days of Russian strikes push Kyiv residents to consider leaving",
@@ -24270,27 +24414,6 @@
           "score": 15
         },
         {
-          "title": "Russia targets Ukraine’s rail network as war enters deadly new phase",
-          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
-          "date": "2026-09-01T17:23:15.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Six employees killed on Tuesday after Moscow escalates attacks on infrastructure and Ukrainian capital Russia has opened a deadly new phase in its war against Ukraine by deliberately targeting the country’s railway network, with six employees killed on Tuesday in the latest strikes on Kyiv. Ukraine’s state-owned railway company, Ukrzaliznytsia, said its workers died when a ballistic missile plunge",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Mapping Iran war’s strikes on Gulf energy and its impact on future of oil",
           "url": "https://www.aljazeera.com/news/2026/8/30/mapping-the-iran-wars-strikes-on-gulf-energy-and-what-comes-next-for-oil?traffic_source=rss",
           "date": "2026-08-30T05:09:11.000Z",
@@ -24585,6 +24708,27 @@
           "score": 12
         },
         {
+          "title": "Russia targets Ukraine’s rail network as war enters deadly new phase",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+          "date": "2026-09-01T17:23:15.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Six employees killed on Tuesday after Moscow escalates attacks on infrastructure and Ukrainian capital Russia has opened a deadly new phase in its war against Ukraine by deliberately targeting the country’s railway network, with six employees killed on Tuesday in the latest strikes on Kyiv. Ukraine’s state-owned railway company, Ukrzaliznytsia, said its workers died when a ballistic missile plunge",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 11
+        },
+        {
           "title": "Niger's thwarted mutiny highlights junta's dependence on Russia",
           "url": "https://www.france24.com/en/africa/20260901-what-russia-helping-niger-junta-stop-mutiny-means-for-its-sovereignty",
           "date": "2026-09-01T15:16:08.000Z",
@@ -24856,30 +25000,9 @@
             "label": "Gefechte"
           },
           "score": 8
-        },
-        {
-          "title": "Trump claims CIA director’s surprise visit to Russia is ‘semi-routine’ despite mounting speculation – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/aug/26/darline-graham-lindsey-south-carolina-gop-post-office-voting-senate-midterms-donald-trump-latest-news-updates",
-          "date": "2026-08-26T16:41:49.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Trump administration had not formally announced John Ratcliffe’s trip, but various outlets captured the flight tracking data of the US jet and the Kremlin confirmed the meeting Darline Graham wins Republican primary for US Senate Sign up for the US Breaking News email A US military strike on an alleged drug trafficking boat in the Caribbean on Tuesday killed four people, officials said. US Souther",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 71
+      "itemCount": 72
     },
     {
       "id": "afghanistan",
@@ -25996,7 +26119,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 29
+          "score": 26
         },
         {
           "title": "Armenian army official arrested over deadly lorry crash",
@@ -26221,7 +26344,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 12
+          "score": 11
         },
         {
           "title": "Mozambique: U.S. Government Urges Its Citizens to Avoid Travelling to Northern Mozambique",
@@ -26520,8 +26643,8 @@
         "Rafah-Grenzübergang",
         "El-Arish"
       ],
-      "activity": 30,
-      "severity": 20,
+      "activity": 35,
+      "severity": 21,
       "newCount": 1,
       "signals": [
         {
@@ -26534,7 +26657,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 1
+          "count": 2
         },
         {
           "key": "offensive",
@@ -26561,6 +26684,23 @@
       "extraCountries": [],
       "regions": [
         {
+          "id": "EGY-1557",
+          "name": "South Sinai",
+          "nameDe": "Dschanub Sina",
+          "type": "Governorate",
+          "anchor": [
+            33.802,
+            29.014
+          ],
+          "count": 2,
+          "newCount": 1,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          }
+        },
+        {
           "id": "EGY-1533",
           "name": "Cairo",
           "nameDe": "al-Qahira",
@@ -26576,26 +26716,40 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           }
-        },
+        }
+      ],
+      "items": [
         {
-          "id": "EGY-1557",
-          "name": "South Sinai",
-          "nameDe": "Dschanub Sina",
-          "type": "Governorate",
-          "anchor": [
-            33.802,
-            29.014
-          ],
-          "count": 1,
-          "newCount": 0,
+          "title": "Deadly bus crash in Egypt’s Sinai kills 22, injures 28",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/deadly-bus-crash-in-egypts-sinai-kills-22-injures-28?traffic_source=rss",
+          "date": "2026-09-02T16:52:52.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A deadly bus crash in Egypt’s South Sinai killed 22 people and injured 28",
+          "isNew": true,
+          "region": {
+            "id": "EGY-1557",
+            "name": "South Sinai",
+            "nameDe": "Dschanub Sina",
+            "type": "Governorate",
+            "anchor": [
+              33.802,
+              29.014
+            ],
+            "matched": "South Sinai"
+          },
           "event": {
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          }
-        }
-      ],
-      "items": [
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
         {
           "title": "Bus crash on Egypt's Red Sea coast kills 22",
           "url": "https://www.bbc.co.uk/news/articles/cn8mr1myy2ko?at_medium=RSS&at_campaign=rss",
@@ -26634,7 +26788,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Chinese, Egyptian leaders discuss the US-Israel war on Iran, which has prompted regional powers to rethink defence.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -26858,7 +27012,7 @@
           "score": 8
         }
       ],
-      "itemCount": 11
+      "itemCount": 12
     },
     {
       "id": "bosnia",
