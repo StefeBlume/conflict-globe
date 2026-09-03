@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T20:33:20.906Z",
-  "durationSec": 365,
+  "generatedAt": "2026-09-03T21:32:56.842Z",
+  "durationSec": 355,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 30,
+        "count": 28,
         "error": null
       },
       {
@@ -115,35 +115,31 @@
     ],
     "gdelt": {
       "ok": 1,
-      "failed": 9,
-      "skipped": 6,
+      "failed": 8,
+      "skipped": 7,
       "errors": [
         {
           "id": "burkina-faso",
           "error": "HTTP 429"
         },
         {
-          "id": "myanmar",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "sudan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "thailand-cambodia",
+          "id": "yemen",
           "error": "HTTP 429"
         },
         {
           "id": "mexico-cartels",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "colombia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "west-papua",
           "error": "fetch failed"
         },
         {
-          "id": "lebanon-hezbollah",
-          "error": "fetch failed"
-        },
-        {
-          "id": "sinai-egypt",
+          "id": "car",
           "error": "fetch failed"
         },
         {
@@ -151,8 +147,8 @@
           "error": "fetch failed"
         },
         {
-          "id": "sahel-mali",
-          "error": "HTTP 429"
+          "id": "drc-m23",
+          "error": "fetch failed"
         }
       ]
     },
@@ -160,7 +156,7 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1110,
+    "articles": 1112,
     "newArticles": 13
   },
   "conflicts": [
@@ -199,7 +195,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 18
+          "count": 19
         },
         {
           "key": "airstrike",
@@ -220,9 +216,9 @@
           "count": 5
         },
         {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
           "count": 3
         }
       ],
@@ -250,8 +246,8 @@
             30.448,
             50.29
           ],
-          "count": 21,
-          "newCount": 0,
+          "count": 22,
+          "newCount": 1,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -314,6 +310,37 @@
             "label": "Drohnenangriff"
           },
           "score": 29
+        },
+        {
+          "title": "Ten injured in Ukraine as Kyiv expects talks with US envoys in coming days",
+          "url": "https://www.aljazeera.com/news/2026/9/3/ten-injured-in-ukraine-as-kyiv-expects-talks-with-us-envoys-in-coming-days?traffic_source=rss",
+          "date": "2026-09-03T20:44:49.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Separately, one person killed and five injured after Ukrainian drone struck bus in Russian-controlled part of Horlivka.",
+          "isNew": true,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 25
         },
         {
           "title": "Shootout in Kyiv between Ukrainian spy services ‘disgraceful’, says Zelenskyy",
@@ -513,27 +540,6 @@
           "score": 22
         },
         {
-          "title": "Irish Government to summon Russian ambassador following Leipzig attack",
-          "url": "https://www.irishtimes.com/politics/2026/09/02/irish-government-to-summon-russian-ambassador-following-leipzig-attack/",
-          "date": "2026-09-02T21:30:00.000Z",
-          "source": "irishtimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Bulgaria Stands With Germany After Russia Attack on Leipzig - Novinite . com",
           "url": "https://www.novinite.com/view_news.php?id=240413",
           "date": "2026-09-02T21:45:00.000Z",
@@ -582,7 +588,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Estonian Defence Minister Hanno Pevkur has resigned following a scandal in which he authorised the payment of €70 million to an Indian company for artillery shells, only to receive ammunition of defective quality, it emerged on Thursday. Britain’s The Telegraph reported on Monday that Datasel SRL was contracted to produce the shells for use by the Ukrainian military against Russia, and that Datase",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -656,6 +662,27 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Irish Government to summon Russian ambassador following Leipzig attack",
+          "url": "https://www.irishtimes.com/politics/2026/09/02/irish-government-to-summon-russian-ambassador-following-leipzig-attack/",
+          "date": "2026-09-02T21:30:00.000Z",
+          "source": "irishtimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 18
         },
@@ -1513,27 +1540,6 @@
           "score": 18
         },
         {
-          "title": "Poland opens terror probe into fire at factory supplying Ukraine drones",
-          "url": "https://www.aljazeera.com/news/2026/8/31/poland-opens-terror-probe-into-fire-at-drone-factory?traffic_source=rss",
-          "date": "2026-08-31T21:24:15.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Amid suspicion of Russian sabotage, Warsaw eyes link to foreign intelligence services.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
           "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-03T03:21:24.000Z",
@@ -1572,6 +1578,27 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Poland opens terror probe into fire at factory supplying Ukraine drones",
+          "url": "https://www.aljazeera.com/news/2026/8/31/poland-opens-terror-probe-into-fire-at-drone-factory?traffic_source=rss",
+          "date": "2026-08-31T21:24:15.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Amid suspicion of Russian sabotage, Warsaw eyes link to foreign intelligence services.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 15
         },
@@ -1781,27 +1808,6 @@
             "type": "election",
             "icon": "🗳️",
             "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
-          "date": "2026-09-02T21:25:04.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 15
         },
@@ -2354,37 +2360,37 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 3,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 26
+          "count": 25
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 10
+          "count": 11
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
           "count": 7
         },
         {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 6
+          "count": 7
         },
         {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 6
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 7
         }
       ],
       "acled": null,
@@ -2422,34 +2428,13 @@
       ],
       "items": [
         {
-          "title": "Israel’s siege on Gaza is forcing dentists to operate in the streets",
-          "url": "https://www.aljazeera.com/features/2026/9/3/gaza-housing-dentists?traffic_source=rss",
-          "date": "2026-09-03T16:45:21.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Scarce resources and office space mean that dental work is a luxury for most people in Gaza.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 29
-        },
-        {
           "title": "Israelis shoot dead two Palestinian teenagers after settlers encircle village",
           "url": "https://www.theguardian.com/world/2026/sep/03/israelis-shoot-dead-two-palestinian-teenagers-after-settlers-encircle-village",
           "date": "2026-09-03T19:33:00.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Troops escort settlers into al-Mughayyir and raze village outside Hebron as ethnic cleansing of West Bank continues Israelis have shot dead two teenagers in a Palestinian village encircled by settlers and Israeli troops have razed an entire village outside Hebron, the latest attacks in a surge of Israeli terror and ethnic cleansing across the occupied West Bank. The shootings targeted Khalil Abu A",
-          "isNew": true,
+          "summary": "Troops escort settlers into al-Mughayyir and raze village outside Hebron as ethnic cleansing of West Bank continues Israelis have shot dead two teenagers in a Palestinian village encircled by settlers, and Israeli troops have razed an entire village outside Hebron, in the latest attacks in a surge of Israeli terror and ethnic cleansing across the occupied West Bank. The shootings targeted Khalil A",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -2491,7 +2476,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli attack injures two Palestinian children in occupied West Bank Israeli forces shot and injured two Palestinian children in Beit Fajjar, south of Bethlehem, the Wafa news agency reported. The children were wounded when Israeli forces opened fire with live ammunition during a raid on the town, the report said.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2504,6 +2489,48 @@
             "label": "Gefechte"
           },
           "score": 29
+        },
+        {
+          "title": "Israel kills 3 in Gaza as far-right minister plans for Palestinian removals",
+          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+          "date": "2026-09-03T20:31:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli drone strike and gunfire kills and injures people across the Gaza Strip despite 'ceasefire'.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/christian-village-taybeh-plans-us-lawsuit-over-israeli-settler-attacks",
+          "date": "2026-09-03T20:11:35.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks The municipality of Taybeh, a Christian village in the occupied West Bank, has called on residents who hold US passports or green cards to document attacks and property damage by Israeli settlers ahead of a planned civil lawsuit in the United States. The municipality said the case would target the settlers and “the American ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
         },
         {
           "title": "Israel returns body of Palestinian teenager it killed in 2025",
@@ -2524,49 +2551,28 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 29
+          "score": 26
         },
         {
-          "title": "Palestinian teens killed during settler attack on West Bank village, officials say",
-          "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-03T15:05:57.000Z",
-          "source": "BBC World",
+          "title": "Israel’s siege on Gaza is forcing dentists to operate in the streets",
+          "url": "https://www.aljazeera.com/features/2026/9/3/gaza-housing-dentists?traffic_source=rss",
+          "date": "2026-09-03T16:45:21.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Al-Mughayyir's council says they were trying to stop settlers stealing sheep, but the Israeli military says they threw stones at its troops.",
+          "summary": "Scarce resources and office space mean that dental work is a luxury for most people in Gaza.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
-          "score": 27
-        },
-        {
-          "title": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-israeli-settler-attacks-spirals-most-violent-year-west-bank",
-          "date": "2026-09-03T15:30:45.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank During a settler attack aimed at stealing sheep, the&nbsp; Israeli&nbsp; army killed a&nbsp; Palestinian&nbsp; boy and a young man on Wednesday evening in the village of Al-Mughayyir, east of Ramallah. According to the Palestinian Ministry of Health, Omar Muhammad Na’san, 19, and Khalil Rasem Shahada, 16, were sho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
+          "score": 25
         },
         {
           "title": "Israeli bombing seen behind journalist reporting from Lebanese village",
@@ -2587,16 +2593,16 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 26
+          "score": 25
         },
         {
-          "title": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/christian-village-taybeh-plans-us-lawsuit-over-israeli-settler-attacks",
-          "date": "2026-09-03T20:11:35.000Z",
-          "source": "Middle East Eye",
+          "title": "Palestinian teens killed during settler attack on West Bank village, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-03T15:05:57.000Z",
+          "source": "BBC World",
           "sourceType": "news",
-          "summary": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks The municipality of Taybeh, a Christian village in the occupied West Bank, has called on residents who hold US passports or green cards to document attacks and property damage by Israeli settlers ahead of a planned civil lawsuit in the United States. The municipality said the case would target the settlers and “the American ",
-          "isNew": true,
+          "summary": "Al-Mughayyir's council says they were trying to stop settlers stealing sheep, but the Israeli military says they threw stones at its troops.",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2608,7 +2614,28 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 24
+        },
+        {
+          "title": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-israeli-settler-attacks-spirals-most-violent-year-west-bank",
+          "date": "2026-09-03T15:30:45.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank During a settler attack aimed at stealing sheep, the&nbsp; Israeli&nbsp; army killed a&nbsp; Palestinian&nbsp; boy and a young man on Wednesday evening in the village of Al-Mughayyir, east of Ramallah. According to the Palestinian Ministry of Health, Omar Muhammad Na’san, 19, and Khalil Rasem Shahada, 16, were sho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
         },
         {
           "title": "Arab News | Israeli police arrest suspect in settler attack on flashpoint West Bank village",
@@ -2674,25 +2701,25 @@
           "score": 22
         },
         {
-          "title": "Two Palestinians killed as settlers, Israeli forces raid West Bank village",
-          "url": "https://www.aljazeera.com/news/2026/9/2/two-palestinian-killed-as-settlers-israeli-forces-raid-west-bank-village?traffic_source=rss",
-          "date": "2026-09-02T20:59:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Teenagers killed in settlers attack on al-Mughayyer as West Bank violence continues.",
-          "isNew": false,
+          "title": "Lebanon–Israel tensions escalate as Gaza sees major aid delivery",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168275",
+          "date": "2026-09-03T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Peacekeepers in Lebanon have reported a marked deterioration in the security situation along the Blue Line of separation, with Israeli forces intensifying their military footprint in violation of a landmark Security Council resolution, UN Spokesperson Stéphane Dujarric said on Thursday.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 22
+          "score": 21
         },
         {
           "title": "Gaza farmers restore seed bank to preserve local crops",
@@ -2838,6 +2865,27 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Two Palestinians killed as settlers, Israeli forces raid West Bank village",
+          "url": "https://www.aljazeera.com/news/2026/9/2/two-palestinian-killed-as-settlers-israeli-forces-raid-west-bank-village?traffic_source=rss",
+          "date": "2026-09-02T20:59:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Teenagers killed in settlers attack on al-Mughayyer as West Bank violence continues.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 18
         },
@@ -3566,79 +3614,6 @@
           "score": 18
         },
         {
-          "title": "Israel launches fresh attacks across southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-fresh-attacks-across-southern-lebanon",
-          "date": "2026-08-31T21:05:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel launches fresh attacks across southern Lebanon Israel carried out heavy bombing campaigns across several towns in southern Lebanon on Monday evening in its latest violation of prior ceasefire agreements, Lebanon’s National News Agency is reporting.&nbsp; What exactly is white phosphorus and why is it controversial? Read More » The agency, which is state-run, said that the attacks involved w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israel releases five Lebanese men detained in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-releases-five-lebanese-men-detained-southern-lebanon",
-          "date": "2026-09-03T13:34:59.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel releases five Lebanese men detained in southern Lebanon Israel has released five Lebanese men its forces detained in areas under military control in southern Lebanon, according to Prime Minister Benjamin Netanyahu’s office. The office said Israeli interrogators found that the men had no affiliation with any armed organisation and that authorities had no grounds to continue holding them.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 17
-        },
-        {
-          "title": "Ben Gvir set to unveil $20bn plan to ethnically cleanse Gaza within seven years",
-          "url": "https://www.middleeasteye.net/news/ben-gvir-set-unveil-20-billion-plan-ethnically-cleanse-gaza-within-seven-years",
-          "date": "2026-09-03T13:24:35.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Ben Gvir set to unveil $20bn plan to ethnically cleanse Gaza within seven years Submitted by Elis Gjevori on Thu, 09/03/2026 - 12:35 The far-right leader will make the plan a condition for joining any future Israeli coalition Israel's National Security Minister Itamar Ben Gvir (C) storms Al-Aqsa Mosque in occupied East Jerusalem on 23 July 2026 (Ilia Yefimovich/AFP) Off Israel’s National Security ",
-          "isNew": false,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 17
-        },
-        {
           "title": "Iran targets US bases as Israel warns sanctions could drive Tehran to ‘desperate steps’",
           "url": "https://www.theguardian.com/world/2026/sep/03/iran-targets-us-bases-as-israel-warns-sanctions-could-drive-tehran-to-desperate-steps",
           "date": "2026-09-03T14:16:54.000Z",
@@ -3679,6 +3654,79 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "Israel launches fresh attacks across southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-fresh-attacks-across-southern-lebanon",
+          "date": "2026-08-31T21:05:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel launches fresh attacks across southern Lebanon Israel carried out heavy bombing campaigns across several towns in southern Lebanon on Monday evening in its latest violation of prior ceasefire agreements, Lebanon’s National News Agency is reporting.&nbsp; What exactly is white phosphorus and why is it controversial? Read More » The agency, which is state-run, said that the attacks involved w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israel releases five Lebanese men detained in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-releases-five-lebanese-men-detained-southern-lebanon",
+          "date": "2026-09-03T13:34:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel releases five Lebanese men detained in southern Lebanon Israel has released five Lebanese men its forces detained in areas under military control in southern Lebanon, according to Prime Minister Benjamin Netanyahu’s office. The office said Israeli interrogators found that the men had no affiliation with any armed organisation and that authorities had no grounds to continue holding them.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ben Gvir set to unveil $20bn plan to ethnically cleanse Gaza within seven years",
+          "url": "https://www.middleeasteye.net/news/ben-gvir-set-unveil-20-billion-plan-ethnically-cleanse-gaza-within-seven-years",
+          "date": "2026-09-03T13:24:35.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Ben Gvir set to unveil $20bn plan to ethnically cleanse Gaza within seven years Submitted by Elis Gjevori on Thu, 09/03/2026 - 12:35 The far-right leader will make the plan a condition for joining any future Israeli coalition Israel's National Security Minister Itamar Ben Gvir (C) storms Al-Aqsa Mosque in occupied East Jerusalem on 23 July 2026 (Ilia Yefimovich/AFP) Off Israel’s National Security ",
+          "isNew": false,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
         },
         {
           "title": "Israeli army kills 2 Palestinians , wounds 2 others in northern Gaza",
@@ -4059,27 +4107,6 @@
           "score": 15
         },
         {
-          "title": "Israeli military announces military exercise in occupied West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-announces-military-exercise-occupied-west-bank",
-          "date": "2026-09-02T21:19:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military announces military exercise in occupied West Bank The Israeli army have announced on Wednesday that troops will take part in a military exercise in the northern occupied West Bank area on Thursday. “As part of the exercise, there will be noticeable active movement of security forces in the area. There is no fear of a security incident,” the military said in a statement to social m",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Israeli army shells areas in south Lebanon's Tyre",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-shells-areas-south-lebanons-tyre",
           "date": "2026-08-31T05:11:32.000Z",
@@ -4097,27 +4124,6 @@
             "type": "shelling",
             "icon": "💥",
             "label": "Beschuss"
-          },
-          "score": 15
-        },
-        {
-          "title": "Two Palestinians reported dead as Israeli forces raid Nablus",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/two-palestinians-reported-dead-as-israeli-forces-raid-nablus?traffic_source=rss",
-          "date": "2026-08-31T03:08:35.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Footage shows Israeli military vehicles and personnel deployed across Nablus city in the occupied West Bank.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 15
         }
@@ -4151,7 +4157,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -4219,48 +4225,6 @@
       ],
       "items": [
         {
-          "title": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-israeli-settler-attacks-spirals-most-violent-year-west-bank",
-          "date": "2026-09-03T15:30:45.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank During a settler attack aimed at stealing sheep, the&nbsp; Israeli&nbsp; army killed a&nbsp; Palestinian&nbsp; boy and a young man on Wednesday evening in the village of Al-Mughayyir, east of Ramallah. According to the Palestinian Ministry of Health, Omar Muhammad Na’san, 19, and Khalil Rasem Shahada, 16, were sho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 30
-        },
-        {
-          "title": "Palestinian teens killed during settler attack on West Bank village, officials say",
-          "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-03T15:05:57.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Al-Mughayyir's council says they were trying to stop settlers stealing sheep, but the Israeli military says they threw stones at its troops.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 29
-        },
-        {
           "title": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army",
           "url": "https://www.france24.com/en/video/20260903-two-palestinian-teens-killed-in-west-bank-raid-by-israeli-settlers-and-army",
           "date": "2026-09-03T16:09:45.000Z",
@@ -4287,8 +4251,8 @@
           "date": "2026-09-03T19:33:00.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Troops escort settlers into al-Mughayyir and raze village outside Hebron as ethnic cleansing of West Bank continues Israelis have shot dead two teenagers in a Palestinian village encircled by settlers and Israeli troops have razed an entire village outside Hebron, the latest attacks in a surge of Israeli terror and ethnic cleansing across the occupied West Bank. The shootings targeted Khalil Abu A",
-          "isNew": true,
+          "summary": "Troops escort settlers into al-Mughayyir and raze village outside Hebron as ethnic cleansing of West Bank continues Israelis have shot dead two teenagers in a Palestinian village encircled by settlers, and Israeli troops have razed an entire village outside Hebron, in the latest attacks in a surge of Israeli terror and ethnic cleansing across the occupied West Bank. The shootings targeted Khalil A",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "siege",
@@ -4309,7 +4273,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks The municipality of Taybeh, a Christian village in the occupied West Bank, has called on residents who hold US passports or green cards to document attacks and property damage by Israeli settlers ahead of a planned civil lawsuit in the United States. The municipality said the case would target the settlers and “the American ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -4324,13 +4288,55 @@
           "score": 27
         },
         {
+          "title": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-israeli-settler-attacks-spirals-most-violent-year-west-bank",
+          "date": "2026-09-03T15:30:45.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Death toll from Israeli settler attacks spirals in 'most violent' year for West Bank During a settler attack aimed at stealing sheep, the&nbsp; Israeli&nbsp; army killed a&nbsp; Palestinian&nbsp; boy and a young man on Wednesday evening in the village of Al-Mughayyir, east of Ramallah. According to the Palestinian Ministry of Health, Omar Muhammad Na’san, 19, and Khalil Rasem Shahada, 16, were sho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
+          "title": "Palestinian teens killed during settler attack on West Bank village, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-03T15:05:57.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Al-Mughayyir's council says they were trying to stop settlers stealing sheep, but the Israeli military says they threw stones at its troops.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Israeli attack injures two Palestinian children in occupied West Bank",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-injures-two-palestinian-children-occupied-west-bank",
           "date": "2026-09-03T19:43:02.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli attack injures two Palestinian children in occupied West Bank Israeli forces shot and injured two Palestinian children in Beit Fajjar, south of Bethlehem, the Wafa news agency reported. The children were wounded when Israeli forces opened fire with live ammunition during a raid on the town, the report said.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -4384,7 +4390,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Two Palestinian teenagers killed by Israeli forces in the occupied West Bank",
@@ -4666,27 +4672,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli forces demolish four water wells, greenhouses in Hebron Israeli forces demolished four water wells and several greenhouses on Wednesday in the Al-Thaghra neighborhood of Beit Ummar, north of Hebron in the occupied West Bank, Wafa news reported. Citing a local source, Wafa said that&nbsp;Israeli forces used a bulldozer to demolish four water wells in the al-Thaghra area, each reaching appro",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli military announces military exercise in occupied West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-announces-military-exercise-occupied-west-bank",
-          "date": "2026-09-02T21:19:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military announces military exercise in occupied West Bank The Israeli army have announced on Wednesday that troops will take part in a military exercise in the northern occupied West Bank area on Thursday. “As part of the exercise, there will be noticeable active movement of security forces in the area. There is no fear of a security incident,” the military said in a statement to social m",
           "isNew": false,
           "region": null,
           "event": {
@@ -5416,6 +5401,27 @@
           "score": 15
         },
         {
+          "title": "Israeli military announces military exercise in occupied West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-announces-military-exercise-occupied-west-bank",
+          "date": "2026-09-02T21:19:56.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli military announces military exercise in occupied West Bank The Israeli army have announced on Wednesday that troops will take part in a military exercise in the northern occupied West Bank area on Thursday. “As part of the exercise, there will be noticeable active movement of security forces in the area. There is no fear of a security incident,” the military said in a statement to social m",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
           "title": "Israeli protesters call for an end to settler violence",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-protesters-call-for-an-end-to-settler-violence?traffic_source=rss",
           "date": "2026-09-02T20:07:41.000Z",
@@ -5738,7 +5744,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Ben Gvir storms Al-Aqsa alongside settlers and Israeli police",
@@ -5937,7 +5943,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 4,
       "signals": [
         {
           "key": "casualties",
@@ -6054,7 +6060,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Mourners carried the coffin of a child killed in a US strike on a wedding in Kuhestak, along the Strait of Hormuz.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -6106,7 +6112,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Vance says US probing air strike on wedding party in Iran US Vice President JD Vance on Thursday said the United States is investigating an air strike that&nbsp;Iran&nbsp;says struck a wedding party in&nbsp;Iran. \"We're investigating it because obviously we care. We want to know,\" Vance told reporters during a White House press briefing. Iranian officials say four people died and nearly 70 were wo",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "airstrike",
@@ -6121,23 +6127,44 @@
           "score": 27
         },
         {
-          "title": "Vance pushes back on reports that US strikes hit wedding in Iran but says ‘sometimes things happen’ – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/sep/03/donald-trump-immigration-tariffs-canada-trade-iran-jd-vance-latest-news-updates",
-          "date": "2026-09-03T19:56:23.000Z",
+          "title": "JD Vance reacts to airstrike that killed four at Iran wedding: ‘Things happen’",
+          "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance",
+          "date": "2026-09-03T21:04:18.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Vice president holds first press briefing since Karoline Leavitt’s departure and rebuffs Iran’s claims of deadly US strikes while defending Pete Hegseth Sign up for US Breaking News emails Republican oversight chair James Comer has also weighed in on Leon Black not sitting for a deposition about his ties to Jeffrey Epstein. The billionaire financier, who has denied wrongdoing, filed suit against t",
-          "isNew": false,
+          "summary": "US vice-president says he’s ‘extremely skeptical’ of Iran reports when asked whether US was responsible for deaths The US vice-president, JD Vance, said “sometimes things happen” when asked on Thursday whether an American strike was responsible for killing four people, including a child, at a wedding celebration in southern Iran this week. The strike hit Kuhestak, a town in Sirik county on the str",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Vance: US investigating strike on Iran wedding 'very fully'",
+          "url": "https://www.middleeasteye.net/news/vance-us-investigating-strike-iran-wedding-very-fully",
+          "date": "2026-09-03T21:15:25.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Vance: US investigating strike on Iran wedding 'very fully' Submitted by Yasmine El-Sabawi on Thu, 09/03/2026 - 20:18 The US vice president insisted that there is no ongoing 'war' with Iran US Vice President JD Vance take questions from reporters at the White House in Washington, on 3 September 2026 (Evelyn Hockstein/Reuters) Off US Vice President JD Vance told reporters on Thursday that the US is",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "score": 26
         },
@@ -6163,6 +6190,27 @@
           "score": 25
         },
         {
+          "title": "Vance pushes back on reports that US strikes hit wedding in Iran but says ‘sometimes things happen’ – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/03/donald-trump-immigration-tariffs-canada-trade-iran-jd-vance-latest-news-updates",
+          "date": "2026-09-03T19:56:23.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Vice president holds first press briefing since Karoline Leavitt’s departure and rebuffs Iran’s claims of deadly US strikes while defending Pete Hegseth Sign up for US Breaking News emails Republican oversight chair James Comer has also weighed in on Leon Black not sitting for a deposition about his ties to Jeffrey Epstein. The billionaire financier, who has denied wrongdoing, filed suit against t",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 25
+        },
+        {
           "title": "Iranian drone damages residential building in Kuwait City",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/03-09-iranian-drone-kuwait-building-clip?traffic_source=rss",
           "date": "2026-09-03T14:47:52.000Z",
@@ -6181,7 +6229,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "US attack kills six Iranian navy personnel, Tasnim reports",
@@ -6476,27 +6524,6 @@
           "score": 22
         },
         {
-          "title": "US-Iran war: Old videos falsely claim to show new attacks on American bases",
-          "url": "https://www.france24.com/en/us-iran-war-old-videos-falsely-claim-to-show-new-attacks-on-american-bases-1",
-          "date": "2026-09-02T20:57:27.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "As US-Iran hostilities flare up and strikes resume, so has a wave of misinformation online. Old and unrelated videos are flooding social media, falsely presented as footage of new attacks. As tensions escalate, clips filmed in Dubai, Russia and the US have been misrepresented as Iranian strikes on US bases in the Gulf. Elsewhere, a 68-year-old video of a US nuclear test has been falsely claimed to",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "US attacks on Iran leave 18 killed, 142 wounded, health official says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-attacks-iran-leave-18-killed-142-wounded-health-official-says",
           "date": "2026-09-03T01:11:39.000Z",
@@ -6643,6 +6670,27 @@
           "score": 20
         },
         {
+          "title": "US military says 87 vessels diverted so far in Strait of Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-military-says-87-vessels-diverted-so-far-strait-hormuz",
+          "date": "2026-09-03T20:51:23.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US military says 87 vessels diverted so far in Strait of Hormuz US Central Command (Centcom) said it has redirected a total of 87 vessels in the Strait of Hormuz amid the naval blockade of Iran. Centcom also said in its update that it has disabled three ships so far and boarded another two to ensure “total compliance” with the blockade.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 20
+        },
+        {
           "title": "Tehran 28 August 2026 #1",
           "url": "https://www.crisisgroup.org/content/tehran-28-august-2026-1",
           "date": "2026-08-28T19:53:08.000Z",
@@ -6674,13 +6722,13 @@
           "score": 19
         },
         {
-          "title": "Trump calls media ‘treasonous scum’ over reports of low Iran war munitions",
-          "url": "https://www.aljazeera.com/news/2026/9/3/trump-calls-media-treasonous-scum-over-reports-of-low-iran-war-munitions?traffic_source=rss",
-          "date": "2026-09-03T17:26:09.000Z",
+          "title": "US Vice President JD Vance declines to offer timeline for end of Iran war",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "date": "2026-09-03T21:07:56.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Comments latest swipe by president against critical media coverage of what experts call troubling shortages.",
-          "isNew": false,
+          "summary": "The Trump official expressed scepticism at White House briefing about the conflict being a war despite recent flare-up.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -6691,27 +6739,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "US commerce secretary erroneously said no Americans have died in Iran war, Trump claims",
-          "url": "https://www.theguardian.com/world/2026/sep/03/howard-lutnick-iran-war-deaths-trump",
-          "date": "2026-09-03T14:38:40.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "President said Howard Lutnick had Venezuela operation on his mind when he was discussing Iran war on CNBC Donald Trump has claimed his commerce secretary, Howard Lutnick, erroneously stated that no Americans had been killed in the war with Iran because he was thinking about a previous US operation, in Venezuela. The claim, at odds with the Pentagon’s count of 18 US service members dead in the US-I",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
           },
           "score": 19
         },
@@ -6747,12 +6774,33 @@
           "score": 19
         },
         {
-          "title": "US extends Middle East deployments into 2027 as Iran conflict drags on",
-          "url": "https://www.dawn.com/news/2027234/us-extends-middle-east-deployments-into-2027-as-iran-conflict-drags-on",
-          "date": "2026-09-03T15:05:36.000Z",
-          "source": "Dawn (Pakistan)",
+          "title": "US-Iran war: Old videos falsely claim to show new attacks on American bases",
+          "url": "https://www.france24.com/en/us-iran-war-old-videos-falsely-claim-to-show-new-attacks-on-american-bases-1",
+          "date": "2026-09-02T20:57:27.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "WASHINGTON: The United States is extending the deployment of thousands of American troops and military assets across the Middle East into 2027, signalling Washington is preparing for a prolonged conflict with Iran. The deployment extensions, ordered by Secretary of War Pete Hegseth, will affect US Army units, air-defence forces, fighter squadrons and Navy personnel operating in and around the Midd",
+          "summary": "As US-Iran hostilities flare up and strikes resume, so has a wave of misinformation online. Old and unrelated videos are flooding social media, falsely presented as footage of new attacks. As tensions escalate, clips filmed in Dubai, Russia and the US have been misrepresented as Iranian strikes on US bases in the Gulf. Elsewhere, a 68-year-old video of a US nuclear test has been falsely claimed to",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Trump calls media ‘treasonous scum’ over reports of low Iran war munitions",
+          "url": "https://www.aljazeera.com/news/2026/9/3/trump-calls-media-treasonous-scum-over-reports-of-low-iran-war-munitions?traffic_source=rss",
+          "date": "2026-09-03T17:26:09.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Comments latest swipe by president against critical media coverage of what experts call troubling shortages.",
           "isNew": false,
           "region": null,
           "event": {
@@ -6765,7 +6813,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Trump says US sees ‘everything’ Iran does, threatens further attacks",
@@ -7894,48 +7942,6 @@
             "label": "Gefechte"
           },
           "score": 18
-        },
-        {
-          "title": "Iran says US bombed a wedding party in Sirik, killing five people",
-          "url": "https://www.aljazeera.com/news/2026/9/2/iran-says-us-strikes-hit-a-wedding-party-in-sirik-killing-five?traffic_source=rss",
-          "date": "2026-09-02T01:34:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Officials say at least 63 others wounded in attack on city of Kuhestak, including women and children.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "US launches new strikes on Iran, denies its bases hit in Jordan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/us-launches-new-strikes-on-iran-denies-its-bases-hit-in-jordan?traffic_source=rss",
-          "date": "2026-09-02T01:06:19.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The US launched new strikes on Iran's southern coast with explosions reported in several locations.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 18
         }
       ],
       "itemCount": 80
@@ -8025,23 +8031,6 @@
           }
         },
         {
-          "id": "NGA-2850",
-          "name": "Lagos",
-          "nameDe": "Lagos",
-          "type": "State",
-          "anchor": [
-            3.552,
-            6.523
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          }
-        },
-        {
           "id": "NGA-2870",
           "name": "Katsina State",
           "nameDe": "Katsina",
@@ -8124,6 +8113,23 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2850",
+          "name": "Lagos",
+          "nameDe": "Lagos",
+          "type": "State",
+          "anchor": [
+            3.552,
+            6.523
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
           }
         },
         {
@@ -9455,37 +9461,6 @@
           "score": 15
         },
         {
-          "title": "Nigeria: the lucrative business of kidnappings",
-          "url": "https://www.france24.com/en/nigeria-the-lucrative-business-of-kidnappings",
-          "date": "2026-08-27T20:49:22.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In tonight's programme, we speak to a Lagos analyst behind a new report laying out the figures behind abductions. Also, Tanzania's ruling party kicks the vice-president out even after he announces his plans to step down next week. And finally in Senegal, the first African-manufactured generic drug to treat sickle cell disease is raising hopes of better treatment and reduced reliance on costly impo",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2850",
-            "name": "Lagos",
-            "nameDe": "Lagos",
-            "type": "State",
-            "anchor": [
-              3.552,
-              6.523
-            ],
-            "matched": "Lagos"
-          },
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
           "title": "Nigeria: Mental Resilience Critical to Combat Readiness - Coas",
           "url": "https://allafrica.com/stories/202609020444.html",
           "date": "2026-09-02T12:13:03.000Z",
@@ -10289,7 +10264,7 @@
           "score": 8
         }
       ],
-      "itemCount": 80
+      "itemCount": 79
     },
     {
       "id": "nigeria",
@@ -10410,23 +10385,6 @@
           }
         },
         {
-          "id": "NGA-2850",
-          "name": "Lagos",
-          "nameDe": "Lagos",
-          "type": "State",
-          "anchor": [
-            3.552,
-            6.523
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          }
-        },
-        {
           "id": "NGA-2870",
           "name": "Katsina State",
           "nameDe": "Katsina",
@@ -10475,6 +10433,23 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2850",
+          "name": "Lagos",
+          "nameDe": "Lagos",
+          "type": "State",
+          "anchor": [
+            3.552,
+            6.523
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
           }
         },
         {
@@ -11538,37 +11513,6 @@
           "score": 15
         },
         {
-          "title": "Nigeria: the lucrative business of kidnappings",
-          "url": "https://www.france24.com/en/nigeria-the-lucrative-business-of-kidnappings",
-          "date": "2026-08-27T20:49:22.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In tonight's programme, we speak to a Lagos analyst behind a new report laying out the figures behind abductions. Also, Tanzania's ruling party kicks the vice-president out even after he announces his plans to step down next week. And finally in Senegal, the first African-manufactured generic drug to treat sickle cell disease is raising hopes of better treatment and reduced reliance on costly impo",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2850",
-            "name": "Lagos",
-            "nameDe": "Lagos",
-            "type": "State",
-            "anchor": [
-              3.552,
-              6.523
-            ],
-            "matched": "Lagos"
-          },
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
           "title": "Nigeria: Military Does Not Negotiate With Terrorists or Support Payment of Ransom - DHQ",
           "url": "https://allafrica.com/stories/202609020157.html",
           "date": "2026-09-02T07:09:29.000Z",
@@ -12257,7 +12201,7 @@
           "score": 8
         }
       ],
-      "itemCount": 64
+      "itemCount": 63
     },
     {
       "id": "haiti",
@@ -13621,7 +13565,7 @@
         "Khartum",
         "Kordofan"
       ],
-      "activity": 39,
+      "activity": 38,
       "severity": 66,
       "newCount": 0,
       "signals": [
@@ -13865,7 +13809,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Sudan: SAF Accused of Deadly Market Strike, Fighting Intensifies in Kordofan and Blue Nile",
@@ -14051,27 +13995,6 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump's Africa envoy condemns Chad strikes, 'external support' in Sudan war",
-          "url": "https://www.middleeasteye.net/news/trump-africa-envoy-condemns-chad-strikes-external-support-sudan-war",
-          "date": "2026-08-27T20:42:25.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Trump's Africa envoy condemns Chad strikes, 'external support' in Sudan war Submitted by MEE staff on Thu, 08/27/2026 - 20:25 Sudan's army targeted sites in Chad used to route weapons from the UAE to the Rapid Support Forces Massad Boulos, senior adviser to the US president on Arab and Middle Eastern affairs, speaks with members of the media outside the White House in Washington, DC, on 21 July 20",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -14369,7 +14292,7 @@
           "score": 8
         }
       ],
-      "itemCount": 26
+      "itemCount": 25
     },
     {
       "id": "drc-m23",
@@ -14398,9 +14321,9 @@
         "Süd-Kivu",
         "Ituri"
       ],
-      "activity": 33,
-      "severity": 65,
-      "newCount": 1,
+      "activity": 30,
+      "severity": 64,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -14431,27 +14354,6 @@
       "regions": [],
       "items": [
         {
-          "title": "U . S . troops withdraw from Nigeria as DR Congo reopens Ebola zone schools",
-          "url": "https://www.okayafrica.com/today-in-africa-september-2-2026-us-troops-exit-nigeria-dr-congo-drops-remote-learning-in-ebola-zones/1439304",
-          "date": "2026-09-02T21:30:00.000Z",
-          "source": "okayafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 22
-        },
-        {
           "title": "Rwanda: Kagame Discusses DR Congo Crisis With New Head of Monusco",
           "url": "https://allafrica.com/stories/202609030048.html",
           "date": "2026-09-03T05:29:08.000Z",
@@ -14471,6 +14373,27 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "U . S . troops withdraw from Nigeria as DR Congo reopens Ebola zone schools",
+          "url": "https://www.okayafrica.com/today-in-africa-september-2-2026-us-troops-exit-nigeria-dr-congo-drops-remote-learning-in-ebola-zones/1439304",
+          "date": "2026-09-02T21:30:00.000Z",
+          "source": "okayafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
         },
         {
           "title": "APO Group - Africa Newsroom / Press release | Ituri : following clashes in Bamande , United Nations Organization Stabilization Mission in the Democratic Republic of the Congo ( MONUSCO ) deploys a mobile operating base",
@@ -14494,27 +14417,6 @@
           "score": 18
         },
         {
-          "title": "Ebola Outbreak Congo : Innovative Use of Mobile - Phone Data to Combat Ebola Spread in Congo , ETTelecom",
-          "url": "https://telecom.economictimes.indiatimes.com/news/devices/health-officials-turn-to-mobile-phone-data-to-track-ebola-spread-in-congo/133734900",
-          "date": "2026-09-03T15:30:00.000Z",
-          "source": "telecom.economictimes.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 17
-        },
-        {
           "title": "Botswana: Rwanda, Botswana Seek to Deepen Defence Cooperation",
           "url": "https://allafrica.com/stories/202609030282.html",
           "date": "2026-09-03T11:21:22.000Z",
@@ -14534,6 +14436,27 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "Ebola Outbreak Congo : Innovative Use of Mobile - Phone Data to Combat Ebola Spread in Congo , ETTelecom",
+          "url": "https://telecom.economictimes.indiatimes.com/news/devices/health-officials-turn-to-mobile-phone-data-to-track-ebola-spread-in-congo/133734900",
+          "date": "2026-09-03T15:30:00.000Z",
+          "source": "telecom.economictimes.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Over 6,000 Ebola cases confirmed in DRC as death toll nears 3,000",
@@ -14705,6 +14628,565 @@
         }
       ],
       "itemCount": 13
+    },
+    {
+      "id": "myanmar",
+      "name": "Myanmar",
+      "nameEn": "Myanmar Civil War",
+      "region": "Asien (Südost)",
+      "countries": [
+        "Myanmar"
+      ],
+      "lat": 21,
+      "lon": 96,
+      "tier": "war",
+      "since": "Putsch 2021",
+      "parties": [
+        "Militärjunta (SAC)",
+        "NUG/PDF",
+        "Arakan Army",
+        "MNDAA",
+        "TNLA",
+        "KIA",
+        "Karen NU"
+      ],
+      "background": "Bürgerkrieg nach dem Putsch 2021: Widerstandsallianzen und ethnische Armeen kontrollieren große Gebiete; die Arakan Army dominiert Rakhine, Junta setzt auf Luftangriffe und Wahlen.",
+      "hotspots": [
+        "Rakhine",
+        "Shan-Staat",
+        "Kachin",
+        "Sagaing",
+        "Karen",
+        "Chin"
+      ],
+      "activity": 31,
+      "severity": 64,
+      "newCount": 2,
+      "signals": [
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MMR",
+      "extraCountries": [],
+      "regions": [
+        {
+          "id": "MMR-3273",
+          "name": "Rakhine State",
+          "nameDe": "Rakhaing-Staat",
+          "type": "State",
+          "anchor": [
+            93.744,
+            19.742
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "MMR-3274",
+          "name": "Chin State",
+          "nameDe": "Chin-Staat",
+          "type": "State",
+          "anchor": [
+            93.508,
+            22.16
+          ],
+          "count": 1,
+          "newCount": 1,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Myanmar Junta Massing Reinforcements in Magway for Renewed Rakhine Offensive",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-massing-reinforcements-magway-renewed-rakhine-offensive",
+          "date": "2026-09-03T06:15:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Rakhine"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 31
+        },
+        {
+          "title": "AA Drones and Artillery Hit Junta Reinforcements Near Strategic Nat Yay Kan Base , Causing Heavy Casualties",
+          "url": "https://www.bnionline.net/en/news/aa-drones-and-artillery-hit-junta-reinforcements-near-strategic-nat-yay-kan-base-causing-heavy",
+          "date": "2026-09-03T12:15:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 25
+        },
+        {
+          "title": "World News in Brief: US-Iran war intensifies, aid for Myanmar, casualties in Ukraine",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168268",
+          "date": "2026-09-02T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Fighting between the United States and Iran has sharply escalated after a month-long lull, with the two sides exchanging strikes as fears grow over further civilian casualties.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 21
+        },
+        {
+          "title": "World News | Myanmar Junta Kills Baptist Pastor , Fellow Christian in Chin",
+          "url": "https://www.christianitydaily.com:443/news/myanmar-junta-kills-baptist-pastor-fellow-christian-in-chin.html",
+          "date": "2026-09-03T16:15:00.000Z",
+          "source": "christianitydaily.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": {
+            "id": "MMR-3274",
+            "name": "Chin State",
+            "nameDe": "Chin-Staat",
+            "type": "State",
+            "anchor": [
+              93.508,
+              22.16
+            ],
+            "matched": "Chin"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 20
+        },
+        {
+          "title": "Niger: Failed coup exposes junta's weakness — and Russia's influence",
+          "url": "https://www.dw.com/en/niger-failed-coup-exposes-junta-s-weakness-and-russia-s-influence/a-78572278?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-08-31T11:32:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "The failed coup in Niger brings deep divisions within the military to light. As Russia's support highlights the junta's fading influence, soldiers continue to face jihadist attacks, poor equipment and little pay.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "Niger: Attempted Coup - Niger Junta Still in Control, but Situation Remains Tense",
+          "url": "https://allafrica.com/stories/202608310094.html",
+          "date": "2026-08-31T04:23:13.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "Attempted Coup: Niger junta still in control, but situation remains tense",
+          "url": "https://www.premiumtimesng.com/news/headlines/906327-attempted-coup-niger-junta-still-in-control-but-situation-remains-tense.html",
+          "date": "2026-08-30T13:10:39.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps The post Attempted Coup: Niger junta still in control, but situation remains tense appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "Kyaukphyu Food Prices Skyrocket as Myanmar Junta Blockade and Clashes Cut Off Supplies",
+          "url": "https://www.bnionline.net/en/news/kyaukphyu-food-prices-skyrocket-myanmar-junta-blockade-and-clashes-cut-supplies",
+          "date": "2026-08-30T08:00:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 15
+        },
+        {
+          "title": "Air raids, conscripts and China: How Myanmar’s military is regaining ground",
+          "url": "https://www.aljazeera.com/news/2026/8/30/air-raids-conscripts-and-china-how-myanmars-military-is-regaining-ground?traffic_source=rss",
+          "date": "2026-08-30T04:28:10.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Rebel fighters in Myanmar lose key towns as conscription, relentless air raids and Chinese support bolster the military.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Niger's junta says 'regaining control' after clashes in capital",
+          "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital",
+          "date": "2026-08-29T12:33:03.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Niger's ​defense ​ministry said the armed forces were ​progressively ‌retaking ⁠control ‌of sites targeted in ⁠an overnight attack on ​the ‌capital Niamey, according to a ‌statement read ​on state television, which resumed broadcasting ​on ​Saturday after ​temporarily going ​offline.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Arakan Army Strikes Three Myanmar Military Outposts Near Strategic Radar Base",
+          "url": "https://www.bnionline.net/en/news/arakan-army-strikes-three-myanmar-military-outposts-near-strategic-radar-base",
+          "date": "2026-08-28T08:15:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Arakan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Niger's thwarted mutiny highlights junta's dependence on Russia",
+          "url": "https://www.france24.com/en/africa/20260901-what-russia-helping-niger-junta-stop-mutiny-means-for-its-sovereignty",
+          "date": "2026-09-01T15:16:08.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A failed mutiny in Niger over the weekend shows how important Russia's Africa Corps mercenaries are in the country, according to analysts. They argue that the failed mutiny on Saturday shows how the country's security landscape has worsened and contradicts claims from Niger's junta about the country's independence from foreign powers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Myanmar Junta Cracks Down on Civil Society Groups in Nyaungshwe and Inle Lake",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-cracks-down-civil-society-groups-nyaungshwe-and-inle-lake",
+          "date": "2026-08-31T17:45:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "West Africa: 'We're Back in Control' - Russia Helps Niger Junta to Retake Military Base",
+          "url": "https://allafrica.com/stories/202608310447.html",
+          "date": "2026-08-31T12:08:27.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] Members of Niger's presidential guard, helped by Russian forces on Saturday, recaptured a key military base in the capital Niamey from mutinous soldiers.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "Rwanda: RDF-UPDF Meeting in Mbarara Closes With Call for Sustained Cooperation",
+          "url": "https://allafrica.com/stories/202608310156.html",
+          "date": "2026-08-31T09:38:15.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] Senior officers from Rwanda Defence Force (RDF) and Uganda Peoples' Defence Forces (UPDF) have stressed the need for cooperation between the two militaries in combating illegal cross-border activities.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Niger junta puts down mutiny with help from Russia's Africa Corps",
+          "url": "https://www.france24.com/en/africa/20260830-niger-junta-aided-by-russian-paramilitary-forces-regains-control-after-mutiny",
+          "date": "2026-08-30T15:20:01.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Life returned to normal in Niger's capital on Sunday, a day after mutineers stormed both the presidential palace and a military base at Niamey's main airport, resisting forces loyal to the ruling junta until Russia’s Africa Corps intervened. State TV reported that dozens of soldiers were killed or arrested, with some paraded in front of cameras live on television.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "Niger: Junta says back in control after mutiny",
+          "url": "https://www.france24.com/en/niger-junta-says-back-in-control-after-mutiny",
+          "date": "2026-08-30T08:41:57.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Gunfire and explosions have been reported in Niger, as mutinying soldiers attempted to storm the presidential palace in the capital, Niamey, in a challenge to the ruling junta. The government said it had regained control after hours of fighting on Saturday. Léo Paichard and Nick Rushworth report.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Myanmar Junta Navy Conducts Live - Fire Drills in the Bay of Bengal , Panicking",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-navy-conducts-live-fire-drills-bay-bengal-panicking",
+          "date": "2026-08-30T08:00:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Niger junta says it is back in control after soldiers' mutiny rocks capital",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "date": "2026-08-29T06:33:07.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Niger's junta said Saturday it was back in control after mutineers held soldiers hostage at a military base next to the capital's airport. Russian forces reportedly helped members of Niger's presidential guard recapture the air base, killing some of the mutineers, according to diplomatic and security sources.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "Myanmar Civil War Hasnt Prevented Critical Mineral Extraction",
+          "url": "https://foreignpolicy.com/2026/08/27/myanmar-china-critical-minerals/?tpcc=recirc_trending062921",
+          "date": "2026-08-28T06:00:00.000Z",
+          "source": "foreignpolicy.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 20
     },
     {
       "id": "pakistan",
@@ -15844,490 +16326,6 @@
       "itemCount": 43
     },
     {
-      "id": "myanmar",
-      "name": "Myanmar",
-      "nameEn": "Myanmar Civil War",
-      "region": "Asien (Südost)",
-      "countries": [
-        "Myanmar"
-      ],
-      "lat": 21,
-      "lon": 96,
-      "tier": "war",
-      "since": "Putsch 2021",
-      "parties": [
-        "Militärjunta (SAC)",
-        "NUG/PDF",
-        "Arakan Army",
-        "MNDAA",
-        "TNLA",
-        "KIA",
-        "Karen NU"
-      ],
-      "background": "Bürgerkrieg nach dem Putsch 2021: Widerstandsallianzen und ethnische Armeen kontrollieren große Gebiete; die Arakan Army dominiert Rakhine, Junta setzt auf Luftangriffe und Wahlen.",
-      "hotspots": [
-        "Rakhine",
-        "Shan-Staat",
-        "Kachin",
-        "Sagaing",
-        "Karen",
-        "Chin"
-      ],
-      "activity": 22,
-      "severity": 61,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MMR",
-      "extraCountries": [],
-      "regions": [
-        {
-          "id": "MMR-3273",
-          "name": "Rakhine State",
-          "nameDe": "Rakhaing-Staat",
-          "type": "State",
-          "anchor": [
-            93.744,
-            19.742
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Myanmar Junta Massing Reinforcements in Magway for Renewed Rakhine Offensive",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-massing-reinforcements-magway-renewed-rakhine-offensive",
-          "date": "2026-09-03T06:15:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Rakhine"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 22
-        },
-        {
-          "title": "World News in Brief: US-Iran war intensifies, aid for Myanmar, casualties in Ukraine",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168268",
-          "date": "2026-09-02T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Fighting between the United States and Iran has sharply escalated after a month-long lull, with the two sides exchanging strikes as fears grow over further civilian casualties.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 21
-        },
-        {
-          "title": "Niger: Failed coup exposes junta's weakness — and Russia's influence",
-          "url": "https://www.dw.com/en/niger-failed-coup-exposes-junta-s-weakness-and-russia-s-influence/a-78572278?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-08-31T11:32:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "The failed coup in Niger brings deep divisions within the military to light. As Russia's support highlights the junta's fading influence, soldiers continue to face jihadist attacks, poor equipment and little pay.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Niger: Attempted Coup - Niger Junta Still in Control, but Situation Remains Tense",
-          "url": "https://allafrica.com/stories/202608310094.html",
-          "date": "2026-08-31T04:23:13.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Attempted Coup: Niger junta still in control, but situation remains tense",
-          "url": "https://www.premiumtimesng.com/news/headlines/906327-attempted-coup-niger-junta-still-in-control-but-situation-remains-tense.html",
-          "date": "2026-08-30T13:10:39.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The situation in Niger Republic remains fluid after a mutiny was thwarted by national security forces in collaboration with Russian-linked Africa Corps The post Attempted Coup: Niger junta still in control, but situation remains tense appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Kyaukphyu Food Prices Skyrocket as Myanmar Junta Blockade and Clashes Cut Off Supplies",
-          "url": "https://www.bnionline.net/en/news/kyaukphyu-food-prices-skyrocket-myanmar-junta-blockade-and-clashes-cut-supplies",
-          "date": "2026-08-30T08:00:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 15
-        },
-        {
-          "title": "Air raids, conscripts and China: How Myanmar’s military is regaining ground",
-          "url": "https://www.aljazeera.com/news/2026/8/30/air-raids-conscripts-and-china-how-myanmars-military-is-regaining-ground?traffic_source=rss",
-          "date": "2026-08-30T04:28:10.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Rebel fighters in Myanmar lose key towns as conscription, relentless air raids and Chinese support bolster the military.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Niger's junta says 'regaining control' after clashes in capital",
-          "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital",
-          "date": "2026-08-29T12:33:03.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Niger's ​defense ​ministry said the armed forces were ​progressively ‌retaking ⁠control ‌of sites targeted in ⁠an overnight attack on ​the ‌capital Niamey, according to a ‌statement read ​on state television, which resumed broadcasting ​on ​Saturday after ​temporarily going ​offline.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Arakan Army Strikes Three Myanmar Military Outposts Near Strategic Radar Base",
-          "url": "https://www.bnionline.net/en/news/arakan-army-strikes-three-myanmar-military-outposts-near-strategic-radar-base",
-          "date": "2026-08-28T08:15:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Arakan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Niger's thwarted mutiny highlights junta's dependence on Russia",
-          "url": "https://www.france24.com/en/africa/20260901-what-russia-helping-niger-junta-stop-mutiny-means-for-its-sovereignty",
-          "date": "2026-09-01T15:16:08.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A failed mutiny in Niger over the weekend shows how important Russia's Africa Corps mercenaries are in the country, according to analysts. They argue that the failed mutiny on Saturday shows how the country's security landscape has worsened and contradicts claims from Niger's junta about the country's independence from foreign powers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Myanmar Junta Cracks Down on Civil Society Groups in Nyaungshwe and Inle Lake",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-cracks-down-civil-society-groups-nyaungshwe-and-inle-lake",
-          "date": "2026-08-31T17:45:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "West Africa: 'We're Back in Control' - Russia Helps Niger Junta to Retake Military Base",
-          "url": "https://allafrica.com/stories/202608310447.html",
-          "date": "2026-08-31T12:08:27.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Vanguard] Members of Niger's presidential guard, helped by Russian forces on Saturday, recaptured a key military base in the capital Niamey from mutinous soldiers.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "Rwanda: RDF-UPDF Meeting in Mbarara Closes With Call for Sustained Cooperation",
-          "url": "https://allafrica.com/stories/202608310156.html",
-          "date": "2026-08-31T09:38:15.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] Senior officers from Rwanda Defence Force (RDF) and Uganda Peoples' Defence Forces (UPDF) have stressed the need for cooperation between the two militaries in combating illegal cross-border activities.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Niger junta puts down mutiny with help from Russia's Africa Corps",
-          "url": "https://www.france24.com/en/africa/20260830-niger-junta-aided-by-russian-paramilitary-forces-regains-control-after-mutiny",
-          "date": "2026-08-30T15:20:01.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Life returned to normal in Niger's capital on Sunday, a day after mutineers stormed both the presidential palace and a military base at Niamey's main airport, resisting forces loyal to the ruling junta until Russia’s Africa Corps intervened. State TV reported that dozens of soldiers were killed or arrested, with some paraded in front of cameras live on television.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "Niger: Junta says back in control after mutiny",
-          "url": "https://www.france24.com/en/niger-junta-says-back-in-control-after-mutiny",
-          "date": "2026-08-30T08:41:57.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Gunfire and explosions have been reported in Niger, as mutinying soldiers attempted to storm the presidential palace in the capital, Niamey, in a challenge to the ruling junta. The government said it had regained control after hours of fighting on Saturday. Léo Paichard and Nick Rushworth report.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Myanmar Junta Navy Conducts Live - Fire Drills in the Bay of Bengal , Panicking",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-navy-conducts-live-fire-drills-bay-bengal-panicking",
-          "date": "2026-08-30T08:00:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Niger junta says it is back in control after soldiers' mutiny rocks capital",
-          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
-          "date": "2026-08-29T06:33:07.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Niger's junta said Saturday it was back in control after mutineers held soldiers hostage at a military base next to the capital's airport. Russian forces reportedly helped members of Niger's presidential guard recapture the air base, killing some of the mutineers, according to diplomatic and security sources.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "Myanmar Civil War Hasnt Prevented Critical Mineral Extraction",
-          "url": "https://foreignpolicy.com/2026/08/27/myanmar-china-critical-minerals/?tpcc=recirc_trending062921",
-          "date": "2026-08-28T06:00:00.000Z",
-          "source": "foreignpolicy.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 18
-    },
-    {
       "id": "lebanon-hezbollah",
       "name": "Israel–Libanon / Hisbollah",
       "nameEn": "Israel–Hezbollah",
@@ -16351,9 +16349,9 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 70,
+      "activity": 73,
       "severity": 60,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "airstrike",
@@ -16380,9 +16378,9 @@
           "count": 1
         },
         {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
           "count": 1
         }
       ],
@@ -16465,7 +16463,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Lebanon receives first prisoner of five to be freed by Israel",
@@ -16499,25 +16497,25 @@
           "score": 20
         },
         {
-          "title": "Israel releases five Lebanese men detained in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-releases-five-lebanese-men-detained-southern-lebanon",
-          "date": "2026-09-03T13:34:59.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel releases five Lebanese men detained in southern Lebanon Israel has released five Lebanese men its forces detained in areas under military control in southern Lebanon, according to Prime Minister Benjamin Netanyahu’s office. The office said Israeli interrogators found that the men had no affiliation with any armed organisation and that authorities had no grounds to continue holding them.",
-          "isNew": false,
+          "title": "Lebanon–Israel tensions escalate as Gaza sees major aid delivery",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168275",
+          "date": "2026-09-03T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Peacekeepers in Lebanon have reported a marked deterioration in the security situation along the Blue Line of separation, with Israeli forces intensifying their military footprint in violation of a landmark Security Council resolution, UN Spokesperson Stéphane Dujarric said on Thursday.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Israeli artillery shelling reported in southern Lebanon",
@@ -16635,27 +16633,6 @@
           "score": 18
         },
         {
-          "title": "Israel launches fresh attacks across southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-fresh-attacks-across-southern-lebanon",
-          "date": "2026-08-31T21:05:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel launches fresh attacks across southern Lebanon Israel carried out heavy bombing campaigns across several towns in southern Lebanon on Monday evening in its latest violation of prior ceasefire agreements, Lebanon’s National News Agency is reporting.&nbsp; What exactly is white phosphorus and why is it controversial? Read More » The agency, which is state-run, said that the attacks involved w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Lebanon 27 August 2026 #1",
           "url": "https://www.crisisgroup.org/content/lebanon-27-august-2026-1",
           "date": "2026-08-28T00:05:29.000Z",
@@ -16685,6 +16662,48 @@
             "label": "Drohnenangriff"
           },
           "score": 17
+        },
+        {
+          "title": "Israel releases five Lebanese men detained in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-releases-five-lebanese-men-detained-southern-lebanon",
+          "date": "2026-09-03T13:34:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel releases five Lebanese men detained in southern Lebanon Israel has released five Lebanese men its forces detained in areas under military control in southern Lebanon, according to Prime Minister Benjamin Netanyahu’s office. The office said Israeli interrogators found that the men had no affiliation with any armed organisation and that authorities had no grounds to continue holding them.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israel launches fresh attacks across southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-fresh-attacks-across-southern-lebanon",
+          "date": "2026-08-31T21:05:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel launches fresh attacks across southern Lebanon Israel carried out heavy bombing campaigns across several towns in southern Lebanon on Monday evening in its latest violation of prior ceasefire agreements, Lebanon’s National News Agency is reporting.&nbsp; What exactly is white phosphorus and why is it controversial? Read More » The agency, which is state-run, said that the attacks involved w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Iran warns US of retaliation if Israel storms southern Lebanon ridge",
@@ -17261,7 +17280,7 @@
           "score": 8
         }
       ],
-      "itemCount": 34
+      "itemCount": 35
     },
     {
       "id": "syria",
@@ -18264,7 +18283,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 29
+          "score": 25
         },
         {
           "title": "Yemeni army says 10 Houthi missiles launched against Taiz, Hodeidah",
@@ -18734,7 +18753,7 @@
       ],
       "activity": 46,
       "severity": 52,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -18834,7 +18853,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Estonian Defence Minister Hanno Pevkur has resigned following a scandal in which he authorised the payment of €70 million to an Indian company for artillery shells, only to receive ammunition of defective quality, it emerged on Thursday. Britain’s The Telegraph reported on Monday that Datasel SRL was contracted to produce the shells for use by the Ukrainian military against Russia, and that Datase",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -19410,7 +19429,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 1,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
@@ -19437,10 +19456,10 @@
           "count": 3
         },
         {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 2
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 3
         }
       ],
       "acled": null,
@@ -19510,7 +19529,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks The municipality of Taybeh, a Christian village in the occupied West Bank, has called on residents who hold US passports or green cards to document attacks and property damage by Israeli settlers ahead of a planned civil lawsuit in the United States. The municipality said the case would target the settlers and “the American ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -19630,6 +19649,27 @@
           "score": 22
         },
         {
+          "title": "Israel kills 3 in Gaza as far-right minister plans for Palestinian removals",
+          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+          "date": "2026-09-03T20:31:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli drone strike and gunfire kills and injures people across the Gaza Strip despite 'ceasefire'.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 19
+        },
+        {
           "title": "Kurdish women who fought ISIL seek place in Syria’s new security forces",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/09-03-ypj-syrian-army-sv?traffic_source=rss",
           "date": "2026-09-03T17:42:28.000Z",
@@ -19647,6 +19687,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "US military says 87 vessels diverted so far in Strait of Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-military-says-87-vessels-diverted-so-far-strait-hormuz",
+          "date": "2026-09-03T20:51:23.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US military says 87 vessels diverted so far in Strait of Hormuz US Central Command (Centcom) said it has redirected a total of 87 vessels in the Strait of Hormuz amid the naval blockade of Iran. Centcom also said in its update that it has disabled three ships so far and boarded another two to ensure “total compliance” with the blockade.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 19
         },
@@ -19745,27 +19806,6 @@
           "score": 18
         },
         {
-          "title": "US military has no plans to send troops to midterm polling sites, Dan Caine says",
-          "url": "https://www.theguardian.com/us-news/2026/aug/31/military-troops-polling-sites-midterms",
-          "date": "2026-08-31T21:09:36.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Letter from chair of joint chiefs of staff addresses concerns over Trump officials using military to interfere with vote The highest‑ranking US military officer says there are no plans to deploy troops to polling places during the November midterm elections – responding to Senator Elissa Slotkin’s request for information amid concerns about whether the Trump administration might send service membe",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 18
-        },
-        {
           "title": "Malaysia's middle path between China and US faces new tests",
           "url": "https://www.dw.com/en/malaysia-s-middle-path-between-china-and-us-faces-new-tests/a-78865212?maca=en-rss-en-world-4025-rdf",
           "date": "2026-09-03T12:00:00.000Z",
@@ -19829,6 +19869,27 @@
           "score": 16
         },
         {
+          "title": "US military has no plans to send troops to midterm polling sites, Dan Caine says",
+          "url": "https://www.theguardian.com/us-news/2026/aug/31/military-troops-polling-sites-midterms",
+          "date": "2026-08-31T21:09:36.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Letter from chair of joint chiefs of staff addresses concerns over Trump officials using military to interfere with vote The highest‑ranking US military officer says there are no plans to deploy troops to polling places during the November midterm elections – responding to Senator Elissa Slotkin’s request for information amid concerns about whether the Trump administration might send service membe",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
           "title": "Ben Gvir set to unveil $20bn plan to ethnically cleanse Gaza within seven years",
           "url": "https://www.middleeasteye.net/news/ben-gvir-set-unveil-20-billion-plan-ethnically-cleanse-gaza-within-seven-years",
           "date": "2026-09-03T13:24:35.000Z",
@@ -19847,7 +19908,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Top US general says no plans to deploy troops for 2026 midterm elections",
@@ -19982,27 +20043,6 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "US targets Iran’s Larak Island in first exchange of fire in more than a month, sparking reprisals against US forces in the region US strikes Iranian launchers in strait of Hormuz, prompting Iranian retaliatory attacks Coinciding with this week’s G20 meeting , the EU has issued a statement saying it will work with the US and other allied countries to maintain economic pressure against Iran. “The ‌E",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
-          "date": "2026-09-02T21:25:04.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
           "isNew": false,
           "region": null,
           "event": {
@@ -20308,6 +20348,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 12
+        },
+        {
+          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
+          "date": "2026-09-02T21:25:04.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
         },
         {
           "title": "Trump suggests renaming Strait of Hormuz as Trump Strait amid Iran war",
@@ -21221,7 +21282,7 @@
           "score": 8
         }
       ],
-      "itemCount": 77
+      "itemCount": 79
     },
     {
       "id": "colombia",
@@ -21690,9 +21751,9 @@
         "Karibik",
         "Caracas"
       ],
-      "activity": 22,
-      "severity": 45,
-      "newCount": 0,
+      "activity": 27,
+      "severity": 47,
+      "newCount": 1,
       "signals": [
         {
           "key": "talks",
@@ -21715,7 +21776,7 @@
           "date": "2026-09-03T16:17:29.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Opposition leader says interim government lacking democratic mandate to negotiate on natural resources The Venezuelan opposition leader María Corina Machado has questioned Donald Trump’s oil deal with Venezuela’s interim government, saying the country’s natural resources do not belong to “an illegitimate regime”. In her first public comments since Trump announced what he called “the biggest oil de",
+          "summary": "Opposition leader says interim government lacking democratic mandate to negotiate on natural resources • The US and Venezuela: a century-old relationship drenched in oil The Venezuelan opposition leader María Corina Machado has questioned Donald Trump’s oil deal with Venezuela’s interim government, saying the country’s natural resources do not belong to “an illegitimate regime”. In her first publi",
           "isNew": false,
           "region": null,
           "event": {
@@ -21750,6 +21811,27 @@
             "label": "Bericht"
           },
           "score": 22
+        },
+        {
+          "title": "The US and Venezuela: a century-old relationship drenched in oil",
+          "url": "https://www.theguardian.com/world/2026/sep/03/us-venezuela-visual-look-century-old-relationship-drenched-in-oil",
+          "date": "2026-09-03T10:00:50.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "A visual look at how Washington’s relationship with Caracas has gone from cordial to ‘predatory’ Trump ally defends Venezuela oil deal amid ‘gunpoint diplomacy’ criticism Nobel laureate Machado: ‘Illegitimate’ Venezuela regime has no right to strike US oil deal Written in the middle of the last century, the US Department of State memo conveys its message in a curt and undiplomatically honest tone:",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
         },
         {
           "title": "Chevron to expand in Venezuela , days after the U . S . and Venezuela strike oil deal",
@@ -21899,7 +21981,7 @@
           "score": 8
         }
       ],
-      "itemCount": 9
+      "itemCount": 10
     },
     {
       "id": "somalia",
@@ -23942,27 +24024,6 @@
           "score": 15
         },
         {
-          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
-          "date": "2026-09-02T21:25:04.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Russia helped foil coup in Niger — Official",
           "url": "https://www.premiumtimesng.com/news/top-news/906427-russia-helped-foil-coup-in-niger-official.html",
           "date": "2026-08-31T09:22:26.000Z",
@@ -24276,6 +24337,27 @@
             "label": "Opfer"
           },
           "score": 12
+        },
+        {
+          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
+          "date": "2026-09-02T21:25:04.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
         },
         {
           "title": "Russian airspace becoming unsafe for commercial airlines, Zelenskyy says",
@@ -25647,27 +25729,6 @@
           "score": 15
         },
         {
-          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
-          "date": "2026-09-02T21:25:04.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Russia helped foil coup in Niger — Official",
           "url": "https://www.premiumtimesng.com/news/top-news/906427-russia-helped-foil-coup-in-niger-official.html",
           "date": "2026-08-31T09:22:26.000Z",
@@ -26002,6 +26063,27 @@
             "label": "Opfer"
           },
           "score": 12
+        },
+        {
+          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
+          "date": "2026-09-02T21:25:04.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
         },
         {
           "title": "Russian airspace becoming unsafe for commercial airlines, Zelenskyy says",
@@ -26504,8 +26586,8 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 58,
-      "severity": 40,
+      "activity": 55,
+      "severity": 39,
       "newCount": 0,
       "signals": [
         {
@@ -26560,7 +26642,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 29
+          "score": 25
         },
         {
           "title": "Iran confirms missile and drone attacks on US bases in UAE and Kuwait",
@@ -27426,8 +27508,8 @@
         "Kandil",
         "Nordsyrien"
       ],
-      "activity": 17,
-      "severity": 28,
+      "activity": 14,
+      "severity": 27,
       "newCount": 0,
       "signals": [
         {
@@ -27503,27 +27585,6 @@
           "score": 19
         },
         {
-          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
-          "date": "2026-09-02T21:25:04.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Greece, Turkey clash over protected Aegean marine areas",
           "url": "https://www.dw.com/en/greece-turkey-clash-over-protected-aegean-marine-areas/a-78550021?maca=en-rss-en-world-4025-rdf",
           "date": "2026-08-30T09:07:00.000Z",
@@ -27543,6 +27604,27 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "Turkey replaces Russian oil and diesel imports from US as wars reverberate",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-replaces-russian-oil-and-diesel-imports-us-wars-reverberate",
+          "date": "2026-09-02T21:25:04.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey replaces Russian oil and diesel imports from US as wars reverberate Turkey&nbsp;is turning to the&nbsp;United States&nbsp;for crude oil and refined products as supplies from Russia are jolted amid increasing Ukrainian attacks on its energy infrastructure, according to recent Turkish customs data. The US overtook&nbsp;Russia&nbsp;in June as Turkey’s main crude oil supplier with roughly 570,0",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
         },
         {
           "title": "Qatari PM speaks to Lebanese, Turkish, Egyptian foreign ministers",
@@ -27685,7 +27767,7 @@
         "N'Djamena",
         "Ost-Tschad"
       ],
-      "activity": 8,
+      "activity": 7,
       "severity": 25,
       "newCount": 0,
       "signals": [
@@ -27708,25 +27790,7 @@
       "extraCountries": [
         "SDN"
       ],
-      "regions": [
-        {
-          "id": "TCD-5579",
-          "name": "Ennedi",
-          "nameDe": "Ennedi",
-          "type": "Préfecture",
-          "anchor": [
-            22.072,
-            18.125
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        }
-      ],
+      "regions": [],
       "items": [
         {
           "title": "Nobel laureate Machado: ‘Illegitimate’ Venezuela regime has no right to strike US oil deal",
@@ -27734,7 +27798,7 @@
           "date": "2026-09-03T16:17:29.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Opposition leader says interim government lacking democratic mandate to negotiate on natural resources The Venezuelan opposition leader María Corina Machado has questioned Donald Trump’s oil deal with Venezuela’s interim government, saying the country’s natural resources do not belong to “an illegitimate regime”. In her first public comments since Trump announced what he called “the biggest oil de",
+          "summary": "Opposition leader says interim government lacking democratic mandate to negotiate on natural resources • The US and Venezuela: a century-old relationship drenched in oil The Venezuelan opposition leader María Corina Machado has questioned Donald Trump’s oil deal with Venezuela’s interim government, saying the country’s natural resources do not belong to “an illegitimate regime”. In her first publi",
           "isNew": false,
           "region": null,
           "event": {
@@ -27811,40 +27875,9 @@
             "label": "Vertreibung"
           },
           "score": 15
-        },
-        {
-          "title": "Trump's Africa envoy condemns Chad strikes, 'external support' in Sudan war",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trumps-africa-envoy-condemns-chad-strikes-external-support-sudan-war",
-          "date": "2026-08-27T21:13:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Trump's Africa envoy condemns Chad strikes, 'external support' in Sudan war US&nbsp;President Donald Trump's Africa envoy on Thursday condemned the air strikes by&nbsp;Sudan's military inside the territory of Chad, after Chadian authorities reported bombings in&nbsp;the eastern Ennedi region last week. \"The United States condemns the SAF’s recent air strikes inside Chad,\" Massad Boulos wrote on X ",
-          "isNew": false,
-          "region": {
-            "id": "TCD-5579",
-            "name": "Ennedi",
-            "nameDe": "Ennedi",
-            "type": "Préfecture",
-            "anchor": [
-              22.072,
-              18.125
-            ],
-            "matched": "Ennedi Region"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
         }
       ],
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "thailand-cambodia",
@@ -28645,7 +28678,7 @@
       ],
       "activity": 28,
       "severity": 19,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "ceasefire",
@@ -28751,7 +28784,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Ratko Mladic received a life sentence from a UN court for committing atrocities during the 1992-1995 Bosnian War.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
