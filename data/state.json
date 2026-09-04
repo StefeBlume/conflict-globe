@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T19:30:12.878Z",
-  "durationSec": 371,
+  "generatedAt": "2026-09-04T20:33:34.290Z",
+  "durationSec": 372,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -115,11 +115,15 @@
     ],
     "gdelt": {
       "ok": 4,
-      "failed": 6,
-      "skipped": 6,
+      "failed": 7,
+      "skipped": 5,
       "errors": [
         {
-          "id": "myanmar",
+          "id": "burkina-faso",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "india-pakistan",
           "error": "fetch failed"
         },
         {
@@ -127,19 +131,19 @@
           "error": "HTTP 429"
         },
         {
-          "id": "west-papua",
-          "error": "HTTP 429"
+          "id": "car",
+          "error": "fetch failed"
         },
         {
-          "id": "ukraine-russia",
-          "error": "HTTP 429"
+          "id": "drc-m23",
+          "error": "fetch failed"
         },
         {
-          "id": "venezuela",
-          "error": "HTTP 429"
+          "id": "sinai-egypt",
+          "error": "fetch failed"
         },
         {
-          "id": "afghanistan",
+          "id": "somalia",
           "error": "HTTP 429"
         }
       ]
@@ -148,8 +152,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1140,
-    "newArticles": 5
+    "articles": 1142,
+    "newArticles": 10
   },
   "conflicts": [
     {
@@ -190,14 +194,14 @@
           "count": 14
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 9
-        },
-        {
           "key": "escalation",
           "label": "Eskalation",
+          "dir": "up",
+          "count": 8
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 8
         },
@@ -239,7 +243,7 @@
             50.29
           ],
           "count": 18,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -272,12 +276,12 @@
             29.857,
             46.735
           ],
-          "count": 2,
+          "count": 1,
           "newCount": 0,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           }
         }
       ],
@@ -300,37 +304,6 @@
               55.668
             ],
             "matched": "Moscow"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 35
-        },
-        {
-          "title": "Russian drone strikes Ukraine security service HQ",
-          "url": "https://www.france24.com/en/europe/20260904-russian-drone-aimed-directly-at-ukraine-security-service-hq-zelensky-says",
-          "date": "2026-09-04T13:59:22.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A Russian drone struck the headquarters of Ukraine's SBU security services in Kyiv on Friday afternoon, said Ukrainian President Volodymyr Zelensky, injuring five people. The attack followed a series of deadly overnight strikes across Ukraine, including the southern Odesa region.",
-          "isNew": false,
-          "region": {
-            "id": "UKR-322",
-            "name": "Odessa",
-            "nameDe": "Odessa",
-            "type": "Region",
-            "anchor": [
-              29.857,
-              46.735
-            ],
-            "matched": "Odesa"
           },
           "event": {
             "type": "drone",
@@ -440,6 +413,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 32
+        },
+        {
+          "title": "🔴 Russian drone ‘aimed directly’ at Ukraine security service HQ",
+          "url": "https://www.france24.com/en/europe/20260904-russian-drone-aimed-directly-at-ukraine-security-service-hq-zelensky-says",
+          "date": "2026-09-04T15:07:42.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "regionEvent": {
             "type": "drone",
@@ -597,7 +591,7 @@
         {
           "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend",
           "url": "https://www.bbc.co.uk/news/articles/c23x0z48x0no?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-04T16:30:50.000Z",
+          "date": "2026-09-04T20:03:52.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Steve Witkoff and Jared Kushner have led President Donald Trump's efforts to end the Russia-Ukraine war - but talks have stalled.",
@@ -653,7 +647,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "The Ukrainian capital was hit by Russia’s most intense wave of air attacks on Kyiv, reportedly in four years, with Reuters describing air raid sirens, drones, cruise and ballistic missiles exhausting Ukraine’s defence system, with 12 people killed and the Ukrainian foreign minister making a direct appeal to Western allies for more Patriot interceptor missiles.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "UKR-321",
             "name": "Kyiv",
@@ -1760,27 +1754,6 @@
           "score": 15
         },
         {
-          "title": "Estonian defence minister resigns after €70m Ukraine munitions scam by Indian company: report",
-          "url": "https://www.dawn.com/news/2027239/estonian-defence-minister-resigns-after-eur70m-ukraine-munitions-scam-by-indian-company-report",
-          "date": "2026-09-03T20:01:48.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Estonian Defence Minister Hanno Pevkur has resigned following a scandal in which he authorised the payment of €70 million to an Indian company for artillery shells, only to receive ammunition of defective quality, it emerged on Thursday. Britain’s The Telegraph reported on Monday that Datasel SRL was contracted to produce the shells for use by the Ukrainian military against Russia, and that Datase",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 15
-        },
-        {
           "title": "Russian drone and missile barrage kills at least 12 in Ukraine’s Kyiv",
           "url": "https://www.aljazeera.com/news/2026/9/1/russian-drone-and-missile-barrage-kills-at-least-12-in-ukraines-kyiv?traffic_source=rss",
           "date": "2026-09-01T08:57:48.000Z",
@@ -2331,6 +2304,27 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "Bosnian Serb Fails to Appear at First Ukraine War Crimes Hearing",
+          "url": "https://balkaninsight.com/2026/09/03/bosnian-serb-fails-to-appear-at-first-ukraine-war-crimes-hearing/bi/",
+          "date": "2026-09-03T13:41:31.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Bosnian Serb Davor Savicic, accused of committing war crimes against civilians while fighting alongside Russian forces, failed to appear at his first court hearing in Ukraine, prompting the court to postpone proceedings.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 14
         }
       ],
       "itemCount": 80
@@ -2362,7 +2356,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
@@ -2374,7 +2368,7 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 13
+          "count": 11
         },
         {
           "key": "ceasefire",
@@ -2383,16 +2377,16 @@
           "count": 9
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 7
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
-          "count": 6
+          "count": 7
         }
       ],
       "acled": null,
@@ -2512,6 +2506,48 @@
             "label": "Entführung/Geiseln"
           },
           "score": 27
+        },
+        {
+          "title": "Israeli drones drop bombs on southern Lebanon’s Mansouri",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/04-09-sv-israel-drone-bombs-mansouri-lb-fm?traffic_source=rss",
+          "date": "2026-09-04T20:04:13.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Several explosions rocked the southern Lebanese town of Mansouri after Israeli military drones dropped explosives in the",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israeli strike kills two in southern Lebanon amid ongoing escalation",
+          "url": "https://www.aljazeera.com/news/2026/9/4/israeli-strike-kills-two-in-southern-lebanon-amid-ongoing-escalation?traffic_source=rss",
+          "date": "2026-09-04T19:48:25.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli attacks against villages and towns in southern Lebanon continue despite truce agreements and diplomacy.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
         },
         {
           "title": "Israeli drone strike kills two in southern Lebanon",
@@ -2692,46 +2728,25 @@
           "score": 22
         },
         {
-          "title": "Israeli attack injures two Palestinian children in occupied West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-injures-two-palestinian-children-occupied-west-bank",
-          "date": "2026-09-03T19:43:02.000Z",
+          "title": "Red Cross says four people released by Israel to Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/red-cross-says-transferred-four-people-released-israel-lebanon",
+          "date": "2026-09-04T19:41:58.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli attack injures two Palestinian children in occupied West Bank Israeli forces shot and injured two Palestinian children in Beit Fajjar, south of Bethlehem, the Wafa news agency reported. The children were wounded when Israeli forces opened fire with live ammunition during a raid on the town, the report said.",
-          "isNew": false,
+          "summary": "Red Cross says four people released by Israel to Lebanon The Red Cross said on Friday it had facilitated the transfer to Lebanon of four more people detained by Israel, a day after one person was freed. Israel is believed to have detained at least dozens of people from Lebanon during its war against Hezbollah. \"The International Committee of the Red Cross, at the request of the relevant parties, f",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
           },
-          "score": 22
-        },
-        {
-          "title": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/christian-village-taybeh-plans-us-lawsuit-over-israeli-settler-attacks",
-          "date": "2026-09-03T20:11:35.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks The municipality of Taybeh, a Christian village in the occupied West Bank, has called on residents who hold US passports or green cards to document attacks and property damage by Israeli settlers ahead of a planned civil lawsuit in the United States. The municipality said the case would target the settlers and “the American ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
+          "score": 19
         },
         {
           "title": "He was born into Israeli ‘privilege’. Now his life's work is to abolish it | Eyal Weizman",
@@ -2795,6 +2810,48 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Israeli attack injures two Palestinian children in occupied West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-injures-two-palestinian-children-occupied-west-bank",
+          "date": "2026-09-03T19:43:02.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli attack injures two Palestinian children in occupied West Bank Israeli forces shot and injured two Palestinian children in Beit Fajjar, south of Bethlehem, the Wafa news agency reported. The children were wounded when Israeli forces opened fire with live ammunition during a raid on the town, the report said.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/christian-village-taybeh-plans-us-lawsuit-over-israeli-settler-attacks",
+          "date": "2026-09-03T20:11:35.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Christian village of Taybeh plans US lawsuit over Israeli settler attacks The municipality of Taybeh, a Christian village in the occupied West Bank, has called on residents who hold US passports or green cards to document attacks and property damage by Israeli settlers ahead of a planned civil lawsuit in the United States. The municipality said the case would target the settlers and “the American ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Israel’s siege on Gaza is forcing dentists to operate in the streets",
@@ -3343,48 +3400,6 @@
           "score": 18
         },
         {
-          "title": "Israel says Hamas security chief captured as strikes kill four during Gaza raid",
-          "url": "https://www.bbc.co.uk/news/articles/c1wxex4vg35o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-01T20:24:28.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The Israeli military says it carried out strikes in Gaza City during a raid by special forces to capture the head of Hamas's internal security service.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israel’s multiple wars see finance, defence ministries clash over spending",
-          "url": "https://www.aljazeera.com/news/2026/9/1/israels-multiple-wars-see-finance-defence-ministries-clash-over-spending?traffic_source=rss",
-          "date": "2026-09-01T19:33:22.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Spiraling costs of Israel's conflicts deepen rift between finance and defense ministries ahead of budget decisions.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Lebanon–Israel tensions escalate as Gaza sees major aid delivery",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168275",
           "date": "2026-09-03T12:00:00.000Z",
@@ -3425,6 +3440,48 @@
             "label": "Gefechte"
           },
           "score": 17
+        },
+        {
+          "title": "Israel says Hamas security chief captured as strikes kill four during Gaza raid",
+          "url": "https://www.bbc.co.uk/news/articles/c1wxex4vg35o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-01T20:24:28.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The Israeli military says it carried out strikes in Gaza City during a raid by special forces to capture the head of Hamas's internal security service.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israel’s multiple wars see finance, defence ministries clash over spending",
+          "url": "https://www.aljazeera.com/news/2026/9/1/israels-multiple-wars-see-finance-defence-ministries-clash-over-spending?traffic_source=rss",
+          "date": "2026-09-01T19:33:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Spiraling costs of Israel's conflicts deepen rift between finance and defense ministries ahead of budget decisions.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Can Palestinian elections still matter after the Gaza genocide?",
@@ -3899,27 +3956,6 @@
           "score": 15
         },
         {
-          "title": "Israel kills 3 in Gaza as far-right minister plans for Palestinian removals",
-          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
-          "date": "2026-09-03T20:31:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli drone strike and gunfire kills and injures people across the Gaza Strip despite 'ceasefire'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Israeli troops advance further into Syria’s Daraa",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-troops-advance-further-syrias-daraa",
           "date": "2026-09-01T03:40:06.000Z",
@@ -4086,48 +4122,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "Why has Greece signed a $3.5bn missile deal with Israel?",
-          "url": "https://www.aljazeera.com/news/2026/8/31/why-has-greece-signed-a-3-5bn-missile-deal-with-israel?traffic_source=rss",
-          "date": "2026-08-31T14:57:56.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Analysts say Greece is concerned about threats posed by the US-Israel war on Iran and Turkiye's growing capabilities.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Masked Israeli settlers attack US news crew in West Bank",
-          "url": "http://www.israelherald.com/news/279276785/masked-israeli-settlers-attack-us-crew-in-west-bank",
-          "date": "2026-08-31T15:30:00.000Z",
-          "source": "israelherald.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4287,7 +4281,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Israeli attack injures two Palestinian children in occupied West Bank",
@@ -4308,7 +4302,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army",
@@ -5319,27 +5313,6 @@
           "score": 15
         },
         {
-          "title": "Three Palestinians injured in settler attack on Al-Mughayyir",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-injured-settler-attack-al-mughayyir",
-          "date": "2026-08-28T20:25:07.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Three Palestinians injured in settler attack on Al-Mughayyir Three Palestinians were injured on Friday night when Israeli settlers attacked the village of Al-Mughayyir, northeast of Ramallah, according to local sources and the Palestine Red Crescent Society (PRCS). Israeli soldiers shot and wounded one Palestinian while providing cover for settlers who raided the western part of the village and at",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Israeli settlers 'hike' through my West Bank village. Next is the violent land grab",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-hike-through-my-west-bank-village-next-violent-land",
           "date": "2026-09-03T11:58:32.000Z",
@@ -5536,7 +5509,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "UK foreign secretary condemns  appalling settler terrorism  in occupied West Bank – Middle East Monitor",
@@ -5875,7 +5848,7 @@
           "score": 8
         }
       ],
-      "itemCount": 78
+      "itemCount": 77
     },
     {
       "id": "iran-israel",
@@ -5909,7 +5882,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 25
+          "count": 26
         },
         {
           "key": "airstrike",
@@ -5933,7 +5906,7 @@
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 2
+          "count": 1
         }
       ],
       "acled": null,
@@ -5952,7 +5925,7 @@
             51.831,
             35.568
           ],
-          "count": 12,
+          "count": 11,
           "newCount": 0,
           "event": {
             "type": "airstrike",
@@ -5997,27 +5970,6 @@
       ],
       "items": [
         {
-          "title": "Iranian diplomat warns regional countries over US attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-diplomat-warns-regional-countries-against-allowing-us-use-them",
-          "date": "2026-09-04T14:28:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian diplomat warns regional countries over US attacks Iranian diplomat Mojtaba Ferdowsi Pour has said that countries in the Middle East must not permit the use of their territory and airspace as a launchpad for attacks on Iran. Speaking to Al Mayadeen , Iran's ambassador to Egypt said that international law prohibited such attacks, which have been launched by the US during the course of the wa",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 29
-        },
-        {
           "title": "Iranian town mourns after deadly strike on wedding",
           "url": "https://www.theguardian.com/world/2026/sep/04/iranian-town-kuhestak-devastated-strike-wedding",
           "date": "2026-09-04T10:19:23.000Z",
@@ -6045,6 +5997,27 @@
             "type": "explosion",
             "icon": "💣",
             "label": "Explosion/Anschlag"
+          },
+          "score": 26
+        },
+        {
+          "title": "Iranian diplomat warns regional countries over US attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-diplomat-warns-regional-countries-against-allowing-us-use-them",
+          "date": "2026-09-04T14:28:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian diplomat warns regional countries over US attacks Iranian diplomat Mojtaba Ferdowsi Pour has said that countries in the Middle East must not permit the use of their territory and airspace as a launchpad for attacks on Iran. Speaking to Al Mayadeen , Iran's ambassador to Egypt said that international law prohibited such attacks, which have been launched by the US during the course of the wa",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 26
         },
@@ -6217,48 +6190,6 @@
           "score": 22
         },
         {
-          "title": "Vance says US probing air strike on wedding party in Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-says-us-probing-air-strike-wedding-party-iran",
-          "date": "2026-09-03T19:38:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Vance says US probing air strike on wedding party in Iran US Vice President JD Vance on Thursday said the United States is investigating an air strike that&nbsp;Iran&nbsp;says struck a wedding party in&nbsp;Iran. \"We're investigating it because obviously we care. We want to know,\" Vance told reporters during a White House press briefing. Iranian officials say four people died and nearly 70 were wo",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Funeral held for child killed in US strike on Iranian wedding",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/09-03-iran-child-funeral-minisv?traffic_source=rss",
-          "date": "2026-09-03T20:00:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Mourners carried the coffin of a child killed in a US strike on a wedding in Kuhestak, along the Strait of Hormuz.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "JD Vance reacts to airstrike that killed four at Iran wedding: ‘Things happen’",
           "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance",
           "date": "2026-09-03T21:04:18.000Z",
@@ -6276,27 +6207,6 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Vance pushes back on reports that US strikes hit wedding in Iran but says ‘sometimes things happen’ – live",
-          "url": "https://www.theguardian.com/us-news/live/2026/sep/03/donald-trump-immigration-tariffs-canada-trade-iran-jd-vance-latest-news-updates",
-          "date": "2026-09-03T19:56:23.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Vice president holds first press briefing since Karoline Leavitt’s departure and rebuffs Iran’s claims of deadly US strikes while defending Pete Hegseth Sign up for US Breaking News emails Republican oversight chair James Comer has also weighed in on Leon Black not sitting for a deposition about his ties to Jeffrey Epstein. The billionaire financier, who has denied wrongdoing, filed suit against t",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 22
         },
@@ -6328,7 +6238,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Trump says US may hit Iran’s Pickaxe Mountain ‘soon’ US President Donald Trump said on Friday that the United States may strike Iran’s Pickaxe Mountain “very soon”, speaking to reporters at the White House. Located near the heavily damaged Natanz uranium enrichment facility, Pickaxe Mountain is a heavily fortified site that houses two deeply buried tunnel complexes.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6343,33 +6253,23 @@
           "score": 21
         },
         {
-          "title": "Tehran 28 August 2026 #1",
-          "url": "https://www.crisisgroup.org/content/tehran-28-august-2026-1",
-          "date": "2026-08-28T19:53:08.000Z",
-          "source": "International Crisis Group",
-          "sourceType": "analysis",
-          "summary": "Tehran 28 August 2026 #1 lalasor Fri, 08/28/2026 - 21:53 Tehran Fri, 08/28/2026 - 12:00 28 August 2026 The U.S. announced&nbsp; sanctions against “the manager of the Dubai branch of Iran’s Bank Melli… [and] a Hong Kong-based company that has helped designated Iranian individuals and entities to access the international financial system”. The Treasury Department additionally “proposed a rule that w",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
+          "title": "Trump calls Iran war ‘small potatoes’, compares US deaths with Vietnam war",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-trump-iran-war-small-potatoes-clip?traffic_source=rss",
+          "date": "2026-09-04T20:22:42.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US President Donald Trump called the Iran war small potatoes, saying only 18 Americans had been killed.",
+          "isNew": true,
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 19
         },
@@ -6414,6 +6314,69 @@
             "label": "Sanktionen/Recht"
           },
           "score": 19
+        },
+        {
+          "title": "Vance says US probing air strike on wedding party in Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-says-us-probing-air-strike-wedding-party-iran",
+          "date": "2026-09-03T19:38:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Vance says US probing air strike on wedding party in Iran US Vice President JD Vance on Thursday said the United States is investigating an air strike that&nbsp;Iran&nbsp;says struck a wedding party in&nbsp;Iran. \"We're investigating it because obviously we care. We want to know,\" Vance told reporters during a White House press briefing. Iranian officials say four people died and nearly 70 were wo",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Funeral held for child killed in US strike on Iranian wedding",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/09-03-iran-child-funeral-minisv?traffic_source=rss",
+          "date": "2026-09-03T20:00:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Mourners carried the coffin of a child killed in a US strike on a wedding in Kuhestak, along the Strait of Hormuz.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Vance pushes back on reports that US strikes hit wedding in Iran but says ‘sometimes things happen’ – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/03/donald-trump-immigration-tariffs-canada-trade-iran-jd-vance-latest-news-updates",
+          "date": "2026-09-03T19:56:23.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Vice president holds first press briefing since Karoline Leavitt’s departure and rebuffs Iran’s claims of deadly US strikes while defending Pete Hegseth Sign up for US Breaking News emails Republican oversight chair James Comer has also weighed in on Leon Black not sitting for a deposition about his ties to Jeffrey Epstein. The billionaire financier, who has denied wrongdoing, filed suit against t",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
         },
         {
           "title": "Vance says US not talking to Iran unless they stop shooting at ships",
@@ -8164,27 +8127,6 @@
       ],
       "items": [
         {
-          "title": "Bandits release Niger electoral commissioner 11 months after abduction",
-          "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
-          "date": "2026-09-04T13:50:07.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Mr Wawa recounted a traumatic experience, saying he spent more than 300 days in captivity without taking a bath. The post Bandits release Niger electoral commissioner 11 months after abduction appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 26
-        },
-        {
           "title": "Nigeria: Nigeria Denies Backing Failed Niger Coup",
           "url": "https://allafrica.com/stories/202609040397.html",
           "date": "2026-09-04T12:18:45.000Z",
@@ -8277,6 +8219,27 @@
             "label": "Politik/Wahl"
           },
           "score": 23
+        },
+        {
+          "title": "Bandits release Niger electoral commissioner 11 months after abduction",
+          "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
+          "date": "2026-09-04T13:50:07.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Mr Wawa recounted a traumatic experience, saying he spent more than 300 days in captivity without taking a bath. The post Bandits release Niger electoral commissioner 11 months after abduction appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 22
         },
         {
           "title": "Nigeria denies backing failed Niger coup",
@@ -10424,27 +10387,6 @@
       ],
       "items": [
         {
-          "title": "Bandits release Niger electoral commissioner 11 months after abduction",
-          "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
-          "date": "2026-09-04T13:50:07.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Mr Wawa recounted a traumatic experience, saying he spent more than 300 days in captivity without taking a bath. The post Bandits release Niger electoral commissioner 11 months after abduction appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 30
-        },
-        {
           "title": "Nigeria: Troops Thwart Bandits' Operation, Recover Weapons in Benue",
           "url": "https://allafrica.com/stories/202609030284.html",
           "date": "2026-09-03T11:22:03.000Z",
@@ -10599,6 +10541,27 @@
             "label": "Politik/Wahl"
           },
           "score": 23
+        },
+        {
+          "title": "Bandits release Niger electoral commissioner 11 months after abduction",
+          "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
+          "date": "2026-09-04T13:50:07.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Mr Wawa recounted a traumatic experience, saying he spent more than 300 days in captivity without taking a bath. The post Bandits release Niger electoral commissioner 11 months after abduction appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 22
         },
         {
           "title": "Nigeria denies backing failed Niger coup",
@@ -12364,27 +12327,6 @@
           "score": 22
         },
         {
-          "title": "UAE-linked networks supplying weapons and fighters for Sudan atrocities, UN finds",
-          "url": "https://www.middleeasteye.net/news/foreign-weapons-and-mercenaries-fuelling-atrocities-sudans-darfur-un-finds",
-          "date": "2026-09-04T12:22:58.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UAE-linked networks supplying weapons and fighters for Sudan atrocities, UN finds Submitted by Sondos Asem on Fri, 09/04/2026 - 11:37 Investigators identify an Abu Dhabi-linked recruitment operation that deployed Colombians alongside the RSF An armed defector from the RSF on his way to surrendering to the Sudanese military in the west of Omdurman, on 19 August 2026 (Ebrahim Hamid/AFP) Off Foreign ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 18
-        },
-        {
           "title": "Sudan: Red Cross Helps 38,500 Families Reconnect As Sudan's Missing-Person Crisis Deepens",
           "url": "https://allafrica.com/stories/202609040009.html",
           "date": "2026-09-04T04:12:27.000Z",
@@ -12435,6 +12377,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 16
+        },
+        {
+          "title": "UAE-linked networks supplying weapons and fighters for Sudan atrocities, UN finds",
+          "url": "https://www.middleeasteye.net/news/foreign-weapons-and-mercenaries-fuelling-atrocities-sudans-darfur-un-finds",
+          "date": "2026-09-04T12:22:58.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UAE-linked networks supplying weapons and fighters for Sudan atrocities, UN finds Submitted by Sondos Asem on Fri, 09/04/2026 - 11:37 Investigators identify an Abu Dhabi-linked recruitment operation that deployed Colombians alongside the RSF An armed defector from the RSF on his way to surrendering to the Sudanese military in the west of Omdurman, on 19 August 2026 (Ebrahim Hamid/AFP) Off Foreign ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
         },
         {
           "title": "Sudan: SAF Accused of Deadly Market Strike, Fighting Intensifies in Kordofan and Blue Nile",
@@ -12889,6 +12852,1089 @@
       "itemCount": 25
     },
     {
+      "id": "lebanon-hezbollah",
+      "name": "Israel–Libanon / Hisbollah",
+      "nameEn": "Israel–Hezbollah",
+      "region": "Naher Osten",
+      "countries": [
+        "Lebanon"
+      ],
+      "lat": 33.6,
+      "lon": 35.5,
+      "tier": "high",
+      "since": "Oktober 2023 / Eskalation 2024",
+      "parties": [
+        "Israel",
+        "Hisbollah",
+        "Libanesische Armee",
+        "UNIFIL"
+      ],
+      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
+      "hotspots": [
+        "Südlibanon",
+        "Beirut/Dahiyeh",
+        "Bekaa-Ebene"
+      ],
+      "activity": 94,
+      "severity": 67,
+      "newCount": 3,
+      "signals": [
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 13
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 4
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 4
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 3
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "LBN",
+      "extraCountries": [
+        "ISR"
+      ],
+      "regions": [
+        {
+          "id": "LBN-3060",
+          "name": "South",
+          "nameDe": "Gouvernement Süd-Libanon",
+          "type": "Province",
+          "anchor": [
+            35.368,
+            33.36
+          ],
+          "count": 7,
+          "newCount": 0,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          }
+        },
+        {
+          "id": "LBN-3059",
+          "name": "Nabatieh",
+          "nameDe": "Nabatäa",
+          "type": "Province",
+          "anchor": [
+            35.512,
+            33.3
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        },
+        {
+          "id": "LBN-3024",
+          "name": "Beirut",
+          "nameDe": "Beirut",
+          "type": "Province",
+          "anchor": [
+            35.508,
+            33.888
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Israeli drones drop bombs on southern Lebanon’s Mansouri",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/04-09-sv-israel-drone-bombs-mansouri-lb-fm?traffic_source=rss",
+          "date": "2026-09-04T20:04:13.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Several explosions rocked the southern Lebanese town of Mansouri after Israeli military drones dropped explosives in the",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli drone strike kills two in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-reportedly-killed-israeli-drone-strike-southern-lebanon",
+          "date": "2026-09-04T17:31:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli drone strike kills two in southern Lebanon An Israeli drone strike killed two people in the town of Kfar Rumman in southern Lebanon's Nabatieh district, according to a Al-Mayadeen network report. The report said that Israeli forces carried out explosions in the Lebanese town of Al-Mansouri and on the outskirts of the village of Zawtar al-Sharqiya. Israeli sttikes also hit areas in Nabatieh",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3059",
+            "name": "Nabatieh",
+            "nameDe": "Nabatäa",
+            "type": "Province",
+            "anchor": [
+              35.512,
+              33.3
+            ],
+            "matched": "Nabatieh"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli strike kills two in southern Lebanon amid ongoing escalation",
+          "url": "https://www.aljazeera.com/news/2026/9/4/israeli-strike-kills-two-in-southern-lebanon-amid-ongoing-escalation?traffic_source=rss",
+          "date": "2026-09-04T19:48:25.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli attacks against villages and towns in southern Lebanon continue despite truce agreements and diplomacy.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israeli army has seized Lebanon's key Ali al-Taher ridge from Hezbollah",
+          "url": "https://www.france24.com/en/middle-east/20260904-israel-says-it-has-seized-lebanon-key-ali-al-taher-ridge-from-hezbollah",
+          "date": "2026-09-04T13:27:50.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israel has seized the strategically placed Ali al-Taher ridge in southern Lebanon from Hezbollah fighters, Defence Minister Israel Katz said Friday. The Iran-aligned Shiite group did not confirm losing the highland, which sits around 10 kilometres from the border with Israel and was pummelled by Israeli strikes in recent weeks despite a ceasefire.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israel attacks Ali al-Taher hill in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-attacks-ali-al-taher-hill-southern-lebanon",
+          "date": "2026-09-04T15:27:14.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel attacks Ali al-Taher hill in southern Lebanon An Israeli drone strike has targeted Ali al-Taher hill in southern Lebanon, according to Al Jazeera. Ali al-Taher is a strategic ridge in the Nabatieh district, situated between the towns of Kfar Tebnit and Nabatieh al-Fawqa.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3059",
+            "name": "Nabatieh",
+            "nameDe": "Nabatäa",
+            "type": "Province",
+            "anchor": [
+              35.512,
+              33.3
+            ],
+            "matched": "Nabatieh"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israeli shelling causes fire in southern Lebanese town",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-shelling-causes-fire-southern-lebanese-town",
+          "date": "2026-09-04T07:01:17.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli shelling causes fire in southern Lebanese town Israeli shelling in the town of Zawtar al-Sharqiyah, located in south Lebanon, resulted in a fire, state media reported.&nbsp;",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 22
+        },
+        {
+          "title": "Live: Israel says it has captured key ridge in southern Lebanon from Hezbollah",
+          "url": "https://www.france24.com/en/middle-east/20260904-middle-east-live-south-korea-prepares-for-military-deployment-in-strait-of-hormuz",
+          "date": "2026-09-04T02:56:56.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israeli troops have driven Hezbollah fighters from tunnels under the strategic Ali al-Taher ridge in southern Lebanon, Israeli Defence Minister Israel Katz alleged on Friday. Israel’s armed forces have occupied swathes of southern Lebanon since launching a new campaign against the Shiite group in March. Follow our liveblog for all the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli forces continue to attack southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-continue-attack-southern-lebanon",
+          "date": "2026-09-04T04:39:23.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces continue to attack southern Lebanon Israeli attacks remain ongoing in southern Lebanon, with the&nbsp;National News Agency reporting shelling on&nbsp;outskirts of the towns of Beit Leef and Sarbin. Earlier on Friday, Israeli forces also carried out artillery shelling targeting the towns of&nbsp;al-Mansouri, Majdal Zoun and Beit al-Sayyad.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Red Cross says four people released by Israel to Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/red-cross-says-transferred-four-people-released-israel-lebanon",
+          "date": "2026-09-04T19:41:58.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Red Cross says four people released by Israel to Lebanon The Red Cross said on Friday it had facilitated the transfer to Lebanon of four more people detained by Israel, a day after one person was freed. Israel is believed to have detained at least dozens of people from Lebanon during its war against Hezbollah. \"The International Committee of the Red Cross, at the request of the relevant parties, f",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 20
+        },
+        {
+          "title": "Israeli bombing seen behind journalist reporting from Lebanese village",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/israeli-bombing-seen-behind-journalist-reporting-from-lebanese-village?traffic_source=rss",
+          "date": "2026-09-03T16:56:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli bombing seen behind journalist reporting from Lebanese village",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli artillery shelling reported in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-artillery-shelling-reported-southern-lebanon",
+          "date": "2026-09-02T19:42:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli artillery shelling reported in southern Lebanon Lebanon’s National News Agency has reported heavy Israeli artillery shelling targeting Wadi al-Hujair and the town of Beit Leef in southern Lebanon on Wednesday. Israeli attacks have continued in southern Lebanon on a near-daily basis despite a June agreement between the two countries.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israel kills or injures 7 children a day in Lebanon invasion, report says",
+          "url": "https://www.aljazeera.com/news/2026/9/2/israel-kills-or-injures-7-children-a-day-in-lebanon-invasion-report-says?traffic_source=rss",
+          "date": "2026-09-02T18:31:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Save the Children data shows toll on children in Lebanon, despite government agreement with Israel to halt fighting.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli air strikes reported in south Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-reported-south-lebanon",
+          "date": "2026-09-02T04:59:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli air strikes reported in south Lebanon Two Israeli air strikes targeted the vicinity of the southern Lebanese towns of Kfar Rumman and Arab Salim in southern Lebanon, Al Jazeera reported.&nbsp; A short while before, the Israeli army announced that \"interceptors were launched toward a suspicious aerial target\" that it alleged crossed from Lebanese territory into northern Israel.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "UN says Israeli attacks in southern Lebanon continue to affect civilians",
+          "url": "https://www.middleeastmonitor.com/20260901-un-says-israeli-attacks-in-southern-lebanon-continue-to-affect-civilians/",
+          "date": "2026-09-01T19:15:00.000Z",
+          "source": "middleeastmonitor.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Lebanese Speaker Threatens Legal Action as Israel Continues to Attack South",
+          "url": "https://news.antiwar.com/2026/09/01/lebanese-speaker-threatens-legal-action-as-israel-continues-to-attack-south/",
+          "date": "2026-09-01T18:30:00.000Z",
+          "source": "news.antiwar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Watch: Israeli forces blow up houses and destroy property in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-israeli-forces-blow-houses-and-destroy-property-southern-lebanon",
+          "date": "2026-09-04T03:28:54.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Watch: Israeli forces blow up houses and destroy property in southern Lebanon Israeli forces blew up houses in the village of Houla, while troops moved through nearby Mais al-Jabal in southern Lebanon. &nbsp; The troops are operating inside a self-declared \"security zone\", which extends around 10 kilometres into Lebanese territory along the border. Israeli forces blew up houses in the village of H",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israel launches fresh attacks across southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-fresh-attacks-across-southern-lebanon",
+          "date": "2026-08-31T21:05:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel launches fresh attacks across southern Lebanon Israel carried out heavy bombing campaigns across several towns in southern Lebanon on Monday evening in its latest violation of prior ceasefire agreements, Lebanon’s National News Agency is reporting.&nbsp; What exactly is white phosphorus and why is it controversial? Read More » The agency, which is state-run, said that the attacks involved w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli attacks on southern Lebanon continue",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-southern-lebanon-continue",
+          "date": "2026-08-31T09:01:17.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli attacks on southern Lebanon continue Israeli artillery fire has targeted a number of areas in southern Lebanon, the country's National News Agency is reporting. According to the report, the attacks struck the town of Hula, as well as the villages of Mansouri and&nbsp;Buyout Al-Sayyad.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli army shells areas in south Lebanon's Tyre",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-shells-areas-south-lebanons-tyre",
+          "date": "2026-08-31T05:11:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli army shells areas in south Lebanon's Tyre Israeli artillery shelling targeted southern Lebanon's Mansouri and Bayt al-Sayyad, both located in Tyre, overnight and early on Monday, the National News Agency reported.&nbsp;",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli flare bombs ignite forest fires in southern Lebanon, local media reports",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-flare-bombs-ignite-forest-fires-southern-lebanon-local-media",
+          "date": "2026-08-30T12:40:49.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli flare bombs ignite forest fires in southern Lebanon, local media reports Israeli forces dropped flare bombs over the Aita al-Jabal forest in southern Lebanon’s Bint Jbeil district on Sunday, sparking fires, Lebanon’s National News Agency reported.&nbsp; The agency also said the Israeli army caused a “massive explosion” in the southern town of Houla in the Marjeyoun district.&nbsp; The deve",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
+          "title": "Southern Lebanon hit by new wave of Israeli attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-carry-out-new-wave-attacks-across-southern-lebanon",
+          "date": "2026-08-29T18:45:50.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Southern Lebanon hit by new wave of Israeli attacks Israeli forces struck multiple locations in southern Lebanon on Saturday evening, hitting a social care home, residential buildings and open areas, Lebanon's National News Agency (NNA) reported. A social care home for the elderly in the southern town of Hula was blown up by Israeli forces, NNA said. An Israeli drone fired a guided missile at an o",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli drone strike in southern Lebanon injures one person, state media says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-southern-lebanon-injures-one-person-state-media",
+          "date": "2026-08-29T01:19:21.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli drone strike in southern Lebanon injures one person, state media says Israeli drone strike injured one person in the Doha area of Kfar Remman, in southern Lebanon, according to Lebanon’s National News Agency. Israeli military operations across Lebanon since 2 March have killed 4,352 people and injured 12,318, the Emergency Operations Center of the Ministry of Public Health said in a statem",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli military attacks have killed 4,352 in Lebanon since 2 March",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-attacks-have-killed-4352-lebanon-2-march",
+          "date": "2026-08-28T23:11:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli military attacks have killed 4,352 in Lebanon since 2 March Israeli military operations across Lebanon since 2 March have killed 4,352 people and injured 12,318, the&nbsp;Emergency Operations Center of the Ministry of Public Health said in a statement. The United Nations Interim Force in Lebanon (UNIFIL) has warned that “despite lower levels of violence than earlier this year, the situatio",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Lebanon–Israel tensions escalate as Gaza sees major aid delivery",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168275",
+          "date": "2026-09-03T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Peacekeepers in Lebanon have reported a marked deterioration in the security situation along the Blue Line of separation, with Israeli forces intensifying their military footprint in violation of a landmark Security Council resolution, UN Spokesperson Stéphane Dujarric said on Thursday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 14
+        },
+        {
+          "title": "Lebanon receives first prisoner of five to be freed by Israel",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-receives-first-prisoner-five-be-freed-israel",
+          "date": "2026-09-03T16:26:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanon receives first prisoner of five to be freed by Israel Lebanon said it received a man freed from Israeli detention on Thursday, as Israel announced it would release five people detained from the country's south. The announcement came after Lebanon said its army received a man returned by the International Committee of the Red Cross (ICRC), the first since Beirut called in August talks for t",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3024",
+            "name": "Beirut",
+            "nameDe": "Beirut",
+            "type": "Province",
+            "anchor": [
+              35.508,
+              33.888
+            ],
+            "matched": "Beirut"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 11
+        },
+        {
+          "title": "Israel releases five Lebanese men detained in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-releases-five-lebanese-men-detained-southern-lebanon",
+          "date": "2026-09-03T13:34:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel releases five Lebanese men detained in southern Lebanon Israel has released five Lebanese men its forces detained in areas under military control in southern Lebanon, according to Prime Minister Benjamin Netanyahu’s office. The office said Israeli interrogators found that the men had no affiliation with any armed organisation and that authorities had no grounds to continue holding them.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran warns US of retaliation if Israel storms southern Lebanon ridge",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-us-retaliation-if-israel-storms-southern-lebanon-ridge",
+          "date": "2026-09-03T09:53:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran warns US of retaliation if Israel storms southern Lebanon ridge Iran has warned Washington that it will launch a major retaliatory attack if Israel mounts a full-scale offensive on the Ali al-Taher ridge in southern Lebanon, three officials briefed on the message told Reuters. Tehran delivered the warning through Oman in mid-August, according to two regional officials. A third official said U",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
+        },
+        {
+          "title": "Israeli forces carry out detonations in south Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-carry-out-detonations-south-lebanon",
+          "date": "2026-09-03T05:11:16.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces carry out detonations in south Lebanon Israeli forces conducted detonations early on Thursday&nbsp;in the towns of Haddatha and Baraachit in southern Lebanon, according to the National News Agency. The state news agency added that Israeli drones were also reported flying over Tyre.&nbsp;",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 11
+        },
+        {
+          "title": "Qatari PM speaks to Lebanese, Turkish, Egyptian foreign ministers",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-speaks-lebanese-turkish-egyptian-foreign-ministers",
+          "date": "2026-09-02T20:07:56.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Qatari PM speaks to Lebanese, Turkish, Egyptian foreign ministers Qatari Prime Minister and Minister of Foreign Affairs&nbsp;Mohammed bin Abdulrahman Al Thani spoke to his counterparts in Lebanon, Turkey and Egypt on Wednesday to discuss the latest regional tensions following renewed US strikes on Iran. Qatar's Ministry of Foreign Affairs posted on social media that Al Thani held separate phone ca",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "UNIFIL peacekeepers patrol south Lebanon, caught between Israel and Hezbollah",
+          "url": "https://www.france24.com/en/tv-shows/focus/20260902-unifil-peacekeepers-patrol-south-lebanon-caught-between-israel-and-hezbollah",
+          "date": "2026-09-02T12:41:09.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Since this spring, about 6 percent of Lebanon has been occupied by the Israeli army. On the ground, around 600 French soldiers from the United Nations Interim Force in Lebanon (UNIFIL) continue to patrol the zone. The delicate peacekeeping mission documents violations of UN resolutions by both Israel and Hezbollah, with its own future highly uncertain. Our France 2 colleagues report, with FRANCE 2",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Footage shows Israeli destruction in south Lebanon's Bint Jbeil",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/footage-shows-israeli-destruction-south-lebanons-bint-jbeil",
+          "date": "2026-09-02T05:37:27.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Footage shows Israeli destruction in south Lebanon's Bint Jbeil A video circulating online shows massive and widespread destruction of the historic town of Bint Jbeil in southern Lebanon. Repeated Israeli air strikes and attacks have left entire neighbourhoods, homes, and local infrastructure heavily damaged or completely reduced to rubble. A video circulating online shows massive and widespread d",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 11
+        },
+        {
+          "title": "BBC travels inside occupied Lebanon as officials say Israel expanding positions",
+          "url": "https://www.bbc.co.uk/news/articles/cge41d19gq9o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-02T05:03:09.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "A BBC team joined a humanitarian mission of the UN peacekeeping force, which says Israeli troops are fortifying positions and continuing demolitions.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "A Hezbollah hideout stuffed with cash? Nope, this video was AI-generated",
+          "url": "https://www.france24.com/en/middle-east/20260901-hezbollah-hideout-stuffed-cash-ai-generated",
+          "date": "2026-09-01T10:01:45.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A number of pro-Israel social media accounts have shared a video they claim shows wads of cash and stacks of gold bars in a cache belonging to a deceased Hezbollah leader. There's only one issue: the footage was created using AI. The original video was shared by an Egyptian satirical site.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Parliament speaker Berri says Lebanon will not give up right to sue Israel over ‘genocide crimes’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/parliament-speaker-berri-says-lebanon-will-not-give-right-sue-israel",
+          "date": "2026-09-01T05:02:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Parliament speaker Berri says Lebanon will not give up right to sue Israel over ‘genocide crimes’ Lebanon parliament speaker asserted that the country will not give up its right to pursue legal action against Israel over its \"genocide crimes\". Nabih Berri said on Monday that Lebanon’s confrontation with Israel requires \"a unified national approach free of sectarian calculations\".&nbsp; \"What Israe",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 8
+        },
+        {
+          "title": "EU considers military mission to replace UN peacekeepers in South Lebanon",
+          "url": "https://www.aljazeera.com/news/2026/9/1/can-europe-fill-vacuum-left-in-lebanon-as-un-peacekeeping-force-winds-up?traffic_source=rss",
+          "date": "2026-09-01T05:25:37.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Analysts say Israel could benefit when UNIFIL's mandate expires on December 31.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Lebanon asks Greece to help enforce agreement with Israel",
+          "url": "https://www.aljazeera.com/news/2026/8/31/lebanon-asks-greece-to-help-enforce-agreement-with-israel?traffic_source=rss",
+          "date": "2026-08-31T20:24:41.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "After Greece agrees to Israeli weapons deal, Joseph Aoun asks Athens to help advance US-brokered framework agreement.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "School starts soon in Lebanon , but thousands still shelter in them during war",
+          "url": "https://www.mynbc5.com/article/school-starts-lebanon-war/73567532",
+          "date": "2026-08-31T12:00:00.000Z",
+          "source": "mynbc5.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Israeli forces target Lebanon's Doha Kfar Rumman with artillery fire",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-target-lebanons-doha-kfar-rumman-artillery-fire",
+          "date": "2026-08-30T05:53:36.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces target Lebanon's Doha Kfar Rumman with artillery fire Israeli artillery fire hit southern Lebanon’s Doha Kfar Rumman Sunday morning, Lebanon’s National News Agency reported. On Saturday evening, Israeli forces struck multiple locations in southern Lebanon, hitting a social care home, residential buildings and open areas. A social care home for the elderly in the southern town of Hul",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 8
+        },
+        {
+          "title": "Israeli forces carry out two explosions in southern Lebanon, set fire to homes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-carry-out-two-explosions-southern-lebanon-set-fire-homes",
+          "date": "2026-08-29T06:29:26.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces carry out two explosions in southern Lebanon, set fire to homes Israeli military carried out two explosions Saturday morning on the outskirts of the town of Aita al-Jabal in southern Lebanon, Lebanon's National News Agency reported. NNA said Israeli forces set fire to several homes in the town of Beit Yahoun in southern Lebanon, while a&nbsp;drone strike targeted the outskirts of Na",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 8
+        },
+        {
+          "title": "Hezbollah chief again rejects Lebanon-Israel deal, refuses 'surrender'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-again-rejects-lebanon-israel-deal-refuses-surrender",
+          "date": "2026-08-28T22:26:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hezbollah chief again rejects Lebanon-Israel deal, refuses 'surrender' Hezbollah chief Naim Qassem on&nbsp;Friday again rejected a deal struck between Israel and Lebanon and said his&nbsp;group refused to \"surrender\" nearly six months after Israel launched its war on the country. \"We are against the framework agreement and call for its downfall,\" Qassem said in a televised address broadcast on the",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Lebanese child succumbs to his wounds after Israeli cluster bomb blast",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-child-succumbs-his-wounds-after-israeli-cluster-bomb-blast",
+          "date": "2026-09-01T00:18:56.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese child succumbs to his wounds after Israeli cluster bomb blast A Lebanese child was killed on Monday when a cluster bomb left behind by Israeli attacks in southern Lebanon exploded, Lebanon’s official National News Agency reported. Mohammad Ali Ibrahim succumbed to his wounds in the al-Arid neighbourhood of Haboush. Another boy was also injured in the blast, but no further details were pro",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 6
+        }
+      ],
+      "itemCount": 41
+    },
+    {
       "id": "myanmar",
       "name": "Myanmar",
       "nameEn": "Myanmar Civil War",
@@ -12920,7 +13966,7 @@
       ],
       "activity": 40,
       "severity": 67,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -13038,12 +14084,12 @@
         },
         {
           "title": "Ukrainians in Indian jail involved in drone attack on Myanmar passenger plane",
-          "url": "http://www.laosnews.net/news/279285976/ukrainians-in-indian-jail-involved-in-drone-attack-on-myanmar-passenger-plane-report",
-          "date": "2026-09-04T12:45:00.000Z",
-          "source": "laosnews.net",
+          "url": "http://www.myanmarnews.net/news/279285976/ukrainians-in-indian-jail-involved-in-drone-attack-on-myanmar-passenger-plane-report",
+          "date": "2026-09-04T16:15:00.000Z",
+          "source": "myanmarnews.net",
           "sourceType": "news",
           "summary": "",
-          "isNew": false,
+          "isNew": true,
           "region": null,
           "event": {
             "type": "drone",
@@ -13055,7 +14101,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 22
+          "score": 24
         },
         {
           "title": "Five killed, 18 injured in fatal Enugu crash",
@@ -13118,7 +14164,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 18
+          "score": 21
         },
         {
           "title": "Myanmar Junta Massing Reinforcements in Magway for Renewed Rakhine Offensive",
@@ -13306,7 +14352,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 13
         },
         {
           "title": "Niger's thwarted mutiny highlights junta's dependence on Russia",
@@ -15969,1026 +17015,6 @@
       "itemCount": 24
     },
     {
-      "id": "lebanon-hezbollah",
-      "name": "Israel–Libanon / Hisbollah",
-      "nameEn": "Israel–Hezbollah",
-      "region": "Naher Osten",
-      "countries": [
-        "Lebanon"
-      ],
-      "lat": 33.6,
-      "lon": 35.5,
-      "tier": "high",
-      "since": "Oktober 2023 / Eskalation 2024",
-      "parties": [
-        "Israel",
-        "Hisbollah",
-        "Libanesische Armee",
-        "UNIFIL"
-      ],
-      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
-      "hotspots": [
-        "Südlibanon",
-        "Beirut/Dahiyeh",
-        "Bekaa-Ebene"
-      ],
-      "activity": 79,
-      "severity": 62,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 13
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 4
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 4
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "LBN",
-      "extraCountries": [
-        "ISR"
-      ],
-      "regions": [
-        {
-          "id": "LBN-3060",
-          "name": "South",
-          "nameDe": "Gouvernement Süd-Libanon",
-          "type": "Province",
-          "anchor": [
-            35.368,
-            33.36
-          ],
-          "count": 7,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        },
-        {
-          "id": "LBN-3059",
-          "name": "Nabatieh",
-          "nameDe": "Nabatäa",
-          "type": "Province",
-          "anchor": [
-            35.512,
-            33.3
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        },
-        {
-          "id": "LBN-3024",
-          "name": "Beirut",
-          "nameDe": "Beirut",
-          "type": "Province",
-          "anchor": [
-            35.508,
-            33.888
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Israeli drone strike kills two in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-reportedly-killed-israeli-drone-strike-southern-lebanon",
-          "date": "2026-09-04T17:31:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli drone strike kills two in southern Lebanon An Israeli drone strike killed two people in the town of Kfar Rumman in southern Lebanon's Nabatieh district, according to a Al-Mayadeen network report. The report said that Israeli forces carried out explosions in the Lebanese town of Al-Mansouri and on the outskirts of the village of Zawtar al-Sharqiya. Israeli sttikes also hit areas in Nabatieh",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3059",
-            "name": "Nabatieh",
-            "nameDe": "Nabatäa",
-            "type": "Province",
-            "anchor": [
-              35.512,
-              33.3
-            ],
-            "matched": "Nabatieh"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 27
-        },
-        {
-          "title": "Israeli army has seized Lebanon's key Ali al-Taher ridge from Hezbollah",
-          "url": "https://www.france24.com/en/middle-east/20260904-israel-says-it-has-seized-lebanon-key-ali-al-taher-ridge-from-hezbollah",
-          "date": "2026-09-04T13:27:50.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel has seized the strategically placed Ali al-Taher ridge in southern Lebanon from Hezbollah fighters, Defence Minister Israel Katz said Friday. The Iran-aligned Shiite group did not confirm losing the highland, which sits around 10 kilometres from the border with Israel and was pummelled by Israeli strikes in recent weeks despite a ceasefire.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 26
-        },
-        {
-          "title": "Israel attacks Ali al-Taher hill in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-attacks-ali-al-taher-hill-southern-lebanon",
-          "date": "2026-09-04T15:27:14.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel attacks Ali al-Taher hill in southern Lebanon An Israeli drone strike has targeted Ali al-Taher hill in southern Lebanon, according to Al Jazeera. Ali al-Taher is a strategic ridge in the Nabatieh district, situated between the towns of Kfar Tebnit and Nabatieh al-Fawqa.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3059",
-            "name": "Nabatieh",
-            "nameDe": "Nabatäa",
-            "type": "Province",
-            "anchor": [
-              35.512,
-              33.3
-            ],
-            "matched": "Nabatieh"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
-          "title": "Israeli shelling causes fire in southern Lebanese town",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-shelling-causes-fire-southern-lebanese-town",
-          "date": "2026-09-04T07:01:17.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli shelling causes fire in southern Lebanese town Israeli shelling in the town of Zawtar al-Sharqiyah, located in south Lebanon, resulted in a fire, state media reported.&nbsp;",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
-          "title": "Live: Israel says it has captured key ridge in southern Lebanon from Hezbollah",
-          "url": "https://www.france24.com/en/middle-east/20260904-middle-east-live-south-korea-prepares-for-military-deployment-in-strait-of-hormuz",
-          "date": "2026-09-04T02:56:56.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israeli troops have driven Hezbollah fighters from tunnels under the strategic Ali al-Taher ridge in southern Lebanon, Israeli Defence Minister Israel Katz alleged on Friday. Israel’s armed forces have occupied swathes of southern Lebanon since launching a new campaign against the Shiite group in March. Follow our liveblog for all the latest updates.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli forces continue to attack southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-continue-attack-southern-lebanon",
-          "date": "2026-09-04T04:39:23.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces continue to attack southern Lebanon Israeli attacks remain ongoing in southern Lebanon, with the&nbsp;National News Agency reporting shelling on&nbsp;outskirts of the towns of Beit Leef and Sarbin. Earlier on Friday, Israeli forces also carried out artillery shelling targeting the towns of&nbsp;al-Mansouri, Majdal Zoun and Beit al-Sayyad.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli bombing seen behind journalist reporting from Lebanese village",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/israeli-bombing-seen-behind-journalist-reporting-from-lebanese-village?traffic_source=rss",
-          "date": "2026-09-03T16:56:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli bombing seen behind journalist reporting from Lebanese village",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israeli artillery shelling reported in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-artillery-shelling-reported-southern-lebanon",
-          "date": "2026-09-02T19:42:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli artillery shelling reported in southern Lebanon Lebanon’s National News Agency has reported heavy Israeli artillery shelling targeting Wadi al-Hujair and the town of Beit Leef in southern Lebanon on Wednesday. Israeli attacks have continued in southern Lebanon on a near-daily basis despite a June agreement between the two countries.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israel kills or injures 7 children a day in Lebanon invasion, report says",
-          "url": "https://www.aljazeera.com/news/2026/9/2/israel-kills-or-injures-7-children-a-day-in-lebanon-invasion-report-says?traffic_source=rss",
-          "date": "2026-09-02T18:31:22.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Save the Children data shows toll on children in Lebanon, despite government agreement with Israel to halt fighting.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israeli air strikes reported in south Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-reported-south-lebanon",
-          "date": "2026-09-02T04:59:57.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli air strikes reported in south Lebanon Two Israeli air strikes targeted the vicinity of the southern Lebanese towns of Kfar Rumman and Arab Salim in southern Lebanon, Al Jazeera reported.&nbsp; A short while before, the Israeli army announced that \"interceptors were launched toward a suspicious aerial target\" that it alleged crossed from Lebanese territory into northern Israel.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "UN says Israeli attacks in southern Lebanon continue to affect civilians",
-          "url": "https://www.middleeastmonitor.com/20260901-un-says-israeli-attacks-in-southern-lebanon-continue-to-affect-civilians/",
-          "date": "2026-09-01T19:15:00.000Z",
-          "source": "middleeastmonitor.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanese Speaker Threatens Legal Action as Israel Continues to Attack South",
-          "url": "https://news.antiwar.com/2026/09/01/lebanese-speaker-threatens-legal-action-as-israel-continues-to-attack-south/",
-          "date": "2026-09-01T18:30:00.000Z",
-          "source": "news.antiwar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Watch: Israeli forces blow up houses and destroy property in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-israeli-forces-blow-houses-and-destroy-property-southern-lebanon",
-          "date": "2026-09-04T03:28:54.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Watch: Israeli forces blow up houses and destroy property in southern Lebanon Israeli forces blew up houses in the village of Houla, while troops moved through nearby Mais al-Jabal in southern Lebanon. &nbsp; The troops are operating inside a self-declared \"security zone\", which extends around 10 kilometres into Lebanese territory along the border. Israeli forces blew up houses in the village of H",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israel launches fresh attacks across southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-fresh-attacks-across-southern-lebanon",
-          "date": "2026-08-31T21:05:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel launches fresh attacks across southern Lebanon Israel carried out heavy bombing campaigns across several towns in southern Lebanon on Monday evening in its latest violation of prior ceasefire agreements, Lebanon’s National News Agency is reporting.&nbsp; What exactly is white phosphorus and why is it controversial? Read More » The agency, which is state-run, said that the attacks involved w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli attacks on southern Lebanon continue",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-southern-lebanon-continue",
-          "date": "2026-08-31T09:01:17.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli attacks on southern Lebanon continue Israeli artillery fire has targeted a number of areas in southern Lebanon, the country's National News Agency is reporting. According to the report, the attacks struck the town of Hula, as well as the villages of Mansouri and&nbsp;Buyout Al-Sayyad.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli army shells areas in south Lebanon's Tyre",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-shells-areas-south-lebanons-tyre",
-          "date": "2026-08-31T05:11:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli army shells areas in south Lebanon's Tyre Israeli artillery shelling targeted southern Lebanon's Mansouri and Bayt al-Sayyad, both located in Tyre, overnight and early on Monday, the National News Agency reported.&nbsp;",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli flare bombs ignite forest fires in southern Lebanon, local media reports",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-flare-bombs-ignite-forest-fires-southern-lebanon-local-media",
-          "date": "2026-08-30T12:40:49.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli flare bombs ignite forest fires in southern Lebanon, local media reports Israeli forces dropped flare bombs over the Aita al-Jabal forest in southern Lebanon’s Bint Jbeil district on Sunday, sparking fires, Lebanon’s National News Agency reported.&nbsp; The agency also said the Israeli army caused a “massive explosion” in the southern town of Houla in the Marjeyoun district.&nbsp; The deve",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
-        },
-        {
-          "title": "Southern Lebanon hit by new wave of Israeli attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-carry-out-new-wave-attacks-across-southern-lebanon",
-          "date": "2026-08-29T18:45:50.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Southern Lebanon hit by new wave of Israeli attacks Israeli forces struck multiple locations in southern Lebanon on Saturday evening, hitting a social care home, residential buildings and open areas, Lebanon's National News Agency (NNA) reported. A social care home for the elderly in the southern town of Hula was blown up by Israeli forces, NNA said. An Israeli drone fired a guided missile at an o",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli drone strike in southern Lebanon injures one person, state media says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-southern-lebanon-injures-one-person-state-media",
-          "date": "2026-08-29T01:19:21.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli drone strike in southern Lebanon injures one person, state media says Israeli drone strike injured one person in the Doha area of Kfar Remman, in southern Lebanon, according to Lebanon’s National News Agency. Israeli military operations across Lebanon since 2 March have killed 4,352 people and injured 12,318, the Emergency Operations Center of the Ministry of Public Health said in a statem",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli military attacks have killed 4,352 in Lebanon since 2 March",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-attacks-have-killed-4352-lebanon-2-march",
-          "date": "2026-08-28T23:11:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military attacks have killed 4,352 in Lebanon since 2 March Israeli military operations across Lebanon since 2 March have killed 4,352 people and injured 12,318, the&nbsp;Emergency Operations Center of the Ministry of Public Health said in a statement. The United Nations Interim Force in Lebanon (UNIFIL) has warned that “despite lower levels of violence than earlier this year, the situatio",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanon–Israel tensions escalate as Gaza sees major aid delivery",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168275",
-          "date": "2026-09-03T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Peacekeepers in Lebanon have reported a marked deterioration in the security situation along the Blue Line of separation, with Israeli forces intensifying their military footprint in violation of a landmark Security Council resolution, UN Spokesperson Stéphane Dujarric said on Thursday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 14
-        },
-        {
-          "title": "Lebanon receives first prisoner of five to be freed by Israel",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-receives-first-prisoner-five-be-freed-israel",
-          "date": "2026-09-03T16:26:48.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanon receives first prisoner of five to be freed by Israel Lebanon said it received a man freed from Israeli detention on Thursday, as Israel announced it would release five people detained from the country's south. The announcement came after Lebanon said its army received a man returned by the International Committee of the Red Cross (ICRC), the first since Beirut called in August talks for t",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3024",
-            "name": "Beirut",
-            "nameDe": "Beirut",
-            "type": "Province",
-            "anchor": [
-              35.508,
-              33.888
-            ],
-            "matched": "Beirut"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 11
-        },
-        {
-          "title": "Israel releases five Lebanese men detained in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-releases-five-lebanese-men-detained-southern-lebanon",
-          "date": "2026-09-03T13:34:59.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel releases five Lebanese men detained in southern Lebanon Israel has released five Lebanese men its forces detained in areas under military control in southern Lebanon, according to Prime Minister Benjamin Netanyahu’s office. The office said Israeli interrogators found that the men had no affiliation with any armed organisation and that authorities had no grounds to continue holding them.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iran warns US of retaliation if Israel storms southern Lebanon ridge",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-us-retaliation-if-israel-storms-southern-lebanon-ridge",
-          "date": "2026-09-03T09:53:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran warns US of retaliation if Israel storms southern Lebanon ridge Iran has warned Washington that it will launch a major retaliatory attack if Israel mounts a full-scale offensive on the Ali al-Taher ridge in southern Lebanon, three officials briefed on the message told Reuters. Tehran delivered the warning through Oman in mid-August, according to two regional officials. A third official said U",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 11
-        },
-        {
-          "title": "Israeli forces carry out detonations in south Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-carry-out-detonations-south-lebanon",
-          "date": "2026-09-03T05:11:16.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces carry out detonations in south Lebanon Israeli forces conducted detonations early on Thursday&nbsp;in the towns of Haddatha and Baraachit in southern Lebanon, according to the National News Agency. The state news agency added that Israeli drones were also reported flying over Tyre.&nbsp;",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 11
-        },
-        {
-          "title": "Qatari PM speaks to Lebanese, Turkish, Egyptian foreign ministers",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-speaks-lebanese-turkish-egyptian-foreign-ministers",
-          "date": "2026-09-02T20:07:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Qatari PM speaks to Lebanese, Turkish, Egyptian foreign ministers Qatari Prime Minister and Minister of Foreign Affairs&nbsp;Mohammed bin Abdulrahman Al Thani spoke to his counterparts in Lebanon, Turkey and Egypt on Wednesday to discuss the latest regional tensions following renewed US strikes on Iran. Qatar's Ministry of Foreign Affairs posted on social media that Al Thani held separate phone ca",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "UNIFIL peacekeepers patrol south Lebanon, caught between Israel and Hezbollah",
-          "url": "https://www.france24.com/en/tv-shows/focus/20260902-unifil-peacekeepers-patrol-south-lebanon-caught-between-israel-and-hezbollah",
-          "date": "2026-09-02T12:41:09.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Since this spring, about 6 percent of Lebanon has been occupied by the Israeli army. On the ground, around 600 French soldiers from the United Nations Interim Force in Lebanon (UNIFIL) continue to patrol the zone. The delicate peacekeeping mission documents violations of UN resolutions by both Israel and Hezbollah, with its own future highly uncertain. Our France 2 colleagues report, with FRANCE 2",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Footage shows Israeli destruction in south Lebanon's Bint Jbeil",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/footage-shows-israeli-destruction-south-lebanons-bint-jbeil",
-          "date": "2026-09-02T05:37:27.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Footage shows Israeli destruction in south Lebanon's Bint Jbeil A video circulating online shows massive and widespread destruction of the historic town of Bint Jbeil in southern Lebanon. Repeated Israeli air strikes and attacks have left entire neighbourhoods, homes, and local infrastructure heavily damaged or completely reduced to rubble. A video circulating online shows massive and widespread d",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "BBC travels inside occupied Lebanon as officials say Israel expanding positions",
-          "url": "https://www.bbc.co.uk/news/articles/cge41d19gq9o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-02T05:03:09.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "A BBC team joined a humanitarian mission of the UN peacekeeping force, which says Israeli troops are fortifying positions and continuing demolitions.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "A Hezbollah hideout stuffed with cash? Nope, this video was AI-generated",
-          "url": "https://www.france24.com/en/middle-east/20260901-hezbollah-hideout-stuffed-cash-ai-generated",
-          "date": "2026-09-01T10:01:45.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A number of pro-Israel social media accounts have shared a video they claim shows wads of cash and stacks of gold bars in a cache belonging to a deceased Hezbollah leader. There's only one issue: the footage was created using AI. The original video was shared by an Egyptian satirical site.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Parliament speaker Berri says Lebanon will not give up right to sue Israel over ‘genocide crimes’",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/parliament-speaker-berri-says-lebanon-will-not-give-right-sue-israel",
-          "date": "2026-09-01T05:02:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Parliament speaker Berri says Lebanon will not give up right to sue Israel over ‘genocide crimes’ Lebanon parliament speaker asserted that the country will not give up its right to pursue legal action against Israel over its \"genocide crimes\". Nabih Berri said on Monday that Lebanon’s confrontation with Israel requires \"a unified national approach free of sectarian calculations\".&nbsp; \"What Israe",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 8
-        },
-        {
-          "title": "EU considers military mission to replace UN peacekeepers in South Lebanon",
-          "url": "https://www.aljazeera.com/news/2026/9/1/can-europe-fill-vacuum-left-in-lebanon-as-un-peacekeeping-force-winds-up?traffic_source=rss",
-          "date": "2026-09-01T05:25:37.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Analysts say Israel could benefit when UNIFIL's mandate expires on December 31.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Lebanon asks Greece to help enforce agreement with Israel",
-          "url": "https://www.aljazeera.com/news/2026/8/31/lebanon-asks-greece-to-help-enforce-agreement-with-israel?traffic_source=rss",
-          "date": "2026-08-31T20:24:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "After Greece agrees to Israeli weapons deal, Joseph Aoun asks Athens to help advance US-brokered framework agreement.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "School starts soon in Lebanon , but thousands still shelter in them during war",
-          "url": "https://www.mynbc5.com/article/school-starts-lebanon-war/73567532",
-          "date": "2026-08-31T12:00:00.000Z",
-          "source": "mynbc5.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Israeli forces target Lebanon's Doha Kfar Rumman with artillery fire",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-target-lebanons-doha-kfar-rumman-artillery-fire",
-          "date": "2026-08-30T05:53:36.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces target Lebanon's Doha Kfar Rumman with artillery fire Israeli artillery fire hit southern Lebanon’s Doha Kfar Rumman Sunday morning, Lebanon’s National News Agency reported. On Saturday evening, Israeli forces struck multiple locations in southern Lebanon, hitting a social care home, residential buildings and open areas. A social care home for the elderly in the southern town of Hul",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 8
-        },
-        {
-          "title": "Israeli forces carry out two explosions in southern Lebanon, set fire to homes",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-carry-out-two-explosions-southern-lebanon-set-fire-homes",
-          "date": "2026-08-29T06:29:26.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces carry out two explosions in southern Lebanon, set fire to homes Israeli military carried out two explosions Saturday morning on the outskirts of the town of Aita al-Jabal in southern Lebanon, Lebanon's National News Agency reported. NNA said Israeli forces set fire to several homes in the town of Beit Yahoun in southern Lebanon, while a&nbsp;drone strike targeted the outskirts of Na",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 8
-        },
-        {
-          "title": "Hezbollah chief again rejects Lebanon-Israel deal, refuses 'surrender'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-chief-again-rejects-lebanon-israel-deal-refuses-surrender",
-          "date": "2026-08-28T22:26:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hezbollah chief again rejects Lebanon-Israel deal, refuses 'surrender' Hezbollah chief Naim Qassem on&nbsp;Friday again rejected a deal struck between Israel and Lebanon and said his&nbsp;group refused to \"surrender\" nearly six months after Israel launched its war on the country. \"We are against the framework agreement and call for its downfall,\" Qassem said in a televised address broadcast on the",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Lebanese child succumbs to his wounds after Israeli cluster bomb blast",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-child-succumbs-his-wounds-after-israeli-cluster-bomb-blast",
-          "date": "2026-09-01T00:18:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese child succumbs to his wounds after Israeli cluster bomb blast A Lebanese child was killed on Monday when a cluster bomb left behind by Israeli attacks in southern Lebanon exploded, Lebanon’s official National News Agency reported. Mohammad Ali Ibrahim succumbed to his wounds in the al-Arid neighbourhood of Haboush. Another boy was also injured in the blast, but no further details were pro",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 6
-        }
-      ],
-      "itemCount": 38
-    },
-    {
       "id": "drc-m23",
       "name": "DR Kongo / Ostkongo",
       "nameEn": "DR Congo – M23",
@@ -17383,15 +17409,21 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 58,
-      "severity": 56,
-      "newCount": 0,
+      "activity": 63,
+      "severity": 57,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
           "count": 8
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
         },
         {
           "key": "escalation",
@@ -17408,12 +17440,6 @@
         {
           "key": "sanctions",
           "label": "Sanktionen",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
           "dir": "up",
           "count": 1
         }
@@ -17484,6 +17510,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Yemen: Fighting intensifies amid Houthi push in the west",
+          "url": "https://www.dw.com/en/yemen-fighting-intensifies-amid-houthi-push-in-the-west/a-79039588?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-04T19:15:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Houthi forces are trying to secure high ground and solidify their control of the entry to the Red Sea in the southwest. The Iran-backed militia abandoned a shaky truce with the Saudi-backed government-in-exile in July.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 30
+        },
         {
           "title": "Yemen’s army says recaptured key territory as clashes with Houthis continue",
           "url": "https://www.aljazeera.com/news/2026/9/4/yemens-army-says-recaptured-key-territory-as-clashes-with-houthis-continue?traffic_source=rss",
@@ -18080,7 +18127,66 @@
           "score": 8
         }
       ],
-      "itemCount": 25
+      "itemCount": 26
+    },
+    {
+      "id": "burkina-faso",
+      "name": "Burkina Faso",
+      "nameEn": "Burkina Faso",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Burkina Faso"
+      ],
+      "lat": 12.6,
+      "lon": -1.7,
+      "tier": "war",
+      "since": "2015",
+      "parties": [
+        "Militärregierung (Traoré)",
+        "JNIM",
+        "IS-Sahel",
+        "VDP-Milizen"
+      ],
+      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
+      "hotspots": [
+        "Djibo",
+        "Sahel-Region",
+        "Est",
+        "Ouagadougou"
+      ],
+      "activity": 2,
+      "severity": 55,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "BFA",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Mali: Can Mali's Fla-Jnim Insurgent Alliance Survive Its Internal Divisions?",
+          "url": "https://allafrica.com/stories/202609020329.html",
+          "date": "2026-09-02T10:43:21.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[ISS] The two armed groups are currently united in their opposition to the government, but fundamental differences could break their bond.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        }
+      ],
+      "itemCount": 1
     },
     {
       "id": "india-pakistan",
@@ -18106,8 +18212,8 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 57,
-      "severity": 56,
+      "activity": 54,
+      "severity": 55,
       "newCount": 0,
       "signals": [
         {
@@ -18223,6 +18329,27 @@
           "score": 21
         },
         {
+          "title": "Under Pressure Over Gaza, Israel’s Defence Industry Expands in the Balkans",
+          "url": "https://balkaninsight.com/2026/09/04/under-pressure-over-gaza-israels-defence-industry-expands-in-the-balkans/bi/",
+          "date": "2026-09-04T06:19:45.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Countries across the Balkan region have increasingly been doing arms deals with Israel and purchasing its military technology – while strengthening political ties too.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "Two Muslim women journalists allege police assault in India",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/two-muslim-women-journalists-allege-police-assault-in-india?traffic_source=rss",
           "date": "2026-09-04T13:37:43.000Z",
@@ -18251,28 +18378,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
-        },
-        {
-          "title": "Under Pressure Over Gaza, Israel’s Defence Industry Expands in the Balkans",
-          "url": "https://balkaninsight.com/2026/09/04/under-pressure-over-gaza-israels-defence-industry-expands-in-the-balkans/bi/",
-          "date": "2026-09-04T06:19:45.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Countries across the Balkan region have increasingly been doing arms deals with Israel and purchasing its military technology – while strengthening political ties too.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Why Pakistan overhauled its military command structure after five decades",
@@ -18338,27 +18444,6 @@
           "score": 15
         },
         {
-          "title": "Estonian defence minister resigns after €70m Ukraine munitions scam by Indian company: report",
-          "url": "https://www.dawn.com/news/2027239/estonian-defence-minister-resigns-after-eur70m-ukraine-munitions-scam-by-indian-company-report",
-          "date": "2026-09-03T20:01:48.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Estonian Defence Minister Hanno Pevkur has resigned following a scandal in which he authorised the payment of €70 million to an Indian company for artillery shells, only to receive ammunition of defective quality, it emerged on Thursday. Britain’s The Telegraph reported on Monday that Datasel SRL was contracted to produce the shells for use by the Ukrainian military against Russia, and that Datase",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 15
-        },
-        {
           "title": "Pakistan suspends eight officials over hospital fire that killed 14 babies",
           "url": "https://www.aljazeera.com/news/2026/8/29/pakistan-suspends-eight-officials-over-hospital-fire-that-killed-14-babies?traffic_source=rss",
           "date": "2026-08-29T18:26:29.000Z",
@@ -18409,6 +18494,27 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "Estonian defence minister resigns after €70m Ukraine munitions scam by Indian company: report",
+          "url": "https://www.dawn.com/news/2027239/estonian-defence-minister-resigns-after-eur70m-ukraine-munitions-scam-by-indian-company-report",
+          "date": "2026-09-03T20:01:48.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Estonian Defence Minister Hanno Pevkur has resigned following a scandal in which he authorised the payment of €70 million to an Indian company for artillery shells, only to receive ammunition of defective quality, it emerged on Thursday. Britain’s The Telegraph reported on Monday that Datasel SRL was contracted to produce the shells for use by the Ukrainian military against Russia, and that Datase",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 11
         },
         {
           "title": "Security forces kill 15 terrorists trying to cross into Pakistan through Afghan border: ISPR",
@@ -18852,65 +18958,6 @@
       "itemCount": 27
     },
     {
-      "id": "burkina-faso",
-      "name": "Burkina Faso",
-      "nameEn": "Burkina Faso",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Burkina Faso"
-      ],
-      "lat": 12.6,
-      "lon": -1.7,
-      "tier": "war",
-      "since": "2015",
-      "parties": [
-        "Militärregierung (Traoré)",
-        "JNIM",
-        "IS-Sahel",
-        "VDP-Milizen"
-      ],
-      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
-      "hotspots": [
-        "Djibo",
-        "Sahel-Region",
-        "Est",
-        "Ouagadougou"
-      ],
-      "activity": 2,
-      "severity": 55,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "BFA",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Mali: Can Mali's Fla-Jnim Insurgent Alliance Survive Its Internal Divisions?",
-          "url": "https://allafrica.com/stories/202609020329.html",
-          "date": "2026-09-02T10:43:21.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[ISS] The two armed groups are currently united in their opposition to the government, but fundamental differences could break their bond.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        }
-      ],
-      "itemCount": 1
-    },
-    {
       "id": "syria",
       "name": "Syrien",
       "nameEn": "Syria",
@@ -18937,9 +18984,9 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 48,
-      "severity": 53,
-      "newCount": 1,
+      "activity": 46,
+      "severity": 52,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -19220,7 +19267,7 @@
           "source": "sana.sy",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -19232,7 +19279,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
+          "score": 18
         },
         {
           "title": "Security Council LIVE: Addressing the legacy of Syria’s chemical weapons",
@@ -19556,7 +19603,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "IAEA reports progress in Syria investigation, none in Iran",
@@ -19940,7 +19987,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Annexing Taiwan ? China revises defence law to seize assets",
@@ -20222,27 +20269,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israel kills 3 in Gaza as far-right minister plans for Palestinian removals",
-          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
-          "date": "2026-09-03T20:31:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli drone strike and gunfire kills and injures people across the Gaza Strip despite 'ceasefire'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "score": 15
         },
@@ -20642,6 +20668,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 12
+        },
+        {
+          "title": "Israel kills 3 in Gaza as far-right minister plans for Palestinian removals",
+          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+          "date": "2026-09-03T20:31:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli drone strike and gunfire kills and injures people across the Gaza Strip despite 'ceasefire'.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 11
         },
         {
           "title": "Kurdish women who fought ISIL seek place in Syria’s new security forces",
@@ -22091,27 +22138,6 @@
           "score": 25
         },
         {
-          "title": "Colombia president provokes disgust by posing with bodies of ‘terrorists’",
-          "url": "https://www.theguardian.com/world/2026/sep/04/colombia-president-posts-video-guerrillas-body-bags-abelardo-de-la-espriella",
-          "date": "2026-09-04T13:50:43.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Abelardo De La Espriella posts video of himself with rows of body bags as performative populism continues to sweep Americas Colombia’s hardline president, Abelardo De La Espriella, has provoked outrage after posting a video on social media in which he strides through rows of white body bags that he says contained the corpses of 23 “neutralised” guerrillas. De La Espriella took power last month vow",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "1 killed , 11 injured in car bomb attack in northeastern Colombia",
           "url": "http://www.venezuelastar.com/news/279279794/1-killed-11-injured-in-car-bomb-attack-in-northeastern-colombia",
           "date": "2026-09-02T01:45:00.000Z",
@@ -22152,6 +22178,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Colombia president provokes disgust by posing with bodies of ‘terrorists’",
+          "url": "https://www.theguardian.com/world/2026/sep/04/colombia-president-posts-video-guerrillas-body-bags-abelardo-de-la-espriella",
+          "date": "2026-09-04T13:50:43.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Abelardo De La Espriella posts video of himself with rows of body bags as performative populism continues to sweep Americas Colombia’s hardline president, Abelardo De La Espriella, has provoked outrage after posting a video on social media in which he strides through rows of white body bags that he says contained the corpses of 23 “neutralised” guerrillas. De La Espriella took power last month vow",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Colombia Cannot Bomb Child Recruitment Out of the Jungle Alone",
@@ -22959,7 +23006,7 @@
       ],
       "activity": 16,
       "severity": 43,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -23033,7 +23080,7 @@
           "source": "merimbulanewsweekly.com.au",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -23045,7 +23092,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Why Mexican cartels are increasingly using car bombs , other explosives",
@@ -23054,7 +23101,7 @@
           "source": "pressdemocrat.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "explosion",
@@ -23066,7 +23113,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Family pays tribute to New Mexico man killed by bear: ‘He was a strong person’",
@@ -23426,7 +23473,7 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 62,
+      "activity": 61,
       "severity": 41,
       "newCount": 0,
       "signals": [
@@ -23716,27 +23763,6 @@
           "score": 18
         },
         {
-          "title": "Iranian media reports US missile attack near Ahvaz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-media-reports-us-missile-attack-near-ahvaz",
-          "date": "2026-09-01T19:54:47.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian media reports US missile attack near Ahvaz Iran's Fars news agency has reported a US missile strike near the city of Ahvaz, the capital of the&nbsp;Khuzestan province in southern Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "South Korea pushes back on reports it is readying Hormuz deployment amid US pressure",
           "url": "https://www.theguardian.com/world/2026/sep/04/south-korea-pushes-back-reports-hormuz-deployment-us-pressure",
           "date": "2026-09-04T07:47:41.000Z",
@@ -23756,6 +23782,27 @@
             "label": "Bericht"
           },
           "score": 17
+        },
+        {
+          "title": "Iranian media reports US missile attack near Ahvaz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-media-reports-us-missile-attack-near-ahvaz",
+          "date": "2026-09-01T19:54:47.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian media reports US missile attack near Ahvaz Iran's Fars news agency has reported a US missile strike near the city of Ahvaz, the capital of the&nbsp;Khuzestan province in southern Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 15
         },
         {
           "title": "South Korea weighs options to support Hormuz Strait navigation, including military measures",
@@ -29525,7 +29572,7 @@
         "Rafah-Grenzübergang",
         "El-Arish"
       ],
-      "activity": 21,
+      "activity": 20,
       "severity": 17,
       "newCount": 0,
       "signals": [
@@ -29533,7 +29580,7 @@
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 4
+          "count": 3
         },
         {
           "key": "casualties",
@@ -29585,12 +29632,12 @@
             31.607,
             29.998
           ],
-          "count": 2,
+          "count": 1,
           "newCount": 0,
           "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         }
       ],
@@ -29855,40 +29902,9 @@
             "label": "Sanktionen/Recht"
           },
           "score": 8
-        },
-        {
-          "title": "US cuts off major Egyptian bank from global financial system",
-          "url": "https://www.middleeasteye.net/news/us-cuts-major-egyptian-bank-global-financial-system",
-          "date": "2026-08-28T20:25:29.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US cuts off major Egyptian bank from global financial system Submitted by MEE staff on Fri, 08/28/2026 - 18:55 Sanctions on Banque Misr's branches in the UAE are part of Trump administration's 'Operation Economic Outcast' against Iran The high-rise commercial building, left, serves as the modern headquarters of Banque Misr, in Cairo, Egypt photographed on 9 February 2023 (Amir Makar/AFP) Off The U",
-          "isNew": false,
-          "region": {
-            "id": "EGY-1533",
-            "name": "Cairo",
-            "nameDe": "al-Qahira",
-            "type": "Governorate",
-            "anchor": [
-              31.607,
-              29.998
-            ],
-            "matched": "Cairo"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 12
+      "itemCount": 11
     },
     {
       "id": "bosnia",
