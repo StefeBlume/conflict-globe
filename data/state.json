@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-06T18:34:42.140Z",
-  "durationSec": 358,
+  "generatedAt": "2026-09-06T19:31:11.453Z",
+  "durationSec": 367,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 30,
+        "count": 31,
         "error": null
       },
       {
@@ -114,28 +114,32 @@
       }
     ],
     "gdelt": {
-      "ok": 5,
-      "failed": 5,
+      "ok": 4,
+      "failed": 6,
       "skipped": 6,
       "errors": [
+        {
+          "id": "yemen",
+          "error": "HTTP 429"
+        },
         {
           "id": "myanmar",
           "error": "HTTP 429"
         },
         {
           "id": "mexico-cartels",
-          "error": "fetch failed"
-        },
-        {
-          "id": "ecuador",
-          "error": "fetch failed"
-        },
-        {
-          "id": "sahel-mali",
           "error": "HTTP 429"
         },
         {
-          "id": "haiti",
+          "id": "west-papua",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "sinai-egypt",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "colombia",
           "error": "HTTP 429"
         }
       ]
@@ -144,8 +148,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1153,
-    "newArticles": 10
+    "articles": 1152,
+    "newArticles": 4
   },
   "conflicts": [
     {
@@ -177,13 +181,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 13
+          "count": 15
         },
         {
           "key": "escalation",
@@ -234,7 +238,7 @@
             37.665,
             55.668
           ],
-          "count": 26,
+          "count": 24,
           "newCount": 0,
           "event": {
             "type": "drone",
@@ -251,8 +255,8 @@
             30.448,
             50.29
           ],
-          "count": 10,
-          "newCount": 0,
+          "count": 12,
+          "newCount": 1,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -293,6 +297,27 @@
           "score": 32
         },
         {
+          "title": "Witkoff says peace talks have been ‘very meaningful’ in Ukraine",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/witkoff-says-peace-talks-have-been-very-meaningful-in-ukraine?traffic_source=rss",
+          "date": "2026-09-06T18:28:27.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Witkoff says peace talks have been ‘very meaningful’ in Ukraine",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 26
+        },
+        {
           "title": "US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
           "url": "https://www.aljazeera.com/news/2026/9/6/putin-meets-us-envoys-whats-behind-latest-diplomacy-on-russia-ukraine-war?traffic_source=rss",
           "date": "2026-09-06T15:00:16.000Z",
@@ -324,6 +349,37 @@
           "score": 26
         },
         {
+          "title": "US envoys Kushner and Witkoff visit Kyiv for first time after Putin talks",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+          "date": "2026-09-06T18:47:59.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Witkoff says he hopes trilateral talks involving the US, Ukraine and Europe will be announced ‘in short order’ The US negotiators Jared Kushner and Steve Witkoff travelled to Ukraine for the first time on Sunday for talks with Volodymyr Zelenskyy in an attempt to end the war with Russia. The Ukrainian president announced plans to widen peace discussions to include European countries in the near fu",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 26
+        },
+        {
           "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
           "url": "https://www.bbc.co.uk/news/articles/c5yep7y48x2o?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-04T16:02:32.000Z",
@@ -341,37 +397,6 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
-          },
-          "score": 25
-        },
-        {
-          "title": "US envoys Kushner and Witkoff arrive in Kyiv after talks with Putin",
-          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
-          "date": "2026-09-06T13:05:46.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Arrival marks first visit to Ukraine and comes day after ‘substantive plans’ on ending war discussed in Moscow The US negotiators Jared Kushner and Steve Witkoff have arrived in Kyiv for a second day of talks on how to end the war in Ukraine. Ukraine’s president, Volodymyr Zelenskyy, met the pair in Sophia Square, in front of Kyiv’s historic Saint Sophia Cathedral. Zelenskyy greeted Witkoff with a",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
           },
           "score": 25
         },
@@ -520,6 +545,37 @@
             "label": "Drohnenangriff"
           },
           "score": 22
+        },
+        {
+          "title": "Zelensky says he expects war to continue into winter after talks with US envoys",
+          "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-06T18:33:50.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Talks finished without an announcement of a major breakthrough, after Steve Witkoff and Jared Kushner travelled to Kyiv.",
+          "isNew": true,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 20
         },
         {
           "title": "World News in Brief: US-Iran war intensifies, aid for Myanmar, casualties in Ukraine",
@@ -1059,37 +1115,6 @@
               55.668
             ],
             "matched": "Moscow"
-          },
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Putin meets US envoys for Ukraine war talks",
-          "url": "https://www.dawn.com/news/2027693/putin-meets-us-envoys-for-ukraine-war-talks",
-          "date": "2026-09-05T18:52:12.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Russian President Vladimir Putin began talks with US envoys Jared Kushner and Steve Witkoff on ending more than four years of war in Ukraine in the Kremlin Saturday, ahead of their first visit to Kyiv expected on Sunday. Both Russia and Ukraine vowed not to strike each other’s capitals for three days during the negotiations, as Washington tries to revive US-led talks to end Europe’s worst conflict",
-          "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
           },
           "event": {
             "type": "talks",
@@ -2105,6 +2130,37 @@
           "score": 11
         },
         {
+          "title": "Putin meets US envoys for Ukraine war talks",
+          "url": "https://www.dawn.com/news/2027693/putin-meets-us-envoys-for-ukraine-war-talks",
+          "date": "2026-09-05T18:52:12.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Russian President Vladimir Putin began talks with US envoys Jared Kushner and Steve Witkoff on ending more than four years of war in Ukraine in the Kremlin Saturday, ahead of their first visit to Kyiv expected on Sunday. Both Russia and Ukraine vowed not to strike each other’s capitals for three days during the negotiations, as Washington tries to revive US-led talks to end Europe’s worst conflict",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
           "title": "Russia’s Putin and US envoys discuss Trump proposal to end Ukraine war",
           "url": "https://www.aljazeera.com/news/2026/9/5/russias-putin-meets-us-envoys-to-discuss-trump-proposal-to-end-ukraine-war?traffic_source=rss",
           "date": "2026-09-05T18:12:52.000Z",
@@ -2235,58 +2291,6 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Security experts fear Putin may be winning hybrid war with the west amid rise of pro-Kremlin, far-right parties Defence planners working with Nato fear that if war broke out with Russia, Europe could not currently sustain a prolonged war of attrition owing to a public lack of war readiness, a conference on the future of European military coordination heard this week. The pessimism reflects concern",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Trump sends envoys to Moscow, Kyiv with new plan to 'end war'",
-          "url": "https://www.france24.com/en/video/20260905-trump-sends-envoys-to-moscow-kyiv-with-new-plan-to-end-war",
-          "date": "2026-09-05T09:15:34.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "US President Donald Trump said Friday he is sending envoys Steve Witkoff and Jared Kushner to Moscow and Kyiv with a plan to end more than four years of war in Ukraine.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "The New York Times fabricates a  Russian sabotage  narrative - World Socialist Web Site",
-          "url": "https://www.wsws.org/en/articles/2026/09/05/jtzc-s05.html",
-          "date": "2026-09-05T08:00:00.000Z",
-          "source": "wsws.org",
-          "sourceType": "news",
-          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
@@ -2447,7 +2451,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "West Bank farmers defy daily settler attacks, sheep theft, and military restrictions to protect their land.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2588,27 +2592,6 @@
           "score": 23
         },
         {
-          "title": "Israeli strikes kill four and destroy hospital in south Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-four-and-destroy-hospital-south-lebanon",
-          "date": "2026-09-06T08:22:26.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strikes kill four and destroy hospital in south Lebanon Israeli strikes killed four people and destroyed a hospital in south Lebanon amid relentless bombing of the Nabatieh&nbsp;region, Lebanese media reported. The ministry reported that two people were killed in Nabatieh al-Fawqa and two women were killed in nearby Arab Salim. Twenty people were also wounded in several locations, includin",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 23
-        },
-        {
           "title": "‘Guilt by association’: why seven international aid workers were killed in Israeli airstrike",
           "url": "https://www.theguardian.com/world/2026/sep/05/aid-workers-gaza-killed-in-israel-airstrike-investigation",
           "date": "2026-09-05T11:08:31.000Z",
@@ -2621,6 +2604,27 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli strikes kill four and destroy hospital in south Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-four-and-destroy-hospital-south-lebanon",
+          "date": "2026-09-06T08:22:26.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strikes kill four and destroy hospital in south Lebanon Israeli strikes killed four people and destroyed a hospital in south Lebanon amid relentless bombing of the Nabatieh&nbsp;region, Lebanese media reported. The ministry reported that two people were killed in Nabatieh al-Fawqa and two women were killed in nearby Arab Salim. Twenty people were also wounded in several locations, includin",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "airstrike",
@@ -2861,46 +2865,25 @@
           "score": 22
         },
         {
-          "title": "Lebanon president calls on US to stop Israel's 'dangerous escalation'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-president-calls-us-stop-israels-dangerous-escalation",
-          "date": "2026-09-06T12:52:48.000Z",
-          "source": "Middle East Eye",
+          "title": "Adidas faces boycott calls over campaign featuring former Israeli soldier",
+          "url": "https://www.aljazeera.com/sports/2026/9/6/adidas-faces-boycott-calls-over-campaign-featuring-former-israeli-soldier?traffic_source=rss",
+          "date": "2026-09-06T18:56:25.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Lebanon president calls on US to stop Israel's 'dangerous escalation' Lebanese President Joseph Aoun urged the US and the international community to help stop Israeli attacks after strikes on Sunday killed at least four people. The strikes, which also damaged government premises and destroyed an out-of-service hospital, were \"a dangerous escalation... reaching Lebanese state institutions\" and heal",
-          "isNew": false,
+          "summary": "Activists slam campaign showing soldier while over 5,000 Palestinians faced amputations due to Israeli attacks in Gaza.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
-          "score": 19
-        },
-        {
-          "title": "The Falklands dispute: What’s it got to do with Israel and the US?",
-          "url": "https://www.middleeasteye.net/explainers/falklands-dispute-uk-argentina-us-israel",
-          "date": "2026-09-06T12:51:17.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "The Falklands dispute: What’s it got to do with Israel and the US? Submitted by Daniel Tester on Fri, 09/04/2026 - 15:00 Argentina claims sovereignty over the British territory - and the dispute is extending beyond the South Atlantic Argentinian war veterans commemorate the Falklands War, including with an Argentine flag that reads 'We'll be back', Ushuaia, southern Argentina, 2 April 2007 (AFP) O",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
+          "score": 21
         },
         {
           "title": "Rescuers recover 11 Palestinian bodies from rubble as Israeli attacks kill five in Gaza",
@@ -3457,6 +3440,48 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Lebanon president calls on US to stop Israel's 'dangerous escalation'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-president-calls-us-stop-israels-dangerous-escalation",
+          "date": "2026-09-06T12:52:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanon president calls on US to stop Israel's 'dangerous escalation' Lebanese President Joseph Aoun urged the US and the international community to help stop Israeli attacks after strikes on Sunday killed at least four people. The strikes, which also damaged government premises and destroyed an out-of-service hospital, were \"a dangerous escalation... reaching Lebanese state institutions\" and heal",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
+          "title": "The Falklands dispute: What’s it got to do with Israel and the US?",
+          "url": "https://www.middleeasteye.net/explainers/falklands-dispute-uk-argentina-us-israel",
+          "date": "2026-09-06T12:51:17.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "The Falklands dispute: What’s it got to do with Israel and the US? Submitted by Daniel Tester on Fri, 09/04/2026 - 15:00 Argentina claims sovereignty over the British territory - and the dispute is extending beyond the South Atlantic Argentinian war veterans commemorate the Falklands War, including with an Argentine flag that reads 'We'll be back', Ushuaia, southern Argentina, 2 April 2007 (AFP) O",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Under Pressure Over Gaza, Israel’s Defence Industry Expands in the Balkans",
@@ -4066,27 +4091,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "Lebanon–Israel tensions escalate as Gaza sees major aid delivery",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168275",
-          "date": "2026-09-03T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Peacekeepers in Lebanon have reported a marked deterioration in the security situation along the Blue Line of separation, with Israeli forces intensifying their military footprint in violation of a landmark Security Council resolution, UN Spokesperson Stéphane Dujarric said on Thursday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 14
         }
       ],
       "itemCount": 80
@@ -4115,9 +4119,9 @@
         "Khartum",
         "Kordofan"
       ],
-      "activity": 60,
-      "severity": 73,
-      "newCount": 1,
+      "activity": 58,
+      "severity": 72,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -4227,7 +4231,7 @@
             18.34
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -4585,7 +4589,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[Ayin Network] Gold has been the primary currency used to finance the ongoing devastating war in Sudan, and nearly all gold is sold via the United Arab Emirates, a country the army has accused of funding their enemy, the Rapid Support Forces (RSF). The Alliance Mining and Kush for Exploration and Production Company, based in the Sudanese army-controlled area bordering the Red Sea and River Nile st",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SDN-877",
             "name": "River Nile",
@@ -4777,27 +4781,6 @@
           "score": 11
         },
         {
-          "title": "Foreign fighters and external support fuel Sudan’s war: UN-backed probe",
-          "url": "https://www.aljazeera.com/news/2026/9/3/foreign-fighters-and-external-support-fuel-sudans-war-un-backed-probe?traffic_source=rss",
-          "date": "2026-09-03T18:45:37.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Investigation says support for warring parties strengthens military capabilities, intensifies humanitarian crisis.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
           "title": "Sudan war fuelled by foreign networks , details UN report",
           "url": "https://morningstaronline.co.uk/article/united-nations-un-report-foreign-networks-war-sudan",
           "date": "2026-09-04T21:30:00.000Z",
@@ -4817,6 +4800,27 @@
             "label": "Bericht"
           },
           "score": 11
+        },
+        {
+          "title": "Foreign fighters and external support fuel Sudan’s war: UN-backed probe",
+          "url": "https://www.aljazeera.com/news/2026/9/3/foreign-fighters-and-external-support-fuel-sudans-war-un-backed-probe?traffic_source=rss",
+          "date": "2026-09-03T18:45:37.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Investigation says support for warring parties strengthens military capabilities, intensifies humanitarian crisis.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
         },
         {
           "title": "US diplomat Boulos won't name 'at least 12 countries' involved in Sudan war",
@@ -5262,7 +5266,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Israeli strike kills two people in Arab Salim town of Lebanon",
@@ -5409,27 +5413,6 @@
             "label": "Gefechte"
           },
           "score": 22
-        },
-        {
-          "title": "Lebanon president calls on US to stop Israel's 'dangerous escalation'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-president-calls-us-stop-israels-dangerous-escalation",
-          "date": "2026-09-06T12:52:48.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanon president calls on US to stop Israel's 'dangerous escalation' Lebanese President Joseph Aoun urged the US and the international community to help stop Israeli attacks after strikes on Sunday killed at least four people. The strikes, which also damaged government premises and destroyed an out-of-service hospital, were \"a dangerous escalation... reaching Lebanese state institutions\" and heal",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 20
         },
         {
           "title": "Israel carries out raids near Sour in southern Lebanon",
@@ -5773,6 +5756,27 @@
             "label": "Bodenoffensive"
           },
           "score": 18
+        },
+        {
+          "title": "Lebanon president calls on US to stop Israel's 'dangerous escalation'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-president-calls-us-stop-israels-dangerous-escalation",
+          "date": "2026-09-06T12:52:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanon president calls on US to stop Israel's 'dangerous escalation' Lebanese President Joseph Aoun urged the US and the international community to help stop Israeli attacks after strikes on Sunday killed at least four people. The strikes, which also damaged government premises and destroyed an out-of-service hospital, were \"a dangerous escalation... reaching Lebanese state institutions\" and heal",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 17
         },
         {
           "title": "Israeli bombing seen behind journalist reporting from Lebanese village",
@@ -6419,7 +6423,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 3,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -6434,16 +6438,16 @@
           "count": 13
         },
         {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 5
+        },
+        {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
           "count": 5
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 4
         },
         {
           "key": "displacement",
@@ -6468,7 +6472,7 @@
             51.831,
             35.568
           ],
-          "count": 9,
+          "count": 10,
           "newCount": 1,
           "event": {
             "type": "naval",
@@ -6553,6 +6557,37 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The comments came a day after Washington said it had struck Iranian oil tankers in response to Tehran's attacks on US warships in the region.",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 28
+        },
+        {
+          "title": "Iran warns of 'more painful response' if US launches further attacks",
+          "url": "https://www.dawn.com/news/2027938/iran-warns-of-more-painful-response-if-us-launches-further-attacks",
+          "date": "2026-09-06T18:32:04.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Iran’s top negotiator on Sunday threatened a more forceful response to any further US attacks after Tehran targeted American warships in their latest round of clashes. The exchanges of fire, which began with US raids last week, come amid a deadlock in the six-month war between the two foes. Iran has maintained its stranglehold on the strategic Strait of Hormuz while Washington continues a counter-",
           "isNew": true,
           "region": {
             "id": "IRN-3216",
@@ -6626,7 +6661,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "US Energy Secretary Chris Wright's comments could signal that US hopes for a nuclear deal are dimming.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6647,7 +6682,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Chris Wright tells ABC there ‘may not’ be an agreement that would prevent Iran from having nuclear weapons US energy secretary Chris Wright said on Sunday morning that the US may not be able to reach a nuclear agreement with Iran that would prevent the country from having nuclear weapons. Asked on ABC on Sunday morning about any sign of such a deal, as negotiations appear stalled and the US-Israel",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6808,132 +6843,6 @@
           "score": 22
         },
         {
-          "title": "Pentagon says 3 Iranian tankers hit after attacks on US warships",
-          "url": "https://www.wptv.com/us-news/iran-war/pentagon-says-3-iranian-tankers-hit-after-attacks-on-us-warships",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "wptv.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "US strikes 3 Iranian oil tankers after saying warships were targeted with ballistic missiles",
-          "url": "https://www.mankatofreepress.com/news/business/us-strikes-3-iranian-oil-tankers-after-saying-warships-were-targeted-with-ballistic-missiles/article_c4883f51-0001-5e28-8fcb-ab4517cbb38d.html",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "mankatofreepress.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Iran live updates : US strikes 3 Iranian oil tankers in retaliation for targeting warships",
-          "url": "https://abcnews.com/International/live-updates/iran-live-updates-centcom-targeted-iranian-forces-posed/?id=136080582&entryId=136211932",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "abcnews.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "US military hits 3 Iranian oil tankers after saying Navy ships were targeted with missiles",
-          "url": "https://www.wfmj.com/news/consumer/us-military-hits-3-iranian-oil-tankers-after-saying-navy-ships-were-targeted-with-missiles/article_288d7e4d-8650-5314-89ba-cc501f4d54fd.html",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "wfmj.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "IRGC says smashed US - Israeli - linked  terror  team in SE Iran , killed two members",
-          "url": "https://www.prokerala.com/news/articles/a1808982.html",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "prokerala.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "U . S . strikes 3 Iranian oil tankers after Iran fires at Navy ships",
-          "url": "https://www.upi.com/Top_News/US/2026/09/05/military-hits-iran-ships/8531788629308/",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "upi.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Iran touts military response as US maintains blockade, hits tankers",
           "url": "https://www.aljazeera.com/news/2026/9/6/iran-touts-military-response-as-us-maintains-blockade-hits-tankers?traffic_source=rss",
           "date": "2026-09-06T16:17:06.000Z",
@@ -7034,6 +6943,132 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Pentagon says 3 Iranian tankers hit after attacks on US warships",
+          "url": "https://www.wptv.com/us-news/iran-war/pentagon-says-3-iranian-tankers-hit-after-attacks-on-us-warships",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "wptv.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "US strikes 3 Iranian oil tankers after saying warships were targeted with ballistic missiles",
+          "url": "https://www.mankatofreepress.com/news/business/us-strikes-3-iranian-oil-tankers-after-saying-warships-were-targeted-with-ballistic-missiles/article_c4883f51-0001-5e28-8fcb-ab4517cbb38d.html",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "mankatofreepress.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Iran live updates : US strikes 3 Iranian oil tankers in retaliation for targeting warships",
+          "url": "https://abcnews.com/International/live-updates/iran-live-updates-centcom-targeted-iranian-forces-posed/?id=136080582&entryId=136211932",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "abcnews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "US military hits 3 Iranian oil tankers after saying Navy ships were targeted with missiles",
+          "url": "https://www.wfmj.com/news/consumer/us-military-hits-3-iranian-oil-tankers-after-saying-navy-ships-were-targeted-with-missiles/article_288d7e4d-8650-5314-89ba-cc501f4d54fd.html",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "wfmj.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "IRGC says smashed US - Israeli - linked  terror  team in SE Iran , killed two members",
+          "url": "https://www.prokerala.com/news/articles/a1808982.html",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "prokerala.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "U . S . strikes 3 Iranian oil tankers after Iran fires at Navy ships",
+          "url": "https://www.upi.com/Top_News/US/2026/09/05/military-hits-iran-ships/8531788629308/",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "upi.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 18
         },
@@ -7558,7 +7593,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Morning recap",
@@ -7933,27 +7968,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "US military hits 3 Iranian oil tankers after saying Navy warships were targeted",
-          "url": "https://www.ksfr.org/npr-news/2026-09-05/us-military-hits-3-iranian-oil-tankers-after-saying-navy-warships-were-targeted",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "ksfr.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
           },
           "score": 15
         },
@@ -8416,7 +8430,7 @@
       ],
       "activity": 96,
       "severity": 67,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -8490,7 +8504,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "West Bank farmers defy daily settler attacks, sheep theft, and military restrictions to protect their land.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -9877,7 +9891,7 @@
       ],
       "activity": 95,
       "severity": 67,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -10317,7 +10331,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "In 1969, legendary Yoruba Sakara music lord, Yusuff Olatunji, serenaded and celebrated the sterling qualities of the Seriki of Egbaland, Chief Abdul-Wahab Amódemájá, who held an Egba high-ranking military-derived civil title. In his Volume 3 album entitled Amódemájá, using a twin engine of dense metaphor and vivid imagery, Olatunji advocated for the place of good people […] The post Amódemájá and ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -12671,8 +12685,8 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 86,
-      "severity": 64,
+      "activity": 82,
+      "severity": 63,
       "newCount": 0,
       "signals": [
         {
@@ -12811,27 +12825,6 @@
           "score": 23
         },
         {
-          "title": "How significant are the Yemeni government’s military gains against Houthis?",
-          "url": "https://www.aljazeera.com/news/2026/9/6/how-significant-are-the-yemeni-governments-military-gains-against-the-houthis?traffic_source=rss",
-          "date": "2026-09-06T13:41:25.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Government forces make gains as fighting escalates, raising fears of a return to full-scale war.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Yemeni forces claim strategic district amid intensified Houthi clashes",
           "url": "https://www.aljazeera.com/news/2026/9/6/yemeni-forces-claim-strategic-district-amid-intensified-houthi-clashes?traffic_source=rss",
           "date": "2026-09-06T05:02:17.000Z",
@@ -12926,6 +12919,48 @@
           "score": 22
         },
         {
+          "title": "Civilians among at least 60 killed in Yemen as ground fighting escalates",
+          "url": "https://www.theguardian.com/world/2026/sep/05/yemen-ground-fighting-escalates-houthi-rebels-government-forces",
+          "date": "2026-09-05T13:47:19.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Houthi rebel offensive against government forces on west coast leads to some of deadliest clashes in years Clashes between Yemen’s Saudi-backed government forces and the Iran-aligned Houthi rebel movement have killed more than 60 people, including civilians, as the Houthis pushed forward with a military offensive on Yemen’s western coast. Twenty-six government troops and 31 Houthi fighters were ki",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 20
+        },
+        {
+          "title": "How significant are the Yemeni government’s military gains against Houthis?",
+          "url": "https://www.aljazeera.com/news/2026/9/6/how-significant-are-the-yemeni-governments-military-gains-against-the-houthis?traffic_source=rss",
+          "date": "2026-09-06T13:41:25.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Government forces make gains as fighting escalates, raising fears of a return to full-scale war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
           "title": "Fighting intensifies in Yemen as missile strike on key road kills four",
           "url": "https://www.prokerala.com/news/articles/a1808980.html",
           "date": "2026-09-05T19:00:00.000Z",
@@ -12944,7 +12979,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Yemeni forces capture dozens of Houthis in Al Hudaydah amid clashes : Official",
@@ -12975,28 +13010,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 22
-        },
-        {
-          "title": "Civilians among at least 60 killed in Yemen as ground fighting escalates",
-          "url": "https://www.theguardian.com/world/2026/sep/05/yemen-ground-fighting-escalates-houthi-rebels-government-forces",
-          "date": "2026-09-05T13:47:19.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Houthi rebel offensive against government forces on west coast leads to some of deadliest clashes in years Clashes between Yemen’s Saudi-backed government forces and the Iran-aligned Houthi rebel movement have killed more than 60 people, including civilians, as the Houthis pushed forward with a military offensive on Yemen’s western coast. Twenty-six government troops and 31 Houthi fighters were ki",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 20
+          "score": 18
         },
         {
           "title": "Fresh Yemen clashes kill more than 60: military, medical sources",
@@ -13701,464 +13715,6 @@
       "itemCount": 38
     },
     {
-      "id": "drc-m23",
-      "name": "DR Kongo / Ostkongo",
-      "nameEn": "DR Congo – M23",
-      "region": "Afrika (Zentral)",
-      "countries": [
-        "Dem. Rep. Congo"
-      ],
-      "lat": -1.7,
-      "lon": 29.2,
-      "tier": "war",
-      "since": "2021 (M23-Wiederaufleben)",
-      "parties": [
-        "DR Kongo (FARDC)",
-        "M23/AFC",
-        "Ruanda",
-        "Wazalendo",
-        "ADF"
-      ],
-      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
-      "hotspots": [
-        "Goma",
-        "Bukavu",
-        "Nord-Kivu",
-        "Süd-Kivu",
-        "Ituri"
-      ],
-      "activity": 27,
-      "severity": 63,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 5
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COD",
-      "extraCountries": [
-        "RWA",
-        "UGA"
-      ],
-      "regions": [
-        {
-          "id": "COD-1884",
-          "name": "Kinshasa",
-          "nameDe": "Kinshasa",
-          "type": "Neutral City",
-          "anchor": [
-            15.921,
-            -4.443
-          ],
-          "count": 3,
-          "newCount": 0,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          }
-        },
-        {
-          "id": "COD-1894",
-          "name": "South Kivu",
-          "nameDe": "Sud-Kivu",
-          "type": "Province",
-          "anchor": [
-            28.246,
-            -3.217
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "At least 22 killed in wedding party fire in Congo Kinshasa",
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-22-killed-in-wedding-party-fire-in-congos-kinshasa/articleshow/133815165.cms",
-          "date": "2026-09-05T21:30:00.000Z",
-          "source": "timesofindia.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 24
-        },
-        {
-          "title": "More than 20 killed in fire at wedding party in DR Congo",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/more-than-20-killed-in-fire-at-wedding-party-in-dr-congo?traffic_source=rss",
-          "date": "2026-09-06T04:47:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Authorities have launched an investigation into a fire that killed 22 people at a wedding party in Kinshasa, DR Congo.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "At least 22 killed in Kinshasa wedding - party fire",
-          "url": "https://dailypioneer.com/news/at-least-22-killed-kinshasa-wedding-party-fire",
-          "date": "2026-09-05T19:30:00.000Z",
-          "source": "dailypioneer.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Congo-Kinshasa: DR Congo Army Accused of Bombing of Humanitarian Aircraft in Minembwe",
-          "url": "https://allafrica.com/stories/202609040086.html",
-          "date": "2026-09-04T06:54:32.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] The AFC-M23 movement has condemned the bombing of a civilian aircraft carrying humanitarian aid and essential supplies to Minembwe, South Kivu, on August 27.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1894",
-            "name": "South Kivu",
-            "nameDe": "Sud-Kivu",
-            "type": "Province",
-            "anchor": [
-              28.246,
-              -3.217
-            ],
-            "matched": "South Kivu"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "22 killed in fire at wedding venue in DR Congo",
-          "url": "http://www.bignewsnetwork.com/news/279288371/22-killed-in-fire-at-wedding-venue-in-dr-congo",
-          "date": "2026-09-05T17:00:00.000Z",
-          "source": "bignewsnetwork.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "U . S . troops withdraw from Nigeria as DR Congo reopens Ebola zone schools",
-          "url": "https://www.okayafrica.com/today-in-africa-september-2-2026-us-troops-exit-nigeria-dr-congo-drops-remote-learning-in-ebola-zones/1439304",
-          "date": "2026-09-02T21:30:00.000Z",
-          "source": "okayafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "APO Group - Africa Newsroom / Press release | Ituri : following clashes in Bamande , United Nations Organization Stabilization Mission in the Democratic Republic of the Congo ( MONUSCO ) deploys a mobile operating base",
-          "url": "https://www.africa-newsroom.com/press/ituri-following-clashes-in-bamande-united-nations-organization-stabilization-mission-in-the-democratic-republic-of-the-congo-monusco-deploys-a-mobile-operating-base",
-          "date": "2026-09-01T13:15:00.000Z",
-          "source": "africa-newsroom.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Over 6,000 Ebola cases confirmed in DRC as death toll nears 3,000",
-          "url": "https://www.aljazeera.com/news/2026/8/31/over-6000-ebola-cases-confirmed-in-drc-as-death-toll-nears-3000?traffic_source=rss",
-          "date": "2026-08-31T16:24:20.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Outbreak in the DRC 'the fastest-spreading Ebola epidemic ever recorded,' as country struggles to contain infections.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Botswana: Rwanda, Botswana Seek to Deepen Defence Cooperation",
-          "url": "https://allafrica.com/stories/202609030282.html",
-          "date": "2026-09-03T11:21:22.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] Rwanda and Botswana are looking to expand military training and professional development opportunities between their armed forces as part of efforts to strengthen bilateral defence cooperation.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
-          "title": "Rwanda: Kagame Discusses DR Congo Crisis With New Head of Monusco",
-          "url": "https://allafrica.com/stories/202609030048.html",
-          "date": "2026-09-03T05:29:08.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] President Paul Kagame on Wednesday, September 2, met with James Swan, the new head of the UN peacekeeping mission in DR Congo (MONUSCO) for a discussion on the security crisis in eastern DR Congo.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Ebola Outbreak Congo : Innovative Use of Mobile - Phone Data to Combat Ebola Spread in Congo , ETTelecom",
-          "url": "https://telecom.economictimes.indiatimes.com/news/devices/health-officials-turn-to-mobile-phone-data-to-track-ebola-spread-in-congo/133734900",
-          "date": "2026-09-03T15:30:00.000Z",
-          "source": "telecom.economictimes.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Violence in eastern DR Congo drives fresh displacements , complicates Ebola response : UN",
-          "url": "https://www.prokerala.com/news/articles/a1807544.html",
-          "date": "2026-09-02T07:30:00.000Z",
-          "source": "prokerala.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 8
-        },
-        {
-          "title": "Violence in eastern DRC drives fresh displacements , complicates Ebola response : UN - Xinhua",
-          "url": "https://english.news.cn/20260902/98d55a2101fc4af2a1657a9d35d43797/c.html",
-          "date": "2026-09-01T21:30:00.000Z",
-          "source": "english.news.cn",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 8
-        },
-        {
-          "title": "DR Congo's opposition rejects president's dialogue offer and calls for demonstration",
-          "url": "https://www.france24.com/en/video/20260901-dr-congo-s-opposition-rejects-president-s-dialogue-offer-and-calls-for-demonstration",
-          "date": "2026-09-01T13:40:25.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In DR Congo, managing the spread of Ebola is made all the more difficult as the country is juggling simultaneous security crises including untangling a peace deal with M23 rebels. President Felix Tshisekedi offered to convene a national dialogue which opposition parties call a smoke screen hiding an attempted power grab.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "Rwanda: RDF-UPDF Meeting in Mbarara Closes With Call for Sustained Cooperation",
-          "url": "https://allafrica.com/stories/202608310156.html",
-          "date": "2026-08-31T09:38:15.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] Senior officers from Rwanda Defence Force (RDF) and Uganda Peoples' Defence Forces (UPDF) have stressed the need for cooperation between the two militaries in combating illegal cross-border activities.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 15
-    },
-    {
       "id": "nigeria",
       "name": "Nigeria",
       "nameEn": "Nigeria",
@@ -14187,7 +13743,7 @@
       ],
       "activity": 82,
       "severity": 63,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -14614,7 +14170,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "In 1969, legendary Yoruba Sakara music lord, Yusuff Olatunji, serenaded and celebrated the sterling qualities of the Seriki of Egbaland, Chief Abdul-Wahab Amódemájá, who held an Egba high-ranking military-derived civil title. In his Volume 3 album entitled Amódemájá, using a twin engine of dense metaphor and vivid imagery, Olatunji advocated for the place of good people […] The post Amódemájá and ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -16102,6 +15658,464 @@
       "itemCount": 66
     },
     {
+      "id": "drc-m23",
+      "name": "DR Kongo / Ostkongo",
+      "nameEn": "DR Congo – M23",
+      "region": "Afrika (Zentral)",
+      "countries": [
+        "Dem. Rep. Congo"
+      ],
+      "lat": -1.7,
+      "lon": 29.2,
+      "tier": "war",
+      "since": "2021 (M23-Wiederaufleben)",
+      "parties": [
+        "DR Kongo (FARDC)",
+        "M23/AFC",
+        "Ruanda",
+        "Wazalendo",
+        "ADF"
+      ],
+      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
+      "hotspots": [
+        "Goma",
+        "Bukavu",
+        "Nord-Kivu",
+        "Süd-Kivu",
+        "Ituri"
+      ],
+      "activity": 25,
+      "severity": 62,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 5
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "COD",
+      "extraCountries": [
+        "RWA",
+        "UGA"
+      ],
+      "regions": [
+        {
+          "id": "COD-1884",
+          "name": "Kinshasa",
+          "nameDe": "Kinshasa",
+          "type": "Neutral City",
+          "anchor": [
+            15.921,
+            -4.443
+          ],
+          "count": 3,
+          "newCount": 0,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          }
+        },
+        {
+          "id": "COD-1894",
+          "name": "South Kivu",
+          "nameDe": "Sud-Kivu",
+          "type": "Province",
+          "anchor": [
+            28.246,
+            -3.217
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "At least 22 killed in wedding party fire in Congo Kinshasa",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-22-killed-in-wedding-party-fire-in-congos-kinshasa/articleshow/133815165.cms",
+          "date": "2026-09-05T21:30:00.000Z",
+          "source": "timesofindia.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 24
+        },
+        {
+          "title": "More than 20 killed in fire at wedding party in DR Congo",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/more-than-20-killed-in-fire-at-wedding-party-in-dr-congo?traffic_source=rss",
+          "date": "2026-09-06T04:47:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Authorities have launched an investigation into a fire that killed 22 people at a wedding party in Kinshasa, DR Congo.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "At least 22 killed in Kinshasa wedding - party fire",
+          "url": "https://dailypioneer.com/news/at-least-22-killed-kinshasa-wedding-party-fire",
+          "date": "2026-09-05T19:30:00.000Z",
+          "source": "dailypioneer.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Congo-Kinshasa: DR Congo Army Accused of Bombing of Humanitarian Aircraft in Minembwe",
+          "url": "https://allafrica.com/stories/202609040086.html",
+          "date": "2026-09-04T06:54:32.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] The AFC-M23 movement has condemned the bombing of a civilian aircraft carrying humanitarian aid and essential supplies to Minembwe, South Kivu, on August 27.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1894",
+            "name": "South Kivu",
+            "nameDe": "Sud-Kivu",
+            "type": "Province",
+            "anchor": [
+              28.246,
+              -3.217
+            ],
+            "matched": "South Kivu"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "22 killed in fire at wedding venue in DR Congo",
+          "url": "http://www.bignewsnetwork.com/news/279288371/22-killed-in-fire-at-wedding-venue-in-dr-congo",
+          "date": "2026-09-05T17:00:00.000Z",
+          "source": "bignewsnetwork.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "U . S . troops withdraw from Nigeria as DR Congo reopens Ebola zone schools",
+          "url": "https://www.okayafrica.com/today-in-africa-september-2-2026-us-troops-exit-nigeria-dr-congo-drops-remote-learning-in-ebola-zones/1439304",
+          "date": "2026-09-02T21:30:00.000Z",
+          "source": "okayafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "APO Group - Africa Newsroom / Press release | Ituri : following clashes in Bamande , United Nations Organization Stabilization Mission in the Democratic Republic of the Congo ( MONUSCO ) deploys a mobile operating base",
+          "url": "https://www.africa-newsroom.com/press/ituri-following-clashes-in-bamande-united-nations-organization-stabilization-mission-in-the-democratic-republic-of-the-congo-monusco-deploys-a-mobile-operating-base",
+          "date": "2026-09-01T13:15:00.000Z",
+          "source": "africa-newsroom.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Over 6,000 Ebola cases confirmed in DRC as death toll nears 3,000",
+          "url": "https://www.aljazeera.com/news/2026/8/31/over-6000-ebola-cases-confirmed-in-drc-as-death-toll-nears-3000?traffic_source=rss",
+          "date": "2026-08-31T16:24:20.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Outbreak in the DRC 'the fastest-spreading Ebola epidemic ever recorded,' as country struggles to contain infections.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Botswana: Rwanda, Botswana Seek to Deepen Defence Cooperation",
+          "url": "https://allafrica.com/stories/202609030282.html",
+          "date": "2026-09-03T11:21:22.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] Rwanda and Botswana are looking to expand military training and professional development opportunities between their armed forces as part of efforts to strengthen bilateral defence cooperation.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
+          "title": "Rwanda: Kagame Discusses DR Congo Crisis With New Head of Monusco",
+          "url": "https://allafrica.com/stories/202609030048.html",
+          "date": "2026-09-03T05:29:08.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] President Paul Kagame on Wednesday, September 2, met with James Swan, the new head of the UN peacekeeping mission in DR Congo (MONUSCO) for a discussion on the security crisis in eastern DR Congo.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Ebola Outbreak Congo : Innovative Use of Mobile - Phone Data to Combat Ebola Spread in Congo , ETTelecom",
+          "url": "https://telecom.economictimes.indiatimes.com/news/devices/health-officials-turn-to-mobile-phone-data-to-track-ebola-spread-in-congo/133734900",
+          "date": "2026-09-03T15:30:00.000Z",
+          "source": "telecom.economictimes.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Violence in eastern DR Congo drives fresh displacements , complicates Ebola response : UN",
+          "url": "https://www.prokerala.com/news/articles/a1807544.html",
+          "date": "2026-09-02T07:30:00.000Z",
+          "source": "prokerala.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 8
+        },
+        {
+          "title": "Violence in eastern DRC drives fresh displacements , complicates Ebola response : UN - Xinhua",
+          "url": "https://english.news.cn/20260902/98d55a2101fc4af2a1657a9d35d43797/c.html",
+          "date": "2026-09-01T21:30:00.000Z",
+          "source": "english.news.cn",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 8
+        },
+        {
+          "title": "DR Congo's opposition rejects president's dialogue offer and calls for demonstration",
+          "url": "https://www.france24.com/en/video/20260901-dr-congo-s-opposition-rejects-president-s-dialogue-offer-and-calls-for-demonstration",
+          "date": "2026-09-01T13:40:25.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In DR Congo, managing the spread of Ebola is made all the more difficult as the country is juggling simultaneous security crises including untangling a peace deal with M23 rebels. President Felix Tshisekedi offered to convene a national dialogue which opposition parties call a smoke screen hiding an attempted power grab.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 8
+        },
+        {
+          "title": "Rwanda: RDF-UPDF Meeting in Mbarara Closes With Call for Sustained Cooperation",
+          "url": "https://allafrica.com/stories/202608310156.html",
+          "date": "2026-08-31T09:38:15.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] Senior officers from Rwanda Defence Force (RDF) and Uganda Peoples' Defence Forces (UPDF) have stressed the need for cooperation between the two militaries in combating illegal cross-border activities.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 15
+    },
+    {
       "id": "sahel-mali",
       "name": "Mali / Sahel",
       "nameEn": "Mali",
@@ -16128,7 +16142,7 @@
         "Mopti",
         "Kidal"
       ],
-      "activity": 18,
+      "activity": 17,
       "severity": 60,
       "newCount": 0,
       "signals": [
@@ -16538,30 +16552,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Niger junta puts down mutiny with help from Russia Africa Corps",
-          "url": "http://www.nigeriasun.com/news/279274970/niger-junta-puts-down-mutiny-with-help-from-russia-africa-corps",
-          "date": "2026-08-30T18:45:00.000Z",
-          "source": "nigeriasun.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 18
+      "itemCount": 17
     },
     {
       "id": "haiti",
@@ -20554,8 +20547,8 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 41,
-      "severity": 51,
+      "activity": 36,
+      "severity": 49,
       "newCount": 0,
       "signals": [
         {
@@ -20734,7 +20727,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 19
+          "score": 15
         },
         {
           "title": "Anti-Christian murder in Syria? No indication he was killed because of his faith",
@@ -20806,27 +20799,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Syria's former dictator Bashar Assad was sentenced to death for crimes against his own people. But for many civil war survivors, it's not enough",
-          "url": "https://www.dw.com/en/syria-s-former-dictator-bashar-assad-was-sentenced-to-death-for-crimes-against-his-own-people-but-for-many-civil-war-survivors-it-s-not-enough/a-78985915?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-09-05T18:56:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "In July, a Syrian court sentenced former dictator Bashar Assad to death for crimes against his own people. But after 14 years of civil war, many survivors are demanding more when it comes to transitional justice.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -21027,6 +20999,27 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "Syria's former dictator Bashar Assad was sentenced to death for crimes against his own people. But for many civil war survivors, it's not enough",
+          "url": "https://www.dw.com/en/syria-s-former-dictator-bashar-assad-was-sentenced-to-death-for-crimes-against-his-own-people-but-for-many-civil-war-survivors-it-s-not-enough/a-78985915?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-05T18:56:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "In July, a Syrian court sentenced former dictator Bashar Assad to death for crimes against his own people. But after 14 years of civil war, many survivors are demanding more when it comes to transitional justice.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Syria Jihadi Government Begins Destroying Assad - Era Chemical Weapons",
@@ -22048,8 +22041,8 @@
         "Jubaland",
         "Somaliland"
       ],
-      "activity": 30,
-      "severity": 48,
+      "activity": 27,
+      "severity": 47,
       "newCount": 0,
       "signals": [
         {
@@ -22371,7 +22364,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 15
+          "score": 11
         },
         {
           "title": "Somali forces kill 14 al - Shabaab fighters in southwest region - Xinhua",
@@ -25307,7 +25300,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -25416,7 +25409,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Chris Wright tells ABC there ‘may not’ be an agreement that would prevent Iran from having nuclear weapons US energy secretary Chris Wright said on Sunday morning that the US may not be able to reach a nuclear agreement with Iran that would prevent the country from having nuclear weapons. Asked on ABC on Sunday morning about any sign of such a deal, as negotiations appear stalled and the US-Israel",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -27209,7 +27202,7 @@
       ],
       "activity": 60,
       "severity": 40,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -27293,27 +27286,6 @@
           "score": 22
         },
         {
-          "title": "New EU Sanctions To Hit North Korean Camp Where Russia Sends Abducted Ukrainian Kids",
-          "url": "https://www.rferl.org/a/russia-abducted-ukrainian-children-north-korea/33847096.html",
-          "date": "2026-09-05T08:45:00.000Z",
-          "source": "rferl.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 21
-        },
-        {
           "title": "US military says it struck three Iranian tankers after American warships came under missile attack",
           "url": "https://www.theguardian.com/world/2026/sep/05/us-military-iran-tankers",
           "date": "2026-09-05T15:41:22.000Z",
@@ -27354,6 +27326,27 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "New EU Sanctions To Hit North Korean Camp Where Russia Sends Abducted Ukrainian Kids",
+          "url": "https://www.rferl.org/a/russia-abducted-ukrainian-children-north-korea/33847096.html",
+          "date": "2026-09-05T08:45:00.000Z",
+          "source": "rferl.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 18
         },
         {
           "title": "At least four civilians killed in Houthi missile strike near Yemen’s Taiz",
@@ -27866,7 +27859,7 @@
           "source": "naturalnews.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -27878,7 +27871,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 14
+          "score": 15
         },
         {
           "title": "South Korea pushes back on reports it is readying Hormuz deployment amid US pressure",
@@ -29740,7 +29733,7 @@
         "Zvečan",
         "Grenzübergänge"
       ],
-      "activity": 22,
+      "activity": 20,
       "severity": 17,
       "newCount": 0,
       "signals": [
@@ -29971,27 +29964,6 @@
           "score": 11
         },
         {
-          "title": "Serbia welcomes return of war criminal Mladic’s body with military honours",
-          "url": "https://www.aljazeera.com/news/2026/9/3/serbia-welcomes-return-of-war-criminal-mladics-body-with-military-honours?traffic_source=rss",
-          "date": "2026-09-03T19:27:34.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ratko Mladic received a life sentence from a UN court for committing atrocities during the 1992-1995 Bosnian War.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
           "title": "‘Not Mere Incidents’: Kosovo Questions Femicide Approach after New Killings",
           "url": "https://balkaninsight.com/2026/09/03/not-mere-incidents-kosovo-questions-femicide-approach-after-new-killings/bi/",
           "date": "2026-09-03T05:54:01.000Z",
@@ -30053,6 +30025,27 @@
             "label": "Proteste/Unruhen"
           },
           "score": 9
+        },
+        {
+          "title": "Serbia welcomes return of war criminal Mladic’s body with military honours",
+          "url": "https://www.aljazeera.com/news/2026/9/3/serbia-welcomes-return-of-war-criminal-mladics-body-with-military-honours?traffic_source=rss",
+          "date": "2026-09-03T19:27:34.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ratko Mladic received a life sentence from a UN court for committing atrocities during the 1992-1995 Bosnian War.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
         },
         {
           "title": "Mladic's death, Bosnia and Serbia's unfinished reckoning",
@@ -30156,7 +30149,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Balkans: Israel deepens ties with Bosnian Serb separatists through Banja Luka trade office",
