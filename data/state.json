@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-08T02:35:47.831Z",
-  "durationSec": 401,
+  "generatedAt": "2026-09-08T03:36:16.655Z",
+  "durationSec": 403,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -97,7 +97,7 @@
       {
         "id": "dawn",
         "ok": true,
-        "count": 28,
+        "count": 29,
         "error": null
       },
       {
@@ -114,33 +114,45 @@
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 6,
+      "ok": 1,
+      "failed": 9,
       "skipped": 6,
       "errors": [
         {
           "id": "burkina-faso",
-          "error": "HTTP 429"
+          "error": "fetch failed"
+        },
+        {
+          "id": "drc-m23",
+          "error": "fetch failed"
         },
         {
           "id": "myanmar",
           "error": "fetch failed"
         },
         {
+          "id": "venezuela",
+          "error": "fetch failed"
+        },
+        {
+          "id": "iraq",
+          "error": "fetch failed"
+        },
+        {
+          "id": "sahel-mali",
+          "error": "fetch failed"
+        },
+        {
           "id": "haiti",
-          "error": "fetch failed"
-        },
-        {
-          "id": "lebanon-hezbollah",
           "error": "HTTP 429"
         },
         {
-          "id": "libya",
+          "id": "car",
           "error": "HTTP 429"
         },
         {
-          "id": "turkey-pkk",
-          "error": "fetch failed"
+          "id": "colombia",
+          "error": "HTTP 429"
         }
       ]
     },
@@ -148,8 +160,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1169,
-    "newArticles": 8
+    "articles": 1171,
+    "newArticles": 5
   },
   "conflicts": [
     {
@@ -239,7 +251,7 @@
             55.668
           ],
           "count": 22,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -255,8 +267,8 @@
             30.448,
             50.29
           ],
-          "count": 16,
-          "newCount": 0,
+          "count": 17,
+          "newCount": 1,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -283,23 +295,23 @@
       ],
       "items": [
         {
-          "title": "Live: Russia resumes strikes on Kyiv after three-day halt",
-          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
-          "date": "2026-09-08T02:00:01.000Z",
-          "source": "France 24",
+          "title": "Russia strikes Kyiv as three-day pause during US envoy visits ends",
+          "url": "https://www.aljazeera.com/news/2026/9/8/russia-strikes-kyiv-as-three-day-pause-during-us-envoy-visits-ends?traffic_source=rss",
+          "date": "2026-09-08T03:08:28.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Russia resumed strikes on Kyiv late Monday after a three-day pause ordered by President Vladimir Putin expired, Ukraine’s emergency service said. The halt coincided with visits to Moscow and Kyiv by US President Donald Trump’s envoys Steve Witkoff and Jared Kushner, who were holding talks aimed at ending the war. Follow our liveblog for the latest updates.",
+          "summary": "US envoy says 'encouraged' by talks as White House official told Reuters next steps to be announced in coming weeks.",
           "isNew": true,
           "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
             "type": "Region",
             "anchor": [
-              37.665,
-              55.668
+              30.448,
+              50.29
             ],
-            "matched": "Moscow"
+            "matched": "Kyiv"
           },
           "event": {
             "type": "report",
@@ -311,7 +323,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 32
+          "score": 29
         },
         {
           "title": "Kyiv air raid alerts at record high as Russia launches round-the-clock strikes",
@@ -367,6 +379,37 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 25
+        },
+        {
+          "title": "Live: Russia pummels Kyiv after three-day halt",
+          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
+          "date": "2026-09-08T02:00:01.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Russia resumed strikes on Kyiv late Monday after a three-day pause ordered by President Vladimir Putin expired, Ukraine’s emergency service said. The halt coincided with visits to Moscow and Kyiv by US President Donald Trump’s envoys Steve Witkoff and Jared Kushner, who were holding talks aimed at ending the war. Follow our liveblog for the latest updates.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "talks",
@@ -447,27 +490,6 @@
             "label": "Verhandlungen"
           },
           "score": 22
-        },
-        {
-          "title": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-uae-us-and-israel-normalising-permanent-state-war-middle-east",
-          "date": "2026-09-07T21:18:19.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East It took the&nbsp; Russian &nbsp;President Vladimir Putin 10 full months after his&nbsp; invasion of Ukraine &nbsp;to call what his country was engaged in a&nbsp; war .&nbsp; Even then, the word could only be used by him. Anyone else could get up to&nbsp; 15 years in prison &nbsp;for \"disseminating ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
         },
         {
           "title": "Democracy Digest: Poland Investigates Arson of Drone Factory as Suspected Russian Sabotage",
@@ -928,74 +950,33 @@
           "score": 18
         },
         {
-          "title": "Putin orders 72-hour halt in strikes on Kyiv as Trump envoys arrive in Moscow",
-          "url": "https://www.france24.com/en/europe/20260905-trump-sends-envoys-to-moscow-and-kyiv-with-new-plan-to-end-the-war",
-          "date": "2026-09-05T02:37:17.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Russian President Vladimir Putin on Saturday ordered a 72-hour pause in strikes on Kyiv as US envoys Steve Witkoff and Jared Kushner arrived in Moscow. The visit is part of renewed efforts to end the war in Ukraine, and the two men are set to travel to Kyiv on Sunday.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
-          "title": "Russia shutters German consulate as diplomatic freeze deepens",
-          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
-          "date": "2026-09-07T18:27:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 17
-        },
-        {
           "title": "Russia and North Korea open first road bridge across their shared border",
           "url": "https://www.theguardian.com/world/2026/sep/07/russia-north-korea-open-first-road-bridge-tumen-river",
           "date": "2026-09-07T09:53:53.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Connection across Tumen River is further sign of closer ties between the two countries since start of war in Ukraine Russia and North Korea have opened the first road bridge across their shared border , in the latest sign of the rapidly deepening ties between the two countries since the start of the war in Ukraine. The one-kilometre bridge spans the Tumen River between Khasan in Russia’s far east ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-uae-us-and-israel-normalising-permanent-state-war-middle-east",
+          "date": "2026-09-07T21:18:19.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East It took the&nbsp; Russian &nbsp;President Vladimir Putin 10 full months after his&nbsp; invasion of Ukraine &nbsp;to call what his country was engaged in a&nbsp; war .&nbsp; Even then, the word could only be used by him. Anyone else could get up to&nbsp; 15 years in prison &nbsp;for \"disseminating ",
           "isNew": false,
           "region": null,
           "event": {
@@ -1040,6 +1021,68 @@
             "label": "Opfer"
           },
           "score": 16
+        },
+        {
+          "title": "Putin orders 72-hour halt in strikes on Kyiv as Trump envoys arrive in Moscow",
+          "url": "https://www.france24.com/en/europe/20260905-trump-sends-envoys-to-moscow-and-kyiv-with-new-plan-to-end-the-war",
+          "date": "2026-09-05T02:37:17.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Russian President Vladimir Putin on Saturday ordered a 72-hour pause in strikes on Kyiv as US envoys Steve Witkoff and Jared Kushner arrived in Moscow. The visit is part of renewed efforts to end the war in Ukraine, and the two men are set to travel to Kyiv on Sunday.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russia shutters German consulate as diplomatic freeze deepens",
+          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
+          "date": "2026-09-07T18:27:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
         },
         {
           "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
@@ -2330,27 +2373,6 @@
             "label": "Verhandlungen"
           },
           "score": 11
-        },
-        {
-          "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-envoys-witkoff-kushner-meet-putin-for-talks-on-ukraine-war?traffic_source=rss",
-          "date": "2026-09-05T21:23:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US envoys Steve Witkoff and Jared Kushner met Russian President Vladimir Putin at the Kremlin on Saturday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -2382,7 +2404,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -2453,27 +2475,6 @@
           "score": 29
         },
         {
-          "title": "Israel intensifies South Lebanon strikes, killing 13 after weeks-long lull",
-          "url": "https://www.france24.com/en/middle-east/20260907-israeli-strikes-south-lebanon-violence",
-          "date": "2026-09-07T21:32:03.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel launched a wave of airstrikes across southern Lebanon, killing 13 people, including women and children, Lebanon’s health ministry said on Monday, marking an escalation after weeks of relative calm. Israel said it would continue targeting Iran-backed Hezbollah over alleged ceasefire violations. Hezbollah has not commented on the strikes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 27
-        },
-        {
           "title": "Israel warns of 'full-scale war' if Palestinian Authority launches Oct. 7-style attack",
           "url": "https://www.france24.com/en/middle-east/20260907-israel-warns-of-full-scale-war-if-palestinian-authority-launches-oct-7-style-attack",
           "date": "2026-09-07T18:08:40.000Z",
@@ -2495,34 +2496,13 @@
           "score": 27
         },
         {
-          "title": "Palestinian parents fear for children's lives at school as settler attacks grow",
-          "url": "https://www.bbc.co.uk/news/articles/c3wj45g73g1o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-07T21:12:37.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "A headteacher in the occupied West Bank has installed new barbed wire fencing after three pupils were killed this year.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Israeli attacks kill 4,362 people since March, Lebanon’s health ministry says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-4362-people-march-lebanons-health-ministry-says",
           "date": "2026-09-08T01:53:12.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli attacks kill 4,362 people since March, Lebanon’s health ministry says The latest death toll from Israeli attacks on Lebanon has risen to 4,362 people since the start of March, with 12,378 others left wounded, he health ministry announced.&nbsp; This bring the total casualties since 8 October 2023 to 6 September of this year to 8,929 people killed and 30,614 wounded.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2579,6 +2559,27 @@
           "score": 24
         },
         {
+          "title": "Israel intensifies South Lebanon strikes, killing 13 after weeks-long lull",
+          "url": "https://www.france24.com/en/middle-east/20260907-israeli-strikes-south-lebanon-violence",
+          "date": "2026-09-07T21:32:03.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israel launched a wave of airstrikes across southern Lebanon, killing 13 people, including women and children, Lebanon’s health ministry said on Monday, marking an escalation after weeks of relative calm. Israel said it would continue targeting Iran-backed Hezbollah over alleged ceasefire violations. Hezbollah has not commented on the strikes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 24
+        },
+        {
           "title": "Israeli strikes on southern Lebanon kill 11",
           "url": "https://www.france24.com/en/video/20260907-israeli-strikes-on-southern-lebanon-kill-11",
           "date": "2026-09-07T14:10:28.000Z",
@@ -2598,6 +2599,27 @@
             "label": "Beschuss"
           },
           "score": 24
+        },
+        {
+          "title": "Palestinian parents fear for children's lives at school as settler attacks grow",
+          "url": "https://www.bbc.co.uk/news/articles/c3wj45g73g1o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-07T21:12:37.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "A headteacher in the occupied West Bank has installed new barbed wire fencing after three pupils were killed this year.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 23
         },
         {
           "title": "Two children among dead in Israeli strikes on Lebanon",
@@ -2661,27 +2683,6 @@
             "label": "Entführung/Geiseln"
           },
           "score": 23
-        },
-        {
-          "title": "Israel’s removal of Gaza rubble risk to war crimes evidence: UN",
-          "url": "https://www.aljazeera.com/news/2026/9/7/israels-removal-of-gaza-rubble-risk-to-war-crimes-evidence-un?traffic_source=rss",
-          "date": "2026-09-07T21:00:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "International Court of Justice ordered Israel in 2024 to prevent the destruction of evidence related to war crimes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 22
         },
         {
           "title": "Claimed Israeli capture of Lebanese ridge reshapes negotiation dynamics",
@@ -3125,25 +3126,25 @@
           "score": 20
         },
         {
-          "title": "Israeli clearance of Gaza rubble could destroy 'evidence', says UN expert",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-clearance-gaza-rubble-could-destroy-evidence-says-un-expert",
-          "date": "2026-09-07T16:32:23.000Z",
-          "source": "Middle East Eye",
+          "title": "Israel’s removal of Gaza rubble risk to war crimes evidence: UN",
+          "url": "https://www.aljazeera.com/news/2026/9/7/israels-removal-of-gaza-rubble-risk-to-war-crimes-evidence-un?traffic_source=rss",
+          "date": "2026-09-07T21:00:58.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Israeli clearance of Gaza rubble could destroy 'evidence', says UN expert A United Nations expert said on Monday that&nbsp;Israeli clearance of rubble in Gaza could destroy valuable evidence of \"atrocity crimes\" and prevent the recovery of human remains. Francesca Albanese, the UN expert on the Palestinian territories, said evidence should be gathered and human remains identified before full clear",
+          "summary": "International Court of Justice ordered Israel in 2024 to prevent the destruction of evidence related to war crimes.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
-          "score": 20
+          "score": 19
         },
         {
           "title": "Israeli minister calls for UK envoy’s expulsion",
@@ -3152,69 +3153,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli minister calls for UK envoy’s expulsion Israel’s far-right Finance Minister Bezalel Smotrich has called the British government “anti-Semitic\" and said that its ambassador must be expelled “tonight.\" “The British Mandate in the Land of Israel is over,” he said in Hebrew on X. His remarks came after UK announced plans to ban trade with Israeli settlements in the occupied West Bank. לגרש את ה",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-uae-us-and-israel-normalising-permanent-state-war-middle-east",
-          "date": "2026-09-07T21:18:19.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East It took the&nbsp; Russian &nbsp;President Vladimir Putin 10 full months after his&nbsp; invasion of Ukraine &nbsp;to call what his country was engaged in a&nbsp; war .&nbsp; Even then, the word could only be used by him. Anyone else could get up to&nbsp; 15 years in prison &nbsp;for \"disseminating ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrias-top-diplomat-condemns-iran-israel-arab-league-meeting",
-          "date": "2026-09-07T21:09:27.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting Damascus rejects the use of Arab territory by Iran to settle disputes or as a platform for attacks, Syrian state news agency Sana reported, quoting Syrian Foreign Minister Asaad al-Shaibani. Speaking at the Arab League Council of Foreign Ministers meeting, Shaibani said Syria supports dialogue and closer security and economic cooper",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
-        },
-        {
-          "title": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state",
-          "date": "2026-09-07T20:41:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible' A top official within the US-backed Board of Peace on Monday said a failure to move forward in Gaza paired with rising violence in the occupied West Bank were making a two-state solution \"impossible\". Nickolay Mladenov, the high representative for Gaza under the US-backed \"Board of Peace\" tasked with im",
           "isNew": false,
           "region": null,
           "event": {
@@ -4007,6 +3945,90 @@
           "score": 16
         },
         {
+          "title": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-uae-us-and-israel-normalising-permanent-state-war-middle-east",
+          "date": "2026-09-07T21:18:19.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East It took the&nbsp; Russian &nbsp;President Vladimir Putin 10 full months after his&nbsp; invasion of Ukraine &nbsp;to call what his country was engaged in a&nbsp; war .&nbsp; Even then, the word could only be used by him. Anyone else could get up to&nbsp; 15 years in prison &nbsp;for \"disseminating ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrias-top-diplomat-condemns-iran-israel-arab-league-meeting",
+          "date": "2026-09-07T21:09:27.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting Damascus rejects the use of Arab territory by Iran to settle disputes or as a platform for attacks, Syrian state news agency Sana reported, quoting Syrian Foreign Minister Asaad al-Shaibani. Speaking at the Arab League Council of Foreign Ministers meeting, Shaibani said Syria supports dialogue and closer security and economic cooper",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
+          "title": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state",
+          "date": "2026-09-07T20:41:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible' A top official within the US-backed Board of Peace on Monday said a failure to move forward in Gaza paired with rising violence in the occupied West Bank were making a two-state solution \"impossible\". Nickolay Mladenov, the high representative for Gaza under the US-backed \"Board of Peace\" tasked with im",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Israeli clearance of Gaza rubble could destroy 'evidence', says UN expert",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-clearance-gaza-rubble-could-destroy-evidence-says-un-expert",
+          "date": "2026-09-07T16:32:23.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli clearance of Gaza rubble could destroy 'evidence', says UN expert A United Nations expert said on Monday that&nbsp;Israeli clearance of rubble in Gaza could destroy valuable evidence of \"atrocity crimes\" and prevent the recovery of human remains. Francesca Albanese, the UN expert on the Palestinian territories, said evidence should be gathered and human remains identified before full clear",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
           "title": "UN rapporteur says Israeli rubble-clearing in Gaza could erase 'atrocity crimes' evidence",
           "url": "https://www.france24.com/en/middle-east/20260907-un-rapporteur-says-israeli-rubble-clearing-in-gaza-could-erase-atrocity-crimes-evidence",
           "date": "2026-09-07T12:51:23.000Z",
@@ -4364,6 +4386,37 @@
           "score": 21
         },
         {
+          "title": "Sudan: Sudan's Burhan Inspects Army's Readiness in Blue Nile State Amid Escalating Clashes and Reported RSF Buildup Near Ethiopia Border",
+          "url": "https://allafrica.com/stories/202609030540.html",
+          "date": "2026-09-03T16:38:25.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Sudanese Sovereign Council Chairman and army chief Abdel Fattah al-Burhan inspected military forces and operational readiness in Blue Nile State as clashes intensify between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) and its ally, the Sudan People's Liberation Movement-North (SPLM-N), near the Ethiopian border.",
+          "isNew": false,
+          "region": {
+            "id": "SDN-148",
+            "name": "Blue Nile",
+            "nameDe": "An-Nil al-azraq",
+            "type": "State",
+            "anchor": [
+              34.065,
+              11.402
+            ],
+            "matched": "Blue Nile State"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 21
+        },
+        {
           "title": "Human rights chief Türk renews call for end to spiralling Sudan war",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168287",
           "date": "2026-09-07T12:00:00.000Z",
@@ -4631,37 +4684,6 @@
               11.07
             ],
             "matched": "South Kordofan"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Sudan: Sudan's Burhan Inspects Army's Readiness in Blue Nile State Amid Escalating Clashes and Reported RSF Buildup Near Ethiopia Border",
-          "url": "https://allafrica.com/stories/202609030540.html",
-          "date": "2026-09-03T16:38:25.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Sudanese Sovereign Council Chairman and army chief Abdel Fattah al-Burhan inspected military forces and operational readiness in Blue Nile State as clashes intensify between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) and its ally, the Sudan People's Liberation Movement-North (SPLM-N), near the Ethiopian border.",
-          "isNew": false,
-          "region": {
-            "id": "SDN-148",
-            "name": "Blue Nile",
-            "nameDe": "An-Nil al-azraq",
-            "type": "State",
-            "anchor": [
-              34.065,
-              11.402
-            ],
-            "matched": "Blue Nile State"
           },
           "event": {
             "type": "clash",
@@ -5217,7 +5239,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -5303,7 +5325,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 27
+          "score": 24
         },
         {
           "title": "IDF Troops Kill Terrorist After West Bank Stabbing Wounds Israeli",
@@ -5375,38 +5397,17 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "The UK sanctions should target activity 'supporting or maintaining' settlements, Tayab Ali says Tayab Ali, Director of the International Centre of Justice for Palestinians, tells MEE’s Imran Mulla that the upcoming ban on trade with illegal Israeli settlements, expected to be announced on Tuesday by UK Foreign Secretary Ed Miliband, will have a ‘profound impact’ on Israel. The ban is expected to b",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state",
-          "date": "2026-09-07T20:41:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible' A top official within the US-backed Board of Peace on Monday said a failure to move forward in Gaza paired with rising violence in the occupied West Bank were making a two-state solution \"impossible\". Nickolay Mladenov, the high representative for Gaza under the US-backed \"Board of Peace\" tasked with im",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "score": 19
         },
@@ -5524,6 +5525,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state",
+          "date": "2026-09-07T20:41:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible' A top official within the US-backed Board of Peace on Monday said a failure to move forward in Gaza paired with rising violence in the occupied West Bank were making a two-state solution \"impossible\". Nickolay Mladenov, the high representative for Gaza under the US-backed \"Board of Peace\" tasked with im",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Board of Peace official says Gaza, West Bank escalation makes two-state solution 'impossible'",
@@ -6153,7 +6175,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "IDF conducts West Bank counterterrorism op ., destroys weapon production sites",
@@ -6593,7 +6615,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -6687,44 +6709,13 @@
       ],
       "items": [
         {
-          "title": "Israel intensifies South Lebanon strikes, killing 13 after weeks-long lull",
-          "url": "https://www.france24.com/en/middle-east/20260907-israeli-strikes-south-lebanon-violence",
-          "date": "2026-09-07T21:32:03.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel launched a wave of airstrikes across southern Lebanon, killing 13 people, including women and children, Lebanon’s health ministry said on Monday, marking an escalation after weeks of relative calm. Israel said it would continue targeting Iran-backed Hezbollah over alleged ceasefire violations. Hezbollah has not commented on the strikes.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 27
-        },
-        {
           "title": "Israeli attacks kill 4,362 people since March, Lebanon’s health ministry says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-4362-people-march-lebanons-health-ministry-says",
           "date": "2026-09-08T01:53:12.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli attacks kill 4,362 people since March, Lebanon’s health ministry says The latest death toll from Israeli attacks on Lebanon has risen to 4,362 people since the start of March, with 12,378 others left wounded, he health ministry announced.&nbsp; This bring the total casualties since 8 October 2023 to 6 September of this year to 8,929 people killed and 30,614 wounded.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -6820,6 +6811,37 @@
             "label": "Opfer"
           },
           "score": 25
+        },
+        {
+          "title": "Israel intensifies South Lebanon strikes, killing 13 after weeks-long lull",
+          "url": "https://www.france24.com/en/middle-east/20260907-israeli-strikes-south-lebanon-violence",
+          "date": "2026-09-07T21:32:03.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israel launched a wave of airstrikes across southern Lebanon, killing 13 people, including women and children, Lebanon’s health ministry said on Monday, marking an escalation after weeks of relative calm. Israel said it would continue targeting Iran-backed Hezbollah over alleged ceasefire violations. Hezbollah has not commented on the strikes.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 24
         },
         {
           "title": "Israeli attacks kill one, injure 10 in southern Lebanon",
@@ -8281,7 +8303,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -8345,6 +8367,23 @@
           }
         },
         {
+          "id": "YEM-3496",
+          "name": "Sanaa",
+          "nameDe": "Sanaa",
+          "type": "Governorate",
+          "anchor": [
+            44.4,
+            15.334
+          ],
+          "count": 1,
+          "newCount": 1,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
           "id": "YEM-335",
           "name": "Al Jawf",
           "nameDe": "Gouvernement al-Dschauf",
@@ -8402,27 +8441,6 @@
           "score": 29
         },
         {
-          "title": "Yemen fighting escalates as forces battle for Bab al-Mandeb Strait",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/yemen-fighting-escalates-as-forces-battle-for-bab-al-mandeb-strait?traffic_source=rss",
-          "date": "2026-09-07T20:59:56.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Fighting is intensifying in Yemen as government-aligned forces launch counterattacks against the Iran-backed Houthis.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
           "title": "Yemen's Houthis accuse Saudi Arabia of air raids, missile strikes",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-houthis-accuse-saudi-arabia-air-raids-missile-strikes",
           "date": "2026-09-07T19:18:58.000Z",
@@ -8442,6 +8460,58 @@
             "label": "Luftangriff"
           },
           "score": 26
+        },
+        {
+          "title": "Yemeni forces launch counteroffensive against Houthis, vow to retake Sanaa",
+          "url": "https://www.aljazeera.com/news/2026/9/8/yemeni-forces-launch-counteroffensive-against-houthis-vow-to-retake-sanaa?traffic_source=rss",
+          "date": "2026-09-08T03:01:38.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Bid to take Sanaa comes as fighting between Yemeni forces and Houthis intensify in provinces of al-Bayda and al-Jawf.",
+          "isNew": true,
+          "region": {
+            "id": "YEM-3496",
+            "name": "Sanaa",
+            "nameDe": "Sanaa",
+            "type": "Governorate",
+            "anchor": [
+              44.4,
+              15.334
+            ],
+            "matched": "Sanaa"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
+        },
+        {
+          "title": "Yemen fighting escalates as forces battle for Bab al-Mandeb Strait",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/yemen-fighting-escalates-as-forces-battle-for-bab-al-mandeb-strait?traffic_source=rss",
+          "date": "2026-09-07T20:59:56.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Fighting is intensifying in Yemen as government-aligned forces launch counterattacks against the Iran-backed Houthis.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
         },
         {
           "title": "Houthis accuse Saudi Arabia of a strike on a prison in northern Yemen , killing 7 , including a child",
@@ -8640,28 +8710,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
-        },
-        {
-          "title": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state",
-          "date": "2026-09-07T20:41:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible' A top official within the US-backed Board of Peace on Monday said a failure to move forward in Gaza paired with rising violence in the occupied West Bank were making a two-state solution \"impossible\". Nickolay Mladenov, the high representative for Gaza under the US-backed \"Board of Peace\" tasked with im",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Civilians among at least 60 killed in Yemen as ground fighting escalates",
@@ -8944,6 +8993,27 @@
             "label": "Luftangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state",
+          "date": "2026-09-07T20:41:18.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible' A top official within the US-backed Board of Peace on Monday said a failure to move forward in Gaza paired with rising violence in the occupied West Bank were making a two-state solution \"impossible\". Nickolay Mladenov, the high representative for Gaza under the US-backed \"Board of Peace\" tasked with im",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "Yemen’s army claims air strikes against Houthis in Taiz",
@@ -9489,7 +9559,7 @@
           "score": 8
         }
       ],
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "iran-israel",
@@ -9566,8 +9636,8 @@
             51.831,
             35.568
           ],
-          "count": 10,
-          "newCount": 0,
+          "count": 11,
+          "newCount": 1,
           "event": {
             "type": "naval",
             "icon": "🚢",
@@ -9663,7 +9733,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 29
+          "score": 26
         },
         {
           "title": "IAEA warns over Iran nuclear access as Western powers push UN referral",
@@ -9672,7 +9742,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "UN nuclear watchdog urges Iran to cooperate, as Western powers push to refer its nuclear file to the Security Council.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9683,6 +9753,37 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Iran's acting defence minister says Tehran capable of targeting US warships",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-acting-defence-minister-says-tehran-capable-targeting-us-warships",
+          "date": "2026-09-08T03:04:24.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran's acting defence minister says Tehran&nbsp;capable of targeting US warships&nbsp;&nbsp; Iran’s acting defence minister has rejected Washington’s claims that Tehran lacks the technical capability to hit US warships enforcing the naval blockade of the country's ports. Majid Ibn Reza responded to these remarks by stressing that Iran has the&nbsp;technology to do so.&nbsp; \"God willing, you will ",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 22
         },
@@ -9831,27 +9932,6 @@
             "label": "Seeangriff"
           },
           "score": 20
-        },
-        {
-          "title": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrias-top-diplomat-condemns-iran-israel-arab-league-meeting",
-          "date": "2026-09-07T21:09:27.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting Damascus rejects the use of Arab territory by Iran to settle disputes or as a platform for attacks, Syrian state news agency Sana reported, quoting Syrian Foreign Minister Asaad al-Shaibani. Speaking at the Arab League Council of Foreign Ministers meeting, Shaibani said Syria supports dialogue and closer security and economic cooper",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
         },
         {
           "title": "World News in Brief: US-Iran war intensifies, aid for Myanmar, casualties in Ukraine",
@@ -10456,6 +10536,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrias-top-diplomat-condemns-iran-israel-arab-league-meeting",
+          "date": "2026-09-07T21:09:27.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting Damascus rejects the use of Arab territory by Iran to settle disputes or as a platform for attacks, Syrian state news agency Sana reported, quoting Syrian Foreign Minister Asaad al-Shaibani. Speaking at the Arab League Council of Foreign Ministers meeting, Shaibani said Syria supports dialogue and closer security and economic cooper",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 16
         },
@@ -11482,27 +11583,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "Trump says US sees ‘everything’ Iran does, threatens further attacks",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/09-02-trump-soundbite-iran-clip?traffic_source=rss",
-          "date": "2026-09-02T20:04:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US President Donald Trump has threatened further attacks on Iran and says the military destroyed a mine-laying rocket.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -11609,23 +11689,6 @@
           }
         },
         {
-          "id": "NGA-2879",
-          "name": "Kebbi State",
-          "nameDe": "Kebbi",
-          "type": "State",
-          "anchor": [
-            4.496,
-            11.765
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
           "id": "NGA-2843",
           "name": "Imo State",
           "nameDe": "Imo",
@@ -11657,6 +11720,23 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          }
+        },
+        {
+          "id": "NGA-2879",
+          "name": "Kebbi State",
+          "nameDe": "Kebbi",
+          "type": "State",
+          "anchor": [
+            4.496,
+            11.765
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           }
         },
         {
@@ -11832,37 +11912,6 @@
       ],
       "items": [
         {
-          "title": "  Our people are being murdered  - MACBAN cries out over Niger , Kebbi attacks",
-          "url": "https://dailypost.ng/2026/09/07/our-people-are-being-murdered-macban-cries-out-over-niger-kebbi-attacks/",
-          "date": "2026-09-07T21:30:00.000Z",
-          "source": "dailypost.ng",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2879",
-            "name": "Kebbi State",
-            "nameDe": "Kebbi",
-            "type": "State",
-            "anchor": [
-              4.496,
-              11.765
-            ],
-            "matched": "Kebbi"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
           "title": "Nigeria: After Reported Capture, Army Declares Notorious Terror Kingpin Wanted",
           "url": "https://allafrica.com/stories/202609070489.html",
           "date": "2026-09-07T13:20:39.000Z",
@@ -11967,6 +12016,37 @@
           "score": 23
         },
         {
+          "title": "  Our people are being murdered  - MACBAN cries out over Niger , Kebbi attacks",
+          "url": "https://dailypost.ng/2026/09/07/our-people-are-being-murdered-macban-cries-out-over-niger-kebbi-attacks/",
+          "date": "2026-09-07T21:30:00.000Z",
+          "source": "dailypost.ng",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2879",
+            "name": "Kebbi State",
+            "nameDe": "Kebbi",
+            "type": "State",
+            "anchor": [
+              4.496,
+              11.765
+            ],
+            "matched": "Kebbi"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
           "title": "ICPC’s red flag and Tinubu’s response: Why Nigeria must stop fighting corruption backwards, By Nafisat Bello",
           "url": "https://www.premiumtimesng.com/opinion/907882-icpcs-red-flag-and-tinubus-response-why-nigeria-must-stop-fighting-corruption-backwards-by-nafisat-bello.html",
           "date": "2026-09-07T12:58:22.000Z",
@@ -12030,27 +12110,6 @@
           "score": 22
         },
         {
-          "title": "Russia cements its role as Africa junta protector after helping quell Niger mutiny",
-          "url": "https://www.sfltimes.com/news/russia-cements-its-role-as-africa-junta-protector-after-helping-quell-nigers-mutiny",
-          "date": "2026-09-07T21:15:00.000Z",
-          "source": "sfltimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
           "title": "Failed Coup: Niger blames France, neighbouring countries, threatens international action",
           "url": "https://www.premiumtimesng.com/news/headlines/907669-failed-coup-niger-blames-france-neighbouring-countries-threatens-international-action.html",
           "date": "2026-09-06T06:12:51.000Z",
@@ -12068,27 +12127,6 @@
             "type": "election",
             "icon": "🗳️",
             "label": "Politik/Wahl"
-          },
-          "score": 18
-        },
-        {
-          "title": "Macron behind failed military mutiny Niger",
-          "url": "http://www.europesun.com/news/279291718/macron-behind-failed-military-mutiny-niger",
-          "date": "2026-09-07T21:15:00.000Z",
-          "source": "europesun.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 18
         },
@@ -12185,6 +12223,48 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Russia cements its role as Africa junta protector after helping quell Niger mutiny",
+          "url": "https://www.sfltimes.com/news/russia-cements-its-role-as-africa-junta-protector-after-helping-quell-nigers-mutiny",
+          "date": "2026-09-07T21:15:00.000Z",
+          "source": "sfltimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Macron behind failed military mutiny Niger",
+          "url": "http://www.europesun.com/news/279291718/macron-behind-failed-military-mutiny-niger",
+          "date": "2026-09-07T21:15:00.000Z",
+          "source": "europesun.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Uber withdraws from Nigeria",
@@ -12831,7 +12911,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 9
+          "score": 8
         },
         {
           "title": "Nigeria: Governors Shouldn't Give Motorcycles As Palliatives, Terrorists Use Them - Defence Minister",
@@ -13412,27 +13492,6 @@
           "score": 23
         },
         {
-          "title": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-uae-us-and-israel-normalising-permanent-state-war-middle-east",
-          "date": "2026-09-07T21:18:19.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East It took the&nbsp; Russian &nbsp;President Vladimir Putin 10 full months after his&nbsp; invasion of Ukraine &nbsp;to call what his country was engaged in a&nbsp; war .&nbsp; Even then, the word could only be used by him. Anyone else could get up to&nbsp; 15 years in prison &nbsp;for \"disseminating ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Somalia: Somali Commandos Conduct Operations Against Al-Shabaab in Lower Shabelle",
           "url": "https://allafrica.com/stories/202609070227.html",
           "date": "2026-09-07T10:22:01.000Z",
@@ -13460,6 +13519,27 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[Shabelle] Bardere, Somalia -- The commander of Somalia's land forces, Brigadier General Sahal Abdullahi Omar, has arrived in the southern town of Baardheere to assess the security situation and ongoing military operations in the Gedo region.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-uae-us-and-israel-normalising-permanent-state-war-middle-east",
+          "date": "2026-09-07T21:18:19.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East It took the&nbsp; Russian &nbsp;President Vladimir Putin 10 full months after his&nbsp; invasion of Ukraine &nbsp;to call what his country was engaged in a&nbsp; war .&nbsp; Even then, the word could only be used by him. Anyone else could get up to&nbsp; 15 years in prison &nbsp;for \"disseminating ",
           "isNew": false,
           "region": null,
           "event": {
@@ -13735,7 +13815,7 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 82,
+      "activity": 80,
       "severity": 63,
       "newCount": 0,
       "signals": [
@@ -14266,27 +14346,6 @@
           "score": 18
         },
         {
-          "title": "Nigeria not behind failed Niger Republic coup - Minister",
-          "url": "https://thesun.ng/nigeria-not-behind-failed-niger-republic-coup-minister/",
-          "date": "2026-09-05T02:45:00.000Z",
-          "source": "thesun.ng",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 18
-        },
-        {
           "title": "Nigeria: Military Moves to Choke Logistics, Financial Lifelines Sustaining Asymmetric Warfare",
           "url": "https://allafrica.com/stories/202609070097.html",
           "date": "2026-09-07T06:13:12.000Z",
@@ -14379,6 +14438,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Nigeria not behind failed Niger Republic coup - Minister",
+          "url": "https://thesun.ng/nigeria-not-behind-failed-niger-republic-coup-minister/",
+          "date": "2026-09-05T02:45:00.000Z",
+          "source": "thesun.ng",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
         },
         {
           "title": "Uber withdraws from Nigeria",
@@ -14837,7 +14917,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 9
+          "score": 8
         },
         {
           "title": "Public Morality : Nigeria War On its Marginalised Groups",
@@ -15369,7 +15449,7 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 82,
+      "activity": 80,
       "severity": 63,
       "newCount": 0,
       "signals": [
@@ -15535,7 +15615,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Bolivian blast death toll rises to 9; rescuers search for missing soldiers",
@@ -15733,37 +15813,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "CM Bugti, Nacta chief discuss Balochistan security",
-          "url": "https://www.dawn.com/news/2027993/cm-bugti-nacta-chief-discuss-balochistan-security",
-          "date": "2026-09-07T03:29:47.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "QUETTA: Balochistan Chief Minister Mir Sarfraz Ahmed Bugti on Sunday met National Counter Terr­orism Authority (Nacta) National Coordinator Maj Gen Faisal Naseer and discussed the overall law and order situation in the province, measures against terrorism, intelligence coordination and a coordinated strategy for establishing lasting peace. During the meeting, matters relating to cooperation betwee",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1108",
-            "name": "Balochistan",
-            "nameDe": "Belutschistan",
-            "type": "Province",
-            "anchor": [
-              65.869,
-              28.318
-            ],
-            "matched": "Balochistan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -16059,6 +16108,37 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "CM Bugti, Nacta chief discuss Balochistan security",
+          "url": "https://www.dawn.com/news/2027993/cm-bugti-nacta-chief-discuss-balochistan-security",
+          "date": "2026-09-07T03:29:47.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "QUETTA: Balochistan Chief Minister Mir Sarfraz Ahmed Bugti on Sunday met National Counter Terr­orism Authority (Nacta) National Coordinator Maj Gen Faisal Naseer and discussed the overall law and order situation in the province, measures against terrorism, intelligence coordination and a coordinated strategy for establishing lasting peace. During the meeting, matters relating to cooperation betwee",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Security forces kill over 20 terrorists during multiple engagements in KP: ISPR",
@@ -17833,7 +17913,7 @@
       ],
       "activity": 54,
       "severity": 55,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -17961,7 +18041,7 @@
           "source": "news9.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -17973,7 +18053,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Ten killed and dozens injured in Mexico fireworks blast",
@@ -18634,6 +18714,27 @@
       ],
       "items": [
         {
+          "title": "Syrian reactor could have been used for nuclear weapons if completed, UN says",
+          "url": "https://www.theguardian.com/world/2026/sep/07/syrian-reactor-could-nuclear-weapons-if-completed-un",
+          "date": "2026-09-07T16:37:31.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Chief of nuclear watchdog says secret Assad-era facility would have been able to produce fissile material A nearly complete nuclear reactor built secretly during the rule of the toppled Syrian leader Bashar al-Assad would have been able to produce fissile material for possible use in nuclear weapons, the chief of the UN nuclear watchdog has revealed. Inspectors from the International Atomic Energy",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
           "title": "Syria’s top diplomat condemns Iran, Israel at Arab League meeting",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syrias-top-diplomat-condemns-iran-israel-arab-league-meeting",
           "date": "2026-09-07T21:09:27.000Z",
@@ -18662,28 +18763,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 21
-        },
-        {
-          "title": "Syrian reactor could have been used for nuclear weapons if completed, UN says",
-          "url": "https://www.theguardian.com/world/2026/sep/07/syrian-reactor-could-nuclear-weapons-if-completed-un",
-          "date": "2026-09-07T16:37:31.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Chief of nuclear watchdog says secret Assad-era facility would have been able to produce fissile material A nearly complete nuclear reactor built secretly during the rule of the toppled Syrian leader Bashar al-Assad would have been able to produce fissile material for possible use in nuclear weapons, the chief of the UN nuclear watchdog has revealed. Inspectors from the International Atomic Energy",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "A Jerusalemite man was martyred by Israeli occupation forces near Damascus Gate , and his body was seized",
@@ -19476,37 +19556,6 @@
           "score": 23
         },
         {
-          "title": "Pakistan faces uphill GSP+ battle",
-          "url": "https://www.dawn.com/news/2028003/pakistan-faces-uphill-gsp-battle",
-          "date": "2026-09-07T06:08:31.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• As Islamabad negotiates its reapplication for critical trading scheme, EU envoy says GSP+ benefits ‘can’t be taken for granted’ • Country may continue to receive benefits until 2028-end, but this doesn’t mean automatic rollover into new scheme • Islamabad remains engaged with bloc on ‘effective implementation of international conventions’; FO says EU assessment didn’t offer ‘sufficiently balance",
-          "isNew": false,
-          "region": {
-            "id": "PAK-1110",
-            "name": "Islamabad Capital Territory",
-            "nameDe": "Hauptstadtterritorium Islamabad",
-            "type": "Capital Territory",
-            "anchor": [
-              73.085,
-              33.66
-            ],
-            "matched": "Islamabad"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 23
-        },
-        {
           "title": "Pakistan rejects India's 'baseless' claims on status of occupied Kashmir",
           "url": "https://www.dawn.com/news/2028090/pakistan-rejects-indias-baseless-claims-on-status-of-occupied-kashmir",
           "date": "2026-09-07T14:11:06.000Z",
@@ -19534,6 +19583,37 @@
             "type": "election",
             "icon": "🗳️",
             "label": "Politik/Wahl"
+          },
+          "score": 22
+        },
+        {
+          "title": "Pakistan faces uphill GSP+ battle",
+          "url": "https://www.dawn.com/news/2028003/pakistan-faces-uphill-gsp-battle",
+          "date": "2026-09-07T06:08:31.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "• As Islamabad negotiates its reapplication for critical trading scheme, EU envoy says GSP+ benefits ‘can’t be taken for granted’ • Country may continue to receive benefits until 2028-end, but this doesn’t mean automatic rollover into new scheme • Islamabad remains engaged with bloc on ‘effective implementation of international conventions’; FO says EU assessment didn’t offer ‘sufficiently balance",
+          "isNew": false,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 22
         },
@@ -20149,7 +20229,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Yemen fighting escalates as forces battle for Bab al-Mandeb Strait",
@@ -20170,7 +20250,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Trump threatens to block Canada’s Bombardier sales unless planes made in US",
@@ -20362,48 +20442,6 @@
           "score": 19
         },
         {
-          "title": "EU says no place for 'glorification of war criminals' as Mladic buried",
-          "url": "https://www.france24.com/en/eu-says-no-place-for-glorification-of-war-criminals-as-mladic-buried",
-          "date": "2026-09-07T21:35:17.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The European Union on Monday denounced any \"glorification\" of convicted war criminal Ratko Mladic in Serbia, as thousands gathered in Belgrade for his funeral. FRANCE 24's James Vasina reports.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Volkswagen's Osnabrück plant to switch from cars to defence",
-          "url": "https://www.france24.com/en/tv-shows/business/20260907-volkswagen-s-osnabr%C3%BCck-plant-to-switch-from-cars-to-defence",
-          "date": "2026-09-07T20:52:55.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Crisis-hit Volkswagen has struck a preliminary deal to sell its Osnabrück plant in Lower Saxony to the state government and Israeli investor Aurelius Capital. From mid 2027, the iconic factory is expected to start producing equipment for Rafael Advanced Defence Systems, the company behind the Iron Dome missile defence system. But first, a look at the state of the German economy following far-right",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 19
-        },
-        {
           "title": "US says ‘redirected’ 94 vessels in Strait of Hormuz",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-says-redirected-94-vessels-strait-hormuz",
           "date": "2026-09-07T22:23:16.000Z",
@@ -20507,6 +20545,48 @@
             "label": "Seeangriff"
           },
           "score": 18
+        },
+        {
+          "title": "EU says no place for 'glorification of war criminals' as Mladic buried",
+          "url": "https://www.france24.com/en/eu-says-no-place-for-glorification-of-war-criminals-as-mladic-buried",
+          "date": "2026-09-07T21:35:17.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "The European Union on Monday denounced any \"glorification\" of convicted war criminal Ratko Mladic in Serbia, as thousands gathered in Belgrade for his funeral. FRANCE 24's James Vasina reports.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Volkswagen's Osnabrück plant to switch from cars to defence",
+          "url": "https://www.france24.com/en/tv-shows/business/20260907-volkswagen-s-osnabr%C3%BCck-plant-to-switch-from-cars-to-defence",
+          "date": "2026-09-07T20:52:55.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Crisis-hit Volkswagen has struck a preliminary deal to sell its Osnabrück plant in Lower Saxony to the state government and Israeli investor Aurelius Capital. From mid 2027, the iconic factory is expected to start producing equipment for Rafael Advanced Defence Systems, the company behind the Iron Dome missile defence system. But first, a look at the state of the German economy following far-right",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 16
         },
         {
           "title": "Trump downplays war with Iran, in which 18 US service members have been killed so far, as ‘small potatoes’ – as it happened",
@@ -21114,7 +21194,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Trump sends envoys to Russia, Ukraine with new peace plan",
@@ -21135,7 +21215,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "‘Small potatoes’: US President Trump downplays war on Iran",
@@ -21854,441 +21934,6 @@
       "itemCount": 80
     },
     {
-      "id": "colombia",
-      "name": "Kolumbien",
-      "nameEn": "Colombia",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Colombia"
-      ],
-      "lat": 5,
-      "lon": -74,
-      "tier": "high",
-      "since": "1964 / Krise seit 2025",
-      "parties": [
-        "Regierung",
-        "ELN",
-        "FARC-Dissidenten",
-        "Clan del Golfo"
-      ],
-      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
-      "hotspots": [
-        "Catatumbo",
-        "Cauca",
-        "Arauca",
-        "Chocó"
-      ],
-      "activity": 34,
-      "severity": 49,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 5
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COL",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Guerrilla drone attack kills three soldiers in Colombia",
-          "url": "https://www.surinametimes.com/artikel/guerrilla-drone-attack-kills-three-soldiers-in-colombia",
-          "date": "2026-09-07T12:45:00.000Z",
-          "source": "surinametimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
-          "title": "Rubio heads to Ecuador, Colombia, Peru after right-wing victories in region",
-          "url": "https://www.aljazeera.com/news/2026/9/7/rubio-heads-to-ecuador-colombia-peru-after-right-wing-victories-in-region?traffic_source=rss",
-          "date": "2026-09-07T22:41:27.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Rightward shift in Latin America comes as Washington pledges to grow influence, take militaristic approach to cartels.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Drone attack blamed on guerrillas kills at least three soldiers in Colombia",
-          "url": "https://www.theguardian.com/world/2026/sep/05/drone-attack-guerrillas-kills-soldiers-colombia",
-          "date": "2026-09-05T22:16:55.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Officials accuse National Liberation Army of launching strike followed by clash inside military compound An attack involving explosives dropped from drones followed by a clash inside a military compound in north-eastern Colombia has killed at least three soldiers and wounded four, Colombia’s army said on Saturday. Local authorities blamed the attack – which took place late on Friday – on the rebel",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Colombia vows crackdown after deadly drone swarm attack",
-          "url": "http://www.brazilsun.com/news/279289047/colombia-vows-crackdown-after-deadly-drone-swarm-attack",
-          "date": "2026-09-06T08:30:00.000Z",
-          "source": "brazilsun.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Colombian government reports three killed in rebel attack on military post",
-          "url": "https://www.aljazeera.com/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post?traffic_source=rss",
-          "date": "2026-09-05T20:03:29.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Colombian authorities blame ELN rebel group for attack that reportedly included drones dropping explosives on compound.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Colombia : Drone attack from suspected guerrillas kills 3 soldiers",
-          "url": "https://www.cp24.com/news/world/2026/09/06/drone-attack-launched-by-suspected-guerrillas-kills-at-least-3-soldiers-in-colombia/",
-          "date": "2026-09-06T00:45:00.000Z",
-          "source": "cp24.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Guerrilla drone attack kills 3 Colombian soldiers",
-          "url": "https://news.az/news/guerrilla-drone-attack-kills-3-colombian-soldiers",
-          "date": "2026-09-05T23:00:00.000Z",
-          "source": "news.az",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Drone attack launched by suspected guerrillas kills at least 3 soldiers in Colombia",
-          "url": "https://www.thepeterboroughexaminer.com/news/world/americas/drone-attack-launched-by-suspected-guerrillas-kills-at-least-3-soldiers-in-colombia/article_85bffbba-f087-537a-9ef8-c5adbf86ab2c.html",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "thepeterboroughexaminer.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Guerrilla drone attack kills two in Colombia",
-          "url": "https://www.bssnews.net/international/421237",
-          "date": "2026-09-05T13:45:00.000Z",
-          "source": "bssnews.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Colombia Judge Temporarily Bars Airstrikes When Intelligence Shows Children May Be Present",
-          "url": "https://latinamericanpost.com/americas/colombia-judge-temporarily-bars-airstrikes-when-intelligence-shows-children-may-be-present/",
-          "date": "2026-09-04T18:00:00.000Z",
-          "source": "latinamericanpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "1 killed , 11 injured in car bomb attack in northeastern Colombia",
-          "url": "http://www.venezuelastar.com/news/279279794/1-killed-11-injured-in-car-bomb-attack-in-northeastern-colombia",
-          "date": "2026-09-02T01:45:00.000Z",
-          "source": "venezuelastar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Deadly car bomb attack at Colombia police station",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/deadly-car-bomb-attack-at-colombia-police-station?traffic_source=rss",
-          "date": "2026-09-01T21:01:10.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Deadly car bomb attack at Colombia police station",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Colombia Cannot Bomb Child Recruitment Out of the Jungle Alone",
-          "url": "https://latinamericanpost.com/analysis-en/colombia-cannot-bomb-child-recruitment-out-of-the-jungle-alone/",
-          "date": "2026-09-01T19:15:00.000Z",
-          "source": "latinamericanpost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
-        },
-        {
-          "title": "Government air strikes kill 20 alleged guerrillas in Colombia, president says",
-          "url": "https://www.france24.com/en/americas/20260901-government-air-strikes-kill-20-alleged-guerrillas-in-colombia-president-says",
-          "date": "2026-09-01T05:42:42.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Fresh government air strikes have killed 20 alleged members of the Central General Staff (EMC) armed group in southern Colombia, the country's new right-wing President Abelardo de la Espriella said Monday. The new administration carried out two other deadly air strikes against suspected guerrillas in August, which sources within Colombia's forensics authority say killed at least four minors.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Government bombing raid kills 20 guerrillas in Colombia : president",
-          "url": "https://www.jacarandafm.com/news/news/govt-bombing-raid-kills-20-guerrillas-in-colombia-pres/",
-          "date": "2026-09-01T05:30:00.000Z",
-          "source": "jacarandafm.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Three minors killed in Colombia armed group crackdown",
-          "url": "https://www.aljazeera.com/news/2026/8/31/three-minors-killed-in-colombia-armed-group-crackdown",
-          "date": "2026-09-01T02:45:00.000Z",
-          "source": "aljazeera.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Colombia president provokes disgust by posing with bodies of ‘terrorists’",
-          "url": "https://www.theguardian.com/world/2026/sep/04/colombia-president-posts-video-guerrillas-body-bags-abelardo-de-la-espriella",
-          "date": "2026-09-04T13:50:43.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Abelardo De La Espriella posts video of himself with rows of body bags as performative populism continues to sweep Americas Colombia’s hardline president, Abelardo De La Espriella, has provoked outrage after posting a video on social media in which he strides through rows of white body bags that he says contained the corpses of 23 “neutralised” guerrillas. De La Espriella took power last month vow",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Black Sea Petroleum claims clean break from Russian oil as EU sanctions loom",
-          "url": "https://oc-media.org/black-sea-petroleum-claims-clean-break-from-russian-oil-as-eu-sanctions-loom/",
-          "date": "2026-09-03T13:24:24.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The EU had threatened to sanction the company if it did not cease processing Russian crude by 2027.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 18
-    },
-    {
       "id": "somalia",
       "name": "Somalia",
       "nameEn": "Somalia",
@@ -22809,6 +22454,420 @@
         }
       ],
       "itemCount": 18
+    },
+    {
+      "id": "colombia",
+      "name": "Kolumbien",
+      "nameEn": "Colombia",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Colombia"
+      ],
+      "lat": 5,
+      "lon": -74,
+      "tier": "high",
+      "since": "1964 / Krise seit 2025",
+      "parties": [
+        "Regierung",
+        "ELN",
+        "FARC-Dissidenten",
+        "Clan del Golfo"
+      ],
+      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
+      "hotspots": [
+        "Catatumbo",
+        "Cauca",
+        "Arauca",
+        "Chocó"
+      ],
+      "activity": 33,
+      "severity": 48,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 4
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "COL",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "Guerrilla drone attack kills three soldiers in Colombia",
+          "url": "https://www.surinametimes.com/artikel/guerrilla-drone-attack-kills-three-soldiers-in-colombia",
+          "date": "2026-09-07T12:45:00.000Z",
+          "source": "surinametimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Rubio heads to Ecuador, Colombia, Peru after right-wing victories in region",
+          "url": "https://www.aljazeera.com/news/2026/9/7/rubio-heads-to-ecuador-colombia-peru-after-right-wing-victories-in-region?traffic_source=rss",
+          "date": "2026-09-07T22:41:27.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Rightward shift in Latin America comes as Washington pledges to grow influence, take militaristic approach to cartels.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Drone attack blamed on guerrillas kills at least three soldiers in Colombia",
+          "url": "https://www.theguardian.com/world/2026/sep/05/drone-attack-guerrillas-kills-soldiers-colombia",
+          "date": "2026-09-05T22:16:55.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Officials accuse National Liberation Army of launching strike followed by clash inside military compound An attack involving explosives dropped from drones followed by a clash inside a military compound in north-eastern Colombia has killed at least three soldiers and wounded four, Colombia’s army said on Saturday. Local authorities blamed the attack – which took place late on Friday – on the rebel",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Colombia vows crackdown after deadly drone swarm attack",
+          "url": "http://www.brazilsun.com/news/279289047/colombia-vows-crackdown-after-deadly-drone-swarm-attack",
+          "date": "2026-09-06T08:30:00.000Z",
+          "source": "brazilsun.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Colombian government reports three killed in rebel attack on military post",
+          "url": "https://www.aljazeera.com/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post?traffic_source=rss",
+          "date": "2026-09-05T20:03:29.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Colombian authorities blame ELN rebel group for attack that reportedly included drones dropping explosives on compound.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Colombia : Drone attack from suspected guerrillas kills 3 soldiers",
+          "url": "https://www.cp24.com/news/world/2026/09/06/drone-attack-launched-by-suspected-guerrillas-kills-at-least-3-soldiers-in-colombia/",
+          "date": "2026-09-06T00:45:00.000Z",
+          "source": "cp24.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Guerrilla drone attack kills 3 Colombian soldiers",
+          "url": "https://news.az/news/guerrilla-drone-attack-kills-3-colombian-soldiers",
+          "date": "2026-09-05T23:00:00.000Z",
+          "source": "news.az",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Drone attack launched by suspected guerrillas kills at least 3 soldiers in Colombia",
+          "url": "https://www.thepeterboroughexaminer.com/news/world/americas/drone-attack-launched-by-suspected-guerrillas-kills-at-least-3-soldiers-in-colombia/article_85bffbba-f087-537a-9ef8-c5adbf86ab2c.html",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "thepeterboroughexaminer.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Guerrilla drone attack kills two in Colombia",
+          "url": "https://www.bssnews.net/international/421237",
+          "date": "2026-09-05T13:45:00.000Z",
+          "source": "bssnews.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Colombia Judge Temporarily Bars Airstrikes When Intelligence Shows Children May Be Present",
+          "url": "https://latinamericanpost.com/americas/colombia-judge-temporarily-bars-airstrikes-when-intelligence-shows-children-may-be-present/",
+          "date": "2026-09-04T18:00:00.000Z",
+          "source": "latinamericanpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "1 killed , 11 injured in car bomb attack in northeastern Colombia",
+          "url": "http://www.venezuelastar.com/news/279279794/1-killed-11-injured-in-car-bomb-attack-in-northeastern-colombia",
+          "date": "2026-09-02T01:45:00.000Z",
+          "source": "venezuelastar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Deadly car bomb attack at Colombia police station",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/deadly-car-bomb-attack-at-colombia-police-station?traffic_source=rss",
+          "date": "2026-09-01T21:01:10.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Deadly car bomb attack at Colombia police station",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Colombia Cannot Bomb Child Recruitment Out of the Jungle Alone",
+          "url": "https://latinamericanpost.com/analysis-en/colombia-cannot-bomb-child-recruitment-out-of-the-jungle-alone/",
+          "date": "2026-09-01T19:15:00.000Z",
+          "source": "latinamericanpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
+          "title": "Government air strikes kill 20 alleged guerrillas in Colombia, president says",
+          "url": "https://www.france24.com/en/americas/20260901-government-air-strikes-kill-20-alleged-guerrillas-in-colombia-president-says",
+          "date": "2026-09-01T05:42:42.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Fresh government air strikes have killed 20 alleged members of the Central General Staff (EMC) armed group in southern Colombia, the country's new right-wing President Abelardo de la Espriella said Monday. The new administration carried out two other deadly air strikes against suspected guerrillas in August, which sources within Colombia's forensics authority say killed at least four minors.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Government bombing raid kills 20 guerrillas in Colombia : president",
+          "url": "https://www.jacarandafm.com/news/news/govt-bombing-raid-kills-20-guerrillas-in-colombia-pres/",
+          "date": "2026-09-01T05:30:00.000Z",
+          "source": "jacarandafm.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Colombia president provokes disgust by posing with bodies of ‘terrorists’",
+          "url": "https://www.theguardian.com/world/2026/sep/04/colombia-president-posts-video-guerrillas-body-bags-abelardo-de-la-espriella",
+          "date": "2026-09-04T13:50:43.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Abelardo De La Espriella posts video of himself with rows of body bags as performative populism continues to sweep Americas Colombia’s hardline president, Abelardo De La Espriella, has provoked outrage after posting a video on social media in which he strides through rows of white body bags that he says contained the corpses of 23 “neutralised” guerrillas. De La Espriella took power last month vow",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Black Sea Petroleum claims clean break from Russian oil as EU sanctions loom",
+          "url": "https://oc-media.org/black-sea-petroleum-claims-clean-break-from-russian-oil-as-eu-sanctions-loom/",
+          "date": "2026-09-03T13:24:24.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The EU had threatened to sanction the company if it did not cease processing Russian crude by 2027.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 17
     },
     {
       "id": "south-sudan",
@@ -23419,7 +23478,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 11
+          "count": 12
         },
         {
           "key": "casualties",
@@ -23453,12 +23512,12 @@
       "regions": [],
       "items": [
         {
-          "title": "Live: Russia resumes strikes on Kyiv after three-day halt",
-          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
-          "date": "2026-09-08T02:00:01.000Z",
-          "source": "France 24",
+          "title": "Russia strikes Kyiv as three-day pause during US envoy visits ends",
+          "url": "https://www.aljazeera.com/news/2026/9/8/russia-strikes-kyiv-as-three-day-pause-during-us-envoy-visits-ends?traffic_source=rss",
+          "date": "2026-09-08T03:08:28.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Russia resumed strikes on Kyiv late Monday after a three-day pause ordered by President Vladimir Putin expired, Ukraine’s emergency service said. The halt coincided with visits to Moscow and Kyiv by US President Donald Trump’s envoys Steve Witkoff and Jared Kushner, who were holding talks aimed at ending the war. Follow our liveblog for the latest updates.",
+          "summary": "US envoy says 'encouraged' by talks as White House official told Reuters next steps to be announced in coming weeks.",
           "isNew": true,
           "region": null,
           "event": {
@@ -23472,6 +23531,27 @@
             "label": "Verhandlungen"
           },
           "score": 26
+        },
+        {
+          "title": "Live: Russia resumes strikes on Kyiv after three-day halt",
+          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
+          "date": "2026-09-08T02:00:01.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Russia resumed strikes on Kyiv late Monday after a three-day pause ordered by President Vladimir Putin expired, Ukraine’s emergency service said. The halt coincided with visits to Moscow and Kyiv by US President Donald Trump’s envoys Steve Witkoff and Jared Kushner, who were holding talks aimed at ending the war. Follow our liveblog for the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 25
         },
         {
           "title": "Kyiv air raid alerts at record high as Russia launches round-the-clock strikes",
@@ -23621,27 +23701,6 @@
           "score": 18
         },
         {
-          "title": "Russia shutters German consulate as diplomatic freeze deepens",
-          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
-          "date": "2026-09-07T18:27:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 16
-        },
-        {
           "title": "Russia and North Korea open first road bridge across their shared border",
           "url": "https://www.theguardian.com/world/2026/sep/07/russia-north-korea-open-first-road-bridge-tumen-river",
           "date": "2026-09-07T09:53:53.000Z",
@@ -23724,6 +23783,27 @@
             "label": "Drohnenangriff"
           },
           "score": 16
+        },
+        {
+          "title": "Russia shutters German consulate as diplomatic freeze deepens",
+          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
+          "date": "2026-09-07T18:27:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
         },
         {
           "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
@@ -24734,27 +24814,6 @@
           "score": 11
         },
         {
-          "title": "Trump sends envoys to Russia, Ukraine with new peace plan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/trump-sends-envoys-to-russia-ukraine-with-new-peace-plan?traffic_source=rss",
-          "date": "2026-09-05T03:25:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Al Jazeera’s Kimberly Halkett reports that US President Donald Trump is sending envoys Jared Kushner and Steve Witkoff.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 11
-        },
-        {
           "title": "Russian Suspected of Triple Homicide in Montenegro Dies by Suicide",
           "url": "https://balkaninsight.com/2026/09/01/russian-suspected-of-triple-homicide-in-montenegro-dies-by-suicide/bi/",
           "date": "2026-09-01T08:57:37.000Z",
@@ -24774,6 +24833,27 @@
             "label": "Opfer"
           },
           "score": 9
+        },
+        {
+          "title": "Trump sends envoys to Russia, Ukraine with new peace plan",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/trump-sends-envoys-to-russia-ukraine-with-new-peace-plan?traffic_source=rss",
+          "date": "2026-09-05T03:25:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Al Jazeera’s Kimberly Halkett reports that US President Donald Trump is sending envoys Jared Kushner and Steve Witkoff.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 8
         },
         {
           "title": "Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
@@ -25112,7 +25192,7 @@
           "score": 8
         }
       ],
-      "itemCount": 79
+      "itemCount": 80
     },
     {
       "id": "moldova-transnistria",
@@ -25145,7 +25225,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 12
+          "count": 13
         },
         {
           "key": "casualties",
@@ -25179,12 +25259,12 @@
       "regions": [],
       "items": [
         {
-          "title": "Live: Russia resumes strikes on Kyiv after three-day halt",
-          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
-          "date": "2026-09-08T02:00:01.000Z",
-          "source": "France 24",
+          "title": "Russia strikes Kyiv as three-day pause during US envoy visits ends",
+          "url": "https://www.aljazeera.com/news/2026/9/8/russia-strikes-kyiv-as-three-day-pause-during-us-envoy-visits-ends?traffic_source=rss",
+          "date": "2026-09-08T03:08:28.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Russia resumed strikes on Kyiv late Monday after a three-day pause ordered by President Vladimir Putin expired, Ukraine’s emergency service said. The halt coincided with visits to Moscow and Kyiv by US President Donald Trump’s envoys Steve Witkoff and Jared Kushner, who were holding talks aimed at ending the war. Follow our liveblog for the latest updates.",
+          "summary": "US envoy says 'encouraged' by talks as White House official told Reuters next steps to be announced in coming weeks.",
           "isNew": true,
           "region": null,
           "event": {
@@ -25198,6 +25278,27 @@
             "label": "Verhandlungen"
           },
           "score": 26
+        },
+        {
+          "title": "Live: Russia resumes strikes on Kyiv after three-day halt",
+          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
+          "date": "2026-09-08T02:00:01.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Russia resumed strikes on Kyiv late Monday after a three-day pause ordered by President Vladimir Putin expired, Ukraine’s emergency service said. The halt coincided with visits to Moscow and Kyiv by US President Donald Trump’s envoys Steve Witkoff and Jared Kushner, who were holding talks aimed at ending the war. Follow our liveblog for the latest updates.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 25
         },
         {
           "title": "Kyiv air raid alerts at record high as Russia launches round-the-clock strikes",
@@ -25389,27 +25490,6 @@
           "score": 18
         },
         {
-          "title": "Russia shutters German consulate as diplomatic freeze deepens",
-          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
-          "date": "2026-09-07T18:27:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 16
-        },
-        {
           "title": "Russia and North Korea open first road bridge across their shared border",
           "url": "https://www.theguardian.com/world/2026/sep/07/russia-north-korea-open-first-road-bridge-tumen-river",
           "date": "2026-09-07T09:53:53.000Z",
@@ -25471,6 +25551,27 @@
             "label": "Drohnenangriff"
           },
           "score": 16
+        },
+        {
+          "title": "Russia shutters German consulate as diplomatic freeze deepens",
+          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
+          "date": "2026-09-07T18:27:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
         },
         {
           "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
@@ -26481,27 +26582,6 @@
           "score": 11
         },
         {
-          "title": "Trump sends envoys to Russia, Ukraine with new peace plan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/trump-sends-envoys-to-russia-ukraine-with-new-peace-plan?traffic_source=rss",
-          "date": "2026-09-05T03:25:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Al Jazeera’s Kimberly Halkett reports that US President Donald Trump is sending envoys Jared Kushner and Steve Witkoff.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 11
-        },
-        {
           "title": "Russian Suspected of Triple Homicide in Montenegro Dies by Suicide",
           "url": "https://balkaninsight.com/2026/09/01/russian-suspected-of-triple-homicide-in-montenegro-dies-by-suicide/bi/",
           "date": "2026-09-01T08:57:37.000Z",
@@ -26521,6 +26601,27 @@
             "label": "Opfer"
           },
           "score": 9
+        },
+        {
+          "title": "Trump sends envoys to Russia, Ukraine with new peace plan",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/trump-sends-envoys-to-russia-ukraine-with-new-peace-plan?traffic_source=rss",
+          "date": "2026-09-05T03:25:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Al Jazeera’s Kimberly Halkett reports that US President Donald Trump is sending envoys Jared Kushner and Steve Witkoff.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 8
         },
         {
           "title": "Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
@@ -26838,7 +26939,7 @@
           "score": 8
         }
       ],
-      "itemCount": 79
+      "itemCount": 80
     },
     {
       "id": "ethiopia",
@@ -26867,20 +26968,20 @@
         "Afar",
         "Assab"
       ],
-      "activity": 6,
+      "activity": 5,
       "severity": 40,
       "newCount": 0,
       "signals": [
         {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        },
-        {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
           "count": 1
         },
         {
@@ -26935,35 +27036,35 @@
       ],
       "items": [
         {
-          "title": "After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
-          "url": "https://www.aljazeera.com/news/2026/9/5/after-pretoria-peace-deal-old-enemies-in-ethiopias-tigray-find-new-ground?traffic_source=rss",
-          "date": "2026-09-05T03:05:28.000Z",
-          "source": "Al Jazeera",
+          "title": "Sudan: Sudan's Burhan Inspects Army's Readiness in Blue Nile State Amid Escalating Clashes and Reported RSF Buildup Near Ethiopia Border",
+          "url": "https://allafrica.com/stories/202609030540.html",
+          "date": "2026-09-03T16:38:25.000Z",
+          "source": "AllAfrica – Konflikte",
           "sourceType": "news",
-          "summary": "The 2022 peace deal ended the war but left key disputes unresolved, giving the TPLF room to regroup as tensions return.",
+          "summary": "[Addis Standard] Addis Abeba -- Sudanese Sovereign Council Chairman and army chief Abdel Fattah al-Burhan inspected military forces and operational readiness in Blue Nile State as clashes intensify between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) and its ally, the Sudan People's Liberation Movement-North (SPLM-N), near the Ethiopian border.",
           "isNew": false,
           "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
             "type": "Administrative State",
             "anchor": [
-              38.442,
-              13.778
+              38.786,
+              8.978
             ],
-            "matched": "Tigray"
+            "matched": "Addis Abeba"
           },
           "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 18
+          "score": 17
         },
         {
           "title": "Ethiopia: Tigray Residents Vow to Step Up Fight Against Abuses By Illegal TPLF Faction",
@@ -26997,6 +27098,37 @@
           "score": 16
         },
         {
+          "title": "After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
+          "url": "https://www.aljazeera.com/news/2026/9/5/after-pretoria-peace-deal-old-enemies-in-ethiopias-tigray-find-new-ground?traffic_source=rss",
+          "date": "2026-09-05T03:05:28.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The 2022 peace deal ended the war but left key disputes unresolved, giving the TPLF room to regroup as tensions return.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3110",
+            "name": "Tigray",
+            "nameDe": "Tigray",
+            "type": "Administrative State",
+            "anchor": [
+              38.442,
+              13.778
+            ],
+            "matched": "Tigray"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
           "title": "Nigerian , Ethiopian youths plant trees in Abuja to battle climate change",
           "url": "https://quicknews-africa.net/nigerian-ethiopian-youths-plant-trees-in-abuja-to-battle-climate-change/",
           "date": "2026-09-04T16:45:00.000Z",
@@ -27005,37 +27137,6 @@
           "summary": "",
           "isNew": false,
           "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Sudan: Sudan's Burhan Inspects Army's Readiness in Blue Nile State Amid Escalating Clashes and Reported RSF Buildup Near Ethiopia Border",
-          "url": "https://allafrica.com/stories/202609030540.html",
-          "date": "2026-09-03T16:38:25.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Sudanese Sovereign Council Chairman and army chief Abdel Fattah al-Burhan inspected military forces and operational readiness in Blue Nile State as clashes intensify between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) and its ally, the Sudan People's Liberation Movement-North (SPLM-N), near the Ethiopian border.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -29312,7 +29413,7 @@
         "Sirte",
         "Ölhalbmond"
       ],
-      "activity": 10,
+      "activity": 7,
       "severity": 25,
       "newCount": 0,
       "signals": [],
@@ -29362,7 +29463,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 15
+          "score": 11
         },
         {
           "title": "Libya dismantles sabotage cell targeting oil , power facilities - Xinhua",
@@ -30124,138 +30225,6 @@
       "itemCount": 3
     },
     {
-      "id": "rohingya-bangladesh",
-      "name": "Bangladesch / Rohingya-Krise",
-      "nameEn": "Bangladesh & Rohingya",
-      "region": "Asien (Süd)",
-      "countries": [
-        "Bangladesh"
-      ],
-      "lat": 21.4,
-      "lon": 92.2,
-      "tier": "medium",
-      "since": "2017",
-      "parties": [
-        "Bangladesch",
-        "Rohingya-Flüchtlinge",
-        "ARSA/RSO",
-        "Arakan Army",
-        "Myanmar"
-      ],
-      "background": "Über eine Million Rohingya in Cox's Bazar bei sinkender Finanzierung; Gewalt in den Lagern und Grenzspannungen mit der Arakan Army.",
-      "hotspots": [
-        "Cox's Bazar",
-        "Teknaf",
-        "Naf-Fluss",
-        "Grenze zu Rakhine"
-      ],
-      "activity": 5,
-      "severity": 24,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 3
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "BGD",
-      "extraCountries": [
-        "MMR"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "South Africa: Several Injured After March and March Raids Refugee Camp",
-          "url": "https://allafrica.com/stories/202609040039.html",
-          "date": "2026-09-04T05:35:45.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[GroundUp] Vigilante group's \"clean-up\" targets displaced refugees in Durban",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 16
-        },
-        {
-          "title": "West Bank: UN rights report warns of forcible displacement from three refugee camps",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168282",
-          "date": "2026-09-04T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Israeli security forces forcibly displaced the entire population of three Palestine refugee camps in the occupied West Bank in January and February last year – and continue to prevent their return, in violation of international law, according to a new report&nbsp;by the UN human rights office, OHCHR.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Emptying West Bank refugee camps may be a war crime: UN",
-          "url": "https://www.dawn.com/news/2027624/emptying-west-bank-refugee-camps-may-be-a-war-crime-un",
-          "date": "2026-09-05T02:36:23.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "GENEVA: The United Nations warned on Friday that Israel’s forced displacement of the entire Palestinian populations of three West Bank refugee camps last year could amount to crimes against humanity. The UN rights office described how a military operation launched in the north of the occupied territory in January 2025 had forcibly displaced over 33,000 people. At the start of operation “Iron Wall”",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Rape , domestic abuse , mob violence fuel Bangladesh worsening human rights situation",
-          "url": "https://www.prokerala.com/news/articles/a1808428.html",
-          "date": "2026-09-04T09:45:00.000Z",
-          "source": "prokerala.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 4
-    },
-    {
       "id": "chad",
       "name": "Tschad / Tschadseebecken",
       "nameEn": "Chad & Lake Chad Basin",
@@ -30428,6 +30397,138 @@
         }
       ],
       "itemCount": 2
+    },
+    {
+      "id": "rohingya-bangladesh",
+      "name": "Bangladesch / Rohingya-Krise",
+      "nameEn": "Bangladesh & Rohingya",
+      "region": "Asien (Süd)",
+      "countries": [
+        "Bangladesh"
+      ],
+      "lat": 21.4,
+      "lon": 92.2,
+      "tier": "medium",
+      "since": "2017",
+      "parties": [
+        "Bangladesch",
+        "Rohingya-Flüchtlinge",
+        "ARSA/RSO",
+        "Arakan Army",
+        "Myanmar"
+      ],
+      "background": "Über eine Million Rohingya in Cox's Bazar bei sinkender Finanzierung; Gewalt in den Lagern und Grenzspannungen mit der Arakan Army.",
+      "hotspots": [
+        "Cox's Bazar",
+        "Teknaf",
+        "Naf-Fluss",
+        "Grenze zu Rakhine"
+      ],
+      "activity": 3,
+      "severity": 23,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "BGD",
+      "extraCountries": [
+        "MMR"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "South Africa: Several Injured After March and March Raids Refugee Camp",
+          "url": "https://allafrica.com/stories/202609040039.html",
+          "date": "2026-09-04T05:35:45.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[GroundUp] Vigilante group's \"clean-up\" targets displaced refugees in Durban",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
+          "title": "West Bank: UN rights report warns of forcible displacement from three refugee camps",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168282",
+          "date": "2026-09-04T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Israeli security forces forcibly displaced the entire population of three Palestine refugee camps in the occupied West Bank in January and February last year – and continue to prevent their return, in violation of international law, according to a new report&nbsp;by the UN human rights office, OHCHR.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Emptying West Bank refugee camps may be a war crime: UN",
+          "url": "https://www.dawn.com/news/2027624/emptying-west-bank-refugee-camps-may-be-a-war-crime-un",
+          "date": "2026-09-05T02:36:23.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "GENEVA: The United Nations warned on Friday that Israel’s forced displacement of the entire Palestinian populations of three West Bank refugee camps last year could amount to crimes against humanity. The UN rights office described how a military operation launched in the north of the occupied territory in January 2025 had forcibly displaced over 33,000 people. At the start of operation “Iron Wall”",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 8
+        },
+        {
+          "title": "Rape , domestic abuse , mob violence fuel Bangladesh worsening human rights situation",
+          "url": "https://www.prokerala.com/news/articles/a1808428.html",
+          "date": "2026-09-04T09:45:00.000Z",
+          "source": "prokerala.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 4
     },
     {
       "id": "car",
