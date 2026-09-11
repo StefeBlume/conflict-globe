@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-11T12:41:36.700Z",
-  "durationSec": 406,
+  "generatedAt": "2026-09-11T13:36:00.295Z",
+  "durationSec": 377,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -49,7 +49,7 @@
       {
         "id": "dw",
         "ok": true,
-        "count": 11,
+        "count": 12,
         "error": null
       },
       {
@@ -97,7 +97,7 @@
       {
         "id": "dawn",
         "ok": true,
-        "count": 25,
+        "count": 23,
         "error": null
       },
       {
@@ -114,8 +114,8 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
-      "failed": 7,
+      "ok": 2,
+      "failed": 8,
       "skipped": 6,
       "errors": [
         {
@@ -123,27 +123,31 @@
           "error": "fetch failed"
         },
         {
+          "id": "venezuela",
+          "error": "fetch failed"
+        },
+        {
+          "id": "ethiopia",
+          "error": "fetch failed"
+        },
+        {
+          "id": "turkey-pkk",
+          "error": "fetch failed"
+        },
+        {
           "id": "myanmar",
-          "error": "HTTP 429"
+          "error": "fetch failed"
         },
         {
           "id": "sahel-mali",
-          "error": "fetch failed"
-        },
-        {
-          "id": "south-sudan",
           "error": "HTTP 429"
         },
         {
-          "id": "afghanistan",
+          "id": "ukraine-russia",
           "error": "fetch failed"
         },
         {
-          "id": "rohingya-bangladesh",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "korea",
+          "id": "west-papua",
           "error": "HTTP 429"
         }
       ]
@@ -153,7 +157,7 @@
   "totals": {
     "conflicts": 44,
     "articles": 1206,
-    "newArticles": 19
+    "newArticles": 15
   },
   "conflicts": [
     {
@@ -185,7 +189,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
@@ -243,7 +247,7 @@
             50.29
           ],
           "count": 18,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -259,8 +263,8 @@
             37.665,
             55.668
           ],
-          "count": 9,
-          "newCount": 0,
+          "count": 10,
+          "newCount": 1,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -304,13 +308,44 @@
       ],
       "items": [
         {
+          "title": "Russian strikes kill two in Kyiv as Moscow targets capital’s fuel stations",
+          "url": "https://www.aljazeera.com/news/2026/9/11/russian-strikes-kill-two-in-kyiv-as-moscow-targets-capitals-fuel-stations?traffic_source=rss",
+          "date": "2026-09-11T13:09:44.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Second day of strikes on fuel stations suggest a new campaign focused on civilian areas in the Ukrainian capital.",
+          "isNew": true,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 35
+        },
+        {
           "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
           "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine",
           "date": "2026-09-11T12:01:22.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and six injured in strikes on two petrol stations on Friday mornin",
-          "isNew": true,
+          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and 12 injured in strikes on two petrol stations on Friday morning",
+          "isNew": false,
           "region": {
             "id": "UKR-321",
             "name": "Kyiv",
@@ -363,7 +398,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 30
+          "score": 25
         },
         {
           "title": "Ukraine: Drone attacks on Chornobyl are ‘gambling with the safety of millions of people’",
@@ -414,6 +449,27 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Canada pledges air defense support for Ukraine as Zelensky visits",
+          "url": "https://www.france24.com/en/video/20260911-canada-pledges-air-defense-support-for-ukraine-as-zelensky-visits",
+          "date": "2026-09-11T10:06:44.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Canada offered support Thursday to boost Ukraine's air defenses and help replenish its drone stocks, as the countries pledged to deepen their alliance during a visit by President Volodymyr Zelensky. \"Canada will always be with you,\" Canadian Prime Minister Mark Carney told Zelensky.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 22
         },
@@ -670,48 +726,6 @@
           "score": 22
         },
         {
-          "title": "Russia new shelling tactics deepen suffering in Ukraine - Grenada Chronicle – Daily Grenada And Caribbean News",
-          "url": "https://grenadachronicle.com/russias-new-shelling-tactics-deepen-suffering-in-ukraine/",
-          "date": "2026-09-10T13:00:00.000Z",
-          "source": "grenadachronicle.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
-          "title": "How Ukraine deepest attack in Russia , on Arctic gas , signals new reach - Grenada Chronicle – Daily Grenada And Caribbean News",
-          "url": "https://grenadachronicle.com/how-ukraines-deepest-attack-in-russia-on-arctic-gas-signals-new-reach/",
-          "date": "2026-09-10T13:00:00.000Z",
-          "source": "grenadachronicle.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Canada offers air defense support for Ukraine as Zelenskyy visits",
           "url": "https://www.theguardian.com/world/2026/sep/10/zelenskyy-canada-visit",
           "date": "2026-09-10T20:35:06.000Z",
@@ -733,6 +747,27 @@
           "score": 20
         },
         {
+          "title": "Georgian Church criticises Russia’s claims they have army unit named after Georgian monk",
+          "url": "https://oc-media.org/georgian-church-criticises-russias-claims-they-have-army-unit-named-after-georgian-monk/",
+          "date": "2026-09-11T13:16:43.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The first reports about a unit named after monk Gabriel Urgebadze emerged in January.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
           "title": "Port and theatre catch fire in Makhachkala after Ukrainian drone attack",
           "url": "https://oc-media.org/port-and-theatre-catch-fire-in-makhachkala-after-ukrainian-drone-attack/",
           "date": "2026-09-10T10:35:32.000Z",
@@ -752,6 +787,48 @@
             "label": "Drohnenangriff"
           },
           "score": 19
+        },
+        {
+          "title": "Russia new shelling tactics deepen suffering in Ukraine - Grenada Chronicle – Daily Grenada And Caribbean News",
+          "url": "https://grenadachronicle.com/russias-new-shelling-tactics-deepen-suffering-in-ukraine/",
+          "date": "2026-09-10T13:00:00.000Z",
+          "source": "grenadachronicle.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 18
+        },
+        {
+          "title": "How Ukraine deepest attack in Russia , on Arctic gas , signals new reach - Grenada Chronicle – Daily Grenada And Caribbean News",
+          "url": "https://grenadachronicle.com/how-ukraines-deepest-attack-in-russia-on-arctic-gas-signals-new-reach/",
+          "date": "2026-09-10T13:00:00.000Z",
+          "source": "grenadachronicle.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Nine killed , 43 injured in Russian strikes on Ukraine",
@@ -1296,27 +1373,6 @@
           "score": 18
         },
         {
-          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
-          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
-          "date": "2026-09-10T10:32:31.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Ukraine decries 'horrific' Russian attack shortly after US envoys leave",
           "url": "https://www.france24.com/en/video/20260908-ukraine-decries-horrific-russian-attack-shortly-after-us-envoys-leave",
           "date": "2026-09-08T12:19:11.000Z",
@@ -1500,48 +1556,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Arab News | Zelensky visits Canada to seek further military support for Ukraine",
-          "url": "https://www.arabnews.com/world/zelensky-visits-canada-to-seek-further-military-support-for-ukraine-3001222",
-          "date": "2026-09-10T13:00:00.000Z",
-          "source": "arabnews.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Zelenskyy visits Canada to seek further military support for Ukraine",
-          "url": "https://www.wboc.com/news/international/zelenskyy-visits-canada-to-seek-further-military-support-for-ukraine/article_449d5294-1350-5228-a57d-6913cf39f9dd.html",
-          "date": "2026-09-10T13:00:00.000Z",
-          "source": "wboc.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -2253,12 +2267,12 @@
           "score": 12
         },
         {
-          "title": "NATO Allies Disrupt Russian Subsea Cable Sabotage",
-          "url": "https://www.marinetechnologynews.com/news/allies-disrupt-russian-subsea-665918",
-          "date": "2026-09-10T11:45:00.000Z",
-          "source": "marinetechnologynews.com",
+          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
+          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
+          "date": "2026-09-10T10:32:31.000Z",
+          "source": "OC Media (Kaukasus)",
           "sourceType": "news",
-          "summary": "",
+          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
           "isNew": false,
           "region": null,
           "event": {
@@ -2361,7 +2375,7 @@
             31.753
           ],
           "count": 2,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -2388,13 +2402,34 @@
       ],
       "items": [
         {
+          "title": "Israel threatens further strikes after demolishing parts of Hezbollah’s tunnel network under Ali al-Taher",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-further-strikes-after-demolishing-parts-hezbollahs",
+          "date": "2026-09-11T12:50:05.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel threatens further strikes after demolishing parts of Hezbollah’s tunnel network under Ali al-Taher Israel said Friday it was prepared to launch further strikes on Hezbollah after demolishing what it described as a vast tunnel network beneath the strategic Ali al-Taher ridge in southern Lebanon. Defence Minister Israel Katz said Israel was ready to “continue striking Hezbollah and at additio",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 26
+        },
+        {
           "title": "Israeli jets raid Mansouri and areas near Tyre, Lebanese media says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-jets-raid-mansouri-areas-near-tyre-lebanese-media-says",
           "date": "2026-09-11T11:57:13.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli jets raid Mansouri and areas near Tyre, Lebanese media says Israeli forces carried out several air raids on southern Lebanon, targeting Mansouri and areas near the coastal city of Tyre, Lebanon’s National News Agency (NNA) reported. The attacks on Mansouri targeted “infrastructure and residential neighbourhoods”, while another air raid south of Tyre also struck residential areas, according",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "airstrike",
@@ -2416,6 +2451,27 @@
           "sourceType": "news",
           "summary": "The 'war on terror' made Israeli repression easier to present as part of a shared struggle against a common enemy.",
           "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Venice gives 25-minute ovation for film on Israel's mass killing of Gaza civilians",
+          "url": "https://www.france24.com/en/video/20260911-venice-gives-25-minute-ovation-for-film-on-israel-s-mass-killing-of-gaza-civilians",
+          "date": "2026-09-11T09:59:58.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Mass civilian deaths were routinely built into Israeli military targeting decisions in Gaza, according to a Venice Film Festival documentary unveiled on Thursday that challenges official accounts of the war. \"NAZA\", directed by Israeli journalists Yuval Abraham and Rachel Szor, received a 25-minute standing ⁠ovation at its premiere, by far the longest of the festival so far this year.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -2629,27 +2685,6 @@
           "score": 22
         },
         {
-          "title": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-faces-genocide-incitement-complaint-italy-hind-rajab",
-          "date": "2026-09-11T06:41:44.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister The Hind Rajab Foundation (HRF) has filed a criminal complaint in Italy against Israel's minister of environmental protection, Idit Silman, accusing her of incitement to commit genocide against Palestinians in Gaza. In a statement, HRF said the complaint was lodged after Silman arrived in Italy on 6 September 2026 w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 21
-        },
-        {
           "title": "Settlers, soldiers, and Israeli impunity in the West Bank",
           "url": "https://www.aljazeera.com/news/2026/9/11/settlers-soldiers-and-israeli-impunity-in-the-west-bank?traffic_source=rss",
           "date": "2026-09-11T07:36:43.000Z",
@@ -2713,48 +2748,6 @@
           "score": 20
         },
         {
-          "title": "Protest march held in Slovenian capital against opening of Israeli embassy",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/protest-march-held-slovenian-capital-against-opening-israeli-embassy",
-          "date": "2026-09-11T06:53:29.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Protest march held in Slovenian capital against opening of Israeli embassy A protest march was held in the Slovenian capital, Ljubljana, against the opening of Israel’s embassy, coinciding with a visit by Israeli foreign minister Gideon Sa’ar, Quds News Network reported. The protesters chanted “no embassy for genocide” and waved Palestinian flags during the march. Thousands of protesters marched t",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 20
-        },
-        {
-          "title": "NAZA, the Israeli film revealing new layers of the Gaza genocide",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/naza-the-israeli-film-revealing-new-layers-of-the-gaza-genocide?traffic_source=rss",
-          "date": "2026-09-11T05:25:34.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A 25-minute standing ovation at the Biennale has put NAZA, an Israeli-made film confronting Israel’s genocide in Gaza.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Congo-Kinshasa: Will Monitoring of Eastern DR Congo's 'Ceasefire' Improve Compliance?",
           "url": "https://allafrica.com/stories/202609100236.html",
           "date": "2026-09-10T10:32:00.000Z",
@@ -2776,13 +2769,13 @@
           "score": 19
         },
         {
-          "title": "UK sanctions on Israeli settlements include those in Syria's Golan Heights",
+          "title": "Exclusive: UK sanctions on Israeli settlements to include those in Syria's Golan Heights",
           "url": "https://www.middleeasteye.net/news/uk-sanctions-israeli-settlements-include-those-syrias-golan-heights",
           "date": "2026-09-11T12:16:26.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "UK sanctions on Israeli settlements include those in Syria's Golan Heights Submitted by Daniel Tester on Fri, 09/11/2026 - 12:46 UK government sources tell MEE that the new measures will cover the occupied Golan Heights and East Jerusalem UK Prime Minister Andy Burnham and Foreign Secretary Ed Miliband during Prime Minister's Questions in the House of Commons, London, on 9 September 2026 (AFP) Off",
-          "isNew": true,
+          "summary": "Exclusive: UK sanctions on Israeli settlements to include those in Syria's Golan Heights Submitted by Daniel Tester on Fri, 09/11/2026 - 12:46 UK government sources tell MEE that the new measures will cover the occupied Golan Heights and East Jerusalem UK Prime Minister Andy Burnham and Foreign Secretary Ed Miliband during Prime Minister's Questions in the House of Commons, London, on 9 September ",
+          "isNew": false,
           "region": {
             "id": "ISR-3058",
             "name": "Jerusalem",
@@ -2824,6 +2817,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 18
+        },
+        {
+          "title": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-faces-genocide-incitement-complaint-italy-hind-rajab",
+          "date": "2026-09-11T06:41:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister The Hind Rajab Foundation (HRF) has filed a criminal complaint in Italy against Israel's minister of environmental protection, Idit Silman, accusing her of incitement to commit genocide against Palestinians in Gaza. In a statement, HRF said the complaint was lodged after Silman arrived in Italy on 6 September 2026 w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 18
         },
@@ -3489,6 +3503,48 @@
           "score": 18
         },
         {
+          "title": "Protest march held in Slovenian capital against opening of Israeli embassy",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/protest-march-held-slovenian-capital-against-opening-israeli-embassy",
+          "date": "2026-09-11T06:53:29.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Protest march held in Slovenian capital against opening of Israeli embassy A protest march was held in the Slovenian capital, Ljubljana, against the opening of Israel’s embassy, coinciding with a visit by Israeli foreign minister Gideon Sa’ar, Quds News Network reported. The protesters chanted “no embassy for genocide” and waved Palestinian flags during the march. Thousands of protesters marched t",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 17
+        },
+        {
+          "title": "NAZA, the Israeli film revealing new layers of the Gaza genocide",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/naza-the-israeli-film-revealing-new-layers-of-the-gaza-genocide?traffic_source=rss",
+          "date": "2026-09-11T05:25:34.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A 25-minute standing ovation at the Biennale has put NAZA, an Israeli-made film confronting Israel’s genocide in Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
           "title": "Nigerian government reportedly enters secret ceasefire agreement with Boko Haram",
           "url": "https://www.premiumtimesng.com/news/top-news/908140-nigerian-government-reportedly-enters-secret-ceasefire-agreement-with-boko-haram.html",
           "date": "2026-09-08T13:25:10.000Z",
@@ -3507,7 +3563,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "BRICS summit may be the only place another Iran ceasefire can be built",
@@ -4054,48 +4110,6 @@
             "label": "Sanktionen/Recht"
           },
           "score": 12
-        },
-        {
-          "title": "Igor Tulchinsky: Sponsor of British Museum Bayeux Tapestry exhibition funded community centre in West Bank settlement",
-          "url": "https://www.middleeasteye.net/news/igor-tulchinsky-sponsor-british-museum-bayeux-tapestry-exhibition-funded-community-centre-west-bank-settlement",
-          "date": "2026-09-10T12:25:20.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Igor Tulchinsky: Sponsor of British Museum Bayeux Tapestry exhibition funded community centre in West Bank settlement Submitted by Daniel Hilton on Wed, 09/09/2026 - 13:46 Billionaire paid for 'therapy yurt' in Efrat treating Israeli soldiers who fought in Gaza, despite being constructed on occupied Palestinian land Igor Tulchinsky, right, and Efrat Mayor Dovi Shefler, left, unveil the 'therapy yu",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "UK settlement trade ban offers a lifeline to Palestine, and to an Israel on the brink",
-          "url": "https://www.middleeasteye.net/opinion/uk-settlement-trade-ban-offers-lifeline-palestine-and-israel-on-brink",
-          "date": "2026-09-10T12:22:47.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UK settlement trade ban offers a lifeline to Palestine, and to an Israel on the brink Submitted by Xavier Abu Eid on Wed, 09/09/2026 - 20:52 After years of broken promises and Israeli impunity, some of the occupation's western enablers are finally willing to impose sanctions People hold a banner stating: “Genocide, occupation, apartheid, 3 reasons to sanction Israel” during a protest in Brussels, ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -4126,7 +4140,7 @@
       ],
       "activity": 81,
       "severity": 79,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -4307,7 +4321,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[Darfur Network for Human Rights] DNHR has joined six other human rights organizations calling on the UN Human Rights Council to renew the mandate of the Independent International Fact-Finding Mission for the Sudan. This follows the mission's latest report on escalating militarization, external support networks, and continuing grave violations against civilians.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -5466,7 +5480,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -5524,7 +5538,7 @@
             31.753
           ],
           "count": 12,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -5555,13 +5569,13 @@
           "score": 22
         },
         {
-          "title": "UK sanctions on Israeli settlements include those in Syria's Golan Heights",
+          "title": "Exclusive: UK sanctions on Israeli settlements to include those in Syria's Golan Heights",
           "url": "https://www.middleeasteye.net/news/uk-sanctions-israeli-settlements-include-those-syrias-golan-heights",
           "date": "2026-09-11T12:16:26.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "UK sanctions on Israeli settlements include those in Syria's Golan Heights Submitted by Daniel Tester on Fri, 09/11/2026 - 12:46 UK government sources tell MEE that the new measures will cover the occupied Golan Heights and East Jerusalem UK Prime Minister Andy Burnham and Foreign Secretary Ed Miliband during Prime Minister's Questions in the House of Commons, London, on 9 September 2026 (AFP) Off",
-          "isNew": true,
+          "summary": "Exclusive: UK sanctions on Israeli settlements to include those in Syria's Golan Heights Submitted by Daniel Tester on Fri, 09/11/2026 - 12:46 UK government sources tell MEE that the new measures will cover the occupied Golan Heights and East Jerusalem UK Prime Minister Andy Burnham and Foreign Secretary Ed Miliband during Prime Minister's Questions in the House of Commons, London, on 9 September ",
+          "isNew": false,
           "region": {
             "id": "ISR-3058",
             "name": "Jerusalem",
@@ -7301,7 +7315,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -7482,8 +7496,8 @@
           "date": "2026-09-11T12:00:00.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Rampant Yemeni rebels take control of island in narrow point of Bab al-Mandab strait, which Saudi is relying on for oil exports Violence in Yemen: why it matters and how it is linked to the US-Iran war Yemen’s rampant Houthi forces have captured a strategic island in the Bab al-Mandab strait, expanding their control of the narrow waterway, one of the ​world’s vital shipping routes. The Iran-aligne",
-          "isNew": true,
+          "summary": "Rampant Yemeni fighters take control of island in narrow point of Bab al-Mandab strait, which Saudi is relying on for oil exports Violence in Yemen: why it matters and how it is linked to the US-Iran war Yemen’s rampant Houthi forces have captured a strategic island in the Bab al-Mandab strait, expanding their control of the narrow waterway, one of the ​world’s vital shipping routes. The Iran-alig",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "offensive",
@@ -7651,7 +7665,7 @@
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "The Houthi takeovers of Mokha, Dhubab and Perim in the Bab el-Mandeb Strait threaten to push Yemen deeper into the Middle East war. The Iran-backed group has made advances against Yemen's government and Saudi Arabia.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -7747,7 +7761,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Houthis seize key Yemeni Red Sea port, sources say, threatening global energy flows",
@@ -7768,7 +7782,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Fighting escalates in Yemen; Houthi attacks trigger alerts in Saudi Arabia",
@@ -8480,7 +8494,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Arab News | Renewed fighting displaces nearly 20 , 000 in Yemen : IOM",
@@ -8501,7 +8515,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthi attacks on Saudi Arabia ignite fires at oil facilities and wound 73 people",
@@ -8522,7 +8536,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthis strike Saudi Arabian cities in significant expansion of Middle East war",
@@ -8870,27 +8884,6 @@
           "score": 15
         },
         {
-          "title": "Bab al-Mandab — key oil route facing growing Houthi threat",
-          "url": "https://www.dawn.com/news/2028876/bab-al-mandab-key-oil-route-facing-growing-houthi-threat",
-          "date": "2026-09-10T12:42:46.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Yemen’s Houthis have launched a major ground assault around the Bab al-Mandab Strait, the Red Sea chokepoint that has become vital for Saudi oil exports during the Middle East war. With hundreds dead in fighting, and the Houthis exchanging strikes and counter-strikes with Saudi Arabia, AFP examines the flashpoint waterway that is normally one of the world’s busiest shipping lanes. ‘Gate of Tears’ ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
           "title": "What’s happening in Yemen and how did we get here?",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/whats-happening-in-yemen-and-how-did-we-get-here-3?traffic_source=rss",
           "date": "2026-09-10T20:24:47.000Z",
@@ -9193,6 +9186,27 @@
             "label": "Drohnenangriff"
           },
           "score": 15
+        },
+        {
+          "title": "Bab al-Mandab — key oil route facing growing Houthi threat",
+          "url": "https://www.dawn.com/news/2028876/bab-al-mandab-key-oil-route-facing-growing-houthi-threat",
+          "date": "2026-09-10T12:42:46.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Yemen’s Houthis have launched a major ground assault around the Bab al-Mandab Strait, the Red Sea chokepoint that has become vital for Saudi oil exports during the Middle East war. With hundreds dead in fighting, and the Houthis exchanging strikes and counter-strikes with Saudi Arabia, AFP examines the flashpoint waterway that is normally one of the world’s busiest shipping lanes. ‘Gate of Tears’ ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
         }
       ],
       "itemCount": 80
@@ -9322,8 +9336,8 @@
           "date": "2026-09-11T12:00:00.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Rampant Yemeni rebels take control of island in narrow point of Bab al-Mandab strait, which Saudi is relying on for oil exports Violence in Yemen: why it matters and how it is linked to the US-Iran war Yemen’s rampant Houthi forces have captured a strategic island in the Bab al-Mandab strait, expanding their control of the narrow waterway, one of the ​world’s vital shipping routes. The Iran-aligne",
-          "isNew": true,
+          "summary": "Rampant Yemeni fighters take control of island in narrow point of Bab al-Mandab strait, which Saudi is relying on for oil exports Violence in Yemen: why it matters and how it is linked to the US-Iran war Yemen’s rampant Houthi forces have captured a strategic island in the Bab al-Mandab strait, expanding their control of the narrow waterway, one of the ​world’s vital shipping routes. The Iran-alig",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "offensive",
@@ -9357,6 +9371,27 @@
             "label": "Bodenoffensive"
           },
           "score": 23
+        },
+        {
+          "title": "Georgia says it will comply with the US sanctions against Iranian airlines",
+          "url": "https://oc-media.org/georgia-says-it-will-comply-with-the-us-sanctions-against-iranian-airlines/",
+          "date": "2026-09-11T13:26:53.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "As of publication, several sanctioned airlines are on the schedule to use Tbilisi International Airport.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 22
         },
         {
           "title": "Under siege: Iran faces strategic dilemma as war of attrition drags on",
@@ -9568,13 +9603,34 @@
           "score": 19
         },
         {
+          "title": "US consumer prices stayed high in August as Iran war pushed energy costs up",
+          "url": "https://www.theguardian.com/business/2026/sep/11/inflation-august-interest-rates",
+          "date": "2026-09-11T12:38:12.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Annualized inflation rate was 3.4%, same as July, and core inflation, which omits energy and food prices, was up to 2.4% US consumer prices remained stubbornly high in August as the end of the ceasefire between the US and Iran pushed energy prices up, according to data from the US Bureau of Labor Statistics released on Friday. The annualized inflation rate was 3.4%, the same as it was in July. The",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 19
+        },
+        {
           "title": "Iran war: Saudi-Houthi escalation intensifies Yemen conflict",
           "url": "https://www.dw.com/en/iran-war-saudi-houthi-escalation-intensifies-yemen-conflict/a-79226627?maca=en-rss-en-world-4025-rdf",
           "date": "2026-09-11T11:52:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "The Houthi takeovers of Mokha, Dhubab and Perim in the Bab el-Mandeb Strait threaten to push Yemen deeper into the Middle East war. The Iran-backed group has made advances against Yemen's government and Saudi Arabia.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9587,37 +9643,6 @@
             "label": "Bodenoffensive"
           },
           "score": 19
-        },
-        {
-          "title": "Iran dismisses IAEA resolution, says nonproliferation accusations political",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-dismisses-iaea-resolution-says-nonproliferation-accusations",
-          "date": "2026-09-11T05:20:17.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran dismisses IAEA resolution, says nonproliferation accusations political Iran has dismissed a resolution passed by the International Atomic Energy Agency (IAEA), which accuses Tehran of failing to comply with its nuclear nonproliferation commitments and refers the matter to the UN Security Council. “Renewed accusations against Iran’s peaceful nuclear program&nbsp;are political and not technical",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
         },
         {
           "title": "Underwater drone capture gives Tehran opportunity to reverse engineer vessel",
@@ -10340,27 +10365,6 @@
           "score": 18
         },
         {
-          "title": "As Houthis attack Saudi Arabia, is Iran war escalating into regional conflict?",
-          "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
-          "date": "2026-09-08T13:02:50.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Saudi Arabia on Tuesday threatened to hit back after a wave of missiles from Yemen's Houthis set oil facilities ablaze and wounded dozens, the Iran-backed rebels' heaviest attack in years. It comes after a four-year truce collapsed in July, months into the Middle East war between the United States and Iran. France 24's Rochelle Ferguson Bouyahi provides analysis.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Morning recap",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-161",
           "date": "2026-09-11T06:22:06.000Z",
@@ -10380,6 +10384,58 @@
             "label": "Seeangriff"
           },
           "score": 16
+        },
+        {
+          "title": "Iran dismisses IAEA resolution, says nonproliferation accusations political",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-dismisses-iaea-resolution-says-nonproliferation-accusations",
+          "date": "2026-09-11T05:20:17.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran dismisses IAEA resolution, says nonproliferation accusations political Iran has dismissed a resolution passed by the International Atomic Energy Agency (IAEA), which accuses Tehran of failing to comply with its nuclear nonproliferation commitments and refers the matter to the UN Security Council. “Renewed accusations against Iran’s peaceful nuclear program&nbsp;are political and not technical",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "As Houthis attack Saudi Arabia, is Iran war escalating into regional conflict?",
+          "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+          "date": "2026-09-08T13:02:50.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Saudi Arabia on Tuesday threatened to hit back after a wave of missiles from Yemen's Houthis set oil facilities ablaze and wounded dozens, the Iran-backed rebels' heaviest attack in years. It comes after a four-year truce collapsed in July, months into the Middle East war between the United States and Iran. France 24's Rochelle Ferguson Bouyahi provides analysis.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "BRICS summit may be the only place another Iran ceasefire can be built",
@@ -11133,48 +11189,6 @@
             "label": "Seeangriff"
           },
           "score": 15
-        },
-        {
-          "title": "North Korea has built new uranium facility to expand nuclear arsenal, UN agency says",
-          "url": "https://www.theguardian.com/world/2026/sep/10/north-korea-has-built-new-uranium-facility-to-expand-nuclear-arsenal-un-agency-says",
-          "date": "2026-09-10T05:08:46.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "The International Atomic Energy Agency voices ‘serious concerns’ over expansion of Yongbyon facility to enrich uranium The International Atomic Energy Agency (IAEA) has voiced “serious concern” over evidence that North Korea has built a facility capable of enriching weapons-grade uranium to bolster its nuclear arsenal. The new building, located at the the country’s main Yongbyon nuclear facility, ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Iran war won't end until after crucial November elections, says Trump",
-          "url": "https://www.bbc.co.uk/news/articles/c5ydld0gykpo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-10T10:43:53.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The president also said oil prices won't come down until after the November races, claiming without evidence that Iran wants to impact the election.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -11208,7 +11222,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 4,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -11256,7 +11270,7 @@
             11.891
           ],
           "count": 5,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -11425,7 +11439,7 @@
           "source": "globalpost.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -11437,7 +11451,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 27
+          "score": 25
         },
         {
           "title": "National Aassembly suspends all legislative engagements with South Africa over xenophobic attacks - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
@@ -11446,7 +11460,7 @@
           "source": "nigerianeye.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -11458,7 +11472,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Nigeria: 3 Vigilantes Killed in Kaduna",
@@ -11490,37 +11504,6 @@
             "label": "Opfer"
           },
           "score": 22
-        },
-        {
-          "title": "Suspected Terrorist Surrenders to Nigerian Army Through Chadian Forces in Borno - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
-          "url": "https://www.nigerianeye.com/2026/09/suspected-terrorist-surrenders-to.html",
-          "date": "2026-09-11T12:00:00.000Z",
-          "source": "nigerianeye.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": true,
-          "region": {
-            "id": "NGA-2839",
-            "name": "Borno State",
-            "nameDe": "Borno",
-            "type": "State",
-            "anchor": [
-              13.171,
-              11.891
-            ],
-            "matched": "Borno"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
         },
         {
           "title": "Nigeria: U.S. Delivers Military Equipment to Nigeria",
@@ -11563,6 +11546,37 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Suspected Terrorist Surrenders to Nigerian Army Through Chadian Forces in Borno - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
+          "url": "https://www.nigerianeye.com/2026/09/suspected-terrorist-surrenders-to.html",
+          "date": "2026-09-11T12:00:00.000Z",
+          "source": "nigerianeye.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2839",
+            "name": "Borno State",
+            "nameDe": "Borno",
+            "type": "State",
+            "anchor": [
+              13.171,
+              11.891
+            ],
+            "matched": "Borno"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
         },
         {
           "title": "Police, ADC supporters clash in Kaduna as 2027 campaigns begin",
@@ -11867,34 +11881,13 @@
           "score": 18
         },
         {
-          "title": "Nigerian government reportedly enters secret ceasefire agreement with Boko Haram",
-          "url": "https://www.premiumtimesng.com/news/top-news/908140-nigerian-government-reportedly-enters-secret-ceasefire-agreement-with-boko-haram.html",
-          "date": "2026-09-08T13:25:10.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro. The post Nigerian government reportedly enters secret ceasefire agreement with Boko Haram appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 18
-        },
-        {
           "title": "Nigeria parliament suspends engagements with South Africa over anti - migrant violence – Winnipeg Free Press",
           "url": "https://www.winnipegfreepress.com/world/2026/09/11/nigerias-parliament-suspends-engagements-with-south-africa-over-anti-migrant-violence",
           "date": "2026-09-11T12:15:00.000Z",
           "source": "winnipegfreepress.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "election",
@@ -11906,7 +11899,7 @@
             "icon": "🗳️",
             "label": "Politik/Wahl"
           },
-          "score": 17
+          "score": 18
         },
         {
           "title": "Nigeria: U.S. Announces New Delivery of Defence Equipment to Nigeria",
@@ -11957,6 +11950,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigerian government reportedly enters secret ceasefire agreement with Boko Haram",
+          "url": "https://www.premiumtimesng.com/news/top-news/908140-nigerian-government-reportedly-enters-secret-ceasefire-agreement-with-boko-haram.html",
+          "date": "2026-09-08T13:25:10.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro. The post Nigerian government reportedly enters secret ceasefire agreement with Boko Haram appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           },
           "score": 15
         },
@@ -13060,7 +13074,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Two Azerbaijani citizens killed in drone attack on cargo ship in Black Sea",
@@ -13081,7 +13095,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 23
+          "score": 19
         },
         {
           "title": "Netanyahu visits troops in occupied Syria as Damascus slams 'blatant violation' of sovereignty",
@@ -14417,8 +14431,8 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 94,
-      "severity": 67,
+      "activity": 98,
+      "severity": 68,
       "newCount": 1,
       "signals": [
         {
@@ -14437,7 +14451,7 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 13
+          "count": 12
         },
         {
           "key": "escalation",
@@ -14446,8 +14460,8 @@
           "count": 7
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "displacement",
+          "label": "Vertreibung",
           "dir": "up",
           "count": 3
         }
@@ -14496,13 +14510,34 @@
       ],
       "items": [
         {
+          "title": "Israel threatens further strikes after demolishing parts of Hezbollah’s tunnel network under Ali al-Taher",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-threatens-further-strikes-after-demolishing-parts-hezbollahs",
+          "date": "2026-09-11T12:50:05.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel threatens further strikes after demolishing parts of Hezbollah’s tunnel network under Ali al-Taher Israel said Friday it was prepared to launch further strikes on Hezbollah after demolishing what it described as a vast tunnel network beneath the strategic Ali al-Taher ridge in southern Lebanon. Defence Minister Israel Katz said Israel was ready to “continue striking Hezbollah and at additio",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 27
+        },
+        {
           "title": "Israeli jets raid Mansouri and areas near Tyre, Lebanese media says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-jets-raid-mansouri-areas-near-tyre-lebanese-media-says",
           "date": "2026-09-11T11:57:13.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli jets raid Mansouri and areas near Tyre, Lebanese media says Israeli forces carried out several air raids on southern Lebanon, targeting Mansouri and areas near the coastal city of Tyre, Lebanon’s National News Agency (NNA) reported. The attacks on Mansouri targeted “infrastructure and residential neighbourhoods”, while another air raid south of Tyre also struck residential areas, according",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "airstrike",
@@ -15767,27 +15802,6 @@
           "score": 15
         },
         {
-          "title": "Israeli army has seized Lebanon's key Ali al-Taher ridge from Hezbollah",
-          "url": "https://www.france24.com/en/middle-east/20260904-israel-says-it-has-seized-lebanon-key-ali-al-taher-ridge-from-hezbollah",
-          "date": "2026-09-04T13:27:50.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel has seized the strategically placed Ali al-Taher ridge in southern Lebanon from Hezbollah fighters, Defence Minister Israel Katz said Friday. The Iran-aligned Shiite group did not confirm losing the highland, which sits around 10 kilometres from the border with Israel and was pummelled by Israeli strikes in recent weeks despite a ceasefire.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
           "title": "Ali al-Taher: What Israel’s 'operational control' of the hill really means for Hezbollah and Lebanon",
           "url": "https://www.middleeasteye.net/news/ali-al-taher-what-israels-operational-control-really-means-hezbollah-and-lebanon",
           "date": "2026-09-10T08:09:50.000Z",
@@ -16025,7 +16039,7 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 91,
+      "activity": 90,
       "severity": 66,
       "newCount": 0,
       "signals": [
@@ -16526,27 +16540,6 @@
           "score": 18
         },
         {
-          "title": "Nigerian government reportedly enters secret ceasefire agreement with Boko Haram",
-          "url": "https://www.premiumtimesng.com/news/top-news/908140-nigerian-government-reportedly-enters-secret-ceasefire-agreement-with-boko-haram.html",
-          "date": "2026-09-08T13:25:10.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro. The post Nigerian government reportedly enters secret ceasefire agreement with Boko Haram appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 18
-        },
-        {
           "title": "Nigeria: U.S. Announces New Delivery of Defence Equipment to Nigeria",
           "url": "https://allafrica.com/stories/202609110021.html",
           "date": "2026-09-11T05:03:53.000Z",
@@ -16576,6 +16569,27 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "Nigerian government reportedly enters secret ceasefire agreement with Boko Haram",
+          "url": "https://www.premiumtimesng.com/news/top-news/908140-nigerian-government-reportedly-enters-secret-ceasefire-agreement-with-boko-haram.html",
+          "date": "2026-09-08T13:25:10.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro. The post Nigerian government reportedly enters secret ceasefire agreement with Boko Haram appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
         },
         {
           "title": "Nigeria: Troops Repel Boko Haram/Iswap Attack On Base in Borno Community",
@@ -17806,15 +17820,15 @@
         "Karen",
         "Chin"
       ],
-      "activity": 30,
-      "severity": 64,
-      "newCount": 0,
+      "activity": 34,
+      "severity": 65,
+      "newCount": 1,
       "signals": [
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 4
+          "count": 5
         },
         {
           "key": "airstrike",
@@ -17876,6 +17890,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Myanmar airport closed following reported drone attack",
+          "url": "https://www.aljazeera.com/news/2026/9/11/myanmar-airport-closed-following-reported-drone-attack?traffic_source=rss",
+          "date": "2026-09-11T12:22:12.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Military government pins attack on pro-democracy rebels it has been battling since seizing power in 2021.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
         {
           "title": "Myanmar airport shut after rebel drone attack : security sources",
           "url": "https://www.thehindu.com/news/international/myanmar-airport-shut-after-rebel-drone-attack-security-sources/article71455106.ece",
@@ -18242,7 +18277,7 @@
           "score": 8
         }
       ],
-      "itemCount": 15
+      "itemCount": 16
     },
     {
       "id": "haiti",
@@ -18840,9 +18875,9 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 64,
-      "severity": 58,
-      "newCount": 1,
+      "activity": 62,
+      "severity": 57,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -18988,27 +19023,6 @@
       ],
       "items": [
         {
-          "title": "Suweida’s Exam Standoff Triggers Fresh Clashes in Southern Syria",
-          "url": "https://www.crisisgroup.org/anb/middle-east-north-africa/syria/suweidas-exam-standoff-triggers-fresh-clashes-southern-syria",
-          "date": "2026-09-04T12:57:35.000Z",
-          "source": "International Crisis Group",
-          "sourceType": "analysis",
-          "summary": "Suweida’s Exam Standoff Triggers Fresh Clashes in Southern Syria pzeiler Fri, 09/04/2026 - 14:57 Latest Updates Africa Asia-Pacific Europe Latin America &amp; Caribbean Middle East &amp; North Africa United States Global Issues &amp; Institutions My Reading List Analyst's Notebook / Middle East &amp; North Africa 04 September 2026 2 minutes Suweida’s Exam Standoff Triggers Fresh Clashes in Souther",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
           "title": "Israeli forces abduct Syrian man during incursion into Al-Hamidiya town",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-abduct-syrian-man-during-incursion-al-hamidiya-town",
           "date": "2026-09-11T04:12:00.000Z",
@@ -19040,13 +19054,13 @@
           "score": 22
         },
         {
-          "title": "UK sanctions on Israeli settlements include those in Syria's Golan Heights",
+          "title": "Exclusive: UK sanctions on Israeli settlements to include those in Syria's Golan Heights",
           "url": "https://www.middleeasteye.net/news/uk-sanctions-israeli-settlements-include-those-syrias-golan-heights",
           "date": "2026-09-11T12:16:26.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "UK sanctions on Israeli settlements include those in Syria's Golan Heights Submitted by Daniel Tester on Fri, 09/11/2026 - 12:46 UK government sources tell MEE that the new measures will cover the occupied Golan Heights and East Jerusalem UK Prime Minister Andy Burnham and Foreign Secretary Ed Miliband during Prime Minister's Questions in the House of Commons, London, on 9 September 2026 (AFP) Off",
-          "isNew": true,
+          "summary": "Exclusive: UK sanctions on Israeli settlements to include those in Syria's Golan Heights Submitted by Daniel Tester on Fri, 09/11/2026 - 12:46 UK government sources tell MEE that the new measures will cover the occupied Golan Heights and East Jerusalem UK Prime Minister Andy Burnham and Foreign Secretary Ed Miliband during Prime Minister's Questions in the House of Commons, London, on 9 September ",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "sanctions",
@@ -19485,7 +19499,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Syria puts state control of weapons at heart of post - war rebuilding",
@@ -19802,7 +19816,7 @@
           "score": 8
         }
       ],
-      "itemCount": 34
+      "itemCount": 33
     },
     {
       "id": "burkina-faso",
@@ -19887,7 +19901,7 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 56,
+      "activity": 54,
       "severity": 55,
       "newCount": 0,
       "signals": [
@@ -20174,7 +20188,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Could Pakistan enter Yemen conflict under Mecca agreement?",
@@ -20676,13 +20690,13 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 15
+          "count": 14
         },
         {
           "key": "displacement",
@@ -20896,27 +20910,6 @@
           "score": 22
         },
         {
-          "title": "Death toll from cargo ship fire in China rises to 25: state media",
-          "url": "https://www.dawn.com/news/2028889/death-toll-from-cargo-ship-fire-in-china-rises-to-25-state-media",
-          "date": "2026-09-10T13:11:16.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "The death toll from a fire that erupted on Thursday on a foreign-flagged cargo ship docked in a Chinese port has risen to 25, including five people who had been listed as missing, state media said. The bulk carrier, moored in the eastern shipping hub of Qingdao, had 42 people on board when the fire broke out, according to state broadcaster CCTV . 17 of those were evacuated, including five who were",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Zelensky's plane 'almost hit' by drone en route to Oslo, Norway PM says",
           "url": "https://www.france24.com/en/video/20260910-zelensky-s-plane-almost-hit-by-drone-en-route-to-oslo-norway-pm-says",
           "date": "2026-09-10T15:55:25.000Z",
@@ -20944,7 +20937,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Term-limited, hard-right governor instituted an ideological infiltration of universities by placing allies in powerful posts In fewer than four months’ time, Ron DeSantis, Florida’s hard-right governor, will be termed out of office, and what critics saw as his relentless eight-year, “anti-woke” assault on higher education in the state will finally be over. But while DeSantis himself will be gone, ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -20980,25 +20973,25 @@
           "score": 19
         },
         {
-          "title": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-faces-genocide-incitement-complaint-italy-hind-rajab",
-          "date": "2026-09-11T06:41:44.000Z",
-          "source": "Middle East Eye",
+          "title": "Death toll from cargo ship fire in China rises to 25: state media",
+          "url": "https://www.dawn.com/news/2028889/death-toll-from-cargo-ship-fire-in-china-rises-to-25-state-media",
+          "date": "2026-09-10T13:11:16.000Z",
+          "source": "Dawn (Pakistan)",
           "sourceType": "news",
-          "summary": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister The Hind Rajab Foundation (HRF) has filed a criminal complaint in Italy against Israel's minister of environmental protection, Idit Silman, accusing her of incitement to commit genocide against Palestinians in Gaza. In a statement, HRF said the complaint was lodged after Silman arrived in Italy on 6 September 2026 w",
+          "summary": "The death toll from a fire that erupted on Thursday on a foreign-flagged cargo ship docked in a Chinese port has risen to 25, including five people who had been listed as missing, state media said. The bulk carrier, moored in the eastern shipping hub of Qingdao, had 42 people on board when the fire broke out, according to state broadcaster CCTV . 17 of those were evacuated, including five who were",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "'Significant casualties' after fire on cargo ship in eastern China",
@@ -21230,6 +21223,27 @@
             "label": "Drohnenangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-faces-genocide-incitement-complaint-italy-hind-rajab",
+          "date": "2026-09-11T06:41:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister The Hind Rajab Foundation (HRF) has filed a criminal complaint in Italy against Israel's minister of environmental protection, Idit Silman, accusing her of incitement to commit genocide against Palestinians in Gaza. In a statement, HRF said the complaint was lodged after Silman arrived in Italy on 6 September 2026 w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
         },
         {
           "title": "BRICS summit may be the only place another Iran ceasefire can be built",
@@ -21620,27 +21634,6 @@
           "score": 15
         },
         {
-          "title": "At least 100 killed as Yemen’s Houthis push towards key strait",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/at-least-100-killed-as-yemens-houthis-push-towards-key-strait?traffic_source=rss",
-          "date": "2026-09-04T13:13:14.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Fighting has intensified between Iran-backed Houthi rebels and Yemeni government forces since Thursday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
           "title": "Diphtheria deaths rise to 27 as suspected cases hit 303 in Plateau",
           "url": "https://www.premiumtimesng.com/health/health-news/908605-diphtheria-deaths-rise-to-27-as-suspected-cases-hit-303-in-plateau.html",
           "date": "2026-09-10T11:37:20.000Z",
@@ -21942,7 +21935,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Sudan: General Coordination for Displaced People Warns of Deepening Food Insecurity in Sudan",
@@ -22375,492 +22368,7 @@
           "score": 8
         }
       ],
-      "itemCount": 75
-    },
-    {
-      "id": "somalia",
-      "name": "Somalia",
-      "nameEn": "Somalia",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "Somalia"
-      ],
-      "lat": 4.5,
-      "lon": 45.5,
-      "tier": "high",
-      "since": "2006",
-      "parties": [
-        "Bundesregierung",
-        "Al-Shabaab",
-        "IS-Somalia",
-        "AUSSOM",
-        "Puntland",
-        "Jubaland"
-      ],
-      "background": "Al-Shabaab-Offensiven in Hirshabelle und Shabelle, IS-Ableger in Puntland, Spannungen zwischen Mogadischu und den Bundesstaaten sowie um Somaliland.",
-      "hotspots": [
-        "Mogadischu",
-        "Shabelle",
-        "Puntland",
-        "Jubaland",
-        "Somaliland"
-      ],
-      "activity": 20,
-      "severity": 45,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "SOM",
-      "extraCountries": [
-        "ETH"
-      ],
-      "regions": [
-        {
-          "id": "ETH-3134",
-          "name": "Somali",
-          "nameDe": "Somali",
-          "type": "Administrative State",
-          "anchor": [
-            43.324,
-            6.938
-          ],
-          "count": 9,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Somalia: Somaliland Willing to Send Up to 2,000 Troops to Gaza Force, President Says",
-          "url": "https://allafrica.com/stories/202609100425.html",
-          "date": "2026-09-10T12:21:50.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Washington -- Somaliland is willing to contribute up to 2,000 soldiers to the International Stabilization Force planned for Gaza but is waiting for the US or Israel to ask, Somaliland President Abdirahman Mohamed Abdullahi said on Wednesday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 22
-        },
-        {
-          "title": "Somalia: Somali Army Commander, Turkey-Trained Troops Welcomed in Mogadishu",
-          "url": "https://allafrica.com/stories/202609090520.html",
-          "date": "2026-09-09T15:11:55.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Mogadishu -- Somalia's 21st Gorgor Commando Brigade commander and a contingent of Somali soldiers who completed advanced military training in Turkey have been welcomed at a ceremony in Mogadishu, the military said Wednesday.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Somalia : Somali Businessman Killed in Suspected Clan Revenge Attack in Gaalkayo",
-          "url": "https://allafrica.com/stories/202609090281.html",
-          "date": "2026-09-09T12:00:00.000Z",
-          "source": "allafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Somalia: Somali Army Chief Visits Wounded Soldiers At Mogadishu Hospital",
-          "url": "https://allafrica.com/stories/202609080437.html",
-          "date": "2026-09-08T14:09:33.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Mogadishu -- Somali army chief Brigadier General Ibrahim Mohamed Mohamud visited a hospital in Mogadishu on Tuesday to check on soldiers wounded during security operations, the military said.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "US Says It Launched Two More Airstrikes in Somalia",
-          "url": "https://news.antiwar.com/2026/09/08/us-says-it-launched-two-more-airstrikes-in-somalia/",
-          "date": "2026-09-08T22:00:00.000Z",
-          "source": "news.antiwar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Fahad Yasin Launches Explosive Attack on Somalia New Parliament Speaker",
-          "url": "https://wardheernews.com/fahad-yaasiin-launches-explosive-attack-on-somalias-new-parliament-speaker/",
-          "date": "2026-09-07T08:15:00.000Z",
-          "source": "wardheernews.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Turkish Flags Burn as Anti - Ankara Anger Grows in Somalia After Doolow Attack",
-          "url": "http://sunatimes.com/articles/6612/Turkish-Flags-Burn-as-Anti-Ankara-Anger-Grows-in-Somalia-After-Doolow-Attack",
-          "date": "2026-09-06T15:45:00.000Z",
-          "source": "sunatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Somalia Opposition Figure Injured in Doolow Airstrike as Tensions Surge",
-          "url": "https://raxanreeb.com/somalia-opposition-figure-injured-in-doolow-airstrike-as-tensions-surge/",
-          "date": "2026-09-04T12:45:00.000Z",
-          "source": "raxanreeb.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Hijacking pirates exploit regional chaos to return to seas off Somalia",
-          "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
-          "date": "2026-09-08T04:00:27.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "US-Israel war on Iran and political instability in Somalia lead to pirates targeting cargo ships off Horn of Africa The scourge of Somali piracy targeting cargo ships and smaller dhows off the Horn of Africa has returned to levels not seen in a decade, driven by a convergence of factors including disruptions to the shipping industry caused by the US-Israeli war against Iran and a resurgence of pol",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 9
-        },
-        {
-          "title": "Somalia: Somali Army Chief Inspects Damaged Bridge in Baardheere Amid Flood Fears",
-          "url": "https://allafrica.com/stories/202609080109.html",
-          "date": "2026-09-08T06:57:28.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Baardheere, Somalia -- The commander of the Somali army's ground forces, Brigadier General Sahal Abdullahi Omar, has inspected a heavily damaged bridge in the southern town of Baardheere, as authorities prepare for possible major flooding across Somalia.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Somalia: Somali Commandos Conduct Operations Against Al-Shabaab in Lower Shabelle",
-          "url": "https://allafrica.com/stories/202609070227.html",
-          "date": "2026-09-07T10:22:01.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Mogadishu, Somalia -- Somali special forces have carried out planned operations targeting suspected Al-Shabaab activity in the Lower Shabelle region, the military said Sunday.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Somalia: Somali Army Commander Visits Gedo to Assess Security Operations",
-          "url": "https://allafrica.com/stories/202609070226.html",
-          "date": "2026-09-07T10:22:00.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Bardere, Somalia -- The commander of Somalia's land forces, Brigadier General Sahal Abdullahi Omar, has arrived in the southern town of Baardheere to assess the security situation and ongoing military operations in the Gedo region.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "OP - ED | Southwest Somalia : A Political Crisis Becoming a Civil War",
-          "url": "https://www.garoweonline.com/en/opinions/op-ed-southwest-somalia-a-political-crisis-becoming-a-civil-war",
-          "date": "2026-09-06T10:15:00.000Z",
-          "source": "garoweonline.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Somali forces kill 14 al - Shabaab fighters in southwest region",
-          "url": "https://www.prokerala.com/news/articles/a1808981.html",
-          "date": "2026-09-05T19:00:00.000Z",
-          "source": "prokerala.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Somali forces kill 14 al - Shabaab fighters in southwest region - Xinhua",
-          "url": "https://english.news.cn/20260905/9e5712d68ff645a185a8e829d78b5ac4/c.html",
-          "date": "2026-09-05T13:00:00.000Z",
-          "source": "english.news.cn",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 15
+      "itemCount": 74
     },
     {
       "id": "colombia",
@@ -22889,7 +22397,7 @@
       ],
       "activity": 22,
       "severity": 45,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -22922,8 +22430,8 @@
           "date": "2026-09-11T12:01:22.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and six injured in strikes on two petrol stations on Friday mornin",
-          "isNew": true,
+          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and 12 injured in strikes on two petrol stations on Friday morning",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "airstrike",
@@ -23784,6 +23292,470 @@
         }
       ],
       "itemCount": 21
+    },
+    {
+      "id": "somalia",
+      "name": "Somalia",
+      "nameEn": "Somalia",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "Somalia"
+      ],
+      "lat": 4.5,
+      "lon": 45.5,
+      "tier": "high",
+      "since": "2006",
+      "parties": [
+        "Bundesregierung",
+        "Al-Shabaab",
+        "IS-Somalia",
+        "AUSSOM",
+        "Puntland",
+        "Jubaland"
+      ],
+      "background": "Al-Shabaab-Offensiven in Hirshabelle und Shabelle, IS-Ableger in Puntland, Spannungen zwischen Mogadischu und den Bundesstaaten sowie um Somaliland.",
+      "hotspots": [
+        "Mogadischu",
+        "Shabelle",
+        "Puntland",
+        "Jubaland",
+        "Somaliland"
+      ],
+      "activity": 19,
+      "severity": 44,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "SOM",
+      "extraCountries": [
+        "ETH"
+      ],
+      "regions": [
+        {
+          "id": "ETH-3134",
+          "name": "Somali",
+          "nameDe": "Somali",
+          "type": "Administrative State",
+          "anchor": [
+            43.324,
+            6.938
+          ],
+          "count": 9,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Somalia: Somaliland Willing to Send Up to 2,000 Troops to Gaza Force, President Says",
+          "url": "https://allafrica.com/stories/202609100425.html",
+          "date": "2026-09-10T12:21:50.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Washington -- Somaliland is willing to contribute up to 2,000 soldiers to the International Stabilization Force planned for Gaza but is waiting for the US or Israel to ask, Somaliland President Abdirahman Mohamed Abdullahi said on Wednesday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Somalia: Somali Army Commander, Turkey-Trained Troops Welcomed in Mogadishu",
+          "url": "https://allafrica.com/stories/202609090520.html",
+          "date": "2026-09-09T15:11:55.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Mogadishu -- Somalia's 21st Gorgor Commando Brigade commander and a contingent of Somali soldiers who completed advanced military training in Turkey have been welcomed at a ceremony in Mogadishu, the military said Wednesday.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
+        },
+        {
+          "title": "Somalia : Somali Businessman Killed in Suspected Clan Revenge Attack in Gaalkayo",
+          "url": "https://allafrica.com/stories/202609090281.html",
+          "date": "2026-09-09T12:00:00.000Z",
+          "source": "allafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Somalia: Somali Army Chief Visits Wounded Soldiers At Mogadishu Hospital",
+          "url": "https://allafrica.com/stories/202609080437.html",
+          "date": "2026-09-08T14:09:33.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Mogadishu -- Somali army chief Brigadier General Ibrahim Mohamed Mohamud visited a hospital in Mogadishu on Tuesday to check on soldiers wounded during security operations, the military said.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "US Says It Launched Two More Airstrikes in Somalia",
+          "url": "https://news.antiwar.com/2026/09/08/us-says-it-launched-two-more-airstrikes-in-somalia/",
+          "date": "2026-09-08T22:00:00.000Z",
+          "source": "news.antiwar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Fahad Yasin Launches Explosive Attack on Somalia New Parliament Speaker",
+          "url": "https://wardheernews.com/fahad-yaasiin-launches-explosive-attack-on-somalias-new-parliament-speaker/",
+          "date": "2026-09-07T08:15:00.000Z",
+          "source": "wardheernews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Turkish Flags Burn as Anti - Ankara Anger Grows in Somalia After Doolow Attack",
+          "url": "http://sunatimes.com/articles/6612/Turkish-Flags-Burn-as-Anti-Ankara-Anger-Grows-in-Somalia-After-Doolow-Attack",
+          "date": "2026-09-06T15:45:00.000Z",
+          "source": "sunatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Hijacking pirates exploit regional chaos to return to seas off Somalia",
+          "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
+          "date": "2026-09-08T04:00:27.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "US-Israel war on Iran and political instability in Somalia lead to pirates targeting cargo ships off Horn of Africa The scourge of Somali piracy targeting cargo ships and smaller dhows off the Horn of Africa has returned to levels not seen in a decade, driven by a convergence of factors including disruptions to the shipping industry caused by the US-Israeli war against Iran and a resurgence of pol",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 9
+        },
+        {
+          "title": "Somalia: Somali Army Chief Inspects Damaged Bridge in Baardheere Amid Flood Fears",
+          "url": "https://allafrica.com/stories/202609080109.html",
+          "date": "2026-09-08T06:57:28.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Baardheere, Somalia -- The commander of the Somali army's ground forces, Brigadier General Sahal Abdullahi Omar, has inspected a heavily damaged bridge in the southern town of Baardheere, as authorities prepare for possible major flooding across Somalia.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Somalia: Somali Commandos Conduct Operations Against Al-Shabaab in Lower Shabelle",
+          "url": "https://allafrica.com/stories/202609070227.html",
+          "date": "2026-09-07T10:22:01.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Mogadishu, Somalia -- Somali special forces have carried out planned operations targeting suspected Al-Shabaab activity in the Lower Shabelle region, the military said Sunday.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Somalia: Somali Army Commander Visits Gedo to Assess Security Operations",
+          "url": "https://allafrica.com/stories/202609070226.html",
+          "date": "2026-09-07T10:22:00.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Bardere, Somalia -- The commander of Somalia's land forces, Brigadier General Sahal Abdullahi Omar, has arrived in the southern town of Baardheere to assess the security situation and ongoing military operations in the Gedo region.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "OP - ED | Southwest Somalia : A Political Crisis Becoming a Civil War",
+          "url": "https://www.garoweonline.com/en/opinions/op-ed-southwest-somalia-a-political-crisis-becoming-a-civil-war",
+          "date": "2026-09-06T10:15:00.000Z",
+          "source": "garoweonline.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Somali forces kill 14 al - Shabaab fighters in southwest region",
+          "url": "https://www.prokerala.com/news/articles/a1808981.html",
+          "date": "2026-09-05T19:00:00.000Z",
+          "source": "prokerala.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Somali forces kill 14 al - Shabaab fighters in southwest region - Xinhua",
+          "url": "https://english.news.cn/20260905/9e5712d68ff645a185a8e829d78b5ac4/c.html",
+          "date": "2026-09-05T13:00:00.000Z",
+          "source": "english.news.cn",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 14
     },
     {
       "id": "ethiopia",
@@ -25244,13 +25216,13 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 3,
       "signals": [
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 14
+          "count": 13
         },
         {
           "key": "casualties",
@@ -25281,8 +25253,68 @@
       "briefing": null,
       "iso3": "GEO",
       "extraCountries": [],
-      "regions": [],
+      "regions": [
+        {
+          "id": "GEO-3036",
+          "name": "Tbilisi",
+          "nameDe": "Tiflis",
+          "type": "Independent City",
+          "anchor": [
+            44.83,
+            41.702
+          ],
+          "count": 1,
+          "newCount": 1,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          }
+        }
+      ],
       "items": [
+        {
+          "title": "Russian strikes kill two in Kyiv as Moscow targets capital’s fuel stations",
+          "url": "https://www.aljazeera.com/news/2026/9/11/russian-strikes-kill-two-in-kyiv-as-moscow-targets-capitals-fuel-stations?traffic_source=rss",
+          "date": "2026-09-11T13:09:44.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Second day of strikes on fuel stations suggest a new campaign focused on civilian areas in the Ukrainian capital.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
+          "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine",
+          "date": "2026-09-11T12:01:22.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and 12 injured in strikes on two petrol stations on Friday morning",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
         {
           "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
           "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
@@ -25302,28 +25334,28 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 25
         },
         {
-          "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
-          "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine",
-          "date": "2026-09-11T12:01:22.000Z",
-          "source": "The Guardian World",
+          "title": "Georgian Church criticises Russia’s claims they have army unit named after Georgian monk",
+          "url": "https://oc-media.org/georgian-church-criticises-russias-claims-they-have-army-unit-named-after-georgian-monk/",
+          "date": "2026-09-11T13:16:43.000Z",
+          "source": "OC Media (Kaukasus)",
           "sourceType": "news",
-          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and six injured in strikes on two petrol stations on Friday mornin",
+          "summary": "The first reports about a unit named after monk Gabriel Urgebadze emerged in January.",
           "isNew": true,
           "region": null,
           "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 26
+          "score": 22
         },
         {
           "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
@@ -25408,6 +25440,37 @@
             "label": "Entführung/Geiseln"
           },
           "score": 22
+        },
+        {
+          "title": "Georgia says it will comply with the US sanctions against Iranian airlines",
+          "url": "https://oc-media.org/georgia-says-it-will-comply-with-the-us-sanctions-against-iranian-airlines/",
+          "date": "2026-09-11T13:26:53.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "As of publication, several sanctioned airlines are on the schedule to use Tbilisi International Airport.",
+          "isNew": true,
+          "region": {
+            "id": "GEO-3036",
+            "name": "Tbilisi",
+            "nameDe": "Tiflis",
+            "type": "Independent City",
+            "anchor": [
+              44.83,
+              41.702
+            ],
+            "matched": "Tbilisi"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 20
         },
         {
           "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
@@ -26163,7 +26226,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 12
+          "score": 11
         },
         {
           "title": "UK man charged with assisting Russian military spies in sabotage plot",
@@ -26605,30 +26668,9 @@
             "label": "Vertreibung"
           },
           "score": 8
-        },
-        {
-          "title": "US envoys headed to Russia and Ukraine to relaunch mediation",
-          "url": "https://www.aljazeera.com/news/2026/9/4/us-envoys-headed-to-russia-and-ukraine-to-relaunch-mediation?traffic_source=rss",
-          "date": "2026-09-04T12:51:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Amid hopes for diplomacy, a Russian strike hits the headquarters of Ukraine's SBU security service in Kyiv.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 64
+      "itemCount": 66
     },
     {
       "id": "moldova-transnistria",
@@ -26655,13 +26697,13 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 3,
       "signals": [
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 16
+          "count": 15
         },
         {
           "key": "casualties",
@@ -26682,9 +26724,9 @@
           "count": 6
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
           "count": 4
         }
       ],
@@ -26694,6 +26736,48 @@
       "extraCountries": [],
       "regions": [],
       "items": [
+        {
+          "title": "Russian strikes kill two in Kyiv as Moscow targets capital’s fuel stations",
+          "url": "https://www.aljazeera.com/news/2026/9/11/russian-strikes-kill-two-in-kyiv-as-moscow-targets-capitals-fuel-stations?traffic_source=rss",
+          "date": "2026-09-11T13:09:44.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Second day of strikes on fuel stations suggest a new campaign focused on civilian areas in the Ukrainian capital.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
+          "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine",
+          "date": "2026-09-11T12:01:22.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and 12 injured in strikes on two petrol stations on Friday morning",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 26
+        },
         {
           "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
           "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
@@ -26713,28 +26797,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
-        },
-        {
-          "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
-          "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine",
-          "date": "2026-09-11T12:01:22.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and six injured in strikes on two petrol stations on Friday mornin",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 26
+          "score": 25
         },
         {
           "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
@@ -26821,27 +26884,6 @@
           "score": 22
         },
         {
-          "title": "Houthis seize key Yemeni Red Sea port, sources say, threatening global energy flows",
-          "url": "https://www.france24.com/en/video/20260910-houthis-seize-key-yemeni-red-sea-port-sources-say-threatening-global-energy-flows",
-          "date": "2026-09-10T13:25:11.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Iran-aligned Houthi militants seized control of Yemen's port city of Mocha on Thursday, military sources said, posing a further threat to global energy supplies. Four Yemeni government military sources said the Houthis had gained further leverage over the Bab el-Mandeb Strait, the southern outlet of the Red Sea and one of the world's most important shipping routes, and were launching attacks on th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 22
-        },
-        {
           "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
           "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-10T04:43:54.000Z",
@@ -26861,6 +26903,69 @@
             "label": "Luftangriff"
           },
           "score": 19
+        },
+        {
+          "title": "US consumer prices stayed high in August as Iran war pushed energy costs up",
+          "url": "https://www.theguardian.com/business/2026/sep/11/inflation-august-interest-rates",
+          "date": "2026-09-11T12:38:12.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Annualized inflation rate was 3.4%, same as July, and core inflation, which omits energy and food prices, was up to 2.4% US consumer prices remained stubbornly high in August as the end of the ceasefire between the US and Iran pushed energy prices up, according to data from the US Bureau of Labor Statistics released on Friday. The annualized inflation rate was 3.4%, the same as it was in July. The",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 19
+        },
+        {
+          "title": "Georgian Church criticises Russia’s claims they have army unit named after Georgian monk",
+          "url": "https://oc-media.org/georgian-church-criticises-russias-claims-they-have-army-unit-named-after-georgian-monk/",
+          "date": "2026-09-11T13:16:43.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The first reports about a unit named after monk Gabriel Urgebadze emerged in January.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Houthis seize key Yemeni Red Sea port, sources say, threatening global energy flows",
+          "url": "https://www.france24.com/en/video/20260910-houthis-seize-key-yemeni-red-sea-port-sources-say-threatening-global-energy-flows",
+          "date": "2026-09-10T13:25:11.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Iran-aligned Houthi militants seized control of Yemen's port city of Mocha on Thursday, military sources said, posing a further threat to global energy supplies. Four Yemeni government military sources said the Houthis had gained further leverage over the Bab el-Mandeb Strait, the southern outlet of the Red Sea and one of the world's most important shipping routes, and were launching attacks on th",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
         },
         {
           "title": "How Ukraine’s deepest attack in Russia, on Arctic gas, signals new reach",
@@ -27176,27 +27281,6 @@
             "label": "Gefechte"
           },
           "score": 18
-        },
-        {
-          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
-          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
-          "date": "2026-09-10T10:32:31.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
         },
         {
           "title": "Ukraine decries 'horrific' Russian attack shortly after US envoys leave",
@@ -27703,6 +27787,27 @@
           "score": 15
         },
         {
+          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
+          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
+          "date": "2026-09-10T10:32:31.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
           "title": "Iran suspends freight charge on foreign vessels carrying energy products to or from Iran",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-suspends-freight-charge-foreign-vessels-carrying-energy-products-or",
           "date": "2026-09-10T11:06:31.000Z",
@@ -28184,30 +28289,9 @@
             "label": "Vertreibung"
           },
           "score": 8
-        },
-        {
-          "title": "US envoys headed to Russia and Ukraine to relaunch mediation",
-          "url": "https://www.aljazeera.com/news/2026/9/4/us-envoys-headed-to-russia-and-ukraine-to-relaunch-mediation?traffic_source=rss",
-          "date": "2026-09-04T12:51:57.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Amid hopes for diplomacy, a Russian strike hits the headquarters of Ukraine's SBU security service in Kyiv.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 72
+      "itemCount": 74
     },
     {
       "id": "afghanistan",
@@ -28565,6 +28649,292 @@
       "itemCount": 10
     },
     {
+      "id": "armenia-azerbaijan",
+      "name": "Armenien–Aserbaidschan",
+      "nameEn": "Armenia–Azerbaijan",
+      "region": "Europa / Eurasien",
+      "countries": [
+        "Armenia",
+        "Azerbaijan"
+      ],
+      "lat": 39.9,
+      "lon": 46,
+      "tier": "medium",
+      "since": "1988 / Karabach 2023",
+      "parties": [
+        "Armenien",
+        "Aserbaidschan",
+        "Russland",
+        "Türkei"
+      ],
+      "background": "Nach der Rückeroberung Bergkarabachs 2023 und der Washingtoner Erklärung 2025 laufen Friedensverhandlungen; Streit um Korridore und Grenzziehung bleibt.",
+      "hotspots": [
+        "Bergkarabach",
+        "Sjunik/Sangesur-Korridor",
+        "Grenzabschnitte"
+      ],
+      "activity": 21,
+      "severity": 29,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 2
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "ARM",
+      "extraCountries": [
+        "AZE"
+      ],
+      "regions": [
+        {
+          "id": "AZE-1689",
+          "name": "Baku",
+          "nameDe": "Baku",
+          "type": "Municipality",
+          "anchor": [
+            49.752,
+            40.308
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Two Azerbaijani citizens killed in drone attack on cargo ship in Black Sea",
+          "url": "https://oc-media.org/two-azerbaijani-citizens-killed-in-drone-attack-on-cargo-ship-in-black-sea/",
+          "date": "2026-09-10T13:03:57.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The incident was the latest in a string of attacks on cargo ships in the Black Sea.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 19
+        },
+        {
+          "title": "Azerbaijan sentences Talysh activist to 8.5 years after ‘abduction’ from Turkey",
+          "url": "https://oc-media.org/azerbaijan-sentences-talysh-activist-to-8-5-years-after-abduction-from-turkey/",
+          "date": "2026-09-09T14:14:17.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Jahid Isayev, a Russian national, is known for producing educational content about the Talysh people.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 18
+        },
+        {
+          "title": "Armenia promises more military transparency amid spike in non-combat related deaths",
+          "url": "https://oc-media.org/armenia-promises-more-military-transparency-amid-spike-in-non-combat-related-deaths/",
+          "date": "2026-09-10T13:59:08.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Several Armenian soldiers died in non-combat circumstances within a few days of each other in August.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "US promised Armenia Nvidia chips as part of Azerbaijan peace deal, Wall Street Journal reports",
+          "url": "https://oc-media.org/us-promised-armenia-nvidia-chips-as-part-of-azerbaijan-peace-deal-wall-street-journal-reports/",
+          "date": "2026-09-07T12:35:41.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Diplomats told the outlet it is the first time the Trump administration has used promises of AI technology to help broker a peace deal.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Thursday, 10 September 2026",
+          "url": "https://oc-media.org/thursday-10-september-2026/",
+          "date": "2026-09-10T10:58:11.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Regional * Direct flights from Grozny to Baku will resume on 27 October. The flights will be operated by Utair three times a week. Direct flights between Grozny and Baku were suspended following the Azerbaijan Airlines (AZAL) crash in December 2024, which occurred when Russian anti-aircraft missiles mistakenly targeted the plane. Armenia * Armenian Prime Minister Nikol Pashinyan met with French Pr",
+          "isNew": false,
+          "region": {
+            "id": "AZE-1689",
+            "name": "Baku",
+            "nameDe": "Baku",
+            "type": "Municipality",
+            "anchor": [
+              49.752,
+              40.308
+            ],
+            "matched": "Baku"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 13
+        },
+        {
+          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
+          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
+          "date": "2026-09-10T10:32:31.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Azerbaijan begins mining in gold reserves formerly controlled by Armenia",
+          "url": "https://oc-media.org/azerbaijan-begins-mining-in-gold-reserves-formerly-controlled-by-armenia/",
+          "date": "2026-09-09T12:06:55.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The territory had been under Armenian control until the Second Nagorno-Karabakh War of 2020.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Wednesday, 9 September 2026",
+          "url": "https://oc-media.org/wednesday-9-september-2026/",
+          "date": "2026-09-09T11:19:52.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Regional * Yesterday, Azerbaijani Deputy Foreign Minister Elnur Mammadov received the acting US ambassadors to Armenia and Azerbaijan in Baku. The meeting, according to Azerbaijani pro-government media APA, aside from touching upon the ongoing peace process between Armenia and Azerbaijan, also included an exchanged views on the ‘ongoing activities’ toward the implementation of the Trump Route and ",
+          "isNew": false,
+          "region": {
+            "id": "AZE-1689",
+            "name": "Baku",
+            "nameDe": "Baku",
+            "type": "Municipality",
+            "anchor": [
+              49.752,
+              40.308
+            ],
+            "matched": "Baku"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Armenia’s former army chief renounces citizenship in protest against government",
+          "url": "https://oc-media.org/armenias-former-army-chief-renounces-citizenship-in-protest-against-government/",
+          "date": "2026-09-08T11:18:54.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Norat Ter-Grigoryants accused the government of ‘betraying’ Armenians.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 9
+    },
+    {
       "id": "turkey-pkk",
       "name": "Türkei–PKK",
       "nameEn": "Turkey–PKK",
@@ -28587,8 +28957,8 @@
         "Kandil",
         "Nordsyrien"
       ],
-      "activity": 22,
-      "severity": 29,
+      "activity": 20,
+      "severity": 28,
       "newCount": 0,
       "signals": [
         {
@@ -28702,7 +29072,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
@@ -28888,8 +29258,8 @@
         "N'Djamena",
         "Ost-Tschad"
       ],
-      "activity": 21,
-      "severity": 29,
+      "activity": 19,
+      "severity": 28,
       "newCount": 0,
       "signals": [
         {
@@ -29034,7 +29404,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Nigeria: Troops Repel Boko Haram/Iswap Attack On Base in Borno Community",
@@ -29153,292 +29523,6 @@
         }
       ],
       "itemCount": 10
-    },
-    {
-      "id": "armenia-azerbaijan",
-      "name": "Armenien–Aserbaidschan",
-      "nameEn": "Armenia–Azerbaijan",
-      "region": "Europa / Eurasien",
-      "countries": [
-        "Armenia",
-        "Azerbaijan"
-      ],
-      "lat": 39.9,
-      "lon": 46,
-      "tier": "medium",
-      "since": "1988 / Karabach 2023",
-      "parties": [
-        "Armenien",
-        "Aserbaidschan",
-        "Russland",
-        "Türkei"
-      ],
-      "background": "Nach der Rückeroberung Bergkarabachs 2023 und der Washingtoner Erklärung 2025 laufen Friedensverhandlungen; Streit um Korridore und Grenzziehung bleibt.",
-      "hotspots": [
-        "Bergkarabach",
-        "Sjunik/Sangesur-Korridor",
-        "Grenzabschnitte"
-      ],
-      "activity": 23,
-      "severity": 29,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 2
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "ARM",
-      "extraCountries": [
-        "AZE"
-      ],
-      "regions": [
-        {
-          "id": "AZE-1689",
-          "name": "Baku",
-          "nameDe": "Baku",
-          "type": "Municipality",
-          "anchor": [
-            49.752,
-            40.308
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Two Azerbaijani citizens killed in drone attack on cargo ship in Black Sea",
-          "url": "https://oc-media.org/two-azerbaijani-citizens-killed-in-drone-attack-on-cargo-ship-in-black-sea/",
-          "date": "2026-09-10T13:03:57.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The incident was the latest in a string of attacks on cargo ships in the Black Sea.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 23
-        },
-        {
-          "title": "Azerbaijan sentences Talysh activist to 8.5 years after ‘abduction’ from Turkey",
-          "url": "https://oc-media.org/azerbaijan-sentences-talysh-activist-to-8-5-years-after-abduction-from-turkey/",
-          "date": "2026-09-09T14:14:17.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Jahid Isayev, a Russian national, is known for producing educational content about the Talysh people.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 18
-        },
-        {
-          "title": "Armenia promises more military transparency amid spike in non-combat related deaths",
-          "url": "https://oc-media.org/armenia-promises-more-military-transparency-amid-spike-in-non-combat-related-deaths/",
-          "date": "2026-09-10T13:59:08.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Several Armenian soldiers died in non-combat circumstances within a few days of each other in August.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "US promised Armenia Nvidia chips as part of Azerbaijan peace deal, Wall Street Journal reports",
-          "url": "https://oc-media.org/us-promised-armenia-nvidia-chips-as-part-of-azerbaijan-peace-deal-wall-street-journal-reports/",
-          "date": "2026-09-07T12:35:41.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Diplomats told the outlet it is the first time the Trump administration has used promises of AI technology to help broker a peace deal.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Thursday, 10 September 2026",
-          "url": "https://oc-media.org/thursday-10-september-2026/",
-          "date": "2026-09-10T10:58:11.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Regional * Direct flights from Grozny to Baku will resume on 27 October. The flights will be operated by Utair three times a week. Direct flights between Grozny and Baku were suspended following the Azerbaijan Airlines (AZAL) crash in December 2024, which occurred when Russian anti-aircraft missiles mistakenly targeted the plane. Armenia * Armenian Prime Minister Nikol Pashinyan met with French Pr",
-          "isNew": false,
-          "region": {
-            "id": "AZE-1689",
-            "name": "Baku",
-            "nameDe": "Baku",
-            "type": "Municipality",
-            "anchor": [
-              49.752,
-              40.308
-            ],
-            "matched": "Baku"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 13
-        },
-        {
-          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
-          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
-          "date": "2026-09-10T10:32:31.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Azerbaijan begins mining in gold reserves formerly controlled by Armenia",
-          "url": "https://oc-media.org/azerbaijan-begins-mining-in-gold-reserves-formerly-controlled-by-armenia/",
-          "date": "2026-09-09T12:06:55.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The territory had been under Armenian control until the Second Nagorno-Karabakh War of 2020.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Wednesday, 9 September 2026",
-          "url": "https://oc-media.org/wednesday-9-september-2026/",
-          "date": "2026-09-09T11:19:52.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Regional * Yesterday, Azerbaijani Deputy Foreign Minister Elnur Mammadov received the acting US ambassadors to Armenia and Azerbaijan in Baku. The meeting, according to Azerbaijani pro-government media APA, aside from touching upon the ongoing peace process between Armenia and Azerbaijan, also included an exchanged views on the ‘ongoing activities’ toward the implementation of the Trump Route and ",
-          "isNew": false,
-          "region": {
-            "id": "AZE-1689",
-            "name": "Baku",
-            "nameDe": "Baku",
-            "type": "Municipality",
-            "anchor": [
-              49.752,
-              40.308
-            ],
-            "matched": "Baku"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Armenia’s former army chief renounces citizenship in protest against government",
-          "url": "https://oc-media.org/armenias-former-army-chief-renounces-citizenship-in-protest-against-government/",
-          "date": "2026-09-08T11:18:54.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Norat Ter-Grigoryants accused the government of ‘betraying’ Armenians.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 9
     },
     {
       "id": "iraq",
@@ -30457,8 +30541,8 @@
         "Sirte",
         "Ölhalbmond"
       ],
-      "activity": 4,
-      "severity": 24,
+      "activity": 3,
+      "severity": 23,
       "newCount": 0,
       "signals": [],
       "acled": null,
@@ -30472,27 +30556,6 @@
           "url": "https://northafricapost.com/100084-libya-arrests-five-over-drone-attacks-on-oil-and-electricity-facilities.html",
           "date": "2026-09-07T17:45:00.000Z",
           "source": "northafricapost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Drone targets fuel depot in Libyan capital",
-          "url": "http://www.zimbabwestar.com/news/279285846/drone-targets-fuel-depot-in-libyan-capital",
-          "date": "2026-09-04T12:45:00.000Z",
-          "source": "zimbabwestar.com",
           "sourceType": "news",
           "summary": "",
           "isNew": false,
@@ -30573,7 +30636,7 @@
           "score": 8
         }
       ],
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "mozambique",
@@ -30600,15 +30663,15 @@
         "Palma",
         "Macomia"
       ],
-      "activity": 4,
-      "severity": 24,
+      "activity": 3,
+      "severity": 23,
       "newCount": 0,
       "signals": [
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 4
+          "count": 3
         }
       ],
       "acled": null,
@@ -30729,27 +30792,6 @@
           "score": 15
         },
         {
-          "title": "Americans evacuated after suspected insurgents attack African hunting lodge",
-          "url": "https://www.independent.co.uk/news/world/americas/americans-evacuated-niassa-hunting-mozambique-b3044700.html",
-          "date": "2026-09-04T12:45:00.000Z",
-          "source": "independent.co.uk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Mozambique Gas Restarts as Insurgents Keep Killing Civilians",
           "url": "https://www.riotimesonline.com/mozambique-gas-totalenergies-2026/",
           "date": "2026-09-05T02:15:00.000Z",
@@ -30781,7 +30823,7 @@
           "score": 8
         }
       ],
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "west-papua",
@@ -30929,8 +30971,8 @@
         "Zvečan",
         "Grenzübergänge"
       ],
-      "activity": 30,
-      "severity": 20,
+      "activity": 27,
+      "severity": 19,
       "newCount": 0,
       "signals": [
         {
@@ -31009,27 +31051,6 @@
           "score": 16
         },
         {
-          "title": "Hague Prosecutors Seek Six Years for Kosovo’s Thaci for Obstructing Justice",
-          "url": "https://balkaninsight.com/2026/09/10/hague-prosecutors-seek-six-years-for-kosovos-thaci-for-obstructing-justice/btj/",
-          "date": "2026-09-10T13:33:45.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Prosecution in closing statements demands six years' prison for Thaci, claiming he told his co-defendants to instruct witnesses what to say while testifying in his war crimes case.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 16
-        },
-        {
           "title": "Serbia’s Vucic Slates EU Condemnation of Mladic Tributes as ‘Stupid’",
           "url": "https://balkaninsight.com/2026/09/04/serbias-vucic-slates-eu-condemnation-of-mladic-tributes-as-stupid/btj/",
           "date": "2026-09-04T15:04:29.000Z",
@@ -31059,6 +31080,27 @@
             "label": "Proteste/Unruhen"
           },
           "score": 13
+        },
+        {
+          "title": "Hague Prosecutors Seek Six Years for Kosovo’s Thaci for Obstructing Justice",
+          "url": "https://balkaninsight.com/2026/09/10/hague-prosecutors-seek-six-years-for-kosovos-thaci-for-obstructing-justice/btj/",
+          "date": "2026-09-10T13:33:45.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Prosecution in closing statements demands six years' prison for Thaci, claiming he told his co-defendants to instruct witnesses what to say while testifying in his war crimes case.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
         },
         {
           "title": "After Delays and Controversies, End in Sight For Thaci’s Kosovo War Crimes Trial",
