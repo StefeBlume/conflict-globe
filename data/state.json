@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-11T05:33:48.105Z",
-  "durationSec": 365,
+  "generatedAt": "2026-09-11T06:40:48.748Z",
+  "durationSec": 385,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,32 +114,40 @@
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 6,
-      "skipped": 6,
+      "ok": 3,
+      "failed": 8,
+      "skipped": 5,
       "errors": [
+        {
+          "id": "burkina-faso",
+          "error": "fetch failed"
+        },
+        {
+          "id": "venezuela",
+          "error": "HTTP 429"
+        },
         {
           "id": "myanmar",
           "error": "HTTP 429"
         },
         {
-          "id": "iraq",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "india-pakistan",
+          "id": "car",
           "error": "fetch failed"
         },
         {
-          "id": "cameroon",
-          "error": "fetch failed"
-        },
-        {
-          "id": "ethiopia",
+          "id": "sahel-mali",
           "error": "HTTP 429"
         },
         {
-          "id": "thailand-cambodia",
+          "id": "colombia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "south-china-sea",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "mozambique",
           "error": "HTTP 429"
         }
       ]
@@ -148,8 +156,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1212,
-    "newArticles": 11
+    "articles": 1207,
+    "newArticles": 9
   },
   "conflicts": [
     {
@@ -181,13 +189,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 10
+          "count": 11
         },
         {
           "key": "airstrike",
@@ -300,6 +308,27 @@
       ],
       "items": [
         {
+          "title": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+          "url": "https://www.bbc.co.uk/news/articles/cpvelrmp1vmo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T22:36:02.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 29
+        },
+        {
           "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
           "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
           "date": "2026-09-10T15:12:08.000Z",
@@ -352,90 +381,6 @@
           "score": 26
         },
         {
-          "title": "Zelensky's plane 'almost hit' by drone en route to Oslo, Norway PM says",
-          "url": "https://www.france24.com/en/video/20260910-zelensky-s-plane-almost-hit-by-drone-en-route-to-oslo-norway-pm-says",
-          "date": "2026-09-10T15:55:25.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukraine and Moldova on Wednesday played down claims from Norway's prime minister that a plane carrying President Volodymyr Zelensky was almost hit by a drone as it flew to Oslo. Jonas Gahr Store told Norwegian public broadcaster NRK that Zelensky's plane was \"almost hit by a drone when it was taking off from Moldova\". But a source in the Ukrainian presidency described the claim that Zelensky was a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 25
-        },
-        {
-          "title": "Canada , Ukraine to scale up military drone production - Xinhua",
-          "url": "https://english.news.cn/northamerica/20260911/d041e3ca78ef42449d7dc69b6446cdac/c.html",
-          "date": "2026-09-10T23:45:00.000Z",
-          "source": "english.news.cn",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 25
-        },
-        {
-          "title": "Ukraine starts making BARS strike drones in Europe as the latest version pushes range to 1 , 000 kilometers",
-          "url": "https://www.techradar.com/pro/ukraine-starts-building-jet-powered-drone-with-a-range-of-over-1-000-kilometers",
-          "date": "2026-09-10T23:45:00.000Z",
-          "source": "techradar.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 25
-        },
-        {
-          "title": "Family mourns death of loved one killed fighting in Ukraine",
-          "url": "https://globalnews.ca/news/12054958/family-mourns-death-loved-one-killed-fighting-ukraine/",
-          "date": "2026-09-10T23:45:00.000Z",
-          "source": "globalnews.ca",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 25
-        },
-        {
           "title": "Port and theatre catch fire in Makhachkala after Ukrainian drone attack",
           "url": "https://oc-media.org/port-and-theatre-catch-fire-in-makhachkala-after-ukrainian-drone-attack/",
           "date": "2026-09-10T10:35:32.000Z",
@@ -474,6 +419,90 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Zelensky's plane 'almost hit' by drone en route to Oslo, Norway PM says",
+          "url": "https://www.france24.com/en/video/20260910-zelensky-s-plane-almost-hit-by-drone-en-route-to-oslo-norway-pm-says",
+          "date": "2026-09-10T15:55:25.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine and Moldova on Wednesday played down claims from Norway's prime minister that a plane carrying President Volodymyr Zelensky was almost hit by a drone as it flew to Oslo. Jonas Gahr Store told Norwegian public broadcaster NRK that Zelensky's plane was \"almost hit by a drone when it was taking off from Moldova\". But a source in the Ukrainian presidency described the claim that Zelensky was a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Canada , Ukraine to scale up military drone production - Xinhua",
+          "url": "https://english.news.cn/northamerica/20260911/d041e3ca78ef42449d7dc69b6446cdac/c.html",
+          "date": "2026-09-10T23:45:00.000Z",
+          "source": "english.news.cn",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Ukraine starts making BARS strike drones in Europe as the latest version pushes range to 1 , 000 kilometers",
+          "url": "https://www.techradar.com/pro/ukraine-starts-building-jet-powered-drone-with-a-range-of-over-1-000-kilometers",
+          "date": "2026-09-10T23:45:00.000Z",
+          "source": "techradar.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
+        },
+        {
+          "title": "Family mourns death of loved one killed fighting in Ukraine",
+          "url": "https://globalnews.ca/news/12054958/family-mourns-death-loved-one-killed-fighting-ukraine/",
+          "date": "2026-09-10T23:45:00.000Z",
+          "source": "globalnews.ca",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 22
         },
@@ -857,27 +886,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 20
-        },
-        {
-          "title": "Democracy Digest: Poland Investigates Arson of Drone Factory as Suspected Russian Sabotage",
-          "url": "https://balkaninsight.com/2026/09/04/democracy-digest-poland-investigates-arson-of-drone-factory-as-suspected-russian-sabotage/rd/",
-          "date": "2026-09-04T06:21:36.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Elsewhere, Hungary indicates it might not be the kind of pliant partner the EU had hoped for; draft of Czechia’s 2027 budget met with criticism from all quarters; Slovakia defies Kremlin warning over signing Ukraine compensation convention.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
           },
           "regionEvent": {
             "type": "drone",
@@ -1334,6 +1342,27 @@
           "score": 18
         },
         {
+          "title": "ترمپ: مانع اصلی پایان جنگ، اختلاف میان پوتین و زلنسکی است",
+          "url": "https://tolonews.com/fa/world-200777",
+          "date": "2026-09-10T08:34:59.000Z",
+          "source": "TOLOnews (Afghanistan)",
+          "sourceType": "news",
+          "summary": "Trump Says Putin Wants Deal to End Ukraine War Hayatullah.Rahimi Thu, 09/10/2026 - 23:04 Author TOLOnews Profile Photo Author Short Bio TOLOnews is Afghanistan’s first 24-hour TV/online news channel covering national, regional and world affairs. Author Job TV Network World Efforts to end the war in Ukraine continue as the United States says Russia has shown willingness to reach an agreement, altho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "EU urges Kiev to mobilize women Moscow",
           "url": "http://www.philippinetimes.com/news/279299521/eu-urges-kiev-to-mobilize-women-moscow",
           "date": "2026-09-10T23:45:00.000Z",
@@ -1362,28 +1391,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
-        },
-        {
-          "title": "ترمپ: مانع اصلی پایان جنگ، اختلاف میان پوتین و زلنسکی است",
-          "url": "https://tolonews.com/fa/world-200777",
-          "date": "2026-09-10T08:34:59.000Z",
-          "source": "TOLOnews (Afghanistan)",
-          "sourceType": "news",
-          "summary": "Trump Says Putin Wants Deal to End Ukraine War Hayatullah.Rahimi Thu, 09/10/2026 - 23:04 Author TOLOnews Profile Photo Author Short Bio TOLOnews is Afghanistan’s first 24-hour TV/online news channel covering national, regional and world affairs. Author Job TV Network World Efforts to end the war in Ukraine continue as the United States says Russia has shown willingness to reach an agreement, altho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "🔴 Live: At least two killed in Kyiv as Russia renews strikes after three-day pause",
@@ -2289,13 +2297,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 21
+          "count": 20
         },
         {
           "key": "ceasefire",
@@ -2313,7 +2321,7 @@
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 6
+          "count": 5
         },
         {
           "key": "escalation",
@@ -2393,27 +2401,6 @@
             "label": "Gefechte"
           },
           "score": 29
-        },
-        {
-          "title": "Israeli strike in Gaza kills family of four, including children",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-gaza-kills-family-four-including-children",
-          "date": "2026-09-10T21:41:48.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strike in Gaza kills family of four, including children An Israeli strike in Gaza on Thursday killed a family of four, including two children, Palestinian hospital and security sources said. \"The bodies of four members of the Ahmad family were recovered in pieces after an Israeli strike hit a house in the Beit Lahia Project area in the northern Gaza Strip,\" an official at Al-Shifa hospital",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 27
         },
         {
           "title": "Israel's Netanyahu to sue newspaper over claim UAE warned him of 7 October attack",
@@ -2519,6 +2506,48 @@
             "label": "Luftangriff"
           },
           "score": 23
+        },
+        {
+          "title": "NAZA, the Israeli film revealing new layers of the Gaza genocide",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/naza-the-israeli-film-revealing-new-layers-of-the-gaza-genocide?traffic_source=rss",
+          "date": "2026-09-11T05:25:34.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A 25-minute standing ovation at the Biennale has put NAZA, an Israeli-made film confronting Israel’s genocide in Gaza.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli strike in Gaza kills family of four, including children",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-gaza-kills-family-four-including-children",
+          "date": "2026-09-10T21:41:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strike in Gaza kills family of four, including children An Israeli strike in Gaza on Thursday killed a family of four, including two children, Palestinian hospital and security sources said. \"The bodies of four members of the Ahmad family were recovered in pieces after an Israeli strike hit a house in the Beit Lahia Project area in the northern Gaza Strip,\" an official at Al-Shifa hospital",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
         },
         {
           "title": "Grace Tame apologises for comments labelling rape of Israeli women during Hamas attacks ‘propaganda’",
@@ -2657,27 +2686,6 @@
           "score": 22
         },
         {
-          "title": "Israeli artillery shells southern Lebanon areas, set fire to homes",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-artillery-shells-southern-lebanon-areas-set-fire-homes",
-          "date": "2026-09-10T06:20:44.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli artillery shells southern Lebanon areas, set fire to homes Israeli artillery shelling has targeted Wadi al-Hujeir and Wadi al-Salouqi in southern Lebanon overnight and at dawn, Lebanon’s National News Agency reported. On Wednesday, the NNA reported that Israeli artillery shelling targeted the southern Lebanese town of Beit Yahoun, while in Marjayoun district, Israeli forces set fire to hom",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
           "title": "Israeli attacks kill at least four Palestinians in northern Gaza",
           "url": "https://www.aljazeera.com/news/2026/9/10/israeli-attacks-kill-at-least-four-palestinians-in-northern-gaza?traffic_source=rss",
           "date": "2026-09-10T07:45:21.000Z",
@@ -2695,27 +2703,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Netanyahu visits troops in occupied Syria as Damascus slams 'blatant violation' of sovereignty",
-          "url": "https://www.france24.com/en/middle-east/20260910-netanyahu-visits-troops-occupied-syria-damascus-slams-blatant-violation-sovereignty",
-          "date": "2026-09-10T06:23:50.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israeli Prime Minister Benjamin Netanyahu made a third visit to Israeli troops in an occupied stretch of Syria Wednesday, sparking fresh condemnation from Damascus. Netanyahu repeated his claim that the Iranian government is on the verge of collapse as the US-Israeli war against Iran drags on.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 22
         },
@@ -2781,6 +2768,48 @@
             "label": "Bericht"
           },
           "score": 20
+        },
+        {
+          "title": "Israeli artillery shells southern Lebanon areas, set fire to homes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-artillery-shells-southern-lebanon-areas-set-fire-homes",
+          "date": "2026-09-10T06:20:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli artillery shells southern Lebanon areas, set fire to homes Israeli artillery shelling has targeted Wadi al-Hujeir and Wadi al-Salouqi in southern Lebanon overnight and at dawn, Lebanon’s National News Agency reported. On Wednesday, the NNA reported that Israeli artillery shelling targeted the southern Lebanese town of Beit Yahoun, while in Marjayoun district, Israeli forces set fire to hom",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 18
+        },
+        {
+          "title": "Netanyahu visits troops in occupied Syria as Damascus slams 'blatant violation' of sovereignty",
+          "url": "https://www.france24.com/en/middle-east/20260910-netanyahu-visits-troops-occupied-syria-damascus-slams-blatant-violation-sovereignty",
+          "date": "2026-09-10T06:23:50.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israeli Prime Minister Benjamin Netanyahu made a third visit to Israeli troops in an occupied stretch of Syria Wednesday, sparking fresh condemnation from Damascus. Netanyahu repeated his claim that the Iranian government is on the verge of collapse as the US-Israeli war against Iran drags on.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
         },
         {
           "title": "Netanyahu to sue Haaretz over claims UAE warned him before October 7 attack",
@@ -3423,48 +3452,6 @@
           "score": 18
         },
         {
-          "title": "Israeli troops advance into south Syrian village",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-troops-advance-south-syrian-village",
-          "date": "2026-09-08T06:28:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli troops advance into south Syrian village Syrian state TV is reporting that Israeli forces have advanced into the village of Bareeqa in the suburbs of Quneitra, located in south western Syria. According to the report, the army conducted a search and raid of a house in the area.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israeli airstrikes on Lebanese village kill 12 , plus other key Mideast developments",
-          "url": "https://www.mykxlg.com/news/national/israeli-airstrikes-on-lebanese-village-kill-12-plus-other-key-mideast-developments/article_5e47eb63-e87c-5fae-b7f3-b5ef21243393.html",
-          "date": "2026-09-08T06:00:00.000Z",
-          "source": "mykxlg.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
           "url": "https://www.aljazeera.com/news/2026/9/10/israel-says-it-destroyed-hezbollah-base-in-lebanons-ali-al-taher-ridge?traffic_source=rss",
           "date": "2026-09-10T22:33:41.000Z",
@@ -3486,6 +3473,48 @@
           "score": 16
         },
         {
+          "title": "Israeli troops advance into south Syrian village",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-troops-advance-south-syrian-village",
+          "date": "2026-09-08T06:28:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli troops advance into south Syrian village Syrian state TV is reporting that Israeli forces have advanced into the village of Bareeqa in the suburbs of Quneitra, located in south western Syria. According to the report, the army conducted a search and raid of a house in the area.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli airstrikes on Lebanese village kill 12 , plus other key Mideast developments",
+          "url": "https://www.mykxlg.com/news/national/israeli-airstrikes-on-lebanese-village-kill-12-plus-other-key-mideast-developments/article_5e47eb63-e87c-5fae-b7f3-b5ef21243393.html",
+          "date": "2026-09-08T06:00:00.000Z",
+          "source": "mykxlg.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
           "title": "Israel says it destroyed key Hezbollah tunnels in southern Lebanon",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/israel-says-it-destroyed-key-hezbollah-tunnels-in-southern-lebanon?traffic_source=rss",
           "date": "2026-09-10T21:19:16.000Z",
@@ -3504,7 +3533,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Nigeria: Nigerian Govt and Boko Haram Strike Secret Ceasefire Deal",
@@ -3801,27 +3830,6 @@
           "score": 15
         },
         {
-          "title": "Israeli forces kill four in north Gaza, detain 15 in West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-four-north-gaza-detain-15-west-bank",
-          "date": "2026-09-10T05:53:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces kill four in north Gaza, detain 15 in West Bank Four Palestinians have been killed and several others wounded by Israeli gunfire in northern Gaza, Al Jazeera reported, citing a medical source. Meanwhile, Israeli forces detained 15 Palestinians during raid early Thursday on the town of Burqa, in the occupied West Bank, Wafa reported. The forces stormed the town for six hours, raiding",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
           "title": "Israeli checkpoints in the West Bank are choking the Palestinian economy",
           "url": "https://www.aljazeera.com/economy/2026/9/10/israeli-checkpoints-in-the-west-bank-are-choking-the-palestinian-economy?traffic_source=rss",
           "date": "2026-09-10T09:48:03.000Z",
@@ -4011,27 +4019,6 @@
           "score": 15
         },
         {
-          "title": "Labor friends of Palestine criticise Australia’s decision not to join sanctions on Israeli settlements in West Bank",
-          "url": "https://www.theguardian.com/australia-news/2026/sep/10/labor-palestine-criticise-australias-decision-sanctions-israeli-settlements-in-west-bank-ntwnfb",
-          "date": "2026-09-10T06:14:55.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Australia declined to join move by UK, Canada and France in banning trade with illegal Israeli settlements Labor party members have criticised the federal government for not following the UK, Canada and France in banning trade with Israeli settlements in the West Bank, urging Penny Wong to mount a stronger response to violence against Palestinians. The Labor Friends of Palestine group wrote to the",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
           "title": "Lebanese president denounces Israeli attacks and destruction in south",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-president-denounces-israeli-attacks-and-destruction-south",
           "date": "2026-09-07T12:13:55.000Z",
@@ -4072,6 +4059,27 @@
             "label": "Luftangriff"
           },
           "score": 15
+        },
+        {
+          "title": "Senior UK rabbis come out in support of sanctions on Israeli settlements",
+          "url": "https://www.theguardian.com/politics/2026/sep/09/senior-uk-rabbis-come-out-in-support-of-sanctions-on-israeli-settlements",
+          "date": "2026-09-09T17:57:14.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Spiritual leaders stress diversity of views within Jewish community and warn against inaction on settler violence ‘It’s a good start’: prominent Israelis welcome UK sanctions Prominent British rabbis have backed Ed Miliband’s sanctions on Israeli settlements, warning that the time for inaction on settler violence must come to an end. The intervention comes after the UK’s chief rabbi, the spiritual",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
         }
       ],
       "itemCount": 80
@@ -4102,7 +4110,7 @@
       ],
       "activity": 87,
       "severity": 81,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -4212,7 +4220,7 @@
             11.402
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "displacement",
             "icon": "🚶",
@@ -4262,7 +4270,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[The Conversation Africa] Persistent allegations of chemical weapons use in the Sudanese civil war have recently been reinforced by new evidence.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "explosion",
@@ -4283,7 +4291,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[UN News] Independent human rights investigators voiced deep concern over growing risks to both civilians and South Sudan's political transition following their latest fact-finding mission to the world's youngest nation - their 14th in a decade.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -4304,7 +4312,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[Ayin Network] As insecurity continues to plague Geisan and Kurmuk in southern Blue Nile State, hundreds of families have fled the fighting, only to find temporary camps hastily set up. The exodus takes place at a time when the conflict-displaced are besieged by the rainy season and shortages of food, medicine and shelter, local aid volunteers told Ayin.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SDN-148",
             "name": "Blue Nile",
@@ -5825,48 +5833,6 @@
           "score": 15
         },
         {
-          "title": "Israeli forces kill four in north Gaza, detain 15 in West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-four-north-gaza-detain-15-west-bank",
-          "date": "2026-09-10T05:53:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces kill four in north Gaza, detain 15 in West Bank Four Palestinians have been killed and several others wounded by Israeli gunfire in northern Gaza, Al Jazeera reported, citing a medical source. Meanwhile, Israeli forces detained 15 Palestinians during raid early Thursday on the town of Burqa, in the occupied West Bank, Wafa reported. The forces stormed the town for six hours, raiding",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
-          "title": "Labor friends of Palestine criticise Australia’s decision not to join sanctions on Israeli settlements in West Bank",
-          "url": "https://www.theguardian.com/australia-news/2026/sep/10/labor-palestine-criticise-australias-decision-sanctions-israeli-settlements-in-west-bank-ntwnfb",
-          "date": "2026-09-10T06:14:55.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Australia declined to join move by UK, Canada and France in banning trade with illegal Israeli settlements Labor party members have criticised the federal government for not following the UK, Canada and France in banning trade with Israeli settlements in the West Bank, urging Penny Wong to mount a stronger response to violence against Palestinians. The Labor Friends of Palestine group wrote to the",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
           "title": "IDF Troops Kill Terrorist After West Bank Stabbing Wounds Israeli",
           "url": "https://themedialine.org/headlines/idf-troops-kill-terrorist-after-west-bank-stabbing-wounds-israeli/",
           "date": "2026-09-07T11:15:00.000Z",
@@ -6146,6 +6112,48 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Israeli forces kill four in north Gaza, detain 15 in West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-four-north-gaza-detain-15-west-bank",
+          "date": "2026-09-10T05:53:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces kill four in north Gaza, detain 15 in West Bank Four Palestinians have been killed and several others wounded by Israeli gunfire in northern Gaza, Al Jazeera reported, citing a medical source. Meanwhile, Israeli forces detained 15 Palestinians during raid early Thursday on the town of Burqa, in the occupied West Bank, Wafa reported. The forces stormed the town for six hours, raiding",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
+        },
+        {
+          "title": "Labor friends of Palestine criticise Australia’s decision not to join sanctions on Israeli settlements in West Bank",
+          "url": "https://www.theguardian.com/australia-news/2026/sep/10/labor-palestine-criticise-australias-decision-sanctions-israeli-settlements-in-west-bank-ntwnfb",
+          "date": "2026-09-10T06:14:55.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Australia declined to join move by UK, Canada and France in banning trade with illegal Israeli settlements Labor party members have criticised the federal government for not following the UK, Canada and France in banning trade with Israeli settlements in the West Bank, urging Penny Wong to mount a stronger response to violence against Palestinians. The Labor Friends of Palestine group wrote to the",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "score": 11
         },
@@ -7464,27 +7472,6 @@
           "score": 27
         },
         {
-          "title": "Saudi Arabia says it will take ‘all measures to deter Houthi attacks’",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-it-will-take-all-measures-deter-houthi-attacks",
-          "date": "2026-09-10T21:37:54.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Saudi Arabia says it will take ‘all measures to deter Houthi attacks’ Saudi Arabia’s UN representative Abdulaziz al-Wasil said that Riyadh will take “all necessary measures to deter Houthi attacks and&nbsp;protect our security, sovereignty, and territorial integrity\". The Saudi representative told a UN Security Council meeting&nbsp;that Saudi Arabia supports Yemeni-led political solutions that mee",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 24
-        },
-        {
           "title": "Iran-backed Houthi rebels take strategic port city in Yemen, raising threat to Red Sea shipping",
           "url": "https://www.france24.com/en/iran-backed-houthi-rebels-take-strategic-port-city-in-yemen-raising-threat-to-red-sea-shipping",
           "date": "2026-09-10T19:18:57.000Z",
@@ -7514,6 +7501,27 @@
             "label": "Seeangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Saudi Arabia says it will take ‘all measures to deter Houthi attacks’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-it-will-take-all-measures-deter-houthi-attacks",
+          "date": "2026-09-10T21:37:54.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Saudi Arabia says it will take ‘all measures to deter Houthi attacks’ Saudi Arabia’s UN representative Abdulaziz al-Wasil said that Riyadh will take “all necessary measures to deter Houthi attacks and&nbsp;protect our security, sovereignty, and territorial integrity\". The Saudi representative told a UN Security Council meeting&nbsp;that Saudi Arabia supports Yemeni-led political solutions that mee",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Houthis eye 'full control' of Bab el-Mandeb, as Saudi-backed forces reel from offensive",
@@ -7598,27 +7606,6 @@
             "label": "Bodenoffensive"
           },
           "score": 22
-        },
-        {
-          "title": "UN envoy warns Security Council Yemen’s war has entered ‘dangerous phase’",
-          "url": "https://www.aljazeera.com/news/2026/9/10/un-envoy-warns-security-council-yemens-war-has-entered-dangerous-phase?traffic_source=rss",
-          "date": "2026-09-10T23:46:07.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Envoy for Yemen Hans Grundberg demands urgent steps to protect civilians and trade routes amid Houthi escalation.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
         },
         {
           "title": "Fighting escalates in Yemen; Houthi attacks trigger alerts in Saudi Arabia",
@@ -8574,6 +8561,27 @@
           "score": 18
         },
         {
+          "title": "UN envoy warns Security Council Yemen’s war has entered ‘dangerous phase’",
+          "url": "https://www.aljazeera.com/news/2026/9/10/un-envoy-warns-security-council-yemens-war-has-entered-dangerous-phase?traffic_source=rss",
+          "date": "2026-09-10T23:46:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Envoy for Yemen Hans Grundberg demands urgent steps to protect civilians and trade routes amid Houthi escalation.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
           "title": "Houthi attacks cause fires at Saudi energy facilities, operations disrupted",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attacks-cause-fires-saudi-energy-facilities-operations-disrupted",
           "date": "2026-09-08T05:36:01.000Z",
@@ -8592,7 +8600,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Fighting in Yemen kills, wounds nearly 900, as thousands left displaced",
@@ -8623,7 +8631,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Saudi Arabia says 73 wounded as Houthis attack civilian and energy sites",
@@ -9248,8 +9256,8 @@
             51.831,
             35.568
           ],
-          "count": 14,
-          "newCount": 2,
+          "count": 13,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -9311,27 +9319,6 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 32
-        },
-        {
-          "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
-          "date": "2026-09-11T00:24:24.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iran’s Revolutionary Guard says its navy struck a US-operated surface drone at the entrance of the Strait of Hormuz.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
           "score": 29
         },
         {
@@ -9362,7 +9349,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Under siege: Iran faces strategic dilemma as war of attrition drags on Submitted by MEE correspondent on Tue, 09/08/2026 - 09:50 As US pressure mounts, Tehran weighs whether to escalate or pursue diplomacy An F/A-18 Super Hornet is seen parked on the flight deck of aircraft carrier USS George Washington in the Arabian Sea on 4 September 2026 (AFP/US Navy) Off Iran and the United States have entere",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -9385,6 +9372,27 @@
             "label": "Belagerung"
           },
           "score": 27
+        },
+        {
+          "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
+          "date": "2026-09-11T00:24:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran’s Revolutionary Guard says its navy struck a US-operated surface drone at the entrance of the Strait of Hormuz.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 26
         },
         {
           "title": "Yemen's Iran-backed Houthi rebels seize strategic Red Sea port city of Mocha",
@@ -9456,7 +9464,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Iran dismisses IAEA resolution, says nonproliferation accusations political Iran has dismissed a resolution passed by the International Atomic Energy Agency (IAEA), which accuses Tehran of failing to comply with its nuclear nonproliferation commitments and refers the matter to the UN Security Council. “Renewed accusations against Iran’s peaceful nuclear program&nbsp;are political and not technical",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -9502,13 +9510,13 @@
           "score": 19
         },
         {
-          "title": "Australia news live: One fight cancelled every three days due to staff shortages; ASX set for worst week since US-Iran war began",
-          "url": "https://www.theguardian.com/australia-news/live/2026/sep/11/anthony-albanese-september-11-aged-care-labor-coalition-angus-taylor-one-nation-pauline-hanson-andrew-hastie-ntwnfb",
-          "date": "2026-09-11T05:07:58.000Z",
-          "source": "The Guardian World",
+          "title": "Middle East live: Trump says he has no regrets about launching Iran war",
+          "url": "https://www.france24.com/en/middle-east/20260911-middle-east-live-trump-says-he-has-no-regrets-about-launching-war-on-iran",
+          "date": "2026-09-11T04:52:21.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "Follow the day’s news live Get our breaking news email , free app or daily news podcast ‘Profound’ increase in death rate for welfare recipients, report finds People receiving an income support including disability, unemployment or carers payments had an average mortality rate more than nine times higher than people who did not access the welfare system, AAP reports. I think if One Nation and the ",
-          "isNew": false,
+          "summary": "US President Donald Trump told Fox News Thursday he didn't have any regrets about launching the US-Israeli war against Iran, insisting he would do \"exactly\" as he had done again if given another chance. The rising cost of living fuelled by the war is expected to take a toll on support for Trump's right-wing Republican Party in the November midterm elections. Follow our liveblog for the latest upda",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -9516,9 +9524,30 @@
             "label": "Bericht"
           },
           "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 19
+        },
+        {
+          "title": "Morning recap",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-161",
+          "date": "2026-09-11T06:22:06.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Morning recap Good morning Middle East Eye readers, If you're just joining us, here are key developments from across the region: •&nbsp;&nbsp; &nbsp;Iran’s Islamic Revolutionary Guard Corps (IRGC) said its navy targeted a US unmanned surface vessel in the Strait of Hormuz. •&nbsp;&nbsp; &nbsp;US president Donald Trump said he did not regret going to war against Iran despite the impact the conflict",
+          "isNew": true,
+          "region": null,
+          "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 19
         },
@@ -9544,12 +9573,12 @@
           "score": 19
         },
         {
-          "title": "Trump says he does not regret waging war against Iran",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-does-not-regret-waging-war-against-iran",
-          "date": "2026-09-11T00:33:41.000Z",
-          "source": "Middle East Eye",
+          "title": "Australia news live: One fight cancelled every three days due to staff shortages; ASX set for worst week since US-Iran war began",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/11/anthony-albanese-september-11-aged-care-labor-coalition-angus-taylor-one-nation-pauline-hanson-andrew-hastie-ntwnfb",
+          "date": "2026-09-11T05:07:58.000Z",
+          "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Trump says he does not regret waging war against Iran President Donald Trump said he did not regret going to war against Iran despite the impact the conflict may have on the November US midterm elections. \"I don't believe in the word 'regret'. You can always question yourself a little bit,\" Trump said in an interview with Fox News host Laura Ingraham when asked if he regretted the Iran war due to ",
+          "summary": "Follow the day’s news live Get our breaking news email , free app or daily news podcast ‘Profound’ increase in death rate for welfare recipients, report finds People receiving an income support including disability, unemployment or carers payments had an average mortality rate more than nine times higher than people who did not access the welfare system, AAP reports. I think if One Nation and the ",
           "isNew": false,
           "region": null,
           "event": {
@@ -9558,11 +9587,11 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Underwater drone capture gives Tehran opportunity to reverse engineer vessel",
@@ -10390,6 +10419,27 @@
           "score": 16
         },
         {
+          "title": "Trump says he does not regret waging war against Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-does-not-regret-waging-war-against-iran",
+          "date": "2026-09-11T00:33:41.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Trump says he does not regret waging war against Iran President Donald Trump said he did not regret going to war against Iran despite the impact the conflict may have on the November US midterm elections. \"I don't believe in the word 'regret'. You can always question yourself a little bit,\" Trump said in an interview with Fox News host Laura Ingraham when asked if he regretted the Iran war due to ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 16
+        },
+        {
           "title": "Defiant Iran seeks to bruise Trump ahead of midterms",
           "url": "https://www.dawn.com/news/2028897/defiant-iran-seeks-to-bruise-trump-ahead-of-midterms",
           "date": "2026-09-10T14:49:29.000Z",
@@ -10564,27 +10614,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran’s UN envoy calls new aviation sanctions ‘economic terrorism’",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-un-envoy-calls-new-aviation-sanctions-economic-terrorism",
-          "date": "2026-09-10T05:45:27.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran’s UN envoy calls new aviation sanctions ‘economic terrorism’ Iran’s UN envoy, Gholamhossein Darzi, has condemned new US sanctions on the Iranian aviation sector as an example of “economic terrorism”, IRNA reported. In a letter to the UN Security Council, Darzi accused the US of imposing collective punishment and committing a crime against humanity. Darzi said the sanctions constitute a clear ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -11090,6 +11119,27 @@
           "score": 12
         },
         {
+          "title": "Iran’s UN envoy calls new aviation sanctions ‘economic terrorism’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-un-envoy-calls-new-aviation-sanctions-economic-terrorism",
+          "date": "2026-09-10T05:45:27.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran’s UN envoy calls new aviation sanctions ‘economic terrorism’ Iran’s UN envoy, Gholamhossein Darzi, has condemned new US sanctions on the Iranian aviation sector as an example of “economic terrorism”, IRNA reported. In a letter to the UN Security Council, Darzi accused the US of imposing collective punishment and committing a crime against humanity. Darzi said the sanctions constitute a clear ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
           "title": "Trump claims he will give $5,000 to every American if Republicans win the midterms as he defends Iran war and tariffs– as it happened",
           "url": "https://www.theguardian.com/us-news/live/2026/sep/09/donald-trump-rnc-republican-national-convention-jd-vance-midterms-latest-news-updates",
           "date": "2026-09-10T04:04:11.000Z",
@@ -11107,58 +11157,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Middle East live: Trump warns Iran over activity at Pickaxe Mountain fortified site",
-          "url": "https://www.france24.com/en/middle-east/20260910-middle-east-live-trump-warns-iran-not-to-get-cute-over-activity-at-pickaxe-mountain",
-          "date": "2026-09-10T02:46:54.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "US President Donald Trump on Wednesday said the United States may target Iran's Pickaxe Mountain fortified site near its damaged Natanz uranium enrichment facility, warning Tehran \"not to get cute\". He also commented that oil prices that have surged because of the Iran war likely won’t come down until after US midterm elections, as his advisers warned the conflict could extend through the remainde",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 11
-        },
-        {
-          "title": "PM to highlight efforts to end US-Iran war at UNGA",
-          "url": "https://www.dawn.com/news/2028776/pm-to-highlight-efforts-to-end-us-iran-war-at-unga",
-          "date": "2026-09-10T02:21:50.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "• Bangladesh assumes presidency as General Assembly formally opens in New York • Trump to speak on opening day; PM Shehbaz’s speech on 25th; Pezeshkian’s attendance ‘not yet confirmed’ • Renewal on the cards as tenure of panel monitoring Iran sanctions expires during UNGA session WASHINGTON: Prime Minister Shehbaz Sharif is due to arrive in New York later this month for the UN General Assembly, wh",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 11
         }
@@ -11194,7 +11192,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -11242,7 +11240,7 @@
             8.861
           ],
           "count": 5,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "election",
             "icon": "🗳️",
@@ -11504,7 +11502,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[This Day] Abuja -- The United States has announced the fresh delivery of defence equipment to Nigeria as part of ongoing national and international efforts to counter the activities of terrorists and other violent extremist groups in the country.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "NGA-3470",
             "name": "Federal Capital Territory",
@@ -12414,27 +12412,6 @@
           "score": 15
         },
         {
-          "title": "Nigeria: Nigeria Denies Backing Military Coup in Niger Republic",
-          "url": "https://allafrica.com/stories/202609040074.html",
-          "date": "2026-09-04T06:27:40.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] The Nigerian government has denied the allegation that it supported the attempted coup in Niger Republic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
           "title": "Nigeria not behind failed Niger Republic coup - Minister",
           "url": "https://thesun.ng/nigeria-not-behind-failed-niger-republic-coup-minister/",
           "date": "2026-09-05T02:45:00.000Z",
@@ -12842,7 +12819,7 @@
           "score": 8
         }
       ],
-      "itemCount": 57
+      "itemCount": 56
     },
     {
       "id": "pakistan",
@@ -13026,7 +13003,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Will Pakistan Bomb Houthis In Yemen ? Saudi Attacks Put Islamabad New Defence Pact To The Test",
@@ -14435,8 +14412,8 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 97,
-      "severity": 68,
+      "activity": 94,
+      "severity": 67,
       "newCount": 0,
       "signals": [
         {
@@ -14587,27 +14564,6 @@
           "score": 22
         },
         {
-          "title": "Israeli artillery shells southern Lebanon areas, set fire to homes",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-artillery-shells-southern-lebanon-areas-set-fire-homes",
-          "date": "2026-09-10T06:20:44.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli artillery shells southern Lebanon areas, set fire to homes Israeli artillery shelling has targeted Wadi al-Hujeir and Wadi al-Salouqi in southern Lebanon overnight and at dawn, Lebanon’s National News Agency reported. On Wednesday, the NNA reported that Israeli artillery shelling targeted the southern Lebanese town of Beit Yahoun, while in Marjayoun district, Israeli forces set fire to hom",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
           "title": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
           "url": "https://www.aljazeera.com/news/2026/9/10/israel-says-it-destroyed-hezbollah-base-in-lebanons-ali-al-taher-ridge?traffic_source=rss",
           "date": "2026-09-10T22:33:41.000Z",
@@ -14629,46 +14585,25 @@
           "score": 19
         },
         {
-          "title": "Israel says it destroyed key Hezbollah tunnels in southern Lebanon",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/israel-says-it-destroyed-key-hezbollah-tunnels-in-southern-lebanon?traffic_source=rss",
-          "date": "2026-09-10T21:19:16.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel’s military says it has destroyed a network of Hezbollah tunnels on the strategic Ali al-Taher ridge in Lebanon.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "US sanctions Iraqi paramilitary group Kataib Hezbollah",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iraqi-paramilitary-group-kataib-hezbollah",
-          "date": "2026-09-11T00:04:45.000Z",
+          "title": "Israeli artillery shells southern Lebanon areas, set fire to homes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-artillery-shells-southern-lebanon-areas-set-fire-homes",
+          "date": "2026-09-10T06:20:44.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "US sanctions Iraqi paramilitary group Kataib Hezbollah The United States has imposed sanctions targeting Kataib Hezbollah, an Iran-aligned Iraqi paramilitary group, as part of an effort to disrupt financial networks supporting Iran’s regional activities, the US State Department said. “Today, the United States is taking action under Operation Economic Outcast targeting Kata’ib Hizballah (KH), Hizba",
+          "summary": "Israeli artillery shells southern Lebanon areas, set fire to homes Israeli artillery shelling has targeted Wadi al-Hujeir and Wadi al-Salouqi in southern Lebanon overnight and at dawn, Lebanon’s National News Agency reported. On Wednesday, the NNA reported that Israeli artillery shelling targeted the southern Lebanese town of Beit Yahoun, while in Marjayoun district, Israeli forces set fire to hom",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
           "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Israeli strikes hit three more areas in southern Lebanon",
@@ -14814,6 +14749,48 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "US sanctions Iraqi paramilitary group Kataib Hezbollah",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iraqi-paramilitary-group-kataib-hezbollah",
+          "date": "2026-09-11T00:04:45.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US sanctions Iraqi paramilitary group Kataib Hezbollah The United States has imposed sanctions targeting Kataib Hezbollah, an Iran-aligned Iraqi paramilitary group, as part of an effort to disrupt financial networks supporting Iran’s regional activities, the US State Department said. “Today, the United States is taking action under Operation Economic Outcast targeting Kata’ib Hizballah (KH), Hizba",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Israel says it destroyed key Hezbollah tunnels in southern Lebanon",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/israel-says-it-destroyed-key-hezbollah-tunnels-in-southern-lebanon?traffic_source=rss",
+          "date": "2026-09-10T21:19:16.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israel’s military says it has destroyed a network of Hezbollah tunnels on the strategic Ali al-Taher ridge in Lebanon.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Israeli attacks kill 4,362 people since March, Lebanon’s health ministry says",
@@ -16029,6 +16006,432 @@
       "itemCount": 62
     },
     {
+      "id": "drc-m23",
+      "name": "DR Kongo / Ostkongo",
+      "nameEn": "DR Congo – M23",
+      "region": "Afrika (Zentral)",
+      "countries": [
+        "Dem. Rep. Congo"
+      ],
+      "lat": -1.7,
+      "lon": 29.2,
+      "tier": "war",
+      "since": "2021 (M23-Wiederaufleben)",
+      "parties": [
+        "DR Kongo (FARDC)",
+        "M23/AFC",
+        "Ruanda",
+        "Wazalendo",
+        "ADF"
+      ],
+      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
+      "hotspots": [
+        "Goma",
+        "Bukavu",
+        "Nord-Kivu",
+        "Süd-Kivu",
+        "Ituri"
+      ],
+      "activity": 38,
+      "severity": 66,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 8
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "COD",
+      "extraCountries": [
+        "RWA",
+        "UGA"
+      ],
+      "regions": [
+        {
+          "id": "COD-1884",
+          "name": "Kinshasa",
+          "nameDe": "Kinshasa",
+          "type": "Neutral City",
+          "anchor": [
+            15.921,
+            -4.443
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          }
+        },
+        {
+          "id": "COD-1894",
+          "name": "South Kivu",
+          "nameDe": "Sud-Kivu",
+          "type": "Province",
+          "anchor": [
+            28.246,
+            -3.217
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Congo-Kinshasa: Will Monitoring of Eastern DR Congo's 'Ceasefire' Improve Compliance?",
+          "url": "https://allafrica.com/stories/202609100236.html",
+          "date": "2026-09-10T10:32:00.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[ISS] The first deployment of the monitoring mechanism is positive, but current conflict conditions should temper expectations.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
+        },
+        {
+          "title": "More than 20 children killed in DR Congo school fire",
+          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T19:16:24.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 24
+        },
+        {
+          "title": "At least 24 schoolchildren killed after fire engulfs schools in rebel - controlled Congo",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-24-schoolchildren-killed-after-fire-engulfs-schools-in-rebel-controlled-congo/articleshow/134022871.cms",
+          "date": "2026-09-10T19:00:00.000Z",
+          "source": "timesofindia.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "More than a dozen children killed in fire in eastern DR Congo schools",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/more-than-a-dozen-children-killed-in-fire-in-eastern-dr-congo-schools?traffic_source=rss",
+          "date": "2026-09-10T17:45:19.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Authorities say at least 14 school children have been killed after fire ravaged schools in the DR Congo.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "At least 24 killed in school fire in rebel-held DR Congo city",
+          "url": "https://www.aljazeera.com/news/2026/9/10/at-least-20-killed-in-school-fire-in-rebel-held-dr-congo-city?traffic_source=rss",
+          "date": "2026-09-10T15:37:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Victims from the fire in AFC/M23-held Bukavu include primary school students, say officials and media reports.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Rwanda: Rwanda, Tanzania Military Commanders Meet to Strengthen Border Security",
+          "url": "https://allafrica.com/stories/202609100212.html",
+          "date": "2026-09-10T09:51:29.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] Military commanders from Rwanda and Tanzania met in Nyagatare District on Wednesday, September 9, to discuss shared security concerns and strengthen cooperation along the two countries' common border.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Fire in rebel - held DR Congo kills 24 schoolchildren",
+          "url": "https://www.canberratimes.com.au/story/9348130/fire-in-rebel-held-dr-congo-kills-24-schoolchildren/",
+          "date": "2026-09-10T20:15:00.000Z",
+          "source": "canberratimes.com.au",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Congo Ebola burial teams battle community anger , fatigue and fear of infection | World",
+          "url": "http://www.stardem.com/ap/world/congo-s-ebola-burial-teams-battle-community-anger-fatigue-and-fear-of-infection/article_f43842b9-399f-501d-b020-f392d232b247.html",
+          "date": "2026-09-07T06:45:00.000Z",
+          "source": "stardem.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "More than 20 killed in fire at wedding party in DR Congo",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/more-than-20-killed-in-fire-at-wedding-party-in-dr-congo?traffic_source=rss",
+          "date": "2026-09-06T04:47:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Authorities have launched an investigation into a fire that killed 22 people at a wedding party in Kinshasa, DR Congo.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "At least 22 killed in wedding party fire in Congo Kinshasa",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-22-killed-in-wedding-party-fire-in-congos-kinshasa/articleshow/133815165.cms",
+          "date": "2026-09-05T21:30:00.000Z",
+          "source": "timesofindia.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "At least 22 killed in Kinshasa wedding - party fire",
+          "url": "https://dailypioneer.com/news/at-least-22-killed-kinshasa-wedding-party-fire",
+          "date": "2026-09-05T19:30:00.000Z",
+          "source": "dailypioneer.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "22 killed in fire at wedding venue in DR Congo",
+          "url": "http://www.bignewsnetwork.com/news/279288371/22-killed-in-fire-at-wedding-venue-in-dr-congo",
+          "date": "2026-09-05T17:00:00.000Z",
+          "source": "bignewsnetwork.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Congo-Kinshasa: DR Congo Army Accused of Bombing of Humanitarian Aircraft in Minembwe",
+          "url": "https://allafrica.com/stories/202609040086.html",
+          "date": "2026-09-04T06:54:32.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] The AFC-M23 movement has condemned the bombing of a civilian aircraft carrying humanitarian aid and essential supplies to Minembwe, South Kivu, on August 27.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1894",
+            "name": "South Kivu",
+            "nameDe": "Sud-Kivu",
+            "type": "Province",
+            "anchor": [
+              28.246,
+              -3.217
+            ],
+            "matched": "South Kivu"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        }
+      ],
+      "itemCount": 13
+    },
+    {
       "id": "niger",
       "name": "Niger",
       "nameEn": "Niger",
@@ -16053,9 +16456,9 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 94,
-      "severity": 67,
-      "newCount": 1,
+      "activity": 93,
+      "severity": 66,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -16099,7 +16502,7 @@
             8.861
           ],
           "count": 5,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "election",
             "icon": "🗳️",
@@ -16299,7 +16702,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[This Day] Abuja -- The United States has announced the fresh delivery of defence equipment to Nigeria as part of ongoing national and international efforts to counter the activities of terrorists and other violent extremist groups in the country.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "NGA-3470",
             "name": "Federal Capital Territory",
@@ -17002,27 +17405,6 @@
           "score": 15
         },
         {
-          "title": "Nigeria: Nigeria Denies Backing Military Coup in Niger Republic",
-          "url": "https://allafrica.com/stories/202609040074.html",
-          "date": "2026-09-04T06:27:40.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] The Nigerian government has denied the allegation that it supported the attempted coup in Niger Republic.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
           "title": "Uber withdraws from Nigeria",
           "url": "https://www.france24.com/en/uber-withdraws-from-nigeria",
           "date": "2026-09-04T20:39:08.000Z",
@@ -17503,433 +17885,7 @@
           "score": 8
         }
       ],
-      "itemCount": 51
-    },
-    {
-      "id": "drc-m23",
-      "name": "DR Kongo / Ostkongo",
-      "nameEn": "DR Congo – M23",
-      "region": "Afrika (Zentral)",
-      "countries": [
-        "Dem. Rep. Congo"
-      ],
-      "lat": -1.7,
-      "lon": 29.2,
-      "tier": "war",
-      "since": "2021 (M23-Wiederaufleben)",
-      "parties": [
-        "DR Kongo (FARDC)",
-        "M23/AFC",
-        "Ruanda",
-        "Wazalendo",
-        "ADF"
-      ],
-      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
-      "hotspots": [
-        "Goma",
-        "Bukavu",
-        "Nord-Kivu",
-        "Süd-Kivu",
-        "Ituri"
-      ],
-      "activity": 38,
-      "severity": 66,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 8
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COD",
-      "extraCountries": [
-        "RWA",
-        "UGA"
-      ],
-      "regions": [
-        {
-          "id": "COD-1884",
-          "name": "Kinshasa",
-          "nameDe": "Kinshasa",
-          "type": "Neutral City",
-          "anchor": [
-            15.921,
-            -4.443
-          ],
-          "count": 4,
-          "newCount": 0,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          }
-        },
-        {
-          "id": "COD-1894",
-          "name": "South Kivu",
-          "nameDe": "Sud-Kivu",
-          "type": "Province",
-          "anchor": [
-            28.246,
-            -3.217
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Congo-Kinshasa: Will Monitoring of Eastern DR Congo's 'Ceasefire' Improve Compliance?",
-          "url": "https://allafrica.com/stories/202609100236.html",
-          "date": "2026-09-10T10:32:00.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[ISS] The first deployment of the monitoring mechanism is positive, but current conflict conditions should temper expectations.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 26
-        },
-        {
-          "title": "More than 20 children killed in DR Congo school fire",
-          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-10T19:16:24.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 24
-        },
-        {
-          "title": "At least 24 schoolchildren killed after fire engulfs schools in rebel - controlled Congo",
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-24-schoolchildren-killed-after-fire-engulfs-schools-in-rebel-controlled-congo/articleshow/134022871.cms",
-          "date": "2026-09-10T19:00:00.000Z",
-          "source": "timesofindia.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "More than a dozen children killed in fire in eastern DR Congo schools",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/more-than-a-dozen-children-killed-in-fire-in-eastern-dr-congo-schools?traffic_source=rss",
-          "date": "2026-09-10T17:45:19.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Authorities say at least 14 school children have been killed after fire ravaged schools in the DR Congo.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "At least 24 killed in school fire in rebel-held DR Congo city",
-          "url": "https://www.aljazeera.com/news/2026/9/10/at-least-20-killed-in-school-fire-in-rebel-held-dr-congo-city?traffic_source=rss",
-          "date": "2026-09-10T15:37:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Victims from the fire in AFC/M23-held Bukavu include primary school students, say officials and media reports.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Rwanda: Rwanda, Tanzania Military Commanders Meet to Strengthen Border Security",
-          "url": "https://allafrica.com/stories/202609100212.html",
-          "date": "2026-09-10T09:51:29.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] Military commanders from Rwanda and Tanzania met in Nyagatare District on Wednesday, September 9, to discuss shared security concerns and strengthen cooperation along the two countries' common border.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Fire in rebel - held DR Congo kills 24 schoolchildren",
-          "url": "https://www.canberratimes.com.au/story/9348130/fire-in-rebel-held-dr-congo-kills-24-schoolchildren/",
-          "date": "2026-09-10T20:15:00.000Z",
-          "source": "canberratimes.com.au",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Congo Ebola burial teams battle community anger , fatigue and fear of infection | World",
-          "url": "http://www.stardem.com/ap/world/congo-s-ebola-burial-teams-battle-community-anger-fatigue-and-fear-of-infection/article_f43842b9-399f-501d-b020-f392d232b247.html",
-          "date": "2026-09-07T06:45:00.000Z",
-          "source": "stardem.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "More than 20 killed in fire at wedding party in DR Congo",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/more-than-20-killed-in-fire-at-wedding-party-in-dr-congo?traffic_source=rss",
-          "date": "2026-09-06T04:47:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Authorities have launched an investigation into a fire that killed 22 people at a wedding party in Kinshasa, DR Congo.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "At least 22 killed in wedding party fire in Congo Kinshasa",
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-22-killed-in-wedding-party-fire-in-congos-kinshasa/articleshow/133815165.cms",
-          "date": "2026-09-05T21:30:00.000Z",
-          "source": "timesofindia.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "At least 22 killed in Kinshasa wedding - party fire",
-          "url": "https://dailypioneer.com/news/at-least-22-killed-kinshasa-wedding-party-fire",
-          "date": "2026-09-05T19:30:00.000Z",
-          "source": "dailypioneer.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "22 killed in fire at wedding venue in DR Congo",
-          "url": "http://www.bignewsnetwork.com/news/279288371/22-killed-in-fire-at-wedding-venue-in-dr-congo",
-          "date": "2026-09-05T17:00:00.000Z",
-          "source": "bignewsnetwork.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Congo-Kinshasa: DR Congo Army Accused of Bombing of Humanitarian Aircraft in Minembwe",
-          "url": "https://allafrica.com/stories/202609040086.html",
-          "date": "2026-09-04T06:54:32.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] The AFC-M23 movement has condemned the bombing of a civilian aircraft carrying humanitarian aid and essential supplies to Minembwe, South Kivu, on August 27.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1894",
-            "name": "South Kivu",
-            "nameDe": "Sud-Kivu",
-            "type": "Province",
-            "anchor": [
-              28.246,
-              -3.217
-            ],
-            "matched": "South Kivu"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        }
-      ],
-      "itemCount": 13
+      "itemCount": 50
     },
     {
       "id": "myanmar",
@@ -19001,8 +18957,8 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 65,
-      "severity": 58,
+      "activity": 61,
+      "severity": 57,
       "newCount": 0,
       "signals": [
         {
@@ -19223,7 +19179,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Explosion at depot storing weapons left from Syria war kills 14",
@@ -19379,7 +19335,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
@@ -20000,7 +19956,7 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 53,
+      "activity": 52,
       "severity": 54,
       "newCount": 0,
       "signals": [
@@ -20490,27 +20446,6 @@
           "score": 11
         },
         {
-          "title": "Under Pressure Over Gaza, Israel’s Defence Industry Expands in the Balkans",
-          "url": "https://balkaninsight.com/2026/09/04/under-pressure-over-gaza-israels-defence-industry-expands-in-the-balkans/bi/",
-          "date": "2026-09-04T06:19:45.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Countries across the Balkan region have increasingly been doing arms deals with Israel and purchasing its military technology – while strengthening political ties too.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 9
-        },
-        {
           "title": "Iran war live: Qatar warns of ‘industrial catastrophe’ if crisis continues",
           "url": "https://www.aljazeera.com/news/liveblog/2026/9/8/iran-war-live-qatar-warns-of-industrial-catastrophe-if-crisis-continues?traffic_source=rss",
           "date": "2026-09-08T00:00:00.000Z",
@@ -20740,7 +20675,7 @@
           "score": 8
         }
       ],
-      "itemCount": 26
+      "itemCount": 25
     },
     {
       "id": "taiwan-strait",
@@ -20769,7 +20704,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -20781,7 +20716,7 @@
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 10
+          "count": 9
         },
         {
           "key": "offensive",
@@ -20793,7 +20728,7 @@
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 6
+          "count": 5
         },
         {
           "key": "talks",
@@ -20881,16 +20816,16 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 26
+          "score": 23
         },
         {
-          "title": "Zelensky's plane 'almost hit' by drone en route to Oslo, Norway PM says",
-          "url": "https://www.france24.com/en/video/20260910-zelensky-s-plane-almost-hit-by-drone-en-route-to-oslo-norway-pm-says",
-          "date": "2026-09-10T15:55:25.000Z",
-          "source": "France 24",
+          "title": "Drone display recreates the Twin Towers over New York City",
+          "url": "https://www.bbc.co.uk/news/videos/cx2z7x57gjeo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T14:19:26.000Z",
+          "source": "BBC World",
           "sourceType": "news",
-          "summary": "Ukraine and Moldova on Wednesday played down claims from Norway's prime minister that a plane carrying President Volodymyr Zelensky was almost hit by a drone as it flew to Oslo. Jonas Gahr Store told Norwegian public broadcaster NRK that Zelensky's plane was \"almost hit by a drone when it was taking off from Moldova\". But a source in the Ukrainian presidency described the claim that Zelensky was a",
-          "isNew": false,
+          "summary": "Organisers say each of the 2,977 drones in the display represents a victim of the 9/11 attacks.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "drone",
@@ -20924,6 +20859,27 @@
             "label": "Seeangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Zelensky's plane 'almost hit' by drone en route to Oslo, Norway PM says",
+          "url": "https://www.france24.com/en/video/20260910-zelensky-s-plane-almost-hit-by-drone-en-route-to-oslo-norway-pm-says",
+          "date": "2026-09-10T15:55:25.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine and Moldova on Wednesday played down claims from Norway's prime minister that a plane carrying President Volodymyr Zelensky was almost hit by a drone as it flew to Oslo. Jonas Gahr Store told Norwegian public broadcaster NRK that Zelensky's plane was \"almost hit by a drone when it was taking off from Moldova\". But a source in the Ukrainian presidency described the claim that Zelensky was a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 22
         },
         {
           "title": "'Significant casualties' after fire on cargo ship in eastern China",
@@ -20966,27 +20922,6 @@
             "label": "Gefechte"
           },
           "score": 22
-        },
-        {
-          "title": "Australia news live: Andrew Hastie says he accepts Barnaby Joyce’s explanation over ‘traitor’ video and Pauline Hanson now ‘the only lying coward’",
-          "url": "https://www.theguardian.com/australia-news/live/2026/sep/11/anthony-albanese-september-11-aged-care-labor-coalition-angus-taylor-one-nation-pauline-hanson-andrew-hastie-ntwnfb",
-          "date": "2026-09-11T00:22:25.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Follow the day’s news live ‘Profound’ increase in death rate for welfare recipients, report finds People receiving an income support including disability, unemployment or carers payments had an average mortality rate more than nine times higher than people who did not access the welfare system, AAP reports. I think if One Nation and the Greens are voting together, the Greens are voting the wrong w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
         },
         {
           "title": "Tories blast Ottawa over quietly resuming military dialogue with China",
@@ -21230,6 +21165,27 @@
           "score": 18
         },
         {
+          "title": "Australia news live: Andrew Hastie says he accepts Barnaby Joyce’s explanation over ‘traitor’ video and Pauline Hanson now ‘the only lying coward’",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/11/anthony-albanese-september-11-aged-care-labor-coalition-angus-taylor-one-nation-pauline-hanson-andrew-hastie-ntwnfb",
+          "date": "2026-09-11T00:22:25.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Follow the day’s news live ‘Profound’ increase in death rate for welfare recipients, report finds People receiving an income support including disability, unemployment or carers payments had an average mortality rate more than nine times higher than people who did not access the welfare system, AAP reports. I think if One Nation and the Greens are voting together, the Greens are voting the wrong w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
           "title": "Fighting in Yemen kills, wounds nearly 900, as thousands left displaced",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/fighting-yemen-kills-wounds-nearly-900-thousands-left-displaced",
           "date": "2026-09-08T06:34:12.000Z",
@@ -21248,7 +21204,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
@@ -21656,27 +21612,6 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Clashes between Yemen’s Houthis and government forces have killed 81, military and medical sources said on Friday, as the rebels push towards territory bordering a chokepoint in the strategic Red Sea. Fighting erupted on Thursday, after the Houthis launched a ground assault along with rocket and drone attacks near coastal areas, vying for control of the narrow Bab al-Mandeb strait at the Red Sea’s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Houthi attacks on Yemen’s Taiz escalate, triggering new displacement wave",
-          "url": "https://www.aljazeera.com/news/2026/9/4/houthi-attacks-on-yemens-taiz-escalate-triggering-new-displacement-wave?traffic_source=rss",
-          "date": "2026-09-04T06:22:44.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Government-Houthi clashes in Taiz intensify, displacing thousands and threatening vital roadways to the Red Sea coast.",
           "isNew": false,
           "region": null,
           "event": {
@@ -23930,7 +23865,7 @@
             38.442,
             13.778
           ],
-          "count": 5,
+          "count": 4,
           "newCount": 0,
           "event": {
             "type": "drone",
@@ -24174,40 +24109,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Ethiopia: Tigray Residents Vow to Step Up Fight Against Abuses By Illegal TPLF Faction",
-          "url": "https://allafrica.com/stories/202609040033.html",
-          "date": "2026-09-04T05:35:36.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[ENA] Addis Ababa -- Inhabitants of Tigray region told ENA that the struggle to end the atrocities and inhumane acts being carried out by the illegal TPLF faction must be strengthened.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray Region"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 9
+      "itemCount": 8
     },
     {
       "id": "south-sudan",
@@ -24236,7 +24140,7 @@
       ],
       "activity": 18,
       "severity": 44,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [],
       "acled": null,
       "briefing": null,
@@ -24253,7 +24157,7 @@
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
           "summary": "[UN News] Independent human rights investigators voiced deep concern over growing risks to both civilians and South Sudan's political transition following their latest fact-finding mission to the world's youngest nation - their 14th in a decade.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -24423,7 +24327,7 @@
       ],
       "activity": 8,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [],
       "acled": null,
       "briefing": null,
@@ -24440,7 +24344,7 @@
           "source": "foxnews.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -24452,7 +24356,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
+          "score": 18
         },
         {
           "title": "The Battle to Reclaim Our History - Venezuelanalysis",
@@ -24567,7 +24471,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "talks",
@@ -24579,7 +24483,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 8
+          "count": 9
         },
         {
           "key": "airstrike",
@@ -24606,6 +24510,27 @@
       "extraCountries": [],
       "regions": [],
       "items": [
+        {
+          "title": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+          "url": "https://www.bbc.co.uk/news/articles/cpvelrmp1vmo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T22:36:02.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 23
+        },
         {
           "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
           "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
@@ -25004,27 +24929,6 @@
             "label": "Bericht"
           },
           "score": 18
-        },
-        {
-          "title": "Democracy Digest: Poland Investigates Arson of Drone Factory as Suspected Russian Sabotage",
-          "url": "https://balkaninsight.com/2026/09/04/democracy-digest-poland-investigates-arson-of-drone-factory-as-suspected-russian-sabotage/rd/",
-          "date": "2026-09-04T06:21:36.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Elsewhere, Hungary indicates it might not be the kind of pliant partner the EU had hoped for; draft of Czechia’s 2027 budget met with criticism from all quarters; Slovakia defies Kremlin warning over signing Ukraine compensation convention.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 16
         },
         {
           "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
@@ -25936,7 +25840,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "talks",
@@ -25948,7 +25852,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 8
+          "count": 9
         },
         {
           "key": "airstrike",
@@ -25975,6 +25879,27 @@
       "extraCountries": [],
       "regions": [],
       "items": [
+        {
+          "title": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+          "url": "https://www.bbc.co.uk/news/articles/cpvelrmp1vmo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T22:36:02.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 23
+        },
         {
           "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
           "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
@@ -26477,28 +26402,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
-        },
-        {
-          "title": "Democracy Digest: Poland Investigates Arson of Drone Factory as Suspected Russian Sabotage",
-          "url": "https://balkaninsight.com/2026/09/04/democracy-digest-poland-investigates-arson-of-drone-factory-as-suspected-russian-sabotage/rd/",
-          "date": "2026-09-04T06:21:36.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Elsewhere, Hungary indicates it might not be the kind of pliant partner the EU had hoped for; draft of Czechia’s 2027 budget met with criticism from all quarters; Slovakia defies Kremlin warning over signing Ukraine compensation convention.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "🔴 Live: At least two killed in Kyiv as Russia renews strikes after three-day pause",
@@ -27563,7 +27467,7 @@
       ],
       "activity": 57,
       "severity": 40,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -27629,7 +27533,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "AI was used to develop missile guidance software in Yemen and to power cyber operations, a report alleges.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "missile",
@@ -29754,15 +29658,15 @@
         "Naf-Fluss",
         "Grenze zu Rakhine"
       ],
-      "activity": 15,
+      "activity": 14,
       "severity": 27,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 4
+          "count": 3
         },
         {
           "key": "offensive",
@@ -29788,7 +29692,7 @@
             24.18
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -29804,7 +29708,7 @@
           "source": "bssnews.net",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "BGD-1806",
             "name": "Dhaka",
@@ -29826,7 +29730,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "Israeli strike targets home in Gaza’s al-Shati refugee camp",
@@ -29848,27 +29752,6 @@
             "label": "Vertreibung"
           },
           "score": 18
-        },
-        {
-          "title": "South Africa: Several Injured After March and March Raids Refugee Camp",
-          "url": "https://allafrica.com/stories/202609040039.html",
-          "date": "2026-09-04T05:35:45.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[GroundUp] Vigilante group's \"clean-up\" targets displaced refugees in Durban",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         },
         {
           "title": "West Bank: UN rights report warns of forcible displacement from three refugee camps",
@@ -29976,7 +29859,7 @@
           "score": 8
         }
       ],
-      "itemCount": 8
+      "itemCount": 7
     },
     {
       "id": "iraq",
@@ -30072,7 +29955,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Iran Revolutionary Guards claim US surveillance aerostat destroyed in Iraq drone strike",
@@ -30545,7 +30428,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Online and undercover: Saving trafficked wildlife in Thailand",
@@ -31092,7 +30975,7 @@
       ],
       "activity": 31,
       "severity": 20,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -31128,6 +31011,27 @@
       ],
       "items": [
         {
+          "title": "Intimidation Claims Loom Large as Kosovo’s Thaci Awaits Trial Verdict",
+          "url": "https://balkaninsight.com/2026/09/11/intimidation-claims-loom-large-as-kosovos-thaci-awaits-trial-verdict/btj/",
+          "date": "2026-09-11T05:50:55.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "A court in The Hague will soon issue its verdict in the war crimes trial of former Kosovo President Hashim Thaci and three co-accused amid prosecution claims of an “historic” climate of witness intimidation.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 19
+        },
+        {
           "title": "Kosovo Charges Serbian Security Officers Over Jashari Compound Massacre",
           "url": "https://balkaninsight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
           "date": "2026-09-04T14:38:37.000Z",
@@ -31147,6 +31051,27 @@
             "label": "Opfer"
           },
           "score": 19
+        },
+        {
+          "title": "Hague Prosecutors Seek Six Years for Kosovo’s Thaci for Obstructing Justice",
+          "url": "https://balkaninsight.com/2026/09/10/hague-prosecutors-seek-six-years-for-kosovos-thaci-for-obstructing-justice/btj/",
+          "date": "2026-09-10T13:33:45.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "Prosecution in closing statements demands six years' prison for Thaci, claiming he told his co-defendants to instruct witnesses what to say while testifying in his war crimes case.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 16
         },
         {
           "title": "Serbia, the conflicted EU candidate",
@@ -31177,49 +31102,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 17
-        },
-        {
-          "title": "Hague Prosecutors Seek Six Years for Kosovo’s Thaci for Obstructing Justice",
-          "url": "https://balkaninsight.com/2026/09/10/hague-prosecutors-seek-six-years-for-kosovos-thaci-for-obstructing-justice/btj/",
-          "date": "2026-09-10T13:33:45.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "Prosecution in closing statements demands six years' prison for Thaci, claiming he told his co-defendants to instruct witnesses what to say while testifying in his war crimes case.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 16
-        },
-        {
-          "title": "After Delays and Controversies, End in Sight For Thaci’s Kosovo War Crimes Trial",
-          "url": "https://balkaninsight.com/2026/09/10/after-delays-and-controversies-end-in-sight-for-thacis-kosovo-war-crimes-trial/btj/",
-          "date": "2026-09-10T05:51:47.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "After more than five years in detention at The Hague on charges of war crimes and crimes against humanity, former Kosovo President Hashim Thaci and three other wartime guerrilla leaders will soon hear their verdict.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 16
+          "score": 13
         },
         {
           "title": "Serbia’s Vucic Slates EU Condemnation of Mladic Tributes as ‘Stupid’",
@@ -31251,6 +31134,27 @@
             "label": "Proteste/Unruhen"
           },
           "score": 13
+        },
+        {
+          "title": "After Delays and Controversies, End in Sight For Thaci’s Kosovo War Crimes Trial",
+          "url": "https://balkaninsight.com/2026/09/10/after-delays-and-controversies-end-in-sight-for-thacis-kosovo-war-crimes-trial/btj/",
+          "date": "2026-09-10T05:51:47.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "After more than five years in detention at The Hague on charges of war crimes and crimes against humanity, former Kosovo President Hashim Thaci and three other wartime guerrilla leaders will soon hear their verdict.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
         },
         {
           "title": "EU Leaders Condemn ‘Shocking’ Glorification of Mladic at Belgrade Funeral",
@@ -31658,7 +31562,7 @@
           "score": 8
         }
       ],
-      "itemCount": 20
+      "itemCount": 21
     },
     {
       "id": "bosnia",
@@ -31684,8 +31588,8 @@
         "Sarajevo",
         "Brčko"
       ],
-      "activity": 10,
-      "severity": 14,
+      "activity": 9,
+      "severity": 13,
       "newCount": 0,
       "signals": [
         {
@@ -31789,27 +31693,6 @@
           "score": 10
         },
         {
-          "title": "Old Script, New Ghost: Mladic’s Death Looms Large as Bosnia Election Campaign Opens",
-          "url": "https://balkaninsight.com/2026/09/04/old-script-new-ghost-mladics-death-looms-large-as-bosnia-election-campaign-opens/bi/",
-          "date": "2026-09-04T06:05:55.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "The convicted war criminal’s death is set to overshadow the start of the election campaign - which appears likely to be dominated by familiar themes of nationalism, patronage and recycled promises.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 9
-        },
-        {
           "title": "Thousands turn out in Serbia for funeral of 'Butcher of Bosnia' Ratko Mladić",
           "url": "https://www.bbc.co.uk/news/articles/cn5dkk7yw74o?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-07T14:50:50.000Z",
@@ -31904,7 +31787,7 @@
           "score": 8
         }
       ],
-      "itemCount": 7
+      "itemCount": 6
     },
     {
       "id": "sinai-egypt",
