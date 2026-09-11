@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-11T06:40:48.748Z",
-  "durationSec": 385,
+  "generatedAt": "2026-09-11T07:36:00.988Z",
+  "durationSec": 393,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 23,
+        "count": 24,
         "error": null
       },
       {
@@ -97,7 +97,7 @@
       {
         "id": "dawn",
         "ok": true,
-        "count": 27,
+        "count": 26,
         "error": null
       },
       {
@@ -114,40 +114,48 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
-      "failed": 8,
-      "skipped": 5,
+      "ok": 0,
+      "failed": 10,
+      "skipped": 6,
       "errors": [
         {
           "id": "burkina-faso",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "lebanon-hezbollah",
           "error": "fetch failed"
         },
         {
           "id": "venezuela",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "myanmar",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "car",
           "error": "fetch failed"
         },
         {
-          "id": "sahel-mali",
+          "id": "myanmar",
+          "error": "fetch failed"
+        },
+        {
+          "id": "haiti",
+          "error": "fetch failed"
+        },
+        {
+          "id": "sudan",
+          "error": "fetch failed"
+        },
+        {
+          "id": "ecuador",
+          "error": "fetch failed"
+        },
+        {
+          "id": "india-pakistan",
           "error": "HTTP 429"
         },
         {
-          "id": "colombia",
-          "error": "HTTP 429"
+          "id": "pakistan",
+          "error": "fetch failed"
         },
         {
-          "id": "south-china-sea",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "mozambique",
+          "id": "ethiopia",
           "error": "HTTP 429"
         }
       ]
@@ -156,8 +164,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1207,
-    "newArticles": 9
+    "articles": 1198,
+    "newArticles": 4
   },
   "conflicts": [
     {
@@ -189,7 +197,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -314,7 +322,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -2297,13 +2305,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 20
+          "count": 19
         },
         {
           "key": "ceasefire",
@@ -2312,22 +2320,22 @@
           "count": 13
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 6
-        },
-        {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
           "count": 5
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 5
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 4
         }
       ],
       "acled": null,
@@ -2381,27 +2389,6 @@
         }
       ],
       "items": [
-        {
-          "title": "Palestinian engineer killed in Israeli attack in Gaza's Khan Younis",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-engineer-killed-israeli-attack-gazas-khan-younis",
-          "date": "2026-09-10T23:04:50.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Palestinian engineer killed in Israeli attack in Gaza's Khan Younis A Palestinian engineer, Hudaifa Hamdi Mamar, has been killed in Israeli shelling on residential areas in the Al Mawasi district, west of Khan Younis in Gaza, the Palestinian Dialogue Forum (PALDF) said, according to Al Jazeera. On Thursday, an Israeli strike killed a family of four, including two children aged eight and 12, Palest",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 29
-        },
         {
           "title": "Israel's Netanyahu to sue newspaper over claim UAE warned him of 7 October attack",
           "url": "https://www.bbc.co.uk/news/articles/c1kxwm870g1o?at_medium=RSS&at_campaign=rss",
@@ -2487,6 +2474,48 @@
           "score": 23
         },
         {
+          "title": "NAZA, the Israeli film revealing new layers of the Gaza genocide",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/naza-the-israeli-film-revealing-new-layers-of-the-gaza-genocide?traffic_source=rss",
+          "date": "2026-09-11T05:25:34.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A 25-minute standing ovation at the Biennale has put NAZA, an Israeli-made film confronting Israel’s genocide in Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Palestinian engineer killed in Israeli attack in Gaza's Khan Younis",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-engineer-killed-israeli-attack-gazas-khan-younis",
+          "date": "2026-09-10T23:04:50.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Palestinian engineer killed in Israeli attack in Gaza's Khan Younis A Palestinian engineer, Hudaifa Hamdi Mamar, has been killed in Israeli shelling on residential areas in the Al Mawasi district, west of Khan Younis in Gaza, the Palestinian Dialogue Forum (PALDF) said, according to Al Jazeera. On Thursday, an Israeli strike killed a family of four, including two children aged eight and 12, Palest",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
           "title": "Israeli strike destroys family home in southern Lebanon",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-destroys-family-home-southern-lebanon",
           "date": "2026-09-10T22:43:47.000Z",
@@ -2504,27 +2533,6 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
-          },
-          "score": 23
-        },
-        {
-          "title": "NAZA, the Israeli film revealing new layers of the Gaza genocide",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/naza-the-israeli-film-revealing-new-layers-of-the-gaza-genocide?traffic_source=rss",
-          "date": "2026-09-11T05:25:34.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A 25-minute standing ovation at the Biennale has put NAZA, an Israeli-made film confronting Israel’s genocide in Gaza.",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 22
         },
@@ -2728,6 +2736,27 @@
           "score": 21
         },
         {
+          "title": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-faces-genocide-incitement-complaint-italy-hind-rajab",
+          "date": "2026-09-11T06:41:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister The Hind Rajab Foundation (HRF) has filed a criminal complaint in Italy against Israel's minister of environmental protection, Idit Silman, accusing her of incitement to commit genocide against Palestinians in Gaza. In a statement, HRF said the complaint was lodged after Silman arrived in Italy on 6 September 2026 w",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 21
+        },
+        {
           "title": "Secret systems used by Israel in mass killings of Gaza civilians revealed in new film",
           "url": "https://www.theguardian.com/world/2026/sep/10/secret-systems-used-by-israel-in-mass-killings-of-gaza-civilians-revealed-in-new-film",
           "date": "2026-09-10T13:42:20.000Z",
@@ -2749,13 +2778,13 @@
           "score": 20
         },
         {
-          "title": "Settler filmed emptying water from well of Palestinian family",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-filmed-emptying-water-well-palestinian-family",
-          "date": "2026-09-11T00:53:53.000Z",
-          "source": "Middle East Eye",
+          "title": "Israeli-made film about use of AI for mass killing in Gaza gets record ovation at Venice premiere",
+          "url": "https://www.france24.com/en/middle-east/20260910-israeli-made-film-about-mass-killings-in-gaza-gets-25-minute-ovation-at-venice-premiere",
+          "date": "2026-09-10T18:19:12.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "Settler filmed emptying water from well of Palestinian family An Israeli settler has been filmed emptying water from the well of a Palestinian family in Huwara, South Hebron Hills in the occupied West Bank. A video posted on X by Yehuda Shaul, founder of Breaking the Silence, an Israeli veterans's organisation ‘aimed at raising awareness to the dire consequences of prolonged military occupation’ n",
-          "isNew": false,
+          "summary": "A film documenting Israel's use of artificial intelligence to facilitate the mass killing of Palestinian civilians in the Gaza Strip received a record 25-minute standing ovation at the Venice Film Festival on Thursday. \"NAZA\" details the brutal Israeli bombardment of the Palestinian territory through anonymous interviews with two dozen whistleblowers from the Israeli military or intelligence servi",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -2763,9 +2792,30 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 20
+        },
+        {
+          "title": "Protest march held in Slovenian capital against opening of Israeli embassy",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/protest-march-held-slovenian-capital-against-opening-israeli-embassy",
+          "date": "2026-09-11T06:53:29.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Protest march held in Slovenian capital against opening of Israeli embassy A protest march was held in the Slovenian capital, Ljubljana, against the opening of Israel’s embassy, coinciding with a visit by Israeli foreign minister Gideon Sa’ar, Quds News Network reported. The protesters chanted “no embassy for genocide” and waved Palestinian flags during the march. Thousands of protesters marched t",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
           },
           "score": 20
         },
@@ -3452,6 +3502,27 @@
           "score": 18
         },
         {
+          "title": "Settler filmed emptying water from well of Palestinian family",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-filmed-emptying-water-well-palestinian-family",
+          "date": "2026-09-11T00:53:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Settler filmed emptying water from well of Palestinian family An Israeli settler has been filmed emptying water from the well of a Palestinian family in Huwara, South Hebron Hills in the occupied West Bank. A video posted on X by Yehuda Shaul, founder of Breaking the Silence, an Israeli veterans's organisation ‘aimed at raising awareness to the dire consequences of prolonged military occupation’ n",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
           "title": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
           "url": "https://www.aljazeera.com/news/2026/9/10/israel-says-it-destroyed-hezbollah-base-in-lebanons-ali-al-taher-ridge?traffic_source=rss",
           "date": "2026-09-10T22:33:41.000Z",
@@ -4017,69 +4088,6 @@
             "label": "Bericht"
           },
           "score": 15
-        },
-        {
-          "title": "Lebanese president denounces Israeli attacks and destruction in south",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-president-denounces-israeli-attacks-and-destruction-south",
-          "date": "2026-09-07T12:13:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese president denounces Israeli attacks and destruction in south Lebanese President Joseph Aoun has condemned what he described as Israel’s “repeated attacks”, including the killing of civilians and destruction of homes and property. Aoun said the attacks, which he said had killed “innocent civilians, including children and women”, were undermining efforts to prevent further escalation in sou",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli strikes kill 11 in southern Lebanese village, including two infants",
-          "url": "https://www.middleeasteye.net/news/israel-strikes-kill-eleven-and-two-infants-lebanon",
-          "date": "2026-09-07T11:58:49.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strikes kill 11 in southern Lebanese village, including two infants Submitted by MEE staff on Mon, 09/07/2026 - 10:00 Nine people die as residential building is destroyed in Kfar Rumman, while a separate drone strike kills two paramedics A Lebanese army soldier inspects destroyed vehicles at the site of an overnight Israeli air strike on the village of Kfar Rumman in southern Lebanon on 7 ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Senior UK rabbis come out in support of sanctions on Israeli settlements",
-          "url": "https://www.theguardian.com/politics/2026/sep/09/senior-uk-rabbis-come-out-in-support-of-sanctions-on-israeli-settlements",
-          "date": "2026-09-09T17:57:14.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Spiritual leaders stress diversity of views within Jewish community and warn against inaction on settler violence ‘It’s a good start’: prominent Israelis welcome UK sanctions Prominent British rabbis have backed Ed Miliband’s sanctions on Israeli settlements, warning that the time for inaction on settler violence must come to an end. The intervention comes after the UK’s chief rabbi, the spiritual",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 12
         }
       ],
       "itemCount": 80
@@ -5518,27 +5526,6 @@
       ],
       "items": [
         {
-          "title": "Settler filmed emptying water from well of Palestinian family",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-filmed-emptying-water-well-palestinian-family",
-          "date": "2026-09-11T00:53:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Settler filmed emptying water from well of Palestinian family An Israeli settler has been filmed emptying water from the well of a Palestinian family in Huwara, South Hebron Hills in the occupied West Bank. A video posted on X by Yehuda Shaul, founder of Breaking the Silence, an Israeli veterans's organisation ‘aimed at raising awareness to the dire consequences of prolonged military occupation’ n",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 21
-        },
-        {
           "title": "Senior Rabbi calls settler violence ‘desecration of Judaism’",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/senior-rabbi-calls-settler-violence-desecration-judaism",
           "date": "2026-09-11T01:59:40.000Z",
@@ -5558,6 +5545,27 @@
             "label": "Bericht"
           },
           "score": 20
+        },
+        {
+          "title": "Settler filmed emptying water from well of Palestinian family",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-filmed-emptying-water-well-palestinian-family",
+          "date": "2026-09-11T00:53:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Settler filmed emptying water from well of Palestinian family An Israeli settler has been filmed emptying water from the well of a Palestinian family in Huwara, South Hebron Hills in the occupied West Bank. A video posted on X by Yehuda Shaul, founder of Breaking the Silence, an Israeli veterans's organisation ‘aimed at raising awareness to the dire consequences of prolonged military occupation’ n",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
         },
         {
           "title": "Israeli helicopters open fire near Gaza camp, forces raid West Bank town",
@@ -5782,27 +5790,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
-          "date": "2026-09-10T07:01:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -6112,6 +6099,27 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
+          "date": "2026-09-10T07:01:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "score": 11
         },
@@ -6594,27 +6602,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Pupils return to West Bank school behind barbed wire to protect against settlers",
-          "url": "https://www.bbc.co.uk/news/videos/c62jdyld8myo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-08T06:58:02.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Six people, including three pupils at the Palestinian school, have been killed in al-Mughayyir this year, in a surge of Israeli settler-related violence.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
           },
           "score": 11
         },
@@ -7243,6 +7230,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 11
+        },
+        {
+          "title": "Pupils return to West Bank school behind barbed wire to protect against settlers",
+          "url": "https://www.bbc.co.uk/news/videos/c62jdyld8myo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-08T06:58:02.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Six people, including three pupils at the Palestinian school, have been killed in al-Mughayyir this year, in a surge of Israeli settler-related violence.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 8
         }
       ],
       "itemCount": 77
@@ -8498,6 +8506,27 @@
           "score": 18
         },
         {
+          "title": "UN envoy warns Security Council Yemen’s war has entered ‘dangerous phase’",
+          "url": "https://www.aljazeera.com/news/2026/9/10/un-envoy-warns-security-council-yemens-war-has-entered-dangerous-phase?traffic_source=rss",
+          "date": "2026-09-10T23:46:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Envoy for Yemen Hans Grundberg demands urgent steps to protect civilians and trade routes amid Houthi escalation.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
           "title": "Iran threatens US with new  economic warfare  and missiles as Houthis attack Saudi Arabia",
           "url": "https://www.businesstimes.com.sg/international/iran-threatens-us-new-economic-warfare-and-missiles-houthis-attack-saudi-arabia",
           "date": "2026-09-08T07:30:00.000Z",
@@ -8516,7 +8545,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Saudi - led coalition vows firm response after Houthi attacks",
@@ -8537,7 +8566,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthi attacks on Saudi Arabia wound 73 people , officials say",
@@ -8558,28 +8587,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
-        },
-        {
-          "title": "UN envoy warns Security Council Yemen’s war has entered ‘dangerous phase’",
-          "url": "https://www.aljazeera.com/news/2026/9/10/un-envoy-warns-security-council-yemens-war-has-entered-dangerous-phase?traffic_source=rss",
-          "date": "2026-09-10T23:46:07.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Envoy for Yemen Hans Grundberg demands urgent steps to protect civilians and trade routes amid Houthi escalation.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 17
+          "score": 15
         },
         {
           "title": "Houthi attacks cause fires at Saudi energy facilities, operations disrupted",
@@ -9207,7 +9215,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "escalation",
@@ -9516,7 +9524,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "US President Donald Trump told Fox News Thursday he didn't have any regrets about launching the US-Israeli war against Iran, insisting he would do \"exactly\" as he had done again if given another chance. The rising cost of living fuelled by the war is expected to take a toll on support for Trump's right-wing Republican Party in the November midterm elections. Follow our liveblog for the latest upda",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -9537,7 +9545,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Morning recap Good morning Middle East Eye readers, If you're just joining us, here are key developments from across the region: •&nbsp;&nbsp; &nbsp;Iran’s Islamic Revolutionary Guard Corps (IRGC) said its navy targeted a US unmanned surface vessel in the Strait of Hormuz. •&nbsp;&nbsp; &nbsp;US president Donald Trump said he did not regret going to war against Iran despite the impact the conflict",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -11231,23 +11239,6 @@
       "extraCountries": [],
       "regions": [
         {
-          "id": "NGA-3470",
-          "name": "Federal Capital Territory",
-          "nameDe": "Hauptstadtterritorium",
-          "type": "State",
-          "anchor": [
-            7.143,
-            8.861
-          ],
-          "count": 5,
-          "newCount": 0,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          }
-        },
-        {
           "id": "NGA-2864",
           "name": "Kaduna State",
           "nameDe": "Kaduna",
@@ -11262,6 +11253,23 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-3470",
+          "name": "Federal Capital Territory",
+          "nameDe": "Hauptstadtterritorium",
+          "type": "State",
+          "anchor": [
+            7.143,
+            8.861
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         },
         {
@@ -11912,37 +11920,6 @@
           "score": 18
         },
         {
-          "title": "Bandits attack Sokoto community days after troops foiled advance",
-          "url": "https://www.premiumtimesng.com/news/top-news/908045-bandits-attack-sokoto-community-days-after-troops-foiled-advance.html",
-          "date": "2026-09-08T07:15:34.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The attack on Tofa occurred about one week after troops said they intercepted armed men advancing towards Ghandi, another community in Rabah LGA, where attacks and security operations have been reported since June. The post Bandits attack Sokoto community days after troops foiled advance appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2871",
-            "name": "Sokoto State",
-            "nameDe": "Sokoto",
-            "type": "State",
-            "anchor": [
-              5.315,
-              13.032
-            ],
-            "matched": "Sokoto"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
           "title": "Nigeria: Army Chief Removes Theatre Commander, Redeploys Top Officers",
           "url": "https://allafrica.com/stories/202609100360.html",
           "date": "2026-09-10T11:39:29.000Z",
@@ -11951,37 +11928,6 @@
           "summary": "[Daily Trust] The Chief of Army Staff, Waidi Shaibu, a Lieutenant-General, on Wednesday, announced the redeployment of top military generals in a fresh shake-up to inject renewed vigour in the fight against insecurity.",
           "isNew": false,
           "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
-          "url": "https://allafrica.com/stories/202609100096.html",
-          "date": "2026-09-10T06:47:20.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
           "event": {
             "type": "report",
             "icon": "📄",
@@ -12012,6 +11958,37 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Bandits attack Sokoto community days after troops foiled advance",
+          "url": "https://www.premiumtimesng.com/news/top-news/908045-bandits-attack-sokoto-community-days-after-troops-foiled-advance.html",
+          "date": "2026-09-08T07:15:34.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The attack on Tofa occurred about one week after troops said they intercepted armed men advancing towards Ghandi, another community in Rabah LGA, where attacks and security operations have been reported since June. The post Bandits attack Sokoto community days after troops foiled advance appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2871",
+            "name": "Sokoto State",
+            "nameDe": "Sokoto",
+            "type": "State",
+            "anchor": [
+              5.315,
+              13.032
+            ],
+            "matched": "Sokoto"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
           "score": 15
         },
@@ -12454,37 +12431,6 @@
           "score": 15
         },
         {
-          "title": "Nigeria: Nigeria Debunks Alleged Support for Niger Coup, Reaffirms Commitment to Democracy",
-          "url": "https://allafrica.com/stories/202609040114.html",
-          "date": "2026-09-04T07:07:21.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The Federal Government has rejected claims that Nigeria or the Economic Community of West African States (ECOWAS) backed the recent failed coup attempt in Niger Republic, describing the reports circulating on social media as false, mischievous and intended to damage Nigeria's image.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
           "title": "Bandits release Niger electoral commissioner 11 months after abduction",
           "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
           "date": "2026-09-04T13:50:07.000Z",
@@ -12525,6 +12471,37 @@
             "label": "Politik/Wahl"
           },
           "score": 15
+        },
+        {
+          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
+          "url": "https://allafrica.com/stories/202609100096.html",
+          "date": "2026-09-10T06:47:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-3470",
+            "name": "Federal Capital Territory",
+            "nameDe": "Hauptstadtterritorium",
+            "type": "State",
+            "anchor": [
+              7.143,
+              8.861
+            ],
+            "matched": "Abuja"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
         },
         {
           "title": "Nigeria: Spotlight On Nigerian Army's Operational Gains in Rescue, Counter-Terrorism",
@@ -12777,27 +12754,6 @@
           "score": 8
         },
         {
-          "title": "Nigeria: Governors Shouldn't Give Motorcycles As Palliatives, Terrorists Use Them - Defence Minister",
-          "url": "https://allafrica.com/stories/202609040111.html",
-          "date": "2026-09-04T07:07:19.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Vanguard] Minister of Defence, Gen Christopher Musa (retd.), has urged state governors and lawmakers to stop distributing motorcycles as palliatives, warning that some of the vehicles eventually end up in the hands of terrorists and are used to facilitate their operations.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
           "title": "IOM ramps up emergency aid in Lake Chad as thousands flee Boko Haram",
           "url": "https://www.france24.com/en/video/20260904-iom-ramps-up-emergency-aid-in-lake-chad-as-thousands-flee-boko-haram",
           "date": "2026-09-04T09:40:30.000Z",
@@ -12819,7 +12775,7 @@
           "score": 8
         }
       ],
-      "itemCount": 56
+      "itemCount": 54
     },
     {
       "id": "pakistan",
@@ -13446,27 +13402,6 @@
           "score": 15
         },
         {
-          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
-          "date": "2026-09-10T07:01:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
           "title": "'Provocative and blatant violation': Syria condemns Netanyahu's entry into its territory",
           "url": "https://www.france24.com/en/video/20260910-provocative-and-blatant-violation-syria-condemns-netanyahu-s-entry-into-its-territory",
           "date": "2026-09-10T10:19:33.000Z",
@@ -13737,6 +13672,27 @@
             "label": "Opfer"
           },
           "score": 15
+        },
+        {
+          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
+          "date": "2026-09-10T07:01:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Tongue routs Pakistan as England dominate in third Test",
@@ -14071,7 +14027,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Interpol Pakistan issues 286 red notices in 7 months, 53 fugitives repatriated",
@@ -14363,30 +14319,9 @@
             "label": "Opfer"
           },
           "score": 8
-        },
-        {
-          "title": "Why Pakistan overhauled its military command structure after five decades",
-          "url": "https://www.aljazeera.com/news/2026/9/4/why-pakistan-overhauled-its-military-command-structure-after-five-decades?traffic_source=rss",
-          "date": "2026-09-04T07:30:56.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "New legislation gives Pakistan's military chief sweeping command powers, raising questions about oversight.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 63
+      "itemCount": 62
     },
     {
       "id": "lebanon-hezbollah",
@@ -14423,15 +14358,15 @@
           "count": 29
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 14
-        },
-        {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
+          "count": 13
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
           "count": 13
         },
         {
@@ -14480,7 +14415,7 @@
             35.368,
             33.36
           ],
-          "count": 8,
+          "count": 7,
           "newCount": 0,
           "event": {
             "type": "airstrike",
@@ -14490,27 +14425,6 @@
         }
       ],
       "items": [
-        {
-          "title": "Israeli strike destroys family home in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-destroys-family-home-southern-lebanon",
-          "date": "2026-09-10T22:43:47.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strike destroys family home in southern Lebanon An Israeli air strike has conpletely destroyed a house in the area between the villages of Haris and Hadatha, in the Tyre district in Lebanon, according to National News Agency. It’s unclear if there were casualties.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 23
-        },
         {
           "title": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168298",
@@ -14539,6 +14453,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli strike destroys family home in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-destroys-family-home-southern-lebanon",
+          "date": "2026-09-10T22:43:47.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strike destroys family home in southern Lebanon An Israeli air strike has conpletely destroyed a house in the area between the villages of Haris and Hadatha, in the Tyre district in Lebanon, according to National News Agency. It’s unclear if there were casualties.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
           },
           "score": 22
         },
@@ -15783,37 +15718,6 @@
           "score": 15
         },
         {
-          "title": "Israeli shelling causes fire in southern Lebanese town",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-shelling-causes-fire-southern-lebanese-town",
-          "date": "2026-09-04T07:01:17.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli shelling causes fire in southern Lebanese town Israeli shelling in the town of Zawtar al-Sharqiyah, located in south Lebanon, resulted in a fire, state media reported.&nbsp;",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 15
-        },
-        {
           "title": "Lebanon says Israeli army violated framework deal approximately 7 , 700 times",
           "url": "https://aa.com.tr/en/middle-east/lebanon-says-israeli-army-violated-framework-deal-approximately-7-700-times/4052431",
           "date": "2026-09-09T20:45:00.000Z",
@@ -16003,7 +15907,7 @@
           "score": 8
         }
       ],
-      "itemCount": 62
+      "itemCount": 61
     },
     {
       "id": "drc-m23",
@@ -16053,12 +15957,6 @@
           "label": "Vertreibung",
           "dir": "up",
           "count": 1
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 1
         }
       ],
       "acled": null,
@@ -16084,23 +15982,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          }
-        },
-        {
-          "id": "COD-1894",
-          "name": "South Kivu",
-          "nameDe": "Sud-Kivu",
-          "type": "Province",
-          "anchor": [
-            28.246,
-            -3.217
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
           }
         }
       ],
@@ -16396,40 +16277,9 @@
             "label": "Opfer"
           },
           "score": 15
-        },
-        {
-          "title": "Congo-Kinshasa: DR Congo Army Accused of Bombing of Humanitarian Aircraft in Minembwe",
-          "url": "https://allafrica.com/stories/202609040086.html",
-          "date": "2026-09-04T06:54:32.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] The AFC-M23 movement has condemned the bombing of a civilian aircraft carrying humanitarian aid and essential supplies to Minembwe, South Kivu, on August 27.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1894",
-            "name": "South Kivu",
-            "nameDe": "Sud-Kivu",
-            "type": "Province",
-            "anchor": [
-              28.246,
-              -3.217
-            ],
-            "matched": "South Kivu"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
         }
       ],
-      "itemCount": 13
+      "itemCount": 12
     },
     {
       "id": "niger",
@@ -16456,8 +16306,8 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 93,
-      "severity": 66,
+      "activity": 89,
+      "severity": 65,
       "newCount": 0,
       "signals": [
         {
@@ -16501,12 +16351,12 @@
             7.143,
             8.861
           ],
-          "count": 5,
+          "count": 4,
           "newCount": 0,
           "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         },
         {
@@ -17050,37 +16900,6 @@
           "score": 16
         },
         {
-          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
-          "url": "https://allafrica.com/stories/202609100096.html",
-          "date": "2026-09-10T06:47:20.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "Nigeria: Nigerian Govt and Boko Haram Strike Secret Ceasefire Deal",
           "url": "https://allafrica.com/stories/202609080003.html",
           "date": "2026-09-08T05:04:23.000Z",
@@ -17426,37 +17245,6 @@
           "score": 15
         },
         {
-          "title": "Nigeria: Nigeria Debunks Alleged Support for Niger Coup, Reaffirms Commitment to Democracy",
-          "url": "https://allafrica.com/stories/202609040114.html",
-          "date": "2026-09-04T07:07:21.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The Federal Government has rejected claims that Nigeria or the Economic Community of West African States (ECOWAS) backed the recent failed coup attempt in Niger Republic, describing the reports circulating on social media as false, mischievous and intended to damage Nigeria's image.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
           "title": "Bandits release Niger electoral commissioner 11 months after abduction",
           "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
           "date": "2026-09-04T13:50:07.000Z",
@@ -17507,6 +17295,37 @@
           "summary": "[Premium Times] A Wednesday statement by army spokesperson Appolonia Anele said the deployments were approved by the Chief of Army Staff, Waidi Shaibu, a lieutenant general.",
           "isNew": false,
           "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
+          "url": "https://allafrica.com/stories/202609100096.html",
+          "date": "2026-09-10T06:47:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-3470",
+            "name": "Federal Capital Territory",
+            "nameDe": "Hauptstadtterritorium",
+            "type": "State",
+            "anchor": [
+              7.143,
+              8.861
+            ],
+            "matched": "Abuja"
+          },
           "event": {
             "type": "report",
             "icon": "📄",
@@ -17862,30 +17681,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Nigeria: Governors Shouldn't Give Motorcycles As Palliatives, Terrorists Use Them - Defence Minister",
-          "url": "https://allafrica.com/stories/202609040111.html",
-          "date": "2026-09-04T07:07:19.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Vanguard] Minister of Defence, Gen Christopher Musa (retd.), has urged state governors and lawmakers to stop distributing motorcycles as palliatives, warning that some of the vehicles eventually end up in the hands of terrorists and are used to facilitate their operations.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 50
+      "itemCount": 48
     },
     {
       "id": "myanmar",
@@ -18388,8 +18186,8 @@
         "Mopti",
         "Kidal"
       ],
-      "activity": 26,
-      "severity": 62,
+      "activity": 21,
+      "severity": 61,
       "newCount": 0,
       "signals": [
         {
@@ -18493,27 +18291,6 @@
           "score": 15
         },
         {
-          "title": "AI deepfakes and fake fighters reshape Mali information war",
-          "url": "https://www.aol.co.uk/articles/ai-deepfakes-fake-fighters-reshape-061001000.html",
-          "date": "2026-09-10T07:00:00.000Z",
-          "source": "aol.co.uk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Niger Failed Coup Reveals Junta Vulnerabilities",
           "url": "https://www.africa.com/top-10-news/nigers-failed-coup-reveals-junta-vulnerabilities",
           "date": "2026-09-04T16:45:00.000Z",
@@ -18535,33 +18312,12 @@
           "score": 15
         },
         {
-          "title": "Somalia: South West State Says Forces Repelled Al-Shabaab Attack On Baidoa",
-          "url": "https://allafrica.com/stories/202609040101.html",
-          "date": "2026-09-04T07:07:14.000Z",
-          "source": "AllAfrica – Konflikte",
+          "title": "AI deepfakes and fake fighters reshape Mali information war",
+          "url": "https://www.aol.co.uk/articles/ai-deepfakes-fake-fighters-reshape-061001000.html",
+          "date": "2026-09-10T07:00:00.000Z",
+          "source": "aol.co.uk",
           "sourceType": "news",
-          "summary": "[Shabelle] Baidoa, Somalia -- Authorities in Somalia's South West State said Thursday that government and regional forces had repelled an attack by Al-Shabaab on the strategic city of Baidoa, although rival forces claimed responsibility for the assault.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "JNIM jihadists step up incursions into northern Benin",
-          "url": "https://www.france24.com/en/tv-shows/the-observers/20260909-jnim-jihadists-step-up-incursions-northern-benin",
-          "date": "2026-09-09T10:00:18.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Al Qaeda affiliate JNIM has been intensifying its activities in Benin since 2022. The country serves as a transit corridor between the areas of operation of the group, which is well established in Mali, Niger and Burkina Faso. Two nature reserves have become logistical hubs for the jihadist fighters. Benin's army is striving to hold the line.",
+          "summary": "",
           "isNew": false,
           "region": null,
           "event": {
@@ -18577,12 +18333,12 @@
           "score": 11
         },
         {
-          "title": "Somalia: Somali Army Chief Inspects Damaged Bridge in Baardheere Amid Flood Fears",
-          "url": "https://allafrica.com/stories/202609080109.html",
-          "date": "2026-09-08T06:57:28.000Z",
-          "source": "AllAfrica – Konflikte",
+          "title": "JNIM jihadists step up incursions into northern Benin",
+          "url": "https://www.france24.com/en/tv-shows/the-observers/20260909-jnim-jihadists-step-up-incursions-northern-benin",
+          "date": "2026-09-09T10:00:18.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "[Shabelle] Baardheere, Somalia -- The commander of the Somali army's ground forces, Brigadier General Sahal Abdullahi Omar, has inspected a heavily damaged bridge in the southern town of Baardheere, as authorities prepare for possible major flooding across Somalia.",
+          "summary": "Al Qaeda affiliate JNIM has been intensifying its activities in Benin since 2022. The country serves as a transit corridor between the areas of operation of the group, which is well established in Mali, Niger and Burkina Faso. Two nature reserves have become logistical hubs for the jihadist fighters. Benin's army is striving to hold the line.",
           "isNew": false,
           "region": null,
           "event": {
@@ -18617,6 +18373,27 @@
             "label": "Seeangriff"
           },
           "score": 9
+        },
+        {
+          "title": "Somalia: Somali Army Chief Inspects Damaged Bridge in Baardheere Amid Flood Fears",
+          "url": "https://allafrica.com/stories/202609080109.html",
+          "date": "2026-09-08T06:57:28.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Baardheere, Somalia -- The commander of the Somali army's ground forces, Brigadier General Sahal Abdullahi Omar, has inspected a heavily damaged bridge in the southern town of Baardheere, as authorities prepare for possible major flooding across Somalia.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
         },
         {
           "title": "Opinion: The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
@@ -18703,7 +18480,7 @@
           "score": 8
         }
       ],
-      "itemCount": 14
+      "itemCount": 13
     },
     {
       "id": "haiti",
@@ -18957,8 +18734,8 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 61,
-      "severity": 57,
+      "activity": 57,
+      "severity": 56,
       "newCount": 0,
       "signals": [
         {
@@ -19359,37 +19136,6 @@
           "score": 15
         },
         {
-          "title": "In Syria's Daraa, water is life - and today the land is parched",
-          "url": "https://www.middleeasteye.net/news/syria-daraa-water-life-and-today-land-parched",
-          "date": "2026-09-10T07:30:36.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "In Syria's Daraa, water is life - and today the land is parched Submitted by Mohammad Almasalma on Fri, 06/12/2026 - 20:22 Amid scarce rainfall, war-scarred infrastructure and the proliferation of unregulated wells, the region is in the grips of a severe water crisis Off Abdul-Munaf al-Masri stands before a vast, cracked expanse of land in southern Syria , where water once stretched to the horizon",
-          "isNew": false,
-          "region": {
-            "id": "SYR-146",
-            "name": "Daraa",
-            "nameDe": "Gouvernement Dar'a",
-            "type": "Province",
-            "anchor": [
-              36.209,
-              32.85
-            ],
-            "matched": "Daraa"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "'Provocative and blatant violation': Syria condemns Netanyahu's entry into its territory",
           "url": "https://www.france24.com/en/video/20260910-provocative-and-blatant-violation-syria-condemns-netanyahu-s-entry-into-its-territory",
           "date": "2026-09-10T10:19:33.000Z",
@@ -19440,6 +19186,37 @@
             "label": "Bodenoffensive"
           },
           "score": 15
+        },
+        {
+          "title": "In Syria's Daraa, water is life - and today the land is parched",
+          "url": "https://www.middleeasteye.net/news/syria-daraa-water-life-and-today-land-parched",
+          "date": "2026-09-10T07:30:36.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "In Syria's Daraa, water is life - and today the land is parched Submitted by Mohammad Almasalma on Fri, 06/12/2026 - 20:22 Amid scarce rainfall, war-scarred infrastructure and the proliferation of unregulated wells, the region is in the grips of a severe water crisis Off Abdul-Munaf al-Masri stands before a vast, cracked expanse of land in southern Syria , where water once stretched to the horizon",
+          "isNew": false,
+          "region": {
+            "id": "SYR-146",
+            "name": "Daraa",
+            "nameDe": "Gouvernement Dar'a",
+            "type": "Province",
+            "anchor": [
+              36.209,
+              32.85
+            ],
+            "matched": "Daraa"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Netanyahu threatens Iran from occupied Syrian mountain",
@@ -19575,7 +19352,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Assad - Era Syrian Reactor Was Configured For Nuclear Weapons , IAEA Chief Says",
@@ -19956,8 +19733,8 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 52,
-      "severity": 54,
+      "activity": 49,
+      "severity": 53,
       "newCount": 0,
       "signals": [
         {
@@ -20226,27 +20003,6 @@
           "score": 15
         },
         {
-          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
-          "date": "2026-09-10T07:01:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
           "title": "Hospitality industry fears jobs at risk from plan to give mayors powers to impose ‘tourist tax’",
           "url": "https://www.theguardian.com/politics/live/2026/sep/10/andy-burnham-hospitality-row-mayors-tourism-tax-levy-regional-mayors-education-ukraine-russia-latest-news-updates",
           "date": "2026-09-10T10:23:23.000Z",
@@ -20318,6 +20074,27 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
+          "date": "2026-09-10T07:01:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "Tongue routs Pakistan as England dominate in third Test",
@@ -20652,30 +20429,9 @@
             "label": "Gefechte"
           },
           "score": 8
-        },
-        {
-          "title": "Why Pakistan overhauled its military command structure after five decades",
-          "url": "https://www.aljazeera.com/news/2026/9/4/why-pakistan-overhauled-its-military-command-structure-after-five-decades?traffic_source=rss",
-          "date": "2026-09-04T07:30:56.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "New legislation gives Pakistan's military chief sweeping command powers, raising questions about oversight.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 25
+      "itemCount": 24
     },
     {
       "id": "taiwan-strait",
@@ -20825,7 +20581,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Organisers say each of the 2,977 drones in the display represents a victim of the 9/11 attacks.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -20922,6 +20678,27 @@
             "label": "Gefechte"
           },
           "score": 22
+        },
+        {
+          "title": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-faces-genocide-incitement-complaint-italy-hind-rajab",
+          "date": "2026-09-11T06:41:44.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister The Hind Rajab Foundation (HRF) has filed a criminal complaint in Italy against Israel's minister of environmental protection, Idit Silman, accusing her of incitement to commit genocide against Palestinians in Gaza. In a statement, HRF said the complaint was lodged after Silman arrived in Italy on 6 September 2026 w",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
         },
         {
           "title": "Tories blast Ottawa over quietly resuming military dialogue with China",
@@ -22319,7 +22096,7 @@
           "score": 8
         }
       ],
-      "itemCount": 71
+      "itemCount": 72
     },
     {
       "id": "somalia",
@@ -22349,7 +22126,7 @@
         "Jubaland",
         "Somaliland"
       ],
-      "activity": 26,
+      "activity": 24,
       "severity": 46,
       "newCount": 0,
       "signals": [
@@ -22597,27 +22374,6 @@
           "score": 15
         },
         {
-          "title": "Somalia: South West State Says Forces Repelled Al-Shabaab Attack On Baidoa",
-          "url": "https://allafrica.com/stories/202609040101.html",
-          "date": "2026-09-04T07:07:14.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Baidoa, Somalia -- Authorities in Somalia's South West State said Thursday that government and regional forces had repelled an attack by Al-Shabaab on the strategic city of Baidoa, although rival forces claimed responsibility for the assault.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Drone Strikes on ex Somalia Prison Chief Home",
           "url": "https://chimpreports.com/drone-strikes-on-ex-somalia-prison-chiefs-home/",
           "date": "2026-09-04T10:00:00.000Z",
@@ -22660,37 +22416,6 @@
           "score": 15
         },
         {
-          "title": "Somalia: Somali Army Chief Inspects Damaged Bridge in Baardheere Amid Flood Fears",
-          "url": "https://allafrica.com/stories/202609080109.html",
-          "date": "2026-09-08T06:57:28.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Baardheere, Somalia -- The commander of the Somali army's ground forces, Brigadier General Sahal Abdullahi Omar, has inspected a heavily damaged bridge in the southern town of Baardheere, as authorities prepare for possible major flooding across Somalia.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3134",
-            "name": "Somali",
-            "nameDe": "Somali",
-            "type": "Administrative State",
-            "anchor": [
-              43.324,
-              6.938
-            ],
-            "matched": "Somali"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
           "title": "Hijacking pirates exploit regional chaos to return to seas off Somalia",
           "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
           "date": "2026-09-08T04:00:27.000Z",
@@ -22720,6 +22445,37 @@
             "label": "Seeangriff"
           },
           "score": 9
+        },
+        {
+          "title": "Somalia: Somali Army Chief Inspects Damaged Bridge in Baardheere Amid Flood Fears",
+          "url": "https://allafrica.com/stories/202609080109.html",
+          "date": "2026-09-08T06:57:28.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Baardheere, Somalia -- The commander of the Somali army's ground forces, Brigadier General Sahal Abdullahi Omar, has inspected a heavily damaged bridge in the southern town of Baardheere, as authorities prepare for possible major flooding across Somalia.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3134",
+            "name": "Somali",
+            "nameDe": "Somali",
+            "type": "Administrative State",
+            "anchor": [
+              43.324,
+              6.938
+            ],
+            "matched": "Somali"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
         },
         {
           "title": "Somalia: Somali Commandos Conduct Operations Against Al-Shabaab in Lower Shabelle",
@@ -22867,7 +22623,7 @@
           "score": 8
         }
       ],
-      "itemCount": 18
+      "itemCount": 17
     },
     {
       "id": "colombia",
@@ -24471,7 +24227,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -24517,7 +24273,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -25840,7 +25596,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -25886,7 +25642,7 @@
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -28805,306 +28561,6 @@
       "itemCount": 10
     },
     {
-      "id": "turkey-pkk",
-      "name": "Türkei–PKK",
-      "nameEn": "Turkey–PKK",
-      "region": "Naher Osten",
-      "countries": [
-        "Turkey"
-      ],
-      "lat": 37.9,
-      "lon": 41,
-      "tier": "medium",
-      "since": "1984 / Friedensprozess 2025",
-      "parties": [
-        "Türkei",
-        "PKK",
-        "SDF/YPG"
-      ],
-      "background": "Nach dem PKK-Auflösungsbeschluss 2025 läuft ein fragiler Friedensprozess; parallel türkische Operationen in Nordirak und Nordsyrien.",
-      "hotspots": [
-        "Südost-Türkei",
-        "Kandil",
-        "Nordsyrien"
-      ],
-      "activity": 24,
-      "severity": 30,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "TUR",
-      "extraCountries": [
-        "IRQ",
-        "SYR"
-      ],
-      "regions": [
-        {
-          "id": "TUR-3008",
-          "name": "Ankara",
-          "nameDe": "Ankara",
-          "type": "Province",
-          "anchor": [
-            32.61,
-            39.781
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Somalia: Somali Army Commander, Turkey-Trained Troops Welcomed in Mogadishu",
-          "url": "https://allafrica.com/stories/202609090520.html",
-          "date": "2026-09-09T15:11:55.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Mogadishu -- Somalia's 21st Gorgor Commando Brigade commander and a contingent of Somali soldiers who completed advanced military training in Turkey have been welcomed at a ceremony in Mogadishu, the military said Wednesday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 19
-        },
-        {
-          "title": "Azerbaijan sentences Talysh activist to 8.5 years after ‘abduction’ from Turkey",
-          "url": "https://oc-media.org/azerbaijan-sentences-talysh-activist-to-8-5-years-after-abduction-from-turkey/",
-          "date": "2026-09-09T14:14:17.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Jahid Isayev, a Russian national, is known for producing educational content about the Talysh people.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 19
-        },
-        {
-          "title": "Suspected spyware attacks target Turkish ministers’ phones",
-          "url": "https://www.middleeasteye.net/news/suspected-spyware-attacks-target-turkish-ministers-phones",
-          "date": "2026-09-08T13:32:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Suspected spyware attacks target Turkish ministers’ phones Submitted by Ragip Soylu on Tue, 09/08/2026 - 13:25 Ankara believes the attempts were unsuccessful, citing enhanced security measures and encrypted applications An Apple iPhone 17 Pro is displayed during an Apple special event at Apple headquarters on 9 September 2025 in Cupertino (Justin Sullivan/Getty Images/AFP) Off Apple sent notificat",
-          "isNew": false,
-          "region": {
-            "id": "TUR-3008",
-            "name": "Ankara",
-            "nameDe": "Ankara",
-            "type": "Province",
-            "anchor": [
-              32.61,
-              39.781
-            ],
-            "matched": "Ankara"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-reported-bernard-smith-ypj-fighters-mp4?traffic_source=rss",
-          "date": "2026-09-10T17:30:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Syria’s Kurdish women fighters in northeast Syria as pushing to join the country’s new army.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
-          "date": "2026-09-10T07:01:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israel names new envoy to Turkey amid tensions over Gaza and Syria",
-          "url": "https://www.middleeasteye.net/news/israel-names-new-envoy-turkey-amid-tensions-over-gaza-and-syria",
-          "date": "2026-09-09T17:31:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel names new envoy to Turkey amid tensions over Gaza and Syria Submitted by Ragip Soylu on Wed, 09/09/2026 - 18:16 Joel Lion presented his credentials in Ankara as Israel’s embassy remains effectively closed over security concerns The flags of Turkey and Israel and the Israeli Army Armoured Corps, left to right, fly at the Yad La-Shiryon Tank Museum in Latrun, about 30 kilometres west of Jerus",
-          "isNew": false,
-          "region": {
-            "id": "TUR-3008",
-            "name": "Ankara",
-            "nameDe": "Ankara",
-            "type": "Province",
-            "anchor": [
-              32.61,
-              39.781
-            ],
-            "matched": "Ankara"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 11
-        },
-        {
-          "title": "Turkey urges more countries to sanction Israeli settlements",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-urges-more-countries-sanction-israeli-settlements",
-          "date": "2026-09-08T20:58:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey urges more countries to sanction Israeli settlements Turkey has welcomed the measures taken by 12 countries to ban trade with illegal Israeli settlements in the occupied West Bank, the Ministry of Foreign Affairs said on Tuesday. \"Israel's efforts to undermine the two-state solution are intensifying with each passing day,\" the statement said, adding that \"illegal settlements have evolved in",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Dar, Saudi and Turkish FMs follow up on understandings reached in first Makkah Defence Alliance meeting: FO",
-          "url": "https://www.dawn.com/news/2027899/dar-saudi-and-turkish-fms-follow-up-on-understandings-reached-in-first-makkah-defence-alliance-meeting-fo",
-          "date": "2026-09-06T12:03:14.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Deputy Prime Minister and Foreign Minister Ishaq Dar held phone calls with Saudi Arabian and Turkish foreign ministers on Sunday and followed up on the understandings reached at the inaugural meeting of the Makkah Defence Alliance last month, the Foreign Office (FO) said. The joint defence pact was signed on August 7 and empowers the member states to treat an attack against one of them as an attac",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "US imposes sanctions on Turkish bank, prompting legal threat",
-          "url": "https://www.aljazeera.com/news/2026/9/5/us-imposes-sanctions-on-turkish-bank-prompting-legal-threat?traffic_source=rss",
-          "date": "2026-09-05T05:19:05.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US sanctions Turkish bank over alleged IRGC ties, accusing it of facilitating millions in transactions for Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        },
-        {
-          "title": "US sanctions on Iran hit three Turkish entities",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iran-hit-three-turkish-entities",
-          "date": "2026-09-04T14:55:48.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US sanctions on Iran hit three Turkish entities The US has targeted three Turkey-based entitites in a new round of Iran-related sanctions issued on Friday. According to the US Treasury Department, the entities targeted are Golden Global Portfoy Yonetimi Anonim Sirketi, Golden Global Varlik Kiralama Anonim Sirketi, and Golden Global Yatirim Bankasi Anonim Sirketi. The move is the latest in the Trum",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 10
-    },
-    {
       "id": "chad",
       "name": "Tschad / Tschadseebecken",
       "nameEn": "Chad & Lake Chad Basin",
@@ -29420,6 +28876,306 @@
         }
       ],
       "itemCount": 11
+    },
+    {
+      "id": "turkey-pkk",
+      "name": "Türkei–PKK",
+      "nameEn": "Turkey–PKK",
+      "region": "Naher Osten",
+      "countries": [
+        "Turkey"
+      ],
+      "lat": 37.9,
+      "lon": 41,
+      "tier": "medium",
+      "since": "1984 / Friedensprozess 2025",
+      "parties": [
+        "Türkei",
+        "PKK",
+        "SDF/YPG"
+      ],
+      "background": "Nach dem PKK-Auflösungsbeschluss 2025 läuft ein fragiler Friedensprozess; parallel türkische Operationen in Nordirak und Nordsyrien.",
+      "hotspots": [
+        "Südost-Türkei",
+        "Kandil",
+        "Nordsyrien"
+      ],
+      "activity": 22,
+      "severity": 29,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "TUR",
+      "extraCountries": [
+        "IRQ",
+        "SYR"
+      ],
+      "regions": [
+        {
+          "id": "TUR-3008",
+          "name": "Ankara",
+          "nameDe": "Ankara",
+          "type": "Province",
+          "anchor": [
+            32.61,
+            39.781
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Somalia: Somali Army Commander, Turkey-Trained Troops Welcomed in Mogadishu",
+          "url": "https://allafrica.com/stories/202609090520.html",
+          "date": "2026-09-09T15:11:55.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Mogadishu -- Somalia's 21st Gorgor Commando Brigade commander and a contingent of Somali soldiers who completed advanced military training in Turkey have been welcomed at a ceremony in Mogadishu, the military said Wednesday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 19
+        },
+        {
+          "title": "Azerbaijan sentences Talysh activist to 8.5 years after ‘abduction’ from Turkey",
+          "url": "https://oc-media.org/azerbaijan-sentences-talysh-activist-to-8-5-years-after-abduction-from-turkey/",
+          "date": "2026-09-09T14:14:17.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Jahid Isayev, a Russian national, is known for producing educational content about the Talysh people.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 19
+        },
+        {
+          "title": "Suspected spyware attacks target Turkish ministers’ phones",
+          "url": "https://www.middleeasteye.net/news/suspected-spyware-attacks-target-turkish-ministers-phones",
+          "date": "2026-09-08T13:32:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Suspected spyware attacks target Turkish ministers’ phones Submitted by Ragip Soylu on Tue, 09/08/2026 - 13:25 Ankara believes the attempts were unsuccessful, citing enhanced security measures and encrypted applications An Apple iPhone 17 Pro is displayed during an Apple special event at Apple headquarters on 9 September 2025 in Cupertino (Justin Sullivan/Getty Images/AFP) Off Apple sent notificat",
+          "isNew": false,
+          "region": {
+            "id": "TUR-3008",
+            "name": "Ankara",
+            "nameDe": "Ankara",
+            "type": "Province",
+            "anchor": [
+              32.61,
+              39.781
+            ],
+            "matched": "Ankara"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-reported-bernard-smith-ypj-fighters-mp4?traffic_source=rss",
+          "date": "2026-09-10T17:30:41.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Syria’s Kurdish women fighters in northeast Syria as pushing to join the country’s new army.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
+          "date": "2026-09-10T07:01:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Israel names new envoy to Turkey amid tensions over Gaza and Syria",
+          "url": "https://www.middleeasteye.net/news/israel-names-new-envoy-turkey-amid-tensions-over-gaza-and-syria",
+          "date": "2026-09-09T17:31:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel names new envoy to Turkey amid tensions over Gaza and Syria Submitted by Ragip Soylu on Wed, 09/09/2026 - 18:16 Joel Lion presented his credentials in Ankara as Israel’s embassy remains effectively closed over security concerns The flags of Turkey and Israel and the Israeli Army Armoured Corps, left to right, fly at the Yad La-Shiryon Tank Museum in Latrun, about 30 kilometres west of Jerus",
+          "isNew": false,
+          "region": {
+            "id": "TUR-3008",
+            "name": "Ankara",
+            "nameDe": "Ankara",
+            "type": "Province",
+            "anchor": [
+              32.61,
+              39.781
+            ],
+            "matched": "Ankara"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
+        },
+        {
+          "title": "Turkey urges more countries to sanction Israeli settlements",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-urges-more-countries-sanction-israeli-settlements",
+          "date": "2026-09-08T20:58:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey urges more countries to sanction Israeli settlements Turkey has welcomed the measures taken by 12 countries to ban trade with illegal Israeli settlements in the occupied West Bank, the Ministry of Foreign Affairs said on Tuesday. \"Israel's efforts to undermine the two-state solution are intensifying with each passing day,\" the statement said, adding that \"illegal settlements have evolved in",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Dar, Saudi and Turkish FMs follow up on understandings reached in first Makkah Defence Alliance meeting: FO",
+          "url": "https://www.dawn.com/news/2027899/dar-saudi-and-turkish-fms-follow-up-on-understandings-reached-in-first-makkah-defence-alliance-meeting-fo",
+          "date": "2026-09-06T12:03:14.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Deputy Prime Minister and Foreign Minister Ishaq Dar held phone calls with Saudi Arabian and Turkish foreign ministers on Sunday and followed up on the understandings reached at the inaugural meeting of the Makkah Defence Alliance last month, the Foreign Office (FO) said. The joint defence pact was signed on August 7 and empowers the member states to treat an attack against one of them as an attac",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "US imposes sanctions on Turkish bank, prompting legal threat",
+          "url": "https://www.aljazeera.com/news/2026/9/5/us-imposes-sanctions-on-turkish-bank-prompting-legal-threat?traffic_source=rss",
+          "date": "2026-09-05T05:19:05.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US sanctions Turkish bank over alleged IRGC ties, accusing it of facilitating millions in transactions for Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        },
+        {
+          "title": "US sanctions on Iran hit three Turkish entities",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iran-hit-three-turkish-entities",
+          "date": "2026-09-04T14:55:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US sanctions on Iran hit three Turkish entities The US has targeted three Turkey-based entitites in a new round of Iran-related sanctions issued on Friday. According to the US Treasury Department, the entities targeted are Golden Global Portfoy Yonetimi Anonim Sirketi, Golden Global Varlik Kiralama Anonim Sirketi, and Golden Global Yatirim Bankasi Anonim Sirketi. The move is the latest in the Trum",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 10
     },
     {
       "id": "cameroon",
@@ -30975,7 +30731,7 @@
       ],
       "activity": 31,
       "severity": 20,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -31017,7 +30773,7 @@
           "source": "Balkan Insight",
           "sourceType": "news",
           "summary": "A court in The Hague will soon issue its verdict in the war crimes trial of former Kosovo President Hashim Thaci and three co-accused amid prosecution claims of an “historic” climate of witness intimidation.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
