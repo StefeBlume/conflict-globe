@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-11T08:37:08.187Z",
-  "durationSec": 375,
+  "generatedAt": "2026-09-11T09:36:13.585Z",
+  "durationSec": 417,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 24,
+        "count": 28,
         "error": null
       },
       {
@@ -97,7 +97,7 @@
       {
         "id": "dawn",
         "ok": true,
-        "count": 27,
+        "count": 26,
         "error": null
       },
       {
@@ -114,13 +114,13 @@
       }
     ],
     "gdelt": {
-      "ok": 3,
-      "failed": 7,
-      "skipped": 6,
+      "ok": 0,
+      "failed": 9,
+      "skipped": 7,
       "errors": [
         {
           "id": "burkina-faso",
-          "error": "fetch failed"
+          "error": "HTTP 429"
         },
         {
           "id": "venezuela",
@@ -128,22 +128,30 @@
         },
         {
           "id": "sahel-mali",
-          "error": "HTTP 429"
+          "error": "fetch failed"
+        },
+        {
+          "id": "myanmar",
+          "error": "fetch failed"
         },
         {
           "id": "haiti",
           "error": "fetch failed"
         },
         {
-          "id": "somalia",
+          "id": "west-papua",
           "error": "HTTP 429"
         },
         {
-          "id": "turkey-pkk",
+          "id": "libya",
           "error": "HTTP 429"
         },
         {
-          "id": "chad",
+          "id": "afghanistan",
+          "error": "fetch failed"
+        },
+        {
+          "id": "colombia",
           "error": "HTTP 429"
         }
       ]
@@ -152,8 +160,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1200,
-    "newArticles": 6
+    "articles": 1207,
+    "newArticles": 13
   },
   "conflicts": [
     {
@@ -185,7 +193,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -268,6 +276,23 @@
           }
         },
         {
+          "id": "RUS-2376",
+          "name": "Vladimir",
+          "nameDe": "Wladimir",
+          "type": "Region",
+          "anchor": [
+            40.66,
+            56.012
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
           "id": "RUS-2417",
           "name": "Republic of Dagestan",
           "nameDe": "Dagestan",
@@ -304,6 +329,37 @@
       ],
       "items": [
         {
+          "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
+          "date": "2026-09-11T08:59:37.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians The number of people injured in this morning’s attack has gone up to eight, Klitschko just said. Two people have died and up to six were injured in this morning’s Russian attack on a petrol station in Kyiv, city mayor Wladimir Klitschko said in the latest update. Continue reading...",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2376",
+            "name": "Vladimir",
+            "nameDe": "Wladimir",
+            "type": "Region",
+            "anchor": [
+              40.66,
+              56.012
+            ],
+            "matched": "Wladimir"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 31
+        },
+        {
           "title": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
           "url": "https://www.bbc.co.uk/news/articles/cpvelrmp1vmo?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-10T22:36:02.000Z",
@@ -321,27 +377,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 29
-        },
-        {
-          "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
-          "date": "2026-09-11T08:28:54.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians In other news, five people died, and 40 were injured after a Dutch tour bus crashed into a roadside barrier and overturned in eastern Switzerland. Three people remain in serious condition at hospital. Continue reading...",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 29
         },
@@ -1356,7 +1391,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "EU urges Kiev to mobilize women Moscow",
@@ -2462,6 +2497,27 @@
           "score": 23
         },
         {
+          "title": "How 9/11 helped Israel sell its war on Palestinians to America",
+          "url": "https://www.aljazeera.com/opinions/2026/9/11/how-9-11-helped-israel-sell-its-war-on-palestinians-to?traffic_source=rss",
+          "date": "2026-09-11T08:18:18.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The 'war on terror' made Israeli repression easier to present as part of a shared struggle against a common enemy.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
           "title": "NAZA, the Israeli film revealing new layers of the Gaza genocide",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/naza-the-israeli-film-revealing-new-layers-of-the-gaza-genocide?traffic_source=rss",
           "date": "2026-09-11T05:25:34.000Z",
@@ -2640,27 +2696,6 @@
           "score": 22
         },
         {
-          "title": "Family of four killed in Israeli strike in northern Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/family-four-killed-israeli-strike-northern-gaza",
-          "date": "2026-09-10T08:52:14.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Family of four killed in Israeli strike in northern Gaza A family of four, including two children, were killed in an Israeli strike in northern Gaza on Thursday, according to Palestinian hospital and security sources. \"The bodies of four members of the Ahmad family were recovered in pieces after an Israeli strike hit a house in the Beit Lahia Project area in the northern Gaza Strip,\" an official a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168298",
           "date": "2026-09-08T12:00:00.000Z",
@@ -2709,7 +2744,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Armed settlers in military uniforms are seizing land and attacking Palestinian communities with near-total impunity.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2745,27 +2780,6 @@
           "score": 20
         },
         {
-          "title": "Israeli-made film about use of AI for mass killing in Gaza gets record ovation at Venice premiere",
-          "url": "https://www.france24.com/en/middle-east/20260910-israeli-made-film-about-mass-killings-in-gaza-gets-25-minute-ovation-at-venice-premiere",
-          "date": "2026-09-10T18:19:12.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "A film documenting Israel's use of artificial intelligence to facilitate the mass killing of Palestinian civilians in the Gaza Strip received a record 25-minute standing ovation at the Venice Film Festival on Thursday. \"NAZA\" details the brutal Israeli bombardment of the Palestinian territory through anonymous interviews with two dozen whistleblowers from the Israeli military or intelligence servi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 20
-        },
-        {
           "title": "Protest march held in Slovenian capital against opening of Israeli embassy",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/protest-march-held-slovenian-capital-against-opening-israeli-embassy",
           "date": "2026-09-11T06:53:29.000Z",
@@ -2785,6 +2799,27 @@
             "label": "Proteste/Unruhen"
           },
           "score": 20
+        },
+        {
+          "title": "Family of four killed in Israeli strike in northern Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/family-four-killed-israeli-strike-northern-gaza",
+          "date": "2026-09-10T08:52:14.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Family of four killed in Israeli strike in northern Gaza A family of four, including two children, were killed in an Israeli strike in northern Gaza on Thursday, according to Palestinian hospital and security sources. \"The bodies of four members of the Ahmad family were recovered in pieces after an Israeli strike hit a house in the Beit Lahia Project area in the northern Gaza Strip,\" an official a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
         },
         {
           "title": "Grace Tame apologises for comments labelling rape of Israeli women during Hamas attacks ‘propaganda’",
@@ -3511,6 +3546,27 @@
           "score": 17
         },
         {
+          "title": "Israeli-made film about use of AI for mass killing in Gaza gets record ovation at Venice premiere",
+          "url": "https://www.france24.com/en/middle-east/20260910-israeli-made-film-about-mass-killings-in-gaza-gets-25-minute-ovation-at-venice-premiere",
+          "date": "2026-09-10T18:19:12.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "A film documenting Israel's use of artificial intelligence to facilitate the mass killing of Palestinian civilians in the Gaza Strip received a record 25-minute standing ovation at the Venice Film Festival on Thursday. \"NAZA\" details the brutal Israeli bombardment of the Palestinian territory through anonymous interviews with two dozen whistleblowers from the Israeli military or intelligence servi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 15
+        },
+        {
           "title": "Israeli PM Netanyahu under fire over Haaretz report alleging UAE warned of Oct 7 attack",
           "url": "https://www.dawn.com/news/2028348/israeli-pm-netanyahu-under-fire-over-haaretz-report-alleging-uae-warned-of-oct-7-attack",
           "date": "2026-09-08T08:09:29.000Z",
@@ -4055,27 +4111,6 @@
             "label": "Opfer"
           },
           "score": 15
-        },
-        {
-          "title": "Moment Israeli strike hits next to Lebanese reporter",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-israeli-strike-hits-next-to-lebanese-reporter?traffic_source=rss",
-          "date": "2026-09-07T13:05:59.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Moment Israeli strike hits next to Lebanese reporter",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4499,6 +4534,27 @@
           "score": 18
         },
         {
+          "title": "Sudan: Intelligence Chief - Media Is a Key Partner in Addressing Sudan's Challenges",
+          "url": "https://allafrica.com/stories/202609100278.html",
+          "date": "2026-09-10T11:03:09.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[SNA] Director-General of the General Intelligence Service General Ahmed Ibrahim Mufaddal praised the role played by the media in the \"War of Dignity\" and its efforts to counter conspiracies targeting Sudan and its people, commending the media's performance over the past period.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "Sudan: TSC President Meets Quintet Delegation to Discuss Peace and Political Process in Sudan",
           "url": "https://allafrica.com/stories/202609100676.html",
           "date": "2026-09-10T21:01:33.000Z",
@@ -4527,28 +4583,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 17
-        },
-        {
-          "title": "Sudan: Intelligence Chief - Media Is a Key Partner in Addressing Sudan's Challenges",
-          "url": "https://allafrica.com/stories/202609100278.html",
-          "date": "2026-09-10T11:03:09.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[SNA] Director-General of the General Intelligence Service General Ahmed Ibrahim Mufaddal praised the role played by the media in the \"War of Dignity\" and its efforts to counter conspiracies targeting Sudan and its people, commending the media's performance over the past period.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Sudan chemical weapons allegations highlight Israel’s involvement in war",
@@ -5446,7 +5481,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -5520,7 +5555,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Armed settlers in military uniforms are seizing land and attacking Palestinian communities with near-total impunity.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -7292,13 +7327,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 3,
       "signals": [
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 14
+          "count": 16
         },
         {
           "key": "escalation",
@@ -7310,7 +7345,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 7
+          "count": 6
         },
         {
           "key": "airstrike",
@@ -7339,13 +7374,13 @@
       "extraCountries": [],
       "regions": [
         {
-          "id": "YEM-158",
-          "name": "Ta'izz",
-          "nameDe": "Gouvernement Ta'izz",
+          "id": "YEM-3496",
+          "name": "Sanaa",
+          "nameDe": "Sanaa",
           "type": "Governorate",
           "anchor": [
-            43.787,
-            13.41
+            44.4,
+            15.334
           ],
           "count": 3,
           "newCount": 0,
@@ -7356,15 +7391,15 @@
           }
         },
         {
-          "id": "YEM-3496",
-          "name": "Sanaa",
-          "nameDe": "Sanaa",
+          "id": "YEM-158",
+          "name": "Ta'izz",
+          "nameDe": "Gouvernement Ta'izz",
           "type": "Governorate",
           "anchor": [
-            44.4,
-            15.334
+            43.787,
+            13.41
           ],
-          "count": 3,
+          "count": 2,
           "newCount": 0,
           "event": {
             "type": "airstrike",
@@ -7425,6 +7460,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Middle East live: Yemen’s Houthis seize key island in Bab al-Mandab strait",
+          "url": "https://www.france24.com/en/middle-east/20260911-middle-east-live-trump-says-he-has-no-regrets-about-launching-war-on-iran",
+          "date": "2026-09-11T04:52:21.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Yemen's Iran-aligned Houthi rebels took over a key island in the Red Sea, completing their push to seize control of the Bab al-Mandab strait area, a local government official and eyewitnesses said on Friday. Perim Island, also known as Mayyun, sits in the middle of the strategic waterway that links Asia to Europe. Follow our liveblog for the latest updates.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 33
+        },
         {
           "title": "Houthis seize key Yemeni port of Mocha in drive to take control of Red Sea coast",
           "url": "https://www.theguardian.com/world/2026/sep/10/houthis-seize-key-port-mocha-yemen-red-sea-coast-iran-saudi-arabia-us",
@@ -7487,6 +7543,48 @@
             "label": "Gefechte"
           },
           "score": 27
+        },
+        {
+          "title": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-says-no-military-action-planned-over-houthi-attacks-saudi",
+          "date": "2026-09-11T09:13:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia Pakistan said on Thursday that no military response by Islamabad was currently being discussed under its joint defence agreement with Saudi Arabia and Turkey following Houthi attacks on Saudi Arabia. Foreign ministry spokesperson Sajjad Haider Khan said Pakistan would act under the agreement if and when the circumstances ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "In a significant strategic gain, Houthis claim control of Yemen’s entire Red Sea coastline",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/significant-strategic-gain-houthis-claim-control-yemens-entire-red-sea",
+          "date": "2026-09-11T08:53:46.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "In a significant strategic gain, Houthis claim control of Yemen’s entire Red Sea coastline Houthi forces have swept through the last government-held stretch of Yemen’s Red Sea coastline and taken control of the entire coast after an 18-hour offensive, Al Jazeera reported. The advance came after government forces pulled back from Mocha, allowing Houthi fighters to sweep south with little resistance",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 25
         },
         {
           "title": "Iran-backed Houthi rebels take strategic port city in Yemen, raising threat to Red Sea shipping",
@@ -8439,7 +8537,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthi attacks disrupt Saudi oil facilities and wound more than 70",
@@ -8460,7 +8558,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthi attacks on Saudi Arabia wound 73 people",
@@ -8481,7 +8579,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Yemen fighting live: Battles rage between Houthi and Saudi-backed forces",
@@ -8987,27 +9085,6 @@
           "score": 15
         },
         {
-          "title": "Houthis, Yemeni forces engaged in fierce battles: Why each front matters",
-          "url": "https://www.aljazeera.com/news/2026/9/10/houthis-yemeni-forces-engaged-in-fierce-battles-why-each-front-matters?traffic_source=rss",
-          "date": "2026-09-10T09:05:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Forces loyal to the UN-recognised government and Houthis fight on multiple fronts in an effort to expand their control.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemen gov’t forces launch air strikes on Houthi targets",
           "url": "https://www.aljazeera.com/news/2026/9/7/yemen-govt-forces-launch-air-strikes-on-houthi-targets?traffic_source=rss",
           "date": "2026-09-07T13:05:54.000Z",
@@ -9127,58 +9204,6 @@
           "url": "https://www.moneycontrol.com/world/iran-planning-multi-front-attack-on-israel-with-hezbollah-hamas-houthis-iraqi-militias-article-14023562.html",
           "date": "2026-09-06T07:00:00.000Z",
           "source": "moneycontrol.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Yemeni forces claim strategic district amid intensified Houthi clashes",
-          "url": "https://www.aljazeera.com/news/2026/9/6/yemeni-forces-claim-strategic-district-amid-intensified-houthi-clashes?traffic_source=rss",
-          "date": "2026-09-06T05:02:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "More than 60 people, including civilians, killed as clashes between Yemeni forces and Houthis intensify in Taiz.",
-          "isNew": false,
-          "region": {
-            "id": "YEM-158",
-            "name": "Ta'izz",
-            "nameDe": "Gouvernement Ta'izz",
-            "type": "Governorate",
-            "anchor": [
-              43.787,
-              13.41
-            ],
-            "matched": "Taiz"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Fighting Between Houthis , Yemen Government Forces Kills Dozens",
-          "url": "https://themedialine.org/headlines/fighting-between-houthis-yemen-government-forces-kills-dozens/",
-          "date": "2026-09-06T00:45:00.000Z",
-          "source": "themedialine.org",
           "sourceType": "news",
           "summary": "",
           "isNew": false,
@@ -9318,27 +9343,6 @@
       ],
       "items": [
         {
-          "title": "Iranian strikes damaged multiple aircraft at Jordan base, report says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-strikes-damaged-multiple-aircraft-jordan-base-report-says",
-          "date": "2026-09-11T02:51:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian strikes damaged multiple aircraft at Jordan base, report says Iranian strikes damaged multiple American military aircraft this week on the Muwaffaq Salti Air Base in Jordan, a US official told Reuters.&nbsp; The US military, the highest-funded in the world, suffered material damage even before Iran's strikes on Tuesday. This includes the destruction of more than two dozen drones, Iran stri",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 29
-        },
-        {
           "title": "Under siege: Iran faces strategic dilemma as war of attrition drags on",
           "url": "https://www.middleeasteye.net/news/under-siege-iran-strategy-crossroads-war-attrition",
           "date": "2026-09-11T05:03:04.000Z",
@@ -9370,23 +9374,23 @@
           "score": 27
         },
         {
-          "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
-          "date": "2026-09-11T00:24:24.000Z",
-          "source": "Al Jazeera",
+          "title": "Iranian strikes damaged multiple aircraft at Jordan base, report says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-strikes-damaged-multiple-aircraft-jordan-base-report-says",
+          "date": "2026-09-11T02:51:13.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Iran’s Revolutionary Guard says its navy struck a US-operated surface drone at the entrance of the Strait of Hormuz.",
+          "summary": "Iranian strikes damaged multiple aircraft at Jordan base, report says Iranian strikes damaged multiple American military aircraft this week on the Muwaffaq Salti Air Base in Jordan, a US official told Reuters.&nbsp; The US military, the highest-funded in the world, suffered material damage even before Iran's strikes on Tuesday. This includes the destruction of more than two dozen drones, Iran stri",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 26
         },
@@ -9410,6 +9414,27 @@
             "label": "Bodenoffensive"
           },
           "score": 23
+        },
+        {
+          "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
+          "date": "2026-09-11T00:24:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran’s Revolutionary Guard says its navy struck a US-operated surface drone at the entrance of the Strait of Hormuz.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 22
         },
         {
           "title": "Iran war live: IRGC attacks US unmanned vessel in Hormuz; two ships hit",
@@ -9506,12 +9531,12 @@
           "score": 21
         },
         {
-          "title": "Young republicans break with Trump over Iran war",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/young-republicans-break-with-trump-over-iran-war?traffic_source=rss",
-          "date": "2026-09-11T02:45:52.000Z",
-          "source": "Al Jazeera",
+          "title": "Morning recap",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-161",
+          "date": "2026-09-11T06:22:06.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "A clear generational divide between younger and older republicans is forming at the RNC Midterm Convention.",
+          "summary": "Morning recap Good morning Middle East Eye readers, If you're just joining us, here are key developments from across the region: •&nbsp;&nbsp; &nbsp;Iran’s Islamic Revolutionary Guard Corps (IRGC) said its navy targeted a US unmanned surface vessel in the Strait of Hormuz. •&nbsp;&nbsp; &nbsp;US President Donald Trump said he did not regret going to war against Iran despite the impact the conflict",
           "isNew": false,
           "region": null,
           "event": {
@@ -9520,9 +9545,9 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
           },
           "score": 19
         },
@@ -9545,49 +9570,7 @@
             "icon": "🗳️",
             "label": "Politik/Wahl"
           },
-          "score": 19
-        },
-        {
-          "title": "Morning recap",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-161",
-          "date": "2026-09-11T06:22:06.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Morning recap Good morning Middle East Eye readers, If you're just joining us, here are key developments from across the region: •&nbsp;&nbsp; &nbsp;Iran’s Islamic Revolutionary Guard Corps (IRGC) said its navy targeted a US unmanned surface vessel in the Strait of Hormuz. •&nbsp;&nbsp; &nbsp;US president Donald Trump said he did not regret going to war against Iran despite the impact the conflict",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "NYT: Vance sought ‘unvarnished’ views on Iran war directly from commanders",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/nyt-vance-sought-unvarnished-views-iran-war-directly-commanders",
-          "date": "2026-09-11T03:28:06.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "NYT: Vance sought ‘unvarnished’ views on Iran war directly from commanders US vice president JD Vance directly sought “unvarnished assessments” of the Iran war from US military commanders in the Middle East, Europe and Asia, New York Times reported.&nbsp; The newspaper said that Vance, who opposed the war from the outset, sought direct intel from commander on “objectives, tactics, casualty estimat",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Australia news live: One fight cancelled every three days due to staff shortages; ASX set for worst week since US-Iran war began",
@@ -10373,6 +10356,27 @@
           "score": 18
         },
         {
+          "title": "Young republicans break with Trump over Iran war",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/young-republicans-break-with-trump-over-iran-war?traffic_source=rss",
+          "date": "2026-09-11T02:45:52.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A clear generational divide between younger and older republicans is forming at the RNC Midterm Convention.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "Iran war won't end until after crucial November elections, says Trump",
           "url": "https://www.bbc.co.uk/news/articles/c5ydld0gykpo?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-10T10:43:53.000Z",
@@ -10432,6 +10436,27 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "score": 16
+        },
+        {
+          "title": "NYT: Vance sought ‘unvarnished’ views on Iran war directly from commanders",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/nyt-vance-sought-unvarnished-views-iran-war-directly-commanders",
+          "date": "2026-09-11T03:28:06.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "NYT: Vance sought ‘unvarnished’ views on Iran war directly from commanders US vice president JD Vance directly sought “unvarnished assessments” of the Iran war from US military commanders in the Middle East, Europe and Asia, New York Times reported.&nbsp; The newspaper said that Vance, who opposed the war from the outset, sought direct intel from commander on “objectives, tactics, casualty estimat",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 16
         },
@@ -11209,7 +11234,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 2,
       "signals": [
         {
           "key": "casualties",
@@ -11482,6 +11507,27 @@
           "score": 22
         },
         {
+          "title": "Nigeria: U.S. Delivers Military Equipment to Nigeria",
+          "url": "https://allafrica.com/stories/202609110099.html",
+          "date": "2026-09-11T09:08:43.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The equipment is part of a foreign military sales agreement that furthers the US-Nigerian partnership...\"",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
           "title": "Nigeria: U.S. Announces New Delivery of Defence Equipment to Nigeria",
           "url": "https://allafrica.com/stories/202609110021.html",
           "date": "2026-09-11T05:03:53.000Z",
@@ -11500,6 +11546,27 @@
             ],
             "matched": "Abuja"
           },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Nigeria: British Army Explains How Nigerians, Other Foreigners Can Join Military",
+          "url": "https://allafrica.com/stories/202609110077.html",
+          "date": "2026-09-11T08:58:56.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] If you are a foreigner interested in joining the British army, you will need to meet certain entry requirements before you can begin your application.",
+          "isNew": true,
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -12117,37 +12184,6 @@
           "score": 15
         },
         {
-          "title": "Ex-Gov Ortom condemns blockade of Peter Obi’s convoy in Benue, fingers state govt",
-          "url": "https://www.premiumtimesng.com/news/more-news/908572-ex-gov-ortom-condemns-blockade-of-peter-obis-convoy-in-benue-fingers-state-govt.html",
-          "date": "2026-09-10T09:16:29.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Mr Ortom described the action of the thugs as “wrong” and “inconsistent with democratic principles.” The post Ex-Gov Ortom condemns blockade of Peter Obi’s convoy in Benue, fingers state govt appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2846",
-            "name": "Benue State",
-            "nameDe": "Benue",
-            "type": "State",
-            "anchor": [
-              8.755,
-              7.325
-            ],
-            "matched": "Benue"
-          },
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 15
-        },
-        {
           "title": "Nigeria: After Reported Capture, Army Declares Notorious Terror Kingpin Wanted",
           "url": "https://allafrica.com/stories/202609070489.html",
           "date": "2026-09-07T13:20:39.000Z",
@@ -12513,6 +12549,37 @@
           "score": 12
         },
         {
+          "title": "Ex-Gov Ortom condemns blockade of Peter Obi’s convoy in Benue, fingers state govt",
+          "url": "https://www.premiumtimesng.com/news/more-news/908572-ex-gov-ortom-condemns-blockade-of-peter-obis-convoy-in-benue-fingers-state-govt.html",
+          "date": "2026-09-10T09:16:29.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Mr Ortom described the action of the thugs as “wrong” and “inconsistent with democratic principles.” The post Ex-Gov Ortom condemns blockade of Peter Obi’s convoy in Benue, fingers state govt appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2846",
+            "name": "Benue State",
+            "nameDe": "Benue",
+            "type": "State",
+            "anchor": [
+              8.755,
+              7.325
+            ],
+            "matched": "Benue"
+          },
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
+        },
+        {
           "title": "Nigeria: Spotlight On Nigerian Army's Operational Gains in Rescue, Counter-Terrorism",
           "url": "https://allafrica.com/stories/202609090018.html",
           "date": "2026-09-09T05:22:34.000Z",
@@ -12784,7 +12851,7 @@
           "score": 8
         }
       ],
-      "itemCount": 54
+      "itemCount": 56
     },
     {
       "id": "pakistan",
@@ -12814,7 +12881,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -12880,8 +12947,8 @@
             73.085,
             33.66
           ],
-          "count": 3,
-          "newCount": 0,
+          "count": 4,
+          "newCount": 1,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -12907,6 +12974,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-says-no-military-action-planned-over-houthi-attacks-saudi",
+          "date": "2026-09-11T09:13:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia Pakistan said on Thursday that no military response by Islamabad was currently being discussed under its joint defence agreement with Saudi Arabia and Turkey following Houthi attacks on Saudi Arabia. Foreign ministry spokesperson Sajjad Haider Khan said Pakistan would act under the agreement if and when the circumstances ",
+          "isNew": true,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
         {
           "title": "French firefighters on six-week strike after record summer blazes",
           "url": "https://www.france24.com/en/french-firefighters-on-six-week-strike-after-record-summer-blazes",
@@ -13324,7 +13422,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "‘House moved like jelly’ says resident near Bolivia barracks blast",
@@ -14330,7 +14428,1453 @@
           "score": 8
         }
       ],
-      "itemCount": 62
+      "itemCount": 63
+    },
+    {
+      "id": "niger",
+      "name": "Niger",
+      "nameEn": "Niger",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Niger"
+      ],
+      "lat": 14.5,
+      "lon": 7.5,
+      "tier": "high",
+      "since": "2015 / Putsch 2023",
+      "parties": [
+        "Militärjunta",
+        "IS-Sahel",
+        "JNIM",
+        "Boko Haram/ISWAP"
+      ],
+      "background": "Nach dem Putsch 2023 Abzug westlicher Truppen und Hinwendung zu Russland; Angriffe im Dreiländereck Tillabéri und im Diffa-Gebiet.",
+      "hotspots": [
+        "Tillabéri",
+        "Diffa",
+        "Niamey",
+        "Dreiländereck"
+      ],
+      "activity": 98,
+      "severity": 68,
+      "newCount": 2,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 6
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 5
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 4
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "NER",
+      "extraCountries": [
+        "NGA"
+      ],
+      "regions": [
+        {
+          "id": "NGA-3470",
+          "name": "Federal Capital Territory",
+          "nameDe": "Hauptstadtterritorium",
+          "type": "State",
+          "anchor": [
+            7.143,
+            8.861
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        },
+        {
+          "id": "NGA-2864",
+          "name": "Kaduna State",
+          "nameDe": "Kaduna",
+          "type": "State",
+          "anchor": [
+            7.7,
+            10.357
+          ],
+          "count": 3,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2871",
+          "name": "Sokoto State",
+          "nameDe": "Sokoto",
+          "type": "State",
+          "anchor": [
+            5.315,
+            13.032
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2872",
+          "name": "Zamfara State",
+          "nameDe": "Zamfara",
+          "type": "State",
+          "anchor": [
+            6.258,
+            12.091
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2839",
+          "name": "Borno State",
+          "nameDe": "Borno",
+          "type": "State",
+          "anchor": [
+            13.171,
+            11.891
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2858",
+          "name": "Bauchi State",
+          "nameDe": "Bauchi",
+          "type": "State",
+          "anchor": [
+            9.988,
+            10.775
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2862",
+          "name": "Enugu State",
+          "nameDe": "Enugu",
+          "type": "State",
+          "anchor": [
+            7.421,
+            6.533
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "NGA-2879",
+          "name": "Kebbi State",
+          "nameDe": "Kebbi",
+          "type": "State",
+          "anchor": [
+            4.496,
+            11.765
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
+          "id": "NGA-2843",
+          "name": "Imo State",
+          "nameDe": "Imo",
+          "type": "State",
+          "anchor": [
+            7.047,
+            5.55
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "NER-94",
+          "name": "Niamey",
+          "nameDe": "Niamey",
+          "type": "Capital District",
+          "anchor": [
+            2.131,
+            13.517
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Nigeria: 3 Vigilantes Killed in Kaduna",
+          "url": "https://allafrica.com/stories/202609100533.html",
+          "date": "2026-09-10T15:20:35.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Gunmen have killed three members of Kaduna State Vigilance Service (KADVIS) along the Zaria-Pambegua axis in Kubau Local Government Area.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2864",
+            "name": "Kaduna State",
+            "nameDe": "Kaduna",
+            "type": "State",
+            "anchor": [
+              7.7,
+              10.357
+            ],
+            "matched": "Kaduna State"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Nigeria: U.S. Delivers Military Equipment to Nigeria",
+          "url": "https://allafrica.com/stories/202609110099.html",
+          "date": "2026-09-11T09:08:43.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The equipment is part of a foreign military sales agreement that furthers the US-Nigerian partnership...\"",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Nigeria: U.S. Announces New Delivery of Defence Equipment to Nigeria",
+          "url": "https://allafrica.com/stories/202609110021.html",
+          "date": "2026-09-11T05:03:53.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Abuja -- The United States has announced the fresh delivery of defence equipment to Nigeria as part of ongoing national and international efforts to counter the activities of terrorists and other violent extremist groups in the country.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-3470",
+            "name": "Federal Capital Territory",
+            "nameDe": "Hauptstadtterritorium",
+            "type": "State",
+            "anchor": [
+              7.143,
+              8.861
+            ],
+            "matched": "Abuja"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Nigeria: British Army Explains How Nigerians, Other Foreigners Can Join Military",
+          "url": "https://allafrica.com/stories/202609110077.html",
+          "date": "2026-09-11T08:58:56.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] If you are a foreigner interested in joining the British army, you will need to meet certain entry requirements before you can begin your application.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Nigeria: Kaduna Road Blocked As Bandits Clash With Cattle Owners, 26 Abducted",
+          "url": "https://allafrica.com/stories/202609090226.html",
+          "date": "2026-09-09T10:12:46.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Leadership] AZA MSUE and NONYE EKWENUGO -- A major road around the Maraban Rido axis of Kaduna State was temporarily blocked yesterday after suspected bandits reportedly clashed with cattle owners which left an unspecified number of people dead or injured.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2864",
+            "name": "Kaduna State",
+            "nameDe": "Kaduna",
+            "type": "State",
+            "anchor": [
+              7.7,
+              10.357
+            ],
+            "matched": "Kaduna State"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Nigeria Condemns Houthi Attack On Saudi Arabia",
+          "url": "https://allafrica.com/stories/202609090475.html",
+          "date": "2026-09-09T14:42:44.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] Nigeria urged the warring parties to \"uphold international law, exercise maximum restraint, and refrain from further actions that could escalate the situation, endanger civilian lives.\"",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Soldier Injured As Military Repels ISWAP Attack On Military Base",
+          "url": "https://allafrica.com/stories/202609090082.html",
+          "date": "2026-09-09T06:41:29.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The soldier whose identity was not disclosed sustained gunshot injury to his left arm, and was being treated, according to a statement by Mohammed Goni, the spokesperson for Operation Hadin Kai, a joint task force in the North-east.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Troops Foil Attacks, Rescue Kidnap Victims in Zamfara",
+          "url": "https://allafrica.com/stories/202609090046.html",
+          "date": "2026-09-09T05:37:54.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Troops of the Joint Task Force (North West), Operation FANSAN YAMMA, have rescued 12 civilians during separate operations in Kaura Namoda and Tsafe local government areas of Zamfara State.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2872",
+            "name": "Zamfara State",
+            "nameDe": "Zamfara",
+            "type": "State",
+            "anchor": [
+              6.258,
+              12.091
+            ],
+            "matched": "Zamfara State"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria, Boko Haram reportedly reach secret three-month ceasefire",
+          "url": "https://www.aljazeera.com/news/2026/9/9/nigeria-boko-haram-reportedly-reach-secret-three-month-ceasefire?traffic_source=rss",
+          "date": "2026-09-09T13:35:34.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The reported truce follows the release of 360 villagers abducted during a Boko Haram attack in northeastern Nigeria.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Troops Repel Boko Haram/Iswap Attack On Base in Borno Community",
+          "url": "https://allafrica.com/stories/202609080345.html",
+          "date": "2026-09-08T11:56:04.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] Troops of the Nigerian Army operating under Operation HADIN KAI (OPHK), supported by the Nigerian Air Force and the Civilian Joint Task Force (CJTF), have repelled a coordinated attack with sustained firepower and determined resistance, denying armed members of Boko Haram/ISWAP terrorists the opportunity to breach or overrun their positions in the Pulka Community of the Gwoza local gove",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2839",
+            "name": "Borno State",
+            "nameDe": "Borno",
+            "type": "State",
+            "anchor": [
+              13.171,
+              11.891
+            ],
+            "matched": "Borno"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria condemns Houthi attack on Saudi Arabia",
+          "url": "https://www.premiumtimesng.com/foreign/908408-nigeria-condemns-houthi-attack-on-saudi-arabia.html",
+          "date": "2026-09-09T11:57:22.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Nigeria urged the warring parties to “uphold international law, exercise maximum restraint, and refrain from further actions that could escalate the situation, endanger civilian lives.” The post Nigeria condemns Houthi attack on Saudi Arabia appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Nigerian Government Reportedly Enters Secret Ceasefire Agreement With Boko Haram",
+          "url": "https://allafrica.com/stories/202609080472.html",
+          "date": "2026-09-08T14:51:46.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Clashes Claim 2 Lives in Bauchi",
+          "url": "https://allafrica.com/stories/202609080697.html",
+          "date": "2026-09-08T18:46:15.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] The Bauchi State Police Command has arrested seven suspects in connection with the criminal conspiracy, inciting disturbance and culpable homicide that occurred in Dass Local Government Area on 4th September, 2026.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2858",
+            "name": "Bauchi State",
+            "nameDe": "Bauchi",
+            "type": "State",
+            "anchor": [
+              9.988,
+              10.775
+            ],
+            "matched": "Bauchi State"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Soldier injured as military repels ISWAP attack on military base",
+          "url": "https://www.premiumtimesng.com/regional/nnorth-east/908254-soldier-injured-as-military-repels-iswap-attack-on-military-base.html",
+          "date": "2026-09-08T18:52:25.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The soldier whose identity was not disclosed sustained gunshot injury to his left arm, and was being treated, according to a statement by Mohammed Goni, the spokesperson for Operation Hadin Kai, a joint task force in the North-east. The post Soldier injured as military repels ISWAP attack on military base appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Army to Sustain Offensive Against Separatists in South-East - Goc",
+          "url": "https://allafrica.com/stories/202609080266.html",
+          "date": "2026-09-08T11:05:05.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The GOC disclosed this while addressing participants of Army War College Nigeria Course 10/2026 during their Operational Theatre Visit to Headquarters 82 Division, Enugu on Monday.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2862",
+            "name": "Enugu State",
+            "nameDe": "Enugu",
+            "type": "State",
+            "anchor": [
+              7.421,
+              6.533
+            ],
+            "matched": "Enugu"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigerian government reportedly enters secret ceasefire agreement with Boko Haram",
+          "url": "https://www.premiumtimesng.com/news/top-news/908140-nigerian-government-reportedly-enters-secret-ceasefire-agreement-with-boko-haram.html",
+          "date": "2026-09-08T13:25:10.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro. The post Nigerian government reportedly enters secret ceasefire agreement with Boko Haram appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 18
+        },
+        {
+          "title": "Nigeria: Army Chief Removes Theatre Commander, Redeploys Top Officers",
+          "url": "https://allafrica.com/stories/202609100360.html",
+          "date": "2026-09-10T11:39:29.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] The Chief of Army Staff, Waidi Shaibu, a Lieutenant-General, on Wednesday, announced the redeployment of top military generals in a fresh shake-up to inject renewed vigour in the fight against insecurity.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Nigeria: Nigerian Govt and Boko Haram Strike Secret Ceasefire Deal",
+          "url": "https://allafrica.com/stories/202609080003.html",
+          "date": "2026-09-08T05:04:23.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[The New Humanitarian] Maiduguri, Nigeria -- \"The government seems very interested in having a dialogue with Boko Haram, perhaps realising a military response alone is inadequate.\"",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Niger Village Head Killed : Four Suspects Arrested",
+          "url": "https://punchng.com/four-arrested-for-allegedly-killing-niger-village-head/",
+          "date": "2026-09-08T05:30:00.000Z",
+          "source": "punchng.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigeria: 2027 Elections - Army Charges Personnel to Remain Neutral, Professional",
+          "url": "https://allafrica.com/stories/202609100561.html",
+          "date": "2026-09-10T15:36:17.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] As Nigeria prepares for the 2027 General Elections, the Nigerian Army has charged its personnel to maintain strict political neutrality, professionalism and respect for the rule of law while supporting election security operations.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "US delivers military equipment to Nigeria",
+          "url": "https://www.premiumtimesng.com/news/headlines/908640-us-delivers-military-equipment-to-nigeria.html",
+          "date": "2026-09-10T18:15:04.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The equipment is part of a foreign military sales agreement that furthers the US-Nigerian partnership...\" The post US delivers military equipment to Nigeria appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "  Our people are being murdered  - MACBAN cries out over Niger , Kebbi attacks",
+          "url": "https://dailypost.ng/2026/09/07/our-people-are-being-murdered-macban-cries-out-over-niger-kebbi-attacks/",
+          "date": "2026-09-07T21:30:00.000Z",
+          "source": "dailypost.ng",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2879",
+            "name": "Kebbi State",
+            "nameDe": "Kebbi",
+            "type": "State",
+            "anchor": [
+              4.496,
+              11.765
+            ],
+            "matched": "Kebbi"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigeria’s security agencies engaged in 7,062 operations, killed 1,487 terrorists in two months – ONSA",
+          "url": "https://www.premiumtimesng.com/news/top-news/907986-nigerias-security-agencies-engaged-in-7062-operations-killed-1487-terrorists-in-two-months-onsa.html",
+          "date": "2026-09-07T18:26:19.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The ONSA says the successful operations in July and August highlight an increasingly coordinated, intelligence-driven approach to tackling terrorism, banditry, kidnapping, arms trafficking and other emerging security threats. The post Nigeria’s security agencies engaged in 7,062 operations, killed 1,487 terrorists in two months – ONSA appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigeria: After Reported Capture, Army Declares Notorious Terror Kingpin Wanted",
+          "url": "https://allafrica.com/stories/202609070489.html",
+          "date": "2026-09-07T13:20:39.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The Nigerian military had announced that troops of its Operation Udo Ka \"captured\" the notorious terror kingpin during an operation in Imo State between eight and 13 October 2025, before he resurfaced on 28 January 2026.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2843",
+            "name": "Imo State",
+            "nameDe": "Imo",
+            "type": "State",
+            "anchor": [
+              7.047,
+              5.55
+            ],
+            "matched": "Imo State"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "ICPC’s red flag and Tinubu’s response: Why Nigeria must stop fighting corruption backwards, By Nafisat Bello",
+          "url": "https://www.premiumtimesng.com/opinion/907882-icpcs-red-flag-and-tinubus-response-why-nigeria-must-stop-fighting-corruption-backwards-by-nafisat-bello.html",
+          "date": "2026-09-07T12:58:22.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The ultimate measure of this intervention will not be the number of ghost workers removed or the amount of money recovered. It will be whether Nigeria has the courage to follow the trail to its source, hold those responsible accountable and permanently close the doors through which the ghosts entered… If that happens, Nigeria will […] The post ICPC’s red flag and Tinubu’s response: Why Nigeria mus",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Niger: Failed Coup - Niger Blames France, Neighbouring Countries, Threatens International Action",
+          "url": "https://allafrica.com/stories/202609070234.html",
+          "date": "2026-09-07T10:22:27.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] France has denied this allegation, describing it as \"pure fiction.\"",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigerian man sued for divorce by Moroccan wife accuses Gumi of abducting her",
+          "url": "https://www.premiumtimesng.com/regional/nwest/907848-nigerian-man-sued-for-divorce-by-moroccan-wife-accuses-gumi-of-abducting-her.html",
+          "date": "2026-09-07T09:34:43.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Nasiru Idris accuses Ahmad Gumi of abducting his Moroccan wife, Khadija Diab, and keeping her away from him for nearly 11 months. The post Nigerian man sued for divorce by Moroccan wife accuses Gumi of abducting her appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigeria: Troops Flush Out Bandits in Sokoto, Recover Arms Cache",
+          "url": "https://allafrica.com/stories/202609070089.html",
+          "date": "2026-09-07T06:13:07.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Sokoto -- Troops of the COAS Special Intervention Battalion 7, Sector 2 of Operation FANSAN YAMMA have dislodged terrorist elements in Tangaza Local Government Area of Sokoto State and recovered a cache of high-calibre weapons and mobility assets during a series of clearance operations in the North West.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2871",
+            "name": "Sokoto State",
+            "nameDe": "Sokoto",
+            "type": "State",
+            "anchor": [
+              5.315,
+              13.032
+            ],
+            "matched": "Sokoto State"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Boko Haram , ISWAP now too weak to carry out large - scale attacks - Defence minister",
+          "url": "https://blueprint.ng/boko-haram-iswap-now-too-weak-to-carry-out-large-scale-attacks-defence-minister/",
+          "date": "2026-09-07T05:30:00.000Z",
+          "source": "blueprint.ng",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Failed Coup: Niger blames France, neighbouring countries, threatens international action",
+          "url": "https://www.premiumtimesng.com/news/headlines/907669-failed-coup-niger-blames-france-neighbouring-countries-threatens-international-action.html",
+          "date": "2026-09-06T06:12:51.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "France has denied this allegation, describing it as “pure fiction.” The post Failed Coup: Niger blames France, neighbouring countries, threatens international action appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigeria: Nigeria Denies Backing Failed Niger Coup",
+          "url": "https://allafrica.com/stories/202609040397.html",
+          "date": "2026-09-04T12:18:45.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] The Minister of State for Foreign Affairs said the ministry's attention had been drawn to \"false and mischievous claims\" suggesting that the failed coup had the support of the Economic Community of West African States (ECOWAS) and, by implication, the endorsement of Nigeria.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "Uber withdraws from Nigeria",
+          "url": "https://www.france24.com/en/uber-withdraws-from-nigeria",
+          "date": "2026-09-04T20:39:08.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In tonight's programme, a UN report says foreign fighters and support networks are fuelling Sudan’s war and worsening violence against civilians. Also, Uber is pulling out of Nigeria and Uganda, leaving thousands of drivers scrambling for new sources of income. And finally, we discuss the festival with co-director Diarah N’Daw-Spech and Laurence Cole, co-producer of the Nigerian film \"Shadow of Gr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 15
+        },
+        {
+          "title": "Bandits release Niger electoral commissioner 11 months after abduction",
+          "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
+          "date": "2026-09-04T13:50:07.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Mr Wawa recounted a traumatic experience, saying he spent more than 300 days in captivity without taking a bath. The post Bandits release Niger electoral commissioner 11 months after abduction appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigeria denies backing failed Niger coup",
+          "url": "https://www.premiumtimesng.com/news/headlines/907417-nigeria-denies-backing-failed-niger-coup.html",
+          "date": "2026-09-04T12:03:42.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The Minister of State for Foreign Affairs said the ministry’s attention had been drawn to “false and mischievous claims” suggesting that the failed coup had the support of the Economic Community of West African States (ECOWAS) and, by implication, the endorsement of Nigeria. The post Nigeria denies backing failed Niger coup appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 15
+        },
+        {
+          "title": "Nigeria: Nigerian Army Redeploys Top Generals, Appoints New Person to Lead Boko Haram War",
+          "url": "https://allafrica.com/stories/202609090510.html",
+          "date": "2026-09-09T14:54:56.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Premium Times] A Wednesday statement by army spokesperson Appolonia Anele said the deployments were approved by the Chief of Army Staff, Waidi Shaibu, a lieutenant general.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
+          "url": "https://allafrica.com/stories/202609100096.html",
+          "date": "2026-09-10T06:47:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-3470",
+            "name": "Federal Capital Territory",
+            "nameDe": "Hauptstadtterritorium",
+            "type": "State",
+            "anchor": [
+              7.143,
+              8.861
+            ],
+            "matched": "Abuja"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Nigeria: Spotlight On Nigerian Army's Operational Gains in Rescue, Counter-Terrorism",
+          "url": "https://allafrica.com/stories/202609090018.html",
+          "date": "2026-09-09T05:22:34.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] The Nigerian Army has recorded significant operational successes from July to the first week of September, with troops involved in rescue operations, arrests, patrols, ambushes and weapons recovery across multiple theatres. The period includes the rescue of 11 kidnapped persons and arrest of 21 suspects in July; 308 people rescued in a joint operation around Kainji Lake National Park; 2",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
+        },
+        {
+          "title": "Nigeria: Gunmen Kill 3 Vigilante Members in Kaduna",
+          "url": "https://allafrica.com/stories/202609090672.html",
+          "date": "2026-09-09T17:32:47.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Gunmen have killed three members of the Kaduna State Vigilance Service (Kadvis) along the Zuntu-Zaria Road in Kubau Local Government Area of Kaduna State.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2864",
+            "name": "Kaduna State",
+            "nameDe": "Kaduna",
+            "type": "State",
+            "anchor": [
+              7.7,
+              10.357
+            ],
+            "matched": "Kaduna State"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 11
+        },
+        {
+          "title": "Nigeria: Abuja Natives Seek Intervention Over Alleged Encroachment On Farmlands",
+          "url": "https://allafrica.com/stories/202609090637.html",
+          "date": "2026-09-09T16:55:19.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Residents of Dio, Baushe and Shishida communities in Tungan-Maje, Gwagwalada Area Council of the Federal Capital Territory (FCT), have appealed for intervention over alleged encroachment on their ancestral farmlands by the Nigerian military.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-3470",
+            "name": "Federal Capital Territory",
+            "nameDe": "Hauptstadtterritorium",
+            "type": "State",
+            "anchor": [
+              7.143,
+              8.861
+            ],
+            "matched": "Federal Capital Territory"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Nigerian Army redeploys top generals, appoints new person to lead Boko Haram war",
+          "url": "https://www.premiumtimesng.com/news/top-news/908445-nigerian-army-redeploys-top-generals-appoints-new-person-to-lead-boko-haram-war.html",
+          "date": "2026-09-09T13:49:35.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "A Wednesday statement by army spokesperson Appolonia Anele said the deployments were approved by the Chief of Army Staff, Waidi Shaibu, a lieutenant general. The post Nigerian Army redeploys top generals, appoints new person to lead Boko Haram war appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Nigeria: Insecurity - Sokoto Becomes Hotbed",
+          "url": "https://allafrica.com/stories/202609090386.html",
+          "date": "2026-09-09T13:13:45.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Daily Trust] Several parts of Sokoto State are increasingly turning into bandit flashpoints, with the latest attacks leaving at least 15 residents dead and about 79 others abducted across six local government areas of the state.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-2871",
+            "name": "Sokoto State",
+            "nameDe": "Sokoto",
+            "type": "State",
+            "anchor": [
+              5.315,
+              13.032
+            ],
+            "matched": "Sokoto State"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
+        },
+        {
+          "title": "Algeria: Beyond the Fighter Jets - What Algeria's Deployment to Niger Really Signals",
+          "url": "https://allafrica.com/stories/202609080017.html",
+          "date": "2026-09-08T05:08:46.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[African Arguments] Four Algerian Su-30 fighters touched down in Niamey on 30 August 2026, trailed by an aerial refueling aircraft. A day earlier, mutinous soldiers -- some drawn from units worn down by heavy losses fighting jihadist groups -- had stormed a military base next to the capital's airport and moved on the presidential palace. Niger's government asked for help, and Algiers answered. Alg",
+          "isNew": false,
+          "region": {
+            "id": "NER-94",
+            "name": "Niamey",
+            "nameDe": "Niamey",
+            "type": "Capital District",
+            "anchor": [
+              2.131,
+              13.517
+            ],
+            "matched": "Niamey"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 8
+        },
+        {
+          "title": "Russia cements its role as Africa junta protector after helping quell Niger mutiny",
+          "url": "https://www.sfltimes.com/news/russia-cements-its-role-as-africa-junta-protector-after-helping-quell-nigers-mutiny",
+          "date": "2026-09-07T21:15:00.000Z",
+          "source": "sfltimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Macron behind failed military mutiny Niger",
+          "url": "http://www.europesun.com/news/279291718/macron-behind-failed-military-mutiny-niger",
+          "date": "2026-09-07T21:15:00.000Z",
+          "source": "europesun.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Nigeria: Military Moves to Choke Logistics, Financial Lifelines Sustaining Asymmetric Warfare",
+          "url": "https://allafrica.com/stories/202609070097.html",
+          "date": "2026-09-07T06:13:12.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Abuja -- The Minister of Defence, General Christopher Gwabin Musa (rtd.), has revealed that a major component of the military's updated strategy is focused on choking the logistical and financial lifelines sustaining asymmetric warfare in the country.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-3470",
+            "name": "Federal Capital Territory",
+            "nameDe": "Hauptstadtterritorium",
+            "type": "State",
+            "anchor": [
+              7.143,
+              8.861
+            ],
+            "matched": "Abuja"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Amódemájá and Nigeria’s political paradise of lies, By Festus Adedayo",
+          "url": "https://www.premiumtimesng.com/opinion/907763-amodemaja-and-nigerias-political-paradise-of-lies-by-festus-adedayo.html",
+          "date": "2026-09-06T17:56:19.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "In 1969, legendary Yoruba Sakara music lord, Yusuff Olatunji, serenaded and celebrated the sterling qualities of the Seriki of Egbaland, Chief Abdul-Wahab Amódemájá, who held an Egba high-ranking military-derived civil title. In his Volume 3 album entitled Amódemájá, using a twin engine of dense metaphor and vivid imagery, Olatunji advocated for the place of good people […] The post Amódemájá and ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Niger military accuses France of orchestrating failed mutiny: What to know",
+          "url": "https://www.aljazeera.com/news/2026/9/6/niger-military-accuses-france-of-orchestrating-failed-mutiny-what-to-know?traffic_source=rss",
+          "date": "2026-09-06T15:42:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "French officials deny involvement, but tensions between the two countries remain high.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "France denies inciting failed Niger mutiny, calls accusation ‘pure fantasy’",
+          "url": "https://www.aljazeera.com/news/2026/9/5/france-denies-inciting-failed-niger-mutiny-calls-accusation-pure-fantasy?traffic_source=rss",
+          "date": "2026-09-05T19:45:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Niger's government has widened its blame to unnamed neighbours a week after the assault on a military base.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Niger accuses France of orchestrating failed military mutiny",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/niger-accuses-france-of-orchestrating-failed-military-mutiny?traffic_source=rss",
+          "date": "2026-09-05T07:42:59.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Niger has blamed France for inciting an attack on a key military airbase by mutinous soldiers last week.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Nigeria: 'My NBA Speech Wasn't Fair' - Verydarkman Apologises to Security Operatives",
+          "url": "https://allafrica.com/stories/202609040550.html",
+          "date": "2026-09-04T15:19:42.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] Social media activist Martins Vincent Otse, popularly known as VeryDarkMan, has apologised to soldiers, policemen, customs and immigration personnel over his controversial remarks at the Nigerian Bar Association's 66th Annual General Conference.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 50
     },
     {
       "id": "lebanon-hezbollah",
@@ -14692,7 +16236,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
@@ -16291,1410 +17835,6 @@
       "itemCount": 12
     },
     {
-      "id": "niger",
-      "name": "Niger",
-      "nameEn": "Niger",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Niger"
-      ],
-      "lat": 14.5,
-      "lon": 7.5,
-      "tier": "high",
-      "since": "2015 / Putsch 2023",
-      "parties": [
-        "Militärjunta",
-        "IS-Sahel",
-        "JNIM",
-        "Boko Haram/ISWAP"
-      ],
-      "background": "Nach dem Putsch 2023 Abzug westlicher Truppen und Hinwendung zu Russland; Angriffe im Dreiländereck Tillabéri und im Diffa-Gebiet.",
-      "hotspots": [
-        "Tillabéri",
-        "Diffa",
-        "Niamey",
-        "Dreiländereck"
-      ],
-      "activity": 89,
-      "severity": 65,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 6
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 5
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 4
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 2
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "NER",
-      "extraCountries": [
-        "NGA"
-      ],
-      "regions": [
-        {
-          "id": "NGA-3470",
-          "name": "Federal Capital Territory",
-          "nameDe": "Hauptstadtterritorium",
-          "type": "State",
-          "anchor": [
-            7.143,
-            8.861
-          ],
-          "count": 4,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
-          "id": "NGA-2864",
-          "name": "Kaduna State",
-          "nameDe": "Kaduna",
-          "type": "State",
-          "anchor": [
-            7.7,
-            10.357
-          ],
-          "count": 3,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "NGA-2871",
-          "name": "Sokoto State",
-          "nameDe": "Sokoto",
-          "type": "State",
-          "anchor": [
-            5.315,
-            13.032
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "NGA-2872",
-          "name": "Zamfara State",
-          "nameDe": "Zamfara",
-          "type": "State",
-          "anchor": [
-            6.258,
-            12.091
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "NGA-2839",
-          "name": "Borno State",
-          "nameDe": "Borno",
-          "type": "State",
-          "anchor": [
-            13.171,
-            11.891
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "NGA-2858",
-          "name": "Bauchi State",
-          "nameDe": "Bauchi",
-          "type": "State",
-          "anchor": [
-            9.988,
-            10.775
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "NGA-2862",
-          "name": "Enugu State",
-          "nameDe": "Enugu",
-          "type": "State",
-          "anchor": [
-            7.421,
-            6.533
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "NGA-2879",
-          "name": "Kebbi State",
-          "nameDe": "Kebbi",
-          "type": "State",
-          "anchor": [
-            4.496,
-            11.765
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "NGA-2843",
-          "name": "Imo State",
-          "nameDe": "Imo",
-          "type": "State",
-          "anchor": [
-            7.047,
-            5.55
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "NER-94",
-          "name": "Niamey",
-          "nameDe": "Niamey",
-          "type": "Capital District",
-          "anchor": [
-            2.131,
-            13.517
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Nigeria: 3 Vigilantes Killed in Kaduna",
-          "url": "https://allafrica.com/stories/202609100533.html",
-          "date": "2026-09-10T15:20:35.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Gunmen have killed three members of Kaduna State Vigilance Service (KADVIS) along the Zaria-Pambegua axis in Kubau Local Government Area.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2864",
-            "name": "Kaduna State",
-            "nameDe": "Kaduna",
-            "type": "State",
-            "anchor": [
-              7.7,
-              10.357
-            ],
-            "matched": "Kaduna State"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Nigeria: U.S. Announces New Delivery of Defence Equipment to Nigeria",
-          "url": "https://allafrica.com/stories/202609110021.html",
-          "date": "2026-09-11T05:03:53.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The United States has announced the fresh delivery of defence equipment to Nigeria as part of ongoing national and international efforts to counter the activities of terrorists and other violent extremist groups in the country.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Nigeria: Kaduna Road Blocked As Bandits Clash With Cattle Owners, 26 Abducted",
-          "url": "https://allafrica.com/stories/202609090226.html",
-          "date": "2026-09-09T10:12:46.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Leadership] AZA MSUE and NONYE EKWENUGO -- A major road around the Maraban Rido axis of Kaduna State was temporarily blocked yesterday after suspected bandits reportedly clashed with cattle owners which left an unspecified number of people dead or injured.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2864",
-            "name": "Kaduna State",
-            "nameDe": "Kaduna",
-            "type": "State",
-            "anchor": [
-              7.7,
-              10.357
-            ],
-            "matched": "Kaduna State"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Nigeria Condemns Houthi Attack On Saudi Arabia",
-          "url": "https://allafrica.com/stories/202609090475.html",
-          "date": "2026-09-09T14:42:44.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] Nigeria urged the warring parties to \"uphold international law, exercise maximum restraint, and refrain from further actions that could escalate the situation, endanger civilian lives.\"",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Soldier Injured As Military Repels ISWAP Attack On Military Base",
-          "url": "https://allafrica.com/stories/202609090082.html",
-          "date": "2026-09-09T06:41:29.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The soldier whose identity was not disclosed sustained gunshot injury to his left arm, and was being treated, according to a statement by Mohammed Goni, the spokesperson for Operation Hadin Kai, a joint task force in the North-east.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Troops Foil Attacks, Rescue Kidnap Victims in Zamfara",
-          "url": "https://allafrica.com/stories/202609090046.html",
-          "date": "2026-09-09T05:37:54.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Troops of the Joint Task Force (North West), Operation FANSAN YAMMA, have rescued 12 civilians during separate operations in Kaura Namoda and Tsafe local government areas of Zamfara State.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2872",
-            "name": "Zamfara State",
-            "nameDe": "Zamfara",
-            "type": "State",
-            "anchor": [
-              6.258,
-              12.091
-            ],
-            "matched": "Zamfara State"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria, Boko Haram reportedly reach secret three-month ceasefire",
-          "url": "https://www.aljazeera.com/news/2026/9/9/nigeria-boko-haram-reportedly-reach-secret-three-month-ceasefire?traffic_source=rss",
-          "date": "2026-09-09T13:35:34.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The reported truce follows the release of 360 villagers abducted during a Boko Haram attack in northeastern Nigeria.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Troops Repel Boko Haram/Iswap Attack On Base in Borno Community",
-          "url": "https://allafrica.com/stories/202609080345.html",
-          "date": "2026-09-08T11:56:04.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Vanguard] Troops of the Nigerian Army operating under Operation HADIN KAI (OPHK), supported by the Nigerian Air Force and the Civilian Joint Task Force (CJTF), have repelled a coordinated attack with sustained firepower and determined resistance, denying armed members of Boko Haram/ISWAP terrorists the opportunity to breach or overrun their positions in the Pulka Community of the Gwoza local gove",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2839",
-            "name": "Borno State",
-            "nameDe": "Borno",
-            "type": "State",
-            "anchor": [
-              13.171,
-              11.891
-            ],
-            "matched": "Borno"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria condemns Houthi attack on Saudi Arabia",
-          "url": "https://www.premiumtimesng.com/foreign/908408-nigeria-condemns-houthi-attack-on-saudi-arabia.html",
-          "date": "2026-09-09T11:57:22.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Nigeria urged the warring parties to “uphold international law, exercise maximum restraint, and refrain from further actions that could escalate the situation, endanger civilian lives.” The post Nigeria condemns Houthi attack on Saudi Arabia appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Nigerian Government Reportedly Enters Secret Ceasefire Agreement With Boko Haram",
-          "url": "https://allafrica.com/stories/202609080472.html",
-          "date": "2026-09-08T14:51:46.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Clashes Claim 2 Lives in Bauchi",
-          "url": "https://allafrica.com/stories/202609080697.html",
-          "date": "2026-09-08T18:46:15.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] The Bauchi State Police Command has arrested seven suspects in connection with the criminal conspiracy, inciting disturbance and culpable homicide that occurred in Dass Local Government Area on 4th September, 2026.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2858",
-            "name": "Bauchi State",
-            "nameDe": "Bauchi",
-            "type": "State",
-            "anchor": [
-              9.988,
-              10.775
-            ],
-            "matched": "Bauchi State"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Soldier injured as military repels ISWAP attack on military base",
-          "url": "https://www.premiumtimesng.com/regional/nnorth-east/908254-soldier-injured-as-military-repels-iswap-attack-on-military-base.html",
-          "date": "2026-09-08T18:52:25.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The soldier whose identity was not disclosed sustained gunshot injury to his left arm, and was being treated, according to a statement by Mohammed Goni, the spokesperson for Operation Hadin Kai, a joint task force in the North-east. The post Soldier injured as military repels ISWAP attack on military base appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Army to Sustain Offensive Against Separatists in South-East - Goc",
-          "url": "https://allafrica.com/stories/202609080266.html",
-          "date": "2026-09-08T11:05:05.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The GOC disclosed this while addressing participants of Army War College Nigeria Course 10/2026 during their Operational Theatre Visit to Headquarters 82 Division, Enugu on Monday.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2862",
-            "name": "Enugu State",
-            "nameDe": "Enugu",
-            "type": "State",
-            "anchor": [
-              7.421,
-              6.533
-            ],
-            "matched": "Enugu"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigerian government reportedly enters secret ceasefire agreement with Boko Haram",
-          "url": "https://www.premiumtimesng.com/news/top-news/908140-nigerian-government-reportedly-enters-secret-ceasefire-agreement-with-boko-haram.html",
-          "date": "2026-09-08T13:25:10.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The Nigerian government has reportedly entered into a secret ceasefire agreement with the Boko Haram faction led by Bakura Doro. The post Nigerian government reportedly enters secret ceasefire agreement with Boko Haram appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 18
-        },
-        {
-          "title": "Nigeria: Army Chief Removes Theatre Commander, Redeploys Top Officers",
-          "url": "https://allafrica.com/stories/202609100360.html",
-          "date": "2026-09-10T11:39:29.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] The Chief of Army Staff, Waidi Shaibu, a Lieutenant-General, on Wednesday, announced the redeployment of top military generals in a fresh shake-up to inject renewed vigour in the fight against insecurity.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Nigeria: Nigerian Govt and Boko Haram Strike Secret Ceasefire Deal",
-          "url": "https://allafrica.com/stories/202609080003.html",
-          "date": "2026-09-08T05:04:23.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[The New Humanitarian] Maiduguri, Nigeria -- \"The government seems very interested in having a dialogue with Boko Haram, perhaps realising a military response alone is inadequate.\"",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Niger Village Head Killed : Four Suspects Arrested",
-          "url": "https://punchng.com/four-arrested-for-allegedly-killing-niger-village-head/",
-          "date": "2026-09-08T05:30:00.000Z",
-          "source": "punchng.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigeria: 2027 Elections - Army Charges Personnel to Remain Neutral, Professional",
-          "url": "https://allafrica.com/stories/202609100561.html",
-          "date": "2026-09-10T15:36:17.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] As Nigeria prepares for the 2027 General Elections, the Nigerian Army has charged its personnel to maintain strict political neutrality, professionalism and respect for the rule of law while supporting election security operations.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "US delivers military equipment to Nigeria",
-          "url": "https://www.premiumtimesng.com/news/headlines/908640-us-delivers-military-equipment-to-nigeria.html",
-          "date": "2026-09-10T18:15:04.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The equipment is part of a foreign military sales agreement that furthers the US-Nigerian partnership...\" The post US delivers military equipment to Nigeria appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "  Our people are being murdered  - MACBAN cries out over Niger , Kebbi attacks",
-          "url": "https://dailypost.ng/2026/09/07/our-people-are-being-murdered-macban-cries-out-over-niger-kebbi-attacks/",
-          "date": "2026-09-07T21:30:00.000Z",
-          "source": "dailypost.ng",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2879",
-            "name": "Kebbi State",
-            "nameDe": "Kebbi",
-            "type": "State",
-            "anchor": [
-              4.496,
-              11.765
-            ],
-            "matched": "Kebbi"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigeria’s security agencies engaged in 7,062 operations, killed 1,487 terrorists in two months – ONSA",
-          "url": "https://www.premiumtimesng.com/news/top-news/907986-nigerias-security-agencies-engaged-in-7062-operations-killed-1487-terrorists-in-two-months-onsa.html",
-          "date": "2026-09-07T18:26:19.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The ONSA says the successful operations in July and August highlight an increasingly coordinated, intelligence-driven approach to tackling terrorism, banditry, kidnapping, arms trafficking and other emerging security threats. The post Nigeria’s security agencies engaged in 7,062 operations, killed 1,487 terrorists in two months – ONSA appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigeria: After Reported Capture, Army Declares Notorious Terror Kingpin Wanted",
-          "url": "https://allafrica.com/stories/202609070489.html",
-          "date": "2026-09-07T13:20:39.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The Nigerian military had announced that troops of its Operation Udo Ka \"captured\" the notorious terror kingpin during an operation in Imo State between eight and 13 October 2025, before he resurfaced on 28 January 2026.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2843",
-            "name": "Imo State",
-            "nameDe": "Imo",
-            "type": "State",
-            "anchor": [
-              7.047,
-              5.55
-            ],
-            "matched": "Imo State"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
-          "title": "ICPC’s red flag and Tinubu’s response: Why Nigeria must stop fighting corruption backwards, By Nafisat Bello",
-          "url": "https://www.premiumtimesng.com/opinion/907882-icpcs-red-flag-and-tinubus-response-why-nigeria-must-stop-fighting-corruption-backwards-by-nafisat-bello.html",
-          "date": "2026-09-07T12:58:22.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The ultimate measure of this intervention will not be the number of ghost workers removed or the amount of money recovered. It will be whether Nigeria has the courage to follow the trail to its source, hold those responsible accountable and permanently close the doors through which the ghosts entered… If that happens, Nigeria will […] The post ICPC’s red flag and Tinubu’s response: Why Nigeria mus",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Niger: Failed Coup - Niger Blames France, Neighbouring Countries, Threatens International Action",
-          "url": "https://allafrica.com/stories/202609070234.html",
-          "date": "2026-09-07T10:22:27.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] France has denied this allegation, describing it as \"pure fiction.\"",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigerian man sued for divorce by Moroccan wife accuses Gumi of abducting her",
-          "url": "https://www.premiumtimesng.com/regional/nwest/907848-nigerian-man-sued-for-divorce-by-moroccan-wife-accuses-gumi-of-abducting-her.html",
-          "date": "2026-09-07T09:34:43.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Nasiru Idris accuses Ahmad Gumi of abducting his Moroccan wife, Khadija Diab, and keeping her away from him for nearly 11 months. The post Nigerian man sued for divorce by Moroccan wife accuses Gumi of abducting her appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigeria: Troops Flush Out Bandits in Sokoto, Recover Arms Cache",
-          "url": "https://allafrica.com/stories/202609070089.html",
-          "date": "2026-09-07T06:13:07.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Sokoto -- Troops of the COAS Special Intervention Battalion 7, Sector 2 of Operation FANSAN YAMMA have dislodged terrorist elements in Tangaza Local Government Area of Sokoto State and recovered a cache of high-calibre weapons and mobility assets during a series of clearance operations in the North West.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2871",
-            "name": "Sokoto State",
-            "nameDe": "Sokoto",
-            "type": "State",
-            "anchor": [
-              5.315,
-              13.032
-            ],
-            "matched": "Sokoto State"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Boko Haram , ISWAP now too weak to carry out large - scale attacks - Defence minister",
-          "url": "https://blueprint.ng/boko-haram-iswap-now-too-weak-to-carry-out-large-scale-attacks-defence-minister/",
-          "date": "2026-09-07T05:30:00.000Z",
-          "source": "blueprint.ng",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Failed Coup: Niger blames France, neighbouring countries, threatens international action",
-          "url": "https://www.premiumtimesng.com/news/headlines/907669-failed-coup-niger-blames-france-neighbouring-countries-threatens-international-action.html",
-          "date": "2026-09-06T06:12:51.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "France has denied this allegation, describing it as “pure fiction.” The post Failed Coup: Niger blames France, neighbouring countries, threatens international action appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigeria: Nigeria Denies Backing Failed Niger Coup",
-          "url": "https://allafrica.com/stories/202609040397.html",
-          "date": "2026-09-04T12:18:45.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] The Minister of State for Foreign Affairs said the ministry's attention had been drawn to \"false and mischievous claims\" suggesting that the failed coup had the support of the Economic Community of West African States (ECOWAS) and, by implication, the endorsement of Nigeria.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Uber withdraws from Nigeria",
-          "url": "https://www.france24.com/en/uber-withdraws-from-nigeria",
-          "date": "2026-09-04T20:39:08.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In tonight's programme, a UN report says foreign fighters and support networks are fuelling Sudan’s war and worsening violence against civilians. Also, Uber is pulling out of Nigeria and Uganda, leaving thousands of drivers scrambling for new sources of income. And finally, we discuss the festival with co-director Diarah N’Daw-Spech and Laurence Cole, co-producer of the Nigerian film \"Shadow of Gr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Bandits release Niger electoral commissioner 11 months after abduction",
-          "url": "https://www.premiumtimesng.com/regional/north-central/907445-bandits-release-niger-electoral-commissioner-11-months-after-abduction.html",
-          "date": "2026-09-04T13:50:07.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Mr Wawa recounted a traumatic experience, saying he spent more than 300 days in captivity without taking a bath. The post Bandits release Niger electoral commissioner 11 months after abduction appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigeria denies backing failed Niger coup",
-          "url": "https://www.premiumtimesng.com/news/headlines/907417-nigeria-denies-backing-failed-niger-coup.html",
-          "date": "2026-09-04T12:03:42.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The Minister of State for Foreign Affairs said the ministry’s attention had been drawn to “false and mischievous claims” suggesting that the failed coup had the support of the Economic Community of West African States (ECOWAS) and, by implication, the endorsement of Nigeria. The post Nigeria denies backing failed Niger coup appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 15
-        },
-        {
-          "title": "Nigeria: Nigerian Army Redeploys Top Generals, Appoints New Person to Lead Boko Haram War",
-          "url": "https://allafrica.com/stories/202609090510.html",
-          "date": "2026-09-09T14:54:56.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Premium Times] A Wednesday statement by army spokesperson Appolonia Anele said the deployments were approved by the Chief of Army Staff, Waidi Shaibu, a lieutenant general.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
-          "url": "https://allafrica.com/stories/202609100096.html",
-          "date": "2026-09-10T06:47:20.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Nigeria: Spotlight On Nigerian Army's Operational Gains in Rescue, Counter-Terrorism",
-          "url": "https://allafrica.com/stories/202609090018.html",
-          "date": "2026-09-09T05:22:34.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] The Nigerian Army has recorded significant operational successes from July to the first week of September, with troops involved in rescue operations, arrests, patrols, ambushes and weapons recovery across multiple theatres. The period includes the rescue of 11 kidnapped persons and arrest of 21 suspects in July; 308 people rescued in a joint operation around Kainji Lake National Park; 2",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 11
-        },
-        {
-          "title": "Nigeria: Gunmen Kill 3 Vigilante Members in Kaduna",
-          "url": "https://allafrica.com/stories/202609090672.html",
-          "date": "2026-09-09T17:32:47.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Gunmen have killed three members of the Kaduna State Vigilance Service (Kadvis) along the Zuntu-Zaria Road in Kubau Local Government Area of Kaduna State.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2864",
-            "name": "Kaduna State",
-            "nameDe": "Kaduna",
-            "type": "State",
-            "anchor": [
-              7.7,
-              10.357
-            ],
-            "matched": "Kaduna State"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 11
-        },
-        {
-          "title": "Nigeria: Abuja Natives Seek Intervention Over Alleged Encroachment On Farmlands",
-          "url": "https://allafrica.com/stories/202609090637.html",
-          "date": "2026-09-09T16:55:19.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Residents of Dio, Baushe and Shishida communities in Tungan-Maje, Gwagwalada Area Council of the Federal Capital Territory (FCT), have appealed for intervention over alleged encroachment on their ancestral farmlands by the Nigerian military.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Federal Capital Territory"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Nigerian Army redeploys top generals, appoints new person to lead Boko Haram war",
-          "url": "https://www.premiumtimesng.com/news/top-news/908445-nigerian-army-redeploys-top-generals-appoints-new-person-to-lead-boko-haram-war.html",
-          "date": "2026-09-09T13:49:35.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "A Wednesday statement by army spokesperson Appolonia Anele said the deployments were approved by the Chief of Army Staff, Waidi Shaibu, a lieutenant general. The post Nigerian Army redeploys top generals, appoints new person to lead Boko Haram war appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Nigeria: Insecurity - Sokoto Becomes Hotbed",
-          "url": "https://allafrica.com/stories/202609090386.html",
-          "date": "2026-09-09T13:13:45.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Daily Trust] Several parts of Sokoto State are increasingly turning into bandit flashpoints, with the latest attacks leaving at least 15 residents dead and about 79 others abducted across six local government areas of the state.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-2871",
-            "name": "Sokoto State",
-            "nameDe": "Sokoto",
-            "type": "State",
-            "anchor": [
-              5.315,
-              13.032
-            ],
-            "matched": "Sokoto State"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 11
-        },
-        {
-          "title": "Algeria: Beyond the Fighter Jets - What Algeria's Deployment to Niger Really Signals",
-          "url": "https://allafrica.com/stories/202609080017.html",
-          "date": "2026-09-08T05:08:46.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[African Arguments] Four Algerian Su-30 fighters touched down in Niamey on 30 August 2026, trailed by an aerial refueling aircraft. A day earlier, mutinous soldiers -- some drawn from units worn down by heavy losses fighting jihadist groups -- had stormed a military base next to the capital's airport and moved on the presidential palace. Niger's government asked for help, and Algiers answered. Alg",
-          "isNew": false,
-          "region": {
-            "id": "NER-94",
-            "name": "Niamey",
-            "nameDe": "Niamey",
-            "type": "Capital District",
-            "anchor": [
-              2.131,
-              13.517
-            ],
-            "matched": "Niamey"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 8
-        },
-        {
-          "title": "Russia cements its role as Africa junta protector after helping quell Niger mutiny",
-          "url": "https://www.sfltimes.com/news/russia-cements-its-role-as-africa-junta-protector-after-helping-quell-nigers-mutiny",
-          "date": "2026-09-07T21:15:00.000Z",
-          "source": "sfltimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Macron behind failed military mutiny Niger",
-          "url": "http://www.europesun.com/news/279291718/macron-behind-failed-military-mutiny-niger",
-          "date": "2026-09-07T21:15:00.000Z",
-          "source": "europesun.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Nigeria: Military Moves to Choke Logistics, Financial Lifelines Sustaining Asymmetric Warfare",
-          "url": "https://allafrica.com/stories/202609070097.html",
-          "date": "2026-09-07T06:13:12.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The Minister of Defence, General Christopher Gwabin Musa (rtd.), has revealed that a major component of the military's updated strategy is focused on choking the logistical and financial lifelines sustaining asymmetric warfare in the country.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Amódemájá and Nigeria’s political paradise of lies, By Festus Adedayo",
-          "url": "https://www.premiumtimesng.com/opinion/907763-amodemaja-and-nigerias-political-paradise-of-lies-by-festus-adedayo.html",
-          "date": "2026-09-06T17:56:19.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "In 1969, legendary Yoruba Sakara music lord, Yusuff Olatunji, serenaded and celebrated the sterling qualities of the Seriki of Egbaland, Chief Abdul-Wahab Amódemájá, who held an Egba high-ranking military-derived civil title. In his Volume 3 album entitled Amódemájá, using a twin engine of dense metaphor and vivid imagery, Olatunji advocated for the place of good people […] The post Amódemájá and ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Niger military accuses France of orchestrating failed mutiny: What to know",
-          "url": "https://www.aljazeera.com/news/2026/9/6/niger-military-accuses-france-of-orchestrating-failed-mutiny-what-to-know?traffic_source=rss",
-          "date": "2026-09-06T15:42:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "French officials deny involvement, but tensions between the two countries remain high.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "France denies inciting failed Niger mutiny, calls accusation ‘pure fantasy’",
-          "url": "https://www.aljazeera.com/news/2026/9/5/france-denies-inciting-failed-niger-mutiny-calls-accusation-pure-fantasy?traffic_source=rss",
-          "date": "2026-09-05T19:45:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Niger's government has widened its blame to unnamed neighbours a week after the assault on a military base.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Niger accuses France of orchestrating failed military mutiny",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/niger-accuses-france-of-orchestrating-failed-military-mutiny?traffic_source=rss",
-          "date": "2026-09-05T07:42:59.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Niger has blamed France for inciting an attack on a key military airbase by mutinous soldiers last week.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Nigeria: 'My NBA Speech Wasn't Fair' - Verydarkman Apologises to Security Operatives",
-          "url": "https://allafrica.com/stories/202609040550.html",
-          "date": "2026-09-04T15:19:42.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Vanguard] Social media activist Martins Vincent Otse, popularly known as VeryDarkMan, has apologised to soldiers, policemen, customs and immigration personnel over his controversial remarks at the Nigerian Bar Association's 66th Annual General Conference.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 48
-    },
-    {
       "id": "myanmar",
       "name": "Myanmar",
       "nameEn": "Myanmar Civil War",
@@ -17726,7 +17866,7 @@
       ],
       "activity": 33,
       "severity": 65,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -17807,7 +17947,7 @@
           "source": "thehindu.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -17819,7 +17959,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 28
+          "score": 25
         },
         {
           "title": "KIA Destroys Two Junta Support Ships in Latest River Attack in Kachin State",
@@ -17850,7 +17990,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 28
+          "score": 22
         },
         {
           "title": "Arakan Army Advances on Key Junta Weapons Factories in Bago Region",
@@ -17881,28 +18021,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 28
-        },
-        {
-          "title": "Myanmar Junta Uses Surrender Claims to Mask Forced Conscription and Battlefield Losses",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-uses-surrender-claims-mask-forced-conscription-and-battlefield-losses",
-          "date": "2026-09-10T14:30:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 21
+          "score": 22
         },
         {
           "title": "Myanmar seeks closer foreign ties amid global isolation",
@@ -17924,6 +18043,27 @@
             "label": "Bodenoffensive"
           },
           "score": 16
+        },
+        {
+          "title": "Myanmar Junta Uses Surrender Claims to Mask Forced Conscription and Battlefield Losses",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-uses-surrender-claims-mask-forced-conscription-and-battlefield-losses",
+          "date": "2026-09-10T14:30:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Police detain 6,240 suspects, rescue 211 kidnapped victims in Enugu in 17 months",
@@ -19763,9 +19903,9 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 49,
-      "severity": 53,
-      "newCount": 0,
+      "activity": 54,
+      "severity": 55,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
@@ -19808,8 +19948,8 @@
             73.085,
             33.66
           ],
-          "count": 2,
-          "newCount": 0,
+          "count": 3,
+          "newCount": 1,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -19886,6 +20026,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-says-no-military-action-planned-over-houthi-attacks-saudi",
+          "date": "2026-09-11T09:13:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia Pakistan said on Thursday that no military response by Islamabad was currently being discussed under its joint defence agreement with Saudi Arabia and Turkey following Houthi attacks on Saudi Arabia. Foreign ministry spokesperson Sajjad Haider Khan said Pakistan would act under the agreement if and when the circumstances ",
+          "isNew": true,
+          "region": {
+            "id": "PAK-1110",
+            "name": "Islamabad Capital Territory",
+            "nameDe": "Hauptstadtterritorium Islamabad",
+            "type": "Capital Territory",
+            "anchor": [
+              73.085,
+              33.66
+            ],
+            "matched": "Islamabad"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
         {
           "title": "Houthi attacks on Saudi Arabia could activate defence pact, Pakistan says",
           "url": "https://www.aljazeera.com/news/2026/9/9/pakistan-warns-mecca-defense-pact-will-activate-after-houthi-attacks?traffic_source=rss",
@@ -20461,7 +20632,7 @@
           "score": 8
         }
       ],
-      "itemCount": 24
+      "itemCount": 25
     },
     {
       "id": "taiwan-strait",
@@ -20490,7 +20661,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 0,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
@@ -20508,7 +20679,7 @@
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 6
+          "count": 7
         },
         {
           "key": "escalation",
@@ -20584,13 +20755,13 @@
       ],
       "items": [
         {
-          "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
-          "date": "2026-09-11T00:24:24.000Z",
-          "source": "Al Jazeera",
+          "title": "Middle East live: Yemen’s Houthis seize key island in Bab al-Mandab strait",
+          "url": "https://www.france24.com/en/middle-east/20260911-middle-east-live-trump-says-he-has-no-regrets-about-launching-war-on-iran",
+          "date": "2026-09-11T04:52:21.000Z",
+          "source": "France 24",
           "sourceType": "news",
-          "summary": "Iran’s Revolutionary Guard says its navy struck a US-operated surface drone at the entrance of the Strait of Hormuz.",
-          "isNew": false,
+          "summary": "Yemen's Iran-aligned Houthi rebels took over a key island in the Red Sea, completing their push to seize control of the Bab al-Mandab strait area, a local government official and eyewitnesses said on Friday. Perim Island, also known as Mayyun, sits in the middle of the strategic waterway that links Asia to Europe. Follow our liveblog for the latest updates.",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "offensive",
@@ -20602,7 +20773,28 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 23
+          "score": 26
+        },
+        {
+          "title": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-says-no-military-action-planned-over-houthi-attacks-saudi",
+          "date": "2026-09-11T09:13:48.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan says no military action planned over Houthi attacks on Saudi Arabia Pakistan said on Thursday that no military response by Islamabad was currently being discussed under its joint defence agreement with Saudi Arabia and Turkey following Houthi attacks on Saudi Arabia. Foreign ministry spokesperson Sajjad Haider Khan said Pakistan would act under the agreement if and when the circumstances ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
         },
         {
           "title": "Drone display recreates the Twin Towers over New York City",
@@ -20626,6 +20818,27 @@
           "score": 23
         },
         {
+          "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
+          "date": "2026-09-11T00:24:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran’s Revolutionary Guard says its navy struck a US-operated surface drone at the entrance of the Strait of Hormuz.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 22
+        },
+        {
           "title": "Death toll from cargo ship fire in China rises to 25: state media",
           "url": "https://www.dawn.com/news/2028889/death-toll-from-cargo-ship-fire-in-china-rises-to-25-state-media",
           "date": "2026-09-10T13:11:16.000Z",
@@ -20644,7 +20857,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Zelensky's plane 'almost hit' by drone en route to Oslo, Norway PM says",
@@ -20687,6 +20900,27 @@
             "label": "Seeangriff"
           },
           "score": 22
+        },
+        {
+          "title": "Nigeria: British Army Explains How Nigerians, Other Foreigners Can Join Military",
+          "url": "https://allafrica.com/stories/202609110077.html",
+          "date": "2026-09-11T08:58:56.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Vanguard] If you are a foreigner interested in joining the British army, you will need to meet certain entry requirements before you can begin your application.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
         },
         {
           "title": "Hind Rajab Foundation files genocide incitement complaint against Israeli minister",
@@ -21714,7 +21948,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "EU says no place for 'glorification of war criminals' as Mladic buried",
@@ -22126,7 +22360,7 @@
           "score": 8
         }
       ],
-      "itemCount": 72
+      "itemCount": 75
     },
     {
       "id": "somalia",
@@ -22659,7 +22893,7 @@
         "Arauca",
         "Chocó"
       ],
-      "activity": 22,
+      "activity": 20,
       "severity": 45,
       "newCount": 0,
       "signals": [
@@ -22980,7 +23214,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Rubio heads to Ecuador, Colombia, Peru after right-wing victories in region",
@@ -23584,7 +23818,7 @@
         "Afar",
         "Assab"
       ],
-      "activity": 18,
+      "activity": 17,
       "severity": 44,
       "newCount": 0,
       "signals": [
@@ -23598,7 +23832,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 2
+          "count": 1
         },
         {
           "key": "escalation",
@@ -23630,7 +23864,7 @@
             38.442,
             13.778
           ],
-          "count": 4,
+          "count": 3,
           "newCount": 0,
           "event": {
             "type": "drone",
@@ -23824,37 +24058,6 @@
           "score": 15
         },
         {
-          "title": "Tigray's fragile recovery at risk as drone strikes reignite war fears",
-          "url": "https://www.france24.com/en/video/20260904-tigray-s-fragile-recovery-at-risk-as-drone-strikes-reignite-war-fears",
-          "date": "2026-09-04T09:33:01.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Over the past month, drone strikes have hit several parts of Ethiopia's Tigray region, sparking fears of a renewed war. The last conflict left an estimated 600,000 people dead, making it the deadliest conflict of the 21st century. As the region has not yet rebuilt or recovered from that damage, health experts are warning of the potential impact on patients if another war were to break out. FRANCE ",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray Region"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "Rearmed And Reckless : How Sudan New Arsenal Is Dragging Chad And Ethiopia Into Its War - OpEd",
           "url": "https://www.eurasiareview.com/08092026-rearmed-and-reckless-how-sudans-new-arsenal-is-dragging-chad-and-ethiopia-into-its-war-oped/",
           "date": "2026-09-07T23:45:00.000Z",
@@ -23876,7 +24079,7 @@
           "score": 8
         }
       ],
-      "itemCount": 8
+      "itemCount": 7
     },
     {
       "id": "south-sudan",
@@ -24236,7 +24439,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -24278,11 +24481,11 @@
         {
           "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
           "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
-          "date": "2026-09-11T08:28:54.000Z",
+          "date": "2026-09-11T08:59:37.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians In other news, five people died, and 40 were injured after a Dutch tour bus crashed into a roadside barrier and overturned in eastern Switzerland. Three people remain in serious condition at hospital. Continue reading...",
-          "isNew": true,
+          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians The number of people injured in this morning’s attack has gone up to eight, Klitschko just said. Two people have died and up to six were injured in this morning’s Russian attack on a petrol station in Kyiv, city mayor Wladimir Klitschko said in the latest update. Continue reading...",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -24696,27 +24899,6 @@
           "score": 18
         },
         {
-          "title": "Ukraine’s prosecutor general resigns after corruption allegations as Russia resumes strikes on Kyiv – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/sep/08/ukraine-russia-war-zelesnkyy-putin-ruslan-kravchenko-prosecutor-general-germany-france-europe-latest-news-updates",
-          "date": "2026-09-08T09:09:59.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ruslan Kravchenko leaves post after his offices were searched at the weekend, as Zelenskyy says he hopes to meet Trump this month Hungary has expelled 10 Russian diplomats who “engaged in activities … that are unacceptable for diplomats under the Vienna Convention,” the country’s foreign minister Anita Orbán said. “The decision protects the security and sovereignty of Hungary,” she said in a state",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 18
-        },
-        {
           "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
           "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
           "date": "2026-09-10T10:32:31.000Z",
@@ -24736,6 +24918,27 @@
             "label": "Bericht"
           },
           "score": 16
+        },
+        {
+          "title": "Ukraine’s prosecutor general resigns after corruption allegations as Russia resumes strikes on Kyiv – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/08/ukraine-russia-war-zelesnkyy-putin-ruslan-kravchenko-prosecutor-general-germany-france-europe-latest-news-updates",
+          "date": "2026-09-08T09:09:59.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ruslan Kravchenko leaves post after his offices were searched at the weekend, as Zelenskyy says he hopes to meet Trump this month Hungary has expelled 10 Russian diplomats who “engaged in activities … that are unacceptable for diplomats under the Vienna Convention,” the country’s foreign minister Anita Orbán said. “The decision protects the security and sovereignty of Hungary,” she said in a state",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "🔴 Live: At least two killed in Kyiv as Russia renews strikes after three-day pause",
@@ -25302,7 +25505,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "North Korea and Russia open first road bridge linking both countries",
@@ -25626,7 +25829,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -25668,11 +25871,11 @@
         {
           "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
           "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
-          "date": "2026-09-11T08:28:54.000Z",
+          "date": "2026-09-11T08:59:37.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians In other news, five people died, and 40 were injured after a Dutch tour bus crashed into a roadside barrier and overturned in eastern Switzerland. Three people remain in serious condition at hospital. Continue reading...",
-          "isNew": true,
+          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians The number of people injured in this morning’s attack has gone up to eight, Klitschko just said. Two people have died and up to six were injured in this morning’s Russian attack on a petrol station in Kyiv, city mayor Wladimir Klitschko said in the latest update. Continue reading...",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -26188,7 +26391,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthi attacks cause fires at Saudi energy facilities, operations disrupted",
@@ -26839,7 +27042,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "North Korea and Russia open first road bridge linking both countries",
@@ -29741,7 +29944,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Iran Revolutionary Guards claim US surveillance aerostat destroyed in Iraq drone strike",
@@ -29906,7 +30109,7 @@
         "Scarborough Shoal",
         "Spratly-Inseln"
       ],
-      "activity": 13,
+      "activity": 12,
       "severity": 26,
       "newCount": 0,
       "signals": [
@@ -30135,30 +30338,9 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Why has the Philippines’ peso plunged to a record low?",
-          "url": "https://www.aljazeera.com/economy/2026/9/4/why-has-the-philippines-peso-plunged-to-a-record-low?traffic_source=rss",
-          "date": "2026-09-04T08:38:34.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The Southeast Asian country's currency has plummeted amid the fallout of the Iran war and economic challenges at home.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 7
+      "itemCount": 6
     },
     {
       "id": "thailand-cambodia",
@@ -31374,8 +31556,8 @@
         "Sarajevo",
         "Brčko"
       ],
-      "activity": 9,
-      "severity": 13,
+      "activity": 6,
+      "severity": 12,
       "newCount": 0,
       "signals": [
         {
@@ -31455,7 +31637,7 @@
             "icon": "🛡️",
             "label": "Belagerung"
           },
-          "score": 16
+          "score": 12
         },
         {
           "title": "Serbian, Bosnian Serb Officials Join Hundreds at Ratko Mladic Commemoration",
