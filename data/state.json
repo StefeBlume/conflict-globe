@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T18:36:57.097Z",
-  "durationSec": 417,
+  "generatedAt": "2026-09-13T19:31:49.395Z",
+  "durationSec": 363,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 22,
+        "count": 23,
         "error": null
       },
       {
@@ -114,41 +114,29 @@
       }
     ],
     "gdelt": {
-      "ok": 2,
-      "failed": 8,
+      "ok": 5,
+      "failed": 5,
       "skipped": 6,
       "errors": [
         {
-          "id": "sahel-mali",
-          "error": "fetch failed"
-        },
-        {
-          "id": "venezuela",
-          "error": "fetch failed"
+          "id": "kosovo-serbia",
+          "error": "HTTP 429"
         },
         {
           "id": "myanmar",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "turkey-pkk",
+          "error": "GDELT gedrosselt"
+        },
+        {
+          "id": "thailand-cambodia",
           "error": "fetch failed"
         },
         {
           "id": "burkina-faso",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "drc-m23",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "pakistan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "india-pakistan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "georgia",
-          "error": "GDELT gedrosselt"
+          "error": "fetch failed"
         }
       ]
     },
@@ -156,8 +144,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1159,
-    "newArticles": 2
+    "articles": 1164,
+    "newArticles": 9
   },
   "conflicts": [
     {
@@ -189,7 +177,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -368,7 +356,7 @@
           "date": "2026-09-13T17:43:03.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Ukrainian Railways says former British PM and David Petraeus crossed into Poland shortly before drone attack near border A train carrying Boris Johnson and the former CIA chief David Petraeus may have been the target of a Russian drone strike that hit a train engine near the Poland-Ukraine border, according to Ukrainian Railways. Ukraine’s foreign ministerAndrii Sybiha described the attack as “Put",
+          "summary": "Ukrainian Railways says former British PM and David Petraeus crossed into Poland shortly before drone attack near border A train carrying Boris Johnson and the former CIA chief David Petraeus may have been the target of a Russian drone strike that hit a train engine near the Poland-Ukraine border, according to Ukrainian Railways. Ukraine’s foreign minister, Andrii Sybiha, described the attack as “",
           "isNew": false,
           "region": null,
           "event": {
@@ -382,27 +370,6 @@
             "label": "Drohnenangriff"
           },
           "score": 31
-        },
-        {
-          "title": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
-          "url": "https://www.aljazeera.com/news/2026/9/13/ukraine-drone-strikes-kill-four-as-russia-attacks-close-to-poland-border?traffic_source=rss",
-          "date": "2026-09-13T13:05:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Russia says four people killed in Ukrainian strikes as both sides continue to attack each other with waves of drones.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 30
         },
         {
           "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
@@ -434,6 +401,48 @@
             "label": "Bodenoffensive"
           },
           "score": 29
+        },
+        {
+          "title": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
+          "url": "https://www.aljazeera.com/news/2026/9/13/ukraine-drone-strikes-kill-four-as-russia-attacks-close-to-poland-border?traffic_source=rss",
+          "date": "2026-09-13T13:05:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Russia says four people killed in Ukrainian strikes as both sides continue to attack each other with waves of drones.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 27
+        },
+        {
+          "title": "Trump tells Zelenskyy to stop hitting Russian diesel supplies",
+          "url": "https://www.aljazeera.com/economy/2026/9/13/trump-tells-zelenskyy-to-stop-hitting-russian-diesel-supplies?traffic_source=rss",
+          "date": "2026-09-13T18:15:12.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The US president says Ukraine's attacks on Russian diesel infrastructure are contributing to global fuel shortages.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
         },
         {
           "title": "Russians on the Goethe-Institut: 'Hostage to politics'",
@@ -2112,7 +2121,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Russia tricks 'vulnerable' foreigners to fight in Ukraine war, Amnesty reports",
@@ -2157,7 +2166,7 @@
           "score": 8
         }
       ],
-      "itemCount": 75
+      "itemCount": 76
     },
     {
       "id": "gaza",
@@ -2186,7 +2195,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -2271,27 +2280,6 @@
       ],
       "items": [
         {
-          "title": "Israeli attack on Gaza kills two Palestinians",
-          "url": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss",
-          "date": "2026-09-13T10:22:01.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israeli strikes on Palestinian territory persist despite a 'ceasefire' brokered by the United States.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 30
-        },
-        {
           "title": "Pregnant woman among more than 10 killed in Israeli attacks on Gaza",
           "url": "https://www.theguardian.com/world/2026/sep/13/pregnant-woman-killed-israeli-attacks-gaza",
           "date": "2026-09-13T15:51:33.000Z",
@@ -2313,25 +2301,25 @@
           "score": 30
         },
         {
-          "title": "Israeli strike kills two Palestinians in Gaza City",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-two-palestinians-gaza-city",
-          "date": "2026-09-13T09:38:59.000Z",
+          "title": "Israeli settlers injure two Palestinians in attack east of Salfit",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-two-palestinians-attack-east-salfit",
+          "date": "2026-09-13T18:52:59.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli strike kills two Palestinians in Gaza City Two Palestinians were killed and others injured on Sunday when Israeli occupation forces struck a vehicle in the Tal al-Hawa neighbourhood, southwest of Gaza City, Wafa news reported. Since the start of the so-called \"ceasefire\" in October 2025, at least 1,369 Palestinians have been killed and 4,627 others injured in Israeli attacks, while others ",
-          "isNew": false,
+          "summary": "Israeli settlers injure two Palestinians in attack east of Salfit Israeli settlers severely beat two Palestinians on their agricultural land in the Wadi al-Sha’er area, east of Salfit in the occupied West Bank, on Sunday, causing injuries and bruising, the Wafa news agency reported. The agency identified the men as Mohammed Darwish and Nashat Ishtayeh, both from Salfit. Residents, students and veh",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 30
+          "score": 29
         },
         {
           "title": "IDF soldier filmed shooting Palestinian in leg amid West Bank settler standoff",
@@ -2395,6 +2383,48 @@
             "label": "Beschuss"
           },
           "score": 23
+        },
+        {
+          "title": "Israeli attack on Gaza kills two Palestinians",
+          "url": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss",
+          "date": "2026-09-13T10:22:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli strikes on Palestinian territory persist despite a 'ceasefire' brokered by the United States.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Israeli strike kills two Palestinians in Gaza City",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-two-palestinians-gaza-city",
+          "date": "2026-09-13T09:38:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli strike kills two Palestinians in Gaza City Two Palestinians were killed and others injured on Sunday when Israeli occupation forces struck a vehicle in the Tal al-Hawa neighbourhood, southwest of Gaza City, Wafa news reported. Since the start of the so-called \"ceasefire\" in October 2025, at least 1,369 Palestinians have been killed and 4,627 others injured in Israeli attacks, while others ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Israel launches new air attacks on southern Lebanon",
@@ -3958,27 +3988,6 @@
             "label": "Luftangriff"
           },
           "score": 15
-        },
-        {
-          "title": "Israel uses Lebanese civilians as bargaining chips",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-uses-lebanese-civilians-bargaining-chips",
-          "date": "2026-09-12T18:10:20.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel uses Lebanese civilians as bargaining chips Lebanese farmer Saleh* woke up before dawn on 3 September to harvest his fig trees in the southern Lebanese border village of Halta.&nbsp; When he stepped out and saw lights outside his neighbours' house, abandoned during the war, Saleh knew an Israeli army unit was there.&nbsp; The Israeli soldiers were searching houses in the village and called ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -5068,7 +5077,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "sanctions",
@@ -5135,6 +5144,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Israeli settlers injure two Palestinians in attack east of Salfit",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-two-palestinians-attack-east-salfit",
+          "date": "2026-09-13T18:52:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers injure two Palestinians in attack east of Salfit Israeli settlers severely beat two Palestinians on their agricultural land in the Wadi al-Sha’er area, east of Salfit in the occupied West Bank, on Sunday, causing injuries and bruising, the Wafa news agency reported. The agency identified the men as Mohammed Darwish and Nashat Ishtayeh, both from Salfit. Residents, students and veh",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
         {
           "title": "IDF soldier filmed shooting Palestinian in leg amid West Bank settler standoff",
           "url": "https://www.theguardian.com/world/2026/sep/12/idf-soldier-filmed-shooting-palestinian-in-leg-amid-west-bank-settler-standoff",
@@ -5804,7 +5834,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Igor Tulchinsky: Sponsor of British Museum Bayeux Tapestry exhibition funded community centre in West Bank settlement",
@@ -6875,7 +6905,7 @@
           "score": 8
         }
       ],
-      "itemCount": 79
+      "itemCount": 80
     },
     {
       "id": "yemen",
@@ -6905,13 +6935,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 29
+          "count": 30
         },
         {
           "key": "displacement",
@@ -7077,6 +7107,27 @@
           "score": 30
         },
         {
+          "title": "Yemen’s military launches air raids on Houthi vehicles in Dhu Bab, Mocha",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-military-launches-air-raids-houthi-vehicles-dhu-bab-mocha",
+          "date": "2026-09-13T19:01:20.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemen’s military launches air raids on Houthi vehicles in Dhu Bab, Mocha Yemen’s Air Force has targeted Houthi vehicles in the Dhu Bab and Mocha areas, Al Jazeera reported, citing a spokesperson from the government’s armed forces. An aerial view shows damaged buildings, as Houthis seized control of Yemen's port city of&nbsp;Mocha&nbsp;on Thursday, in&nbsp;Mocha, Yemen, in its screengrab taken from",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 29
+        },
+        {
           "title": "Houthi media reports Saudi strikes in northern Yemen",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-media-reports-saudi-strikes-northern-yemen",
           "date": "2026-09-13T16:48:05.000Z",
@@ -7114,27 +7165,6 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Iran-allied Houthis say drones and missiles used in attack that targeted ‘weapons depots and command and control centres’ in southern Saudi Arabia Houthi fighters have said they used drones and missiles to attack a military base in southern Saudi Arabia, as Yemen’s Riyadh-backed government described the rebels’ swift advance along the Red Sea coast as a “painful” development in a new front in the ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
-          "title": "Yemen: Fighting escalates around the Bab el-Mandeb Strait",
-          "url": "https://www.france24.com/en/yemen-fighting-escalates-around-the-bab-el-mandeb-strait",
-          "date": "2026-09-13T13:15:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Fighting is escalating in Yemen after Iran-backed Houthi forces seized strategic territory around the Bab el-Mandeb Strait, prompting counterstrikes by government forces and reported Saudi air raids. The Houthis also claimed attacks inside southern Saudi Arabia and threatened to disrupt shipping through the key maritime chokepoint, raising fears for regional security and global trade.",
           "isNew": false,
           "region": null,
           "event": {
@@ -7202,48 +7232,6 @@
           "score": 27
         },
         {
-          "title": "Renewed fighting worsens Yemen’s humanitarian crisis",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/renewed-fighting-worsens-yemens-humanitarian-crisis?traffic_source=rss",
-          "date": "2026-09-13T13:26:45.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Renewed fighting worsens Yemen’s humanitarian crisis",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
-          "title": "Fighting continues between Yemen gov’t forces, Houthis: What is the latest?",
-          "url": "https://www.aljazeera.com/news/2026/9/13/fighting-continues-between-yemen-govt-forces-houthis-what-is-the-latest?traffic_source=rss",
-          "date": "2026-09-13T10:47:19.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Government forces and Saudi Arabia carry out air attacks to stop Houthis' advance as thousands displaced by conflict.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Houthi missiles target military base in Saudi Arabia as Iraq probes drone attack on oil pipeline",
           "url": "https://www.middleeasteye.net/news/houthis-target-saudi-base-iraq-probes-drone-attack-oil-pipeline",
           "date": "2026-09-13T10:23:40.000Z",
@@ -7275,33 +7263,44 @@
           "score": 25
         },
         {
-          "title": "Yemen: The Houthis test Iran's regional influence",
-          "url": "https://www.france24.com/en/video/20260913-yemen-the-houthis-test-iran-s-regional-influence",
-          "date": "2026-09-13T13:29:02.000Z",
+          "title": "Yemen: Fighting escalates around the Bab el-Mandeb Strait",
+          "url": "https://www.france24.com/en/yemen-fighting-escalates-around-the-bab-el-mandeb-strait",
+          "date": "2026-09-13T13:15:38.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "Iran-backed Houthi attacks on Saudi Arabia have intensified as fighting spreads around the Bab el-Mandeb Strait, a vital chokepoint for global trade and oil shipments. On FRANCE 24, Sanaa Center for Strategic Studies chairman Farea Al-Muslimi argued this could mark \"the last round in Yemen's current war\", unpacking the Houthis' ties with Iran and the growing pressure on Washington as the group tar",
+          "summary": "Fighting is escalating in Yemen after Iran-backed Houthi forces seized strategic territory around the Bab el-Mandeb Strait, prompting counterstrikes by government forces and reported Saudi air raids. The Houthis also claimed attacks inside southern Saudi Arabia and threatened to disrupt shipping through the key maritime chokepoint, raising fears for regional security and global trade.",
           "isNew": false,
-          "region": {
-            "id": "YEM-3496",
-            "name": "Sanaa",
-            "nameDe": "Sanaa",
-            "type": "Governorate",
-            "anchor": [
-              44.4,
-              15.334
-            ],
-            "matched": "Sanaa"
-          },
+          "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
+          "title": "Renewed fighting worsens Yemen’s humanitarian crisis",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/renewed-fighting-worsens-yemens-humanitarian-crisis?traffic_source=rss",
+          "date": "2026-09-13T13:26:45.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Renewed fighting worsens Yemen’s humanitarian crisis",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 23
         },
@@ -7325,6 +7324,27 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "Fighting continues between Yemen gov’t forces, Houthis: What is the latest?",
+          "url": "https://www.aljazeera.com/news/2026/9/13/fighting-continues-between-yemen-govt-forces-houthis-what-is-the-latest?traffic_source=rss",
+          "date": "2026-09-13T10:47:19.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Government forces and Saudi Arabia carry out air attacks to stop Houthis' advance as thousands displaced by conflict.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Middle East live: Houthis say hit Saudi base after renewed fighting with Yemeni forces",
@@ -7484,27 +7504,6 @@
           "score": 22
         },
         {
-          "title": "Will Houthi advances in Yemen give Iran leverage in its war with the US?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/9/12/will-houthi-advances-in-yemen-give-iran-leverage-in-its-war-with-the-us?traffic_source=rss",
-          "date": "2026-09-12T19:17:37.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The Iranian ally seizes Yemen's Red Sea coast, cementing their hold on the Bab al-Mandeb strait.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 22
-        },
-        {
           "title": "Iran’s Houthi allies capture strategic island on vital oil shipping route",
           "url": "https://www.theguardian.com/world/2026/sep/11/iran-houthi-allies-capture-strategic-island-bab-al-mandab-strait",
           "date": "2026-09-12T04:45:28.000Z",
@@ -7545,6 +7544,58 @@
             "label": "Gefechte"
           },
           "score": 20
+        },
+        {
+          "title": "Yemen: The Houthis test Iran's regional influence",
+          "url": "https://www.france24.com/en/video/20260913-yemen-the-houthis-test-iran-s-regional-influence",
+          "date": "2026-09-13T13:29:02.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Iran-backed Houthi attacks on Saudi Arabia have intensified as fighting spreads around the Bab el-Mandeb Strait, a vital chokepoint for global trade and oil shipments. On FRANCE 24, Sanaa Center for Strategic Studies chairman Farea Al-Muslimi argued this could mark \"the last round in Yemen's current war\", unpacking the Houthis' ties with Iran and the growing pressure on Washington as the group tar",
+          "isNew": false,
+          "region": {
+            "id": "YEM-3496",
+            "name": "Sanaa",
+            "nameDe": "Sanaa",
+            "type": "Governorate",
+            "anchor": [
+              44.4,
+              15.334
+            ],
+            "matched": "Sanaa"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 20
+        },
+        {
+          "title": "Will Houthi advances in Yemen give Iran leverage in its war with the US?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/9/12/will-houthi-advances-in-yemen-give-iran-leverage-in-its-war-with-the-us?traffic_source=rss",
+          "date": "2026-09-12T19:17:37.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The Iranian ally seizes Yemen's Red Sea coast, cementing their hold on the Bab al-Mandeb strait.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
         },
         {
           "title": "Houthis say liberated more than 200 prisoners in newly captured regions",
@@ -8803,27 +8854,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "War expands as Iran - backed Houthis attack Saudi cities and US strikes Iranian tankers",
-          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
-          "date": "2026-09-08T23:15:00.000Z",
-          "source": "channelnewsasia.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -8997,7 +9027,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Attack on Iranian vessel kills one, wounds three",
@@ -9042,48 +9072,6 @@
           "score": 22
         },
         {
-          "title": "Will Houthi advances in Yemen give Iran leverage in its war with the US?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/9/12/will-houthi-advances-in-yemen-give-iran-leverage-in-its-war-with-the-us?traffic_source=rss",
-          "date": "2026-09-12T19:17:37.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The Iranian ally seizes Yemen's Red Sea coast, cementing their hold on the Bab al-Mandeb strait.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 22
-        },
-        {
-          "title": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
-          "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
-          "date": "2026-09-12T18:53:31.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "PM Ali al-Zaidi dismisses commander, orders investigation into operations command in Maysan province, bordering Iran.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Iran's economic ties to Dubai hard to break despite Middle East tensions",
           "url": "https://www.dawn.com/news/2029636/irans-economic-ties-to-dubai-hard-to-break-despite-middle-east-tensions",
           "date": "2026-09-13T14:29:20.000Z",
@@ -9115,48 +9103,6 @@
           "score": 20
         },
         {
-          "title": "The Iran war reveals the limits of BRICS",
-          "url": "https://www.aljazeera.com/opinions/2026/9/13/the-iran-war-reveals-the-limits-of?traffic_source=rss",
-          "date": "2026-09-13T12:46:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The bloc struggles to translate its economic weight into geopolitical sway. But there may be a silver lining to it.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "A dignified life is a ‘distant dream’ for many Iranian families amid US war",
-          "url": "https://www.aljazeera.com/economy/2026/9/13/a-dignified-life-is-a-distant-dream-for-many-iranian-families-amid-us-war?traffic_source=rss",
-          "date": "2026-09-13T11:45:24.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "With constant degredation and no real prospects of improvement in the foreseeable future, Iranians are losing hope.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Iran’s Houthi allies capture strategic island on vital oil shipping route",
           "url": "https://www.theguardian.com/world/2026/sep/11/iran-houthi-allies-capture-strategic-island-bab-al-mandab-strait",
           "date": "2026-09-12T04:45:28.000Z",
@@ -9174,27 +9120,6 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
-          },
-          "score": 19
-        },
-        {
-          "title": "Yemen: The Houthis test Iran's regional influence",
-          "url": "https://www.france24.com/en/video/20260913-yemen-the-houthis-test-iran-s-regional-influence",
-          "date": "2026-09-13T13:29:02.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Iran-backed Houthi attacks on Saudi Arabia have intensified as fighting spreads around the Bab el-Mandeb Strait, a vital chokepoint for global trade and oil shipments. On FRANCE 24, Sanaa Center for Strategic Studies chairman Farea Al-Muslimi argued this could mark \"the last round in Yemen's current war\", unpacking the Houthis' ties with Iran and the growing pressure on Washington as the group tar",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
           },
           "score": 19
         },
@@ -9239,6 +9164,48 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Will Houthi advances in Yemen give Iran leverage in its war with the US?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/9/12/will-houthi-advances-in-yemen-give-iran-leverage-in-its-war-with-the-us?traffic_source=rss",
+          "date": "2026-09-12T19:17:37.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The Iranian ally seizes Yemen's Red Sea coast, cementing their hold on the Bab al-Mandeb strait.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
+        },
+        {
+          "title": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
+          "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
+          "date": "2026-09-12T18:53:31.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "PM Ali al-Zaidi dismisses commander, orders investigation into operations command in Maysan province, bordering Iran.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Iran used Chinese satellite images for attack on US base in Jordan, says report",
@@ -9565,25 +9532,25 @@
           "score": 18
         },
         {
-          "title": "IRGC says it targeted unmanned US sea drone in Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-say-target-unmanned-us-sea-drone-hormuz",
-          "date": "2026-09-10T18:52:25.000Z",
-          "source": "Middle East Eye",
+          "title": "The Iran war reveals the limits of BRICS",
+          "url": "https://www.aljazeera.com/opinions/2026/9/13/the-iran-war-reveals-the-limits-of?traffic_source=rss",
+          "date": "2026-09-13T12:46:58.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "IRGC says it targeted unmanned US sea drone in Hormuz Iran’s Islamic Revolutionary Guard Corps (IRGC) said on Thursday its navy targeted a US unmanned surface vessel in the Strait of Hormuz. \"The Navy of the Islamic Revolutionary Guard Corps targeted a Saildrone Explorer-type unmanned surface vessel in the Strait of Hormuz area, the IRGC said in a statement carried by its Sepah news outlet. IRGC a",
+          "summary": "The bloc struggles to translate its economic weight into geopolitical sway. But there may be a silver lining to it.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 18
+          "score": 16
         },
         {
           "title": "Iran war reshapes Brics ties but also exposes divisions",
@@ -9607,6 +9574,27 @@
           "score": 16
         },
         {
+          "title": "Yemen: The Houthis test Iran's regional influence",
+          "url": "https://www.france24.com/en/video/20260913-yemen-the-houthis-test-iran-s-regional-influence",
+          "date": "2026-09-13T13:29:02.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Iran-backed Houthi attacks on Saudi Arabia have intensified as fighting spreads around the Bab el-Mandeb Strait, a vital chokepoint for global trade and oil shipments. On FRANCE 24, Sanaa Center for Strategic Studies chairman Farea Al-Muslimi argued this could mark \"the last round in Yemen's current war\", unpacking the Houthis' ties with Iran and the growing pressure on Washington as the group tar",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 16
+        },
+        {
           "title": "Georgia says it will comply with the US sanctions against Iranian airlines",
           "url": "https://oc-media.org/georgia-says-it-will-comply-with-the-us-sanctions-against-iranian-airlines/",
           "date": "2026-09-11T13:26:53.000Z",
@@ -9624,6 +9612,48 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
+          },
+          "score": 15
+        },
+        {
+          "title": "A dignified life is a ‘distant dream’ for many Iranian families amid US war",
+          "url": "https://www.aljazeera.com/economy/2026/9/13/a-dignified-life-is-a-distant-dream-for-many-iranian-families-amid-us-war?traffic_source=rss",
+          "date": "2026-09-13T11:45:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "With constant degredation and no real prospects of improvement in the foreseeable future, Iranians are losing hope.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "IRGC says it targeted unmanned US sea drone in Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-say-target-unmanned-us-sea-drone-hormuz",
+          "date": "2026-09-10T18:52:25.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "IRGC says it targeted unmanned US sea drone in Hormuz Iran’s Islamic Revolutionary Guard Corps (IRGC) said on Thursday its navy targeted a US unmanned surface vessel in the Strait of Hormuz. \"The Navy of the Islamic Revolutionary Guard Corps targeted a Saildrone Explorer-type unmanned surface vessel in the Strait of Hormuz area, the IRGC said in a statement carried by its Sepah news outlet. IRGC a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "score": 15
         },
@@ -14538,7 +14568,7 @@
       ],
       "activity": 78,
       "severity": 62,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -14725,7 +14755,7 @@
           "source": "aa.com.tr",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -14737,7 +14767,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "Lebanon president makes a rare visit to southern city as fears of Israeli attacks grow – The Virginian - Pilot",
@@ -14746,7 +14776,7 @@
           "source": "pilotonline.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -14758,7 +14788,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
@@ -15813,7 +15843,7 @@
         "Süd-Kivu",
         "Ituri"
       ],
-      "activity": 23,
+      "activity": 20,
       "severity": 61,
       "newCount": 0,
       "signals": [
@@ -15940,7 +15970,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "At least 24 schoolchildren killed after fire engulfs schools in rebel - controlled Congo",
@@ -15961,7 +15991,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "More than a dozen children killed in fire in eastern DR Congo schools",
@@ -19190,27 +19220,6 @@
       ],
       "items": [
         {
-          "title": "Yemen: Fighting escalates around the Bab el-Mandeb Strait",
-          "url": "https://www.france24.com/en/yemen-fighting-escalates-around-the-bab-el-mandeb-strait",
-          "date": "2026-09-13T13:15:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Fighting is escalating in Yemen after Iran-backed Houthi forces seized strategic territory around the Bab el-Mandeb Strait, prompting counterstrikes by government forces and reported Saudi air raids. The Houthis also claimed attacks inside southern Saudi Arabia and threatened to disrupt shipping through the key maritime chokepoint, raising fears for regional security and global trade.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Yemen: Houthi offensive triggers new displacement crisis",
           "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
           "date": "2026-09-13T09:18:55.000Z",
@@ -19232,6 +19241,27 @@
           "score": 24
         },
         {
+          "title": "Yemen: Fighting escalates around the Bab el-Mandeb Strait",
+          "url": "https://www.france24.com/en/yemen-fighting-escalates-around-the-bab-el-mandeb-strait",
+          "date": "2026-09-13T13:15:38.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Fighting is escalating in Yemen after Iran-backed Houthi forces seized strategic territory around the Bab el-Mandeb Strait, prompting counterstrikes by government forces and reported Saudi air raids. The Houthis also claimed attacks inside southern Saudi Arabia and threatened to disrupt shipping through the key maritime chokepoint, raising fears for regional security and global trade.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 23
+        },
+        {
           "title": "UKMTO reports vessel on fire after attack in Strait of Hormuz",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-reports-fire-vessel-after-attack-strait-hormuz",
           "date": "2026-09-13T09:49:53.000Z",
@@ -19250,7 +19280,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Soldiers arrest three suspects after 17-year-old was killed in Plateau",
@@ -20908,15 +20938,15 @@
         "Nordost-Syrien",
         "Idlib"
       ],
-      "activity": 38,
-      "severity": 50,
-      "newCount": 0,
+      "activity": 42,
+      "severity": 51,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 4
+          "count": 5
         },
         {
           "key": "offensive",
@@ -20952,6 +20982,23 @@
       ],
       "regions": [
         {
+          "id": "SYR-144",
+          "name": "Rif Dimashq",
+          "nameDe": "Gouvernement Rif Dimaschq",
+          "type": "Province",
+          "anchor": [
+            37.009,
+            33.461
+          ],
+          "count": 3,
+          "newCount": 1,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
           "id": "SYR-145",
           "name": "Quneitra",
           "nameDe": "Gouvernement al-Quneitra",
@@ -20966,23 +21013,6 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "SYR-144",
-          "name": "Rif Dimashq",
-          "nameDe": "Gouvernement Rif Dimaschq",
-          "type": "Province",
-          "anchor": [
-            37.009,
-            33.461
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           }
         },
         {
@@ -21055,6 +21085,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Syrian child killed after roadside object explodes near Damascus",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-13-syrian-child-explosion-clip-mp4?traffic_source=rss",
+          "date": "2026-09-13T18:30:29.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A child has been killed after an explosive object detonated when he touched it near Damascus.",
+          "isNew": true,
+          "region": {
+            "id": "SYR-144",
+            "name": "Rif Dimashq",
+            "nameDe": "Gouvernement Rif Dimaschq",
+            "type": "Province",
+            "anchor": [
+              37.009,
+              33.461
+            ],
+            "matched": "Damascus"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 32
+        },
         {
           "title": "At least seven killed in fire at prison in northern Syria - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
           "url": "https://dominicanrepublicpost.com/at-least-seven-killed-in-fire-at-prison-in-northern-syria/",
@@ -21807,7 +21868,7 @@
           "score": 8
         }
       ],
-      "itemCount": 31
+      "itemCount": 32
     },
     {
       "id": "somalia",
@@ -24116,6 +24177,1393 @@
       "itemCount": 7
     },
     {
+      "id": "georgia",
+      "name": "Georgien (Abchasien / Südossetien)",
+      "nameEn": "Georgia",
+      "region": "Europa / Eurasien",
+      "countries": [
+        "Georgia"
+      ],
+      "lat": 42.3,
+      "lon": 43.4,
+      "tier": "low",
+      "since": "1992 / 2008",
+      "parties": [
+        "Georgien",
+        "Russland",
+        "Abchasien",
+        "Südossetien"
+      ],
+      "background": "Eingefrorener Konflikt mit russisch besetzten Regionen; innenpolitische Krise und Abkehr vom EU-Kurs seit 2024.",
+      "hotspots": [
+        "Abchasien",
+        "Südossetien",
+        "Tbilissi"
+      ],
+      "activity": 100,
+      "severity": 41,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 14
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 10
+        },
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 6
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "GEO",
+      "extraCountries": [],
+      "regions": [
+        {
+          "id": "GEO-3036",
+          "name": "Tbilisi",
+          "nameDe": "Tiflis",
+          "type": "Independent City",
+          "anchor": [
+            44.83,
+            41.702
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Ukrainian drone evades Russian helicopter fire to strike oil tanker",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-12-ukraine-drone-russian-tanker-sv?traffic_source=rss",
+          "date": "2026-09-13T16:11:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine has released footage showing a drone evading fire from a Russian helicopter before striking a Russian oil tanker",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Train carrying Boris Johnson and ex-CIA chief may have been targeted in Russian strike, officials say",
+          "url": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
+          "date": "2026-09-13T17:43:03.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukrainian Railways says former British PM and David Petraeus crossed into Poland shortly before drone attack near border A train carrying Boris Johnson and the former CIA chief David Petraeus may have been the target of a Russian drone strike that hit a train engine near the Poland-Ukraine border, according to Ukrainian Railways. Ukraine’s foreign minister, Andrii Sybiha, described the attack as “",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
+          "url": "https://www.aljazeera.com/news/2026/9/13/ukraine-drone-strikes-kill-four-as-russia-attacks-close-to-poland-border?traffic_source=rss",
+          "date": "2026-09-13T13:05:40.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Russia says four people killed in Ukrainian strikes as both sides continue to attack each other with waves of drones.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 23
+        },
+        {
+          "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
+          "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-12T23:51:05.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 23
+        },
+        {
+          "title": "Russians on the Goethe-Institut: 'Hostage to politics'",
+          "url": "https://www.dw.com/en/russians-on-the-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-13T11:50:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Canceled language exams, disrupted plans to study in Germany and the disappearance of an important cultural link: DW users shared how the closure of Germany's Goethe-Institut in Russia has affected their lives.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 23
+        },
+        {
+          "title": "Trump tells Zelenskyy to stop hitting Russian diesel supplies",
+          "url": "https://www.aljazeera.com/economy/2026/9/13/trump-tells-zelenskyy-to-stop-hitting-russian-diesel-supplies?traffic_source=rss",
+          "date": "2026-09-13T18:15:12.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The US president says Ukraine's attacks on Russian diesel infrastructure are contributing to global fuel shortages.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
+          "title": "Russia's drone war comes to Moldova and Romania",
+          "url": "https://www.dw.com/en/russia-s-drone-war-comes-to-moldova-and-romania/a-79239591?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-12T06:27:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Incursions by Russian drones into Moldovan and Romanian airspace are increasingly common. This week the Ukrainian president's plane was stopped from taking off from Chisinau. Observers suspect the attacks are deliberate.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 19
+        },
+        {
+          "title": "EU foreign policy chief says Israeli settlements should be treated like Russian-occupied Crimea",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eu-foreign-policy-chief-says-israeli-settlements-should-be-treated",
+          "date": "2026-09-13T16:43:29.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "EU foreign policy chief says Israeli settlements should be treated like Russian-occupied Crimea The European Union’s foreign policy chief, Kaja Kallas, has&nbsp; said &nbsp;that the EU should treat illegal&nbsp; Israeli &nbsp;settlements in the occupied&nbsp; Palestinian &nbsp;Territories in the same way as it treated&nbsp; Russia’s &nbsp;invasion of Crimea.&nbsp; Kallas told The Irish Times on Fr",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Teenager killed by another teen for not standing during toast in Tbilisi",
+          "url": "https://oc-media.org/teenager-killed-by-another-for-not-standing-during-toast-in-tbilisi/",
+          "date": "2026-09-11T15:02:27.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The suspect was detained shortly after.",
+          "isNew": false,
+          "region": {
+            "id": "GEO-3036",
+            "name": "Tbilisi",
+            "nameDe": "Tiflis",
+            "type": "Independent City",
+            "anchor": [
+              44.83,
+              41.702
+            ],
+            "matched": "Tbilisi"
+          },
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 19
+        },
+        {
+          "title": "Russia seeks to overturn ruling awarding compensation to family of Daghestani man killed by police officer",
+          "url": "https://oc-media.org/russia-seeks-to-overturn-ruling-awarding-compensation-to-family-of-daghestani-man-killed-by-police-officer/",
+          "date": "2026-09-11T14:12:14.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Russia’s Interior Ministry claims the officer acted on his own initiative after the victim attempted to flee from police.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 19
+        },
+        {
+          "title": "Three killed in Russian air strikes on 10 regions of Ukraine",
+          "url": "https://www.aljazeera.com/news/2026/9/12/russia-strikes-cargo-vessels-steel-plants-across-ukraine?traffic_source=rss",
+          "date": "2026-09-12T08:38:48.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Russia's attacks have targeted cargo vessels, steel plants and industrial facilities across Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Zelensky urges Trump to impose new Russia sanctions 'now', after deadly Ukraine strikes",
+          "url": "https://www.france24.com/en/europe/20260911-zelensky-urges-trump-to-impose-new-russia-sanctions-now-after-deadly-ukraine-strikes",
+          "date": "2026-09-11T19:13:14.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukrainian President Volodymyr Zelensky on Friday urged US President Donald Trump to impose new sanctions on Russia over deadly strikes on Ukraine, as Kyiv and Moscow step up attacks and US-led efforts to end the war remain deadlocked.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 18
+        },
+        {
+          "title": "US diplomacy under fire as Russia escalates attacks on Ukrainian officials",
+          "url": "https://www.aljazeera.com/news/2026/9/11/us-diplomacy-under-fire-as-moscow-escalates-attacks-on-ukrainian-officials?traffic_source=rss",
+          "date": "2026-09-11T16:30:48.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The Witkoff-Kushner visit to Moscow was immediately followed by Russian attacks on Kyiv.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Russian strikes kill two in Kyiv as Moscow targets capital’s fuel stations",
+          "url": "https://www.aljazeera.com/news/2026/9/11/russian-strikes-kill-two-in-kyiv-as-moscow-targets-capitals-fuel-stations?traffic_source=rss",
+          "date": "2026-09-11T13:09:44.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Second day of strikes on fuel stations suggest a new campaign focused on civilian areas in the Ukrainian capital.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 18
+        },
+        {
+          "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
+          "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine",
+          "date": "2026-09-11T12:01:22.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and 12 injured in strikes on two petrol stations on Friday morning",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
+          "date": "2026-09-11T12:25:46.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians in Brussels The European Commission has said it is assessing whether Ukraine has a funding shortfall, amid renewed pressure to use Russia’s frozen assets to aid Kyiv. “That [frozen assets] is not a primary focus. We have worked extensively on this and now the focus is somewhere else.” “So we’ve got to carry out that work fi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+          "url": "https://www.bbc.co.uk/news/articles/cpvelrmp1vmo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T22:36:02.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Russian strike hits shopping centre in central Ukraine",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/10-09-clip-russia-strike-pavlohrad-ua?traffic_source=rss",
+          "date": "2026-09-10T21:03:42.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A Russian strike on a shopping centre in the central Ukrainian city of Pavlohrad killed at least four people.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Georgian Church criticises Russia’s claims they have army unit named after Georgian monk",
+          "url": "https://oc-media.org/georgian-church-criticises-russias-claims-they-have-army-unit-named-after-georgian-monk/",
+          "date": "2026-09-11T13:16:43.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The first reports about a unit named after monk Gabriel Urgebadze emerged in January.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russians about Goethe-Institut: 'Hostage to politics'",
+          "url": "https://www.dw.com/en/russians-about-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-10T16:17:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Canceled language exams, disrupted plans to study in Germany and the disappearance of an important cultural link: DW users shared how the closure of Germany's Goethe-Institut in Russia affects their lives.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
+        },
+        {
+          "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
+          "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
+          "date": "2026-09-10T15:12:08.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Part of Dmitry Donskoy’s right hand sent to ‘spiritually strengthen’ soldiers The Russian Orthodox church has sent a fragment of a medieval warrior prince’s remains to troops fighting in Ukraine, saying the relic would “spiritually strengthen” soldiers and help them achieve victory. A reliquary containing part of the right hand of Dmitry Donskoy, the 14th-century prince revered in Russia for his v",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "How Ukraine’s deepest attack in Russia, on Arctic gas, signals new reach",
+          "url": "https://www.aljazeera.com/news/2026/9/10/how-ukraines-deepest-attack-in-russia-on-arctic-gas-signals-new-reach?traffic_source=rss",
+          "date": "2026-09-10T10:38:53.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Long-range Ukrainian drones hit Russia's key gas plants, raising questions about the conflict's next phase.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russia’s new shelling tactics deepen suffering in Ukraine",
+          "url": "https://www.aljazeera.com/news/2026/9/10/russias-new-shelling-tactics-deepen-suffering-in-ukraine?traffic_source=rss",
+          "date": "2026-09-10T10:19:17.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukrainians are losing more sleep, shopping for food is becoming harder and travel is often fraught with risk and delays.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russian drones kill at least nine in strikes targeting warehouses and ports in Ukraine – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/10/russian-drone-strike-ukraine-zelenskyy-macron-nato-rutte-latest-news-updates",
+          "date": "2026-09-10T10:24:12.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "The strikes come after it was revealed that Ukraine’s president Volodomyr Zelenskyy’s plane was almost hit by a drone when leaving Moldova this week Addressing German ambassadors, Wadephul repeats that the Russian threat “has reached our doorstep and it’s tangible.” He adds: “The Russian attempted attack at the airport in Leipzig is only the most recent incident in a string of constantly growing R",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
+          "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
+          "date": "2026-09-10T07:50:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine launches one of its deepest strikes to date, targeting natural gas plants in Russia's Arctic region.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
+          "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T04:43:54.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukrainian drones strike Russian Caspian Sea port in Dagestan",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/aje-onl-nf_suspected-ukrainian-drones-strike-dagestan-100926?traffic_source=rss",
+          "date": "2026-09-10T04:41:06.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Fires and explosions were seen in Russia’s Dagestan after a Ukrainian drone attack.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Two die at Moldovan border as Russia-Ukraine drone war rages",
+          "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-09T20:28:04.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "‘Russia’s frontline moving west,’ Moldova’s president warns after border checkpoint attack – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/09/europe-ukraine-russia-zelenskyy-germany-merz-afd-norway-king-harald-v-latest-news-updates",
+          "date": "2026-09-09T11:04:30.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Maia Sandu speaks out after two people are killed during a strike on the Starokozache crossing with Ukraine Back to Oslo, the funeral procession for King Harald is about the begin, and the 1.2km route to the Oslo Cathedral is lined up with 1,900 soldiers from all branches of the Norwegian defence forces. The procession is expected to walk very slowly – at around 60 steps per minute – and will incl",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russian drone strike near Ukraine-Moldova border kills at least two as Ukraine targets oil terminal",
+          "url": "https://www.france24.com/en/europe/20260909-russian-drone-strike-near-ukraine-moldova-border-kills-at-least-two-as-ukraine-hits-oil-terminal",
+          "date": "2026-09-09T09:51:21.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "An overnight Russian drone strike at a border crossing between Ukraine and Moldova killed at least two people, Odesa's regional governor said Wednesday. Moldovan Prime Minister Vasile Tofan said that 17 drones had hit Moldovan territory in August alone as both Kyiv and Moscow ramp up long-range strikes on military and energy infrastructure.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "In maps and charts: Russian and Ukrainian attacks on civilian targets",
+          "url": "https://www.aljazeera.com/news/2026/9/9/in-maps-and-charts-russian-and-ukrainian-attacks-on-civilian-targets?traffic_source=rss",
+          "date": "2026-09-09T08:42:33.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Al Jazeera visualises how attacks on civilian infrastructure have more than doubled during the course of the war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russian drone attack kills two at Ukraine-Moldova border crossing",
+          "url": "https://www.aljazeera.com/news/2026/9/9/russian-drone-attack-kills-two-at-ukraine-moldova-border-crossing?traffic_source=rss",
+          "date": "2026-09-09T08:05:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Russian drones strike Ukraine-Moldova border in Odesa, killing two and injuring three civilians, officials confirm.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Police bodycam captures Russian missile strike on Kyiv",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
+          "date": "2026-09-08T20:43:52.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Bodycam video has captured the moment a Russian missile struck near police in Ukraine’s capital Kiev",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Missiles or mediation? Trump envoys shuttle between Russia and Ukraine",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20260908-missiles-or-mediation-trump-envoys-shuttle-between-russia-and-ukraine",
+          "date": "2026-09-08T18:19:11.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine’s momentum on the battlefield was a primary focus at July’s NATO summit in Turkey. Kyiv’s long-range drones and US President Donald Trump’s surprise announcement that the Washington would allow Ukraine to produce Patriot missiles on in the country. However, Trump's deal has yet to materialize. Moreover, Russia has ramped up cruise missile launches and Ukraine has run out of air defenses to",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
+          "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-08T17:10:54.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukraine decries 'horrific' Russian attack shortly after US envoys leave",
+          "url": "https://www.france24.com/en/video/20260908-ukraine-decries-horrific-russian-attack-shortly-after-us-envoys-leave",
+          "date": "2026-09-08T12:19:11.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine criticised Russia on Tuesday for launching a major missile and drone attack that killed at least two people shortly after a weekend visit by US envoys to both countries' capitals, where they tried to restart stalled talks on ending the war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ukraine’s prosecutor general resigns after corruption allegations as Russia resumes strikes on Kyiv – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/08/ukraine-russia-war-zelesnkyy-putin-ruslan-kravchenko-prosecutor-general-germany-france-europe-latest-news-updates",
+          "date": "2026-09-08T09:09:59.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ruslan Kravchenko leaves post after his offices were searched at the weekend, as Zelenskyy says he hopes to meet Trump this month Hungary has expelled 10 Russian diplomats who “engaged in activities … that are unacceptable for diplomats under the Vienna Convention,” the country’s foreign minister Anita Orbán said. “The decision protects the security and sovereignty of Hungary,” she said in a state",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "🔴 Live: At least two killed in Kyiv as Russia renews strikes after three-day pause",
+          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
+          "date": "2026-09-08T05:25:00.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russian strikes on Ukraine’s Kyiv kill at least two people",
+          "url": "https://www.aljazeera.com/news/2026/9/8/russia-strikes-kyiv-as-three-day-pause-during-us-envoy-visits-ends?traffic_source=rss",
+          "date": "2026-09-08T03:08:28.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US envoy says 'encouraged' by talks as White House official told Reuters next steps to be announced in coming weeks.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "Georgian judoka attacks German competitor after match defeat",
+          "url": "https://oc-media.org/georgian-judoka-attacks-german-competitor-after-match-defeat/",
+          "date": "2026-09-07T14:15:37.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "German judoka Timo Cavelius underwent surgery after the attack.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Will Trump succeed in restarting Russia-Ukraine peace talks?",
+          "url": "https://www.aljazeera.com/opinions/2026/9/7/will-trump-succeed-in-restarting-russia-ukraine-peace-talks?traffic_source=rss",
+          "date": "2026-09-07T14:22:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The Witkoff-Kushner visit to Moscow and Kyiv did not produce a breakthrough, but it can help begin a new process.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "Kyiv air raid alerts at record high as Russia launches round-the-clock strikes",
+          "url": "https://www.bbc.co.uk/news/articles/cjdvx9pz44ro?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-07T07:03:44.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Schools, businesses and public transport are all struggling with the surge in Russian air attacks.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-06T20:52:12.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Despite talks between US envoys and both Putin and Zelensky, the expectation in Kyiv is the fighting will continue, writes James Landale.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 15
+        },
+        {
+          "title": "Georgia says it will comply with the US sanctions against Iranian airlines",
+          "url": "https://oc-media.org/georgia-says-it-will-comply-with-the-us-sanctions-against-iranian-airlines/",
+          "date": "2026-09-11T13:26:53.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "As of publication, several sanctioned airlines are on the schedule to use Tbilisi International Airport.",
+          "isNew": false,
+          "region": {
+            "id": "GEO-3036",
+            "name": "Tbilisi",
+            "nameDe": "Tiflis",
+            "type": "Independent City",
+            "anchor": [
+              44.83,
+              41.702
+            ],
+            "matched": "Tbilisi"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 13
+        },
+        {
+          "title": "Russia's Putin arrives in India as BRICS leaders begin talks",
+          "url": "https://www.france24.com/en/video/20260912-russia-s-putin-arrives-in-india-as-brics-leaders-begin-talks",
+          "date": "2026-09-12T10:16:54.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "President Putin arrived as talks among leaders of the BRICS diplomatic bloc began on Friday in India, amid global geopolitical turmoil, including the war in Ukraine and the conflict in the Middle East.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "Elections in Russia: the 1001 tricks to remove inconvenient candidates",
+          "url": "https://www.france24.com/en/europe/20260911-elections-in-russia-the-1001-tricks-to-remove-inconvenient-candidates",
+          "date": "2026-09-11T16:11:08.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "The Russian authorities are using dubious claims to disqualify candidates previously cleared to run in the parliamentary election from September 18 to 20. The war in Ukraine is making the Kremlin even more cautious about who is allowed to campaign.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 11
+        },
+        {
+          "title": "Amnesty accuses Russia of trafficking foreigners to fight in Ukraine",
+          "url": "https://www.aljazeera.com/news/2026/9/10/amnesty-accuses-russia-of-trafficking-foreigners-to-fight-in-ukraine?traffic_source=rss",
+          "date": "2026-09-10T19:02:30.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Report reveals foreign nationals were misled with job offers, then forced into Russia's army upon arrival.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Russia tricks 'vulnerable' foreigners to fight in Ukraine war, Amnesty reports",
+          "url": "https://www.france24.com/en/europe/20260910-russia-tricks-vulnerable-foreigners-to-fight-in-ukraine-war-amnesty-reports",
+          "date": "2026-09-10T15:20:51.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Foreign nationals are being tricked into fighting for the Russian army against Ukraine through fake job offers, an Amnesty International report said Thursday, citing interviews with prisoners of war. The average targeted recruit is under 40, living in a poorer country and lured by the \"promise of a job\", Amnesty's secretary-general said.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
+          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
+          "date": "2026-09-10T10:32:31.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "UK man charged with assisting Russian military spies in sabotage plot",
+          "url": "https://www.aljazeera.com/news/2026/9/9/uk-man-charged-with-assisting-russian-intelligence-connected-group?traffic_source=rss",
+          "date": "2026-09-09T20:17:49.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Joshua Cammidge, 31, has been charged after alleged contact with a member of the GRU Volunteer Corps.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Man in Swindon charged with assisting Russian intelligence agency",
+          "url": "https://www.theguardian.com/uk-news/2026/sep/09/man-charged-with-assisting-russian-intelligence-agency-uk",
+          "date": "2026-09-09T19:10:35.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Joshua Cammidge, 31, arrested after investigation led by counter-terrorism policing London A man has been charged with offences related to national security as part of an ongoing investigation led by counter-terrorism policing (CTP) London, according to the Metropolitan police. Joshua Cammidge, 31, was arrested at an address in Swindon on Friday 4 September by CTP London officers, supported by off",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        },
+        {
+          "title": "With a Russian outsider expected to be South Ossetia’s President, is annexation on the agenda?",
+          "url": "https://oc-media.org/with-a-russian-outsider-expected-to-be-south-ossetias-president-is-annexation-on-the-agenda/",
+          "date": "2026-09-09T12:24:26.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "South Ossetia is hosting snap presidential elections on 18 September, with former Russian official Marat Kambolov likely to win.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 8
+        },
+        {
+          "title": "FRANCE 24 report reveals Russia’s war on Ukraine’s books and cultural identity",
+          "url": "https://www.france24.com/en/video/20260909-france-24-report-reveals-russia-s-war-on-ukraine-s-books-and-cultural-identity",
+          "date": "2026-09-09T10:09:00.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In Ukraine, the war is not being fought solely on the battlefield. This summer, Russian strikes severely affected the publishing industry, destroying dozens of warehouses and logistics centres. Millions of books and textbooks have been lost. For many Ukrainians, these attacks are part of an effort to erase their linguistic and cultural identity, as FRANCE 24’s Yegor Terletzkyi and Emmanuelle Chaze",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Putin rejects mobilization rumors, many Russians unconvinced",
+          "url": "https://www.dw.com/en/putin-rejects-mobilization-rumors-many-russians-unconvinced/a-79193386?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-09T05:57:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Russia’s President Vladimir Putin has dismissed rumors about military mobilization. But many Russians, including many DW users, say they are preparing for the possibility.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Russia pounds Kyiv, ending three-day halt for US talks",
+          "url": "https://www.france24.com/en/video/20260908-russia-pounds-kyiv-ending-three-day-halt-for-us-talks",
+          "date": "2026-09-08T11:35:09.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Russian missiles and drones pounded Kyiv overnight, killing two people and sending smoke billowing above the Ukrainian capital, ending Moscow's temporary halt to strikes on the city.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 8
+        },
+        {
+          "title": "Georgia’s ex-Prosecutor General forms military unit to fight alongside Russia in Ukraine",
+          "url": "https://oc-media.org/georgias-ex-prosecutor-general-forms-military-unit-to-fight-alongside-russia-in-ukraine/",
+          "date": "2026-09-08T11:11:57.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Otar Partskhaladze has been criminally charged in Georgia.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Russia pounds Kyiv after pause for visit of US envoys",
+          "url": "https://www.france24.com/en/video/20260908-russia-pounds-kyiv-after-pause-for-visit-of-us-envoys",
+          "date": "2026-09-08T09:23:38.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Russia pummelled Kyiv with drones and missiles early on Tuesday, resuming its air attacks after a brief halt for the visit of US peace negotiators, killing two people and triggering fires across the Ukrainian capital. France 24’s correspondent in Kyiv Emmanuelle Chaze has the latest.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 8
+        },
+        {
+          "title": "North Korea and Russia open first road bridge linking both countries",
+          "url": "https://www.bbc.co.uk/news/articles/cj9xvg1kz0mo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-08T03:53:27.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Relations between the neighbours have strengthened since the start of the Ukraine war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Russia shutters German consulate as diplomatic freeze deepens",
+          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
+          "date": "2026-09-07T18:27:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 8
+        },
+        {
+          "title": "Avalanche kills at least 11 climbers in southern Russia",
+          "url": "https://www.france24.com/en/video/20260907-avalanche-kills-at-least-11-climbers-in-southern-russia",
+          "date": "2026-09-07T15:00:03.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "⁠At least ​11 people were killed and six ​others injured after an avalanche struck a group of climbers in Russia's ​southern Kabardino-Balkaria ‌Republic, local emergency services said. The ‌avalanche swept down Mount Mizhirgi, ⁠one of the highest peaks in Russia's North Caucasus.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 8
+        },
+        {
+          "title": "Russia and North Korea open first road bridge across their shared border",
+          "url": "https://www.theguardian.com/world/2026/sep/07/russia-north-korea-open-first-road-bridge-tumen-river",
+          "date": "2026-09-07T09:53:53.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Connection across Tumen River is further sign of closer ties between the two countries since start of war in Ukraine Russia and North Korea have opened the first road bridge across their shared border , in the latest sign of the rapidly deepening ties between the two countries since the start of the war in Ukraine. The one-kilometre bridge spans the Tumen River between Khasan in Russia’s far east ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 61
+    },
+    {
       "id": "moldova-transnistria",
       "name": "Moldau / Transnistrien",
       "nameEn": "Moldova & Transnistria",
@@ -24140,7 +25588,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -24201,6 +25649,27 @@
           "score": 26
         },
         {
+          "title": "Train carrying Boris Johnson and ex-CIA chief may have been targeted in Russian strike, officials say",
+          "url": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
+          "date": "2026-09-13T17:43:03.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Ukrainian Railways says former British PM and David Petraeus crossed into Poland shortly before drone attack near border A train carrying Boris Johnson and the former CIA chief David Petraeus may have been the target of a Russian drone strike that hit a train engine near the Poland-Ukraine border, according to Ukrainian Railways. Ukraine’s foreign minister, Andrii Sybiha, described the attack as “",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
           "title": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
           "url": "https://www.aljazeera.com/news/2026/9/13/ukraine-drone-strikes-kill-four-as-russia-attacks-close-to-poland-border?traffic_source=rss",
           "date": "2026-09-13T13:05:40.000Z",
@@ -24219,28 +25688,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 26
-        },
-        {
-          "title": "Train carrying Boris Johnson and ex-CIA chief may have been targeted in Russian strike, officials say",
-          "url": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
-          "date": "2026-09-13T17:43:03.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukrainian Railways says former British PM and David Petraeus crossed into Poland shortly before drone attack near border A train carrying Boris Johnson and the former CIA chief David Petraeus may have been the target of a Russian drone strike that hit a train engine near the Poland-Ukraine border, according to Ukrainian Railways. Ukraine’s foreign ministerAndrii Sybiha described the attack as “Put",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
@@ -24304,6 +25752,27 @@
             "label": "Drohnenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Trump tells Zelenskyy to stop hitting Russian diesel supplies",
+          "url": "https://www.aljazeera.com/economy/2026/9/13/trump-tells-zelenskyy-to-stop-hitting-russian-diesel-supplies?traffic_source=rss",
+          "date": "2026-09-13T18:15:12.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The US president says Ukraine's attacks on Russian diesel infrastructure are contributing to global fuel shortages.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
         },
         {
           "title": "EU foreign policy chief says Israeli settlements should be treated like Russian-occupied Crimea",
@@ -25248,7 +26717,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Russia tricks 'vulnerable' foreigners to fight in Ukraine war, Amnesty reports",
@@ -25566,1537 +27035,7 @@
           "score": 8
         }
       ],
-      "itemCount": 66
-    },
-    {
-      "id": "south-sudan",
-      "name": "Südsudan",
-      "nameEn": "South Sudan",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "S. Sudan"
-      ],
-      "lat": 7.5,
-      "lon": 30.5,
-      "tier": "high",
-      "since": "2013 / Krise 2025",
-      "parties": [
-        "Regierung (Kiir/SPLM)",
-        "SPLM-IO (Machar)",
-        "White Army",
-        "Milizen"
-      ],
-      "background": "Das Friedensabkommen von 2018 steht vor dem Kollaps: Festsetzung Machars, Luftangriffe in Upper Nile und Kämpfe mit der White Army.",
-      "hotspots": [
-        "Upper Nile",
-        "Nasir",
-        "Juba",
-        "Jonglei"
-      ],
-      "activity": 4,
-      "severity": 40,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "SSD",
-      "extraCountries": [
-        "SDN"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "South Sudan: Human Cost of Violence in South Sudan 'Continues to Grow'",
-          "url": "https://allafrica.com/stories/202609110003.html",
-          "date": "2026-09-11T04:35:30.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[UN News] Independent human rights investigators voiced deep concern over growing risks to both civilians and South Sudan's political transition following their latest fact-finding mission to the world's youngest nation - their 14th in a decade.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Human cost of violence in South Sudan ‘continues to grow’",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168307",
-          "date": "2026-09-10T12:00:00.000Z",
-          "source": "UN News – Peace & Security",
-          "sourceType": "institutional",
-          "summary": "Independent human rights investigators voiced deep concern over growing risks to both civilians and South Sudan’s political transition following their latest fact-finding mission to the world’s youngest nation – their 14th in a decade.&nbsp;",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "UN rights body warns South Sudan elections could fuel violence",
-          "url": "https://www.radiotamazuj.org/en/news/article/un-rights-body-warns-south-sudan-elections-could-fuel-violence",
-          "date": "2026-09-10T11:45:00.000Z",
-          "source": "radiotamazuj.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 3
-    },
-    {
-      "id": "georgia",
-      "name": "Georgien (Abchasien / Südossetien)",
-      "nameEn": "Georgia",
-      "region": "Europa / Eurasien",
-      "countries": [
-        "Georgia"
-      ],
-      "lat": 42.3,
-      "lon": 43.4,
-      "tier": "low",
-      "since": "1992 / 2008",
-      "parties": [
-        "Georgien",
-        "Russland",
-        "Abchasien",
-        "Südossetien"
-      ],
-      "background": "Eingefrorener Konflikt mit russisch besetzten Regionen; innenpolitische Krise und Abkehr vom EU-Kurs seit 2024.",
-      "hotspots": [
-        "Abchasien",
-        "Südossetien",
-        "Tbilissi"
-      ],
-      "activity": 98,
-      "severity": 40,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 14
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 10
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 6
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 3
-        },
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 2
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "GEO",
-      "extraCountries": [],
-      "regions": [
-        {
-          "id": "GEO-3036",
-          "name": "Tbilisi",
-          "nameDe": "Tiflis",
-          "type": "Independent City",
-          "anchor": [
-            44.83,
-            41.702
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Ukrainian drone evades Russian helicopter fire to strike oil tanker",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-12-ukraine-drone-russian-tanker-sv?traffic_source=rss",
-          "date": "2026-09-13T16:11:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine has released footage showing a drone evading fire from a Russian helicopter before striking a Russian oil tanker",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
-          "url": "https://www.aljazeera.com/news/2026/9/13/ukraine-drone-strikes-kill-four-as-russia-attacks-close-to-poland-border?traffic_source=rss",
-          "date": "2026-09-13T13:05:40.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Russia says four people killed in Ukrainian strikes as both sides continue to attack each other with waves of drones.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Train carrying Boris Johnson and ex-CIA chief may have been targeted in Russian strike, officials say",
-          "url": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
-          "date": "2026-09-13T17:43:03.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukrainian Railways says former British PM and David Petraeus crossed into Poland shortly before drone attack near border A train carrying Boris Johnson and the former CIA chief David Petraeus may have been the target of a Russian drone strike that hit a train engine near the Poland-Ukraine border, according to Ukrainian Railways. Ukraine’s foreign ministerAndrii Sybiha described the attack as “Put",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 26
-        },
-        {
-          "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
-          "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-12T23:51:05.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 23
-        },
-        {
-          "title": "Russians on the Goethe-Institut: 'Hostage to politics'",
-          "url": "https://www.dw.com/en/russians-on-the-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-09-13T11:50:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Canceled language exams, disrupted plans to study in Germany and the disappearance of an important cultural link: DW users shared how the closure of Germany's Goethe-Institut in Russia has affected their lives.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 23
-        },
-        {
-          "title": "Russia's drone war comes to Moldova and Romania",
-          "url": "https://www.dw.com/en/russia-s-drone-war-comes-to-moldova-and-romania/a-79239591?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-09-12T06:27:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Incursions by Russian drones into Moldovan and Romanian airspace are increasingly common. This week the Ukrainian president's plane was stopped from taking off from Chisinau. Observers suspect the attacks are deliberate.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "EU foreign policy chief says Israeli settlements should be treated like Russian-occupied Crimea",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eu-foreign-policy-chief-says-israeli-settlements-should-be-treated",
-          "date": "2026-09-13T16:43:29.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "EU foreign policy chief says Israeli settlements should be treated like Russian-occupied Crimea The European Union’s foreign policy chief, Kaja Kallas, has&nbsp; said &nbsp;that the EU should treat illegal&nbsp; Israeli &nbsp;settlements in the occupied&nbsp; Palestinian &nbsp;Territories in the same way as it treated&nbsp; Russia’s &nbsp;invasion of Crimea.&nbsp; Kallas told The Irish Times on Fr",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Teenager killed by another teen for not standing during toast in Tbilisi",
-          "url": "https://oc-media.org/teenager-killed-by-another-for-not-standing-during-toast-in-tbilisi/",
-          "date": "2026-09-11T15:02:27.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The suspect was detained shortly after.",
-          "isNew": false,
-          "region": {
-            "id": "GEO-3036",
-            "name": "Tbilisi",
-            "nameDe": "Tiflis",
-            "type": "Independent City",
-            "anchor": [
-              44.83,
-              41.702
-            ],
-            "matched": "Tbilisi"
-          },
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
-        },
-        {
-          "title": "Russia seeks to overturn ruling awarding compensation to family of Daghestani man killed by police officer",
-          "url": "https://oc-media.org/russia-seeks-to-overturn-ruling-awarding-compensation-to-family-of-daghestani-man-killed-by-police-officer/",
-          "date": "2026-09-11T14:12:14.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Russia’s Interior Ministry claims the officer acted on his own initiative after the victim attempted to flee from police.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 19
-        },
-        {
-          "title": "Three killed in Russian air strikes on 10 regions of Ukraine",
-          "url": "https://www.aljazeera.com/news/2026/9/12/russia-strikes-cargo-vessels-steel-plants-across-ukraine?traffic_source=rss",
-          "date": "2026-09-12T08:38:48.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Russia's attacks have targeted cargo vessels, steel plants and industrial facilities across Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Zelensky urges Trump to impose new Russia sanctions 'now', after deadly Ukraine strikes",
-          "url": "https://www.france24.com/en/europe/20260911-zelensky-urges-trump-to-impose-new-russia-sanctions-now-after-deadly-ukraine-strikes",
-          "date": "2026-09-11T19:13:14.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukrainian President Volodymyr Zelensky on Friday urged US President Donald Trump to impose new sanctions on Russia over deadly strikes on Ukraine, as Kyiv and Moscow step up attacks and US-led efforts to end the war remain deadlocked.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 18
-        },
-        {
-          "title": "US diplomacy under fire as Russia escalates attacks on Ukrainian officials",
-          "url": "https://www.aljazeera.com/news/2026/9/11/us-diplomacy-under-fire-as-moscow-escalates-attacks-on-ukrainian-officials?traffic_source=rss",
-          "date": "2026-09-11T16:30:48.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The Witkoff-Kushner visit to Moscow was immediately followed by Russian attacks on Kyiv.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Russian strikes kill two in Kyiv as Moscow targets capital’s fuel stations",
-          "url": "https://www.aljazeera.com/news/2026/9/11/russian-strikes-kill-two-in-kyiv-as-moscow-targets-capitals-fuel-stations?traffic_source=rss",
-          "date": "2026-09-11T13:09:44.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Second day of strikes on fuel stations suggest a new campaign focused on civilian areas in the Ukrainian capital.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 18
-        },
-        {
-          "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
-          "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine",
-          "date": "2026-09-11T12:01:22.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Three facilities in two days struck as bombardment of Ukraine’s capital enters new phase of intensity Europe live – latest updates Petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and 12 injured in strikes on two petrol stations on Friday morning",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Russia accused of ‘rapidly growing’ attacks on civilian infrastructure after five killed in Ukraine – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/sep/11/russia-strikes-ukraine-europe-nato-poland-latest-news-updates",
-          "date": "2026-09-11T12:25:46.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukraine’s foreign minister says Russia is deliberately targeting civilians in Brussels The European Commission has said it is assessing whether Ukraine has a funding shortfall, amid renewed pressure to use Russia’s frozen assets to aid Kyiv. “That [frozen assets] is not a primary focus. We have worked extensively on this and now the focus is somewhere else.” “So we’ve got to carry out that work fi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
-          "url": "https://www.bbc.co.uk/news/articles/cpvelrmp1vmo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-10T22:36:02.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The attack in Pavlohrad city centre was the third Russian strike on a mall within days, local media report.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Russian strike hits shopping centre in central Ukraine",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/10-09-clip-russia-strike-pavlohrad-ua?traffic_source=rss",
-          "date": "2026-09-10T21:03:42.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A Russian strike on a shopping centre in the central Ukrainian city of Pavlohrad killed at least four people.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Georgian Church criticises Russia’s claims they have army unit named after Georgian monk",
-          "url": "https://oc-media.org/georgian-church-criticises-russias-claims-they-have-army-unit-named-after-georgian-monk/",
-          "date": "2026-09-11T13:16:43.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The first reports about a unit named after monk Gabriel Urgebadze emerged in January.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russians about Goethe-Institut: 'Hostage to politics'",
-          "url": "https://www.dw.com/en/russians-about-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-09-10T16:17:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Canceled language exams, disrupted plans to study in Germany and the disappearance of an important cultural link: DW users shared how the closure of Germany's Goethe-Institut in Russia affects their lives.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
-          "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
-          "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
-          "date": "2026-09-10T15:12:08.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Part of Dmitry Donskoy’s right hand sent to ‘spiritually strengthen’ soldiers The Russian Orthodox church has sent a fragment of a medieval warrior prince’s remains to troops fighting in Ukraine, saying the relic would “spiritually strengthen” soldiers and help them achieve victory. A reliquary containing part of the right hand of Dmitry Donskoy, the 14th-century prince revered in Russia for his v",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "How Ukraine’s deepest attack in Russia, on Arctic gas, signals new reach",
-          "url": "https://www.aljazeera.com/news/2026/9/10/how-ukraines-deepest-attack-in-russia-on-arctic-gas-signals-new-reach?traffic_source=rss",
-          "date": "2026-09-10T10:38:53.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Long-range Ukrainian drones hit Russia's key gas plants, raising questions about the conflict's next phase.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russia’s new shelling tactics deepen suffering in Ukraine",
-          "url": "https://www.aljazeera.com/news/2026/9/10/russias-new-shelling-tactics-deepen-suffering-in-ukraine?traffic_source=rss",
-          "date": "2026-09-10T10:19:17.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukrainians are losing more sleep, shopping for food is becoming harder and travel is often fraught with risk and delays.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russian drones kill at least nine in strikes targeting warehouses and ports in Ukraine – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/sep/10/russian-drone-strike-ukraine-zelenskyy-macron-nato-rutte-latest-news-updates",
-          "date": "2026-09-10T10:24:12.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "The strikes come after it was revealed that Ukraine’s president Volodomyr Zelenskyy’s plane was almost hit by a drone when leaving Moldova this week Addressing German ambassadors, Wadephul repeats that the Russian threat “has reached our doorstep and it’s tangible.” He adds: “The Russian attempted attack at the airport in Leipzig is only the most recent incident in a string of constantly growing R",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
-          "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
-          "date": "2026-09-10T07:50:24.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine launches one of its deepest strikes to date, targeting natural gas plants in Russia's Arctic region.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
-          "url": "https://www.bbc.co.uk/news/articles/c804d9lyj2jo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-10T04:43:54.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukrainian drones strike Russian Caspian Sea port in Dagestan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/aje-onl-nf_suspected-ukrainian-drones-strike-dagestan-100926?traffic_source=rss",
-          "date": "2026-09-10T04:41:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Fires and explosions were seen in Russia’s Dagestan after a Ukrainian drone attack.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Two die at Moldovan border as Russia-Ukraine drone war rages",
-          "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-09T20:28:04.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "‘Russia’s frontline moving west,’ Moldova’s president warns after border checkpoint attack – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/sep/09/europe-ukraine-russia-zelenskyy-germany-merz-afd-norway-king-harald-v-latest-news-updates",
-          "date": "2026-09-09T11:04:30.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Maia Sandu speaks out after two people are killed during a strike on the Starokozache crossing with Ukraine Back to Oslo, the funeral procession for King Harald is about the begin, and the 1.2km route to the Oslo Cathedral is lined up with 1,900 soldiers from all branches of the Norwegian defence forces. The procession is expected to walk very slowly – at around 60 steps per minute – and will incl",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russian drone strike near Ukraine-Moldova border kills at least two as Ukraine targets oil terminal",
-          "url": "https://www.france24.com/en/europe/20260909-russian-drone-strike-near-ukraine-moldova-border-kills-at-least-two-as-ukraine-hits-oil-terminal",
-          "date": "2026-09-09T09:51:21.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "An overnight Russian drone strike at a border crossing between Ukraine and Moldova killed at least two people, Odesa's regional governor said Wednesday. Moldovan Prime Minister Vasile Tofan said that 17 drones had hit Moldovan territory in August alone as both Kyiv and Moscow ramp up long-range strikes on military and energy infrastructure.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "In maps and charts: Russian and Ukrainian attacks on civilian targets",
-          "url": "https://www.aljazeera.com/news/2026/9/9/in-maps-and-charts-russian-and-ukrainian-attacks-on-civilian-targets?traffic_source=rss",
-          "date": "2026-09-09T08:42:33.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Al Jazeera visualises how attacks on civilian infrastructure have more than doubled during the course of the war.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russian drone attack kills two at Ukraine-Moldova border crossing",
-          "url": "https://www.aljazeera.com/news/2026/9/9/russian-drone-attack-kills-two-at-ukraine-moldova-border-crossing?traffic_source=rss",
-          "date": "2026-09-09T08:05:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Russian drones strike Ukraine-Moldova border in Odesa, killing two and injuring three civilians, officials confirm.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Police bodycam captures Russian missile strike on Kyiv",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
-          "date": "2026-09-08T20:43:52.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Bodycam video has captured the moment a Russian missile struck near police in Ukraine’s capital Kiev",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
-          "title": "Missiles or mediation? Trump envoys shuttle between Russia and Ukraine",
-          "url": "https://www.france24.com/en/tv-shows/the-debate/20260908-missiles-or-mediation-trump-envoys-shuttle-between-russia-and-ukraine",
-          "date": "2026-09-08T18:19:11.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukraine’s momentum on the battlefield was a primary focus at July’s NATO summit in Turkey. Kyiv’s long-range drones and US President Donald Trump’s surprise announcement that the Washington would allow Ukraine to produce Patriot missiles on in the country. However, Trump's deal has yet to materialize. Moreover, Russia has ramped up cruise missile launches and Ukraine has run out of air defenses to",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
-          "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-08T17:10:54.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine decries 'horrific' Russian attack shortly after US envoys leave",
-          "url": "https://www.france24.com/en/video/20260908-ukraine-decries-horrific-russian-attack-shortly-after-us-envoys-leave",
-          "date": "2026-09-08T12:19:11.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Ukraine criticised Russia on Tuesday for launching a major missile and drone attack that killed at least two people shortly after a weekend visit by US envoys to both countries' capitals, where they tried to restart stalled talks on ending the war.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine’s prosecutor general resigns after corruption allegations as Russia resumes strikes on Kyiv – Europe live",
-          "url": "https://www.theguardian.com/world/live/2026/sep/08/ukraine-russia-war-zelesnkyy-putin-ruslan-kravchenko-prosecutor-general-germany-france-europe-latest-news-updates",
-          "date": "2026-09-08T09:09:59.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ruslan Kravchenko leaves post after his offices were searched at the weekend, as Zelenskyy says he hopes to meet Trump this month Hungary has expelled 10 Russian diplomats who “engaged in activities … that are unacceptable for diplomats under the Vienna Convention,” the country’s foreign minister Anita Orbán said. “The decision protects the security and sovereignty of Hungary,” she said in a state",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "🔴 Live: At least two killed in Kyiv as Russia renews strikes after three-day pause",
-          "url": "https://www.france24.com/en/europe/20260908-live-russia-resumes-strikes-on-kyiv-after-three-day-halt",
-          "date": "2026-09-08T05:25:00.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Russian strikes on Ukraine’s Kyiv kill at least two people",
-          "url": "https://www.aljazeera.com/news/2026/9/8/russia-strikes-kyiv-as-three-day-pause-during-us-envoy-visits-ends?traffic_source=rss",
-          "date": "2026-09-08T03:08:28.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "US envoy says 'encouraged' by talks as White House official told Reuters next steps to be announced in coming weeks.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Georgian judoka attacks German competitor after match defeat",
-          "url": "https://oc-media.org/georgian-judoka-attacks-german-competitor-after-match-defeat/",
-          "date": "2026-09-07T14:15:37.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "German judoka Timo Cavelius underwent surgery after the attack.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Will Trump succeed in restarting Russia-Ukraine peace talks?",
-          "url": "https://www.aljazeera.com/opinions/2026/9/7/will-trump-succeed-in-restarting-russia-ukraine-peace-talks?traffic_source=rss",
-          "date": "2026-09-07T14:22:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The Witkoff-Kushner visit to Moscow and Kyiv did not produce a breakthrough, but it can help begin a new process.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Kyiv air raid alerts at record high as Russia launches round-the-clock strikes",
-          "url": "https://www.bbc.co.uk/news/articles/cjdvx9pz44ro?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-07T07:03:44.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Schools, businesses and public transport are all struggling with the surge in Russian air attacks.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
-          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-06T20:52:12.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Despite talks between US envoys and both Putin and Zelensky, the expectation in Kyiv is the fighting will continue, writes James Landale.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Georgia says it will comply with the US sanctions against Iranian airlines",
-          "url": "https://oc-media.org/georgia-says-it-will-comply-with-the-us-sanctions-against-iranian-airlines/",
-          "date": "2026-09-11T13:26:53.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "As of publication, several sanctioned airlines are on the schedule to use Tbilisi International Airport.",
-          "isNew": false,
-          "region": {
-            "id": "GEO-3036",
-            "name": "Tbilisi",
-            "nameDe": "Tiflis",
-            "type": "Independent City",
-            "anchor": [
-              44.83,
-              41.702
-            ],
-            "matched": "Tbilisi"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 13
-        },
-        {
-          "title": "Russia's Putin arrives in India as BRICS leaders begin talks",
-          "url": "https://www.france24.com/en/video/20260912-russia-s-putin-arrives-in-india-as-brics-leaders-begin-talks",
-          "date": "2026-09-12T10:16:54.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "President Putin arrived as talks among leaders of the BRICS diplomatic bloc began on Friday in India, amid global geopolitical turmoil, including the war in Ukraine and the conflict in the Middle East.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "Elections in Russia: the 1001 tricks to remove inconvenient candidates",
-          "url": "https://www.france24.com/en/europe/20260911-elections-in-russia-the-1001-tricks-to-remove-inconvenient-candidates",
-          "date": "2026-09-11T16:11:08.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The Russian authorities are using dubious claims to disqualify candidates previously cleared to run in the parliamentary election from September 18 to 20. The war in Ukraine is making the Kremlin even more cautious about who is allowed to campaign.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 11
-        },
-        {
-          "title": "Amnesty accuses Russia of trafficking foreigners to fight in Ukraine",
-          "url": "https://www.aljazeera.com/news/2026/9/10/amnesty-accuses-russia-of-trafficking-foreigners-to-fight-in-ukraine?traffic_source=rss",
-          "date": "2026-09-10T19:02:30.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Report reveals foreign nationals were misled with job offers, then forced into Russia's army upon arrival.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Russia tricks 'vulnerable' foreigners to fight in Ukraine war, Amnesty reports",
-          "url": "https://www.france24.com/en/europe/20260910-russia-tricks-vulnerable-foreigners-to-fight-in-ukraine-war-amnesty-reports",
-          "date": "2026-09-10T15:20:51.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Foreign nationals are being tricked into fighting for the Russian army against Ukraine through fake job offers, an Amnesty International report said Thursday, citing interviews with prisoners of war. The average targeted recruit is under 40, living in a poorer country and lured by the \"promise of a job\", Amnesty's secretary-general said.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
-          "url": "https://oc-media.org/moldova-arrests-azerbaijani-man-on-suspicion-of-russian-espionage/",
-          "date": "2026-09-10T10:32:31.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "The 49-year-old is suspected of gathering information about military targets, including those of the US, in Moldova.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "UK man charged with assisting Russian military spies in sabotage plot",
-          "url": "https://www.aljazeera.com/news/2026/9/9/uk-man-charged-with-assisting-russian-intelligence-connected-group?traffic_source=rss",
-          "date": "2026-09-09T20:17:49.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Joshua Cammidge, 31, has been charged after alleged contact with a member of the GRU Volunteer Corps.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Man in Swindon charged with assisting Russian intelligence agency",
-          "url": "https://www.theguardian.com/uk-news/2026/sep/09/man-charged-with-assisting-russian-intelligence-agency-uk",
-          "date": "2026-09-09T19:10:35.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Joshua Cammidge, 31, arrested after investigation led by counter-terrorism policing London A man has been charged with offences related to national security as part of an ongoing investigation led by counter-terrorism policing (CTP) London, according to the Metropolitan police. Joshua Cammidge, 31, was arrested at an address in Swindon on Friday 4 September by CTP London officers, supported by off",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        },
-        {
-          "title": "With a Russian outsider expected to be South Ossetia’s President, is annexation on the agenda?",
-          "url": "https://oc-media.org/with-a-russian-outsider-expected-to-be-south-ossetias-president-is-annexation-on-the-agenda/",
-          "date": "2026-09-09T12:24:26.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "South Ossetia is hosting snap presidential elections on 18 September, with former Russian official Marat Kambolov likely to win.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 8
-        },
-        {
-          "title": "FRANCE 24 report reveals Russia’s war on Ukraine’s books and cultural identity",
-          "url": "https://www.france24.com/en/video/20260909-france-24-report-reveals-russia-s-war-on-ukraine-s-books-and-cultural-identity",
-          "date": "2026-09-09T10:09:00.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In Ukraine, the war is not being fought solely on the battlefield. This summer, Russian strikes severely affected the publishing industry, destroying dozens of warehouses and logistics centres. Millions of books and textbooks have been lost. For many Ukrainians, these attacks are part of an effort to erase their linguistic and cultural identity, as FRANCE 24’s Yegor Terletzkyi and Emmanuelle Chaze",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Putin rejects mobilization rumors, many Russians unconvinced",
-          "url": "https://www.dw.com/en/putin-rejects-mobilization-rumors-many-russians-unconvinced/a-79193386?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-09-09T05:57:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Russia’s President Vladimir Putin has dismissed rumors about military mobilization. But many Russians, including many DW users, say they are preparing for the possibility.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Russia pounds Kyiv, ending three-day halt for US talks",
-          "url": "https://www.france24.com/en/video/20260908-russia-pounds-kyiv-ending-three-day-halt-for-us-talks",
-          "date": "2026-09-08T11:35:09.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Russian missiles and drones pounded Kyiv overnight, killing two people and sending smoke billowing above the Ukrainian capital, ending Moscow's temporary halt to strikes on the city.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "Georgia’s ex-Prosecutor General forms military unit to fight alongside Russia in Ukraine",
-          "url": "https://oc-media.org/georgias-ex-prosecutor-general-forms-military-unit-to-fight-alongside-russia-in-ukraine/",
-          "date": "2026-09-08T11:11:57.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Otar Partskhaladze has been criminally charged in Georgia.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Russia pounds Kyiv after pause for visit of US envoys",
-          "url": "https://www.france24.com/en/video/20260908-russia-pounds-kyiv-after-pause-for-visit-of-us-envoys",
-          "date": "2026-09-08T09:23:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Russia pummelled Kyiv with drones and missiles early on Tuesday, resuming its air attacks after a brief halt for the visit of US peace negotiators, killing two people and triggering fires across the Ukrainian capital. France 24’s correspondent in Kyiv Emmanuelle Chaze has the latest.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 8
-        },
-        {
-          "title": "North Korea and Russia open first road bridge linking both countries",
-          "url": "https://www.bbc.co.uk/news/articles/cj9xvg1kz0mo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-08T03:53:27.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Relations between the neighbours have strengthened since the start of the Ukraine war.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Russia shutters German consulate as diplomatic freeze deepens",
-          "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
-          "date": "2026-09-07T18:27:39.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 8
-        },
-        {
-          "title": "Avalanche kills at least 11 climbers in southern Russia",
-          "url": "https://www.france24.com/en/video/20260907-avalanche-kills-at-least-11-climbers-in-southern-russia",
-          "date": "2026-09-07T15:00:03.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "⁠At least ​11 people were killed and six ​others injured after an avalanche struck a group of climbers in Russia's ​southern Kabardino-Balkaria ‌Republic, local emergency services said. The ‌avalanche swept down Mount Mizhirgi, ⁠one of the highest peaks in Russia's North Caucasus.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 8
-        },
-        {
-          "title": "Russia and North Korea open first road bridge across their shared border",
-          "url": "https://www.theguardian.com/world/2026/sep/07/russia-north-korea-open-first-road-bridge-tumen-river",
-          "date": "2026-09-07T09:53:53.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Connection across Tumen River is further sign of closer ties between the two countries since start of war in Ukraine Russia and North Korea have opened the first road bridge across their shared border , in the latest sign of the rapidly deepening ties between the two countries since the start of the war in Ukraine. The one-kilometre bridge spans the Tumen River between Khasan in Russia’s far east ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 60
-    },
-    {
-      "id": "venezuela",
-      "name": "Venezuela / Essequibo",
-      "nameEn": "Venezuela & Essequibo",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Venezuela",
-        "Guyana"
-      ],
-      "lat": 7,
-      "lon": -63,
-      "tier": "high",
-      "since": "2023 / Zuspitzung 2025",
-      "parties": [
-        "Venezuela (Maduro)",
-        "Guyana",
-        "USA",
-        "Opposition"
-      ],
-      "background": "Gebietsstreit um Essequibo und massiver militärischer Druck der USA in der Karibik nach der umstrittenen Wahl 2024.",
-      "hotspots": [
-        "Essequibo",
-        "Karibik",
-        "Caracas"
-      ],
-      "activity": 2,
-      "severity": 39,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "VEN",
-      "extraCountries": [
-        "GUY"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "Trump official reveals how 30 - minute military op unlocked Venezuela oil windfall",
-          "url": "https://www.foxnews.com/politics/top-trump-official-reveals-how-30-minute-military-op-unlocked-venezuela-oil-windfall",
-          "date": "2026-09-11T02:00:00.000Z",
-          "source": "foxnews.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        }
-      ],
-      "itemCount": 1
+      "itemCount": 67
     },
     {
       "id": "iraq",
@@ -27124,19 +27063,13 @@
         "Erbil",
         "Diyala"
       ],
-      "activity": 52,
-      "severity": 38,
-      "newCount": 0,
+      "activity": 58,
+      "severity": 40,
+      "newCount": 2,
       "signals": [
         {
           "key": "offensive",
           "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
           "dir": "up",
           "count": 1
         },
@@ -27259,6 +27192,69 @@
           "score": 22
         },
         {
+          "title": "Iraq to Reopen Iran Crossings After Drone Attack",
+          "url": "https://english.aawsat.com/arab-world/5317669-iraq-reopen-iran-crossings-after-drone-attack",
+          "date": "2026-09-13T08:45:00.000Z",
+          "source": "english.aawsat.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 21
+        },
+        {
+          "title": "Iraq : Saudi Pipeline Attacks Launched From Its Territory",
+          "url": "https://www.deccanchronicle.com/world/iraq-says-saudi-pipeline-attacks-launched-from-its-territory-1987150",
+          "date": "2026-09-13T07:45:00.000Z",
+          "source": "deccanchronicle.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 21
+        },
+        {
+          "title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
+          "url": "https://www.theguardian.com/world/2026/sep/12/saudi-arabia-shuts-down-oil-pipeline-blaming-drones-from-iraq",
+          "date": "2026-09-12T15:35:12.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Riyadh has increased use of East-West pipeline since start of war on Iran to bypass closure of strait of Hormuz Saudi Arabia has shut down a critical oil pipeline, accusing militants in Iraq of launching drone attacks on the export route being used to bypass the lockdown of the strait of Hormuz. The world’s largest ⁠crude oil exporter has increased its use of the 745-mile (1,200km) pipeline runnin",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 19
+        },
+        {
           "title": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
           "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
           "date": "2026-09-12T18:53:31.000Z",
@@ -27287,28 +27283,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 22
-        },
-        {
-          "title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
-          "url": "https://www.theguardian.com/world/2026/sep/12/saudi-arabia-shuts-down-oil-pipeline-blaming-drones-from-iraq",
-          "date": "2026-09-12T15:35:12.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Riyadh has increased use of East-West pipeline since start of war on Iran to bypass closure of strait of Hormuz Saudi Arabia has shut down a critical oil pipeline, accusing militants in Iraq of launching drone attacks on the export route being used to bypass the lockdown of the strait of Hormuz. The world’s largest ⁠crude oil exporter has increased its use of the 745-mile (1,200km) pipeline runnin",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
@@ -27583,27 +27558,6 @@
           "score": 18
         },
         {
-          "title": "Iran Revolutionary Guards claim US surveillance aerostat destroyed in Iraq drone strike",
-          "url": "https://aa.com.tr/en/us-israel-iran-war/iran-s-revolutionary-guards-claim-us-surveillance-aerostat-destroyed-in-iraq-drone-strike/4049021",
-          "date": "2026-09-06T19:15:00.000Z",
-          "source": "aa.com.tr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "US sanctions Iraqi paramilitary group Kataib Hezbollah",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iraqi-paramilitary-group-kataib-hezbollah",
           "date": "2026-09-11T00:04:45.000Z",
@@ -27686,30 +27640,173 @@
             "label": "Bericht"
           },
           "score": 8
+        }
+      ],
+      "itemCount": 22
+    },
+    {
+      "id": "south-sudan",
+      "name": "Südsudan",
+      "nameEn": "South Sudan",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "S. Sudan"
+      ],
+      "lat": 7.5,
+      "lon": 30.5,
+      "tier": "high",
+      "since": "2013 / Krise 2025",
+      "parties": [
+        "Regierung (Kiir/SPLM)",
+        "SPLM-IO (Machar)",
+        "White Army",
+        "Milizen"
+      ],
+      "background": "Das Friedensabkommen von 2018 steht vor dem Kollaps: Festsetzung Machars, Luftangriffe in Upper Nile und Kämpfe mit der White Army.",
+      "hotspots": [
+        "Upper Nile",
+        "Nasir",
+        "Juba",
+        "Jonglei"
+      ],
+      "activity": 4,
+      "severity": 40,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "SSD",
+      "extraCountries": [
+        "SDN"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "South Sudan: Human Cost of Violence in South Sudan 'Continues to Grow'",
+          "url": "https://allafrica.com/stories/202609110003.html",
+          "date": "2026-09-11T04:35:30.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[UN News] Independent human rights investigators voiced deep concern over growing risks to both civilians and South Sudan's political transition following their latest fact-finding mission to the world's youngest nation - their 14th in a decade.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
         },
         {
-          "title": "IRGC Quds Force said to order Iraqi militias to reject disarmament",
-          "url": "https://www.foxnews.com/world/us-backed-effort-disarm-iraqs-iran-linked-militias-hits-setback-experts-say",
-          "date": "2026-09-06T18:45:00.000Z",
+          "title": "Human cost of violence in South Sudan ‘continues to grow’",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168307",
+          "date": "2026-09-10T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Independent human rights investigators voiced deep concern over growing risks to both civilians and South Sudan’s political transition following their latest fact-finding mission to the world’s youngest nation – their 14th in a decade.&nbsp;",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "UN rights body warns South Sudan elections could fuel violence",
+          "url": "https://www.radiotamazuj.org/en/news/article/un-rights-body-warns-south-sudan-elections-could-fuel-violence",
+          "date": "2026-09-10T11:45:00.000Z",
+          "source": "radiotamazuj.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "venezuela",
+      "name": "Venezuela / Essequibo",
+      "nameEn": "Venezuela & Essequibo",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Venezuela",
+        "Guyana"
+      ],
+      "lat": 7,
+      "lon": -63,
+      "tier": "high",
+      "since": "2023 / Zuspitzung 2025",
+      "parties": [
+        "Venezuela (Maduro)",
+        "Guyana",
+        "USA",
+        "Opposition"
+      ],
+      "background": "Gebietsstreit um Essequibo und massiver militärischer Druck der USA in der Karibik nach der umstrittenen Wahl 2024.",
+      "hotspots": [
+        "Essequibo",
+        "Karibik",
+        "Caracas"
+      ],
+      "activity": 2,
+      "severity": 39,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "VEN",
+      "extraCountries": [
+        "GUY"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "Trump official reveals how 30 - minute military op unlocked Venezuela oil windfall",
+          "url": "https://www.foxnews.com/politics/top-trump-official-reveals-how-30-minute-military-op-unlocked-venezuela-oil-windfall",
+          "date": "2026-09-11T02:00:00.000Z",
           "source": "foxnews.com",
           "sourceType": "news",
           "summary": "",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 8
+          "score": 11
         }
       ],
-      "itemCount": 22
+      "itemCount": 1
     },
     {
       "id": "turkey-pkk",
