@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T14:33:22.769Z",
-  "durationSec": 369,
+  "generatedAt": "2026-09-13T15:34:22.573Z",
+  "durationSec": 411,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 23,
+        "count": 24,
         "error": null
       },
       {
@@ -114,12 +114,16 @@
       }
     ],
     "gdelt": {
-      "ok": 4,
-      "failed": 7,
+      "ok": 1,
+      "failed": 10,
       "skipped": 5,
       "errors": [
         {
           "id": "myanmar",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "sahel-mali",
           "error": "HTTP 429"
         },
         {
@@ -131,20 +135,28 @@
           "error": "HTTP 429"
         },
         {
-          "id": "taiwan-strait",
+          "id": "drc-m23",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "colombia",
           "error": "fetch failed"
         },
         {
-          "id": "cameroon",
+          "id": "somalia",
           "error": "fetch failed"
         },
         {
-          "id": "thailand-cambodia",
+          "id": "mozambique",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "ukraine-russia",
           "error": "fetch failed"
         },
         {
-          "id": "car",
-          "error": "fetch failed"
+          "id": "armenia-azerbaijan",
+          "error": "GDELT gedrosselt"
         }
       ]
     },
@@ -152,8 +164,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1157,
-    "newArticles": 6
+    "articles": 1161,
+    "newArticles": 8
   },
   "conflicts": [
     {
@@ -185,13 +197,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 17
+          "count": 18
         },
         {
           "key": "talks",
@@ -242,8 +254,8 @@
             30.448,
             50.29
           ],
-          "count": 13,
-          "newCount": 0,
+          "count": 14,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -320,6 +332,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Russian drone hits Kyiv-Warsaw passenger train near Polish border",
+          "url": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
+          "date": "2026-09-13T14:40:42.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "No casualties reported as Ukraine’s foreign minister says ‘Putin’s terror knocking directly on doors of EU and Nato’ A passenger train travelling from Kyiv to Warsaw was hit by a Russian drone two kilometres from the Polish border in an attack that Ukraine’s foreign minister described as “Putin’s terror knocking directly on the doors of the EU and Nato”. Overnight attacks across Ukraine involving ",
+          "isNew": true,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 34
+        },
         {
           "title": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
           "url": "https://www.aljazeera.com/news/2026/9/13/ukraine-drone-strikes-kill-four-as-russia-attacks-close-to-poland-border?traffic_source=rss",
@@ -958,27 +1001,6 @@
           "score": 18
         },
         {
-          "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
-          "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
-          "date": "2026-09-10T15:12:08.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Part of Dmitry Donskoy’s right hand sent to ‘spiritually strengthen’ soldiers The Russian Orthodox church has sent a fragment of a medieval warrior prince’s remains to troops fighting in Ukraine, saying the relic would “spiritually strengthen” soldiers and help them achieve victory. A reliquary containing part of the right hand of Dmitry Donskoy, the 14th-century prince revered in Russia for his v",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Canada offers air defense support for Ukraine as Zelenskyy visits",
           "url": "https://www.theguardian.com/world/2026/sep/10/zelenskyy-canada-visit",
           "date": "2026-09-10T20:35:06.000Z",
@@ -998,6 +1020,27 @@
             "label": "Drohnenangriff"
           },
           "score": 16
+        },
+        {
+          "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
+          "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
+          "date": "2026-09-10T15:12:08.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Part of Dmitry Donskoy’s right hand sent to ‘spiritually strengthen’ soldiers The Russian Orthodox church has sent a fragment of a medieval warrior prince’s remains to troops fighting in Ukraine, saying the relic would “spiritually strengthen” soldiers and help them achieve victory. A reliquary containing part of the right hand of Dmitry Donskoy, the 14th-century prince revered in Russia for his v",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Russia new shelling tactics deepen suffering in Ukraine - Grenada Chronicle – Daily Grenada And Caribbean News",
@@ -2060,7 +2103,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "ترمپ: مانع اصلی پایان جنگ، اختلاف میان پوتین و زلنسکی است",
@@ -2081,10 +2124,10 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 9
+          "score": 8
         }
       ],
-      "itemCount": 73
+      "itemCount": 74
     },
     {
       "id": "gaza",
@@ -2113,7 +2156,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -2282,27 +2325,6 @@
           "score": 26
         },
         {
-          "title": "Israel launches new air attacks on southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-new-air-attacks-lebanons-nabatieh",
-          "date": "2026-09-13T09:33:01.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel launches new air attacks on southern Lebanon The Israeli military launched new air strikes on Sunday near al-Dabsha Hill, on the outskirts of the Nabatieh district in southern Lebanon, NNA is reporting. The Lebanese news agency said Israeli forces hit the area twice in less than 30 minutes. Al Jazeera also reported strikes targeting southern Lebanon’s Kfar Tebnit.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
           "title": "Several Palestinians detained, two injured during raids by Israeli forces, settlers",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-detained-two-injured-during-raids-israeli-forces",
           "date": "2026-09-13T06:45:33.000Z",
@@ -2341,6 +2363,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 23
+        },
+        {
+          "title": "Israel launches new air attacks on southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-new-air-attacks-lebanons-nabatieh",
+          "date": "2026-09-13T09:33:01.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel launches new air attacks on southern Lebanon The Israeli military launched new air strikes on Sunday near al-Dabsha Hill, on the outskirts of the Nabatieh district in southern Lebanon, NNA is reporting. The Lebanese news agency said Israeli forces hit the area twice in less than 30 minutes. Al Jazeera also reported strikes targeting southern Lebanon’s Kfar Tebnit.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 23
         },
@@ -2408,34 +2451,13 @@
           "score": 22
         },
         {
-          "title": "Israeli attack wounds nine Palestinians in southern Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-wounds-nine-palestinians-southern-gaza",
-          "date": "2026-09-12T14:55:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli attack wounds nine Palestinians in southern Gaza At least nine Palestinians, including children, were wounded in an Israeli military attack on Khan Younis in the southern Gaza Strip, the Palestinian news agency Wafa reported.&nbsp; The injured were taken to the Palestine Red Crescent Society’s al-Mawasi field hospital for treatment, the report said.&nbsp; More than 174,682 Palestinians hav",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war",
           "url": "https://www.middleeasteye.net/news/tucker-carlson-says-israel-sought-regional-hegemony-weakening-gulf-states-through-iran-war",
           "date": "2026-09-13T13:32:13.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war Submitted by MEE staff on Sun, 09/13/2026 - 13:12 The conservative commentator&nbsp;claims Israel’s strategic goal was to expand its influence while weakening Iran, the Gulf and the US military presence Tucker Carlson speaks at Turning Point USA’s AmericaFest 2025 at the Phoenix Convention Center in Phoen",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2498,6 +2520,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli attack wounds nine Palestinians in southern Gaza",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-wounds-nine-palestinians-southern-gaza",
+          "date": "2026-09-12T14:55:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli attack wounds nine Palestinians in southern Gaza At least nine Palestinians, including children, were wounded in an Israeli military attack on Khan Younis in the southern Gaza Strip, the Palestinian news agency Wafa reported.&nbsp; The injured were taken to the Palestine Red Crescent Society’s al-Mawasi field hospital for treatment, the report said.&nbsp; More than 174,682 Palestinians hav",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 18
         },
@@ -3138,27 +3181,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iranian official tells Al Jazeera IAEA ruling was imposed by US and Israel",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/09-12-clip-iranian-fm-spox-aj?traffic_source=rss",
-          "date": "2026-09-12T14:49:48.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iranian official tells Al Jazeera an IAEA resolution on Tehran’s nuclear safeguards was ‘imposed’ by the US and Israel",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -3906,6 +3928,27 @@
             "label": "Opfer"
           },
           "score": 15
+        },
+        {
+          "title": "Iranian official tells Al Jazeera IAEA ruling was imposed by US and Israel",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/09-12-clip-iranian-fm-spox-aj?traffic_source=rss",
+          "date": "2026-09-12T14:49:48.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iranian official tells Al Jazeera an IAEA resolution on Tehran’s nuclear safeguards was ‘imposed’ by the US and Israel",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         }
       ],
       "itemCount": 80
@@ -4183,27 +4226,6 @@
           "score": 15
         },
         {
-          "title": "The united kingdom appeases terrorists with its West Bank boycott",
-          "url": "https://nypost.com/2026/09/12/opinion/the-uk-appeases-terrorists-with-its-west-bank-boycott/",
-          "date": "2026-09-12T15:00:00.000Z",
-          "source": "nypost.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "Palestinian child misses first day of school due to settler siege",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/palestinian-child-misses-first-day-of-school-due-to-settler-siege?traffic_source=rss",
           "date": "2026-09-09T17:32:46.000Z",
@@ -4412,6 +4434,27 @@
             "label": "Gefechte"
           },
           "score": 15
+        },
+        {
+          "title": "The united kingdom appeases terrorists with its West Bank boycott",
+          "url": "https://nypost.com/2026/09/12/opinion/the-uk-appeases-terrorists-with-its-west-bank-boycott/",
+          "date": "2026-09-12T15:00:00.000Z",
+          "source": "nypost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Condemn violence by Israeli settlers in West Bank | Editorial",
@@ -5805,13 +5848,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 1,
       "signals": [
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 28
+          "count": 29
         },
         {
           "key": "escalation",
@@ -5823,7 +5866,7 @@
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 12
+          "count": 13
         },
         {
           "key": "airstrike",
@@ -5861,7 +5904,7 @@
             15.334
           ],
           "count": 4,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "drone",
             "icon": "🛩️",
@@ -5939,6 +5982,27 @@
       ],
       "items": [
         {
+          "title": "More than 2,000 Yemenis flee to Djibouti amid Houthi advances",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/more-than-2000-yemenis-flee-to-djibouti-amid-houthi-advances?traffic_source=rss",
+          "date": "2026-09-13T14:38:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Escalating fighting along Yemen’s western coast has driven more than 2,000 Yemenis across the Red Sea to Djibouti.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 30
+        },
+        {
           "title": "Houthis claim attack on Saudi base as fighting flares with Yemeni forces",
           "url": "https://www.theguardian.com/world/2026/sep/13/houthis-claim-attack-on-saudi-base-as-fighting-flares-with-yemeni-forces",
           "date": "2026-09-13T11:26:06.000Z",
@@ -5956,37 +6020,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 30
-        },
-        {
-          "title": "Yemen: Houthi offensive triggers new displacement crisis",
-          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
-          "date": "2026-09-13T09:18:55.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
-          "isNew": false,
-          "region": {
-            "id": "YEM-3510",
-            "name": "'Adan",
-            "nameDe": "Gouvernement Adan",
-            "type": "Governorate",
-            "anchor": [
-              44.857,
-              12.826
-            ],
-            "matched": "Aden"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
           },
           "score": 30
         },
@@ -6064,13 +6097,44 @@
           "score": 27
         },
         {
+          "title": "Yemen: Houthi offensive triggers new displacement crisis",
+          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
+          "date": "2026-09-13T09:18:55.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
+          "isNew": false,
+          "region": {
+            "id": "YEM-3510",
+            "name": "'Adan",
+            "nameDe": "Gouvernement Adan",
+            "type": "Governorate",
+            "anchor": [
+              44.857,
+              12.826
+            ],
+            "matched": "Aden"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 27
+        },
+        {
           "title": "Renewed fighting worsens Yemen’s humanitarian crisis",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/renewed-fighting-worsens-yemens-humanitarian-crisis?traffic_source=rss",
           "date": "2026-09-13T13:26:45.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Renewed fighting worsens Yemen’s humanitarian crisis",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -6196,7 +6260,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Iran-backed Houthi attacks on Saudi Arabia have intensified as fighting spreads around the Bab el-Mandeb Strait, a vital chokepoint for global trade and oil shipments. On FRANCE 24, Sanaa Center for Strategic Studies chairman Farea Al-Muslimi argued this could mark \"the last round in Yemen's current war\", unpacking the Houthis' ties with Iran and the growing pressure on Washington as the group tar",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "YEM-3496",
             "name": "Sanaa",
@@ -6944,27 +7008,6 @@
           "score": 18
         },
         {
-          "title": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-have-their-own-issues-pezeshkian-says-iran-not-war-saudi-arabia",
-          "date": "2026-09-13T05:18:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia Iranian President Masoud Pezeshkian says Tehran is “not at war with Saudi Arabia”, as tensions rise over Houthi attacks on the kingdom, Al Jazeera reported. Pezeshkian said the Houthis have “their own issues”, distancing Iran from the group’s actions. Houthis&nbsp;claimed they carried out a strike targeting a milita",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 16
-        },
-        {
           "title": "Iran war: Saudi-Houthi escalation intensifies Yemen conflict",
           "url": "https://www.dw.com/en/iran-war-saudi-houthi-escalation-intensifies-yemen-conflict/a-79226627?maca=en-rss-en-world-4025-rdf",
           "date": "2026-09-11T11:52:00.000Z",
@@ -6982,6 +7025,27 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-have-their-own-issues-pezeshkian-says-iran-not-war-saudi-arabia",
+          "date": "2026-09-13T05:18:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia Iranian President Masoud Pezeshkian says Tehran is “not at war with Saudi Arabia”, as tensions rise over Houthi attacks on the kingdom, Al Jazeera reported. Pezeshkian said the Houthis have “their own issues”, distancing Iran from the group’s actions. Houthis&nbsp;claimed they carried out a strike targeting a milita",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 15
         },
@@ -7686,27 +7750,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "Red Cross calls for 'urgent steps' to de-escalate Yemen-Saudi fighting",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/red-cross-calls-urgent-steps-de-escalate-yemen-saudi-fighting",
-          "date": "2026-09-08T16:52:15.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Red Cross calls for 'urgent steps' to de-escalate Yemen-Saudi fighting The International Committee of the Red Cross (ICRC) called on Tuesday for an urgent de-escalation of hostilities between Yemen's Houthis and Saudi Arabia, warning they risked expanding the Middle East conflict. ICRC President Mirjana Spoljaric Egger said in a statement that \"urgent steps\" were needed, warning that if hostilitie",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -7737,7 +7780,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 3,
+      "newCount": 1,
       "signals": [
         {
           "key": "offensive",
@@ -7786,8 +7829,8 @@
             51.831,
             35.568
           ],
-          "count": 18,
-          "newCount": 1,
+          "count": 17,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -7988,44 +8031,13 @@
           "score": 22
         },
         {
-          "title": "Iran used Chinese satellite images for attack on US base in Jordan, says report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-used-chinese-satellite-images-attack-us-base-jordan-says-report",
-          "date": "2026-09-12T15:27:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran used Chinese satellite images for attack on US base in Jordan, says report Iran &nbsp;used high-resolution satellite imagery provided by&nbsp; Chinese&nbsp; entities to carry out its attack on an&nbsp; American&nbsp; base in&nbsp; Jordan&nbsp; that killed three US troops in July, the Wall Street Journal&nbsp; reported . Tehran received high-resolution satellite images of Muwaffaq Salti Air Ba",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Iran's economic ties to Dubai hard to break despite Middle East tensions",
           "url": "https://www.dawn.com/news/2029636/irans-economic-ties-to-dubai-hard-to-break-despite-middle-east-tensions",
-          "date": "2026-09-13T13:47:10.000Z",
+          "date": "2026-09-13T14:29:20.000Z",
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "In the markets of old Dubai, saffron, cumin, pistachios and almonds from Iran still fill the stalls, as if the two shores of the Gulf were not separated by the ongoing regional conflict. Last month, the United Arab Emirates (UAE) announced the suspension of trade and financial exchanges with Tehran, which has responded to American attacks by targeting the US-allied country and tightening its grip ",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -8119,7 +8131,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Iran-backed Houthi attacks on Saudi Arabia have intensified as fighting spreads around the Bab el-Mandeb Strait, a vital chokepoint for global trade and oil shipments. On FRANCE 24, Sanaa Center for Strategic Studies chairman Farea Al-Muslimi argued this could mark \"the last round in Yemen's current war\", unpacking the Houthis' ties with Iran and the growing pressure on Washington as the group tar",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -8134,13 +8146,34 @@
           "score": 19
         },
         {
+          "title": "Trump reiterates that he sees Iran war ending after US midterm elections",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-reiterates-he-sees-iran-war-ending-after-us-midterm-elections",
+          "date": "2026-09-13T15:17:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Trump reiterates that he sees Iran war ending after US midterm elections US President Donald Trump reiterated on Sunday that he expected the&nbsp;Iran&nbsp;war to end this year, possibly just after midterm elections due in the United States in November, resulting in a drop in oil prices. \"Iran&nbsp;will end right after - maybe before - but it'll end right after the midterms. Gasoline's going to dr",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 19
+        },
+        {
           "title": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war",
           "url": "https://www.middleeasteye.net/news/tucker-carlson-says-israel-sought-regional-hegemony-weakening-gulf-states-through-iran-war",
           "date": "2026-09-13T13:32:13.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war Submitted by MEE staff on Sun, 09/13/2026 - 13:12 The conservative commentator&nbsp;claims Israel’s strategic goal was to expand its influence while weakening Iran, the Gulf and the US military presence Tucker Carlson speaks at Turning Point USA’s AmericaFest 2025 at the Phoenix Convention Center in Phoen",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -8155,12 +8188,12 @@
           "score": 19
         },
         {
-          "title": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-have-their-own-issues-pezeshkian-says-iran-not-war-saudi-arabia",
-          "date": "2026-09-13T05:18:53.000Z",
+          "title": "Iran used Chinese satellite images for attack on US base in Jordan, says report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-used-chinese-satellite-images-attack-us-base-jordan-says-report",
+          "date": "2026-09-12T15:27:30.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia Iranian President Masoud Pezeshkian says Tehran is “not at war with Saudi Arabia”, as tensions rise over Houthi attacks on the kingdom, Al Jazeera reported. Pezeshkian said the Houthis have “their own issues”, distancing Iran from the group’s actions. Houthis&nbsp;claimed they carried out a strike targeting a milita",
+          "summary": "Iran used Chinese satellite images for attack on US base in Jordan, says report Iran &nbsp;used high-resolution satellite imagery provided by&nbsp; Chinese&nbsp; entities to carry out its attack on an&nbsp; American&nbsp; base in&nbsp; Jordan&nbsp; that killed three US troops in July, the Wall Street Journal&nbsp; reported . Tehran received high-resolution satellite images of Muwaffaq Salti Air Ba",
           "isNew": false,
           "region": {
             "id": "IRN-3216",
@@ -8174,9 +8207,9 @@
             "matched": "Tehran"
           },
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
             "type": "clash",
@@ -8542,6 +8575,37 @@
           "score": 15
         },
         {
+          "title": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-have-their-own-issues-pezeshkian-says-iran-not-war-saudi-arabia",
+          "date": "2026-09-13T05:18:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia Iranian President Masoud Pezeshkian says Tehran is “not at war with Saudi Arabia”, as tensions rise over Houthi attacks on the kingdom, Al Jazeera reported. Pezeshkian said the Houthis have “their own issues”, distancing Iran from the group’s actions. Houthis&nbsp;claimed they carried out a strike targeting a milita",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
           "title": "Iran’s Pezeshkian: ‘We are not at war with Saudi Arabia’",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/13-09-clip-pezeshkian-iran-not-at-war-with-saudis-ir?traffic_source=rss",
           "date": "2026-09-13T01:32:56.000Z",
@@ -8747,58 +8811,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "I watched the twin towers burn. Now the US is repeating its worst mistakes in Iran",
-          "url": "https://www.middleeasteye.net/opinion/9-11-25-years-us-iran-war-same-mistakes",
-          "date": "2026-09-12T14:45:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "I watched the twin towers burn. Now the US is repeating its worst mistakes in Iran Submitted by Marco Carnelos on Sat, 09/12/2026 - 13:56 Twenty-five years of invasions and unconditional support for Israel have deepened the grievances behind 9/11 and left America less secure US and Israeli flags lie amid shattered glass at a school in Lamerd, Iran, damaged in a strike on 28 February 2026, pictured",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iranian official tells Al Jazeera IAEA ruling was imposed by US and Israel",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/09-12-clip-iranian-fm-spox-aj?traffic_source=rss",
-          "date": "2026-09-12T14:49:48.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iranian official tells Al Jazeera an IAEA resolution on Tehran’s nuclear safeguards was ‘imposed’ by the US and Israel",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -9729,6 +9741,27 @@
             "label": "Bodenoffensive"
           },
           "score": 12
+        },
+        {
+          "title": "I watched the twin towers burn. Now the US is repeating its worst mistakes in Iran",
+          "url": "https://www.middleeasteye.net/opinion/9-11-25-years-us-iran-war-same-mistakes",
+          "date": "2026-09-12T14:45:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "I watched the twin towers burn. Now the US is repeating its worst mistakes in Iran Submitted by Marco Carnelos on Sat, 09/12/2026 - 13:56 Twenty-five years of invasions and unconditional support for Israel have deepened the grievances behind 9/11 and left America less secure US and Israeli flags lie amid shattered glass at a school in Lamerd, Iran, damaged in a strike on 28 February 2026, pictured",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         }
       ],
       "itemCount": 80
@@ -10849,9 +10882,9 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 85,
-      "severity": 64,
-      "newCount": 0,
+      "activity": 88,
+      "severity": 65,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -10892,6 +10925,23 @@
       ],
       "regions": [
         {
+          "id": "PAK-1108",
+          "name": "Balochistan",
+          "nameDe": "Belutschistan",
+          "type": "Province",
+          "anchor": [
+            65.869,
+            28.318
+          ],
+          "count": 5,
+          "newCount": 1,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        },
+        {
           "id": "PAK-1110",
           "name": "Islamabad Capital Territory",
           "nameDe": "Hauptstadtterritorium Islamabad",
@@ -10901,23 +10951,6 @@
             33.66
           ],
           "count": 5,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        },
-        {
-          "id": "PAK-1108",
-          "name": "Balochistan",
-          "nameDe": "Belutschistan",
-          "type": "Province",
-          "anchor": [
-            65.869,
-            28.318
-          ],
-          "count": 4,
           "newCount": 0,
           "event": {
             "type": "clash",
@@ -10944,6 +10977,37 @@
         }
       ],
       "items": [
+        {
+          "title": "4 miners die in coal mine gas explosion in Balochistan's Harnai: state media",
+          "url": "https://www.dawn.com/news/2029645/4-miners-die-in-coal-mine-gas-explosion-in-balochistans-harnai-state-media",
+          "date": "2026-09-13T14:41:40.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Four miners died while another five were injured after a gas explosion at a coal mine in Balochistan’s Harnai district, state-run Radio Pakistan reported on Sunday. The army completed a rescue operation at the incident site, where miners were trapped following a gas explosion, the report said. “Five miners trapped inside the coal mine were rescued alive through a timely rescue operation by the Pak",
+          "isNew": true,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 27
+        },
         {
           "title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
           "url": "https://www.theguardian.com/world/2026/sep/12/saudi-arabia-shuts-down-oil-pipeline-blaming-drones-from-iraq",
@@ -11811,7 +11875,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "'Provocative and blatant violation': Syria condemns Netanyahu's entry into its territory",
@@ -12326,7 +12390,7 @@
           "score": 2
         }
       ],
-      "itemCount": 61
+      "itemCount": 62
     },
     {
       "id": "nigeria",
@@ -12355,7 +12419,7 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 83,
+      "activity": 82,
       "severity": 63,
       "newCount": 0,
       "signals": [
@@ -12580,7 +12644,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Xenophobia: Over 30 Nigerians killed by South African police since 2022 – Ambassador",
@@ -12632,7 +12696,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 20
+          "score": 18
         },
         {
           "title": "Air strikes kill over 18 terrorists, destroy logistics hubs in Borno – Military",
@@ -12809,7 +12873,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Police, ADC supporters clash in Kaduna as 2027 campaigns begin",
@@ -13718,6 +13782,37 @@
           "score": 9
         },
         {
+          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
+          "url": "https://allafrica.com/stories/202609100096.html",
+          "date": "2026-09-10T06:47:20.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
+          "isNew": false,
+          "region": {
+            "id": "NGA-3470",
+            "name": "Federal Capital Territory",
+            "nameDe": "Hauptstadtterritorium",
+            "type": "State",
+            "anchor": [
+              7.143,
+              8.861
+            ],
+            "matched": "Abuja"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 9
+        },
+        {
           "title": "Diphtheria deaths rise to 27 as suspected cases hit 303 in Plateau",
           "url": "https://www.premiumtimesng.com/health/health-news/908605-diphtheria-deaths-rise-to-27-as-suspected-cases-hit-303-in-plateau.html",
           "date": "2026-09-10T11:37:20.000Z",
@@ -13776,37 +13871,6 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
-          },
-          "score": 8
-        },
-        {
-          "title": "Nigeria: Army Redeploys Theatre Commander Abubabar, 14 Other Generals in Minor Shake-Up",
-          "url": "https://allafrica.com/stories/202609100096.html",
-          "date": "2026-09-10T06:47:20.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[This Day] Abuja -- The Nigerian Army has redeployed the Theatre Commander of the Joint Task Force North-East, Operation Hadin Kai, Major General Abdulsalam Abubakar, and 14 other generals in a minor shake-up as part of efforts to enhance operational effectiveness, strengthen leadership and align the service's command structure with Nigeria's evolving security environment.",
-          "isNew": false,
-          "region": {
-            "id": "NGA-3470",
-            "name": "Federal Capital Territory",
-            "nameDe": "Hauptstadtterritorium",
-            "type": "State",
-            "anchor": [
-              7.143,
-              8.861
-            ],
-            "matched": "Abuja"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 8
         },
@@ -15057,7 +15121,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 27
+          "score": 24
         },
         {
           "title": "Israeli forces carry out explosion in Lebanon's Khiam town",
@@ -16180,6 +16244,147 @@
       "itemCount": 49
     },
     {
+      "id": "burkina-faso",
+      "name": "Burkina Faso",
+      "nameEn": "Burkina Faso",
+      "region": "Afrika (Sahel)",
+      "countries": [
+        "Burkina Faso"
+      ],
+      "lat": 12.6,
+      "lon": -1.7,
+      "tier": "war",
+      "since": "2015",
+      "parties": [
+        "Militärregierung (Traoré)",
+        "JNIM",
+        "IS-Sahel",
+        "VDP-Milizen"
+      ],
+      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
+      "hotspots": [
+        "Djibo",
+        "Sahel-Region",
+        "Est",
+        "Ouagadougou"
+      ],
+      "activity": 15,
+      "severity": 59,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 3
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "BFA",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "More than 2,000 Yemenis flee to Djibouti amid Houthi advances",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/more-than-2000-yemenis-flee-to-djibouti-amid-houthi-advances?traffic_source=rss",
+          "date": "2026-09-13T14:38:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Escalating fighting along Yemen’s western coast has driven more than 2,000 Yemenis across the Red Sea to Djibouti.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 26
+        },
+        {
+          "title": "Over 2,000 flee Yemen fighting to Djibouti",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/over-2000-flee-yemen-fighting-djibouti",
+          "date": "2026-09-13T11:02:40.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Over 2,000 flee Yemen fighting to Djibouti “More than 2,000 people fleeing hostilities in Yemen have arrived on Djibouti’s shores,” the International Organization for Migration (IOM) said in a social media post on Sunday. The UN’s migration agency added that in Obock, a city only about 20km (12 miles) across the water from the Yemeni coast,&nbsp;it is providing immediate assistance to those arrivi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/1400-yemeni-refugees-arrive-djibouti-24-hours-minister-says",
+          "date": "2026-09-13T02:26:56.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says At least 1400 refugees fleeing Yemen have arrived in Djibouti, according to Djibouti’s minister of economy and finance, Ilyas Moussa Dawaleh. At least 46,000 people have been displaced in Yemen since fighting escalated last week, the UN’s International Organization for Migration (IOM) said on Friday.&nbsp;Since July, at least 76,00",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 15
+        },
+        {
+          "title": "JNIM jihadists step up incursions into northern Benin",
+          "url": "https://www.france24.com/en/tv-shows/the-observers/20260909-jnim-jihadists-step-up-incursions-northern-benin",
+          "date": "2026-09-09T10:00:18.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Al Qaeda affiliate JNIM has been intensifying its activities in Benin since 2022. The country serves as a transit corridor between the areas of operation of the group, which is well established in Mali, Niger and Burkina Faso. Two nature reserves have become logistical hubs for the jihadist fighters. Benin's army is striving to hold the line.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 4
+    },
+    {
       "id": "sahel-mali",
       "name": "Mali / Sahel",
       "nameEn": "Mali",
@@ -16503,120 +16708,6 @@
       "itemCount": 13
     },
     {
-      "id": "burkina-faso",
-      "name": "Burkina Faso",
-      "nameEn": "Burkina Faso",
-      "region": "Afrika (Sahel)",
-      "countries": [
-        "Burkina Faso"
-      ],
-      "lat": 12.6,
-      "lon": -1.7,
-      "tier": "war",
-      "since": "2015",
-      "parties": [
-        "Militärregierung (Traoré)",
-        "JNIM",
-        "IS-Sahel",
-        "VDP-Milizen"
-      ],
-      "background": "Einer der tödlichsten Schauplätze des globalen Dschihadismus; große Landesteile außerhalb staatlicher Kontrolle, wiederholte Massaker und Putschversuche.",
-      "hotspots": [
-        "Djibo",
-        "Sahel-Region",
-        "Est",
-        "Ouagadougou"
-      ],
-      "activity": 10,
-      "severity": 58,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "BFA",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Over 2,000 flee Yemen fighting to Djibouti",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/over-2000-flee-yemen-fighting-djibouti",
-          "date": "2026-09-13T11:02:40.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Over 2,000 flee Yemen fighting to Djibouti “More than 2,000 people fleeing hostilities in Yemen have arrived on Djibouti’s shores,” the International Organization for Migration (IOM) said in a social media post on Sunday. The UN’s migration agency added that in Obock, a city only about 20km (12 miles) across the water from the Yemeni coast,&nbsp;it is providing immediate assistance to those arrivi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 26
-        },
-        {
-          "title": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/1400-yemeni-refugees-arrive-djibouti-24-hours-minister-says",
-          "date": "2026-09-13T02:26:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says At least 1400 refugees fleeing Yemen have arrived in Djibouti, according to Djibouti’s minister of economy and finance, Ilyas Moussa Dawaleh. At least 46,000 people have been displaced in Yemen since fighting escalated last week, the UN’s International Organization for Migration (IOM) said on Friday.&nbsp;Since July, at least 76,00",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 15
-        },
-        {
-          "title": "JNIM jihadists step up incursions into northern Benin",
-          "url": "https://www.france24.com/en/tv-shows/the-observers/20260909-jnim-jihadists-step-up-incursions-northern-benin",
-          "date": "2026-09-09T10:00:18.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Al Qaeda affiliate JNIM has been intensifying its activities in Benin since 2022. The country serves as a transit corridor between the areas of operation of the group, which is well established in Mali, Niger and Burkina Faso. Two nature reserves have become logistical hubs for the jihadist fighters. Benin's army is striving to hold the line.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 3
-    },
-    {
       "id": "niger",
       "name": "Niger",
       "nameEn": "Niger",
@@ -16641,7 +16732,7 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 62,
+      "activity": 61,
       "severity": 57,
       "newCount": 0,
       "signals": [
@@ -16888,27 +16979,6 @@
           "score": 22
         },
         {
-          "title": "Niger military government reshuffles army command weeks after deadly mutiny",
-          "url": "https://www.aljazeera.com/news/2026/9/13/niger-military-government-reshuffles-army-command-weeks-after-deadly-mutiny?traffic_source=rss",
-          "date": "2026-09-13T08:54:32.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "New chief of staff appointed after failed mutiny tested military rulers' grip on power.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Xenophobia: Two more Nigerians killed in South Africa, toll rises to seven",
           "url": "https://www.premiumtimesng.com/foreign/908905-xenophobia-two-more-nigerians-killed-in-south-africa-toll-rises-to-seven.html",
           "date": "2026-09-12T06:12:58.000Z",
@@ -16951,6 +17021,27 @@
           "score": 18
         },
         {
+          "title": "Niger military government reshuffles army command weeks after deadly mutiny",
+          "url": "https://www.aljazeera.com/news/2026/9/13/niger-military-government-reshuffles-army-command-weeks-after-deadly-mutiny?traffic_source=rss",
+          "date": "2026-09-13T08:54:32.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "New chief of staff appointed after failed mutiny tested military rulers' grip on power.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "Nigeria: 3 Vigilantes Killed in Kaduna",
           "url": "https://allafrica.com/stories/202609100533.html",
           "date": "2026-09-10T15:20:35.000Z",
@@ -16979,7 +17070,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Nigeria: Nigeria Condemns Houthi Attack On Saudi Arabia",
@@ -17691,12 +17782,12 @@
           "score": 11
         },
         {
-          "title": "Nigeria: Nigerian Army Redeploys Top Generals, Appoints New Person to Lead Boko Haram War",
-          "url": "https://allafrica.com/stories/202609090510.html",
-          "date": "2026-09-09T14:54:56.000Z",
+          "title": "Nigeria: Army Chief Removes Theatre Commander, Redeploys Top Officers",
+          "url": "https://allafrica.com/stories/202609100360.html",
+          "date": "2026-09-10T11:39:29.000Z",
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
-          "summary": "[Premium Times] A Wednesday statement by army spokesperson Appolonia Anele said the deployments were approved by the Chief of Army Staff, Waidi Shaibu, a lieutenant general.",
+          "summary": "[Daily Trust] The Chief of Army Staff, Waidi Shaibu, a Lieutenant-General, on Wednesday, announced the redeployment of top military generals in a fresh shake-up to inject renewed vigour in the fight against insecurity.",
           "isNew": false,
           "region": null,
           "event": {
@@ -17712,12 +17803,12 @@
           "score": 9
         },
         {
-          "title": "Nigeria: Army Chief Removes Theatre Commander, Redeploys Top Officers",
-          "url": "https://allafrica.com/stories/202609100360.html",
-          "date": "2026-09-10T11:39:29.000Z",
+          "title": "Nigeria: Nigerian Army Redeploys Top Generals, Appoints New Person to Lead Boko Haram War",
+          "url": "https://allafrica.com/stories/202609090510.html",
+          "date": "2026-09-09T14:54:56.000Z",
           "source": "AllAfrica – Konflikte",
           "sourceType": "news",
-          "summary": "[Daily Trust] The Chief of Army Staff, Waidi Shaibu, a Lieutenant-General, on Wednesday, announced the redeployment of top military generals in a fresh shake-up to inject renewed vigour in the fight against insecurity.",
+          "summary": "[Premium Times] A Wednesday statement by army spokesperson Appolonia Anele said the deployments were approved by the Chief of Army Staff, Waidi Shaibu, a lieutenant general.",
           "isNew": false,
           "region": null,
           "event": {
@@ -17761,7 +17852,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 8
+          "score": 9
         },
         {
           "title": "Nigeria: Gunmen Kill 3 Vigilante Members in Kaduna",
@@ -18275,7 +18366,7 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 55,
+      "activity": 54,
       "severity": 55,
       "newCount": 0,
       "signals": [
@@ -18869,7 +18960,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Hospitality industry fears jobs at risk from plan to give mayors powers to impose ‘tourist tax’",
@@ -20178,27 +20269,6 @@
       ],
       "items": [
         {
-          "title": "Yemen: Houthi offensive triggers new displacement crisis",
-          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
-          "date": "2026-09-13T09:18:55.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 27
-        },
-        {
           "title": "Yemen: Fighting escalates around the Bab el-Mandeb Strait",
           "url": "https://www.france24.com/en/yemen-fighting-escalates-around-the-bab-el-mandeb-strait",
           "date": "2026-09-13T13:15:38.000Z",
@@ -20241,6 +20311,27 @@
           "score": 26
         },
         {
+          "title": "Yemen: Houthi offensive triggers new displacement crisis",
+          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
+          "date": "2026-09-13T09:18:55.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 24
+        },
+        {
           "title": "Soldiers arrest three suspects after 17-year-old was killed in Plateau",
           "url": "https://www.premiumtimesng.com/regional/north-central/909168-soldiers-arrest-three-suspects-after-17-year-old-was-killed-in-plateau.html",
           "date": "2026-09-13T07:46:39.000Z",
@@ -20259,7 +20350,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Iraq seizes drone-launching platform used for targeting Saudi oil pipeline",
@@ -20531,27 +20622,6 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
-          },
-          "score": 16
-        },
-        {
-          "title": "Burial of King Oyo takes place in Uganda as news anchor prepares for throne",
-          "url": "https://www.theguardian.com/world/2026/sep/12/burial-king-oyo-uganda",
-          "date": "2026-09-12T15:09:05.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Royal guards carry casket through streets of Fort Portal amid row over appointment of Edward Rukidi Kijanangoma Uganda’s King Oyo Nyimba Kabamba Iguru Rukidi IV, long the world’s youngest monarch, has been buried among the tombs of his royal forebears as ⁠his Tooro kingdom looked to put ⁠ a bitter succession battle behind ​it. Oyo’s appointed successor, the news anchor Edward Rukidi Kijanangoma, c",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 16
         },
@@ -21162,6 +21232,27 @@
             "label": "Verhandlungen"
           },
           "score": 13
+        },
+        {
+          "title": "Burial of King Oyo takes place in Uganda as news anchor prepares for throne",
+          "url": "https://www.theguardian.com/world/2026/sep/12/burial-king-oyo-uganda",
+          "date": "2026-09-12T15:09:05.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Royal guards carry casket through streets of Fort Portal amid row over appointment of Edward Rukidi Kijanangoma Uganda’s King Oyo Nyimba Kabamba Iguru Rukidi IV, long the world’s youngest monarch, has been buried among the tombs of his royal forebears as ⁠his Tooro kingdom looked to put ⁠ a bitter succession battle behind ​it. Oyo’s appointed successor, the news anchor Edward Rukidi Kijanangoma, c",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 12
         },
         {
           "title": "Nigeria: British Army Explains How Nigerians, Other Foreigners Can Join Military",
@@ -22293,6 +22384,444 @@
       "itemCount": 13
     },
     {
+      "id": "ethiopia",
+      "name": "Äthiopien",
+      "nameEn": "Ethiopia",
+      "region": "Afrika (Horn)",
+      "countries": [
+        "Ethiopia"
+      ],
+      "lat": 11.5,
+      "lon": 39,
+      "tier": "high",
+      "since": "2020 (Tigray) / Amhara seit 2023",
+      "parties": [
+        "Bundesregierung",
+        "Fano (Amhara)",
+        "OLA (Oromia)",
+        "TPLF/Tigray-Fraktionen",
+        "Eritrea"
+      ],
+      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
+      "hotspots": [
+        "Amhara",
+        "Oromia",
+        "Tigray",
+        "Afar",
+        "Assab"
+      ],
+      "activity": 10,
+      "severity": 42,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "ETH",
+      "extraCountries": [
+        "ERI",
+        "SOM"
+      ],
+      "regions": [
+        {
+          "id": "ETH-3110",
+          "name": "Tigray",
+          "nameDe": "Tigray",
+          "type": "Administrative State",
+          "anchor": [
+            38.442,
+            13.778
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          }
+        },
+        {
+          "id": "ETH-3109",
+          "name": "Amhara",
+          "nameDe": "Amhara",
+          "type": "Administrative State",
+          "anchor": [
+            38.048,
+            11.583
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "ETH-3133",
+          "name": "Addis Ababa",
+          "nameDe": "Addis Abeba",
+          "type": "Administrative State",
+          "anchor": [
+            38.786,
+            8.978
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Ethiopia: Fano Claims Capture of More Than 150 Ethiopian Soldiers in Amhara Clashes",
+          "url": "https://allafrica.com/stories/202609110509.html",
+          "date": "2026-09-11T15:55:32.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Amhara -- Ethiopia's Fano militia has claimed it captured more than 150 soldiers from the Ethiopian National Defence Force (ENDF) following heavy fighting in the Wadla-Delanta-Dawunt area of the Amhara region on September 8.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3109",
+            "name": "Amhara",
+            "nameDe": "Amhara",
+            "type": "Administrative State",
+            "anchor": [
+              38.048,
+              11.583
+            ],
+            "matched": "Amhara Region"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 28
+        },
+        {
+          "title": "Ethiopia: Amid Escalating Federal-Tigray Tensions, Debretsion Says Alliance Has Become 'Irreversible'",
+          "url": "https://allafrica.com/stories/202609100582.html",
+          "date": "2026-09-10T15:41:17.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Addis Standard] Addis Abeba -- Amid escalating tensions and renewed clashes between Ethiopia's federal forces and Tigrayan forces, Tigray Government President Debretsion Gebremichael (PhD) has said an alliance formed with other political and opposition forces has become institutionalized and \"irreversible,\" with its own leadership, plans and signed agreement, according to Weyin Media.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3133",
+            "name": "Addis Ababa",
+            "nameDe": "Addis Abeba",
+            "type": "Administrative State",
+            "anchor": [
+              38.786,
+              8.978
+            ],
+            "matched": "Addis Abeba"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ethiopia's Tigray rebels accuse govt of new drone strike",
+          "url": "https://www.france24.com/en/video/20260910-ethiopia-s-tigray-rebels-accuse-govt-of-new-drone-strike",
+          "date": "2026-09-10T11:23:38.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Rebel Tigrayan authorities accused Ethiopia of another drone strike in the country's northern region on Tuesday. The federal government has launched multiple drone strikes in Tigray in recent weeks and massed troops at the regional border, raising fears of a return to the civil war of 2020-2022 that killed some 600,000 people. FRANCE 24's Tom Canetti reports.",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3110",
+            "name": "Tigray",
+            "nameDe": "Tigray",
+            "type": "Administrative State",
+            "anchor": [
+              38.442,
+              13.778
+            ],
+            "matched": "Tigray"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ethiopia Expands Domestic Drone Production As Conflicts Persist Across Regions",
+          "url": "https://allafrica.com/stories/202609090282.html",
+          "date": "2026-09-09T13:00:00.000Z",
+          "source": "allafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ethiopia : Drone Strike Kills Three , Including Two - Year - Old Child , in Southeastern Tigray",
+          "url": "https://allafrica.com/stories/202609090028.html",
+          "date": "2026-09-09T06:45:00.000Z",
+          "source": "allafrica.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "ETH-3110",
+            "name": "Tigray",
+            "nameDe": "Tigray",
+            "type": "Administrative State",
+            "anchor": [
+              38.442,
+              13.778
+            ],
+            "matched": "Tigray"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "No military solution to conflict in Yemen, Eritrean foreign minister says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/no-military-solution-conflict-yemen-eritrean-foreign-minister-says",
+          "date": "2026-09-11T19:26:05.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "No military solution to conflict in Yemen, Eritrean foreign minister says There is no military solution to the conflict in Yemen, and foreign powers will not be able to “subdue” the Yemeni people, senior officials in Eritrea, the East African country whose waters border Yemen’s in the Bab el-Mandeb Strait, told Middle East Eye. “There is no military option in Yemen, which must be given a chance to",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Rearmed And Reckless : How Sudan New Arsenal Is Dragging Chad And Ethiopia Into Its War - OpEd",
+          "url": "https://www.eurasiareview.com/08092026-rearmed-and-reckless-how-sudans-new-arsenal-is-dragging-chad-and-ethiopia-into-its-war-oped/",
+          "date": "2026-09-07T23:45:00.000Z",
+          "source": "eurasiareview.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "afghanistan",
+      "name": "Afghanistan",
+      "nameEn": "Afghanistan",
+      "region": "Asien (Süd)",
+      "countries": [
+        "Afghanistan"
+      ],
+      "lat": 34,
+      "lon": 66,
+      "tier": "high",
+      "since": "2021 (Taliban-Übernahme)",
+      "parties": [
+        "Taliban",
+        "ISKP",
+        "NRF",
+        "Pakistan"
+      ],
+      "background": "Taliban-Herrschaft mit ISKP-Anschlägen, humanitäre Krise, Massenrückführungen aus Pakistan und Iran sowie Grenzkämpfe mit Pakistan.",
+      "hotspots": [
+        "Kabul",
+        "Durand-Linie",
+        "Panjschir",
+        "Kandahar"
+      ],
+      "activity": 13,
+      "severity": 42,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 2
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "AFG",
+      "extraCountries": [
+        "PAK"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "Pakistan tells UN Afghanistan - based militants killed over 4 , 700 Pakistanis",
+          "url": "https://dunyanews.tv/en/Pakistan/972641-pakistan-tells-un-afghanistanbased-militants-killed-over-4700-pakist",
+          "date": "2026-09-13T02:15:00.000Z",
+          "source": "dunyanews.tv",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "Mastermind of Tarlai imambargah attack , four ISKP terrorists killed in IBO",
+          "url": "https://tribune.com.pk/story/2628584/mastermind-of-islamabad-imambargah-attack-four-iskp-terrorists-killed-in-ibo",
+          "date": "2026-09-10T18:30:00.000Z",
+          "source": "tribune.com.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Alien Terrorist Removal Court deports legal US resident to Afghanistan in first - ever case",
+          "url": "https://www.ktep.org/politics/2026-09-12/alien-terrorist-removal-court-deports-legal-us-resident-to-afghanistan-in-first-ever-case",
+          "date": "2026-09-12T23:30:00.000Z",
+          "source": "ktep.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Art , war and another Afghanistan - Antony Loewenstein",
+          "url": "https://antonyloewenstein.com/art-war-and-another-afghanistan-2/",
+          "date": "2026-09-07T09:15:00.000Z",
+          "source": "antonyloewenstein.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 4
+    },
+    {
       "id": "korea",
       "name": "Koreanische Halbinsel",
       "nameEn": "Korean Peninsula",
@@ -22316,8 +22845,8 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 70,
-      "severity": 43,
+      "activity": 66,
+      "severity": 42,
       "newCount": 0,
       "signals": [
         {
@@ -23040,7 +23569,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 13
+          "score": 10
         },
         {
           "title": "North Korea spends war windfall on arms, infrastructure",
@@ -23071,7 +23600,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "North Korea has built new uranium facility to expand nuclear arsenal, UN agency says",
@@ -23222,444 +23751,6 @@
         }
       ],
       "itemCount": 39
-    },
-    {
-      "id": "ethiopia",
-      "name": "Äthiopien",
-      "nameEn": "Ethiopia",
-      "region": "Afrika (Horn)",
-      "countries": [
-        "Ethiopia"
-      ],
-      "lat": 11.5,
-      "lon": 39,
-      "tier": "high",
-      "since": "2020 (Tigray) / Amhara seit 2023",
-      "parties": [
-        "Bundesregierung",
-        "Fano (Amhara)",
-        "OLA (Oromia)",
-        "TPLF/Tigray-Fraktionen",
-        "Eritrea"
-      ],
-      "background": "Aufstand der Fano-Milizen in Amhara, OLA-Kämpfe in Oromia, Spaltung in Tigray und wachsende Spannungen mit Eritrea um Meereszugang.",
-      "hotspots": [
-        "Amhara",
-        "Oromia",
-        "Tigray",
-        "Afar",
-        "Assab"
-      ],
-      "activity": 10,
-      "severity": 42,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "ETH",
-      "extraCountries": [
-        "ERI",
-        "SOM"
-      ],
-      "regions": [
-        {
-          "id": "ETH-3110",
-          "name": "Tigray",
-          "nameDe": "Tigray",
-          "type": "Administrative State",
-          "anchor": [
-            38.442,
-            13.778
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          }
-        },
-        {
-          "id": "ETH-3109",
-          "name": "Amhara",
-          "nameDe": "Amhara",
-          "type": "Administrative State",
-          "anchor": [
-            38.048,
-            11.583
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "ETH-3133",
-          "name": "Addis Ababa",
-          "nameDe": "Addis Abeba",
-          "type": "Administrative State",
-          "anchor": [
-            38.786,
-            8.978
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Ethiopia: Fano Claims Capture of More Than 150 Ethiopian Soldiers in Amhara Clashes",
-          "url": "https://allafrica.com/stories/202609110509.html",
-          "date": "2026-09-11T15:55:32.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Amhara -- Ethiopia's Fano militia has claimed it captured more than 150 soldiers from the Ethiopian National Defence Force (ENDF) following heavy fighting in the Wadla-Delanta-Dawunt area of the Amhara region on September 8.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3109",
-            "name": "Amhara",
-            "nameDe": "Amhara",
-            "type": "Administrative State",
-            "anchor": [
-              38.048,
-              11.583
-            ],
-            "matched": "Amhara Region"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 28
-        },
-        {
-          "title": "Ethiopia: Amid Escalating Federal-Tigray Tensions, Debretsion Says Alliance Has Become 'Irreversible'",
-          "url": "https://allafrica.com/stories/202609100582.html",
-          "date": "2026-09-10T15:41:17.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Addis Standard] Addis Abeba -- Amid escalating tensions and renewed clashes between Ethiopia's federal forces and Tigrayan forces, Tigray Government President Debretsion Gebremichael (PhD) has said an alliance formed with other political and opposition forces has become institutionalized and \"irreversible,\" with its own leadership, plans and signed agreement, according to Weyin Media.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3133",
-            "name": "Addis Ababa",
-            "nameDe": "Addis Abeba",
-            "type": "Administrative State",
-            "anchor": [
-              38.786,
-              8.978
-            ],
-            "matched": "Addis Abeba"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ethiopia's Tigray rebels accuse govt of new drone strike",
-          "url": "https://www.france24.com/en/video/20260910-ethiopia-s-tigray-rebels-accuse-govt-of-new-drone-strike",
-          "date": "2026-09-10T11:23:38.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Rebel Tigrayan authorities accused Ethiopia of another drone strike in the country's northern region on Tuesday. The federal government has launched multiple drone strikes in Tigray in recent weeks and massed troops at the regional border, raising fears of a return to the civil war of 2020-2022 that killed some 600,000 people. FRANCE 24's Tom Canetti reports.",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ethiopia Expands Domestic Drone Production As Conflicts Persist Across Regions",
-          "url": "https://allafrica.com/stories/202609090282.html",
-          "date": "2026-09-09T13:00:00.000Z",
-          "source": "allafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ethiopia : Drone Strike Kills Three , Including Two - Year - Old Child , in Southeastern Tigray",
-          "url": "https://allafrica.com/stories/202609090028.html",
-          "date": "2026-09-09T06:45:00.000Z",
-          "source": "allafrica.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "ETH-3110",
-            "name": "Tigray",
-            "nameDe": "Tigray",
-            "type": "Administrative State",
-            "anchor": [
-              38.442,
-              13.778
-            ],
-            "matched": "Tigray"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "No military solution to conflict in Yemen, Eritrean foreign minister says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/no-military-solution-conflict-yemen-eritrean-foreign-minister-says",
-          "date": "2026-09-11T19:26:05.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "No military solution to conflict in Yemen, Eritrean foreign minister says There is no military solution to the conflict in Yemen, and foreign powers will not be able to “subdue” the Yemeni people, senior officials in Eritrea, the East African country whose waters border Yemen’s in the Bab el-Mandeb Strait, told Middle East Eye. “There is no military option in Yemen, which must be given a chance to",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Rearmed And Reckless : How Sudan New Arsenal Is Dragging Chad And Ethiopia Into Its War - OpEd",
-          "url": "https://www.eurasiareview.com/08092026-rearmed-and-reckless-how-sudans-new-arsenal-is-dragging-chad-and-ethiopia-into-its-war-oped/",
-          "date": "2026-09-07T23:45:00.000Z",
-          "source": "eurasiareview.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 7
-    },
-    {
-      "id": "afghanistan",
-      "name": "Afghanistan",
-      "nameEn": "Afghanistan",
-      "region": "Asien (Süd)",
-      "countries": [
-        "Afghanistan"
-      ],
-      "lat": 34,
-      "lon": 66,
-      "tier": "high",
-      "since": "2021 (Taliban-Übernahme)",
-      "parties": [
-        "Taliban",
-        "ISKP",
-        "NRF",
-        "Pakistan"
-      ],
-      "background": "Taliban-Herrschaft mit ISKP-Anschlägen, humanitäre Krise, Massenrückführungen aus Pakistan und Iran sowie Grenzkämpfe mit Pakistan.",
-      "hotspots": [
-        "Kabul",
-        "Durand-Linie",
-        "Panjschir",
-        "Kandahar"
-      ],
-      "activity": 13,
-      "severity": 42,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 2
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "AFG",
-      "extraCountries": [
-        "PAK"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "Pakistan tells UN Afghanistan - based militants killed over 4 , 700 Pakistanis",
-          "url": "https://dunyanews.tv/en/Pakistan/972641-pakistan-tells-un-afghanistanbased-militants-killed-over-4700-pakist",
-          "date": "2026-09-13T02:15:00.000Z",
-          "source": "dunyanews.tv",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "Mastermind of Tarlai imambargah attack , four ISKP terrorists killed in IBO",
-          "url": "https://tribune.com.pk/story/2628584/mastermind-of-islamabad-imambargah-attack-four-iskp-terrorists-killed-in-ibo",
-          "date": "2026-09-10T18:30:00.000Z",
-          "source": "tribune.com.pk",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Alien Terrorist Removal Court deports legal US resident to Afghanistan in first - ever case",
-          "url": "https://www.ktep.org/politics/2026-09-12/alien-terrorist-removal-court-deports-legal-us-resident-to-afghanistan-in-first-ever-case",
-          "date": "2026-09-12T23:30:00.000Z",
-          "source": "ktep.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Art , war and another Afghanistan - Antony Loewenstein",
-          "url": "https://antonyloewenstein.com/art-war-and-another-afghanistan-2/",
-          "date": "2026-09-07T09:15:00.000Z",
-          "source": "antonyloewenstein.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 4
     },
     {
       "id": "colombia",
@@ -24996,15 +25087,15 @@
         "Chisinau",
         "Gagausien"
       ],
-      "activity": 93,
-      "severity": 38,
-      "newCount": 0,
+      "activity": 94,
+      "severity": 39,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 13
+          "count": 14
         },
         {
           "key": "talks",
@@ -25045,6 +25136,27 @@
           "sourceType": "news",
           "summary": "Russia says four people killed in Ukrainian strikes as both sides continue to attack each other with waves of drones.",
           "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russian drone hits Kyiv-Warsaw passenger train near Polish border",
+          "url": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
+          "date": "2026-09-13T14:40:42.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "No casualties reported as Ukraine’s foreign minister says ‘Putin’s terror knocking directly on doors of EU and Nato’ A passenger train travelling from Kyiv to Warsaw was hit by a Russian drone two kilometres from the Polish border in an attack that Ukraine’s foreign minister described as “Putin’s terror knocking directly on the doors of the EU and Nato”. Overnight attacks across Ukraine involving ",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "drone",
@@ -25350,7 +25462,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthis seize key Yemeni Red Sea port, sources say, threatening global energy flows",
@@ -26064,7 +26176,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Iran suspends freight charge on foreign vessels carrying energy products to or from Iran",
@@ -26380,27 +26492,6 @@
             "label": "Verhandlungen"
           },
           "score": 8
-        },
-        {
-          "title": "US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
-          "url": "https://www.aljazeera.com/news/2026/9/6/putin-meets-us-envoys-whats-behind-latest-diplomacy-on-russia-ukraine-war?traffic_source=rss",
-          "date": "2026-09-06T15:00:16.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Steve Witkoff and Jared Kushner met Putin and headed to Kyiv as part of Trump's new efforts to broker agreement.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
       "itemCount": 65
@@ -26429,15 +26520,15 @@
         "Südossetien",
         "Tbilissi"
       ],
-      "activity": 89,
-      "severity": 37,
-      "newCount": 0,
+      "activity": 90,
+      "severity": 38,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 14
+          "count": 15
         },
         {
           "key": "talks",
@@ -26496,6 +26587,27 @@
           "sourceType": "news",
           "summary": "Russia says four people killed in Ukrainian strikes as both sides continue to attack each other with waves of drones.",
           "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russian drone hits Kyiv-Warsaw passenger train near Polish border",
+          "url": "https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border",
+          "date": "2026-09-13T14:40:42.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "No casualties reported as Ukraine’s foreign minister says ‘Putin’s terror knocking directly on doors of EU and Nato’ A passenger train travelling from Kyiv to Warsaw was hit by a Russian drone two kilometres from the Polish border in an attack that Ukraine’s foreign minister described as “Putin’s terror knocking directly on the doors of the EU and Nato”. Overnight attacks across Ukraine involving ",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "drone",
@@ -26814,27 +26926,6 @@
           "score": 18
         },
         {
-          "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
-          "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
-          "date": "2026-09-10T15:12:08.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Part of Dmitry Donskoy’s right hand sent to ‘spiritually strengthen’ soldiers The Russian Orthodox church has sent a fragment of a medieval warrior prince’s remains to troops fighting in Ukraine, saying the relic would “spiritually strengthen” soldiers and help them achieve victory. A reliquary containing part of the right hand of Dmitry Donskoy, the 14th-century prince revered in Russia for his v",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Georgian Church criticises Russia’s claims they have army unit named after Georgian monk",
           "url": "https://oc-media.org/georgian-church-criticises-russias-claims-they-have-army-unit-named-after-georgian-monk/",
           "date": "2026-09-11T13:16:43.000Z",
@@ -26852,6 +26943,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Orthodox church sends medieval prince’s remains to Russian troops in Ukraine",
+          "url": "https://www.theguardian.com/world/2026/sep/10/russia-orthodox-church-dmitry-donskoy-medieval-prince-hand-troops-ukraine",
+          "date": "2026-09-10T15:12:08.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Part of Dmitry Donskoy’s right hand sent to ‘spiritually strengthen’ soldiers The Russian Orthodox church has sent a fragment of a medieval warrior prince’s remains to troops fighting in Ukraine, saying the relic would “spiritually strengthen” soldiers and help them achieve victory. A reliquary containing part of the right hand of Dmitry Donskoy, the 14th-century prince revered in Russia for his v",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 15
         },
@@ -27430,7 +27542,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Moldova arrests Azerbaijani man on suspicion of Russian espionage",
@@ -27704,14 +27816,278 @@
             "label": "Bericht"
           },
           "score": 8
+        }
+      ],
+      "itemCount": 58
+    },
+    {
+      "id": "turkey-pkk",
+      "name": "Türkei–PKK",
+      "nameEn": "Turkey–PKK",
+      "region": "Naher Osten",
+      "countries": [
+        "Turkey"
+      ],
+      "lat": 37.9,
+      "lon": 41,
+      "tier": "medium",
+      "since": "1984 / Friedensprozess 2025",
+      "parties": [
+        "Türkei",
+        "PKK",
+        "SDF/YPG"
+      ],
+      "background": "Nach dem PKK-Auflösungsbeschluss 2025 läuft ein fragiler Friedensprozess; parallel türkische Operationen in Nordirak und Nordsyrien.",
+      "hotspots": [
+        "Südost-Türkei",
+        "Kandil",
+        "Nordsyrien"
+      ],
+      "activity": 14,
+      "severity": 27,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
         },
         {
-          "title": "US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
-          "url": "https://www.aljazeera.com/news/2026/9/6/putin-meets-us-envoys-whats-behind-latest-diplomacy-on-russia-ukraine-war?traffic_source=rss",
-          "date": "2026-09-06T15:00:16.000Z",
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "TUR",
+      "extraCountries": [
+        "IRQ",
+        "SYR"
+      ],
+      "regions": [
+        {
+          "id": "TUR-3008",
+          "name": "Ankara",
+          "nameDe": "Ankara",
+          "type": "Province",
+          "anchor": [
+            32.61,
+            39.781
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Turkish police detain dozens in raids on gay bars and homes of LGBTQ+ activists",
+          "url": "https://www.bbc.co.uk/news/articles/cpve191wy47o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-13T14:25:56.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Human rights groups in Turkey have accused the government of using a family- values campaign to target the LGBTQ+ community.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
+          "title": "Turkey's foreign minister discusses attacks on Saudi Arabia with Saudi counterpart, source says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkeys-foreign-minister-discusses-attacks-saudi-arabia-saudi",
+          "date": "2026-09-11T19:51:58.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey's foreign minister discusses attacks on Saudi Arabia with Saudi counterpart, source says Turkish Foreign Minister Hakan Fidan discussed regional developments and recent attacks targeting Saudi Arabia in a call with his Saudi counterpart, Prince Faisal bin Farhan Al Saud, a Turkish diplomatic source said on Friday. Last month, Nato member Turkey, Saudi Arabia and Pakistan signed a joint defe",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Somalia: Somali Army Commander, Turkey-Trained Troops Welcomed in Mogadishu",
+          "url": "https://allafrica.com/stories/202609090520.html",
+          "date": "2026-09-09T15:11:55.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Shabelle] Mogadishu -- Somalia's 21st Gorgor Commando Brigade commander and a contingent of Somali soldiers who completed advanced military training in Turkey have been welcomed at a ceremony in Mogadishu, the military said Wednesday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Azerbaijan sentences Talysh activist to 8.5 years after ‘abduction’ from Turkey",
+          "url": "https://oc-media.org/azerbaijan-sentences-talysh-activist-to-8-5-years-after-abduction-from-turkey/",
+          "date": "2026-09-09T14:14:17.000Z",
+          "source": "OC Media (Kaukasus)",
+          "sourceType": "news",
+          "summary": "Jahid Isayev, a Russian national, is known for producing educational content about the Talysh people.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "score": 15
+        },
+        {
+          "title": "Suspected spyware attacks target Turkish ministers’ phones",
+          "url": "https://www.middleeasteye.net/news/suspected-spyware-attacks-target-turkish-ministers-phones",
+          "date": "2026-09-08T13:32:03.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Suspected spyware attacks target Turkish ministers’ phones Submitted by Ragip Soylu on Tue, 09/08/2026 - 13:25 Ankara believes the attempts were unsuccessful, citing enhanced security measures and encrypted applications An Apple iPhone 17 Pro is displayed during an Apple special event at Apple headquarters on 9 September 2025 in Cupertino (Justin Sullivan/Getty Images/AFP) Off Apple sent notificat",
+          "isNew": false,
+          "region": {
+            "id": "TUR-3008",
+            "name": "Ankara",
+            "nameDe": "Ankara",
+            "type": "Province",
+            "anchor": [
+              32.61,
+              39.781
+            ],
+            "matched": "Ankara"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-reported-bernard-smith-ypj-fighters-mp4?traffic_source=rss",
+          "date": "2026-09-10T17:30:41.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Steve Witkoff and Jared Kushner met Putin and headed to Kyiv as part of Trump's new efforts to broker agreement.",
+          "summary": "Syria’s Kurdish women fighters in northeast Syria as pushing to join the country’s new army.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
+          "date": "2026-09-10T07:01:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Israel names new envoy to Turkey amid tensions over Gaza and Syria",
+          "url": "https://www.middleeasteye.net/news/israel-names-new-envoy-turkey-amid-tensions-over-gaza-and-syria",
+          "date": "2026-09-09T17:31:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel names new envoy to Turkey amid tensions over Gaza and Syria Submitted by Ragip Soylu on Wed, 09/09/2026 - 18:16 Joel Lion presented his credentials in Ankara as Israel’s embassy remains effectively closed over security concerns The flags of Turkey and Israel and the Israeli Army Armoured Corps, left to right, fly at the Yad La-Shiryon Tank Museum in Latrun, about 30 kilometres west of Jerus",
+          "isNew": false,
+          "region": {
+            "id": "TUR-3008",
+            "name": "Ankara",
+            "nameDe": "Ankara",
+            "type": "Province",
+            "anchor": [
+              32.61,
+              39.781
+            ],
+            "matched": "Ankara"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        },
+        {
+          "title": "Turkey urges more countries to sanction Israeli settlements",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-urges-more-countries-sanction-israeli-settlements",
+          "date": "2026-09-08T20:58:28.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey urges more countries to sanction Israeli settlements Turkey has welcomed the measures taken by 12 countries to ban trade with illegal Israeli settlements in the occupied West Bank, the Ministry of Foreign Affairs said on Tuesday. \"Israel's efforts to undermine the two-state solution are intensifying with each passing day,\" the statement said, adding that \"illegal settlements have evolved in",
           "isNew": false,
           "region": null,
           "event": {
@@ -27727,7 +28103,7 @@
           "score": 8
         }
       ],
-      "itemCount": 58
+      "itemCount": 9
     },
     {
       "id": "south-china-sea",
@@ -27753,8 +28129,8 @@
         "Scarborough Shoal",
         "Spratly-Inseln"
       ],
-      "activity": 14,
-      "severity": 27,
+      "activity": 11,
+      "severity": 26,
       "newCount": 0,
       "signals": [
         {
@@ -27826,7 +28202,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 24
+          "score": 20
         },
         {
           "title": "Death toll from Philippines ferry fire rises to 35, as officials warn toll will grow",
@@ -28023,536 +28399,6 @@
             ],
             "matched": "Manila"
           },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 8
-    },
-    {
-      "id": "ecuador",
-      "name": "Ecuador",
-      "nameEn": "Ecuador",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Ecuador"
-      ],
-      "lat": -1.5,
-      "lon": -78.5,
-      "tier": "medium",
-      "since": "2023",
-      "parties": [
-        "Regierung (Noboa)",
-        "Los Choneros",
-        "Los Lobos",
-        "transnationale Kartelle"
-      ],
-      "background": "\"Interner bewaffneter Konflikt\" gegen Drogenbanden mit Militäreinsatz, Rekordmordraten und Ausnahmezuständen.",
-      "hotspots": [
-        "Guayaquil",
-        "Esmeraldas",
-        "Durán"
-      ],
-      "activity": 11,
-      "severity": 26,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "ECU",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "On the Radar: Ecuador Boat Strikes, Peru Prisons, and Bolivia’s Coca Surge",
-          "url": "https://insightcrime.org/news/on-the-radar-ecuador-boat-strikes-peru-prisons-and-bolivias-coca-surge/",
-          "date": "2026-09-10T15:02:22.000Z",
-          "source": "InSight Crime",
-          "sourceType": "analysis",
-          "summary": "On the Radar: Ecuador Boat Strikes, Peru Prisons, and Bolivia’s Coca Surge What’s different about the US anti-drug strategy in Ecuador? Is Keiko Fujimori delivering on her tough-on-crime campaign promises in Peru? Can Bolivia's new government rein in its coca boom? This week's top three organized crime stories in On the Radar. The post On the Radar: Ecuador Boat Strikes, Peru Prisons, and Bolivia’",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 25
-        },
-        {
-          "title": "US forces strike , sink Ecuadorian vessel | The Arkansas Democrat - Gazette",
-          "url": "https://www.arkansasonline.com/news/2026/sep/09/us-forces-strike-sink-ecuadorian-vessel/",
-          "date": "2026-09-09T10:15:00.000Z",
-          "source": "arkansasonline.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ghana: Police Recover 11 Ak-47s in Crackdown On Robbery Gangs",
-          "url": "https://allafrica.com/stories/202609100610.html",
-          "date": "2026-09-10T16:13:03.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Ghanaian Times] The Ghana Police Service has recovered 11 AK-47 assault rifles, an SMG rifle, pistols and hundreds of rounds of ammunition in a crackdown on armed robbery gangs and illegal firearms dealers across the country.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 11
-        },
-        {
-          "title": "Notorious Ecuadorian crime gang designated a terrorist group by US",
-          "url": "https://www.theguardian.com/world/2026/sep/09/ecuador-drugs-gang-terrorist-group-los-tiguerones-rubio",
-          "date": "2026-09-09T22:19:25.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Trump administration to seek extra funding from Congress to ‘dismantle’ Los Tiguerones over narcotics trafficking The US has designated Ecuador’s Los Tiguerones gang, which stormed a television station during a live broadcast in 2024, as a terrorist organisation as the Trump administration expands its campaign against narcotics traffickers it says are destabilising Latin America. The US secretary ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 9
-        },
-        {
-          "title": "Thousands of Ecuadorians flee their homes as gang violence worsens",
-          "url": "https://www.timesofearth.com/2026/09/09/thousands-of-ecuadorians-flee-their-homes-as-gang-violence-worsens/",
-          "date": "2026-09-09T10:30:00.000Z",
-          "source": "timesofearth.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 8
-        },
-        {
-          "title": "U . S . Forces Sink Another Floating Replenishment Station Linked to Los Choneros Narco - Terrorist Organization",
-          "url": "https://www.cubaheadlines.com/articles/339882",
-          "date": "2026-09-09T01:30:00.000Z",
-          "source": "cubaheadlines.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "US forces sink vessel ‘linked to Ecuador criminal gang’",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/us-forces-sink-vessel-linked-to-ecuador-criminal?traffic_source=rss",
-          "date": "2026-09-08T21:06:48.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The US military says it intercepted and sank a floating refueling station in the eastern Pacific.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 8
-        },
-        {
-          "title": "Rubio heads to Ecuador, Colombia, Peru after right-wing victories in region",
-          "url": "https://www.aljazeera.com/news/2026/9/7/rubio-heads-to-ecuador-colombia-peru-after-right-wing-victories-in-region?traffic_source=rss",
-          "date": "2026-09-07T22:41:27.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Rightward shift in Latin America comes as Washington pledges to grow influence, take militaristic approach to cartels.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "US announces $45m in security funding, additional naval vessels for Ecuador",
-          "url": "https://www.aljazeera.com/news/2026/9/9/us-announces-45m-in-security-funding-additional-naval-vessels-for-ecuador?traffic_source=rss",
-          "date": "2026-09-09T23:40:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Secretary of State Rubio has hailed Ecuador as the US's 'most involved and aggressive partner' in the anti-drug fight.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": -1
-        },
-        {
-          "title": "Rubio to seek $45 million in additional security funding for Ecuador",
-          "url": "https://www.france24.com/en/americas/20260909-rubio-to-seek-45-million-in-additional-security-funding-for-ecuador",
-          "date": "2026-09-09T22:58:25.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "US Secretary of State Marco Rubio said Wednesday that Washington would seek $45 million in additional security funding for Ecuador and provide military equipment as the two countries deepen cooperation against drug trafficking. During a visit to Quito, Rubio also announced new sanctions on former Ecuadorian officials involved in bribery and a terrorist designation for an Ecuador-based gang.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": -1
-        }
-      ],
-      "itemCount": 10
-    },
-    {
-      "id": "turkey-pkk",
-      "name": "Türkei–PKK",
-      "nameEn": "Turkey–PKK",
-      "region": "Naher Osten",
-      "countries": [
-        "Turkey"
-      ],
-      "lat": 37.9,
-      "lon": 41,
-      "tier": "medium",
-      "since": "1984 / Friedensprozess 2025",
-      "parties": [
-        "Türkei",
-        "PKK",
-        "SDF/YPG"
-      ],
-      "background": "Nach dem PKK-Auflösungsbeschluss 2025 läuft ein fragiler Friedensprozess; parallel türkische Operationen in Nordirak und Nordsyrien.",
-      "hotspots": [
-        "Südost-Türkei",
-        "Kandil",
-        "Nordsyrien"
-      ],
-      "activity": 10,
-      "severity": 25,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "TUR",
-      "extraCountries": [
-        "IRQ",
-        "SYR"
-      ],
-      "regions": [
-        {
-          "id": "TUR-3008",
-          "name": "Ankara",
-          "nameDe": "Ankara",
-          "type": "Province",
-          "anchor": [
-            32.61,
-            39.781
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Turkey's foreign minister discusses attacks on Saudi Arabia with Saudi counterpart, source says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkeys-foreign-minister-discusses-attacks-saudi-arabia-saudi",
-          "date": "2026-09-11T19:51:58.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey's foreign minister discusses attacks on Saudi Arabia with Saudi counterpart, source says Turkish Foreign Minister Hakan Fidan discussed regional developments and recent attacks targeting Saudi Arabia in a call with his Saudi counterpart, Prince Faisal bin Farhan Al Saud, a Turkish diplomatic source said on Friday. Last month, Nato member Turkey, Saudi Arabia and Pakistan signed a joint defe",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Somalia: Somali Army Commander, Turkey-Trained Troops Welcomed in Mogadishu",
-          "url": "https://allafrica.com/stories/202609090520.html",
-          "date": "2026-09-09T15:11:55.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Shabelle] Mogadishu -- Somalia's 21st Gorgor Commando Brigade commander and a contingent of Somali soldiers who completed advanced military training in Turkey have been welcomed at a ceremony in Mogadishu, the military said Wednesday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
-          "title": "Azerbaijan sentences Talysh activist to 8.5 years after ‘abduction’ from Turkey",
-          "url": "https://oc-media.org/azerbaijan-sentences-talysh-activist-to-8-5-years-after-abduction-from-turkey/",
-          "date": "2026-09-09T14:14:17.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Jahid Isayev, a Russian national, is known for producing educational content about the Talysh people.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
-          },
-          "score": 15
-        },
-        {
-          "title": "Suspected spyware attacks target Turkish ministers’ phones",
-          "url": "https://www.middleeasteye.net/news/suspected-spyware-attacks-target-turkish-ministers-phones",
-          "date": "2026-09-08T13:32:03.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Suspected spyware attacks target Turkish ministers’ phones Submitted by Ragip Soylu on Tue, 09/08/2026 - 13:25 Ankara believes the attempts were unsuccessful, citing enhanced security measures and encrypted applications An Apple iPhone 17 Pro is displayed during an Apple special event at Apple headquarters on 9 September 2025 in Cupertino (Justin Sullivan/Getty Images/AFP) Off Apple sent notificat",
-          "isNew": false,
-          "region": {
-            "id": "TUR-3008",
-            "name": "Ankara",
-            "nameDe": "Ankara",
-            "type": "Province",
-            "anchor": [
-              32.61,
-              39.781
-            ],
-            "matched": "Ankara"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-reported-bernard-smith-ypj-fighters-mp4?traffic_source=rss",
-          "date": "2026-09-10T17:30:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Syria’s Kurdish women fighters in northeast Syria as pushing to join the country’s new army.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-turkey-back-arab-endorsement-uks-settlement-sanctions",
-          "date": "2026-09-10T07:01:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions Pakistan and Turkey have affirmed their support for Palestine and backed the joint statement by eight Arab-Islamic countries, which welcomed the UK’s decision to sanction imports from illegal Israeli settlements in the occupied West Bank. Pakistan’s Deputy Prime Minister and Foreign Minister, Mohammed Ishaq Dar, spoke over the pho",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Israel names new envoy to Turkey amid tensions over Gaza and Syria",
-          "url": "https://www.middleeasteye.net/news/israel-names-new-envoy-turkey-amid-tensions-over-gaza-and-syria",
-          "date": "2026-09-09T17:31:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel names new envoy to Turkey amid tensions over Gaza and Syria Submitted by Ragip Soylu on Wed, 09/09/2026 - 18:16 Joel Lion presented his credentials in Ankara as Israel’s embassy remains effectively closed over security concerns The flags of Turkey and Israel and the Israeli Army Armoured Corps, left to right, fly at the Yad La-Shiryon Tank Museum in Latrun, about 30 kilometres west of Jerus",
-          "isNew": false,
-          "region": {
-            "id": "TUR-3008",
-            "name": "Ankara",
-            "nameDe": "Ankara",
-            "type": "Province",
-            "anchor": [
-              32.61,
-              39.781
-            ],
-            "matched": "Ankara"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        },
-        {
-          "title": "Turkey urges more countries to sanction Israeli settlements",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-urges-more-countries-sanction-israeli-settlements",
-          "date": "2026-09-08T20:58:28.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey urges more countries to sanction Israeli settlements Turkey has welcomed the measures taken by 12 countries to ban trade with illegal Israeli settlements in the occupied West Bank, the Ministry of Foreign Affairs said on Tuesday. \"Israel's efforts to undermine the two-state solution are intensifying with each passing day,\" the statement said, adding that \"illegal settlements have evolved in",
-          "isNew": false,
-          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -28854,6 +28700,272 @@
             "label": "Bericht"
           },
           "score": 8
+        }
+      ],
+      "itemCount": 10
+    },
+    {
+      "id": "ecuador",
+      "name": "Ecuador",
+      "nameEn": "Ecuador",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Ecuador"
+      ],
+      "lat": -1.5,
+      "lon": -78.5,
+      "tier": "medium",
+      "since": "2023",
+      "parties": [
+        "Regierung (Noboa)",
+        "Los Choneros",
+        "Los Lobos",
+        "transnationale Kartelle"
+      ],
+      "background": "\"Interner bewaffneter Konflikt\" gegen Drogenbanden mit Militäreinsatz, Rekordmordraten und Ausnahmezuständen.",
+      "hotspots": [
+        "Guayaquil",
+        "Esmeraldas",
+        "Durán"
+      ],
+      "activity": 10,
+      "severity": 25,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "ECU",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "On the Radar: Ecuador Boat Strikes, Peru Prisons, and Bolivia’s Coca Surge",
+          "url": "https://insightcrime.org/news/on-the-radar-ecuador-boat-strikes-peru-prisons-and-bolivias-coca-surge/",
+          "date": "2026-09-10T15:02:22.000Z",
+          "source": "InSight Crime",
+          "sourceType": "analysis",
+          "summary": "On the Radar: Ecuador Boat Strikes, Peru Prisons, and Bolivia’s Coca Surge What’s different about the US anti-drug strategy in Ecuador? Is Keiko Fujimori delivering on her tough-on-crime campaign promises in Peru? Can Bolivia's new government rein in its coca boom? This week's top three organized crime stories in On the Radar. The post On the Radar: Ecuador Boat Strikes, Peru Prisons, and Bolivia’",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 22
+        },
+        {
+          "title": "US forces strike , sink Ecuadorian vessel | The Arkansas Democrat - Gazette",
+          "url": "https://www.arkansasonline.com/news/2026/sep/09/us-forces-strike-sink-ecuadorian-vessel/",
+          "date": "2026-09-09T10:15:00.000Z",
+          "source": "arkansasonline.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Ghana: Police Recover 11 Ak-47s in Crackdown On Robbery Gangs",
+          "url": "https://allafrica.com/stories/202609100610.html",
+          "date": "2026-09-10T16:13:03.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Ghanaian Times] The Ghana Police Service has recovered 11 AK-47 assault rifles, an SMG rifle, pistols and hundreds of rounds of ammunition in a crackdown on armed robbery gangs and illegal firearms dealers across the country.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
+        },
+        {
+          "title": "Notorious Ecuadorian crime gang designated a terrorist group by US",
+          "url": "https://www.theguardian.com/world/2026/sep/09/ecuador-drugs-gang-terrorist-group-los-tiguerones-rubio",
+          "date": "2026-09-09T22:19:25.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Trump administration to seek extra funding from Congress to ‘dismantle’ Los Tiguerones over narcotics trafficking The US has designated Ecuador’s Los Tiguerones gang, which stormed a television station during a live broadcast in 2024, as a terrorist organisation as the Trump administration expands its campaign against narcotics traffickers it says are destabilising Latin America. The US secretary ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 9
+        },
+        {
+          "title": "Thousands of Ecuadorians flee their homes as gang violence worsens",
+          "url": "https://www.timesofearth.com/2026/09/09/thousands-of-ecuadorians-flee-their-homes-as-gang-violence-worsens/",
+          "date": "2026-09-09T10:30:00.000Z",
+          "source": "timesofearth.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 8
+        },
+        {
+          "title": "U . S . Forces Sink Another Floating Replenishment Station Linked to Los Choneros Narco - Terrorist Organization",
+          "url": "https://www.cubaheadlines.com/articles/339882",
+          "date": "2026-09-09T01:30:00.000Z",
+          "source": "cubaheadlines.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "US forces sink vessel ‘linked to Ecuador criminal gang’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/us-forces-sink-vessel-linked-to-ecuador-criminal?traffic_source=rss",
+          "date": "2026-09-08T21:06:48.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The US military says it intercepted and sank a floating refueling station in the eastern Pacific.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 8
+        },
+        {
+          "title": "Rubio heads to Ecuador, Colombia, Peru after right-wing victories in region",
+          "url": "https://www.aljazeera.com/news/2026/9/7/rubio-heads-to-ecuador-colombia-peru-after-right-wing-victories-in-region?traffic_source=rss",
+          "date": "2026-09-07T22:41:27.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Rightward shift in Latin America comes as Washington pledges to grow influence, take militaristic approach to cartels.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "US announces $45m in security funding, additional naval vessels for Ecuador",
+          "url": "https://www.aljazeera.com/news/2026/9/9/us-announces-45m-in-security-funding-additional-naval-vessels-for-ecuador?traffic_source=rss",
+          "date": "2026-09-09T23:40:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Secretary of State Rubio has hailed Ecuador as the US's 'most involved and aggressive partner' in the anti-drug fight.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": -1
+        },
+        {
+          "title": "Rubio to seek $45 million in additional security funding for Ecuador",
+          "url": "https://www.france24.com/en/americas/20260909-rubio-to-seek-45-million-in-additional-security-funding-for-ecuador",
+          "date": "2026-09-09T22:58:25.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "US Secretary of State Marco Rubio said Wednesday that Washington would seek $45 million in additional security funding for Ecuador and provide military equipment as the two countries deepen cooperation against drug trafficking. During a visit to Quito, Rubio also announced new sanctions on former Ecuadorian officials involved in bribery and a terrorist designation for an Ecuador-based gang.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": -1
         }
       ],
       "itemCount": 10
