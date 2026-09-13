@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T19:31:49.395Z",
-  "durationSec": 363,
+  "generatedAt": "2026-09-13T20:33:51.293Z",
+  "durationSec": 359,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,29 +114,37 @@
       }
     ],
     "gdelt": {
-      "ok": 5,
-      "failed": 5,
-      "skipped": 6,
+      "ok": 4,
+      "failed": 7,
+      "skipped": 5,
       "errors": [
         {
-          "id": "kosovo-serbia",
+          "id": "venezuela",
           "error": "HTTP 429"
+        },
+        {
+          "id": "car",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "haiti",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "afghanistan",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "drc-m23",
+          "error": "fetch failed"
         },
         {
           "id": "myanmar",
+          "error": "fetch failed"
+        },
+        {
+          "id": "colombia",
           "error": "HTTP 429"
-        },
-        {
-          "id": "turkey-pkk",
-          "error": "GDELT gedrosselt"
-        },
-        {
-          "id": "thailand-cambodia",
-          "error": "fetch failed"
-        },
-        {
-          "id": "burkina-faso",
-          "error": "fetch failed"
         }
       ]
     },
@@ -144,7 +152,7 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1164,
+    "articles": 1168,
     "newArticles": 9
   },
   "conflicts": [
@@ -198,16 +206,16 @@
           "count": 8
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 3
         },
         {
-          "key": "displacement",
-          "label": "Vertreibung",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
-          "count": 2
+          "count": 3
         }
       ],
       "acled": null,
@@ -372,6 +380,27 @@
           "score": 31
         },
         {
+          "title": "Ukraine, Poland condemn Russia after drone strikes train near border",
+          "url": "https://www.france24.com/en/europe/20260913-poland-ukraine-slam-russian-strikes-near-border-as-escalation",
+          "date": "2026-09-13T17:59:11.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine and Poland on Sunday condemned Russian strikes close to the Polish border as an \"escalation\" in the war, after drones struck a Warsaw-bound train. Ukraine's rail operator said former British PM Boris Johnson and ex-US CIA director David Petraeus were at a border train station nearby around the time the train was hit.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 30
+        },
+        {
           "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
           "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-12T23:51:05.000Z",
@@ -430,7 +459,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "The US president says Ukraine's attacks on Russian diesel infrastructure are contributing to global fuel shortages.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2166,7 +2195,7 @@
           "score": 8
         }
       ],
-      "itemCount": 76
+      "itemCount": 77
     },
     {
       "id": "gaza",
@@ -2195,19 +2224,19 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 4,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 17
+          "count": 16
         },
         {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 13
+          "count": 11
         },
         {
           "key": "airstrike",
@@ -2219,7 +2248,7 @@
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 6
+          "count": 7
         },
         {
           "key": "displacement",
@@ -2301,12 +2330,12 @@
           "score": 30
         },
         {
-          "title": "Israeli settlers injure two Palestinians in attack east of Salfit",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-two-palestinians-attack-east-salfit",
-          "date": "2026-09-13T18:52:59.000Z",
-          "source": "Middle East Eye",
+          "title": "Israeli raid targets Palestinian journalist Ali al-Samoudi’s home",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/israeli-raid-targets-palestinian-journalist-ali-al-samoudis-home?traffic_source=rss",
+          "date": "2026-09-13T19:41:01.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Israeli settlers injure two Palestinians in attack east of Salfit Israeli settlers severely beat two Palestinians on their agricultural land in the Wadi al-Sha’er area, east of Salfit in the occupied West Bank, on Sunday, causing injuries and bruising, the Wafa news agency reported. The agency identified the men as Mohammed Darwish and Nashat Ishtayeh, both from Salfit. Residents, students and veh",
+          "summary": "Israeli forces reportedly raided the Jenin home of Palestinian journalist Ali al-Samoudi and beat his son.",
           "isNew": true,
           "region": null,
           "event": {
@@ -2320,6 +2349,48 @@
             "label": "Gefechte"
           },
           "score": 29
+        },
+        {
+          "title": "Israeli settlers injure two Palestinians in attack east of Salfit",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-two-palestinians-attack-east-salfit",
+          "date": "2026-09-13T18:52:59.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli settlers injure two Palestinians in attack east of Salfit Israeli settlers severely beat two Palestinians on their agricultural land in the Wadi al-Sha’er area, east of Salfit in the occupied West Bank, on Sunday, causing injuries and bruising, the Wafa news agency reported. The agency identified the men as Mohammed Darwish and Nashat Ishtayeh, both from Salfit. Residents, students and veh",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 29
+        },
+        {
+          "title": "Israeli strike kills two people in Gaza , medics say",
+          "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-two-people-in-gaza-medics-say2",
+          "date": "2026-09-13T09:15:00.000Z",
+          "source": "straitstimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 28
         },
         {
           "title": "IDF soldier filmed shooting Palestinian in leg amid West Bank settler standoff",
@@ -2511,25 +2582,25 @@
           "score": 22
         },
         {
-          "title": "Israel bombs southern Lebanon as talks postponed",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/israel-bombs-southern-lebanon-as-talks-postponed?traffic_source=rss",
-          "date": "2026-09-12T19:56:09.000Z",
-          "source": "Al Jazeera",
+          "title": "Iran Targets US Warships With New Precision Munitions As Shock Offensive Rocks The  Greater Israel  « nuclear - news",
+          "url": "https://nuclear-news.net/2026/09/13/3-b1-iran-targets-us-warships-with-new-precision-munitions-as-shock-offensive-rocks-the-greater-israel/",
+          "date": "2026-09-13T08:15:00.000Z",
+          "source": "nuclear-news.net",
           "sourceType": "news",
-          "summary": "The next round of talks between Israel and Lebanon, mediated by the US, has been postponed.",
-          "isNew": false,
+          "summary": "",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
           "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
-          "score": 22
+          "score": 21
         },
         {
           "title": "EU foreign policy chief says Israeli settlements should be treated like Russian-occupied Crimea",
@@ -2595,27 +2666,6 @@
           "score": 19
         },
         {
-          "title": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war",
-          "url": "https://www.middleeasteye.net/news/tucker-carlson-says-israel-sought-regional-hegemony-weakening-gulf-states-through-iran-war",
-          "date": "2026-09-13T13:32:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war Submitted by MEE staff on Sun, 09/13/2026 - 13:12 The conservative commentator&nbsp;claims Israel’s strategic goal was to expand its influence while weakening Iran, the Gulf and the US military presence Tucker Carlson speaks at Turning Point USA’s AmericaFest 2025 at the Phoenix Convention Center in Phoen",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168298",
           "date": "2026-09-08T12:00:00.000Z",
@@ -2633,6 +2683,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israel bombs southern Lebanon as talks postponed",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/israel-bombs-southern-lebanon-as-talks-postponed?traffic_source=rss",
+          "date": "2026-09-12T19:56:09.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The next round of talks between Israel and Lebanon, mediated by the US, has been postponed.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
           },
           "score": 18
         },
@@ -2910,6 +2981,27 @@
           "score": 17
         },
         {
+          "title": "Anwar Ibrahim calls Israel Gaza actions  state terrorism , declines same label for Pakistan over Pahalgam",
+          "url": "https://www.moneycontrol.com/news/india/anwar-ibrahim-calls-israel-s-gaza-actions-state-terrorism-declines-same-label-for-pakistan-over-pahalgam-14028826.html",
+          "date": "2026-09-13T08:45:00.000Z",
+          "source": "moneycontrol.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
           "title": "Congo-Kinshasa: Will Monitoring of Eastern DR Congo's 'Ceasefire' Improve Compliance?",
           "url": "https://allafrica.com/stories/202609100236.html",
           "date": "2026-09-10T10:32:00.000Z",
@@ -2927,6 +3019,27 @@
             "type": "ceasefire",
             "icon": "🕊️",
             "label": "Waffenruhe"
+          },
+          "score": 16
+        },
+        {
+          "title": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war",
+          "url": "https://www.middleeasteye.net/news/tucker-carlson-says-israel-sought-regional-hegemony-weakening-gulf-states-through-iran-war",
+          "date": "2026-09-13T13:32:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war Submitted by MEE staff on Sun, 09/13/2026 - 13:12 The conservative commentator&nbsp;claims Israel’s strategic goal was to expand its influence while weakening Iran, the Gulf and the US military presence Tucker Carlson speaks at Turning Point USA’s AmericaFest 2025 at the Phoenix Convention Center in Phoen",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 16
         },
@@ -2959,7 +3072,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Israeli air strikes injure several people in Gaza",
@@ -3178,27 +3291,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Gaza genocide documentary ‘NAZA’ wins Special Jury Prize at Venice",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/09-12-naza-venice-clip-mp4?traffic_source=rss",
-          "date": "2026-09-12T19:50:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "‘NAZA’, a documentary about Israel’s genocide in Gaza, has won the Special Jury Prize at the Venice Film Festival.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -3925,69 +4017,6 @@
             "label": "Luftangriff"
           },
           "score": 15
-        },
-        {
-          "title": "Nigeria: Nigerian Govt and Boko Haram Strike Secret Ceasefire Deal",
-          "url": "https://allafrica.com/stories/202609080003.html",
-          "date": "2026-09-08T05:04:23.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[The New Humanitarian] Maiduguri, Nigeria -- \"The government seems very interested in having a dialogue with Boko Haram, perhaps realising a military response alone is inadequate.\"",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli attacks kill 4,362 people since March, Lebanon’s health ministry says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-4362-people-march-lebanons-health-ministry-says",
-          "date": "2026-09-08T01:53:12.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli attacks kill 4,362 people since March, Lebanon’s health ministry says The latest death toll from Israeli attacks on Lebanon has risen to 4,362 people since the start of March, with 12,378 others left wounded, he health ministry announced.&nbsp; This bring the total casualties since 8 October 2023 to 6 September of this year to 8,929 people killed and 30,614 wounded.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israel intensifies south Lebanon strikes, killing 13 after weeks-long lull",
-          "url": "https://www.france24.com/en/middle-east/20260907-israeli-strikes-south-lebanon-violence",
-          "date": "2026-09-07T21:32:03.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israel launched a wave of air strikes across southern Lebanon, killing 13 people, including women and children, Lebanon’s health ministry said on Monday, marking an escalation after weeks of relative calm. Israel said it would continue targeting Iran-backed Hezbollah over alleged ceasefire violations. Hezbollah has not commented on the strikes.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4016,8 +4045,8 @@
         "Khartum",
         "Kordofan"
       ],
-      "activity": 54,
-      "severity": 71,
+      "activity": 51,
+      "severity": 70,
       "newCount": 0,
       "signals": [
         {
@@ -4243,27 +4272,6 @@
             "label": "Sanktionen/Recht"
           },
           "score": 19
-        },
-        {
-          "title": "Arab News | Sudan war is now a regional crisis",
-          "url": "https://www.arabnews.com/opinion/sudans-war-is-now-a-regional-crisis-3001319",
-          "date": "2026-09-12T20:00:00.000Z",
-          "source": "arabnews.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
         },
         {
           "title": "Video: RSF drone attack on Sudan court kills at least 13 people",
@@ -4595,6 +4603,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 11
+        },
+        {
+          "title": "Arab News | Sudan war is now a regional crisis",
+          "url": "https://www.arabnews.com/opinion/sudans-war-is-now-a-regional-crisis-3001319",
+          "date": "2026-09-12T20:00:00.000Z",
+          "source": "arabnews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 11
         },
@@ -5077,7 +5106,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -5151,7 +5180,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli settlers injure two Palestinians in attack east of Salfit Israeli settlers severely beat two Palestinians on their agricultural land in the Wadi al-Sha’er area, east of Salfit in the occupied West Bank, on Sunday, causing injuries and bruising, the Wafa news agency reported. The agency identified the men as Mohammed Darwish and Nashat Ishtayeh, both from Salfit. Residents, students and veh",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -5278,7 +5307,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "OCHA: West Bank schooling disrupted by displacement, pending demolitions",
@@ -6935,7 +6964,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -7113,7 +7142,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Yemen’s military launches air raids on Houthi vehicles in Dhu Bab, Mocha Yemen’s Air Force has targeted Houthi vehicles in the Dhu Bab and Mocha areas, Al Jazeera reported, citing a spokesperson from the government’s armed forces. An aerial view shows damaged buildings, as Houthis seized control of Yemen's port city of&nbsp;Mocha&nbsp;on Thursday, in&nbsp;Mocha, Yemen, in its screengrab taken from",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "airstrike",
@@ -7176,37 +7205,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 27
-        },
-        {
-          "title": "Yemen: Houthi offensive triggers new displacement crisis",
-          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
-          "date": "2026-09-13T09:18:55.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
-          "isNew": false,
-          "region": {
-            "id": "YEM-3510",
-            "name": "'Adan",
-            "nameDe": "Gouvernement Adan",
-            "type": "Governorate",
-            "anchor": [
-              44.857,
-              12.826
-            ],
-            "matched": "Aden"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
           },
           "score": 27
         },
@@ -7324,6 +7322,37 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "Yemen: Houthi offensive triggers new displacement crisis",
+          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
+          "date": "2026-09-13T09:18:55.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
+          "isNew": false,
+          "region": {
+            "id": "YEM-3510",
+            "name": "'Adan",
+            "nameDe": "Gouvernement Adan",
+            "type": "Governorate",
+            "anchor": [
+              44.857,
+              12.826
+            ],
+            "matched": "Aden"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 22
         },
         {
           "title": "Fighting continues between Yemen gov’t forces, Houthis: What is the latest?",
@@ -7483,27 +7512,6 @@
           "score": 22
         },
         {
-          "title": "Saudi civil defence says two wounded by Houthi projectile",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-civil-defence-says-two-wounded-houthi-projectile",
-          "date": "2026-09-12T19:47:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Saudi civil defence says two wounded by Houthi projectile Saudi authorities said a Houthi projectile wounded two people in an area along the country's southern border with Yemen, hours after the government issued alerts warning of the risk of possible attacks. The civil defence directorate said its \"teams in Al-Tuwal Governorate, Jazan Region, responded to an incident involving a projectile launch",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "Iran’s Houthi allies capture strategic island on vital oil shipping route",
           "url": "https://www.theguardian.com/world/2026/sep/11/iran-houthi-allies-capture-strategic-island-bab-al-mandab-strait",
           "date": "2026-09-12T04:45:28.000Z",
@@ -7575,6 +7583,27 @@
             "label": "Seeangriff"
           },
           "score": 20
+        },
+        {
+          "title": "Saudi civil defence says two wounded by Houthi projectile",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-civil-defence-says-two-wounded-houthi-projectile",
+          "date": "2026-09-12T19:47:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Saudi civil defence says two wounded by Houthi projectile Saudi authorities said a Houthi projectile wounded two people in an area along the country's southern border with Yemen, hours after the government issued alerts warning of the risk of possible attacks. The civil defence directorate said its \"teams in Al-Tuwal Governorate, Jazan Region, responded to an incident involving a projectile launch",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
         },
         {
           "title": "Will Houthi advances in Yemen give Iran leverage in its war with the US?",
@@ -9072,37 +9101,6 @@
           "score": 22
         },
         {
-          "title": "Iran's economic ties to Dubai hard to break despite Middle East tensions",
-          "url": "https://www.dawn.com/news/2029636/irans-economic-ties-to-dubai-hard-to-break-despite-middle-east-tensions",
-          "date": "2026-09-13T14:29:20.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "In the markets of old Dubai, saffron, cumin, pistachios and almonds from Iran still fill the stalls, as if the two shores of the Gulf were not separated by the ongoing regional conflict. Last month, the United Arab Emirates (UAE) announced the suspension of trade and financial exchanges with Tehran, which has responded to American attacks by targeting the US-allied country and tightening its grip ",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 20
-        },
-        {
           "title": "Iran’s Houthi allies capture strategic island on vital oil shipping route",
           "url": "https://www.theguardian.com/world/2026/sep/11/iran-houthi-allies-capture-strategic-island-bab-al-mandab-strait",
           "date": "2026-09-12T04:45:28.000Z",
@@ -9141,27 +9139,6 @@
             "type": "election",
             "icon": "🗳️",
             "label": "Politik/Wahl"
-          },
-          "score": 19
-        },
-        {
-          "title": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war",
-          "url": "https://www.middleeasteye.net/news/tucker-carlson-says-israel-sought-regional-hegemony-weakening-gulf-states-through-iran-war",
-          "date": "2026-09-13T13:32:13.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war Submitted by MEE staff on Sun, 09/13/2026 - 13:12 The conservative commentator&nbsp;claims Israel’s strategic goal was to expand its influence while weakening Iran, the Gulf and the US military presence Tucker Carlson speaks at Turning Point USA’s AmericaFest 2025 at the Phoenix Convention Center in Phoen",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 19
         },
@@ -9532,25 +9509,35 @@
           "score": 18
         },
         {
-          "title": "The Iran war reveals the limits of BRICS",
-          "url": "https://www.aljazeera.com/opinions/2026/9/13/the-iran-war-reveals-the-limits-of?traffic_source=rss",
-          "date": "2026-09-13T12:46:58.000Z",
-          "source": "Al Jazeera",
+          "title": "Iran's economic ties to Dubai hard to break despite Middle East tensions",
+          "url": "https://www.dawn.com/news/2029636/irans-economic-ties-to-dubai-hard-to-break-despite-middle-east-tensions",
+          "date": "2026-09-13T14:29:20.000Z",
+          "source": "Dawn (Pakistan)",
           "sourceType": "news",
-          "summary": "The bloc struggles to translate its economic weight into geopolitical sway. But there may be a silver lining to it.",
+          "summary": "In the markets of old Dubai, saffron, cumin, pistachios and almonds from Iran still fill the stalls, as if the two shores of the Gulf were not separated by the ongoing regional conflict. Last month, the United Arab Emirates (UAE) announced the suspension of trade and financial exchanges with Tehran, which has responded to American attacks by targeting the US-allied country and tightening its grip ",
           "isNew": false,
-          "region": null,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 16
+          "score": 17
         },
         {
           "title": "Iran war reshapes Brics ties but also exposes divisions",
@@ -9595,6 +9582,27 @@
           "score": 16
         },
         {
+          "title": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war",
+          "url": "https://www.middleeasteye.net/news/tucker-carlson-says-israel-sought-regional-hegemony-weakening-gulf-states-through-iran-war",
+          "date": "2026-09-13T13:32:13.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Tucker Carlson says Israel sought regional hegemony by weakening Gulf states through Iran war Submitted by MEE staff on Sun, 09/13/2026 - 13:12 The conservative commentator&nbsp;claims Israel’s strategic goal was to expand its influence while weakening Iran, the Gulf and the US military presence Tucker Carlson speaks at Turning Point USA’s AmericaFest 2025 at the Phoenix Convention Center in Phoen",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
           "title": "Georgia says it will comply with the US sanctions against Iranian airlines",
           "url": "https://oc-media.org/georgia-says-it-will-comply-with-the-us-sanctions-against-iranian-airlines/",
           "date": "2026-09-11T13:26:53.000Z",
@@ -9612,6 +9620,27 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
+          },
+          "score": 15
+        },
+        {
+          "title": "The Iran war reveals the limits of BRICS",
+          "url": "https://www.aljazeera.com/opinions/2026/9/13/the-iran-war-reveals-the-limits-of?traffic_source=rss",
+          "date": "2026-09-13T12:46:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The bloc struggles to translate its economic weight into geopolitical sway. But there may be a silver lining to it.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 15
         },
@@ -10809,559 +10838,6 @@
       "itemCount": 78
     },
     {
-      "id": "myanmar",
-      "name": "Myanmar",
-      "nameEn": "Myanmar Civil War",
-      "region": "Asien (Südost)",
-      "countries": [
-        "Myanmar"
-      ],
-      "lat": 21,
-      "lon": 96,
-      "tier": "war",
-      "since": "Putsch 2021",
-      "parties": [
-        "Militärjunta (SAC)",
-        "NUG/PDF",
-        "Arakan Army",
-        "MNDAA",
-        "TNLA",
-        "KIA",
-        "Karen NU"
-      ],
-      "background": "Bürgerkrieg nach dem Putsch 2021: Widerstandsallianzen und ethnische Armeen kontrollieren große Gebiete; die Arakan Army dominiert Rakhine, Junta setzt auf Luftangriffe und Wahlen.",
-      "hotspots": [
-        "Rakhine",
-        "Shan-Staat",
-        "Kachin",
-        "Sagaing",
-        "Karen",
-        "Chin"
-      ],
-      "activity": 31,
-      "severity": 64,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 5
-        },
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "MMR",
-      "extraCountries": [],
-      "regions": [
-        {
-          "id": "MMR-3273",
-          "name": "Rakhine State",
-          "nameDe": "Rakhaing-Staat",
-          "type": "State",
-          "anchor": [
-            93.744,
-            19.742
-          ],
-          "count": 4,
-          "newCount": 0,
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "MMR-3296",
-          "name": "Kachin State",
-          "nameDe": "Kachin-Staat",
-          "type": "State",
-          "anchor": [
-            97.334,
-            26.083
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          }
-        },
-        {
-          "id": "MMR-3266",
-          "name": "Kayin State",
-          "nameDe": "Kayin-Staat",
-          "type": "State",
-          "anchor": [
-            97.785,
-            17.155
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        },
-        {
-          "id": "MMR-3277",
-          "name": "Shan State",
-          "nameDe": "Shan-Staat",
-          "type": "State",
-          "anchor": [
-            98.118,
-            21.717
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "One killed, others feared trapped as hotel building collapses in Enugu",
-          "url": "https://www.premiumtimesng.com/news/top-news/909271-one-killed-others-feared-trapped-as-hotel-building-collapses-in-enugu.html",
-          "date": "2026-09-13T16:55:52.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The incident, PREMIUM TIMES gathered, occurred at about 5 a.m. on Sunday at the Independence Layout area of Enugu State. The post One killed, others feared trapped as hotel building collapses in Enugu appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 26
-        },
-        {
-          "title": "Arakan Army Captures Three Outposts as Junta Border Offensive Triggers Fierce Clashes",
-          "url": "https://www.bnionline.net/en/news/arakan-army-captures-three-outposts-junta-border-offensive-triggers-fierce-clashes",
-          "date": "2026-09-12T09:15:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Arakan"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Myanmar Junta Drone Attack Kills Displaced Elderly Woman in Rakhine State",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-drone-attack-kills-displaced-elderly-woman-rakhine-state",
-          "date": "2026-09-11T14:45:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Rakhine State"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Myanmar Military Launches Multi - Front Offensive Against Arakan Army with Minimal Gains",
-          "url": "https://www.bnionline.net/en/news/myanmar-military-launches-multi-front-offensive-against-arakan-army-minimal-gains",
-          "date": "2026-09-11T14:45:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Arakan"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 18
-        },
-        {
-          "title": "Myanmar airport shut after rebel drone attack : security sources",
-          "url": "https://www.thehindu.com/news/international/myanmar-airport-shut-after-rebel-drone-attack-security-sources/article71455106.ece",
-          "date": "2026-09-11T07:45:00.000Z",
-          "source": "thehindu.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Myanmar airport closed following reported drone attack",
-          "url": "https://www.aljazeera.com/news/2026/9/11/myanmar-airport-closed-following-reported-drone-attack?traffic_source=rss",
-          "date": "2026-09-11T12:22:12.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Military government pins attack on pro-democracy rebels it has been battling since seizing power in 2021.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "KIA Destroys Two Junta Support Ships in Latest River Attack in Kachin State",
-          "url": "https://www.bnionline.net/en/news/kia-destroys-two-junta-support-ships-latest-river-attack-kachin-state",
-          "date": "2026-09-10T14:30:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3296",
-            "name": "Kachin State",
-            "nameDe": "Kachin-Staat",
-            "type": "State",
-            "anchor": [
-              97.334,
-              26.083
-            ],
-            "matched": "Kachin State"
-          },
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Arakan Army Advances on Key Junta Weapons Factories in Bago Region",
-          "url": "https://www.bnionline.net/en/news/arakan-army-advances-key-junta-weapons-factories-bago-region",
-          "date": "2026-09-10T14:30:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3273",
-            "name": "Rakhine State",
-            "nameDe": "Rakhaing-Staat",
-            "type": "State",
-            "anchor": [
-              93.744,
-              19.742
-            ],
-            "matched": "Arakan"
-          },
-          "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 15
-        },
-        {
-          "title": "Police detain 6,240 suspects, rescue 211 kidnapped victims in Enugu in 17 months",
-          "url": "https://www.premiumtimesng.com/regional/ssouth-east/907844-police-detain-6240-suspects-rescue-211-kidnapped-victims-in-enugu-in-17-months.html",
-          "date": "2026-09-07T09:15:54.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The Command’s spokesperson, Daniel Ndukwe, a superintendent of police, disclosed this in a statement issued on behalf of the Commissioner of Police, Mamman Giwa, on Saturday in Enugu. The post Police detain 6,240 suspects, rescue 211 kidnapped victims in Enugu in 17 months appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 15
-        },
-        {
-          "title": "Jailed Ukrainians launched drone attack on Myanmar passenger plane - Delhi",
-          "url": "https://www.sott.net/article/508267-Jailed-Ukrainians-launched-drone-attack-on-Myanmar-passenger-plane-Delhi",
-          "date": "2026-09-06T22:30:00.000Z",
-          "source": "sott.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Myanmar Junta Restricts Travel for Ages 15 to 40 on Key Kachin Highway",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-restricts-travel-ages-15-40-key-kachin-highway",
-          "date": "2026-09-12T09:15:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3296",
-            "name": "Kachin State",
-            "nameDe": "Kachin-Staat",
-            "type": "State",
-            "anchor": [
-              97.334,
-              26.083
-            ],
-            "matched": "Kachin"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Myanmar Junta Destroyed 34 Schools in Karen Territory Over Two Years , KNU Says",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-destroyed-34-schools-karen-territory-over-two-years-knu-says",
-          "date": "2026-09-12T09:15:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3266",
-            "name": "Kayin State",
-            "nameDe": "Kayin-Staat",
-            "type": "State",
-            "anchor": [
-              97.785,
-              17.155
-            ],
-            "matched": "Karen"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Myanmar Militia Relocating Chinese Scam Operations to KNU Territory Near Thai Border",
-          "url": "https://www.bnionline.net/en/news/myanmar-militia-relocating-chinese-scam-operations-knu-territory-near-thai-border",
-          "date": "2026-09-11T14:45:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Shan Masood frustrates England's victory push in third Test",
-          "url": "https://www.dawn.com/news/2029132/shan-masood-frustrates-englands-victory-push-in-third-test",
-          "date": "2026-09-11T13:29:35.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Shan Masood and Azan Awais both scored half-centuries as Pakistan held up England’s victory charge in the third Test at Edgbaston on Friday. The visitors showed belated grit at the end of a one-sided series to reach 184-3 at lunch on the third day, trailing the home side by 136 runs as they battle to avoid a humiliating 3-0 whitewash. Pakistan appeared to be at risk of an ignominious two-day defea",
-          "isNew": false,
-          "region": {
-            "id": "MMR-3277",
-            "name": "Shan State",
-            "nameDe": "Shan-Staat",
-            "type": "State",
-            "anchor": [
-              98.118,
-              21.717
-            ],
-            "matched": "Shan"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 11
-        },
-        {
-          "title": "Myanmar Junta Uses Surrender Claims to Mask Forced Conscription and Battlefield Losses",
-          "url": "https://www.bnionline.net/en/news/myanmar-junta-uses-surrender-claims-mask-forced-conscription-and-battlefield-losses",
-          "date": "2026-09-10T14:30:00.000Z",
-          "source": "bnionline.net",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Myanmar seeks closer foreign ties amid global isolation",
-          "url": "https://www.dw.com/en/myanmar-seeks-closer-foreign-ties-amid-global-isolation/a-79212234?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-09-10T12:09:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Myanmar coup leader Min Aung Hlaing has been on a diplomatic offensive since becoming president in April, but foreign friends may still be few and far between.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 16
-    },
-    {
       "id": "nigeria",
       "name": "Nigeria",
       "nameEn": "Nigeria",
@@ -11388,15 +10864,15 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 80,
-      "severity": 63,
-      "newCount": 0,
+      "activity": 85,
+      "severity": 64,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 11
+          "count": 12
         },
         {
           "key": "ceasefire",
@@ -11594,6 +11070,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Herders, cattle killed in Plateau attacks — Community leaders",
+          "url": "https://www.premiumtimesng.com/regional/north-central/909302-herders-cattle-killed-in-plateau-attacks-community-leaders.html",
+          "date": "2026-09-13T19:33:46.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "A day later, according to another report from Nyerwe in the Barkin Ladi Local Government Area, attackers reportedly killed a herder and 18 cattle. The post Herders, cattle killed in Plateau attacks — Community leaders appeared first on Premium Times Nigeria .",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
         {
           "title": "Soldiers arrest three suspects after 17-year-old was killed in Plateau",
           "url": "https://www.premiumtimesng.com/regional/north-central/909168-soldiers-arrest-three-suspects-after-17-year-old-was-killed-in-plateau.html",
@@ -13052,7 +12549,560 @@
           "score": 8
         }
       ],
-      "itemCount": 57
+      "itemCount": 58
+    },
+    {
+      "id": "myanmar",
+      "name": "Myanmar",
+      "nameEn": "Myanmar Civil War",
+      "region": "Asien (Südost)",
+      "countries": [
+        "Myanmar"
+      ],
+      "lat": 21,
+      "lon": 96,
+      "tier": "war",
+      "since": "Putsch 2021",
+      "parties": [
+        "Militärjunta (SAC)",
+        "NUG/PDF",
+        "Arakan Army",
+        "MNDAA",
+        "TNLA",
+        "KIA",
+        "Karen NU"
+      ],
+      "background": "Bürgerkrieg nach dem Putsch 2021: Widerstandsallianzen und ethnische Armeen kontrollieren große Gebiete; die Arakan Army dominiert Rakhine, Junta setzt auf Luftangriffe und Wahlen.",
+      "hotspots": [
+        "Rakhine",
+        "Shan-Staat",
+        "Kachin",
+        "Sagaing",
+        "Karen",
+        "Chin"
+      ],
+      "activity": 31,
+      "severity": 64,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 5
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "MMR",
+      "extraCountries": [],
+      "regions": [
+        {
+          "id": "MMR-3273",
+          "name": "Rakhine State",
+          "nameDe": "Rakhaing-Staat",
+          "type": "State",
+          "anchor": [
+            93.744,
+            19.742
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "MMR-3296",
+          "name": "Kachin State",
+          "nameDe": "Kachin-Staat",
+          "type": "State",
+          "anchor": [
+            97.334,
+            26.083
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          }
+        },
+        {
+          "id": "MMR-3266",
+          "name": "Kayin State",
+          "nameDe": "Kayin-Staat",
+          "type": "State",
+          "anchor": [
+            97.785,
+            17.155
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        },
+        {
+          "id": "MMR-3277",
+          "name": "Shan State",
+          "nameDe": "Shan-Staat",
+          "type": "State",
+          "anchor": [
+            98.118,
+            21.717
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "One killed, others feared trapped as hotel building collapses in Enugu",
+          "url": "https://www.premiumtimesng.com/news/top-news/909271-one-killed-others-feared-trapped-as-hotel-building-collapses-in-enugu.html",
+          "date": "2026-09-13T16:55:52.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The incident, PREMIUM TIMES gathered, occurred at about 5 a.m. on Sunday at the Independence Layout area of Enugu State. The post One killed, others feared trapped as hotel building collapses in Enugu appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
+          "title": "Arakan Army Captures Three Outposts as Junta Border Offensive Triggers Fierce Clashes",
+          "url": "https://www.bnionline.net/en/news/arakan-army-captures-three-outposts-junta-border-offensive-triggers-fierce-clashes",
+          "date": "2026-09-12T09:15:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Arakan"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
+        },
+        {
+          "title": "Myanmar Junta Drone Attack Kills Displaced Elderly Woman in Rakhine State",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-drone-attack-kills-displaced-elderly-woman-rakhine-state",
+          "date": "2026-09-11T14:45:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Rakhine State"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Myanmar Military Launches Multi - Front Offensive Against Arakan Army with Minimal Gains",
+          "url": "https://www.bnionline.net/en/news/myanmar-military-launches-multi-front-offensive-against-arakan-army-minimal-gains",
+          "date": "2026-09-11T14:45:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Arakan"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 18
+        },
+        {
+          "title": "Myanmar airport shut after rebel drone attack : security sources",
+          "url": "https://www.thehindu.com/news/international/myanmar-airport-shut-after-rebel-drone-attack-security-sources/article71455106.ece",
+          "date": "2026-09-11T07:45:00.000Z",
+          "source": "thehindu.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Myanmar airport closed following reported drone attack",
+          "url": "https://www.aljazeera.com/news/2026/9/11/myanmar-airport-closed-following-reported-drone-attack?traffic_source=rss",
+          "date": "2026-09-11T12:22:12.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Military government pins attack on pro-democracy rebels it has been battling since seizing power in 2021.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "KIA Destroys Two Junta Support Ships in Latest River Attack in Kachin State",
+          "url": "https://www.bnionline.net/en/news/kia-destroys-two-junta-support-ships-latest-river-attack-kachin-state",
+          "date": "2026-09-10T14:30:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3296",
+            "name": "Kachin State",
+            "nameDe": "Kachin-Staat",
+            "type": "State",
+            "anchor": [
+              97.334,
+              26.083
+            ],
+            "matched": "Kachin State"
+          },
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Arakan Army Advances on Key Junta Weapons Factories in Bago Region",
+          "url": "https://www.bnionline.net/en/news/arakan-army-advances-key-junta-weapons-factories-bago-region",
+          "date": "2026-09-10T14:30:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3273",
+            "name": "Rakhine State",
+            "nameDe": "Rakhaing-Staat",
+            "type": "State",
+            "anchor": [
+              93.744,
+              19.742
+            ],
+            "matched": "Arakan"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Police detain 6,240 suspects, rescue 211 kidnapped victims in Enugu in 17 months",
+          "url": "https://www.premiumtimesng.com/regional/ssouth-east/907844-police-detain-6240-suspects-rescue-211-kidnapped-victims-in-enugu-in-17-months.html",
+          "date": "2026-09-07T09:15:54.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The Command’s spokesperson, Daniel Ndukwe, a superintendent of police, disclosed this in a statement issued on behalf of the Commissioner of Police, Mamman Giwa, on Saturday in Enugu. The post Police detain 6,240 suspects, rescue 211 kidnapped victims in Enugu in 17 months appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Jailed Ukrainians launched drone attack on Myanmar passenger plane - Delhi",
+          "url": "https://www.sott.net/article/508267-Jailed-Ukrainians-launched-drone-attack-on-Myanmar-passenger-plane-Delhi",
+          "date": "2026-09-06T22:30:00.000Z",
+          "source": "sott.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Myanmar Junta Restricts Travel for Ages 15 to 40 on Key Kachin Highway",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-restricts-travel-ages-15-40-key-kachin-highway",
+          "date": "2026-09-12T09:15:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3296",
+            "name": "Kachin State",
+            "nameDe": "Kachin-Staat",
+            "type": "State",
+            "anchor": [
+              97.334,
+              26.083
+            ],
+            "matched": "Kachin"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Myanmar Junta Destroyed 34 Schools in Karen Territory Over Two Years , KNU Says",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-destroyed-34-schools-karen-territory-over-two-years-knu-says",
+          "date": "2026-09-12T09:15:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3266",
+            "name": "Kayin State",
+            "nameDe": "Kayin-Staat",
+            "type": "State",
+            "anchor": [
+              97.785,
+              17.155
+            ],
+            "matched": "Karen"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Myanmar Militia Relocating Chinese Scam Operations to KNU Territory Near Thai Border",
+          "url": "https://www.bnionline.net/en/news/myanmar-militia-relocating-chinese-scam-operations-knu-territory-near-thai-border",
+          "date": "2026-09-11T14:45:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Shan Masood frustrates England's victory push in third Test",
+          "url": "https://www.dawn.com/news/2029132/shan-masood-frustrates-englands-victory-push-in-third-test",
+          "date": "2026-09-11T13:29:35.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Shan Masood and Azan Awais both scored half-centuries as Pakistan held up England’s victory charge in the third Test at Edgbaston on Friday. The visitors showed belated grit at the end of a one-sided series to reach 184-3 at lunch on the third day, trailing the home side by 136 runs as they battle to avoid a humiliating 3-0 whitewash. Pakistan appeared to be at risk of an ignominious two-day defea",
+          "isNew": false,
+          "region": {
+            "id": "MMR-3277",
+            "name": "Shan State",
+            "nameDe": "Shan-Staat",
+            "type": "State",
+            "anchor": [
+              98.118,
+              21.717
+            ],
+            "matched": "Shan"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 11
+        },
+        {
+          "title": "Myanmar Junta Uses Surrender Claims to Mask Forced Conscription and Battlefield Losses",
+          "url": "https://www.bnionline.net/en/news/myanmar-junta-uses-surrender-claims-mask-forced-conscription-and-battlefield-losses",
+          "date": "2026-09-10T14:30:00.000Z",
+          "source": "bnionline.net",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        },
+        {
+          "title": "Myanmar seeks closer foreign ties amid global isolation",
+          "url": "https://www.dw.com/en/myanmar-seeks-closer-foreign-ties-amid-global-isolation/a-79212234?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-09-10T12:09:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Myanmar coup leader Min Aung Hlaing has been on a diplomatic offensive since becoming president in April, but foreign friends may still be few and far between.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 16
     },
     {
       "id": "pakistan",
@@ -13080,8 +13130,8 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 82,
-      "severity": 63,
+      "activity": 79,
+      "severity": 62,
       "newCount": 0,
       "signals": [
         {
@@ -13232,27 +13282,6 @@
           "score": 19
         },
         {
-          "title": "Pakistan to continue efforts for 'defusing' regional tensions, PM tells Saudi crown prince",
-          "url": "https://www.dawn.com/news/2029638/pakistan-to-continue-efforts-for-defusing-regional-tensions-pm-tells-saudi-crown-prince",
-          "date": "2026-09-13T13:33:26.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Prime Minister Shehbaz Sharif on Sunday told Saudi Arabia’s Crown Prince Mohammed Bin Salman that Pakistan would continue its efforts for “defusing” regional tensions and expressed solidarity with the Gulf state in light of recent Houthi attacks. The development comes amid renewed tensions in the region, with Yemen’s Houthi rebels launching attacks on oil installations in Saudi Arabia earlier this",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
-        },
-        {
           "title": "Pakistan says no plans for military action in Yemen after attacks on Saudi Arabia",
           "url": "https://www.middleeasteye.net/news/pakistan-officials-say-no-plans-military-action-yemen-after-attacks-saudi-arabia",
           "date": "2026-09-11T09:42:17.000Z",
@@ -13315,6 +13344,27 @@
           "score": 18
         },
         {
+          "title": "Pakistan to continue efforts for 'defusing' regional tensions, PM tells Saudi crown prince",
+          "url": "https://www.dawn.com/news/2029638/pakistan-to-continue-efforts-for-defusing-regional-tensions-pm-tells-saudi-crown-prince",
+          "date": "2026-09-13T13:33:26.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Prime Minister Shehbaz Sharif on Sunday told Saudi Arabia’s Crown Prince Mohammed Bin Salman that Pakistan would continue its efforts for “defusing” regional tensions and expressed solidarity with the Gulf state in light of recent Houthi attacks. The development comes amid renewed tensions in the region, with Yemen’s Houthi rebels launching attacks on oil installations in Saudi Arabia earlier this",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
           "title": "French firefighters on six-week strike after record summer blazes",
           "url": "https://www.france24.com/en/french-firefighters-on-six-week-strike-after-record-summer-blazes",
           "date": "2026-09-10T19:41:24.000Z",
@@ -13333,7 +13383,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Two Azerbaijani citizens killed in drone attack on cargo ship in Black Sea",
@@ -14035,7 +14085,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "England dominate Pakistan, close in on Test series sweep",
@@ -14566,8 +14616,8 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 78,
-      "severity": 62,
+      "activity": 73,
+      "severity": 60,
       "newCount": 0,
       "signals": [
         {
@@ -14728,52 +14778,10 @@
           "score": 22
         },
         {
-          "title": "Israel bombs southern Lebanon as talks postponed",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/israel-bombs-southern-lebanon-as-talks-postponed?traffic_source=rss",
-          "date": "2026-09-12T19:56:09.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The next round of talks between Israel and Lebanon, mediated by the US, has been postponed.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 22
-        },
-        {
           "title": "Israel intensifies attacks in southern Lebanon with more than 30 blasts in one town",
           "url": "https://aa.com.tr/en/middle-east/israel-intensifies-attacks-in-southern-lebanon-with-more-than-30-blasts-in-one-town/4055567",
           "date": "2026-09-13T05:30:00.000Z",
           "source": "aa.com.tr",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Lebanon president makes a rare visit to southern city as fears of Israeli attacks grow – The Virginian - Pilot",
-          "url": "https://www.pilotonline.com/2026/09/12/lebanons-president-rare-visit-southern-city-israeli-attacks/",
-          "date": "2026-09-12T20:15:00.000Z",
-          "source": "pilotonline.com",
           "sourceType": "news",
           "summary": "",
           "isNew": false,
@@ -14820,6 +14828,48 @@
             "label": "Waffenruhe"
           },
           "score": 19
+        },
+        {
+          "title": "Israel bombs southern Lebanon as talks postponed",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/israel-bombs-southern-lebanon-as-talks-postponed?traffic_source=rss",
+          "date": "2026-09-12T19:56:09.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "The next round of talks between Israel and Lebanon, mediated by the US, has been postponed.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 18
+        },
+        {
+          "title": "Lebanon president makes a rare visit to southern city as fears of Israeli attacks grow – The Virginian - Pilot",
+          "url": "https://www.pilotonline.com/2026/09/12/lebanons-president-rare-visit-southern-city-israeli-attacks/",
+          "date": "2026-09-12T20:15:00.000Z",
+          "source": "pilotonline.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Lebanon president visits bombed Nabatieh site: 'No new talks with Israel'",
@@ -15843,8 +15893,8 @@
         "Süd-Kivu",
         "Ituri"
       ],
-      "activity": 20,
-      "severity": 61,
+      "activity": 16,
+      "severity": 59,
       "newCount": 0,
       "signals": [
         {
@@ -15900,27 +15950,6 @@
       ],
       "items": [
         {
-          "title": "DR Congo school fire stampede death toll rises to 26",
-          "url": "https://www.surinametimes.com/artikel/dr-congo-school-fire-stampede-death-toll-rises-to-26",
-          "date": "2026-09-12T20:15:00.000Z",
-          "source": "surinametimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
           "title": "Congo-Kinshasa: Will Monitoring of Eastern DR Congo's 'Ceasefire' Improve Compliance?",
           "url": "https://allafrica.com/stories/202609100236.html",
           "date": "2026-09-10T10:32:00.000Z",
@@ -15950,6 +15979,27 @@
             "label": "Waffenruhe"
           },
           "score": 19
+        },
+        {
+          "title": "DR Congo school fire stampede death toll rises to 26",
+          "url": "https://www.surinametimes.com/artikel/dr-congo-school-fire-stampede-death-toll-rises-to-26",
+          "date": "2026-09-12T20:15:00.000Z",
+          "source": "surinametimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
         },
         {
           "title": "More than 20 children killed in DR Congo school fire",
@@ -16120,27 +16170,6 @@
           "score": 11
         },
         {
-          "title": "Fire in rebel - held DR Congo kills 24 schoolchildren",
-          "url": "https://www.canberratimes.com.au/story/9348130/fire-in-rebel-held-dr-congo-kills-24-schoolchildren/",
-          "date": "2026-09-10T20:15:00.000Z",
-          "source": "canberratimes.com.au",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
           "title": "Rwanda: Rwanda, Tanzania Military Commanders Meet to Strengthen Border Security",
           "url": "https://allafrica.com/stories/202609100212.html",
           "date": "2026-09-10T09:51:29.000Z",
@@ -16160,6 +16189,27 @@
             "label": "Bericht"
           },
           "score": 9
+        },
+        {
+          "title": "Fire in rebel - held DR Congo kills 24 schoolchildren",
+          "url": "https://www.canberratimes.com.au/story/9348130/fire-in-rebel-held-dr-congo-kills-24-schoolchildren/",
+          "date": "2026-09-10T20:15:00.000Z",
+          "source": "canberratimes.com.au",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
         }
       ],
       "itemCount": 12
@@ -18245,7 +18295,7 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 51,
+      "activity": 50,
       "severity": 54,
       "newCount": 0,
       "signals": [
@@ -18352,27 +18402,6 @@
       ],
       "items": [
         {
-          "title": "Pakistan to continue efforts for 'defusing' regional tensions, PM tells Saudi crown prince",
-          "url": "https://www.dawn.com/news/2029638/pakistan-to-continue-efforts-for-defusing-regional-tensions-pm-tells-saudi-crown-prince",
-          "date": "2026-09-13T13:33:26.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Prime Minister Shehbaz Sharif on Sunday told Saudi Arabia’s Crown Prince Mohammed Bin Salman that Pakistan would continue its efforts for “defusing” regional tensions and expressed solidarity with the Gulf state in light of recent Houthi attacks. The development comes amid renewed tensions in the region, with Yemen’s Houthi rebels launching attacks on oil installations in Saudi Arabia earlier this",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
-        },
-        {
           "title": "Pakistan says no plans for military action in Yemen after attacks on Saudi Arabia",
           "url": "https://www.middleeasteye.net/news/pakistan-officials-say-no-plans-military-action-yemen-after-attacks-saudi-arabia",
           "date": "2026-09-11T09:42:17.000Z",
@@ -18433,6 +18462,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Pakistan to continue efforts for 'defusing' regional tensions, PM tells Saudi crown prince",
+          "url": "https://www.dawn.com/news/2029638/pakistan-to-continue-efforts-for-defusing-regional-tensions-pm-tells-saudi-crown-prince",
+          "date": "2026-09-13T13:33:26.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Prime Minister Shehbaz Sharif on Sunday told Saudi Arabia’s Crown Prince Mohammed Bin Salman that Pakistan would continue its efforts for “defusing” regional tensions and expressed solidarity with the Gulf state in light of recent Houthi attacks. The development comes amid renewed tensions in the region, with Yemen’s Houthi rebels launching attacks on oil installations in Saudi Arabia earlier this",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
         },
         {
           "title": "Pakistan: 25 years post-2001",
@@ -18818,7 +18868,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "England dominate Pakistan, close in on Test series sweep",
@@ -19143,13 +19193,13 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 13
+          "count": 14
         },
         {
           "key": "displacement",
@@ -19220,25 +19270,25 @@
       ],
       "items": [
         {
-          "title": "Yemen: Houthi offensive triggers new displacement crisis",
-          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
-          "date": "2026-09-13T09:18:55.000Z",
-          "source": "France 24",
+          "title": "Herders, cattle killed in Plateau attacks — Community leaders",
+          "url": "https://www.premiumtimesng.com/regional/north-central/909302-herders-cattle-killed-in-plateau-attacks-community-leaders.html",
+          "date": "2026-09-13T19:33:46.000Z",
+          "source": "Premium Times (Nigeria)",
           "sourceType": "news",
-          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
-          "isNew": false,
+          "summary": "A day later, according to another report from Nyerwe in the Barkin Ladi Local Government Area, attackers reportedly killed a herder and 18 cattle. The post Herders, cattle killed in Plateau attacks — Community leaders appeared first on Premium Times Nigeria .",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 24
+          "score": 26
         },
         {
           "title": "Yemen: Fighting escalates around the Bab el-Mandeb Strait",
@@ -19260,6 +19310,27 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "Yemen: Houthi offensive triggers new displacement crisis",
+          "url": "https://www.france24.com/en/yemen-houthi-offensive-triggers-new-displacement-crisis",
+          "date": "2026-09-13T09:18:55.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "More than 70,000 people have fled their homes in Yemen after Iran-backed Houthi rebels launched an offensive to seize the Bab el-Mandeb Strait, with many escaping to Aden and around 1,400 crossing into neighbouring Djibouti. The UN and IOM warn the new displacement wave is worsening an already dire humanitarian crisis in a country devastated by 12 years of war.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 22
         },
         {
           "title": "UKMTO reports vessel on fire after attack in Strait of Hormuz",
@@ -20867,27 +20938,6 @@
           "score": 8
         },
         {
-          "title": "Iran to impose restricted shipping zone near Strait of Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-impose-restricted-shipping-zone-near-strait-hormuz",
-          "date": "2026-09-06T19:39:42.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran to impose restricted shipping zone near Strait of Hormuz Iran plans to establish a restricted maritime zone near the Strait of Hormuz within days, state media has quoted the country’s top security official as saying. The designated area will stretch from the boundary of the US naval blockade into parts of the Gulf. Tehran will place any vessel that enters the zone on its sanctions list, the o",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 8
-        },
-        {
           "title": "From black-clad agitators to an appeal for ‘Tommo’s Mum’: an unsettling week with the Patriot Platform",
           "url": "https://www.theguardian.com/uk-news/ng-interactive/2026/sep/12/from-black-clad-agitators-to-an-appeal-for-tommos-mum-an-unsettling-week-with-the-patriot-platform",
           "date": "2026-09-12T05:00:30.000Z",
@@ -20940,7 +20990,7 @@
       ],
       "activity": 42,
       "severity": 51,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -20991,7 +21041,7 @@
             33.461
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -21092,7 +21142,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "A child has been killed after an explosive object detonated when he touched it near Damascus.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "SYR-144",
             "name": "Rif Dimashq",
@@ -23359,7 +23409,7 @@
         "Arauca",
         "Chocó"
       ],
-      "activity": 12,
+      "activity": 10,
       "severity": 42,
       "newCount": 0,
       "signals": [
@@ -23401,7 +23451,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
@@ -24223,16 +24273,16 @@
           "count": 6
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 3
         },
         {
-          "key": "sanctions",
-          "label": "Sanktionen",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
-          "count": 2
+          "count": 3
         }
       ],
       "acled": null,
@@ -24293,6 +24343,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Ukraine, Poland condemn Russia after drone strikes train near border",
+          "url": "https://www.france24.com/en/europe/20260913-poland-ukraine-slam-russian-strikes-near-border-as-escalation",
+          "date": "2026-09-13T17:59:11.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine and Poland on Sunday condemned Russian strikes close to the Polish border as an \"escalation\" in the war, after drones struck a Warsaw-bound train. Ukraine's rail operator said former British PM Boris Johnson and ex-US CIA director David Petraeus were at a border train station nearby around the time the train was hit.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "regionEvent": {
             "type": "drone",
@@ -24371,7 +24442,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "The US president says Ukraine's attacks on Russian diesel infrastructure are contributing to global fuel shortages.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -25561,7 +25632,7 @@
           "score": 8
         }
       ],
-      "itemCount": 61
+      "itemCount": 62
     },
     {
       "id": "moldova-transnistria",
@@ -25609,16 +25680,16 @@
           "count": 6
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 4
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
-          "count": 3
+          "count": 4
         }
       ],
       "acled": null,
@@ -25661,6 +25732,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Ukraine, Poland condemn Russia after drone strikes train near border",
+          "url": "https://www.france24.com/en/europe/20260913-poland-ukraine-slam-russian-strikes-near-border-as-escalation",
+          "date": "2026-09-13T17:59:11.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Ukraine and Poland on Sunday condemned Russian strikes close to the Polish border as an \"escalation\" in the war, after drones struck a Warsaw-bound train. Ukraine's rail operator said former British PM Boris Johnson and ex-US CIA director David Petraeus were at a border train station nearby around the time the train was hit.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
           },
           "regionEvent": {
             "type": "drone",
@@ -25760,7 +25852,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "The US president says Ukraine's attacks on Russian diesel infrastructure are contributing to global fuel shortages.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -27035,7 +27127,7 @@
           "score": 8
         }
       ],
-      "itemCount": 67
+      "itemCount": 68
     },
     {
       "id": "iraq",
@@ -27065,7 +27157,7 @@
       ],
       "activity": 58,
       "severity": 40,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -27198,7 +27290,7 @@
           "source": "english.aawsat.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -27210,7 +27302,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "Iraq : Saudi Pipeline Attacks Launched From Its Territory",
@@ -27219,7 +27311,7 @@
           "source": "deccanchronicle.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -27231,7 +27323,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
@@ -27900,7 +27992,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 27
+          "score": 24
         },
         {
           "title": "Turkey's foreign minister discusses attacks on Saudi Arabia with Saudi counterpart, source says",
