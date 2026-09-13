@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T07:32:49.740Z",
-  "durationSec": 358,
+  "generatedAt": "2026-09-13T08:34:53.250Z",
+  "durationSec": 362,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 27,
+        "count": 22,
         "error": null
       },
       {
@@ -114,9 +114,9 @@
       }
     ],
     "gdelt": {
-      "ok": 2,
-      "failed": 9,
-      "skipped": 5,
+      "ok": 1,
+      "failed": 8,
+      "skipped": 7,
       "errors": [
         {
           "id": "burkina-faso",
@@ -128,22 +128,10 @@
         },
         {
           "id": "sahel-mali",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "lebanon-hezbollah",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "ethiopia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "gaza",
           "error": "fetch failed"
         },
         {
-          "id": "west-papua",
+          "id": "venezuela",
           "error": "fetch failed"
         },
         {
@@ -151,7 +139,15 @@
           "error": "fetch failed"
         },
         {
-          "id": "drc-m23",
+          "id": "sinai-egypt",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "libya",
+          "error": "fetch failed"
+        },
+        {
+          "id": "armenia-azerbaijan",
           "error": "fetch failed"
         }
       ]
@@ -160,8 +156,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1157,
-    "newArticles": 3
+    "articles": 1159,
+    "newArticles": 7
   },
   "conflicts": [
     {
@@ -193,7 +189,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -214,16 +210,16 @@
           "count": 7
         },
         {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 3
+        },
+        {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
           "count": 3
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 2
         }
       ],
       "acled": null,
@@ -276,6 +272,23 @@
           }
         },
         {
+          "id": "RUS-2362",
+          "name": "Kursk",
+          "nameDe": "Kursk",
+          "type": "Region",
+          "anchor": [
+            36.076,
+            51.675
+          ],
+          "count": 1,
+          "newCount": 1,
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          }
+        },
+        {
           "id": "RUS-2417",
           "name": "Republic of Dagestan",
           "nameDe": "Dagestan",
@@ -311,6 +324,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
+          "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-12T23:51:05.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure.",
+          "isNew": true,
+          "region": {
+            "id": "RUS-2362",
+            "name": "Kursk",
+            "nameDe": "Kursk",
+            "type": "Region",
+            "anchor": [
+              36.076,
+              51.675
+            ],
+            "matched": "Kursk"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 29
+        },
         {
           "title": "Ukraine: Drone attacks on Chornobyl are ‘gambling with the safety of millions of people’",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168312",
@@ -1128,6 +1172,27 @@
           "score": 18
         },
         {
+          "title": "Canada offers air defense support for Ukraine as Zelenskyy visits",
+          "url": "https://www.theguardian.com/world/2026/sep/10/zelenskyy-canada-visit",
+          "date": "2026-09-10T20:35:06.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Canadian PM Mark Carney hosts president in Calgary, where he grew up alongside large Ukrainian community Canada offered support on Thursday to boost Ukraine’s air defenses and help replenish its drone stocks, as the countries pledged to deepen their alliance during a visit by Volodymyr Zelenskyy. Mark Carney hosted the president of Ukraine in Calgary in the western province of Alberta, where the C",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 16
+        },
+        {
           "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
           "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
           "date": "2026-09-10T07:50:24.000Z",
@@ -1156,28 +1221,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
-        },
-        {
-          "title": "Canada offers air defense support for Ukraine as Zelenskyy visits",
-          "url": "https://www.theguardian.com/world/2026/sep/10/zelenskyy-canada-visit",
-          "date": "2026-09-10T20:35:06.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Canadian PM Mark Carney hosts president in Calgary, where he grew up alongside large Ukrainian community Canada offered support on Thursday to boost Ukraine’s air defenses and help replenish its drone stocks, as the countries pledged to deepen their alliance during a visit by Volodymyr Zelenskyy. Mark Carney hosted the president of Ukraine in Calgary in the western province of Alberta, where the C",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Russia's Putin arrives in India as BRICS leaders begin talks",
@@ -2033,7 +2077,7 @@
           "score": 11
         }
       ],
-      "itemCount": 71
+      "itemCount": 72
     },
     {
       "id": "gaza",
@@ -2062,7 +2106,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -2153,7 +2197,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Several Palestinians detained, two injured during raids by Israeli forces, settlers Several Palestinians were detained and a few others injured in raids by Israeli forces and settlers in the occupied West Bank. Here is a recap of some of these incidents reported by Wafa: * Israeli forces detained eight Palestinians during raids on Jenin city and several towns and villages across the governorate on",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2724,6 +2768,27 @@
           "score": 18
         },
         {
+          "title": "Palestinian man brutally assaulted by settlers in West Bank village",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-man-brutally-assaulted-settlers-west-bank-village",
+          "date": "2026-09-13T01:05:33.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Palestinian man brutally assaulted by settlers in West Bank village Israeli settlers brutally beat a 23-year-old Palestinian man during a settler raid on the central West Bank village of Beitillu on Saturday evening. An image shared by Looking the Occupation in the Eye, an Israeli activist movement ‘working to end the occupation’, shows Mahmoud Abu Radwan bruised and bloodied in an ambulance as he",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 17
+        },
+        {
           "title": "Grace Tame apologises for comments labelling rape of Israeli women during Hamas attacks ‘propaganda’",
           "url": "https://www.theguardian.com/australia-news/2026/sep/10/grace-tame-apologises-for-comments-labelling-of-israeli-women-during-hamas-attacks-propaganda-ntwnfb",
           "date": "2026-09-10T08:22:30.000Z",
@@ -2742,7 +2807,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Israeli attacks kill at least four Palestinians in northern Gaza",
@@ -2763,28 +2828,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
-        },
-        {
-          "title": "Palestinian man brutally assaulted by settlers in West Bank village",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-man-brutally-assaulted-settlers-west-bank-village",
-          "date": "2026-09-13T01:05:33.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Palestinian man brutally assaulted by settlers in West Bank village Israeli settlers brutally beat a 23-year-old Palestinian man during a settler raid on the central West Bank village of Beitillu on Saturday evening. An image shared by Looking the Occupation in the Eye, an Israeli activist movement ‘working to end the occupation’, shows Mahmoud Abu Radwan bruised and bloodied in an ambulance as he",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 17
+          "score": 15
         },
         {
           "title": "Gaza genocide documentary ‘NAZA’ wins Special Jury Prize at Venice",
@@ -4997,7 +5041,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -5071,7 +5115,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Several Palestinians detained, two injured during raids by Israeli forces, settlers Several Palestinians were detained and a few others injured in raids by Israeli forces and settlers in the occupied West Bank. Here is a recap of some of these incidents reported by Wafa: * Israeli forces detained eight Palestinians during raids on Jenin city and several towns and villages across the governorate on",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -5807,7 +5851,7 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Pakistan, Turkey back Arab endorsement of UK's settlement sanctions",
@@ -6876,16 +6920,16 @@
           "count": 11
         },
         {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 4
-        },
-        {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
           "count": 4
+        },
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 3
         }
       ],
       "acled": null,
@@ -6991,6 +7035,27 @@
             "label": "Gefechte"
           },
           "score": 29
+        },
+        {
+          "title": "Mosque and homes damaged in Saudi Arabia after alleged Houthi strike",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/mosque-and-homes-damaged-in-saudi-arabia-after-alleged-houthi-strike?traffic_source=rss",
+          "date": "2026-09-13T08:13:56.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Mosque and homes damaged in Saudi Arabia after alleged Houthi strike",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 26
         },
         {
           "title": "Houthis claim attack on Saudi base as fighting flares with Yemeni forces",
@@ -7381,27 +7446,6 @@
           "score": 21
         },
         {
-          "title": "Trump says Houthis have asked US not to intervene in Yemen",
-          "url": "https://www.dawn.com/news/2029391/trump-says-houthis-have-asked-us-not-to-intervene-in-yemen",
-          "date": "2026-09-12T13:26:07.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "United States President Donald Trump said on Saturday that Yemen’s Iran-allied Houthi fighters, who have seized a vital shipping corridor linking Europe and Asia, have asked Washington not to intervene. The Houthis have taken control of Yemen’s entire Red Sea coast after capturing three strategic islands in a lightning offensive. Saudi Arabia, the world’s biggest oil exporter, has relied on the ar",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 20
-        },
-        {
           "title": "Saudi Arabia closes East-West pipeline as Houthis tighten grip on Red Sea",
           "url": "https://www.france24.com/en/middle-east/20260912-saudi-arabia-shut-down-east-west-pipeline-as-houthis-tighten-grip-on-red-sea",
           "date": "2026-09-12T20:51:50.000Z",
@@ -7440,27 +7484,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 19
-        },
-        {
-          "title": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/1400-yemeni-refugees-arrive-djibouti-24-hours-minister-says",
-          "date": "2026-09-13T02:26:56.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says At least 1400 refugees fleeing Yemen have arrived in Djibouti, according to Djibouti’s minister of economy and finance, Ilyas Moussa Dawaleh. At least 46,000 people have been displaced in Yemen since fighting escalated last week, the UN’s International Organization for Migration (IOM) said on Friday.&nbsp;Since July, at least 76,00",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
           },
           "score": 19
         },
@@ -7874,12 +7897,54 @@
           "score": 16
         },
         {
+          "title": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/1400-yemeni-refugees-arrive-djibouti-24-hours-minister-says",
+          "date": "2026-09-13T02:26:56.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "1400 Yemeni refugees arrive in Djibouti in 24 hours, minister says At least 1400 refugees fleeing Yemen have arrived in Djibouti, according to Djibouti’s minister of economy and finance, Ilyas Moussa Dawaleh. At least 46,000 people have been displaced in Yemen since fighting escalated last week, the UN’s International Organization for Migration (IOM) said on Friday.&nbsp;Since July, at least 76,00",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 16
+        },
+        {
           "title": "Iran war: Saudi-Houthi escalation intensifies Yemen conflict",
           "url": "https://www.dw.com/en/iran-war-saudi-houthi-escalation-intensifies-yemen-conflict/a-79226627?maca=en-rss-en-world-4025-rdf",
           "date": "2026-09-11T11:52:00.000Z",
           "source": "Deutsche Welle",
           "sourceType": "news",
           "summary": "The Houthi takeovers of Mokha, Dhubab and Perim in the Bab el-Mandeb Strait threaten to push Yemen deeper into the Middle East war. The Iran-backed group has made advances against Yemen's government and Saudi Arabia.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump says Houthis have asked US not to intervene in Yemen",
+          "url": "https://www.dawn.com/news/2029391/trump-says-houthis-have-asked-us-not-to-intervene-in-yemen",
+          "date": "2026-09-12T13:26:07.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "United States President Donald Trump said on Saturday that Yemen’s Iran-allied Houthi fighters, who have seized a vital shipping corridor linking Europe and Asia, have asked Washington not to intervene. The Houthis have taken control of Yemen’s entire Red Sea coast after capturing three strategic islands in a lightning offensive. Saudi Arabia, the world’s biggest oil exporter, has relied on the ar",
           "isNew": false,
           "region": null,
           "event": {
@@ -8689,27 +8754,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "CIA releases dozens of presidential daily briefs on Bin Laden and al-Qaida from before 9/11",
-          "url": "https://www.theguardian.com/us-news/2026/sep/11/cia-releases-presidential-briefs-bin-laden-al-qaida",
-          "date": "2026-09-11T22:27:21.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "The presidential briefing documents were declassified on the 25th anniversary of the September 11 attacks Several dozen presidential briefing documents declassified on Friday, the 25th anniversary of the September 11 attacks , detail intelligence that government officials had gathered about Osama bin Laden and al-Qaida leading up to the hijackings that killed nearly 3,000 people and upended Americ",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 12
         }
       ],
       "itemCount": 80
@@ -8740,7 +8784,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "offensive",
@@ -8758,7 +8802,7 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 8
+          "count": 9
         },
         {
           "key": "airstrike",
@@ -8789,8 +8833,8 @@
             51.831,
             35.568
           ],
-          "count": 16,
-          "newCount": 0,
+          "count": 17,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -8833,6 +8877,37 @@
         }
       ],
       "items": [
+        {
+          "title": "Iran authorities say 1 killed, 3 injured as merchant vessel struck in Hormuz",
+          "url": "https://www.dawn.com/news/2029620/iran-authorities-say-1-killed-3-injured-as-merchant-vessel-struck-in-hormuz",
+          "date": "2026-09-13T08:00:15.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "A ship was struck in the Strait of Hormuz on Sunday, killing one person and injuring three, local Iranian authorities said, as Tehran and Washington clash over the strategic waterway. “A merchant vessel was struck around 5am this morning off the coasts of Hengam and Qeshm islands. One person was killed and three others were injured,” Qeshm city governor Amir Teymouri said, according to state TV, w",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 31
+        },
         {
           "title": "Attack on Iranian vessel kills one, wounds three",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/attack-iranian-vessel-kills-one-wounds-three",
@@ -8991,37 +9066,6 @@
           "score": 22
         },
         {
-          "title": "Iran’s Pezeshkian: ‘We are not at war with Saudi Arabia’",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/13-09-clip-pezeshkian-iran-not-at-war-with-saudis-ir?traffic_source=rss",
-          "date": "2026-09-13T01:32:56.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iranian President Masoud Pezeshkian said Tehran is not at war with Saudi Arabia.",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 21
-        },
-        {
           "title": "'Houthis have their own issues': Pezeshkian says Iran not at war with Saudi Arabia",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-have-their-own-issues-pezeshkian-says-iran-not-war-saudi-arabia",
           "date": "2026-09-13T05:18:53.000Z",
@@ -9114,6 +9158,37 @@
             "label": "Politik/Wahl"
           },
           "score": 19
+        },
+        {
+          "title": "Iran’s Pezeshkian: ‘We are not at war with Saudi Arabia’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/13-09-clip-pezeshkian-iran-not-at-war-with-saudis-ir?traffic_source=rss",
+          "date": "2026-09-13T01:32:56.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iranian President Masoud Pezeshkian said Tehran is not at war with Saudi Arabia.",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 18
         },
         {
           "title": "Iran used Chinese satellite images for attack on US base in Jordan",
@@ -10691,27 +10766,6 @@
             "label": "Seeangriff"
           },
           "score": 11
-        },
-        {
-          "title": "US makes progress in reopening Hormuz , but Iran war far from over",
-          "url": "https://www.sandiegouniontribune.com/2026/09/11/us-iran-war-costly-stalemate/",
-          "date": "2026-09-11T16:45:00.000Z",
-          "source": "sandiegouniontribune.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -11243,354 +11297,6 @@
       "itemCount": 15
     },
     {
-      "id": "drc-m23",
-      "name": "DR Kongo / Ostkongo",
-      "nameEn": "DR Congo – M23",
-      "region": "Afrika (Zentral)",
-      "countries": [
-        "Dem. Rep. Congo"
-      ],
-      "lat": -1.7,
-      "lon": 29.2,
-      "tier": "war",
-      "since": "2021 (M23-Wiederaufleben)",
-      "parties": [
-        "DR Kongo (FARDC)",
-        "M23/AFC",
-        "Ruanda",
-        "Wazalendo",
-        "ADF"
-      ],
-      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
-      "hotspots": [
-        "Goma",
-        "Bukavu",
-        "Nord-Kivu",
-        "Süd-Kivu",
-        "Ituri"
-      ],
-      "activity": 30,
-      "severity": 64,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "casualties",
-          "label": "Opfer",
-          "dir": "up",
-          "count": 6
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 1
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COD",
-      "extraCountries": [
-        "RWA",
-        "UGA"
-      ],
-      "regions": [
-        {
-          "id": "COD-1884",
-          "name": "Kinshasa",
-          "nameDe": "Kinshasa",
-          "type": "Neutral City",
-          "anchor": [
-            15.921,
-            -4.443
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Congo-Kinshasa: Will Monitoring of Eastern DR Congo's 'Ceasefire' Improve Compliance?",
-          "url": "https://allafrica.com/stories/202609100236.html",
-          "date": "2026-09-10T10:32:00.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[ISS] The first deployment of the monitoring mechanism is positive, but current conflict conditions should temper expectations.",
-          "isNew": false,
-          "region": {
-            "id": "COD-1884",
-            "name": "Kinshasa",
-            "nameDe": "Kinshasa",
-            "type": "Neutral City",
-            "anchor": [
-              15.921,
-              -4.443
-            ],
-            "matched": "Kinshasa"
-          },
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 22
-        },
-        {
-          "title": "DR Congo school fire stampede death toll rises to 26",
-          "url": "https://www.surinametimes.com/artikel/dr-congo-school-fire-stampede-death-toll-rises-to-26",
-          "date": "2026-09-12T20:15:00.000Z",
-          "source": "surinametimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 22
-        },
-        {
-          "title": "More than 20 children killed in DR Congo school fire",
-          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-10T19:16:24.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "At least 24 schoolchildren killed after fire engulfs schools in rebel - controlled Congo",
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-24-schoolchildren-killed-after-fire-engulfs-schools-in-rebel-controlled-congo/articleshow/134022871.cms",
-          "date": "2026-09-10T19:00:00.000Z",
-          "source": "timesofindia.indiatimes.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "More than a dozen children killed in fire in eastern DR Congo schools",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/more-than-a-dozen-children-killed-in-fire-in-eastern-dr-congo-schools?traffic_source=rss",
-          "date": "2026-09-10T17:45:19.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Authorities say at least 14 school children have been killed after fire ravaged schools in the DR Congo.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "At least 24 killed in school fire in rebel-held DR Congo city",
-          "url": "https://www.aljazeera.com/news/2026/9/10/at-least-20-killed-in-school-fire-in-rebel-held-dr-congo-city?traffic_source=rss",
-          "date": "2026-09-10T15:37:58.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Victims from the fire in AFC/M23-held Bukavu include primary school students, say officials and media reports.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Congo Ebola burial teams battle community anger , fatigue and fear of infection | World",
-          "url": "http://www.stardem.com/ap/world/congo-s-ebola-burial-teams-battle-community-anger-fatigue-and-fear-of-infection/article_f43842b9-399f-501d-b020-f392d232b247.html",
-          "date": "2026-09-07T06:45:00.000Z",
-          "source": "stardem.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Rwanda: Rwanda, Tanzania Military Commanders Meet to Strengthen Border Security",
-          "url": "https://allafrica.com/stories/202609100212.html",
-          "date": "2026-09-10T09:51:29.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[New Times] Military commanders from Rwanda and Tanzania met in Nyagatare District on Wednesday, September 9, to discuss shared security concerns and strengthen cooperation along the two countries' common border.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 12
-        },
-        {
-          "title": "Children die in a school fire in Bukavu",
-          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20260911-children-die-in-a-school-fire-in-bukavu",
-          "date": "2026-09-11T20:18:17.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In tonight's programme we begin in the east of the Democratic Republic of Congo, where children have died after a school fire broke out in the M23 rebel occupied city of Bukavu. Also, Senegal looks to the skies as it seeks to develop its home-grown satellite industry. And finally, we wonder about the future of African cities. How will they cope with the population boom and climate crisis? A questi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Deadly DRC school fire prompts calls for safety reforms",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/deadly-drc-school-fire-prompts-calls-for-safety-reforms?traffic_source=rss",
-          "date": "2026-09-11T19:23:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A fire at a school in the Democratic Republic of the Congo killed 28 students and destroyed homes across a neighbourhood",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 11
-        },
-        {
-          "title": "Rwanda cracks down on illegal alcohol after spate of deaths",
-          "url": "https://www.france24.com/en/video/20260911-rwanda-cracks-down-on-illegal-alcohol-after-spate-of-deaths",
-          "date": "2026-09-11T14:05:44.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In Rwanda, the fight against illegal alcohol has become a national priority. For several weeks, authorities have stepped up seizures, shut down factories and recalled dozens of brands, following a series of deaths linked to bottles contaminated with methanol. Our correspondent travelled to Bugesera, where 18 people died on the same day after being poisoned by these drinks.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 11
-        },
-        {
-          "title": "Fire in rebel - held DR Congo kills 24 schoolchildren",
-          "url": "https://www.canberratimes.com.au/story/9348130/fire-in-rebel-held-dr-congo-kills-24-schoolchildren/",
-          "date": "2026-09-10T20:15:00.000Z",
-          "source": "canberratimes.com.au",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        }
-      ],
-      "itemCount": 12
-    },
-    {
       "id": "nigeria",
       "name": "Nigeria",
       "nameEn": "Nigeria",
@@ -11617,15 +11323,15 @@
         "Plateau",
         "Benue"
       ],
-      "activity": 85,
-      "severity": 64,
-      "newCount": 0,
+      "activity": 87,
+      "severity": 65,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 9
+          "count": 10
         },
         {
           "key": "ceasefire",
@@ -11824,6 +11530,27 @@
       ],
       "items": [
         {
+          "title": "Soldiers arrest three suspects after 17-year-old was killed in Plateau",
+          "url": "https://www.premiumtimesng.com/regional/north-central/909168-soldiers-arrest-three-suspects-after-17-year-old-was-killed-in-plateau.html",
+          "date": "2026-09-13T07:46:39.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The arrests followed a military operation on Saturday, after troops received intelligence on the killing and moved to a settlement believed to have been used by the attackers The post Soldiers arrest three suspects after 17-year-old was killed in Plateau appeared first on Premium Times Nigeria .",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 27
+        },
+        {
           "title": "Xenophobia: Over 30 Nigerians killed by South African police since 2022 – Ambassador",
           "url": "https://www.premiumtimesng.com/news/headlines/909082-xenophobia-over-30-nigerians-killed-by-south-african-police-since-2022-ambassador.html",
           "date": "2026-09-12T16:50:49.000Z",
@@ -11873,7 +11600,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "Xenophobia: Two more Nigerians killed in South Africa, toll rises to seven",
@@ -13229,7 +12956,355 @@
           "score": 8
         }
       ],
-      "itemCount": 55
+      "itemCount": 56
+    },
+    {
+      "id": "drc-m23",
+      "name": "DR Kongo / Ostkongo",
+      "nameEn": "DR Congo – M23",
+      "region": "Afrika (Zentral)",
+      "countries": [
+        "Dem. Rep. Congo"
+      ],
+      "lat": -1.7,
+      "lon": 29.2,
+      "tier": "war",
+      "since": "2021 (M23-Wiederaufleben)",
+      "parties": [
+        "DR Kongo (FARDC)",
+        "M23/AFC",
+        "Ruanda",
+        "Wazalendo",
+        "ADF"
+      ],
+      "background": "M23 mit ruandischer Unterstützung kontrolliert weite Teile Nord- und Südkivus, darunter Goma und Bukavu; parallel ADF-Angriffe im Nordosten.",
+      "hotspots": [
+        "Goma",
+        "Bukavu",
+        "Nord-Kivu",
+        "Süd-Kivu",
+        "Ituri"
+      ],
+      "activity": 30,
+      "severity": 64,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "casualties",
+          "label": "Opfer",
+          "dir": "up",
+          "count": 6
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 1
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "COD",
+      "extraCountries": [
+        "RWA",
+        "UGA"
+      ],
+      "regions": [
+        {
+          "id": "COD-1884",
+          "name": "Kinshasa",
+          "nameDe": "Kinshasa",
+          "type": "Neutral City",
+          "anchor": [
+            15.921,
+            -4.443
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Congo-Kinshasa: Will Monitoring of Eastern DR Congo's 'Ceasefire' Improve Compliance?",
+          "url": "https://allafrica.com/stories/202609100236.html",
+          "date": "2026-09-10T10:32:00.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[ISS] The first deployment of the monitoring mechanism is positive, but current conflict conditions should temper expectations.",
+          "isNew": false,
+          "region": {
+            "id": "COD-1884",
+            "name": "Kinshasa",
+            "nameDe": "Kinshasa",
+            "type": "Neutral City",
+            "anchor": [
+              15.921,
+              -4.443
+            ],
+            "matched": "Kinshasa"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 22
+        },
+        {
+          "title": "DR Congo school fire stampede death toll rises to 26",
+          "url": "https://www.surinametimes.com/artikel/dr-congo-school-fire-stampede-death-toll-rises-to-26",
+          "date": "2026-09-12T20:15:00.000Z",
+          "source": "surinametimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
+          "title": "More than 20 children killed in DR Congo school fire",
+          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-10T19:16:24.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "At least 24 schoolchildren killed after fire engulfs schools in rebel - controlled Congo",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-24-schoolchildren-killed-after-fire-engulfs-schools-in-rebel-controlled-congo/articleshow/134022871.cms",
+          "date": "2026-09-10T19:00:00.000Z",
+          "source": "timesofindia.indiatimes.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "More than a dozen children killed in fire in eastern DR Congo schools",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/more-than-a-dozen-children-killed-in-fire-in-eastern-dr-congo-schools?traffic_source=rss",
+          "date": "2026-09-10T17:45:19.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Authorities say at least 14 school children have been killed after fire ravaged schools in the DR Congo.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "At least 24 killed in school fire in rebel-held DR Congo city",
+          "url": "https://www.aljazeera.com/news/2026/9/10/at-least-20-killed-in-school-fire-in-rebel-held-dr-congo-city?traffic_source=rss",
+          "date": "2026-09-10T15:37:58.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Victims from the fire in AFC/M23-held Bukavu include primary school students, say officials and media reports.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 18
+        },
+        {
+          "title": "Congo Ebola burial teams battle community anger , fatigue and fear of infection | World",
+          "url": "http://www.stardem.com/ap/world/congo-s-ebola-burial-teams-battle-community-anger-fatigue-and-fear-of-infection/article_f43842b9-399f-501d-b020-f392d232b247.html",
+          "date": "2026-09-07T06:45:00.000Z",
+          "source": "stardem.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Rwanda: Rwanda, Tanzania Military Commanders Meet to Strengthen Border Security",
+          "url": "https://allafrica.com/stories/202609100212.html",
+          "date": "2026-09-10T09:51:29.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[New Times] Military commanders from Rwanda and Tanzania met in Nyagatare District on Wednesday, September 9, to discuss shared security concerns and strengthen cooperation along the two countries' common border.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 12
+        },
+        {
+          "title": "Children die in a school fire in Bukavu",
+          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20260911-children-die-in-a-school-fire-in-bukavu",
+          "date": "2026-09-11T20:18:17.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In tonight's programme we begin in the east of the Democratic Republic of Congo, where children have died after a school fire broke out in the M23 rebel occupied city of Bukavu. Also, Senegal looks to the skies as it seeks to develop its home-grown satellite industry. And finally, we wonder about the future of African cities. How will they cope with the population boom and climate crisis? A questi",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Deadly DRC school fire prompts calls for safety reforms",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/deadly-drc-school-fire-prompts-calls-for-safety-reforms?traffic_source=rss",
+          "date": "2026-09-11T19:23:41.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "A fire at a school in the Democratic Republic of the Congo killed 28 students and destroyed homes across a neighbourhood",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 11
+        },
+        {
+          "title": "Rwanda cracks down on illegal alcohol after spate of deaths",
+          "url": "https://www.france24.com/en/video/20260911-rwanda-cracks-down-on-illegal-alcohol-after-spate-of-deaths",
+          "date": "2026-09-11T14:05:44.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In Rwanda, the fight against illegal alcohol has become a national priority. For several weeks, authorities have stepped up seizures, shut down factories and recalled dozens of brands, following a series of deaths linked to bottles contaminated with methanol. Our correspondent travelled to Bugesera, where 18 people died on the same day after being poisoned by these drinks.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 11
+        },
+        {
+          "title": "Fire in rebel - held DR Congo kills 24 schoolchildren",
+          "url": "https://www.canberratimes.com.au/story/9348130/fire-in-rebel-held-dr-congo-kills-24-schoolchildren/",
+          "date": "2026-09-10T20:15:00.000Z",
+          "source": "canberratimes.com.au",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        }
+      ],
+      "itemCount": 12
     },
     {
       "id": "pakistan",
@@ -14739,21 +14814,21 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 70,
-      "severity": 60,
+      "activity": 68,
+      "severity": 59,
       "newCount": 0,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 23
+          "count": 22
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 12
+          "count": 11
         },
         {
           "key": "ceasefire",
@@ -14807,7 +14882,7 @@
             35.368,
             33.36
           ],
-          "count": 6,
+          "count": 5,
           "newCount": 0,
           "event": {
             "type": "airstrike",
@@ -15798,37 +15873,6 @@
           "score": 15
         },
         {
-          "title": "Israeli strikes kill four and destroy hospital in south Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-four-and-destroy-hospital-south-lebanon",
-          "date": "2026-09-06T08:22:26.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli strikes kill four and destroy hospital in south Lebanon Israeli strikes killed four people and destroyed a hospital in south Lebanon amid relentless bombing of the Nabatieh&nbsp;region, Lebanese media reported. The ministry reported that two people were killed in Nabatieh al-Fawqa and two women were killed in nearby Arab Salim. Twenty people were also wounded in several locations, includin",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "US sanctions Iraqi paramilitary group Kataib Hezbollah",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iraqi-paramilitary-group-kataib-hezbollah",
           "date": "2026-09-11T00:04:45.000Z",
@@ -15910,7 +15954,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Lebanon says Israeli army violated framework deal approximately 7 , 700 times",
@@ -16081,7 +16125,7 @@
           "score": 8
         }
       ],
-      "itemCount": 53
+      "itemCount": 52
     },
     {
       "id": "sahel-mali",
@@ -19009,7 +19053,7 @@
             "icon": "🚶",
             "label": "Vertreibung"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "JNIM jihadists step up incursions into northern Benin",
@@ -19990,13 +20034,13 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 12
+          "count": 13
         },
         {
           "key": "displacement",
@@ -20067,6 +20111,27 @@
       ],
       "items": [
         {
+          "title": "Soldiers arrest three suspects after 17-year-old was killed in Plateau",
+          "url": "https://www.premiumtimesng.com/regional/north-central/909168-soldiers-arrest-three-suspects-after-17-year-old-was-killed-in-plateau.html",
+          "date": "2026-09-13T07:46:39.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The arrests followed a military operation on Saturday, after troops received intelligence on the killing and moved to a settlement believed to have been used by the attackers The post Soldiers arrest three suspects after 17-year-old was killed in Plateau appeared first on Premium Times Nigeria .",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 26
+        },
+        {
           "title": "Iraq seizes drone-launching platform used for targeting Saudi oil pipeline",
           "url": "https://www.aljazeera.com/news/2026/9/13/iraq-seizes-drone-launching-platform-used-for-targeting-saudi-oil-pipeline?traffic_source=rss",
           "date": "2026-09-13T02:32:12.000Z",
@@ -20085,7 +20150,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "First naval battle between drones takes place in the Black Sea",
@@ -20403,27 +20468,6 @@
           "score": 18
         },
         {
-          "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
-          "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
-          "date": "2026-09-10T07:50:24.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine launches one of its deepest strikes to date, targeting natural gas plants in Russia's Arctic region.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Xi Jinping gets red carpet at Brics summit amid thaw in India-China relations",
           "url": "https://www.theguardian.com/world/2026/sep/12/xi-jinping-brics-summit-delhi-india-china-relations",
           "date": "2026-09-12T12:39:12.000Z",
@@ -20474,6 +20518,27 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
+          "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
+          "date": "2026-09-10T07:50:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine launches one of its deepest strikes to date, targeting natural gas plants in Russia's Arctic region.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Tories blast Ottawa over quietly resuming military dialogue with China",
@@ -21693,7 +21758,7 @@
           "score": 2
         }
       ],
-      "itemCount": 76
+      "itemCount": 77
     },
     {
       "id": "korea",
@@ -21719,8 +21784,8 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 78,
-      "severity": 46,
+      "activity": 76,
+      "severity": 45,
       "newCount": 0,
       "signals": [
         {
@@ -21774,27 +21839,6 @@
         }
       ],
       "items": [
-        {
-          "title": "North Korea fires missiles after US - South Korea drills",
-          "url": "https://www.dw.com/en/north-korea-fires-multiple-ballistic-missiles-day-after-trilateral-drills-end/a-79242070",
-          "date": "2026-09-12T08:15:00.000Z",
-          "source": "dw.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "regionEvent": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
-          },
-          "score": 22
-        },
         {
           "title": "Seoul reports North Korea launches multiple ballistic missiles in new test",
           "url": "https://jowhar.com/seoul-reports-north-korea-launches-multiple-ballistic-missiles-in-new-test/",
@@ -21899,6 +21943,27 @@
             "label": "Raketenangriff"
           },
           "score": 22
+        },
+        {
+          "title": "North Korea fires missiles after US - South Korea drills",
+          "url": "https://www.dw.com/en/north-korea-fires-multiple-ballistic-missiles-day-after-trilateral-drills-end/a-79242070",
+          "date": "2026-09-12T08:15:00.000Z",
+          "source": "dw.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "regionEvent": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
+          },
+          "score": 18
         },
         {
           "title": "North Korea fires ballistic missiles toward sea after rival military drill it sees as provocation",
@@ -23203,27 +23268,6 @@
           "score": 15
         },
         {
-          "title": "Colombia vows crackdown after deadly drone swarm attack",
-          "url": "http://www.brazilsun.com/news/279289047/colombia-vows-crackdown-after-deadly-drone-swarm-attack",
-          "date": "2026-09-06T08:30:00.000Z",
-          "source": "brazilsun.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
           "title": "How a French Foreign Legion soldier dramatically escaped Colombian captors",
           "url": "https://www.france24.com/en/americas/20260909-how-a-french-foreign-legion-soldier-dramatically-escaped-colombian-captors",
           "date": "2026-09-09T16:17:04.000Z",
@@ -23308,7 +23352,7 @@
           "score": 8
         }
       ],
-      "itemCount": 9
+      "itemCount": 8
     },
     {
       "id": "ethiopia",
@@ -23680,7 +23724,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 25
+          "score": 22
         },
         {
           "title": "Mastermind of Tarlai imambargah attack , four ISKP terrorists killed in IBO",
@@ -24233,7 +24277,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
@@ -24834,88 +24878,6 @@
       "itemCount": 5
     },
     {
-      "id": "venezuela",
-      "name": "Venezuela / Essequibo",
-      "nameEn": "Venezuela & Essequibo",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Venezuela",
-        "Guyana"
-      ],
-      "lat": 7,
-      "lon": -63,
-      "tier": "high",
-      "since": "2023 / Zuspitzung 2025",
-      "parties": [
-        "Venezuela (Maduro)",
-        "Guyana",
-        "USA",
-        "Opposition"
-      ],
-      "background": "Gebietsstreit um Essequibo und massiver militärischer Druck der USA in der Karibik nach der umstrittenen Wahl 2024.",
-      "hotspots": [
-        "Essequibo",
-        "Karibik",
-        "Caracas"
-      ],
-      "activity": 3,
-      "severity": 39,
-      "newCount": 0,
-      "signals": [],
-      "acled": null,
-      "briefing": null,
-      "iso3": "VEN",
-      "extraCountries": [
-        "GUY"
-      ],
-      "regions": [],
-      "items": [
-        {
-          "title": "The Battle to Reclaim Our History - Venezuelanalysis",
-          "url": "https://venezuelanalysis.com/opinion/the-battle-to-reclaim-our-history/",
-          "date": "2026-09-06T08:15:00.000Z",
-          "source": "venezuelanalysis.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump official reveals how 30 - minute military op unlocked Venezuela oil windfall",
-          "url": "https://www.foxnews.com/politics/top-trump-official-reveals-how-30-minute-military-op-unlocked-venezuela-oil-windfall",
-          "date": "2026-09-11T02:00:00.000Z",
-          "source": "foxnews.com",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        }
-      ],
-      "itemCount": 2
-    },
-    {
       "id": "moldova-transnistria",
       "name": "Moldau / Transnistrien",
       "nameEn": "Moldova & Transnistria",
@@ -24938,9 +24900,9 @@
         "Chisinau",
         "Gagausien"
       ],
-      "activity": 95,
-      "severity": 39,
-      "newCount": 0,
+      "activity": 98,
+      "severity": 40,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -24961,14 +24923,14 @@
           "count": 5
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 3
-        },
-        {
           "key": "offensive",
           "label": "Offensive",
+          "dir": "up",
+          "count": 4
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 3
         }
@@ -24979,6 +24941,27 @@
       "extraCountries": [],
       "regions": [],
       "items": [
+        {
+          "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
+          "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-12T23:51:05.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 23
+        },
         {
           "title": "Russia's drone war comes to Moldova and Romania",
           "url": "https://www.dw.com/en/russia-s-drone-war-comes-to-moldova-and-romania/a-79239591?maca=en-rss-en-world-4025-rdf",
@@ -25334,7 +25317,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
@@ -26303,7 +26286,68 @@
           "score": 8
         }
       ],
-      "itemCount": 63
+      "itemCount": 64
+    },
+    {
+      "id": "venezuela",
+      "name": "Venezuela / Essequibo",
+      "nameEn": "Venezuela & Essequibo",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Venezuela",
+        "Guyana"
+      ],
+      "lat": 7,
+      "lon": -63,
+      "tier": "high",
+      "since": "2023 / Zuspitzung 2025",
+      "parties": [
+        "Venezuela (Maduro)",
+        "Guyana",
+        "USA",
+        "Opposition"
+      ],
+      "background": "Gebietsstreit um Essequibo und massiver militärischer Druck der USA in der Karibik nach der umstrittenen Wahl 2024.",
+      "hotspots": [
+        "Essequibo",
+        "Karibik",
+        "Caracas"
+      ],
+      "activity": 2,
+      "severity": 39,
+      "newCount": 0,
+      "signals": [],
+      "acled": null,
+      "briefing": null,
+      "iso3": "VEN",
+      "extraCountries": [
+        "GUY"
+      ],
+      "regions": [],
+      "items": [
+        {
+          "title": "Trump official reveals how 30 - minute military op unlocked Venezuela oil windfall",
+          "url": "https://www.foxnews.com/politics/top-trump-official-reveals-how-30-minute-military-op-unlocked-venezuela-oil-windfall",
+          "date": "2026-09-11T02:00:00.000Z",
+          "source": "foxnews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        }
+      ],
+      "itemCount": 1
     },
     {
       "id": "georgia",
@@ -26329,9 +26373,9 @@
         "Südossetien",
         "Tbilissi"
       ],
-      "activity": 88,
-      "severity": 37,
-      "newCount": 0,
+      "activity": 91,
+      "severity": 38,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -26352,14 +26396,14 @@
           "count": 5
         },
         {
-          "key": "sanctions",
-          "label": "Sanktionen",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
-          "count": 2
+          "count": 3
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
+          "key": "sanctions",
+          "label": "Sanktionen",
           "dir": "up",
           "count": 2
         }
@@ -26388,6 +26432,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
+          "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-12T23:51:05.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 23
+        },
         {
           "title": "Three killed in Russian air strikes on 10 regions of Ukraine",
           "url": "https://www.aljazeera.com/news/2026/9/12/russia-strikes-cargo-vessels-steel-plants-across-ukraine?traffic_source=rss",
@@ -26735,27 +26800,6 @@
           "score": 18
         },
         {
-          "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
-          "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
-          "date": "2026-09-10T07:50:24.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine launches one of its deepest strikes to date, targeting natural gas plants in Russia's Arctic region.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
           "title": "Georgian Church criticises Russia’s claims they have army unit named after Georgian monk",
           "url": "https://oc-media.org/georgian-church-criticises-russias-claims-they-have-army-unit-named-after-georgian-monk/",
           "date": "2026-09-11T13:16:43.000Z",
@@ -26773,6 +26817,27 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
+          "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
+          "date": "2026-09-10T07:50:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine launches one of its deepest strikes to date, targeting natural gas plants in Russia's Arctic region.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 15
         },
@@ -27585,7 +27650,7 @@
           "score": 8
         }
       ],
-      "itemCount": 56
+      "itemCount": 57
     },
     {
       "id": "south-china-sea",
