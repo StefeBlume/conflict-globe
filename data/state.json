@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-24T22:34:17.232Z",
-  "durationSec": 407,
+  "generatedAt": "2026-09-25T01:39:09.103Z",
+  "durationSec": 361,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -114,44 +114,40 @@
       }
     ],
     "gdelt": {
-      "ok": 1,
-      "failed": 9,
+      "ok": 2,
+      "failed": 8,
       "skipped": 6,
       "errors": [
         {
-          "id": "korea",
+          "id": "iran-israel",
+          "error": "fetch failed"
+        },
+        {
+          "id": "yemen",
           "error": "HTTP 429"
         },
         {
-          "id": "sinai-egypt",
+          "id": "india-pakistan",
+          "error": "fetch failed"
+        },
+        {
+          "id": "ukraine-russia",
+          "error": "fetch failed"
+        },
+        {
+          "id": "south-sudan",
           "error": "HTTP 429"
         },
         {
-          "id": "colombia",
-          "error": "fetch failed"
-        },
-        {
-          "id": "moldova-transnistria",
+          "id": "sahel-mali",
           "error": "HTTP 429"
         },
         {
-          "id": "gaza",
-          "error": "fetch failed"
+          "id": "drc-m23",
+          "error": "HTTP 429"
         },
         {
-          "id": "sudan",
-          "error": "fetch failed"
-        },
-        {
-          "id": "libya",
-          "error": "fetch failed"
-        },
-        {
-          "id": "west-papua",
-          "error": "fetch failed"
-        },
-        {
-          "id": "taiwan-strait",
+          "id": "myanmar",
           "error": "HTTP 429"
         }
       ]
@@ -160,8 +156,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1024,
-    "newArticles": 27
+    "articles": 1029,
+    "newArticles": 18
   },
   "conflicts": [
     {
@@ -199,7 +195,7 @@
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 12
+          "count": 11
         },
         {
           "key": "casualties",
@@ -214,16 +210,16 @@
           "count": 7
         },
         {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 4
-        },
-        {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
           "count": 4
+        },
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 3
         }
       ],
       "acled": null,
@@ -346,13 +342,34 @@
       ],
       "items": [
         {
+          "title": "World News in Brief: ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
+          "date": "2026-09-24T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Russian armed forces have carried out repeated attacks across Ukraine over the past several days, killing and injuring civilians and damaging homes, hospitals, shops and workplaces, UN human rights monitors said on Thursday.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 31
+        },
+        {
           "title": "Macron says 'CIA did not ​inform French services' of possible Russian drone attacks",
           "url": "https://www.france24.com/en/france/20260924-macron-says-cia-did-not-inform-french-services-of-possible-russian-drone-attacks",
           "date": "2026-09-24T20:38:09.000Z",
           "source": "France 24",
           "sourceType": "news",
           "summary": "French President Emmanuel Macron on Thursday denied a report by Spanish newspaper El Mundo that the US Central Intelligence Agency had warned European governments of possible Russian drone attacks from the Mediterranean. He also said in a primetime TV interview that France will send troops and defence systems to Saudi Arabia to help protect the Red Sea port city of Yanbu.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -365,27 +382,6 @@
             "label": "Drohnenangriff"
           },
           "score": 29
-        },
-        {
-          "title": "Ukrainian man kills one, wounds four in Poland abbey knife attack",
-          "url": "https://www.aljazeera.com/news/2026/9/24/ukrainian-knifeman-kills-one-wounds-four-at-abbey-in-poland?traffic_source=rss",
-          "date": "2026-09-24T17:15:31.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Ukraine's President Zelenskyy denounces 'horrific crime' after 31-year-old attacks clergy, worshippers in border town.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 28
         },
         {
           "title": "Russia could attack a Nato country within months, Danish intelligence says",
@@ -407,6 +403,27 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "Ukrainian man kills one, wounds four in Poland abbey knife attack",
+          "url": "https://www.aljazeera.com/news/2026/9/24/ukrainian-knifeman-kills-one-wounds-four-at-abbey-in-poland?traffic_source=rss",
+          "date": "2026-09-24T17:15:31.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine's President Zelenskyy denounces 'horrific crime' after 31-year-old attacks clergy, worshippers in border town.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
         },
         {
           "title": "Russia ties Black Sea grain deal with Ukraine to halt in oil refinery strikes",
@@ -551,27 +568,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
-          "title": "Eating garden weeds to survive in Russian-occupied city cut off from food and water",
-          "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-23T23:58:50.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
           },
           "score": 20
         },
@@ -865,6 +861,27 @@
             "label": "Verhandlungen"
           },
           "score": 18
+        },
+        {
+          "title": "Eating garden weeds to survive in Russian-occupied city cut off from food and water",
+          "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-23T23:58:50.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\".",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 16
         },
         {
           "title": "Security Council LIVE: World leaders debate ongoing war in Ukraine",
@@ -2373,27 +2390,6 @@
             "label": "Bericht"
           },
           "score": 11
-        },
-        {
-          "title": "Europe lifts sanctions against two Russians",
-          "url": "https://www.france24.com/en/europe-lifts-sanctions-against-two-russians",
-          "date": "2026-09-23T08:26:17.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The EU has agreed to remove Russian billionaires Alisher Usmanov and Mikhail Fridman from its sanctions list, while extending restrictions on nearly 3,000 individuals and companies linked to Russia’s war in Ukraine for another three years. The decision came after difficult negotiations, as EU sanctions require unanimous approval from all 27 member states. Caroline Baum reports.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -2425,13 +2421,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 9,
+      "newCount": 3,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 21
+          "count": 20
         },
         {
           "key": "ceasefire",
@@ -2443,13 +2439,13 @@
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 7
+          "count": 6
         },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 3
+          "count": 2
         },
         {
           "key": "talks",
@@ -2510,13 +2506,34 @@
       ],
       "items": [
         {
+          "title": "Benjamin Netanyahu attacks Israel’s enemies and allies in UN speech",
+          "url": "https://www.aljazeera.com/news/2026/9/24/benjamin-netanyahu-attacks-israels-enemies-and-allies-in-un-speech?traffic_source=rss",
+          "date": "2026-09-24T22:32:39.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli prime minister denounces Iran, NYC Mayor Mamdani and critics accusing Israel of crimes against Palestinians.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 30
+        },
+        {
           "title": "Senate edges closer to vote on Israeli accountability for US citizens killed in West Bank, Democrat says",
           "url": "https://www.middleeasteye.net/news/senate-could-vote-israeli-accountability-us-citizens-killed-west-bank-says-democrat",
           "date": "2026-09-24T21:01:54.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Senate edges closer to vote on Israeli accountability for US citizens killed in West Bank, Democrat says Submitted by Yasmine El-Sabawi on Thu, 09/24/2026 - 20:40 Nine US citizens have been killed by Israelis in the occupied West Bank over the last four years US Senator Chris Van Hollen (D-MD) speaks during a forum on President Donald Trump's crypto dealings, co-hosted by Senator Richard Blumentha",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -2531,18 +2548,18 @@
           "score": 26
         },
         {
-          "title": "Israeli PM Netanyahu calls Gaza genocide allegations ‘biggest lie of the century’",
-          "url": "https://www.france24.com/en/middle-east/20260924-israel-must-win-because-we-ve-got-no-other-choice-pm-netanyahu-tells-un",
-          "date": "2026-09-24T19:31:41.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Israeli Prime Minister Benjamin Netanyahu gave a combative speech at the UN General Assembly on Thursday in which he denied that Israel had committed genocide in Gaza, lashed out at leaders, including New York Mayor Zohran Mamdani, and said attacking Iran was \"one of the easiest decisions\" he had ever made.",
+          "title": "World News in Brief: ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
+          "date": "2026-09-24T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Russian armed forces have carried out repeated attacks across Ukraine over the past several days, killing and injuring civilians and damaging homes, hospitals, shops and workplaces, UN human rights monitors said on Thursday.",
           "isNew": true,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
             "type": "clash",
@@ -2558,7 +2575,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Hamas denounces Netanyahu’s speech as ‘rife with lies’ Hamas denounced Israeli Prime Minister Benjamin Netanyahu’s address at the UN General Assembly as “rife with lies”, saying that his denial of the \"systematic genocide” contradicts United Nations reports, according to Al Jazeera. “We warn against the occupation’s terrorist and criminal schemes in the occupied West Bank, as well as war criminal ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2579,7 +2596,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Mamdani says Netanyahu used UN speech to sanitise his 'genocide of Palestinians’ New York City Mayor Zohran Mamdani accused Israeli Prime Minister Benjamin Netanyahu of using his UN speech to repeat “baseless lies” aimed at sanitising Israel's “genocide of Palestinians”.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2596,11 +2613,11 @@
         {
           "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
           "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-24T21:21:47.000Z",
+          "date": "2026-09-25T00:44:04.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The Israeli leader labels those who left his speech at the UN General Assembly as \"moral cowards\".",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2615,13 +2632,34 @@
           "score": 22
         },
         {
+          "title": "Israeli PM Netanyahu calls Gaza genocide allegations ‘biggest lie of the century’",
+          "url": "https://www.france24.com/en/middle-east/20260924-israel-must-win-because-we-ve-got-no-other-choice-pm-netanyahu-tells-un",
+          "date": "2026-09-24T19:31:41.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Israeli Prime Minister Benjamin Netanyahu gave a combative speech at the UN General Assembly on Thursday in which he denied that Israel had committed genocide in Gaza, lashed out at leaders, including New York Mayor Zohran Mamdani, and said attacking Iran was \"one of the easiest decisions\" he had ever made.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
           "title": "Netanyahu paints Israel's critics as 'antisemites' in angry UN speech to near-empty hall",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-paints-israels-critics-antisemites-angry-un-speech-near-empty",
           "date": "2026-09-24T22:17:03.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Netanyahu paints Israel's critics as 'antisemites' in angry UN speech to near-empty hall Israeli &nbsp;Prime Minister Benjamin Netanyahu gave a pugnacious speech at the United Nations General Assembly, attacking everyone from New York City Mayor Zohran Mamdani to Turkish President Recep Tayyip Erdogan and the leaders of Western Europe, as he tried to counter Israel’s growing international isolatio",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2741,86 +2779,44 @@
           "score": 22
         },
         {
-          "title": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jewish-voice-for-peace-says-un-playing-host-war-criminal-ahead-netanyahu-speech",
-          "date": "2026-09-24T17:57:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech Jewish Voice for Peace says the United Nations is “playing host to a war criminal” ahead of Israeli Prime Minister Benjamin Netanyahu’s address to the UN General Assembly on Thursday, Al Jazeera reported. “All across New York, Jews, Palestinians and people of conscience are rising up to demand an end to US su",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 21
-        },
-        {
           "title": "Netanyahu blames ‘juvenile delinquents’ for violence in occupied West Bank",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/netanyahu-blames-juvenile-delinquents-for-violence-in-occupied-west-bank?traffic_source=rss",
           "date": "2026-09-24T20:54:28.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "As spoke at the UN, Israeli Prime Minister Benjamin Netanyahu downplayed settler violence in the occupied West Bank.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 20
+        },
+        {
+          "title": "Susan Sarandon and Hannah Einbinder arrested at anti-Netanyahu protest in New York",
+          "url": "https://www.theguardian.com/us-news/2026/sep/25/susan-sarandon-hannah-einbinder-arrested-anti-netanyahu-protest-new-york",
+          "date": "2026-09-24T23:23:34.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Actors detained at Jewish Voice for Peace demonstration against Israeli prime minister’s address to the UN general assembly Oscar-winning actor Susan Sarandon and Hacks star Hannah Einbinder were among people detained by police in New York on Thursday as they moved in to break up a protest against Benjamin Netanyahu. Agence France-Presse footage shows NYPD officers cuffing Thelma &amp; Louise star",
           "isNew": true,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
-          "title": "Gaza’s recovery needs reach $71.5bn amid ‘most severe economic crisis’: UN",
-          "url": "https://www.aljazeera.com/news/2026/9/24/gazas-recovery-needs-reach-71-5bn-amid-most-severe-economic-crisis-un?traffic_source=rss",
-          "date": "2026-09-24T17:03:31.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "UN trade body report says consequences of Israeli occupation have 'skyrocketed' with 90% unemployed in Gaza.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
-          "title": "Residents in West Bank's Masafer Yatta face Israeli demolitions",
-          "url": "https://www.france24.com/en/tv-shows/the-observers/20260924-residents-west-bank-masafer-yatta-israeli-demolitions",
-          "date": "2026-09-24T18:47:22.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "On September 2, the Israeli army demolished the village of Khirbet a-Taban in the occupied West Bank. The village is located in Masafer Yatta, an area Israel declared a restricted military zone. Residents of the area have been reporting an increase in demolitions by the Israeli army and harassment by Israeli settlers since the October 7 Hamas attack.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
           },
           "score": 20
         },
@@ -2831,7 +2827,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "UN General Assembly 2026: Walkout during Netanyahu's speech, and Middle East wars in spotlight Submitted by Sean Mathews on Thu, 09/24/2026 - 22:04 Somalia said it is bearing the costs of US-Israeli war on Iran, while Yemen said its security is critical to freedom of navigation in Red Sea Israeli Prime Minister Benjamin Netanyahu waves to delegates from several countries as they leave the room bef",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2852,7 +2848,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Hollywood stars among arrests in New York City anti-Netanyahu protest Film star Susan Sarandon and \"Hacks\" actress Hannah Einbinder were among people detained by police in New York City on Thursday as they moved in to break up a protest against Benjamin&nbsp;Netanyahu. AFP footage shows NYPD officers cuffing \"Thelma &amp; Louise\" star Sarandon at the demo in the city as the Israeli prime minister ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "protest",
@@ -2865,27 +2861,6 @@
             "label": "Proteste/Unruhen"
           },
           "score": 20
-        },
-        {
-          "title": "Israel facing water shortages caused by destruction of Gaza’s treatment plants",
-          "url": "https://www.theguardian.com/world/2026/sep/24/israel-water-shortages-destruction-gaza-treatment-plants-pollution-sanitation-crisis",
-          "date": "2026-09-24T05:00:08.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Five desalination plants shut down for days, while Gaza remains in grip of severe water and sanitation crisis Israel is facing weeks of water shortages after an exceptional algae bloom crippled much of its desalination capacity, in a crisis scientists say was triggered when Israeli attacks destroyed much of Gaza’s wastewater infrastructure, causing a massive discharge of untreated sewage. “Polluti",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
         },
         {
           "title": "Gaza flotilla activist on hunger strike in Tunisia jail ‘on verge of death’",
@@ -3371,6 +3346,90 @@
           "score": 18
         },
         {
+          "title": "Residents in West Bank's Masafer Yatta face Israeli demolitions",
+          "url": "https://www.france24.com/en/tv-shows/the-observers/20260924-residents-west-bank-masafer-yatta-israeli-demolitions",
+          "date": "2026-09-24T18:47:22.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "On September 2, the Israeli army demolished the village of Khirbet a-Taban in the occupied West Bank. The village is located in Masafer Yatta, an area Israel declared a restricted military zone. Residents of the area have been reporting an increase in demolitions by the Israeli army and harassment by Israeli settlers since the October 7 Hamas attack.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 17
+        },
+        {
+          "title": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jewish-voice-for-peace-says-un-playing-host-war-criminal-ahead-netanyahu-speech",
+          "date": "2026-09-24T17:57:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech Jewish Voice for Peace says the United Nations is “playing host to a war criminal” ahead of Israeli Prime Minister Benjamin Netanyahu’s address to the UN General Assembly on Thursday, Al Jazeera reported. “All across New York, Jews, Palestinians and people of conscience are rising up to demand an end to US su",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Gaza’s recovery needs reach $71.5bn amid ‘most severe economic crisis’: UN",
+          "url": "https://www.aljazeera.com/news/2026/9/24/gazas-recovery-needs-reach-71-5bn-amid-most-severe-economic-crisis-un?traffic_source=rss",
+          "date": "2026-09-24T17:03:31.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "UN trade body report says consequences of Israeli occupation have 'skyrocketed' with 90% unemployed in Gaza.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israel facing water shortages caused by destruction of Gaza’s treatment plants",
+          "url": "https://www.theguardian.com/world/2026/sep/24/israel-water-shortages-destruction-gaza-treatment-plants-pollution-sanitation-crisis",
+          "date": "2026-09-24T05:00:08.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Five desalination plants shut down for days, while Gaza remains in grip of severe water and sanitation crisis Israel is facing weeks of water shortages after an exceptional algae bloom crippled much of its desalination capacity, in a crisis scientists say was triggered when Israeli attacks destroyed much of Gaza’s wastewater infrastructure, causing a massive discharge of untreated sewage. “Polluti",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
           "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
           "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
           "date": "2026-09-22T00:00:00.000Z",
@@ -3389,7 +3448,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Israel displaces hundreds of Palestinians amid wave of demolitions in West Bank",
@@ -3765,27 +3824,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran’s accuses Europe of enabling Israeli war crimes in region",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-accuses-europe-enabling-israeli-war-crimes-region",
-          "date": "2026-09-23T23:55:02.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran’s accuses Europe of enabling Israeli war crimes in region Iran’s foreign minister Abbas Araghchi accused&nbsp;European countries of enabling Israeli crimes in the Middle East. During a meeting with&nbsp;his German counterpart, Johann Wadephul, on the sidelines of the UN General Assembly, Araghchi called for an end to European complicity and Israeli impunity. The Iranian foreign minister echoe",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -4186,48 +4224,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "What’s behind reports that the Israeli army is low on troops, equipment?",
-          "url": "https://www.aljazeera.com/news/2026/9/19/whats-behind-reports-that-the-israeli-army-is-low-on-troops-equipment?traffic_source=rss",
-          "date": "2026-09-19T12:51:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel's Channel 12 and Maariv newspaper claim the military is facing 'severe shortages'.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Three Palestinians killed in Israeli attacks on Gaza",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-killed-israeli-attacks-gaza",
-          "date": "2026-09-19T04:52:50.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Three Palestinians killed in Israeli attacks on Gaza Three Palestinians have been killed in Israeli attacks in the Gaza Strip, Al Jazeera reported, citing local hospital sources. Wafa news agency reported on Friday that a Palestinian man identified as Hudhaifa Awad was killed, and several others, including a child, were injured when Israeli forces bombed a motorcycle in Al-Taqwa refugee camp in th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4361,6 +4357,37 @@
       ],
       "items": [
         {
+          "title": "Sudan: Drone Strikes Destroy More Than 330,000 Learning Materials in Sudan's North Kordofan State",
+          "url": "https://allafrica.com/stories/202609220447.html",
+          "date": "2026-09-22T17:37:32.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Unicef] New York/Nairobi/Khartoum -- Drone strikes on two warehouses in Shikan locality, North Kordofan, on 20 September destroyed over 292,000 school textbooks, 40,000 Arabic Language and Mathematics Review Books, and other learning materials intended for distribution to children.",
+          "isNew": false,
+          "region": {
+            "id": "SDN-883",
+            "name": "North Kordofan",
+            "nameDe": "Schamal Kurdufan",
+            "type": "State",
+            "anchor": [
+              29.382,
+              14.438
+            ],
+            "matched": "North Kordofan"
+          },
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 23
+        },
+        {
           "title": "Outcry in Sudan as US reportedly holds al-Burhan’s UN visa over truce plan",
           "url": "https://www.aljazeera.com/news/2026/9/24/outcry-in-sudan-as-us-reportedly-holds-army-chiefs-un-visa-over-ceasefire?traffic_source=rss",
           "date": "2026-09-24T06:25:08.000Z",
@@ -4380,27 +4407,6 @@
             "label": "Waffenruhe"
           },
           "score": 22
-        },
-        {
-          "title": "Collapsing currency and inflation leave families struggling in Sudan",
-          "url": "https://www.aljazeera.com/features/2026/9/24/collapsing-currency-and-inflation-leave-families-struggling-in-sudan?traffic_source=rss",
-          "date": "2026-09-24T17:03:55.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Rising bread, sugar and meat prices strain Sudanese households already grappling with war and economic instability.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
         },
         {
           "title": "Sudan: Has the U.S. Adopted a Regime Change Policy in Sudan?",
@@ -4476,37 +4482,6 @@
           "score": 18
         },
         {
-          "title": "Sudan: Drone Strikes Destroy More Than 330,000 Learning Materials in Sudan's North Kordofan State",
-          "url": "https://allafrica.com/stories/202609220447.html",
-          "date": "2026-09-22T17:37:32.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Unicef] New York/Nairobi/Khartoum -- Drone strikes on two warehouses in Shikan locality, North Kordofan, on 20 September destroyed over 292,000 school textbooks, 40,000 Arabic Language and Mathematics Review Books, and other learning materials intended for distribution to children.",
-          "isNew": false,
-          "region": {
-            "id": "SDN-883",
-            "name": "North Kordofan",
-            "nameDe": "Schamal Kurdufan",
-            "type": "State",
-            "anchor": [
-              29.382,
-              14.438
-            ],
-            "matched": "North Kordofan"
-          },
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 18
-        },
-        {
           "title": "Sudan: Civilians Flee North Kordofan As Fighting Escalates",
           "url": "https://allafrica.com/stories/202609230066.html",
           "date": "2026-09-23T07:46:26.000Z",
@@ -4557,6 +4532,27 @@
             "label": "Sanktionen/Recht"
           },
           "score": 16
+        },
+        {
+          "title": "Collapsing currency and inflation leave families struggling in Sudan",
+          "url": "https://www.aljazeera.com/features/2026/9/24/collapsing-currency-and-inflation-leave-families-struggling-in-sudan?traffic_source=rss",
+          "date": "2026-09-24T17:03:55.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Rising bread, sugar and meat prices strain Sudanese households already grappling with war and economic instability.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Sudan: Al Burhan Presents Vision for Ending Sudan War",
@@ -4944,7 +4940,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -5018,7 +5014,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Senate edges closer to vote on Israeli accountability for US citizens killed in West Bank, Democrat says Submitted by Yasmine El-Sabawi on Thu, 09/24/2026 - 20:40 Nine US citizens have been killed by Israelis in the occupied West Bank over the last four years US Senator Chris Van Hollen (D-MD) speaks during a forum on President Donald Trump's crypto dealings, co-hosted by Senator Richard Blumentha",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "casualties",
@@ -5123,27 +5119,6 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "As spoke at the UN, Israeli Prime Minister Benjamin Netanyahu downplayed settler violence in the occupied West Bank.",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
-          "title": "Residents in West Bank's Masafer Yatta face Israeli demolitions",
-          "url": "https://www.france24.com/en/tv-shows/the-observers/20260924-residents-west-bank-masafer-yatta-israeli-demolitions",
-          "date": "2026-09-24T18:47:22.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "On September 2, the Israeli army demolished the village of Khirbet a-Taban in the occupied West Bank. The village is located in Masafer Yatta, an area Israel declared a restricted military zone. Residents of the area have been reporting an increase in demolitions by the Israeli army and harassment by Israeli settlers since the October 7 Hamas attack.",
           "isNew": false,
           "region": null,
           "event": {
@@ -5152,9 +5127,9 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 20
         },
@@ -5220,6 +5195,27 @@
             "label": "Opfer"
           },
           "score": 18
+        },
+        {
+          "title": "Residents in West Bank's Masafer Yatta face Israeli demolitions",
+          "url": "https://www.france24.com/en/tv-shows/the-observers/20260924-residents-west-bank-masafer-yatta-israeli-demolitions",
+          "date": "2026-09-24T18:47:22.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "On September 2, the Israeli army demolished the village of Khirbet a-Taban in the occupied West Bank. The village is located in Masafer Yatta, an area Israel declared a restricted military zone. Residents of the area have been reporting an increase in demolitions by the Israeli army and harassment by Israeli settlers since the October 7 Hamas attack.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 17
         },
         {
           "title": "Israel displaces hundreds of Palestinians amid wave of demolitions in West Bank",
@@ -6091,7 +6087,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 3,
       "signals": [
         {
           "key": "displacement",
@@ -6115,13 +6111,13 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 12
+          "count": 13
         },
         {
           "key": "escalation",
           "label": "Eskalation",
           "dir": "up",
-          "count": 12
+          "count": 13
         }
       ],
       "acled": null,
@@ -6225,6 +6221,48 @@
       ],
       "items": [
         {
+          "title": "Saudi reports fresh Houthi attacks as France pledges to defend key oil port",
+          "url": "https://www.france24.com/en/middle-east/20260924-saudi-houthi-attacks-france-oil-port",
+          "date": "2026-09-24T23:34:29.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Saudi Arabia intercepted Houthi ballistic missiles on Thursday after warning several regions, including Mecca, of possible attacks. France said it would send military assets to help protect the Saudi oil terminal at Yanbu. The strikes came amid renewed fighting in Yemen that has killed dozens, according to sources cited by AFP.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
+          "title": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-turkey-and-pakistan-set-hold-urgent-chiefs-staff-meeting",
+          "date": "2026-09-25T00:23:51.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks The Saudi foreign ministry announced on Friday that the kingdom,&nbsp;Turkey and Pakistan will hold an urgent meeting of their chiefs of staff to discuss ways to back Riyadh amid the escalating tensions with&nbsp;Yemen's Houthis.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
           "title": "Houthi advances in Yemen drive displacement, deepen humanitarian crisis",
           "url": "https://www.dw.com/en/houthi-advances-in-yemen-drive-displacement-deepen-humanitarian-crisis/a-79414280?maca=en-rss-en-world-4025-rdf",
           "date": "2026-09-24T16:26:00.000Z",
@@ -6246,35 +6284,25 @@
           "score": 26
         },
         {
-          "title": "Yemeni government says its forces targeted Houthis in Mocha, Taiz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-says-its-forces-target-houthi-troops-mocha-taizl",
-          "date": "2026-09-24T16:51:31.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemeni government says its forces targeted Houthis in Mocha, Taiz The spokesman for the Yemeni government’s armed forces said on X that Houthis in Mocha and Taiz in southwestern Yemen were targeted in attacks.",
-          "isNew": false,
-          "region": {
-            "id": "YEM-158",
-            "name": "Ta'izz",
-            "nameDe": "Gouvernement Ta'izz",
-            "type": "Governorate",
-            "anchor": [
-              43.787,
-              13.41
-            ],
-            "matched": "Taiz"
-          },
+          "title": "World News in Brief: ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
+          "date": "2026-09-24T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Russian armed forces have carried out repeated attacks across Ukraine over the past several days, killing and injuring civilians and damaging homes, hospitals, shops and workplaces, UN human rights monitors said on Thursday.",
+          "isNew": true,
+          "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 25
         },
         {
           "title": "Saudi-led coalition says shot down 6 ballistic missiles launched by Houthis",
@@ -6664,6 +6692,58 @@
           "score": 18
         },
         {
+          "title": "East Africa: Ethiopian Army's Emergence - a Strategic Insurance for Red Sea and Horn Region Security",
+          "url": "https://allafrica.com/stories/202609240373.html",
+          "date": "2026-09-24T13:40:13.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[ENA] Ethiopia is undertaking a broad transformation of its national defense system, seeking to build a military that is more professional, technologically advanced, operationally ready and increasingly capable of sustaining itself through domestic production.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 16
+        },
+        {
+          "title": "Yemeni government says its forces targeted Houthis in Mocha, Taiz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-says-its-forces-target-houthi-troops-mocha-taizl",
+          "date": "2026-09-24T16:51:31.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemeni government says its forces targeted Houthis in Mocha, Taiz The spokesman for the Yemeni government’s armed forces said on X that Houthis in Mocha and Taiz in southwestern Yemen were targeted in attacks.",
+          "isNew": false,
+          "region": {
+            "id": "YEM-158",
+            "name": "Ta'izz",
+            "nameDe": "Gouvernement Ta'izz",
+            "type": "Governorate",
+            "anchor": [
+              43.787,
+              13.41
+            ],
+            "matched": "Taiz"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
           "title": "Saudi air strike targets a local market in a village near Bab al-Mandeb in Yemen",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-air-strike-targets-local-market-village-near-bab-al-mandeb-yemen",
           "date": "2026-09-21T23:40:36.000Z",
@@ -6682,7 +6762,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "UK to refuel Saudi jets to help counter Houthi attacks",
@@ -6703,28 +6783,7 @@
             "icon": "✈️",
             "label": "Luftangriff"
           },
-          "score": 18
-        },
-        {
-          "title": "East Africa: Ethiopian Army's Emergence - a Strategic Insurance for Red Sea and Horn Region Security",
-          "url": "https://allafrica.com/stories/202609240373.html",
-          "date": "2026-09-24T13:40:13.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[ENA] Ethiopia is undertaking a broad transformation of its national defense system, seeking to build a military that is more professional, technologically advanced, operationally ready and increasingly capable of sustaining itself through domestic production.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Yemenis seek safety in Djibouti as African migrants continue arriving in Yemen",
@@ -7959,7 +8018,7 @@
           "score": 11
         }
       ],
-      "itemCount": 74
+      "itemCount": 77
     },
     {
       "id": "iran-israel",
@@ -7987,13 +8046,13 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 4,
+      "newCount": 5,
       "signals": [
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 18
+          "count": 17
         },
         {
           "key": "sanctions",
@@ -8036,8 +8095,8 @@
             51.831,
             35.568
           ],
-          "count": 22,
-          "newCount": 1,
+          "count": 25,
+          "newCount": 3,
           "event": {
             "type": "missile",
             "icon": "🚀",
@@ -8047,34 +8106,13 @@
       ],
       "items": [
         {
-          "title": "Iran awaiting response from Trump on proposal to open strait of Hormuz in six days",
-          "url": "https://www.theguardian.com/world/2026/sep/24/ed-miliband-meets-iran-foreign-minister-us-ultimatum-strait-hormuz",
-          "date": "2026-09-24T21:57:34.000Z",
-          "source": "The Guardian World",
+          "title": "Iran war live: Tehran wants Washington to re-enter MoU before US midterms",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/25/iran-war-live-tehran-wants-washington-to-re-enter-mou-before-us-midterms?traffic_source=rss",
+          "date": "2026-09-25T00:00:00.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Country says US must lift sanctions on its oil exports and end the war on all fronts, including in Lebanon Iran said it has told Donald Trump it is willing to open the strait of Hormuz in six days, and to start talks on its nuclear program the day after, so long as the US lifts sanctions on Iran’s oil exports in return, ends the war on all fronts – including in Lebanon – and releases some of Iran’",
+          "summary": "Iranian President Masoud Pezeshkian says Iran wants the US to return to the MoU by early November.",
           "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 23
-        },
-        {
-          "title": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-pm-tells-iran-president-country-cannot-be-arena-regional-wars",
-          "date": "2026-09-24T18:32:08.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars Lebanese Prime Minister Nawaf Salam told Iranian President Masoud Pezeshkian on Thursday that his country did not want to be an arena for regional wars. Lebanon has repeatedly accused&nbsp;Iran&nbsp;of interfering in its affairs, especially since the start of the latest war, alleging that Tehran was using it",
-          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -8099,13 +8137,55 @@
           "score": 23
         },
         {
-          "title": "Iranian-American group sues Trump over war",
-          "url": "https://www.aljazeera.com/news/2026/9/24/iranian-american-group-sues-trump-over-war?traffic_source=rss",
-          "date": "2026-09-24T17:45:52.000Z",
+          "title": "Iran awaiting response from Trump on proposal to open strait of Hormuz in six days",
+          "url": "https://www.theguardian.com/world/2026/sep/24/ed-miliband-meets-iran-foreign-minister-us-ultimatum-strait-hormuz",
+          "date": "2026-09-24T21:57:34.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Country says US must lift sanctions on its oil exports and end the war on all fronts, including in Lebanon Iran said it has told Donald Trump it is willing to open the strait of Hormuz in six days, and to start talks on its nuclear program the day after, so long as the US lifts sanctions on Iran’s oil exports in return, ends the war on all fronts – including in Lebanon – and releases some of Iran’",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 23
+        },
+        {
+          "title": "UAE bars Iranian airlines as US sanctions squeeze Iran’s aviation sector",
+          "url": "https://www.aljazeera.com/economy/2026/9/25/uae-bars-iranian-airlines-as-us-sanctions-squeeze-irans-aviation-sector?traffic_source=rss",
+          "date": "2026-09-25T00:24:47.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Plaintiffs have families in Iran who have been harmed by the US war, they say.",
-          "isNew": false,
+          "summary": "UAE joins Oman, Iraq, Azerbaijan, Georgia and Turkmenistan in restricting access to Iranian airlines.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Iranian president says it is up to US to choose if it wants to end Iran war",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-president-says-it-us-choose-if-it-wants-end-iran-war",
+          "date": "2026-09-24T22:49:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian president says it is up to US to choose if it wants to end Iran war Iranian President Masoud Pezeshkian said it was up to the United States to choose when the war would end, when he was asked if it could end by the end of the year. \"It's America that must choose whether it wants to end this or not,\" Pezeshkian said, responding to the question in an interview aired on Thursday evening on Fo",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -8126,7 +8206,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Iranian-American group sues Trump for 'unconstitutional' war on Iran The National Iranian American Council (NIAC), a civic engagement organisation based in Washington, DC, filed a lawsuit against US President Donald Trump on Thursday, asking a federal judge to declare the&nbsp; US war on Iran &nbsp;unconstitutional, given that Trump did not seek congressional authority and has no timeline to end i",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -8162,27 +8242,6 @@
           "score": 22
         },
         {
-          "title": "Eight sailors assigned to US carrier strike group attempted suicide during deployment against Iran: Report",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eight-sailors-assigned-us-carrier-strike-group-attempted-suicide-during",
-          "date": "2026-09-24T01:19:53.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Eight sailors assigned to US carrier strike group attempted suicide during deployment against Iran: Report Eight US Navy personnel assigned to&nbsp;the USS Abraham Lincoln carrier strike group attempted suicide during the vessels'&nbsp;deployment against Iran,&nbsp;CNN reported based on a letter from the service’s acting secretary. \"Since the beginning of Lincoln’s deployment, there have been a to",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 22
-        },
-        {
           "title": "Iran’s president brings receipts of US strikes on civilians to the UNGA",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/aje-onl-nf_iran-president-pushes-back-against-trump-at-unga-230926?traffic_source=rss",
           "date": "2026-09-24T02:17:36.000Z",
@@ -8202,6 +8261,68 @@
             "label": "Bericht"
           },
           "score": 22
+        },
+        {
+          "title": "Live: Iran's President says US ‘must choose’ whether to end war",
+          "url": "https://www.france24.com/en/americas/20260924-live-iran-pezeshkian-us-war-yemen",
+          "date": "2026-09-24T23:52:57.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "It is for the United States to choose whether to end its war in Iran as Tehran does not wish to continue fighting, Iranian President Masoud Pezeshkian told Fox News in an interview aired Thursday. Pezeshkian took a defiant stand at the UN Wednesday, for which he travelled to New York, telling the world that Iran would not \"bend at the knee\" to Washington Follow our liveblog for the latest updates.",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 21
+        },
+        {
+          "title": "Pezeshkian says up to US to choose whether to end war on Iran",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-says-us-choose-whether-end-war-iran",
+          "date": "2026-09-25T00:53:04.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Pezeshkian says up to US to choose whether to end war on Iran Iranian President Masoud Pezeshkian said that it is up to the US to choose whether to end its war on Iran, as Tehran does not want to continue the conflict.&nbsp; \"When we can resolve issues through dialog, we shouldn't resort to killing one another. But with the instigations conducted by Israel, they have imposed this war on us,\" Pezes",
+          "isNew": true,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 21
         },
         {
           "title": "Family of Iranian twins sentenced to death and decades in jail ask UN for help",
@@ -8241,7 +8362,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "Flights between Iran and the United Arab Emirates have been suspended, following tighter US sanctions on Iran's aviation industry. The move effectively cuts Tehran off from Dubai, one of the region's most important commercial hubs. There are also huge backups near Iran's border with Turkey, as overland shipping routes struggle to fill the gaps. Also in this edition - Donald Trump and Xi Jinping ha",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -8272,7 +8393,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Some 60 ships passed through Strait of Hormuz on Wednesday, US official says Some 60 commercial vessels transited the Strait of Hormuz on Wednesday carrying the highest daily volume of crude oil since early July, despite the US war on Iran, a US official told Reuters, speaking on condition of anonymity. About 40 of those vessels coordinated with the US military for protection, the US official adde",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -8287,12 +8408,43 @@
           "score": 20
         },
         {
-          "title": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/80-countries-call-un-reopening-hormuz-strait",
-          "date": "2026-09-24T17:21:09.000Z",
+          "title": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-pm-tells-iran-president-country-cannot-be-arena-regional-wars",
+          "date": "2026-09-24T18:32:08.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz A coalition of 80 countries called on Thursday for the restoration of freedom of navigation in the Gulf, condemning attacks by Iran and the Houthis in Yemen that are disrupting global shipping. “Iran’s actions in the Strait of Hormuz continue to threaten international security and ‌navigational rights and freedoms,” sai",
+          "summary": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars Lebanese Prime Minister Nawaf Salam told Iranian President Masoud Pezeshkian on Thursday that his country did not want to be an arena for regional wars. Lebanon has repeatedly accused&nbsp;Iran&nbsp;of interfering in its affairs, especially since the start of the latest war, alleging that Tehran was using it",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 20
+        },
+        {
+          "title": "Eight sailors assigned to US carrier strike group attempted suicide during deployment against Iran: Report",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eight-sailors-assigned-us-carrier-strike-group-attempted-suicide-during",
+          "date": "2026-09-24T01:19:53.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Eight sailors assigned to US carrier strike group attempted suicide during deployment against Iran: Report Eight US Navy personnel assigned to&nbsp;the USS Abraham Lincoln carrier strike group attempted suicide during the vessels'&nbsp;deployment against Iran,&nbsp;CNN reported based on a letter from the service’s acting secretary. \"Since the beginning of Lincoln’s deployment, there have been a to",
           "isNew": false,
           "region": null,
           "event": {
@@ -8305,7 +8457,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 20
+          "score": 18
         },
         {
           "title": "'We will never bow our head': Iran's president strikes defiant tone in UN speech",
@@ -8495,6 +8647,48 @@
           "score": 18
         },
         {
+          "title": "Iranian-American group sues Trump over war",
+          "url": "https://www.aljazeera.com/news/2026/9/24/iranian-american-group-sues-trump-over-war?traffic_source=rss",
+          "date": "2026-09-24T17:45:52.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Plaintiffs have families in Iran who have been harmed by the US war, they say.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/80-countries-call-un-reopening-hormuz-strait",
+          "date": "2026-09-24T17:21:09.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz A coalition of 80 countries called on Thursday for the restoration of freedom of navigation in the Gulf, condemning attacks by Iran and the Houthis in Yemen that are disrupting global shipping. “Iran’s actions in the Strait of Hormuz continue to threaten international security and ‌navigational rights and freedoms,” sai",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 15
+        },
+        {
           "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
           "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
           "date": "2026-09-22T00:00:00.000Z",
@@ -8513,7 +8707,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "UAE suspends Iranian airlines' flights until further notice",
@@ -8745,27 +8939,6 @@
           "score": 15
         },
         {
-          "title": "Iran’s accuses Europe of enabling Israeli war crimes in region",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-accuses-europe-enabling-israeli-war-crimes-region",
-          "date": "2026-09-23T23:55:02.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran’s accuses Europe of enabling Israeli war crimes in region Iran’s foreign minister Abbas Araghchi accused&nbsp;European countries of enabling Israeli crimes in the Middle East. During a meeting with&nbsp;his German counterpart, Johann Wadephul, on the sidelines of the UN General Assembly, Araghchi called for an end to European complicity and Israeli impunity. The Iranian foreign minister echoe",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
           "title": "US war on Iran: Trump will ‘declare victory and go home’’ embracing the ‘Greenland option’",
           "url": "https://www.france24.com/en/tv-shows/spotlight/20260924-us-war-on-iran-trump-will-declare-victory-and-go-home-embracing-the-greenland-option",
           "date": "2026-09-24T02:35:59.000Z",
@@ -8783,58 +8956,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Iran war live: Tehran says it won’t be bullied, remains open for talks",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/9/24/iran-war-live-tehran-says-it-wont-be-bullied-remains-open-for-talks?traffic_source=rss",
-          "date": "2026-09-24T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iranian president says Tehran will not bow to pressure while remaining open to dialogue in a defiant UN speech.",
-          "isNew": false,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 15
-        },
-        {
-          "title": "Canada sanctions ten Iranian individuals and entities",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/canada-sanctions-ten-iranian-individuals-and-entities",
-          "date": "2026-09-23T22:36:46.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Canada sanctions ten Iranian individuals and entities Canadan Foreign Minister Anita Anand said on Wednesdat that Canada is imposing sanctions against 10 Iranian individuals and entities. “Canada is using every tool at its disposal, including targeted sanctions, to respond to the Iranian regime’s abhorrent conduct – from threatening international peace and security to committing pervasive human ri",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
           },
           "score": 15
         },
@@ -9150,6 +9271,79 @@
             "label": "Waffenruhe"
           },
           "score": 12
+        },
+        {
+          "title": "Iran’s accuses Europe of enabling Israeli war crimes in region",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-accuses-europe-enabling-israeli-war-crimes-region",
+          "date": "2026-09-23T23:55:02.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran’s accuses Europe of enabling Israeli war crimes in region Iran’s foreign minister Abbas Araghchi accused&nbsp;European countries of enabling Israeli crimes in the Middle East. During a meeting with&nbsp;his German counterpart, Johann Wadephul, on the sidelines of the UN General Assembly, Araghchi called for an end to European complicity and Israeli impunity. The Iranian foreign minister echoe",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran war live: Tehran says it won’t be bullied, remains open for talks",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/24/iran-war-live-tehran-says-it-wont-be-bullied-remains-open-for-talks?traffic_source=rss",
+          "date": "2026-09-24T00:00:00.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iranian president says Tehran will not bow to pressure while remaining open to dialogue in a defiant UN speech.",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 11
+        },
+        {
+          "title": "Canada sanctions ten Iranian individuals and entities",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/canada-sanctions-ten-iranian-individuals-and-entities",
+          "date": "2026-09-23T22:36:46.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Canada sanctions ten Iranian individuals and entities Canadan Foreign Minister Anita Anand said on Wednesdat that Canada is imposing sanctions against 10 Iranian individuals and entities. “Canada is using every tool at its disposal, including targeted sanctions, to respond to the Iranian regime’s abhorrent conduct – from threatening international peace and security to committing pervasive human ri",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
         },
         {
           "title": "US aviation sanctions disrupt Iran flights, push travellers overland",
@@ -9840,111 +10034,6 @@
             "label": "Sanktionen/Recht"
           },
           "score": 11
-        },
-        {
-          "title": "US prosecutors probing Binance for possible Iran sanctions violations",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-prosecutors-probing-binance-possible-iran-sanctions-violations",
-          "date": "2026-09-22T23:11:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US prosecutors probing Binance for possible Iran sanctions violations US prosecutors are investigating Binance in connection to US sanctions on Iran and trading activity on its platform, a source with knowledge of the matter said. The investigation is being led by federal prosecutors with the US attorney's office in Manhattan and with the Justice Department's criminal division in Washington, the s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iran and US held direct UN talks, with Islamic Republic's terms to reopen Hormuz hardening",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-and-us-held-direct-un-talks-islamic-republics-terms-reopen-hormuz",
-          "date": "2026-09-22T21:20:08.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran and US held direct UN talks, with Islamic Republic's terms to reopen Hormuz hardening Iranian&nbsp;Foreign Minister Abbas Araghchi met with&nbsp;US&nbsp;special envoy Steve Witkoff on Tuesday on the sidelines of the United Nations General Assembly in New York City to discuss terms to end their&nbsp;war,&nbsp;in the first public meeting between the two sides in months.&nbsp; Multiple Gulf offi",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 11
-        },
-        {
-          "title": "Trump heaps praise on Middle East leaders at UN meeting on Iran war",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-heaps-praise-middle-east-leaders-un-meeting-iran-war",
-          "date": "2026-09-22T21:21:29.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Trump heaps praise on Middle East leaders at UN meeting on Iran war US President Donald Trump held a highly anticipated meeting with Arab and Muslim leaders on the sidelines of the United Nations General Assembly on Tuesday, where he showered high praise on the officials but left the meeting with no major announcements on the turmoil in the region. Shortly before his meeting on Tuesday, Trump conf",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "EU top diplomat meets Iran’s Araghchi to discuss Strait of Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eu-top-diplomat-meets-irans-araghchi-discuss-strait-hormuz",
-          "date": "2026-09-22T20:26:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "EU top diplomat meets Iran’s Araghchi to discuss Strait of Hormuz The EU’s&nbsp;High Representative for Foreign Affairs Kaja Kallas met Iranian Foreign Minister Abbas Araghchi to discuss free maritime passage in the Strait of Hormuz. “There were no tolls or fees for passage before the war, and there should be none after the war,” Kallas said on X, describing their discussions held on the sidelines",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "UN General Assembly 2026: War on Iran and Gaza genocide dominate",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-general-assembly-2026-war-iran-and-gaza-genocide-dominate",
-          "date": "2026-09-22T20:15:39.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UN General Assembly 2026: War on Iran and Gaza genocide dominate United Nations secretary general Antonio Guterres kicked off the 81st United Nations General Assembly on Tuesday at UN headquarters in New York City, saying that we are entering \"a multipolar world and that movement is irreversible”. In what will be his last UN address, Guterres said that \"superpowers were finding the limits of their",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
         }
       ],
       "itemCount": 80
@@ -9978,7 +10067,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "offensive",
@@ -10029,7 +10118,7 @@
             13.778
           ],
           "count": 18,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -10118,7 +10207,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 35
+          "score": 32
         },
         {
           "title": "Ethiopia: EU Calls for 'De-Escalation' As Tigray Rebels Clash With Ethiopian Forces",
@@ -10411,34 +10500,13 @@
           "score": 22
         },
         {
-          "title": "What’s triggered the latest violence in Ethiopia?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/9/24/whats-triggered-the-latest-violence-in-ethiopia?traffic_source=rss",
-          "date": "2026-09-24T19:34:53.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Tigrayan forces say they are in a 'full-blown war' with the army.",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
           "title": "Tigray rebels in 'full-blown' war with government",
           "url": "https://www.france24.com/en/tigray-rebels-in-full-blown-war-with-government",
           "date": "2026-09-24T20:23:08.000Z",
           "source": "France 24",
           "sourceType": "news",
           "summary": "In tonight's edition, Tigrayans in northern Ethiopia start panic buying supplies in the rush to stock up amidst fears that months of tensions have finally tipped over into full-blown conflict. Also, power cuts return to Senegal. And Yemis Alade, the Nigerian superstar, is out with a new album and speaks to France 24.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "ETH-3110",
             "name": "Tigray",
@@ -10712,25 +10780,25 @@
           "score": 18
         },
         {
-          "title": "Arab News | Violence in western Ethiopia leaves 12 dead , dozens wounded : MSF",
-          "url": "https://www.arabnews.com/world/violence-in-western-ethiopia-leaves-12-dead-dozens-wounded-msf-3002602",
-          "date": "2026-09-21T22:45:00.000Z",
-          "source": "arabnews.com",
+          "title": "What’s triggered the latest violence in Ethiopia?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/9/24/whats-triggered-the-latest-violence-in-ethiopia?traffic_source=rss",
+          "date": "2026-09-24T19:34:53.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "",
+          "summary": "Tigrayan forces say they are in a 'full-blown war' with the army.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 18
+          "score": 17
         },
         {
           "title": "Ethiopia: New Rebel Alliance Reignites the Struggle Over the Red Sea",
@@ -10760,6 +10828,27 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
+          },
+          "score": 15
+        },
+        {
+          "title": "Arab News | Violence in western Ethiopia leaves 12 dead , dozens wounded : MSF",
+          "url": "https://www.arabnews.com/world/violence-in-western-ethiopia-leaves-12-dead-dozens-wounded-msf-3002602",
+          "date": "2026-09-21T22:45:00.000Z",
+          "source": "arabnews.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 15
         },
@@ -11346,7 +11435,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 2,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -11355,16 +11444,16 @@
           "count": 18
         },
         {
-          "key": "offensive",
-          "label": "Offensive",
+          "key": "escalation",
+          "label": "Eskalation",
           "dir": "up",
           "count": 3
         },
         {
-          "key": "airstrike",
-          "label": "Luftschläge",
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
-          "count": 2
+          "count": 3
         },
         {
           "key": "sanctions",
@@ -11373,8 +11462,8 @@
           "count": 2
         },
         {
-          "key": "escalation",
-          "label": "Eskalation",
+          "key": "airstrike",
+          "label": "Luftschläge",
           "dir": "up",
           "count": 2
         }
@@ -11396,7 +11485,7 @@
             28.318
           ],
           "count": 8,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "casualties",
             "icon": "🚨",
@@ -11488,23 +11577,23 @@
           "score": 27
         },
         {
-          "title": "Four civilians killed in Pakistani airstrikes in Afghanistan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/four-civilians-killed-in-pakistani-airstrikes-in-afghanistan?traffic_source=rss",
-          "date": "2026-09-24T16:51:30.000Z",
-          "source": "Al Jazeera",
+          "title": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-turkey-and-pakistan-set-hold-urgent-chiefs-staff-meeting",
+          "date": "2026-09-25T00:23:51.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Four civilians have been killed in the latest Pakistani airstrikes in Afghanistan.",
-          "isNew": false,
+          "summary": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks The Saudi foreign ministry announced on Friday that the kingdom,&nbsp;Turkey and Pakistan will hold an urgent meeting of their chiefs of staff to discuss ways to back Riyadh amid the escalating tensions with&nbsp;Yemen's Houthis.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 26
         },
@@ -11527,28 +11616,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
-        },
-        {
-          "title": "Shield of the Americas Blacklists 24 Criminal Groups | On the Radar",
-          "url": "https://insightcrime.org/news/shield-of-the-americas-blacklists-24-criminal-groups-on-the-radar/",
-          "date": "2026-09-24T17:37:45.000Z",
-          "source": "InSight Crime",
-          "sourceType": "analysis",
-          "summary": "Shield of the Americas Blacklists 24 Criminal Groups | On the Radar Governments in the Shield of the Americas coalition sanction 24 criminal groups. Also this week: the PCC in São Paulo's buses and violence in Santa Marta. The post Shield of the Americas Blacklists 24 Criminal Groups | On the Radar appeared first on InSight Crime .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 25
+          "score": 23
         },
         {
           "title": "Cop martyred, 3 injured as terrorists open fire on raiding CTD party near Peshawar",
@@ -11591,6 +11659,48 @@
             "label": "Drohnenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Shield of the Americas Blacklists 24 Criminal Groups | On the Radar",
+          "url": "https://insightcrime.org/news/shield-of-the-americas-blacklists-24-criminal-groups-on-the-radar/",
+          "date": "2026-09-24T17:37:45.000Z",
+          "source": "InSight Crime",
+          "sourceType": "analysis",
+          "summary": "Shield of the Americas Blacklists 24 Criminal Groups | On the Radar Governments in the Shield of the Americas coalition sanction 24 criminal groups. Also this week: the PCC in São Paulo's buses and violence in Santa Marta. The post Shield of the Americas Blacklists 24 Criminal Groups | On the Radar appeared first on InSight Crime .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Four civilians killed in Pakistani airstrikes in Afghanistan",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/four-civilians-killed-in-pakistani-airstrikes-in-afghanistan?traffic_source=rss",
+          "date": "2026-09-24T16:51:30.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Four civilians have been killed in the latest Pakistani airstrikes in Afghanistan.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 22
         },
         {
           "title": "Russia ties Black Sea grain deal with Ukraine to halt in oil refinery strikes",
@@ -11693,7 +11803,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Pakistani troops responded to an act of aggression along the Pakistan-Afghanistan border in Balochistan and killed several Afghan Taliban on Thursday, state media reported, citing sources. State-run APP reported, citing sources, that the Afghan Taliban attempted to enter the Pakistani territory in Balochistan’s Gulistan sector and carry out an act of aggression. The APP report said in retaliatory ",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "PAK-1108",
             "name": "Balochistan",
@@ -11724,7 +11834,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "As spoke at the UN, Israeli Prime Minister Benjamin Netanyahu downplayed settler violence in the occupied West Bank.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -12487,7 +12597,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Hegseth slammed for 'blasphemous' use of Bible passage in military recruitment drive",
@@ -12845,7 +12955,7 @@
           "score": 8
         }
       ],
-      "itemCount": 58
+      "itemCount": 59
     },
     {
       "id": "india-pakistan",
@@ -12871,15 +12981,21 @@
         "Pahalgam",
         "Jammu"
       ],
-      "activity": 89,
-      "severity": 65,
-      "newCount": 0,
+      "activity": 94,
+      "severity": 67,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
           "count": 9
+        },
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 2
         },
         {
           "key": "airstrike",
@@ -12897,12 +13013,6 @@
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
           "count": 2
         }
       ],
@@ -12967,23 +13077,23 @@
       ],
       "items": [
         {
-          "title": "Four civilians killed in Pakistani airstrikes in Afghanistan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/four-civilians-killed-in-pakistani-airstrikes-in-afghanistan?traffic_source=rss",
-          "date": "2026-09-24T16:51:30.000Z",
-          "source": "Al Jazeera",
+          "title": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-turkey-and-pakistan-set-hold-urgent-chiefs-staff-meeting",
+          "date": "2026-09-25T00:23:51.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Four civilians have been killed in the latest Pakistani airstrikes in Afghanistan.",
-          "isNew": false,
+          "summary": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks The Saudi foreign ministry announced on Friday that the kingdom,&nbsp;Turkey and Pakistan will hold an urgent meeting of their chiefs of staff to discuss ways to back Riyadh amid the escalating tensions with&nbsp;Yemen's Houthis.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 26
         },
@@ -13006,7 +13116,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Pakistan conducted strikes at 10 locations in Afghanistan in response to recent drone attacks: info minister",
@@ -13028,6 +13138,27 @@
             "label": "Drohnenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Four civilians killed in Pakistani airstrikes in Afghanistan",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/four-civilians-killed-in-pakistani-airstrikes-in-afghanistan?traffic_source=rss",
+          "date": "2026-09-24T16:51:30.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Four civilians have been killed in the latest Pakistani airstrikes in Afghanistan.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 22
         },
         {
           "title": "Deadly attack on Indian cargo ship off coast of Oman",
@@ -13920,7 +14051,7 @@
           "score": 8
         }
       ],
-      "itemCount": 43
+      "itemCount": 44
     },
     {
       "id": "drc-m23",
@@ -15019,7 +15150,7 @@
       ],
       "activity": 53,
       "severity": 54,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -15221,7 +15352,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "\"From the Mambilla Hydroelectric Power Project and the Siemens bribery scandal to the William Jefferson case, the PTDF funds controversy, and the US Senate investigation into suspicious financial transactions, Atiku’s name is engraved ingloriously on files and dossiers of onshore and offshore financial scandals.\" The post 2027: APC attacks Atiku over corruption allegations, urges Nigerians to reje",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -15880,7 +16011,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -15940,48 +16071,6 @@
       ],
       "items": [
         {
-          "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension?",
-          "url": "https://www.aljazeera.com/economy/2026/9/24/hostile-but-hooked-whats-behind-the-us-china-trade-truce-extension?traffic_source=rss",
-          "date": "2026-09-24T16:53:29.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Some analysts say extending the truce is pure optics - others say it's a useful step towards a more durable deal.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 26
-        },
-        {
-          "title": "Trump greets Xi Jinping on arrival in rare move as US-China trade truce extended",
-          "url": "https://www.theguardian.com/us-news/2026/sep/23/trump-xi-jinping-china-us-state-visit",
-          "date": "2026-09-23T23:30:50.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "President lays out red carpet as treasury secretary announces extension of ‘Busan agreement’ pausing trade war hostilities AI, trade, Taiwan and climate: what will and won’t be on agenda at Trump-Xi summit Donald Trump has welcomed Xi Jinping to the US, taking the unusual step of greeting the Chinese leader on the tarmac at Joint Base Andrews to kick off his state visit to Washington. Xi’s plane w",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 25
-        },
-        {
           "title": "Houthi advances in Yemen drive displacement, deepen humanitarian crisis",
           "url": "https://www.dw.com/en/houthi-advances-in-yemen-drive-displacement-deepen-humanitarian-crisis/a-79414280?maca=en-rss-en-world-4025-rdf",
           "date": "2026-09-24T16:26:00.000Z",
@@ -16022,6 +16111,27 @@
             "label": "Gefechte"
           },
           "score": 23
+        },
+        {
+          "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension?",
+          "url": "https://www.aljazeera.com/economy/2026/9/24/hostile-but-hooked-whats-behind-the-us-china-trade-truce-extension?traffic_source=rss",
+          "date": "2026-09-24T16:53:29.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Some analysts say extending the truce is pure optics - others say it's a useful step towards a more durable deal.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 22
         },
         {
           "title": "US says China trade truce extended as Trump welcomes Xi",
@@ -16076,27 +16186,6 @@
           "score": 22
         },
         {
-          "title": "Trump welcomes Xi to Washington as US, China agree to extend trade truce",
-          "url": "https://www.aljazeera.com/news/2026/9/23/trump-meets-chinas-xi-jinping-at-us-airport-on-arrival-for-three-day-trip?traffic_source=rss",
-          "date": "2026-09-23T22:56:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Trump takes rare step of meeting foreign leader at the airport, underscoring significance of US-China relationship.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 22
-        },
-        {
           "title": "Displacement on the rise in Yemen as fighting continues",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168390",
           "date": "2026-09-22T12:00:00.000Z",
@@ -16116,6 +16205,48 @@
             "label": "Gefechte"
           },
           "score": 21
+        },
+        {
+          "title": "Trump greets Xi Jinping on arrival in rare move as US-China trade truce extended",
+          "url": "https://www.theguardian.com/us-news/2026/sep/23/trump-xi-jinping-china-us-state-visit",
+          "date": "2026-09-23T23:30:50.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "President lays out red carpet as treasury secretary announces extension of ‘Busan agreement’ pausing trade war hostilities AI, trade, Taiwan and climate: what will and won’t be on agenda at Trump-Xi summit Donald Trump has welcomed Xi Jinping to the US, taking the unusual step of greeting the Chinese leader on the tarmac at Joint Base Andrews to kick off his state visit to Washington. Xi’s plane w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 21
+        },
+        {
+          "title": "At Trump meeting, Xi Jinping lays out terms to avoid US-China military conflict",
+          "url": "https://www.theguardian.com/us-news/2026/sep/24/xi-jinping-trump-china-cooperation-thucydides-trap",
+          "date": "2026-09-24T23:58:11.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Chinese president’s proposals for lessening tensions come amid period of intense competition between the two countries over AI and trade Xi Jinping has called for extensive cooperation with Washington to avoid the “Thucydides trap” that could put the US and China on a military collision course amid rising tensions over artificial intelligence, trade and Taiwan. At the start of his summit meeting w",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 20
         },
         {
           "title": "Trump and Xi come face-to-face as US and China battle to win the AI race",
@@ -16145,7 +16276,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Country says US must lift sanctions on its oil exports and end the war on all fronts, including in Lebanon Iran said it has told Donald Trump it is willing to open the strait of Hormuz in six days, and to start talks on its nuclear program the day after, so long as the US lifts sanctions on Iran’s oil exports in return, ends the war on all fronts – including in Lebanon – and releases some of Iran’",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -16166,54 +16297,12 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Some 60 ships passed through Strait of Hormuz on Wednesday, US official says Some 60 commercial vessels transited the Strait of Hormuz on Wednesday carrying the highest daily volume of crude oil since early July, despite the US war on Iran, a US official told Reuters, speaking on condition of anonymity. About 40 of those vessels coordinated with the US military for protection, the US official adde",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
             "icon": "🚢",
             "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 19
-        },
-        {
-          "title": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jewish-voice-for-peace-says-un-playing-host-war-criminal-ahead-netanyahu-speech",
-          "date": "2026-09-24T17:57:30.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech Jewish Voice for Peace says the United Nations is “playing host to a war criminal” ahead of Israeli Prime Minister Benjamin Netanyahu’s address to the UN General Assembly on Thursday, Al Jazeera reported. “All across New York, Jews, Palestinians and people of conscience are rising up to demand an end to US su",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/80-countries-call-un-reopening-hormuz-strait",
-          "date": "2026-09-24T17:21:09.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz A coalition of 80 countries called on Thursday for the restoration of freedom of navigation in the Gulf, condemning attacks by Iran and the Houthis in Yemen that are disrupting global shipping. “Iran’s actions in the Strait of Hormuz continue to threaten international security and ‌navigational rights and freedoms,” sai",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "naval",
@@ -16240,6 +16329,27 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 18
+        },
+        {
+          "title": "Trump welcomes Xi to Washington as US, China agree to extend trade truce",
+          "url": "https://www.aljazeera.com/news/2026/9/23/trump-meets-chinas-xi-jinping-at-us-airport-on-arrival-for-three-day-trip?traffic_source=rss",
+          "date": "2026-09-23T22:56:41.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Trump takes rare step of meeting foreign leader at the airport, underscoring significance of US-China relationship.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
           },
           "score": 18
         },
@@ -16370,12 +16480,33 @@
           "score": 18
         },
         {
-          "title": "At Trump meeting, Xi Jinping lays out terms to avoid US-China military conflict",
-          "url": "https://www.theguardian.com/us-news/2026/sep/24/xi-jinping-trump-china-cooperation-thucydides-trap",
-          "date": "2026-09-24T15:52:13.000Z",
-          "source": "The Guardian World",
+          "title": "Georgia joins pro-Ukraine UN statement as Foreign Minister speaks at Crimea Platform summit",
+          "url": "https://oc-media.org/georgia-joins-pro-ukraine-un-statement-as-foreign-minister-speaks-at-crimea-platform-summit/",
+          "date": "2026-09-24T13:16:34.000Z",
+          "source": "OC Media (Kaukasus)",
           "sourceType": "news",
-          "summary": "Chinese president’s proposals for lessening tensions come amid period of intense competition between the two countries over AI and trade Trump-Xi summit – latest updates Xi Jinping has called for extensive cooperation with Washington to avoid the “Thucydides trap” that could put the US and China on a military collision course amid rising tensions over artificial intelligence, trade and Taiwan. At ",
+          "summary": "Georgia’s Foreign Minister Maka Botchorishvili emphasised that they know ‘how devastating the impact of occupation can be’.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "score": 16
+        },
+        {
+          "title": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jewish-voice-for-peace-says-un-playing-host-war-criminal-ahead-netanyahu-speech",
+          "date": "2026-09-24T17:57:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Jewish Voice for Peace says UN 'playing host to a war criminal’ ahead of Netanyahu speech Jewish Voice for Peace says the United Nations is “playing host to a war criminal” ahead of Israeli Prime Minister Benjamin Netanyahu’s address to the UN General Assembly on Thursday, Al Jazeera reported. “All across New York, Jews, Palestinians and people of conscience are rising up to demand an end to US su",
           "isNew": false,
           "region": null,
           "event": {
@@ -16384,11 +16515,32 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 17
+          "score": 15
+        },
+        {
+          "title": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/80-countries-call-un-reopening-hormuz-strait",
+          "date": "2026-09-24T17:21:09.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "UNGA 2026: Coalition of 80 countries at call for reopening of Strait of Hormuz A coalition of 80 countries called on Thursday for the restoration of freedom of navigation in the Gulf, condemning attacks by Iran and the Houthis in Yemen that are disrupting global shipping. “Iran’s actions in the Strait of Hormuz continue to threaten international security and ‌navigational rights and freedoms,” sai",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 15
         },
         {
           "title": "Israel facing water shortages caused by destruction of Gaza’s treatment plants",
@@ -16409,28 +16561,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 16
-        },
-        {
-          "title": "Georgia joins pro-Ukraine UN statement as Foreign Minister speaks at Crimea Platform summit",
-          "url": "https://oc-media.org/georgia-joins-pro-ukraine-un-statement-as-foreign-minister-speaks-at-crimea-platform-summit/",
-          "date": "2026-09-24T13:16:34.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Georgia’s Foreign Minister Maka Botchorishvili emphasised that they know ‘how devastating the impact of occupation can be’.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Has China received US F-35 parts by diverting an Australian shipment?",
@@ -16576,27 +16707,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Trump greets Xi Jinping at airport in rare personal welcome ahead of high stakes US-China summit – live",
-          "url": "https://www.theguardian.com/world/live/2026/sep/23/united-nations-general-assembly-unga-zelenksyy-trump-xi-china-ukraine-russia-europe-latest-news-updates",
-          "date": "2026-09-23T23:18:46.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "The US president travelled to Joint Base Andrews to meet the Chinese leader, ahead of a meeting set to be dominated by trade, AI and the Iran war Trump greets Xi Jinping at plane as Chinese leader arrives for state visit These latest attacks come just hours before Volodymyr Zelenskyy’s address to the UN general assembly, so he is likely to reflect on them during his UN speech later. So far, we hav",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
           },
           "score": 15
         },
@@ -16849,6 +16959,27 @@
             "type": "displacement",
             "icon": "🚶",
             "label": "Vertreibung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Trump greets Xi Jinping at airport in rare personal welcome ahead of high stakes US-China summit – live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/23/united-nations-general-assembly-unga-zelenksyy-trump-xi-china-ukraine-russia-europe-latest-news-updates",
+          "date": "2026-09-23T23:18:46.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "The US president travelled to Joint Base Andrews to meet the Chinese leader, ahead of a meeting set to be dominated by trade, AI and the Iran war Trump greets Xi Jinping at plane as Chinese leader arrives for state visit These latest attacks come just hours before Volodymyr Zelenskyy’s address to the UN general assembly, so he is likely to reflect on them during his UN speech later. So far, we hav",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
+          },
+          "regionEvent": {
+            "type": "talks",
+            "icon": "🤝",
+            "label": "Verhandlungen"
           },
           "score": 11
         },
@@ -17656,7 +17787,7 @@
         "Beirut/Dahiyeh",
         "Bekaa-Ebene"
       ],
-      "activity": 42,
+      "activity": 41,
       "severity": 51,
       "newCount": 0,
       "signals": [
@@ -17718,7 +17849,7 @@
             35.368,
             33.36
           ],
-          "count": 3,
+          "count": 2,
           "newCount": 0,
           "event": {
             "type": "airstrike",
@@ -17765,27 +17896,6 @@
             "label": "Beschuss"
           },
           "score": 22
-        },
-        {
-          "title": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-pm-tells-iran-president-country-cannot-be-arena-regional-wars",
-          "date": "2026-09-24T18:32:08.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars Lebanese Prime Minister Nawaf Salam told Iranian President Masoud Pezeshkian on Thursday that his country did not want to be an arena for regional wars. Lebanon has repeatedly accused&nbsp;Iran&nbsp;of interfering in its affairs, especially since the start of the latest war, alleging that Tehran was using it",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
         },
         {
           "title": "Israeli air strikes target southern Lebanon",
@@ -17880,6 +17990,27 @@
             "label": "Luftangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-pm-tells-iran-president-country-cannot-be-arena-regional-wars",
+          "date": "2026-09-24T18:32:08.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanon's prime minister tells Iranian president country cannot be arena for regional wars Lebanese Prime Minister Nawaf Salam told Iranian President Masoud Pezeshkian on Thursday that his country did not want to be an arena for regional wars. Lebanon has repeatedly accused&nbsp;Iran&nbsp;of interfering in its affairs, especially since the start of the latest war, alleging that Tehran was using it",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
         },
         {
           "title": "Photos of divers exploring Tyre ancient ruins after the Israel - Hezbollah ceasefire | World",
@@ -18101,37 +18232,6 @@
           "score": 15
         },
         {
-          "title": "South Lebanon faces ongoing Israeli attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/south-lebanon-faces-ongoing-israeli-attacks",
-          "date": "2026-09-18T01:26:12.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "South Lebanon faces ongoing Israeli attacks Israeli attacks across southern Lebanon have continued, state media reported.&nbsp; Late on Thursday, an&nbsp;Israeli aircraft struck Talloussah and carried out two attacks on the Jinjil area of al-Qantara. Another air strikes&nbsp;targeted Nabatieh al-Fawqa. Meanwhile,&nbsp;illumination flares were fired over the outskirts of Yater and Beit Lif.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Is Israel committing genocide in Lebanon RT reports",
           "url": "http://www.israelherald.com/news/279326569/is-israel-committing-genocide-in-lebanon-rt-reports",
           "date": "2026-09-23T18:15:00.000Z",
@@ -18330,7 +18430,7 @@
           "score": 8
         }
       ],
-      "itemCount": 24
+      "itemCount": 23
     },
     {
       "id": "afghanistan",
@@ -18359,7 +18459,7 @@
       ],
       "activity": 43,
       "severity": 51,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -18414,7 +18514,7 @@
             28.318
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "casualties",
             "icon": "🚨",
@@ -18476,27 +18576,6 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 29
-        },
-        {
-          "title": "Four civilians killed in Pakistani airstrikes in Afghanistan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/four-civilians-killed-in-pakistani-airstrikes-in-afghanistan?traffic_source=rss",
-          "date": "2026-09-24T16:51:30.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Four civilians have been killed in the latest Pakistani airstrikes in Afghanistan.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
           "score": 26
         },
         {
@@ -18519,6 +18598,27 @@
             "label": "Drohnenangriff"
           },
           "score": 23
+        },
+        {
+          "title": "Four civilians killed in Pakistani airstrikes in Afghanistan",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/four-civilians-killed-in-pakistani-airstrikes-in-afghanistan?traffic_source=rss",
+          "date": "2026-09-24T16:51:30.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Four civilians have been killed in the latest Pakistani airstrikes in Afghanistan.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 22
         },
         {
           "title": "Pakistan launches air strikes in Afghanistan, killing civilians, Taliban says",
@@ -18579,7 +18679,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Pakistani troops responded to an act of aggression along the Pakistan-Afghanistan border in Balochistan and killed several Afghan Taliban on Thursday, state media reported, citing sources. State-run APP reported, citing sources, that the Afghan Taliban attempted to enter the Pakistani territory in Balochistan’s Gulistan sector and carry out an act of aggression. The APP report said in retaliatory ",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "PAK-1108",
             "name": "Balochistan",
@@ -18808,9 +18908,9 @@
         "Niamey",
         "Dreiländereck"
       ],
-      "activity": 37,
-      "severity": 50,
-      "newCount": 1,
+      "activity": 36,
+      "severity": 49,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -18977,7 +19077,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "\"From the Mambilla Hydroelectric Power Project and the Siemens bribery scandal to the William Jefferson case, the PTDF funds controversy, and the US Senate investigation into suspicious financial transactions, Atiku’s name is engraved ingloriously on files and dossiers of onshore and offshore financial scandals.\" The post 2027: APC attacks Atiku over corruption allegations, urges Nigerians to reje",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -19241,27 +19341,6 @@
           "score": 15
         },
         {
-          "title": "US approves $414M uranium investment in Niger, two years after troops left",
-          "url": "https://www.aljazeera.com/news/2026/9/17/us-approves-414m-uranium-investment-in-niger-two-years-after-troops-left?traffic_source=rss",
-          "date": "2026-09-17T23:16:25.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Uranium project investment could mark a turning point in US-Niger and US-Canada relations.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "PUBG MOBILE launches Version 4.6 in Nigeria with Magixx Collaboration and PMNC 2026 Finals",
           "url": "https://www.premiumtimesng.com/promoted/911812-pubg-mobile-launches-version-4-6-in-nigeria-with-magixx-collaboration-and-pmnc-2026-finals.html",
           "date": "2026-09-23T13:01:47.000Z",
@@ -19492,7 +19571,7 @@
           "score": 8
         }
       ],
-      "itemCount": 21
+      "itemCount": 20
     },
     {
       "id": "syria",
@@ -19980,6 +20059,177 @@
       "itemCount": 16
     },
     {
+      "id": "colombia",
+      "name": "Kolumbien",
+      "nameEn": "Colombia",
+      "region": "Amerika (Süd)",
+      "countries": [
+        "Colombia"
+      ],
+      "lat": 5,
+      "lon": -74,
+      "tier": "high",
+      "since": "1964 / Krise seit 2025",
+      "parties": [
+        "Regierung",
+        "ELN",
+        "FARC-Dissidenten",
+        "Clan del Golfo"
+      ],
+      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
+      "hotspots": [
+        "Catatumbo",
+        "Cauca",
+        "Arauca",
+        "Chocó"
+      ],
+      "activity": 12,
+      "severity": 42,
+      "newCount": 1,
+      "signals": [
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "COL",
+      "extraCountries": [],
+      "regions": [],
+      "items": [
+        {
+          "title": "World News in Brief: ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
+          "date": "2026-09-24T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Russian armed forces have carried out repeated attacks across Ukraine over the past several days, killing and injuring civilians and damaging homes, hospitals, shops and workplaces, UN human rights monitors said on Thursday.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
+        },
+        {
+          "title": "Colombia withdraws its ICJ intervention in Gaza genocide case",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/colombia-withdraws-its-icj-intervention-gaza-genocide-case",
+          "date": "2026-09-23T00:15:52.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Colombia withdraws its ICJ intervention in Gaza genocide case Colombia has withdrawn its Article 63 declaration of intervention in South Africa’s Gaza genocide case against Israel, according to the International Court of Justice. In a statement, the ICJ said Colombia informed the court about its decision on 18 September.&nbsp; According to the ICJ, Article 63 gives states that are not parties to a",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 18
+        },
+        {
+          "title": "Drone attacks by Colombian armed groups more than double in early 2026",
+          "url": "https://www.aljazeera.com/news/2026/9/18/drone-attacks-by-colombian-armed-groups-more-than-double-in-early-2026?traffic_source=rss",
+          "date": "2026-09-18T02:51:08.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Civilians are caught in the crossfire of drone attacks between armed groups and government forces.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Colombia eases gun restrictions despite fears of more violence",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/colombia-eases-gun-restrictions-despite-fears-of-more-violence?traffic_source=rss",
+          "date": "2026-09-22T13:45:31.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Colombia has loosened gun laws after more than a decade of restrictions. Some fear it will lead to even more violence.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "JPMorgan struggles to forecast oil price as Iran war deepens Nigeria’s petrol concerns",
+          "url": "https://www.premiumtimesng.com/business/business-news/910809-jpmorgan-struggles-to-forecast-oil-price-as-iran-war-deepens-nigerias-petrol-concerns.html",
+          "date": "2026-09-19T12:40:10.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "The development comes as Nigerians face another increase in petrol prices, with pump prices rising above N1,400 per litre in parts of Abuja amid renewed pressure on global crude and refined-product markets. The post JPMorgan struggles to forecast oil price as Iran war deepens Nigeria’s petrol concerns appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "'Petrol so expensive' that PTI lawmakers arrive at Sindh Assembly on donkey carts in protest",
+          "url": "https://www.dawn.com/news/2030879/petrol-so-expensive-that-pti-lawmakers-arrive-at-sindh-assembly-on-donkey-carts-in-protest",
+          "date": "2026-09-18T13:37:19.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "KARACHI: PTI lawmakers in Sindh arrived at the provincial assembly on donkey carts — in protest. “The ministers and [treasury] MPAs should also reach the assembly the same way on donkey carts,” PTI’s Sajjad Ali was seen saying in a video that showed him riding a donkey cart and holding a placard as he protested the “petrol bomb dropped on the people”. Other MPAs, led by Ali, also held placards and",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 6
+    },
+    {
       "id": "venezuela",
       "name": "Venezuela / Essequibo",
       "nameEn": "Venezuela & Essequibo",
@@ -20090,156 +20340,6 @@
       "itemCount": 3
     },
     {
-      "id": "colombia",
-      "name": "Kolumbien",
-      "nameEn": "Colombia",
-      "region": "Amerika (Süd)",
-      "countries": [
-        "Colombia"
-      ],
-      "lat": 5,
-      "lon": -74,
-      "tier": "high",
-      "since": "1964 / Krise seit 2025",
-      "parties": [
-        "Regierung",
-        "ELN",
-        "FARC-Dissidenten",
-        "Clan del Golfo"
-      ],
-      "background": "Die Politik des \"totalen Friedens\" ist weitgehend gescheitert; ELN-Offensiven im Catatumbo, Kämpfe im Cauca und an der Grenze zu Venezuela.",
-      "hotspots": [
-        "Catatumbo",
-        "Cauca",
-        "Arauca",
-        "Chocó"
-      ],
-      "activity": 7,
-      "severity": 41,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "COL",
-      "extraCountries": [],
-      "regions": [],
-      "items": [
-        {
-          "title": "Colombia withdraws its ICJ intervention in Gaza genocide case",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/colombia-withdraws-its-icj-intervention-gaza-genocide-case",
-          "date": "2026-09-23T00:15:52.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Colombia withdraws its ICJ intervention in Gaza genocide case Colombia has withdrawn its Article 63 declaration of intervention in South Africa’s Gaza genocide case against Israel, according to the International Court of Justice. In a statement, the ICJ said Colombia informed the court about its decision on 18 September.&nbsp; According to the ICJ, Article 63 gives states that are not parties to a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 18
-        },
-        {
-          "title": "Drone attacks by Colombian armed groups more than double in early 2026",
-          "url": "https://www.aljazeera.com/news/2026/9/18/drone-attacks-by-colombian-armed-groups-more-than-double-in-early-2026?traffic_source=rss",
-          "date": "2026-09-18T02:51:08.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Civilians are caught in the crossfire of drone attacks between armed groups and government forces.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Colombia eases gun restrictions despite fears of more violence",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/colombia-eases-gun-restrictions-despite-fears-of-more-violence?traffic_source=rss",
-          "date": "2026-09-22T13:45:31.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Colombia has loosened gun laws after more than a decade of restrictions. Some fear it will lead to even more violence.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "JPMorgan struggles to forecast oil price as Iran war deepens Nigeria’s petrol concerns",
-          "url": "https://www.premiumtimesng.com/business/business-news/910809-jpmorgan-struggles-to-forecast-oil-price-as-iran-war-deepens-nigerias-petrol-concerns.html",
-          "date": "2026-09-19T12:40:10.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "The development comes as Nigerians face another increase in petrol prices, with pump prices rising above N1,400 per litre in parts of Abuja amid renewed pressure on global crude and refined-product markets. The post JPMorgan struggles to forecast oil price as Iran war deepens Nigeria’s petrol concerns appeared first on Premium Times Nigeria .",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "'Petrol so expensive' that PTI lawmakers arrive at Sindh Assembly on donkey carts in protest",
-          "url": "https://www.dawn.com/news/2030879/petrol-so-expensive-that-pti-lawmakers-arrive-at-sindh-assembly-on-donkey-carts-in-protest",
-          "date": "2026-09-18T13:37:19.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "KARACHI: PTI lawmakers in Sindh arrived at the provincial assembly on donkey carts — in protest. “The ministers and [treasury] MPAs should also reach the assembly the same way on donkey carts,” PTI’s Sajjad Ali was seen saying in a video that showed him riding a donkey cart and holding a placard as he protested the “petrol bomb dropped on the people”. Other MPAs, led by Ali, also held placards and",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 5
-    },
-    {
       "id": "georgia",
       "name": "Georgien (Abchasien / Südossetien)",
       "nameEn": "Georgia",
@@ -20312,7 +20412,7 @@
             41.172,
             43.095
           ],
-          "count": 2,
+          "count": 1,
           "newCount": 0,
           "event": {
             "type": "report",
@@ -20329,7 +20429,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "French President Emmanuel Macron on Thursday denied a report by Spanish newspaper El Mundo that the US Central Intelligence Agency had warned European governments of possible Russian drone attacks from the Mediterranean. He also said in a primetime TV interview that France will send troops and defence systems to Saudi Arabia to help protect the Red Sea port city of Yanbu.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -20342,6 +20442,27 @@
             "label": "Drohnenangriff"
           },
           "score": 26
+        },
+        {
+          "title": "World News in Brief: ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
+          "date": "2026-09-24T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Russian armed forces have carried out repeated attacks across Ukraine over the past several days, killing and injuring civilians and damaging homes, hospitals, shops and workplaces, UN human rights monitors said on Thursday.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
         },
         {
           "title": "Russia could attack a Nato country within months, Danish intelligence says",
@@ -20676,27 +20797,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Eating garden weeds to survive in Russian-occupied city cut off from food and water",
-          "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-23T23:58:50.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
           },
           "score": 16
         },
@@ -21222,6 +21322,27 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "score": 12
+        },
+        {
+          "title": "Eating garden weeds to survive in Russian-occupied city cut off from food and water",
+          "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-23T23:58:50.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\".",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "score": 12
         },
@@ -21990,37 +22111,6 @@
             "label": "Politik/Wahl"
           },
           "score": 8
-        },
-        {
-          "title": "Friday, 18 September 2026",
-          "url": "https://oc-media.org/friday-18-september-2026/",
-          "date": "2026-09-18T12:52:37.000Z",
-          "source": "OC Media (Kaukasus)",
-          "sourceType": "news",
-          "summary": "Regional * Georgia’s Justice Ministry said the Council of Europe’s Committee of Ministers once again called on Russia to withdraw its troops from Abkhazia and South Ossetia, end the ‘borderisation’, ensure the protection of locals’ rights and create conditions for the safe return of IDPs. Armenia * The Armenian government proposes to double the salary of high-ranking officials starting from Januar",
-          "isNew": false,
-          "region": {
-            "id": "GEO-3015",
-            "name": "Abkhazia",
-            "nameDe": "Abchasien",
-            "type": "Autonomous Republic",
-            "anchor": [
-              41.172,
-              43.095
-            ],
-            "matched": "Abkhazia"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -22096,7 +22186,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "French President Emmanuel Macron on Thursday denied a report by Spanish newspaper El Mundo that the US Central Intelligence Agency had warned European governments of possible Russian drone attacks from the Mediterranean. He also said in a primetime TV interview that France will send troops and defence systems to Saudi Arabia to help protect the Red Sea port city of Yanbu.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -22109,6 +22199,27 @@
             "label": "Drohnenangriff"
           },
           "score": 26
+        },
+        {
+          "title": "World News in Brief: ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
+          "date": "2026-09-24T12:00:00.000Z",
+          "source": "UN News – Peace & Security",
+          "sourceType": "institutional",
+          "summary": "Russian armed forces have carried out repeated attacks across Ukraine over the past several days, killing and injuring civilians and damaging homes, hospitals, shops and workplaces, UN human rights monitors said on Thursday.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 25
         },
         {
           "title": "Russia could attack a Nato country within months, Danish intelligence says",
@@ -22464,27 +22575,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Eating garden weeds to survive in Russian-occupied city cut off from food and water",
-          "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&at_campaign=rss",
-          "date": "2026-09-23T23:58:50.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\".",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
           },
           "score": 16
         },
@@ -23010,6 +23100,27 @@
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          },
+          "score": 12
+        },
+        {
+          "title": "Eating garden weeds to survive in Russian-occupied city cut off from food and water",
+          "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-09-23T23:58:50.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\".",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "score": 12
         },
@@ -23745,27 +23856,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Russia labels Cannes-winning director Andrey Zvyagintsev a ‘foreign agent’",
-          "url": "https://www.aljazeera.com/news/2026/9/18/russia-labels-cannes-winning-director-andrey-zvyagintsev-a-foreign-agent?traffic_source=rss",
-          "date": "2026-09-18T19:39:16.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Acclaimed Russian film director who won 2026 Grand Prix award at Cannes, ⁠has been critical of the war in Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 8
         }
@@ -24911,317 +25001,6 @@
       "itemCount": 31
     },
     {
-      "id": "iraq",
-      "name": "Irak",
-      "nameEn": "Iraq",
-      "region": "Naher Osten",
-      "countries": [
-        "Iraq"
-      ],
-      "lat": 33.3,
-      "lon": 43.7,
-      "tier": "medium",
-      "since": "2003 / IS-Restkonflikt",
-      "parties": [
-        "Irakische Regierung",
-        "IS-Zellen",
-        "schiitische Milizen",
-        "USA",
-        "KRG"
-      ],
-      "background": "IS-Restzellen im Norden, Spannungen zwischen Bagdad und Erbil, Angriffe iran-naher Milizen auf US-Stützpunkte.",
-      "hotspots": [
-        "Kirkuk",
-        "Anbar",
-        "Erbil",
-        "Diyala"
-      ],
-      "activity": 20,
-      "severity": 28,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "sanctions",
-          "label": "Sanktionen",
-          "dir": "up",
-          "count": 3
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "IRQ",
-      "extraCountries": [
-        "SYR"
-      ],
-      "regions": [
-        {
-          "id": "IRQ-3063",
-          "name": "Baghdad",
-          "nameDe": "Bagdad",
-          "type": "Province",
-          "anchor": [
-            44.391,
-            33.298
-          ],
-          "count": 5,
-          "newCount": 0,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          }
-        },
-        {
-          "id": "IRQ-3222",
-          "name": "Basra",
-          "nameDe": "Basra",
-          "type": "Province",
-          "anchor": [
-            47.398,
-            30.397
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Turkey to hand over military base in northern Iraq to Baghdad",
-          "url": "https://www.france24.com/en/middle-east/20260924-turkey-to-hand-over-military-base-in-northern-iraq-to-baghdad",
-          "date": "2026-09-24T00:02:51.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "Turkey will gradually hand over control of its Bashiqa military base in northern Iraq to Baghdad, Ankara and Baghdad said Wednesday, in a move aimed at strengthening Iraqi state authority and easing a long-running source of tension between the neighbours.",
-          "isNew": false,
-          "region": {
-            "id": "IRQ-3063",
-            "name": "Baghdad",
-            "nameDe": "Bagdad",
-            "type": "Province",
-            "anchor": [
-              44.391,
-              33.298
-            ],
-            "matched": "Baghdad"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Turkey to hand over military base to Iraq",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-hand-over-military-base-iraq",
-          "date": "2026-09-23T21:37:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Turkey to hand over military base to Iraq Turkey will hand over control of its Bashiqa base in northern Iraq to Baghdad, the Turkish presidency announced Wednesday in a joint statement with its neighbour. \"In light of progress achieved by these security measures implemented by Iraq, Turkish forces will gradually hand over the Bashiqa-Zilkan base to the Federal Government of Iraq in accordance with",
-          "isNew": false,
-          "region": {
-            "id": "IRQ-3063",
-            "name": "Baghdad",
-            "nameDe": "Bagdad",
-            "type": "Province",
-            "anchor": [
-              44.391,
-              33.298
-            ],
-            "matched": "Baghdad"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "ICC convicts former Central African Republic militia leader",
-          "url": "https://www.aljazeera.com/news/2026/9/23/icc-convicts-central-african-militia-leader-of-crimes-against-humanity?traffic_source=rss",
-          "date": "2026-09-23T12:59:24.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Mahamat Said Abdel Kani oversaw brutal detention tactics, including torture, at Bangui facility, ICC judges rule.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iran suspends all flights to Baghdad, Muscat, Qatar, Georgia and Azerbaijan due to sanctions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-suspends-all-flights-baghdad-muscat-qatar-georgia-and-azerbaijan",
-          "date": "2026-09-23T09:34:05.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran suspends all flights to Baghdad, Muscat, Qatar, Georgia and Azerbaijan due to sanctions Iranian airlines have been force to cancel all flights to&nbsp;Baghdad, Muscat, Qatar, Georgia and Azerbaijan due to new third-party sanctions from the US. A travel agent in Tehran told AFP routes to multiple other destinations remained available, including China.",
-          "isNew": false,
-          "region": {
-            "id": "IRQ-3063",
-            "name": "Baghdad",
-            "nameDe": "Bagdad",
-            "type": "Province",
-            "anchor": [
-              44.391,
-              33.298
-            ],
-            "matched": "Baghdad"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iran cancels Baghdad, Muscat flights as US aviation sanctions take effect",
-          "url": "https://www.aljazeera.com/news/2026/9/22/iran-flights-to-baghdad-muscat-cancelled-ahead-of-us-aviation-sanctions?traffic_source=rss",
-          "date": "2026-09-22T23:46:06.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Iran official says Baghdad and Muscat airports will not accept Iranian flights from midnight on Wednesday.",
-          "isNew": false,
-          "region": {
-            "id": "IRQ-3063",
-            "name": "Baghdad",
-            "nameDe": "Bagdad",
-            "type": "Province",
-            "anchor": [
-              44.391,
-              33.298
-            ],
-            "matched": "Baghdad"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Iranian flights to Baghdad, Muscat cancelled on eve of US sanctions",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-flights-baghdad-muscat-cancelled-eve-us-sanctions",
-          "date": "2026-09-22T18:33:26.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iranian flights to Baghdad, Muscat cancelled on eve of US sanctions Iranian flights to Baghdad and Muscat will be cancelled as of midnight, local media reported on Tuesday, as new US sanctions on Iran's aviation industry were set to come into force. The Tasnim news agency cited a civil aviation spokesman as saying that \"Baghdad and Muscat airports will no longer accept Iranian flights\", though the",
-          "isNew": false,
-          "region": {
-            "id": "IRQ-3063",
-            "name": "Baghdad",
-            "nameDe": "Bagdad",
-            "type": "Province",
-            "anchor": [
-              44.391,
-              33.298
-            ],
-            "matched": "Baghdad"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Workers idle, trucks empty as war slams Iraqi oil hub",
-          "url": "https://www.dawn.com/news/2031796/workers-idle-trucks-empty-as-war-slams-iraqi-oil-hub",
-          "date": "2026-09-22T05:36:13.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "In the Iraqi oil hub of Basra, maintenance contractor Fawzi spends his days cooling his heels waiting for work that seldom comes, as the Middle East war puts a serious crimp on the once-bustling port town. Basra has long been a key cog in Iraq’s economy but, after months of Iran choking off Gulf oil exports with its blockade in the Strait of Hormuz, the city is suffering. Fuel trucks stand idle an",
-          "isNew": false,
-          "region": {
-            "id": "IRQ-3222",
-            "name": "Basra",
-            "nameDe": "Basra",
-            "type": "Province",
-            "anchor": [
-              47.398,
-              30.397
-            ],
-            "matched": "Basra"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 11
-        },
-        {
-          "title": "Sudan: Al-Noor Al-Goba - '70 Percent of Militia Members Stand With the Armed Forces but Fear Retaliation'",
-          "url": "https://allafrica.com/stories/202609180577.html",
-          "date": "2026-09-18T17:06:41.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[SNA] Khartoum -- Commander Al-Nour Ahmed Adam (Al-Noor Al-Goba) announced that his forces had completed preparations to move to the fighting fronts and operate alongside the Sudanese Armed Forces (SAF) and the forces supporting them to liberate the states of Darfur and Kordofan from the stain of rebellion.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 8
-    },
-    {
       "id": "turkey-pkk",
       "name": "Türkei–PKK",
       "nameEn": "Turkey–PKK",
@@ -25244,21 +25023,21 @@
         "Kandil",
         "Nordsyrien"
       ],
-      "activity": 19,
-      "severity": 28,
-      "newCount": 0,
+      "activity": 22,
+      "severity": 29,
+      "newCount": 1,
       "signals": [
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 3
+        },
         {
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
           "count": 3
-        },
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 2
         },
         {
           "key": "offensive",
@@ -25352,6 +25131,27 @@
       ],
       "items": [
         {
+          "title": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-turkey-and-pakistan-set-hold-urgent-chiefs-staff-meeting",
+          "date": "2026-09-25T00:23:51.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Saudi Arabia, Turkey and Pakistan set to hold urgent chiefs-of-staff meeting after Houthi attacks The Saudi foreign ministry announced on Friday that the kingdom,&nbsp;Turkey and Pakistan will hold an urgent meeting of their chiefs of staff to discuss ways to back Riyadh amid the escalating tensions with&nbsp;Yemen's Houthis.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "Eleven injured in shooting outside Turkish school",
           "url": "https://www.bbc.co.uk/news/articles/c6y0z4gv0le4o?at_medium=RSS&at_campaign=rss",
           "date": "2026-09-22T10:42:47.000Z",
@@ -25401,7 +25201,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 15
+          "score": 11
         },
         {
           "title": "Turkey to hand over military base to Iraq",
@@ -25685,7 +25485,318 @@
           "score": 8
         }
       ],
-      "itemCount": 13
+      "itemCount": 14
+    },
+    {
+      "id": "iraq",
+      "name": "Irak",
+      "nameEn": "Iraq",
+      "region": "Naher Osten",
+      "countries": [
+        "Iraq"
+      ],
+      "lat": 33.3,
+      "lon": 43.7,
+      "tier": "medium",
+      "since": "2003 / IS-Restkonflikt",
+      "parties": [
+        "Irakische Regierung",
+        "IS-Zellen",
+        "schiitische Milizen",
+        "USA",
+        "KRG"
+      ],
+      "background": "IS-Restzellen im Norden, Spannungen zwischen Bagdad und Erbil, Angriffe iran-naher Milizen auf US-Stützpunkte.",
+      "hotspots": [
+        "Kirkuk",
+        "Anbar",
+        "Erbil",
+        "Diyala"
+      ],
+      "activity": 18,
+      "severity": 28,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "sanctions",
+          "label": "Sanktionen",
+          "dir": "up",
+          "count": 3
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "IRQ",
+      "extraCountries": [
+        "SYR"
+      ],
+      "regions": [
+        {
+          "id": "IRQ-3063",
+          "name": "Baghdad",
+          "nameDe": "Bagdad",
+          "type": "Province",
+          "anchor": [
+            44.391,
+            33.298
+          ],
+          "count": 5,
+          "newCount": 0,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          }
+        },
+        {
+          "id": "IRQ-3222",
+          "name": "Basra",
+          "nameDe": "Basra",
+          "type": "Province",
+          "anchor": [
+            47.398,
+            30.397
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Turkey to hand over military base in northern Iraq to Baghdad",
+          "url": "https://www.france24.com/en/middle-east/20260924-turkey-to-hand-over-military-base-in-northern-iraq-to-baghdad",
+          "date": "2026-09-24T00:02:51.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Turkey will gradually hand over control of its Bashiqa military base in northern Iraq to Baghdad, Ankara and Baghdad said Wednesday, in a move aimed at strengthening Iraqi state authority and easing a long-running source of tension between the neighbours.",
+          "isNew": false,
+          "region": {
+            "id": "IRQ-3063",
+            "name": "Baghdad",
+            "nameDe": "Bagdad",
+            "type": "Province",
+            "anchor": [
+              44.391,
+              33.298
+            ],
+            "matched": "Baghdad"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Turkey to hand over military base to Iraq",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-hand-over-military-base-iraq",
+          "date": "2026-09-23T21:37:38.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Turkey to hand over military base to Iraq Turkey will hand over control of its Bashiqa base in northern Iraq to Baghdad, the Turkish presidency announced Wednesday in a joint statement with its neighbour. \"In light of progress achieved by these security measures implemented by Iraq, Turkish forces will gradually hand over the Bashiqa-Zilkan base to the Federal Government of Iraq in accordance with",
+          "isNew": false,
+          "region": {
+            "id": "IRQ-3063",
+            "name": "Baghdad",
+            "nameDe": "Bagdad",
+            "type": "Province",
+            "anchor": [
+              44.391,
+              33.298
+            ],
+            "matched": "Baghdad"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "ICC convicts former Central African Republic militia leader",
+          "url": "https://www.aljazeera.com/news/2026/9/23/icc-convicts-central-african-militia-leader-of-crimes-against-humanity?traffic_source=rss",
+          "date": "2026-09-23T12:59:24.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Mahamat Said Abdel Kani oversaw brutal detention tactics, including torture, at Bangui facility, ICC judges rule.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran suspends all flights to Baghdad, Muscat, Qatar, Georgia and Azerbaijan due to sanctions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-suspends-all-flights-baghdad-muscat-qatar-georgia-and-azerbaijan",
+          "date": "2026-09-23T09:34:05.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran suspends all flights to Baghdad, Muscat, Qatar, Georgia and Azerbaijan due to sanctions Iranian airlines have been force to cancel all flights to&nbsp;Baghdad, Muscat, Qatar, Georgia and Azerbaijan due to new third-party sanctions from the US. A travel agent in Tehran told AFP routes to multiple other destinations remained available, including China.",
+          "isNew": false,
+          "region": {
+            "id": "IRQ-3063",
+            "name": "Baghdad",
+            "nameDe": "Bagdad",
+            "type": "Province",
+            "anchor": [
+              44.391,
+              33.298
+            ],
+            "matched": "Baghdad"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iran cancels Baghdad, Muscat flights as US aviation sanctions take effect",
+          "url": "https://www.aljazeera.com/news/2026/9/22/iran-flights-to-baghdad-muscat-cancelled-ahead-of-us-aviation-sanctions?traffic_source=rss",
+          "date": "2026-09-22T23:46:06.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Iran official says Baghdad and Muscat airports will not accept Iranian flights from midnight on Wednesday.",
+          "isNew": false,
+          "region": {
+            "id": "IRQ-3063",
+            "name": "Baghdad",
+            "nameDe": "Bagdad",
+            "type": "Province",
+            "anchor": [
+              44.391,
+              33.298
+            ],
+            "matched": "Baghdad"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Iranian flights to Baghdad, Muscat cancelled on eve of US sanctions",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-flights-baghdad-muscat-cancelled-eve-us-sanctions",
+          "date": "2026-09-22T18:33:26.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iranian flights to Baghdad, Muscat cancelled on eve of US sanctions Iranian flights to Baghdad and Muscat will be cancelled as of midnight, local media reported on Tuesday, as new US sanctions on Iran's aviation industry were set to come into force. The Tasnim news agency cited a civil aviation spokesman as saying that \"Baghdad and Muscat airports will no longer accept Iranian flights\", though the",
+          "isNew": false,
+          "region": {
+            "id": "IRQ-3063",
+            "name": "Baghdad",
+            "nameDe": "Bagdad",
+            "type": "Province",
+            "anchor": [
+              44.391,
+              33.298
+            ],
+            "matched": "Baghdad"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Workers idle, trucks empty as war slams Iraqi oil hub",
+          "url": "https://www.dawn.com/news/2031796/workers-idle-trucks-empty-as-war-slams-iraqi-oil-hub",
+          "date": "2026-09-22T05:36:13.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "In the Iraqi oil hub of Basra, maintenance contractor Fawzi spends his days cooling his heels waiting for work that seldom comes, as the Middle East war puts a serious crimp on the once-bustling port town. Basra has long been a key cog in Iraq’s economy but, after months of Iran choking off Gulf oil exports with its blockade in the Strait of Hormuz, the city is suffering. Fuel trucks stand idle an",
+          "isNew": false,
+          "region": {
+            "id": "IRQ-3222",
+            "name": "Basra",
+            "nameDe": "Basra",
+            "type": "Province",
+            "anchor": [
+              47.398,
+              30.397
+            ],
+            "matched": "Basra"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 11
+        },
+        {
+          "title": "Sudan: Al-Noor Al-Goba - '70 Percent of Militia Members Stand With the Armed Forces but Fear Retaliation'",
+          "url": "https://allafrica.com/stories/202609180577.html",
+          "date": "2026-09-18T17:06:41.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[SNA] Khartoum -- Commander Al-Nour Ahmed Adam (Al-Noor Al-Goba) announced that his forces had completed preparations to move to the fighting fronts and operate alongside the Sudanese Armed Forces (SAF) and the forces supporting them to liberate the states of Darfur and Kordofan from the stain of rebellion.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 8
     },
     {
       "id": "armenia-azerbaijan",
