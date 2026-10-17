@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T17:21:14.117Z",
-  "durationSec": 432,
+  "generatedAt": "2026-10-17T19:33:50.678Z",
+  "durationSec": 373,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -97,7 +97,7 @@
       {
         "id": "dawn",
         "ok": true,
-        "count": 24,
+        "count": 26,
         "error": null
       },
       {
@@ -114,41 +114,45 @@
       }
     ],
     "gdelt": {
-      "ok": 2,
-      "failed": 8,
-      "skipped": 6,
+      "ok": 3,
+      "failed": 9,
+      "skipped": 4,
       "errors": [
         {
-          "id": "thailand-cambodia",
+          "id": "ukraine-russia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "sudan",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "syria",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "iran-israel",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "ethiopia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "myanmar",
           "error": "fetch failed"
         },
         {
-          "id": "cameroon",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "haiti",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "sahel-mali",
+          "id": "drc-m23",
           "error": "fetch failed"
         },
         {
-          "id": "burkina-faso",
+          "id": "venezuela",
           "error": "HTTP 429"
         },
         {
-          "id": "georgia",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "south-sudan",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "gaza",
-          "error": "HTTP 429"
+          "id": "ecuador",
+          "error": "fetch failed"
         }
       ]
     },
@@ -156,8 +160,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 1024,
-    "newArticles": 28
+    "articles": 1037,
+    "newArticles": 26
   },
   "conflicts": [
     {
@@ -189,7 +193,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 2,
+      "newCount": 3,
       "signals": [
         {
           "key": "ceasefire",
@@ -210,14 +214,14 @@
           "count": 9
         },
         {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 7
-        },
-        {
           "key": "casualties",
           "label": "Opfer",
+          "dir": "up",
+          "count": 6
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
           "dir": "up",
           "count": 6
         }
@@ -247,7 +251,7 @@
             50.29
           ],
           "count": 21,
-          "newCount": 0,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -298,7 +302,7 @@
             46.67
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -359,27 +363,6 @@
       ],
       "items": [
         {
-          "title": "Russian strikes kill civilians, injure dozens across Ukraine",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/russian-strikes-kill-civilians-injure-dozens-across-ukraine?traffic_source=rss",
-          "date": "2026-10-17T11:22:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "At least eight people have been killed and nearly 60 injured in the latest wave of Russian strikes across Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 32
-        },
-        {
           "title": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
           "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
           "date": "2026-10-17T15:38:17.000Z",
@@ -402,37 +385,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 28
-        },
-        {
-          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
-          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-10-17T11:34:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -494,28 +446,28 @@
           "score": 26
         },
         {
-          "title": "Trump waives new Russia sanctions as Ukraine ties slump",
-          "url": "https://www.dawn.com/news/2037795/trump-waives-new-russia-sanctions-as-ukraine-ties-slump",
-          "date": "2026-10-17T11:58:12.000Z",
-          "source": "Dawn (Pakistan)",
+          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
+          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-10-17T11:34:00.000Z",
+          "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "President Donald Trump signed an executive order on Friday that waived sweeping US sanctions and tariffs targeting Russia’s energy revenues, marking a new low in Washington’s ties with war-torn Ukraine. The move came as Ukrainian President Volodymyr Zelensky urged EU leaders to keep financing Kyiv’s fight with nearly $80 billion more next year, insisting he was standing up for his country as Trump",
+          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
           "isNew": false,
           "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
             "type": "Region",
             "anchor": [
-              30.448,
-              50.29
+              37.665,
+              55.668
             ],
-            "matched": "Kyiv"
+            "matched": "Moscow"
           },
           "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -531,7 +483,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "\"Mothers of Kherson\" has opened at Poland's National Opera. The performance was co-produced with New York's Metropolitan Opera and created in close association with Save Ukraine, a group helping to bring back Ukrainian children who remain in Russia. More than four years after Russia's invasion of Ukraine, the opera aims to \"reawaken\" global interest in the war.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "UKR-4827",
             "name": "Kherson",
@@ -552,6 +504,37 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "score": 24
+        },
+        {
+          "title": "Trump-Zelenskiy rift threatens vital support for Kyiv",
+          "url": "https://www.dawn.com/news/2037860/trump-zelenskiy-rift-threatens-vital-support-for-kyiv",
+          "date": "2026-10-17T17:37:57.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "From US threats to cut off intelligence support for Ukraine to a diesel deal that could help Russia fund its war, it has been a damaging week for ties between Kyiv and its most important ally, Washington. Frustrated by high energy costs he blames partly on Ukrainian strikes on Russian refineries, US President Donald Trump has repeatedly criticised Ukrainian President Volodymyr Zelensky. A disrupti",
+          "isNew": true,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "score": 24
         },
@@ -577,9 +560,30 @@
           "score": 23
         },
         {
+          "title": "Will the EU come to Ukraine’s rescue in war against Russia?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/17/will-the-eu-come-to-ukraines-rescue-in-war-against-russia?traffic_source=rss",
+          "date": "2026-10-17T19:03:49.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US support at risk as Trump-Zelenskyy relations nosedive.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 23
+        },
+        {
           "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
           "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-10-17T11:56:06.000Z",
+          "date": "2026-10-17T19:19:19.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
@@ -629,6 +633,58 @@
           "score": 23
         },
         {
+          "title": "Trump waives new Russia sanctions as Ukraine ties slump",
+          "url": "https://www.dawn.com/news/2037795/trump-waives-new-russia-sanctions-as-ukraine-ties-slump",
+          "date": "2026-10-17T11:58:12.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "President Donald Trump signed an executive order on Friday that waived sweeping US sanctions and tariffs targeting Russia’s energy revenues, marking a new low in Washington’s ties with war-torn Ukraine. The move came as Ukrainian President Volodymyr Zelensky urged EU leaders to keep financing Kyiv’s fight with nearly $80 billion more next year, insisting he was standing up for his country as Trump",
+          "isNew": false,
+          "region": {
+            "id": "UKR-321",
+            "name": "Kyiv",
+            "nameDe": "Kiew",
+            "type": "Region",
+            "anchor": [
+              30.448,
+              50.29
+            ],
+            "matched": "Kyiv"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 22
+        },
+        {
+          "title": "Russian strikes kill civilians, injure dozens across Ukraine",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/russian-strikes-kill-civilians-injure-dozens-across-ukraine?traffic_source=rss",
+          "date": "2026-10-17T11:22:41.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "At least eight people have been killed and nearly 60 injured in the latest wave of Russian strikes across Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 22
+        },
+        {
           "title": "Russian attacks in Ukraine kill at least 8, cut power to 1 million",
           "url": "https://www.aljazeera.com/news/2026/10/17/russian-attacks-in-ukraine-kill-at-least-8-cut-power-to-1-million?traffic_source=rss",
           "date": "2026-10-17T05:19:19.000Z",
@@ -660,35 +716,25 @@
           "score": 22
         },
         {
-          "title": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
-          "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate?traffic_source=rss",
-          "date": "2026-10-16T17:28:41.000Z",
+          "title": "Trump faces bipartisan backlash over Russia sanctions waiver",
+          "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver?traffic_source=rss",
+          "date": "2026-10-17T17:24:07.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Ukraine’s 'Operation Vivaldi' reclaimed more occupied territory in Donetsk during a week when Trump sided with Russia.",
-          "isNew": false,
-          "region": {
-            "id": "UKR-327",
-            "name": "Donetsk",
-            "nameDe": "Donezk",
-            "type": "Region",
-            "anchor": [
-              37.666,
-              48.045
-            ],
-            "matched": "Donetsk"
-          },
+          "summary": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine.",
+          "isNew": true,
+          "region": null,
           "event": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
-          "score": 22
+          "score": 20
         },
         {
           "title": "Bulgaria Summons Russian Envoy Over New Black Sea Drone Attacks",
@@ -722,37 +768,6 @@
           "score": 20
         },
         {
-          "title": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
-          "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas?traffic_source=rss",
-          "date": "2026-10-17T11:10:22.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
-        },
-        {
           "title": "Russia hails Trump waiving sanctions as 'historic'",
           "url": "https://www.france24.com/en/video/20261017-russia-hails-trump-waiving-sanctions-as-historic",
           "date": "2026-10-17T10:41:22.000Z",
@@ -780,6 +795,37 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
+          },
+          "score": 18
+        },
+        {
+          "title": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
+          "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate?traffic_source=rss",
+          "date": "2026-10-16T17:28:41.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Ukraine’s 'Operation Vivaldi' reclaimed more occupied territory in Donetsk during a week when Trump sided with Russia.",
+          "isNew": false,
+          "region": {
+            "id": "UKR-327",
+            "name": "Donetsk",
+            "nameDe": "Donezk",
+            "type": "Region",
+            "anchor": [
+              37.666,
+              48.045
+            ],
+            "matched": "Donetsk"
+          },
+          "event": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
           },
           "score": 18
         },
@@ -1335,6 +1381,58 @@
           "score": 18
         },
         {
+          "title": "Watch: What does Starlink have to do with the Ukraine-Russia war?",
+          "url": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o?at_medium=RSS&at_campaign=rss",
+          "date": "2026-10-15T17:31:37.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "Ukraine's president has told Elon Musk that any restriction on the Starlink's system cost lives.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
+          "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas?traffic_source=rss",
+          "date": "2026-10-17T11:10:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
+        },
+        {
           "title": "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
           "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-starlink-civilian-casualties-death-toll",
           "date": "2026-10-14T18:54:34.000Z",
@@ -1362,48 +1460,6 @@
             "type": "casualties",
             "icon": "🚨",
             "label": "Opfer"
-          },
-          "score": 18
-        },
-        {
-          "title": "Uganda: MP Calls for Probe Into Recruitment of Ugandans to Fight for Russia",
-          "url": "https://allafrica.com/stories/202610160586.html",
-          "date": "2026-10-16T18:12:39.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Nile Post] Rukiga County MP Patrick Katabaazi has asked the government to investigate reports that Ugandan youths are being recruited through deceptive job offers and deployed to fight for Russia in the war against Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 17
-        },
-        {
-          "title": "Watch: What does Starlink have to do with the Ukraine-Russia war?",
-          "url": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-10-15T17:31:37.000Z",
-          "source": "BBC World",
-          "sourceType": "news",
-          "summary": "Ukraine's president has told Elon Musk that any restriction on the Starlink's system cost lives.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -1457,27 +1513,6 @@
             ],
             "matched": "Kyiv"
           },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'",
-          "url": "https://www.france24.com/en/tv-shows/spotlight/20261016-us-tilting-toward-russia-europeans-are-standing-more-and-more-solidly-with-zelensky",
-          "date": "2026-10-16T18:33:13.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "As transatlantic relations confront renewed geopolitical uncertainty, former Estonian President Toomas Hendrik Ilves delivers a pointed assessment of Washington's shifting approach to Russia's war on Ukraine and the profound implications for European security. At the heart of his analysis lies a fundamental question: can Europe develop the political unity, strategic independence and military capab",
-          "isNew": false,
-          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -1571,27 +1606,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-          "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
-          "date": "2026-10-16T18:01:19.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Ukrainian president says US limiting access was a ‘dangerous and unpleasant surprise’, amid reports the order came from inside White House Volodymyr Zelenskyy has said the Ukrainian military’s access to the Starlink satellite internet service has not yet been fully restored, as media reports suggested the order to throttle the service had come from within the White House. Zelenskyy met European le",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -1779,27 +1793,6 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Ukraine president targets Trump, Putin at EU summit",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/ukraine-president-targets-trump-putin-at-eu-summit?traffic_source=rss",
-          "date": "2026-10-16T17:59:48.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "President Zelenskyy warned Russia’s ambitions extend beyond eastern Ukraine, saying its drone attack threaten NATO.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
           },
           "score": 15
         },
@@ -2407,13 +2400,34 @@
           "score": 15
         },
         {
+          "title": "Uganda: MP Calls for Probe Into Recruitment of Ugandans to Fight for Russia",
+          "url": "https://allafrica.com/stories/202610160586.html",
+          "date": "2026-10-16T18:12:39.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Nile Post] Rukiga County MP Patrick Katabaazi has asked the government to investigate reports that Ugandan youths are being recruited through deceptive job offers and deployed to fight for Russia in the war against Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 13
+        },
+        {
           "title": "NATO’s Top Commander Unveils Plan for Victory Against Russia",
           "url": "https://balkaninsight.com/2026/10/12/natos-top-commander-unveils-plan-for-victory-against-russia/rd/",
           "date": "2026-10-12T14:06:50.000Z",
           "source": "Balkan Insight",
           "sourceType": "news",
           "summary": "The strategy draws on lessons from Ukraine, putting cheap drones, AI and rapid military strikes at the heart of NATO's response to any Russian attack.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2428,33 +2442,23 @@
           "score": 11
         },
         {
-          "title": "REPLAY: Ukraine's Zelensky holds presser in Brussels",
-          "url": "https://www.france24.com/en/video/20261016-replay-ukraine-s-zelensky-holds-presser-in-brussels",
-          "date": "2026-10-16T15:36:16.000Z",
+          "title": "'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20261016-us-tilting-toward-russia-europeans-are-standing-more-and-more-solidly-with-zelensky",
+          "date": "2026-10-16T18:33:13.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "Ukrainian President Volodymyr Zelensky on Friday urged European leaders to maintain their support for Kyiv and warned against easing sanctions on Russia. Speaking to reporters at the European summit in Brussels, Zelensky said that ending the war remained Ukraine’s priority but accused Russian President Vladimir Putin of having no genuine interest in negotiations. He also criticised a US deal invol",
+          "summary": "As transatlantic relations confront renewed geopolitical uncertainty, former Estonian President Toomas Hendrik Ilves delivers a pointed assessment of Washington's shifting approach to Russia's war on Ukraine and the profound implications for European security. At the heart of his analysis lies a fundamental question: can Europe develop the political unity, strategic independence and military capab",
           "isNew": false,
-          "region": {
-            "id": "UKR-321",
-            "name": "Kyiv",
-            "nameDe": "Kiew",
-            "type": "Region",
-            "anchor": [
-              30.448,
-              50.29
-            ],
-            "matched": "Kyiv"
-          },
+          "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 11
         }
@@ -2488,7 +2492,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 4,
+      "newCount": 6,
       "signals": [
         {
           "key": "ceasefire",
@@ -2500,25 +2504,25 @@
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 15
-        },
-        {
-          "key": "displacement",
-          "label": "Vertreibung",
-          "dir": "up",
-          "count": 6
+          "count": 16
         },
         {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
-          "count": 6
+          "count": 7
+        },
+        {
+          "key": "displacement",
+          "label": "Vertreibung",
+          "dir": "up",
+          "count": 7
         },
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 5
+          "count": 7
         }
       ],
       "acled": null,
@@ -2545,8 +2549,8 @@
             35.035,
             31.753
           ],
-          "count": 1,
-          "newCount": 0,
+          "count": 3,
+          "newCount": 2,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -2555,6 +2559,48 @@
         }
       ],
       "items": [
+        {
+          "title": "Israeli drone attacks kill six Palestinians across Gaza despite ‘ceasefire’",
+          "url": "https://www.aljazeera.com/news/2026/10/17/israeli-drone-attacks-kill-six-palestinians-across-gaza-despite-ceasefire?traffic_source=rss",
+          "date": "2026-10-17T18:26:59.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Attacks hit several areas as UNICEF reports more than 340 children killed since 'ceasefire' began a year ago.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 35
+        },
+        {
+          "title": "Six Palestinians killed in Israeli strikes across Gaza in a day",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-strikes-across-gaza-day",
+          "date": "2026-10-17T19:04:22.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Six Palestinians killed in Israeli strikes across Gaza in a day An Israeli drone strike killed a young Palestinian man and wounded several others in the Jabalia refugee camp in the northern Gaza Strip on Saturday evening, according to the Palestinian news agency Wafa. Citing a medical source, Wafa said the drone hit a group of Palestinians near al-Falouja cemetery, west of the camp. Medical source",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 32
+        },
         {
           "title": "Five Palestinians killed by Israel in Gaza",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/five-palestinians-killed-israel-gaza",
@@ -2574,7 +2620,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 33
+          "score": 30
         },
         {
           "title": "Over 340 children killed in Gaza since ceasefire, says Unicef",
@@ -2596,6 +2642,58 @@
             "label": "Opfer"
           },
           "score": 28
+        },
+        {
+          "title": "Jerusalem Daily: Israeli settlers attack farmers and journalists",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/aje-onl-nf_yt-dnrbltn-261017-salehm-jerusalem_daily-171026?traffic_source=rss",
+          "date": "2026-10-17T17:18:50.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "After Israeli settlers beat and severely wounded Palestinian farmers, settler violence continues.",
+          "isNew": true,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli settlers attack European diplomats in West Bank",
+          "url": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+          "date": "2026-10-17T18:57:56.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 27
         },
         {
           "title": "Gaza: 340 children killed despite ceasefire agreement - UNICEF",
@@ -2625,7 +2723,7 @@
           "source": "France 24",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2646,7 +2744,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "French mayor attacked by settlers in West Bank says Israel ‘tolerates’ settler violence The French mayor who was attacked on Saturday by Israeli settlers in the occupied West Bank said the incident showed that Israel tolerates settler violence. “I think that if settlers are behaving like this, there is a tolerance on the part of the Israeli government,” said Bernard Baudoux, mayor of the northern ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2667,7 +2765,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Belgium condemns Israeli settler attack on European diplomats in West Bank Belgium on Saturday condemned an attack by Israeli settlers on a convoy of European diplomats in the occupied West Bank, during which a visiting French mayor was beaten. Israeli Foreign Minister Gideon Saar also condemned the attack, describing it as violence by “rioters”. \"I strongly condemn the severe acts of violence by ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -2680,6 +2778,27 @@
             "label": "Gefechte"
           },
           "score": 26
+        },
+        {
+          "title": "Israeli settlers attack European diplomats during West Bank olive harvest",
+          "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
+          "date": "2026-10-17T12:48:03.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Four Palestinian women and a child are among those injured in separate ongoing Israeli assaults and pogroms.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
         },
         {
           "title": "US media contributor calls for investigation into journalist attacked by Israeli settlers",
@@ -2700,7 +2819,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
@@ -2808,27 +2927,6 @@
           "score": 22
         },
         {
-          "title": "Israeli settlers attack US photographer covering West Bank violence",
-          "url": "https://www.dawn.com/news/2037619/israeli-settlers-attack-us-photographer-covering-west-bank-violence",
-          "date": "2026-10-16T18:38:05.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Israeli settlers on Friday beat an American photojournalist working for The Washington Post while she was covering ongoing violence against Palestinian olive farmers in the occupied West Bank. Heidi Levine, a veteran photographer, was taken to hospital in Ramallah following the attack, with AFP photos showing her lying on a gurney with injuries to her leg and hand. The incident comes 10 days after",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Israeli settlers beat Palestinians and a U . S . photojournalist in West Bank attacks",
           "url": "https://www.ypradio.org/npr-news/2026-10-16/israeli-settlers-beat-palestinians-and-a-u-s-photojournalist-in-west-bank-attacks",
           "date": "2026-10-16T20:45:00.000Z",
@@ -2850,25 +2948,25 @@
           "score": 22
         },
         {
-          "title": "Witkoff : Hostage Reunions with Families Among  Most Meaningful Moments of my Life  ",
-          "url": "http://www.washingtonjewishweek.com/witkoff-hostages-reunions-with-families-among-most-meaningful-moments-of-my-life/",
-          "date": "2026-10-16T19:15:00.000Z",
-          "source": "washingtonjewishweek.com",
+          "title": "Why are Latin American countries building closer ties with Israel?",
+          "url": "https://www.aljazeera.com/news/2026/10/17/why-are-latin-american-countries-building-closer-ties-with-israel?traffic_source=rss",
+          "date": "2026-10-17T16:54:44.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "",
-          "isNew": false,
+          "summary": "A wave of new Latin American leaders reverses measures meant to isolate Israel after its genocidal war on Gaza.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "abduction",
-            "icon": "🔗",
-            "label": "Entführung/Geiseln"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 22
+          "score": 20
         },
         {
           "title": "Israeli settlers attack olive farmers and Washington Post journalist in West Bank",
@@ -2892,18 +2990,28 @@
           "score": 20
         },
         {
-          "title": "Child, four women among Palestinians injured in West Bank pogroms",
-          "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
-          "date": "2026-10-17T12:48:03.000Z",
+          "title": "Is the US Embassy in Jerusalem for Israel or America?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/is-the-us-embassy-in-jerusalem-for-israel-or-america?traffic_source=rss",
+          "date": "2026-10-17T18:41:30.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Attacks follow a religious edict by a prominent far-right rabbi permitting the seizure of Palestinian olives.",
-          "isNew": false,
-          "region": null,
+          "summary": "What led to the deaths of the nine Americans killed in the occupied West Bank since 2022?",
+          "isNew": true,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "casualties",
@@ -2919,27 +3027,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "European Council warns companies against Israel's E1 settlement construction The European Council has warned companies they could face \"legal, economic and reputational consequences\" if they involve themselves with East 1 (East 1) settlement construction in the&nbsp; Israeli -occupied West Bank. The major&nbsp; intervention &nbsp;on Friday, from the body that determines the European Union's politi",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "European Council warns companies not to finance Israel's E1 West Bank settlement construction",
-          "url": "https://www.middleeasteye.net/news/european-council-warns-companies-not-finance-israels-e1-west-bank-settlement-construction",
-          "date": "2026-10-17T13:15:07.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "European Council warns companies not to finance Israel's E1 West Bank settlement construction Submitted by MEE staff on Sat, 10/17/2026 - 12:11 The body that sets the EU's political direction says companies could face 'legal, economic and reputational consequences' Vehicles travel along a highway near the Israeli settlement of Maale Adumim, as seen from the E1 corridor in the occupied West Bank, o",
           "isNew": false,
           "region": null,
           "event": {
@@ -2951,27 +3038,6 @@
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-two-palestinians-settlers-open-fire-farmers-west",
-          "date": "2026-10-17T06:21:05.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank Israeli settlers opened fire at and attacked Palestinian farmers in the village of Deir Jarir, east of Ramallah in the occupied West Bank, Al Jazeera reported. Three people were injured in a settler attack a day earlier when they went to pick olives, Wafa reported. Al Jazeera reported that Israeli settlers attacked ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
           },
           "score": 19
         },
@@ -2993,6 +3059,48 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli settlers attack US photographer covering West Bank violence",
+          "url": "https://www.dawn.com/news/2037619/israeli-settlers-attack-us-photographer-covering-west-bank-violence",
+          "date": "2026-10-16T18:38:05.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Israeli settlers on Friday beat an American photojournalist working for The Washington Post while she was covering ongoing violence against Palestinian olive farmers in the occupied West Bank. Heidi Levine, a veteran photographer, was taken to hospital in Ramallah following the attack, with AFP photos showing her lying on a gurney with injuries to her leg and hand. The incident comes 10 days after",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Witkoff : Hostage Reunions with Families Among  Most Meaningful Moments of my Life  ",
+          "url": "http://www.washingtonjewishweek.com/witkoff-hostages-reunions-with-families-among-most-meaningful-moments-of-my-life/",
+          "date": "2026-10-16T19:15:00.000Z",
+          "source": "washingtonjewishweek.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
+          },
+          "regionEvent": {
+            "type": "abduction",
+            "icon": "🔗",
+            "label": "Entführung/Geiseln"
           },
           "score": 18
         },
@@ -3522,6 +3630,48 @@
           "score": 16
         },
         {
+          "title": "European Council warns companies not to finance Israel's E1 West Bank settlement construction",
+          "url": "https://www.middleeasteye.net/news/european-council-warns-companies-not-finance-israels-e1-west-bank-settlement-construction",
+          "date": "2026-10-17T13:15:07.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "European Council warns companies not to finance Israel's E1 West Bank settlement construction Submitted by MEE staff on Sat, 10/17/2026 - 12:11 The body that sets the EU's political direction says companies could face 'legal, economic and reputational consequences' Vehicles travel along a highway near the Israeli settlement of Maale Adumim, as seen from the E1 corridor in the occupied West Bank, o",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-two-palestinians-settlers-open-fire-farmers-west",
+          "date": "2026-10-17T06:21:05.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank Israeli settlers opened fire at and attacked Palestinian farmers in the village of Deir Jarir, east of Ramallah in the occupied West Bank, Al Jazeera reported. Three people were injured in a settler attack a day earlier when they went to pick olives, Wafa reported. Al Jazeera reported that Israeli settlers attacked ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
           "title": "Settlers attack Palestinian mosque near occupied East Jerusalem",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/settlers-attack-palestinian-mosque-near-occupied-east-jerusalem?traffic_source=rss",
           "date": "2026-10-14T17:05:01.000Z",
@@ -3679,48 +3829,6 @@
           "score": 15
         },
         {
-          "title": "Prominent Israeli rabbi rules Jews may pick olives from Palestinian groves",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/prominent-israeli-rabbi-rules-jews-may-pick-olives-palestinian-groves",
-          "date": "2026-10-16T18:22:09.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Prominent Israeli rabbi rules Jews may pick olives from Palestinian groves Israel’s prominent rabbi Dov Lior ruled on Friday that Jews may pick olives from Palestinian-owned groves in the occupied West Bank, Haaretz reported. Lior claimed the land belongs to the Jewish people, and said harvesting it publicly asserts Jewish ownership and fulfils the religious duty of \"conquering the land.\" The ruli",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
-          "title": "I survived Gaza's horrors. I watched NAZA to learn how Israeli soldiers live with it",
-          "url": "https://www.middleeasteye.net/opinion/i-survived-gazas-horrors-i-watched-naza-learn-how-israeli-soldiers-live-it",
-          "date": "2026-10-16T17:44:19.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "I survived Gaza's horrors. I watched NAZA to learn how Israeli soldiers live with it Submitted by Ezzideen Shehab on Fri, 10/16/2026 - 16:54 The testimony of perpetrators sheds light on what was happening on the other side, as we frantically scrambled to stay alive Palestinian mourners gather in Gaza City after the recovery from the rubble of the unidentified remains of more than 100 people, on 30",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 15
-        },
-        {
           "title": "  Crossing the Red Line : Biden , His Advisors , and Israel War in Gaza  ",
           "url": "https://www.kalw.org/show/your-call/2026-10-16/crossing-the-red-line-biden-his-advisors-and-israels-war-in-gaza",
           "date": "2026-10-16T19:45:00.000Z",
@@ -3780,27 +3888,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "The Gaza war continues to make ripples on the Suncoast",
-          "url": "https://wslr.org/the-gaza-war-continues-to-make-ripples-on-the-suncoast/",
-          "date": "2026-10-16T18:00:00.000Z",
-          "source": "wslr.org",
-          "sourceType": "news",
-          "summary": "",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -4181,69 +4268,6 @@
             "label": "Waffenruhe"
           },
           "score": 15
-        },
-        {
-          "title": "Zelenskyy says ‘increasingly clear’ Russia does not want energy ceasefire after strikes on energy facilities – as it happened",
-          "url": "https://www.theguardian.com/world/live/2026/oct/12/ukraine-russia-trump-energy-ceasefire-nato-zelenskyy-nobel-latest-news-updates",
-          "date": "2026-10-12T16:31:54.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Zelenskyy had proposed a 60-day total ceasefire to allow Ukraine to hold presidential elections Trump announces partial ceasefire in Ukraine war as Zelenskyy says deal is ‘news to me’ Addressing the conference virtually, Ukrainian president Volodymyr Zelenskyy commented on Trump’s “sudden but very important” energy ceasefire declaration over the weekend. He said it is clear that Putin “does not re",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanese health ministry: Israeli attacks have killed nearly 9,000 people since October 2023",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-health-ministry-israeli-attacks-have-killed-nearly-9000-people",
-          "date": "2026-10-12T16:27:43.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese health ministry: Israeli attacks have killed nearly 9,000 people since October 2023 In a statement issued on Monday, the Lebanese Ministry of Health declared that Israeli attacks on Lebanon since 8 October 2023 have killed 8,965 people and injured 30,660 others.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Blast kills teenager, injures dozens in northern Israel",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/blast-kills-teenager-injures-dozens-in-northern-israel?traffic_source=rss",
-          "date": "2026-10-12T16:44:07.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A 15-year-old was killed and around 20 people injured when unexploded ordnance detonated in northern Israel.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4275,31 +4299,31 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 4,
+      "newCount": 3,
       "signals": [
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 4
-        },
         {
           "key": "talks",
           "label": "Verhandlungen",
           "dir": "down",
-          "count": 3
+          "count": 6
         },
         {
           "key": "casualties",
           "label": "Opfer",
           "dir": "up",
-          "count": 2
+          "count": 3
         },
         {
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 2
+          "count": 3
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 3
         },
         {
           "key": "ceasefire",
@@ -4332,8 +4356,8 @@
             35.035,
             31.753
           ],
-          "count": 2,
-          "newCount": 0,
+          "count": 3,
+          "newCount": 1,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -4343,13 +4367,55 @@
       ],
       "items": [
         {
+          "title": "Masked settlers attack European diplomats in occupied West Bank",
+          "url": "https://www.theguardian.com/world/2026/oct/17/masked-settlers-attack-european-diplomats-occupied-west-bank",
+          "date": "2026-10-17T17:02:14.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "Belgian foreign minister urges further EU sanctions and links attack to Israel’s ‘illegal settlement policy’ Masked settlers attacked a group of European diplomats during a visit to the occupied West Bank on Saturday, Belgium’s foreign minister said, on a second day of high-profile assaults on Palestinians and others during the sensitive olive harvest. At least four people have been killed and mor",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 30
+        },
+        {
+          "title": "Israeli settlers attack European diplomats in West Bank",
+          "url": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+          "date": "2026-10-17T18:57:56.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 29
+        },
+        {
           "title": "🔴 Israeli settlers beat French mayor, attack European diplomatic cars in West Bank",
           "url": "https://www.france24.com/en/middle-east/20261017-israeli-settlers-attack-european-delegation-convoy-in-west-bank-beat-french-mayor",
           "date": "2026-10-17T14:58:54.000Z",
           "source": "France 24",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -4370,7 +4436,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "French mayor attacked by settlers in West Bank says Israel ‘tolerates’ settler violence The French mayor who was attacked on Saturday by Israeli settlers in the occupied West Bank said the incident showed that Israel tolerates settler violence. “I think that if settlers are behaving like this, there is a tolerance on the part of the Israeli government,” said Bernard Baudoux, mayor of the northern ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -4391,7 +4457,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Belgium condemns Israeli settler attack on European diplomats in West Bank Belgium on Saturday condemned an attack by Israeli settlers on a convoy of European diplomats in the occupied West Bank, during which a visiting French mayor was beaten. Israeli Foreign Minister Gideon Saar also condemned the attack, describing it as violence by “rioters”. \"I strongly condemn the severe acts of violence by ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -4427,6 +4493,58 @@
           "score": 29
         },
         {
+          "title": "Jerusalem Daily: Israeli settlers attack farmers and journalists",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/aje-onl-nf_yt-dnrbltn-261017-salehm-jerusalem_daily-171026?traffic_source=rss",
+          "date": "2026-10-17T17:18:50.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "After Israeli settlers beat and severely wounded Palestinian farmers, settler violence continues.",
+          "isNew": true,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "Israeli settlers attack European diplomats during West Bank olive harvest",
+          "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
+          "date": "2026-10-17T12:48:03.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Four Palestinian women and a child are among those injured in separate ongoing Israeli assaults and pogroms.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
           "title": "US media contributor calls for investigation into journalist attacked by Israeli settlers",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/atlantic-contributor-says-us-journalist-attacked-israeli-settlers-should",
           "date": "2026-10-17T13:26:10.000Z",
@@ -4445,7 +4563,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 27
+          "score": 24
         },
         {
           "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
@@ -4511,27 +4629,6 @@
           "score": 22
         },
         {
-          "title": "European Council warns companies not to finance Israel's E1 West Bank settlement construction",
-          "url": "https://www.middleeasteye.net/news/european-council-warns-companies-not-finance-israels-e1-west-bank-settlement-construction",
-          "date": "2026-10-17T13:15:07.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "European Council warns companies not to finance Israel's E1 West Bank settlement construction Submitted by MEE staff on Sat, 10/17/2026 - 12:11 The body that sets the EU's political direction says companies could face 'legal, economic and reputational consequences' Vehicles travel along a highway near the Israeli settlement of Maale Adumim, as seen from the E1 corridor in the occupied West Bank, o",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 22
-        },
-        {
           "title": "UN says West Bank olive harvest settler attacks surpass 2025 figure",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-says-west-bank-olive-harvest-settler-attacks-surpass-2025-figure",
           "date": "2026-10-17T00:40:28.000Z",
@@ -4580,27 +4677,6 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "'My son has always feared settlers would kill me': Photojournalist recounts attack Washington Post photojournalist Heidi Levine, who was brutally attacked by a group of Israeli settlers on Thursday, says her son, Michael, has always told tell her that his biggest fear is that his mother \"would be killed by settlers\". \"We even had this conversation yesterday,\" Levine said from her hospital bed as s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli settlers attack US photographer covering West Bank violence",
-          "url": "https://www.dawn.com/news/2037619/israeli-settlers-attack-us-photographer-covering-west-bank-violence",
-          "date": "2026-10-16T18:38:05.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Israeli settlers on Friday beat an American photojournalist working for The Washington Post while she was covering ongoing violence against Palestinian olive farmers in the occupied West Bank. Heidi Levine, a veteran photographer, was taken to hospital in Ramallah following the attack, with AFP photos showing her lying on a gurney with injuries to her leg and hand. The incident comes 10 days after",
           "isNew": false,
           "region": null,
           "event": {
@@ -4700,27 +4776,6 @@
           "score": 22
         },
         {
-          "title": "US condemns ‘criminal violence’ in West Bank after settler attack on Washington Post journalist",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-condemns-criminal-violence-west-bank-after-settler-attack-washington",
-          "date": "2026-10-16T18:37:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US condemns ‘criminal violence’ in West Bank after settler attack on Washington Post journalist The United States on Friday condemned “criminal violence by any party” in the occupied West Bank, after Israeli settlers attacked American photojournalist Heidi Levine while she was covering violence against Palestinian olive farmers for The Washington Post. “We condemn criminal violence by any party in",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Journalist hospitalized after Israeli settler attack on Palestinian olive harvest in West Bank",
           "url": "https://www.wlwt.com/article/washington-post-journalist-israeli-settler-attack-palestinian-olive-harvest-west-bank/74158008",
           "date": "2026-10-16T21:15:00.000Z",
@@ -4790,7 +4845,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "European Council warns companies against Israel's E1 settlement construction The European Council has warned companies they could face \"legal, economic and reputational consequences\" if they involve themselves with East 1 (East 1) settlement construction in the&nbsp; Israeli -occupied West Bank. The major&nbsp; intervention &nbsp;on Friday, from the body that determines the European Union's politi",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -4805,46 +4860,67 @@
           "score": 20
         },
         {
-          "title": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-two-palestinians-settlers-open-fire-farmers-west",
-          "date": "2026-10-17T06:21:05.000Z",
+          "title": "European Council warns companies not to finance Israel's E1 West Bank settlement construction",
+          "url": "https://www.middleeasteye.net/news/european-council-warns-companies-not-finance-israels-e1-west-bank-settlement-construction",
+          "date": "2026-10-17T13:15:07.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank Israeli settlers opened fire at and attacked Palestinian farmers in the village of Deir Jarir, east of Ramallah in the occupied West Bank, Al Jazeera reported. Three people were injured in a settler attack a day earlier when they went to pick olives, Wafa reported. Al Jazeera reported that Israeli settlers attacked ",
+          "summary": "European Council warns companies not to finance Israel's E1 West Bank settlement construction Submitted by MEE staff on Sat, 10/17/2026 - 12:11 The body that sets the EU's political direction says companies could face 'legal, economic and reputational consequences' Vehicles travel along a highway near the Israeli settlement of Maale Adumim, as seen from the E1 corridor in the occupied West Bank, o",
           "isNew": false,
           "region": null,
           "event": {
             "type": "report",
             "icon": "📄",
             "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Israeli settlers attack US photographer covering West Bank violence",
+          "url": "https://www.dawn.com/news/2037619/israeli-settlers-attack-us-photographer-covering-west-bank-violence",
+          "date": "2026-10-16T18:38:05.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Israeli settlers on Friday beat an American photojournalist working for The Washington Post while she was covering ongoing violence against Palestinian olive farmers in the occupied West Bank. Heidi Levine, a veteran photographer, was taken to hospital in Ramallah following the attack, with AFP photos showing her lying on a gurney with injuries to her leg and hand. The incident comes 10 days after",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 20
+          "score": 18
         },
         {
-          "title": "Child, four women among Palestinians injured in West Bank pogroms",
-          "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
-          "date": "2026-10-17T12:48:03.000Z",
-          "source": "Al Jazeera",
+          "title": "US condemns ‘criminal violence’ in West Bank after settler attack on Washington Post journalist",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-condemns-criminal-violence-west-bank-after-settler-attack-washington",
+          "date": "2026-10-16T18:37:18.000Z",
+          "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Attacks follow a religious edict by a prominent far-right rabbi permitting the seizure of Palestinian olives.",
+          "summary": "US condemns ‘criminal violence’ in West Bank after settler attack on Washington Post journalist The United States on Friday condemned “criminal violence by any party” in the occupied West Bank, after Israeli settlers attacked American photojournalist Heidi Levine while she was covering violence against Palestinian olive farmers for The Washington Post. “We condemn criminal violence by any party in",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 19
+          "score": 18
         },
         {
           "title": "US journalist injured during Israeli settler attack on West Bank olive harvest",
@@ -5013,6 +5089,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-two-palestinians-settlers-open-fire-farmers-west",
+          "date": "2026-10-17T06:21:05.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces arrest two Palestinians, settlers open fire at farmers in West Bank Israeli settlers opened fire at and attacked Palestinian farmers in the village of Deir Jarir, east of Ramallah in the occupied West Bank, Al Jazeera reported. Three people were injured in a settler attack a day earlier when they went to pick olives, Wafa reported. Al Jazeera reported that Israeli settlers attacked ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
         },
         {
           "title": "Settlers attack Palestinian mosque near occupied East Jerusalem",
@@ -5539,7 +5636,7 @@
           "score": 6
         }
       ],
-      "itemCount": 56
+      "itemCount": 59
     },
     {
       "id": "yemen",
@@ -5569,7 +5666,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 4,
+      "newCount": 1,
       "signals": [
         {
           "key": "airstrike",
@@ -5599,7 +5696,7 @@
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 5
+          "count": 4
         }
       ],
       "acled": null,
@@ -5642,28 +5739,11 @@
             13.41
           ],
           "count": 11,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
-          }
-        },
-        {
-          "id": "YEM-3496",
-          "name": "Sanaa",
-          "nameDe": "Sanaa",
-          "type": "Governorate",
-          "anchor": [
-            44.4,
-            15.334
-          ],
-          "count": 5,
-          "newCount": 0,
-          "event": {
-            "type": "missile",
-            "icon": "🚀",
-            "label": "Raketenangriff"
           }
         },
         {
@@ -5681,6 +5761,23 @@
             "type": "offensive",
             "icon": "🪖",
             "label": "Bodenoffensive"
+          }
+        },
+        {
+          "id": "YEM-3496",
+          "name": "Sanaa",
+          "nameDe": "Sanaa",
+          "type": "Governorate",
+          "anchor": [
+            44.4,
+            15.334
+          ],
+          "count": 4,
+          "newCount": 0,
+          "event": {
+            "type": "missile",
+            "icon": "🚀",
+            "label": "Raketenangriff"
           }
         },
         {
@@ -5703,13 +5800,34 @@
       ],
       "items": [
         {
+          "title": "Yemeni government forces claim heavy Houthi losses in a day of strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-heavy-houthi-losses-day-strikes",
+          "date": "2026-10-17T17:53:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemeni government forces claim heavy Houthi losses in a day of strikes Forces of Yemen's internationally recognised government said on Saturday they had carried out 1,417 strikes against the Houthis over the previous 24 hours, killing or wounding about 800 fighters. Spokesperson Majed Abdullah al-Nuzaili said the strikes had destroyed or disabled more than 190 armoured vehicles and supply assets. ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 29
+        },
+        {
           "title": "Saudi strikes on Yemen kill at least 12, Houthi media report",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-strikes-yemen-kill-12-houthis-say",
           "date": "2026-10-17T16:15:55.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Saudi strikes on Yemen kill at least 12, Houthi media report Saudi &nbsp;air strikes that began overnight have killed at least 12 people in Yemen , including three children, Houthi media reported on Saturday. Saudi warplanes targeted \"civilian homes\" in Taiz governorate on Saturday, killing nine people and wounding 16, the group's news agency said, adding that people were still trapped under the r",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "YEM-158",
             "name": "Ta'izz",
@@ -5740,7 +5858,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Egyptian President Abdel Fattah el-Sisi has vowed to take 'any measure' to defend Saudi Arabia amid Houthi attacks.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -5753,27 +5871,6 @@
             "label": "Gefechte"
           },
           "score": 26
-        },
-        {
-          "title": "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi gains",
-          "url": "https://www.theguardian.com/world/2026/oct/17/uae-yemen-conflict-agreement-saudi-arabia-houthi-gains",
-          "date": "2026-10-17T11:57:15.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "United Arab Emirates will reportedly resume payments to Yemeni forces as gains by Iran-backed Houthi fighters alarm Gulf state rulers Yemen civil war: what sparked latest escalation and who is involved? The United Arab Emirates has agreed to re-enter the Yemen conflict by resuming payments to some government forces fighting Iran-aligned Houthis in the south, according to sources in Yemen. In retur",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
         },
         {
           "title": "Houthis strike Yemen’s Aden: What that means",
@@ -6066,27 +6163,6 @@
           "score": 22
         },
         {
-          "title": "Iran denies Saudi accusation of involvement in Houthi attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-denies-saudi-accusation-involvement-houthi-attacks",
-          "date": "2026-10-16T18:32:21.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran denies Saudi accusation of involvement in Houthi attacks Iran’s foreign ministry on Friday rejected Saudi Arabia’s accusation that Tehran was involved in Houthi attacks on the kingdom, offering to mediate between the two sides. “The Islamic Republic of Iran rejects any claim that Iran has played a role in Yemeni (Houthi) operations,” foreign ministry spokesman Esmaeil Baqaei said in a stateme",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
           "title": "Yemen: Houthi siege, cholera outbreak and aid cuts put civilians in the crosshairs",
           "url": "https://news.un.org/feed/view/en/story/2026/10/1168589",
           "date": "2026-10-13T12:00:00.000Z",
@@ -6145,7 +6221,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Iranian Foreign Minister Abbas Araghchi said on Saturday that Tehran supports a “political process” to resolve the conflict between Saudi Arabia and Yemen’s Houthi rebels. The Houthis have repeatedly attacked Saudi targets, including energy facilities and Riyadh’s international airport, where 13 people were killed in a major attack last week. “We support an inclusive and comprehensive political pr",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -6160,13 +6236,34 @@
           "score": 20
         },
         {
+          "title": "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi gains",
+          "url": "https://www.theguardian.com/world/2026/oct/17/uae-yemen-conflict-agreement-saudi-arabia-houthi-gains",
+          "date": "2026-10-17T11:57:15.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "United Arab Emirates will reportedly resume payments to Yemeni forces as gains by Iran-backed Houthi fighters alarm Gulf state rulers Yemen civil war: what sparked latest escalation and who is involved? The United Arab Emirates has agreed to re-enter the Yemen conflict by resuming payments to some government forces fighting Iran-aligned Houthis in the south, according to sources in Yemen. In retur",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
           "title": "Gunmen fire on tanker off Yemen's coast southeast of al-Mukalla",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gunmen-fire-tanker-yemens-coast-southeast-al-mukalla",
           "date": "2026-10-17T14:37:43.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Gunmen fire on tanker off Yemen's coast southeast of al-Mukalla A tanker has been fired at off the coast of Yemen, according to the United ⁠Kingdom ⁠Maritime Trade Operations agency. The ‌captain of the LNG tanker said that a small skiff with seven people onboard approached the vessel when it was 140 nautical miles (259km) southeast of the Yemeni port city of al-Mukalla. The tanker responded by fi",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -6187,6 +6284,27 @@
           "source": "UN News – Peace & Security",
           "sourceType": "institutional",
           "summary": "UN Secretary-General António Guterres has condemned a Houthi missile attack on Riyadh’s main airport that Saudi authorities say killed 12 people and wounded more than 300.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
+        },
+        {
+          "title": "Iran denies Saudi accusation of involvement in Houthi attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-denies-saudi-accusation-involvement-houthi-attacks",
+          "date": "2026-10-16T18:32:21.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran denies Saudi accusation of involvement in Houthi attacks Iran’s foreign ministry on Friday rejected Saudi Arabia’s accusation that Tehran was involved in Houthi attacks on the kingdom, offering to mediate between the two sides. “The Islamic Republic of Iran rejects any claim that Iran has played a role in Yemeni (Houthi) operations,” foreign ministry spokesman Esmaeil Baqaei said in a stateme",
           "isNew": false,
           "region": null,
           "event": {
@@ -7022,7 +7140,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthis threaten escalation after strike on Saudi oil giant Aramco",
@@ -7680,37 +7798,6 @@
             "label": "Bodenoffensive"
           },
           "score": 15
-        },
-        {
-          "title": "Houthi-run TV reports attack on Yemen oil facility after Saudi coalition evacuation order",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-run-tv-reports-attack-yemen-oil-facility-after-saudi-coalition",
-          "date": "2026-10-13T14:02:07.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Houthi-run TV reports attack on Yemen oil facility after Saudi coalition evacuation order Houthi-run Al-Masirah TV reported on Tuesday an attack on the Yemen Oil Company in Sanaa. The reported attack came shortly after the Saudi-led coalition ordered the evacuation of the facility ahead of a military operation. Reporting by Reuters",
-          "isNew": false,
-          "region": {
-            "id": "YEM-3496",
-            "name": "Sanaa",
-            "nameDe": "Sanaa",
-            "type": "Governorate",
-            "anchor": [
-              44.4,
-              15.334
-            ],
-            "matched": "Sanaa"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -7791,7 +7878,7 @@
             35.568
           ],
           "count": 12,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -7818,6 +7905,27 @@
       ],
       "items": [
         {
+          "title": "Iran’s attacks on Hormuz shipping 'unsuccessful', Centcom says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-attacks-hormuz-shipping-unsuccessful-centcom-says-0",
+          "date": "2026-10-17T18:38:04.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran’s attacks on Hormuz shipping 'unsuccessful', Centcom says The US military says the “vast majority” of Iran’s attempted attacks on ships in the Strait of Hormuz have failed, and that the waterway remains open. On Saturday, US Central Command spokesperson Tim Hawkins told Fox News that about 97 percent of vessels trying to cross the strait had done so without being struck, many of them with US ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 29
+        },
+        {
           "title": "US and Iran both claim control of Strait of Hormuz amid attacks on vessels",
           "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels?traffic_source=rss",
           "date": "2026-10-17T12:10:56.000Z",
@@ -7836,7 +7944,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 29
+          "score": 22
         },
         {
           "title": "Clashes grip Tirana as Albanian PM blames 'foreign hands' for mounting unrest",
@@ -7912,6 +8020,37 @@
           "score": 22
         },
         {
+          "title": "Iran backs 'political process' to resolve Saudi-Houthi conflict",
+          "url": "https://www.dawn.com/news/2037840/iran-backs-political-process-to-resolve-saudi-houthi-conflict",
+          "date": "2026-10-17T13:51:10.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Iranian Foreign Minister Abbas Araghchi said on Saturday that Tehran supports a “political process” to resolve the conflict between Saudi Arabia and Yemen’s Houthi rebels. The Houthis have repeatedly attacked Saudi targets, including energy facilities and Riyadh’s international airport, where 13 people were killed in a major attack last week. “We support an inclusive and comprehensive political pr",
+          "isNew": false,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 21
+        },
+        {
           "title": "Iran denies Saudi accusation of involvement in Houthi attacks",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-denies-saudi-accusation-involvement-houthi-attacks",
           "date": "2026-10-16T18:32:21.000Z",
@@ -7940,38 +8079,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
-        },
-        {
-          "title": "Iran backs 'political process' to resolve Saudi-Houthi conflict",
-          "url": "https://www.dawn.com/news/2037840/iran-backs-political-process-to-resolve-saudi-houthi-conflict",
-          "date": "2026-10-17T13:51:10.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Iranian Foreign Minister Abbas Araghchi said on Saturday that Tehran supports a “political process” to resolve the conflict between Saudi Arabia and Yemen’s Houthi rebels. The Houthis have repeatedly attacked Saudi targets, including energy facilities and Riyadh’s international airport, where 13 people were killed in a major attack last week. “We support an inclusive and comprehensive political pr",
-          "isNew": true,
-          "region": {
-            "id": "IRN-3216",
-            "name": "Tehran",
-            "nameDe": "Teheran",
-            "type": "Province",
-            "anchor": [
-              51.831,
-              35.568
-            ],
-            "matched": "Tehran"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 21
+          "score": 18
         },
         {
           "title": "Trump rules out using a nuclear bomb on Iran: Why that matters",
@@ -8257,27 +8365,6 @@
           "score": 18
         },
         {
-          "title": "Solar power booms in Philippines as war on Iran spikes energy costs",
-          "url": "https://www.aljazeera.com/news/2026/10/17/solar-power-booms-in-philippines-as-war-on-iran-spikes-energy-costs?traffic_source=rss",
-          "date": "2026-10-17T10:12:01.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "With Southeast Asia's largest electricity bills rising even higher, Filipinos invest in rooftop panels.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
           "title": "Tear Gas, Petrol Bombs on Tirana’s Streets as Police and Students Tussle",
           "url": "https://balkaninsight.com/2026/10/14/tear-gas-petrol-bombs-on-tiranas-streets-as-police-and-students-tussle/bi/",
           "date": "2026-10-14T10:50:31.000Z",
@@ -8297,6 +8384,27 @@
             "label": "Explosion/Anschlag"
           },
           "score": 16
+        },
+        {
+          "title": "Solar power booms in Philippines as war on Iran spikes energy costs",
+          "url": "https://www.aljazeera.com/news/2026/10/17/solar-power-booms-in-philippines-as-war-on-iran-spikes-energy-costs?traffic_source=rss",
+          "date": "2026-10-17T10:12:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "With Southeast Asia's largest electricity bills rising even higher, Filipinos invest in rooftop panels.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
         },
         {
           "title": "Two container ships sink near strait of Hormuz amid surge in Iranian attacks",
@@ -8473,27 +8581,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "How Iran messaging highlights cost of war ahead of US midterm elections",
-          "url": "https://www.aljazeera.com/news/2026/10/16/how-iran-messaging-highlights-cost-of-war-ahead-of-us-midterm-elections?traffic_source=rss",
-          "date": "2026-10-16T18:21:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Through statements in English, Iranian officials are emphasising gas prices and issues with the US economy.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
           },
           "score": 15
         },
@@ -8790,6 +8877,27 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "How Iran messaging highlights cost of war ahead of US midterm elections",
+          "url": "https://www.aljazeera.com/news/2026/10/16/how-iran-messaging-highlights-cost-of-war-ahead-of-us-midterm-elections?traffic_source=rss",
+          "date": "2026-10-16T18:21:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Through statements in English, Iranian officials are emphasising gas prices and issues with the US economy.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 11
         },
         {
           "title": "Iran: When 'honor' becomes a death sentence for women",
@@ -9605,27 +9713,6 @@
             "label": "Bericht"
           },
           "score": 8
-        },
-        {
-          "title": "Iran war live: Saudi coalition hits Houthi sites; Aramco office hit in east",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
-          "date": "2026-10-14T00:00:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "A Saudi Aramco building has been hit in Dhahran, following Saudi-led coalition strikes on Houthi 'vital assets' in Yemen",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -9658,7 +9745,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 0,
+      "newCount": 7,
       "signals": [
         {
           "key": "casualties",
@@ -9741,8 +9828,8 @@
             65.869,
             28.318
           ],
-          "count": 1,
-          "newCount": 0,
+          "count": 2,
+          "newCount": 1,
           "event": {
             "type": "offensive",
             "icon": "🪖",
@@ -9751,6 +9838,79 @@
         }
       ],
       "items": [
+        {
+          "title": "Looting, blazes and clashes in France amid nationwide protests",
+          "url": "https://www.dawn.com/news/2037825/looting-blazes-and-clashes-in-france-amid-nationwide-protests",
+          "date": "2026-10-17T17:51:29.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Police and protesters clashed violently in Paris and other French cities on Saturday on the sidelines of nationwide marches against soaring inflation, with one demonstrator’s hand blown off, multiple blazes set, and looters breaking into dozens of stores to strip them bare. With just months to go before the two-round elections in April and May to choose Macron’s successor, the demonstrations follo",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 26
+        },
+        {
+          "title": "Two police head constables martyred in attack in Balochistan Nasirabad",
+          "url": "https://tribune.com.pk/story/2635383/two-police-head-constables-martyred-in-attack-in-balochistans-nasirabad",
+          "date": "2026-10-17T18:00:00.000Z",
+          "source": "tribune.com.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": {
+            "id": "PAK-1108",
+            "name": "Balochistan",
+            "nameDe": "Belutschistan",
+            "type": "Province",
+            "anchor": [
+              65.869,
+              28.318
+            ],
+            "matched": "Balochistan"
+          },
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
+        {
+          "title": "Pakistan Army pounds Afghan Taliban Positions in fresh Kurram Border Clashes",
+          "url": "https://en.dailypakistan.com.pk/17-Oct-2026/pakistan-army-pounds-afghan-taliban-positions-in-fresh-kurram-border-clashes",
+          "date": "2026-10-17T17:00:00.000Z",
+          "source": "en.dailypakistan.com.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 24
+        },
         {
           "title": "Clashes grip Tirana as Albanian PM blames 'foreign hands' for mounting unrest",
           "url": "https://www.france24.com/en/europe/20261016-clashes-grip-tirana-as-albanian-pm-blames-foreign-hands",
@@ -9794,13 +9954,13 @@
           "score": 22
         },
         {
-          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
-          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-10-17T11:34:00.000Z",
-          "source": "Deutsche Welle",
+          "title": "Almost all NSW homes destroyed in black summer bushfires were within 100 metres of flammable vegetation",
+          "url": "https://www.theguardian.com/australia-news/2026/oct/18/nsw-homes-destroyed-in-black-summer-bushfires-in-high-risk-buffer-zone",
+          "date": "2026-10-17T19:00:40.000Z",
+          "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
-          "isNew": false,
+          "summary": "Exclusive : Research confirms official advice about high-risk properties and warns worsening conditions will make more homes unsafe Sign up for climate and environment editor Adam Morton’s free Clear Air newsletter here Almost every home destroyed in New South Wales during the black summer bushfires of 2019 and 2020 was inside the 100 metre buffer zone used to identify properties most at risk, new",
+          "isNew": true,
           "region": null,
           "event": {
             "type": "report",
@@ -9808,9 +9968,9 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 19
         },
@@ -9874,6 +10034,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 19
+        },
+        {
+          "title": "Indian airlines barred from using Pakistani airspace until Nov 24 as ban extended",
+          "url": "https://www.dawn.com/news/2037862/indian-airlines-barred-from-using-pakistani-airspace-until-nov-24-as-ban-extended",
+          "date": "2026-10-17T17:57:11.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Pakistan has extended its airspace ban for Indian aircraft for another month, until Nov 24, according to a Notice to Airmen (Notam) issued by the Pakistan Airports Authority (PAA). The previous extension of the ban was set to expire on Oct 24. “Pakistan airspace not available for Indian registered aircraft and aircraft operated/owned or leased by Indian airlines/operators, including military fligh",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 19
         },
@@ -10191,6 +10372,69 @@
             "label": "Seeangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Pakistan Army , Afghan Taliban exchange fire in Upper Kurram",
+          "url": "https://thefrontierpost.com/pakistan-army-afghan-taliban-exchange-fire-in-upper-kurram/",
+          "date": "2026-10-17T17:45:00.000Z",
+          "source": "thefrontierpost.com",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "Pakistan Army gives befitting response to Afghan Taliban firing in Upper Kurram",
+          "url": "https://www.radio.gov.pk/17-10-2026/pakistan-army-responds-effectively-to-afghan-taliban-firing-in-upper-kurram",
+          "date": "2026-10-17T17:45:00.000Z",
+          "source": "radio.gov.pk",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
+        },
+        {
+          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
+          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-10-17T11:34:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 16
         },
         {
           "title": "Bulgaria Summons Russian Envoy Over New Black Sea Drone Attacks",
@@ -10861,7 +11105,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Pakistani, Chinese armies begin joint training exercise in Xinjiang",
@@ -10882,7 +11126,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Nobel Peace Prize winner Navi Pillay blasts Trump's 'unlawful' sanctions against ICC",
@@ -11228,7 +11472,7 @@
           "score": 8
         }
       ],
-      "itemCount": 66
+      "itemCount": 73
     },
     {
       "id": "sudan",
@@ -11256,7 +11500,7 @@
       ],
       "activity": 38,
       "severity": 66,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -11476,27 +11720,6 @@
           "score": 22
         },
         {
-          "title": "Sudan: Climate Change, Drone Attacks Exacerbate Sudan's Humanitarian Crisis",
-          "url": "https://allafrica.com/stories/202610150223.html",
-          "date": "2026-10-15T06:54:22.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[DW] Aid groups warn of an imminent collapse of the health system as fighting continues to displace civilians amid the planting season. The UN has extended an arms embargo, but only for Darfur.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 20
-        },
-        {
           "title": "Sudan: UN and Switzerland Plan Sudan Peace Talks As U.S. Lawmaker Proposes Resource Partnership",
           "url": "https://allafrica.com/stories/202610160011.html",
           "date": "2026-10-16T04:56:40.000Z",
@@ -11524,7 +11747,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Premier League again refuses Sudan war petition urging UAE action Submitted by Oscar Rickett on Sat, 10/17/2026 - 15:05 A petition calling on the English league to raise concerns over UAE involvement in Sudan with Manchester City's owner was refused for a third time A general view of Manchester City’s Etihad Stadium on 4 October 2026 (Ed Syke/Reuters) Off England’s Premier League has refused for a",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -11537,6 +11760,27 @@
             "label": "Bericht"
           },
           "score": 19
+        },
+        {
+          "title": "Sudan: Climate Change, Drone Attacks Exacerbate Sudan's Humanitarian Crisis",
+          "url": "https://allafrica.com/stories/202610150223.html",
+          "date": "2026-10-15T06:54:22.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[DW] Aid groups warn of an imminent collapse of the health system as fighting continues to displace civilians amid the planting season. The UN has extended an arms embargo, but only for Darfur.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 18
         },
         {
           "title": "Climate change and drone attacks exacerbate the humanitarian crisis in war-torn Sudan",
@@ -13065,7 +13309,7 @@
       ],
       "activity": 70,
       "severity": 60,
-      "newCount": 0,
+      "newCount": 1,
       "signals": [
         {
           "key": "casualties",
@@ -13175,6 +13419,27 @@
         }
       ],
       "items": [
+        {
+          "title": "Indian airlines barred from using Pakistani airspace until Nov 24 as ban extended",
+          "url": "https://www.dawn.com/news/2037862/indian-airlines-barred-from-using-pakistani-airspace-until-nov-24-as-ban-extended",
+          "date": "2026-10-17T17:57:11.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Pakistan has extended its airspace ban for Indian aircraft for another month, until Nov 24, according to a Notice to Airmen (Notam) issued by the Pakistan Airports Authority (PAA). The previous extension of the ban was set to expire on Oct 24. “Pakistan airspace not available for Indian registered aircraft and aircraft operated/owned or leased by Indian airlines/operators, including military fligh",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
         {
           "title": "Attacks on Gulf energy infrastructure 'worrying' for Pakistan's outlook, minister says",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/attacks-gulf-energy-infrastructure-worrying-pakistans-outlook-minister",
@@ -13801,7 +14066,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "How far will cockroach movement go? India's youth-led protests defy Modi government",
@@ -13822,7 +14087,7 @@
             "icon": "📣",
             "label": "Proteste/Unruhen"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Pakistani, Chinese armies begin joint training exercise in Xinjiang",
@@ -13843,7 +14108,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Pakistan president urges Iran, US to honour Islamabad MoU",
@@ -14064,7 +14329,7 @@
           "score": 8
         }
       ],
-      "itemCount": 38
+      "itemCount": 39
     },
     {
       "id": "sahel-mali",
@@ -14395,8 +14660,8 @@
         "Est",
         "Ouagadougou"
       ],
-      "activity": 0,
-      "severity": 55,
+      "activity": 5,
+      "severity": 56,
       "newCount": 0,
       "signals": [],
       "acled": null,
@@ -14404,8 +14669,30 @@
       "iso3": "BFA",
       "extraCountries": [],
       "regions": [],
-      "items": [],
-      "itemCount": 0
+      "items": [
+        {
+          "title": "WAFU B U17 : Coach Kassim Ocansey makes seven changes to lineup for Burkina Faso clash",
+          "url": "https://www.ghanafa.org/wafu-b-u17-coach-kassim-ocansey-makes-seven-changes-to-lineup-for-burkina-faso-clash",
+          "date": "2026-10-16T20:00:00.000Z",
+          "source": "ghanafa.org",
+          "sourceType": "news",
+          "summary": "",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 21
+        }
+      ],
+      "itemCount": 1
     },
     {
       "id": "nigeria",
@@ -14436,7 +14723,7 @@
       ],
       "activity": 48,
       "severity": 53,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -14751,7 +15038,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "The vigilantes were attacked by gunmen at about 11:56 p.m. on Friday, according to residents The post Gunmen kill four vigilantes in Plateau community appeared first on Premium Times Nigeria .",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -15596,7 +15883,7 @@
       ],
       "activity": 100,
       "severity": 52,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "sanctions",
@@ -15656,7 +15943,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 26
+          "score": 22
         },
         {
           "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
@@ -15701,34 +15988,13 @@
           "score": 19
         },
         {
-          "title": "‘We’re not playing games’: Parents launch playground protests to fight school field sell-off",
-          "url": "https://www.theguardian.com/uk-news/2026/oct/17/were-not-playing-games-parents-launch-playground-protests-to-fight-school-field-sell-off",
-          "date": "2026-10-17T13:00:31.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "School looking to sell piece of open land beloved by people in Devon town to fund refurbishments On Saturdays throughout autumn, residents of Totnes have met at a field on the banks of the River Dart to play ballgames, fly kites or simply sit on the grass and chat. But it hasn’t just been about having fun – this has been a “play protest” aimed at trying to save a beloved piece of open land in the ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
-          },
-          "score": 19
-        },
-        {
           "title": "Protests in France: \"Two fires broke out in Place de la République\"",
           "url": "https://www.france24.com/en/video/20261017-protests-in-france-two-fires-broke-out-in-place-de-la-r%C3%A9publique",
           "date": "2026-10-17T15:53:30.000Z",
           "source": "France 24",
           "sourceType": "news",
           "summary": "Police and protesters clashed in Paris and other French cities on Saturday, with smoke from fires and tear gas filling the air at demonstrations nationwide against high prices, ahead of elections to replace President Emmanuel Macron. \"Two fires broke out in Place de la République,\" reports France 24's Antonia Kerrigan from the ground.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "protest",
@@ -15770,7 +16036,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "The vigilantes were attacked by gunmen at about 11:56 p.m. on Friday, according to residents The post Gunmen kill four vigilantes in Plateau community appeared first on Premium Times Nigeria .",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -15791,7 +16057,7 @@
           "source": "Premium Times (Nigeria)",
           "sourceType": "news",
           "summary": "The Nigerian Army has attributed the arrest of Plateau State-based journalist Lawrence Zongo to alleged unauthorised access to a restricted military facility, citing security concerns over his use of Meta smart glasses. Mr Zongo, a conflict journalist and volunteer reporter with Amnesty International, was arrested on 5 October at a military medical facility within Maxwell […] The post Army explain",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -15930,6 +16196,27 @@
             "label": "Gefechte"
           },
           "score": 18
+        },
+        {
+          "title": "‘We’re not playing games’: Parents launch playground protests to fight school field sell-off",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/17/were-not-playing-games-parents-launch-playground-protests-to-fight-school-field-sell-off",
+          "date": "2026-10-17T13:00:31.000Z",
+          "source": "The Guardian World",
+          "sourceType": "news",
+          "summary": "School looking to sell piece of open land beloved by people in Devon town to fund refurbishments On Saturdays throughout autumn, residents of Totnes have met at a field on the banks of the River Dart to play ballgames, fly kites or simply sit on the grass and chat. But it hasn’t just been about having fun – this has been a “play protest” aimed at trying to save a beloved piece of open land in the ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 16
         },
         {
           "title": "Pakistan has enough energy supplies to last through November, planning for winter spike: Aurangzeb",
@@ -16812,30 +17099,9 @@
             "label": "Politik/Wahl"
           },
           "score": 8
-        },
-        {
-          "title": "Pope says death penalty ‘inadmissible’ as US plans to livestream execution",
-          "url": "https://www.aljazeera.com/news/2026/10/10/pope-says-death-penalty-inadmissible-as-us-plans-to-livestream-execution?traffic_source=rss",
-          "date": "2026-10-10T17:38:18.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Pope Leo XIV describes capital punishment as an 'attack on the inviolability and dignity of the person' in post on X.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
         }
       ],
-      "itemCount": 57
+      "itemCount": 56
     },
     {
       "id": "niger",
@@ -19072,8 +19338,8 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 84,
-      "severity": 48,
+      "activity": 82,
+      "severity": 47,
       "newCount": 0,
       "signals": [
         {
@@ -19540,7 +19806,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Houthi missile hits Aramco building after Saudi-led coalition hits Yemen fuel depot",
@@ -20466,7 +20732,7 @@
       ],
       "activity": 17,
       "severity": 44,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -20509,7 +20775,7 @@
             34.484
           ],
           "count": 2,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "report",
             "icon": "📄",
@@ -20542,7 +20808,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Security forces have responded to unprovoked firing by Afghan Taliban forces along the Pakistan-Afghanistan border in Khyber Pakhtunkhwa’s Upper Kurram, state broadcaster PTV News reported on Saturday. PTV News and state-run Associated Press of Pakistan ( APP ), which cited security sources, said the Afghan Taliban forces opened fire to “facilitate terrorists” along the border in Taldah sector of ",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "PAK-1123",
             "name": "Khyber Pakhtunkhwa",
@@ -20772,7 +21038,7 @@
       ],
       "activity": 12,
       "severity": 42,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -20794,7 +21060,7 @@
           "source": "riotimesonline.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "drone",
@@ -20806,7 +21072,7 @@
             "icon": "🛩️",
             "label": "Drohnenangriff"
           },
-          "score": 21
+          "score": 22
         },
         {
           "title": "Ex-OFAC Official: The Cartel Risk Companies Can’t See | The InSight Take",
@@ -21392,7 +21658,7 @@
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 12
+          "count": 13
         },
         {
           "key": "casualties",
@@ -21456,7 +21722,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 26
+          "score": 22
         },
         {
           "title": "Russian attacks in Ukraine kill at least 8, cut power to 1 million",
@@ -21501,9 +21767,51 @@
           "score": 21
         },
         {
+          "title": "Will the EU come to Ukraine’s rescue in war against Russia?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/17/will-the-eu-come-to-ukraines-rescue-in-war-against-russia?traffic_source=rss",
+          "date": "2026-10-17T19:03:49.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "US support at risk as Trump-Zelenskyy relations nosedive.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Trump faces bipartisan backlash over Russia sanctions waiver",
+          "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver?traffic_source=rss",
+          "date": "2026-10-17T17:24:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 19
+        },
+        {
           "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
           "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-10-17T11:56:06.000Z",
+          "date": "2026-10-17T19:19:19.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
@@ -21550,48 +21858,6 @@
           "sourceType": "news",
           "summary": "Ukrainian president warns it will embolden Russian leader and intensify war as Moscow hits country’s power plants Power plant attacks reflect Russian blueprint to make Ukrainian cities unlivable Volodymyr Zelenskyy has described Donald Trump’s decision to roll back sanctions on Russia as a “reward” for Vladimir Putin and warned it will embolden the Russian leader and intensify the Kremlin’s war, a",
           "isNew": false,
-          "region": null,
-          "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
-          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-10-17T11:34:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Trump waives new Russia sanctions as Ukraine ties slump",
-          "url": "https://www.dawn.com/news/2037795/trump-waives-new-russia-sanctions-as-ukraine-ties-slump",
-          "date": "2026-10-17T11:58:12.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "President Donald Trump signed an executive order on Friday that waived sweeping US sanctions and tariffs targeting Russia’s energy revenues, marking a new low in Washington’s ties with war-torn Ukraine. The move came as Ukrainian President Volodymyr Zelensky urged EU leaders to keep financing Kyiv’s fight with nearly $80 billion more next year, insisting he was standing up for his country as Trump",
-          "isNew": true,
           "region": null,
           "event": {
             "type": "sanctions",
@@ -21921,18 +22187,18 @@
           "score": 18
         },
         {
-          "title": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
-          "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas?traffic_source=rss",
-          "date": "2026-10-17T11:10:22.000Z",
-          "source": "Al Jazeera",
+          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
+          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-10-17T11:34:00.000Z",
+          "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
+          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -21963,27 +22229,6 @@
           "score": 16
         },
         {
-          "title": "Uganda: MP Calls for Probe Into Recruitment of Ugandans to Fight for Russia",
-          "url": "https://allafrica.com/stories/202610160586.html",
-          "date": "2026-10-16T18:12:39.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Nile Post] Rukiga County MP Patrick Katabaazi has asked the government to investigate reports that Ugandan youths are being recruited through deceptive job offers and deployed to fight for Russia in the war against Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 16
-        },
-        {
           "title": "Bulgaria Summons Russian Envoy Over New Black Sea Drone Attacks",
           "url": "https://balkaninsight.com/2026/10/13/bulgaria-summons-russian-envoy-over-new-black-sea-drone-attacks/bi/",
           "date": "2026-10-13T08:32:21.000Z",
@@ -22003,6 +22248,48 @@
             "label": "Drohnenangriff"
           },
           "score": 16
+        },
+        {
+          "title": "Trump waives new Russia sanctions as Ukraine ties slump",
+          "url": "https://www.dawn.com/news/2037795/trump-waives-new-russia-sanctions-as-ukraine-ties-slump",
+          "date": "2026-10-17T11:58:12.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "President Donald Trump signed an executive order on Friday that waived sweeping US sanctions and tariffs targeting Russia’s energy revenues, marking a new low in Washington’s ties with war-torn Ukraine. The move came as Ukrainian President Volodymyr Zelensky urged EU leaders to keep financing Kyiv’s fight with nearly $80 billion more next year, insisting he was standing up for his country as Trump",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 16
+        },
+        {
+          "title": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
+          "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas?traffic_source=rss",
+          "date": "2026-10-17T11:10:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
         },
         {
           "title": "EU says ‘no indication’ intelligence sharing with Ukraine has stopped as Russian attacks leave 600,000 without power – as it happened",
@@ -22043,27 +22330,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'",
-          "url": "https://www.france24.com/en/tv-shows/spotlight/20261016-us-tilting-toward-russia-europeans-are-standing-more-and-more-solidly-with-zelensky",
-          "date": "2026-10-16T18:33:13.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "As transatlantic relations confront renewed geopolitical uncertainty, former Estonian President Toomas Hendrik Ilves delivers a pointed assessment of Washington's shifting approach to Russia's war on Ukraine and the profound implications for European security. At the heart of his analysis lies a fundamental question: can Europe develop the political unity, strategic independence and military capab",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -22918,6 +23184,27 @@
           "score": 12
         },
         {
+          "title": "Uganda: MP Calls for Probe Into Recruitment of Ugandans to Fight for Russia",
+          "url": "https://allafrica.com/stories/202610160586.html",
+          "date": "2026-10-16T18:12:39.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Nile Post] Rukiga County MP Patrick Katabaazi has asked the government to investigate reports that Ugandan youths are being recruited through deceptive job offers and deployed to fight for Russia in the war against Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 12
+        },
+        {
           "title": "Six Georgians convicted over 4 October ‘peaceful revolution’ released from prison",
           "url": "https://oc-media.org/six-georgians-convicted-over-4-october-peaceful-revolution-released-from-prison/",
           "date": "2026-10-16T12:13:30.000Z",
@@ -22937,6 +23224,27 @@
             "label": "Bericht"
           },
           "score": 12
+        },
+        {
+          "title": "'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20261016-us-tilting-toward-russia-europeans-are-standing-more-and-more-solidly-with-zelensky",
+          "date": "2026-10-16T18:33:13.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "As transatlantic relations confront renewed geopolitical uncertainty, former Estonian President Toomas Hendrik Ilves delivers a pointed assessment of Washington's shifting approach to Russia's war on Ukraine and the profound implications for European security. At the heart of his analysis lies a fundamental question: can Europe develop the political unity, strategic independence and military capab",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
         },
         {
           "title": "Donald Trump 'openly financing Russia's war with Ukraine', Nobel peace laureate says",
@@ -23044,6 +23352,27 @@
           "score": 11
         },
         {
+          "title": "NATO’s Top Commander Unveils Plan for Victory Against Russia",
+          "url": "https://balkaninsight.com/2026/10/12/natos-top-commander-unveils-plan-for-victory-against-russia/rd/",
+          "date": "2026-10-12T14:06:50.000Z",
+          "source": "Balkan Insight",
+          "sourceType": "news",
+          "summary": "The strategy draws on lessons from Ukraine, putting cheap drones, AI and rapid military strikes at the heart of NATO's response to any Russian attack.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "drone",
+            "icon": "🛩️",
+            "label": "Drohnenangriff"
+          },
+          "score": 9
+        },
+        {
           "title": "Bangladesh arrests two for luring locals to fight for Russia in Ukraine",
           "url": "https://www.aljazeera.com/news/2026/10/14/bangladesh-arrests-two-for-luring-locals-to-fight-for-russia-in-ukraine?traffic_source=rss",
           "date": "2026-10-14T19:02:51.000Z",
@@ -23062,31 +23391,10 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 11
-        },
-        {
-          "title": "NATO’s Top Commander Unveils Plan for Victory Against Russia",
-          "url": "https://balkaninsight.com/2026/10/12/natos-top-commander-unveils-plan-for-victory-against-russia/rd/",
-          "date": "2026-10-12T14:06:50.000Z",
-          "source": "Balkan Insight",
-          "sourceType": "news",
-          "summary": "The strategy draws on lessons from Ukraine, putting cheap drones, AI and rapid military strikes at the heart of NATO's response to any Russian attack.",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "drone",
-            "icon": "🛩️",
-            "label": "Drohnenangriff"
-          },
-          "score": 9
+          "score": 8
         }
       ],
-      "itemCount": 78
+      "itemCount": 80
     },
     {
       "id": "moldova-transnistria",
@@ -23113,7 +23421,7 @@
       ],
       "activity": 100,
       "severity": 41,
-      "newCount": 1,
+      "newCount": 2,
       "signals": [
         {
           "key": "ceasefire",
@@ -23125,7 +23433,7 @@
           "key": "sanctions",
           "label": "Sanktionen",
           "dir": "up",
-          "count": 10
+          "count": 11
         },
         {
           "key": "airstrike",
@@ -23153,27 +23461,6 @@
       "regions": [],
       "items": [
         {
-          "title": "Russian strikes kill civilians, injure dozens across Ukraine",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/russian-strikes-kill-civilians-injure-dozens-across-ukraine?traffic_source=rss",
-          "date": "2026-10-17T11:22:41.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "At least eight people have been killed and nearly 60 injured in the latest wave of Russian strikes across Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
-          },
-          "score": 26
-        },
-        {
           "title": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
           "url": "https://news.un.org/feed/view/en/story/2026/10/1168614",
           "date": "2026-10-16T12:00:00.000Z",
@@ -23191,6 +23478,27 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "Russian strikes kill civilians, injure dozens across Ukraine",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/russian-strikes-kill-civilians-injure-dozens-across-ukraine?traffic_source=rss",
+          "date": "2026-10-17T11:22:41.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "At least eight people have been killed and nearly 60 injured in the latest wave of Russian strikes across Ukraine.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
           },
           "score": 22
         },
@@ -23279,12 +23587,33 @@
           "score": 21
         },
         {
-          "title": "Trump waives new Russia sanctions as Ukraine ties slump",
-          "url": "https://www.dawn.com/news/2037795/trump-waives-new-russia-sanctions-as-ukraine-ties-slump",
-          "date": "2026-10-17T11:58:12.000Z",
-          "source": "Dawn (Pakistan)",
+          "title": "Will the EU come to Ukraine’s rescue in war against Russia?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/17/will-the-eu-come-to-ukraines-rescue-in-war-against-russia?traffic_source=rss",
+          "date": "2026-10-17T19:03:49.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "President Donald Trump signed an executive order on Friday that waived sweeping US sanctions and tariffs targeting Russia’s energy revenues, marking a new low in Washington’s ties with war-torn Ukraine. The move came as Ukrainian President Volodymyr Zelensky urged EU leaders to keep financing Kyiv’s fight with nearly $80 billion more next year, insisting he was standing up for his country as Trump",
+          "summary": "US support at risk as Trump-Zelenskyy relations nosedive.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 19
+        },
+        {
+          "title": "Trump faces bipartisan backlash over Russia sanctions waiver",
+          "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver?traffic_source=rss",
+          "date": "2026-10-17T17:24:07.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine.",
           "isNew": true,
           "region": null,
           "event": {
@@ -23297,12 +23626,12 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 20
+          "score": 19
         },
         {
           "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
           "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-          "date": "2026-10-17T11:56:06.000Z",
+          "date": "2026-10-17T19:19:19.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
@@ -23354,27 +23683,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 19
-        },
-        {
-          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
-          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-10-17T11:34:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -23762,12 +24070,12 @@
           "score": 18
         },
         {
-          "title": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
-          "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas?traffic_source=rss",
-          "date": "2026-10-17T11:10:22.000Z",
-          "source": "Al Jazeera",
+          "title": "Trump waives new Russia sanctions as Ukraine ties slump",
+          "url": "https://www.dawn.com/news/2037795/trump-waives-new-russia-sanctions-as-ukraine-ties-slump",
+          "date": "2026-10-17T11:58:12.000Z",
+          "source": "Dawn (Pakistan)",
           "sourceType": "news",
-          "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
+          "summary": "President Donald Trump signed an executive order on Friday that waived sweeping US sanctions and tariffs targeting Russia’s energy revenues, marking a new low in Washington’s ties with war-torn Ukraine. The move came as Ukrainian President Volodymyr Zelensky urged EU leaders to keep financing Kyiv’s fight with nearly $80 billion more next year, insisting he was standing up for his country as Trump",
           "isNew": false,
           "region": null,
           "event": {
@@ -23780,15 +24088,15 @@
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
           },
-          "score": 16
+          "score": 17
         },
         {
-          "title": "Solar power booms in Philippines as war on Iran spikes energy costs",
-          "url": "https://www.aljazeera.com/news/2026/10/17/solar-power-booms-in-philippines-as-war-on-iran-spikes-energy-costs?traffic_source=rss",
-          "date": "2026-10-17T10:12:01.000Z",
-          "source": "Al Jazeera",
+          "title": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
+          "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-10-17T11:34:00.000Z",
+          "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "With Southeast Asia's largest electricity bills rising even higher, Filipinos invest in rooftop panels.",
+          "summary": "Ukrainian President Zelenskyy says Russia is trying to cut electricity and heating to civilians ahead of winter. He also called the US president's waiver of new sanctions on Moscow a boost for Vladimir Putin.",
           "isNew": false,
           "region": null,
           "event": {
@@ -23797,9 +24105,9 @@
             "label": "Bericht"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
           },
           "score": 16
         },
@@ -23816,27 +24124,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "regionEvent": {
-            "type": "sanctions",
-            "icon": "⚖️",
-            "label": "Sanktionen/Recht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Uganda: MP Calls for Probe Into Recruitment of Ugandans to Fight for Russia",
-          "url": "https://allafrica.com/stories/202610160586.html",
-          "date": "2026-10-16T18:12:39.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Nile Post] Rukiga County MP Patrick Katabaazi has asked the government to investigate reports that Ugandan youths are being recruited through deceptive job offers and deployed to fight for Russia in the war against Ukraine.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "regionEvent": {
             "type": "sanctions",
@@ -23888,6 +24175,48 @@
           "score": 16
         },
         {
+          "title": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
+          "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas?traffic_source=rss",
+          "date": "2026-10-17T11:10:22.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "regionEvent": {
+            "type": "sanctions",
+            "icon": "⚖️",
+            "label": "Sanktionen/Recht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Solar power booms in Philippines as war on Iran spikes energy costs",
+          "url": "https://www.aljazeera.com/news/2026/10/17/solar-power-booms-in-philippines-as-war-on-iran-spikes-energy-costs?traffic_source=rss",
+          "date": "2026-10-17T10:12:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "With Southeast Asia's largest electricity bills rising even higher, Filipinos invest in rooftop panels.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
           "title": "EU says ‘no indication’ intelligence sharing with Ukraine has stopped as Russian attacks leave 600,000 without power – as it happened",
           "url": "https://www.theguardian.com/world/live/2026/oct/14/russia-ukraine-war-latest-updates-zelenskyy-europe",
           "date": "2026-10-14T15:02:35.000Z",
@@ -23926,27 +24255,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "score": 15
-        },
-        {
-          "title": "'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'",
-          "url": "https://www.france24.com/en/tv-shows/spotlight/20261016-us-tilting-toward-russia-europeans-are-standing-more-and-more-solidly-with-zelensky",
-          "date": "2026-10-16T18:33:13.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "As transatlantic relations confront renewed geopolitical uncertainty, former Estonian President Toomas Hendrik Ilves delivers a pointed assessment of Washington's shifting approach to Russia's war on Ukraine and the profound implications for European security. At the heart of his analysis lies a fundamental question: can Europe develop the political unity, strategic independence and military capab",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
           },
           "score": 15
         },
@@ -24980,7 +25288,7 @@
       ],
       "activity": 33,
       "severity": 32,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [
         {
           "key": "ceasefire",
@@ -25016,7 +25324,7 @@
           "source": "cedarnews.net",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "explosion",
@@ -25028,7 +25336,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 24
+          "score": 25
         },
         {
           "title": "Lebanon opens investigation into Syrian militia leader abduction and transfer to Syria",
@@ -25037,7 +25345,7 @@
           "source": "naharnet.com",
           "sourceType": "news",
           "summary": "",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "abduction",
@@ -25049,7 +25357,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "Lebanon investigates Syrian militia leader abduction and transfer to Syria",
@@ -26239,122 +26547,6 @@
       "itemCount": 4
     },
     {
-      "id": "south-china-sea",
-      "name": "Südchinesisches Meer",
-      "nameEn": "South China Sea",
-      "region": "Asien (Südost)",
-      "countries": [
-        "Philippines"
-      ],
-      "lat": 12,
-      "lon": 116,
-      "tier": "medium",
-      "since": "laufende Spannungen",
-      "parties": [
-        "China",
-        "Philippinen",
-        "Vietnam",
-        "USA"
-      ],
-      "background": "Wiederholte Zusammenstöße zwischen chinesischer Küstenwache und philippinischen Schiffen an Second Thomas Shoal und Scarborough Shoal.",
-      "hotspots": [
-        "Second Thomas Shoal",
-        "Scarborough Shoal",
-        "Spratly-Inseln"
-      ],
-      "activity": 7,
-      "severity": 25,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "escalation",
-          "label": "Eskalation",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "PHL",
-      "extraCountries": [
-        "CHN"
-      ],
-      "regions": [
-        {
-          "id": "CHN-1155",
-          "name": "Beijing",
-          "nameDe": "Peking",
-          "type": "Municipality",
-          "anchor": [
-            116.406,
-            40.174
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Solar power booms in Philippines as war on Iran spikes energy costs",
-          "url": "https://www.aljazeera.com/news/2026/10/17/solar-power-booms-in-philippines-as-war-on-iran-spikes-energy-costs?traffic_source=rss",
-          "date": "2026-10-17T10:12:01.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "With Southeast Asia's largest electricity bills rising even higher, Filipinos invest in rooftop panels.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 16
-        },
-        {
-          "title": "Yemen government says it raised Houthis' alleged use of Chinese tech with Beijing",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-government-says-it-raised-houthis-alleged-use-chinese-tech-beijing",
-          "date": "2026-10-14T17:37:49.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemen government says it raised Houthis' alleged use of Chinese tech with Beijing The Yemeni government has spoken with Beijing about the Houthis' alleged attempts to utilise Chinese-made technology for weapons, a Yemeni minister said on Wednesday, as the two sides' long-running civil war escalates. \"The Chinese are partners and we have discussed with them about, you know, the use of dual products",
-          "isNew": false,
-          "region": {
-            "id": "CHN-1155",
-            "name": "Beijing",
-            "nameDe": "Peking",
-            "type": "Municipality",
-            "anchor": [
-              116.406,
-              40.174
-            ],
-            "matched": "Beijing"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        }
-      ],
-      "itemCount": 2
-    },
-    {
       "id": "west-papua",
       "name": "West-Papua (Indonesien)",
       "nameEn": "West Papua",
@@ -26543,6 +26735,122 @@
       "itemCount": 4
     },
     {
+      "id": "south-china-sea",
+      "name": "Südchinesisches Meer",
+      "nameEn": "South China Sea",
+      "region": "Asien (Südost)",
+      "countries": [
+        "Philippines"
+      ],
+      "lat": 12,
+      "lon": 116,
+      "tier": "medium",
+      "since": "laufende Spannungen",
+      "parties": [
+        "China",
+        "Philippinen",
+        "Vietnam",
+        "USA"
+      ],
+      "background": "Wiederholte Zusammenstöße zwischen chinesischer Küstenwache und philippinischen Schiffen an Second Thomas Shoal und Scarborough Shoal.",
+      "hotspots": [
+        "Second Thomas Shoal",
+        "Scarborough Shoal",
+        "Spratly-Inseln"
+      ],
+      "activity": 6,
+      "severity": 24,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "escalation",
+          "label": "Eskalation",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "PHL",
+      "extraCountries": [
+        "CHN"
+      ],
+      "regions": [
+        {
+          "id": "CHN-1155",
+          "name": "Beijing",
+          "nameDe": "Peking",
+          "type": "Municipality",
+          "anchor": [
+            116.406,
+            40.174
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Solar power booms in Philippines as war on Iran spikes energy costs",
+          "url": "https://www.aljazeera.com/news/2026/10/17/solar-power-booms-in-philippines-as-war-on-iran-spikes-energy-costs?traffic_source=rss",
+          "date": "2026-10-17T10:12:01.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "With Southeast Asia's largest electricity bills rising even higher, Filipinos invest in rooftop panels.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 15
+        },
+        {
+          "title": "Yemen government says it raised Houthis' alleged use of Chinese tech with Beijing",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-government-says-it-raised-houthis-alleged-use-chinese-tech-beijing",
+          "date": "2026-10-14T17:37:49.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemen government says it raised Houthis' alleged use of Chinese tech with Beijing The Yemeni government has spoken with Beijing about the Houthis' alleged attempts to utilise Chinese-made technology for weapons, a Yemeni minister said on Wednesday, as the two sides' long-running civil war escalates. \"The Chinese are partners and we have discussed with them about, you know, the use of dual products",
+          "isNew": false,
+          "region": {
+            "id": "CHN-1155",
+            "name": "Beijing",
+            "nameDe": "Peking",
+            "type": "Municipality",
+            "anchor": [
+              116.406,
+              40.174
+            ],
+            "matched": "Beijing"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 2
+    },
+    {
       "id": "rohingya-bangladesh",
       "name": "Bangladesch / Rohingya-Krise",
       "nameEn": "Bangladesh & Rohingya",
@@ -26568,8 +26876,8 @@
         "Naf-Fluss",
         "Grenze zu Rakhine"
       ],
-      "activity": 8,
-      "severity": 25,
+      "activity": 6,
+      "severity": 24,
       "newCount": 0,
       "signals": [
         {
@@ -26660,7 +26968,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "The ICJ’s Rohingya ruling will test the OIC’s promises",
@@ -27038,7 +27346,7 @@
       ],
       "activity": 22,
       "severity": 17,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -27072,7 +27380,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Egyptian President Abdel Fattah el-Sisi has vowed to take 'any measure' to defend Saudi Arabia amid Houthi attacks.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -27085,27 +27393,6 @@
             "label": "Gefechte"
           },
           "score": 26
-        },
-        {
-          "title": "Egypt's President Sisi pledges to leave office when term ends in 2030",
-          "url": "https://www.dawn.com/news/2037828/egypts-president-sisi-pledges-to-leave-office-when-term-ends-in-2030",
-          "date": "2026-10-17T11:55:57.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Egyptian President Abdel Fattah al-Sisi said on Saturday that he would not seek to remain in office when his current term expires in 2030, describing the matter as “completely settled”. Sisi, 71, a former army general who became president in 2014, made the remarks at a graduation ceremony at the Egyptian Military Academy in the New Administrative Capital, one of his flagship megaprojects. Speaking",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
         },
         {
           "title": "Egypt's Sisi declares his presidency will end in 2030",
@@ -27125,6 +27412,27 @@
             "type": "talks",
             "icon": "🤝",
             "label": "Verhandlungen"
+          },
+          "score": 16
+        },
+        {
+          "title": "Egypt's President Sisi pledges to leave office when term ends in 2030",
+          "url": "https://www.dawn.com/news/2037828/egypts-president-sisi-pledges-to-leave-office-when-term-ends-in-2030",
+          "date": "2026-10-17T11:55:57.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Egyptian President Abdel Fattah al-Sisi said on Saturday that he would not seek to remain in office when his current term expires in 2030, describing the matter as “completely settled”. Sisi, 71, a former army general who became president in 2014, made the remarks at a graduation ceremony at the Egyptian Military Academy in the New Administrative Capital, one of his flagship megaprojects. Speaking",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 16
         },
