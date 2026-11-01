@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T19:51:15.982Z",
-  "durationSec": 406,
+  "generatedAt": "2026-11-01T23:45:11.287Z",
+  "durationSec": 385,
   "timespan": "36h",
   "sources": {
     "feeds": [
@@ -37,7 +37,7 @@
       {
         "id": "bbc",
         "ok": true,
-        "count": 29,
+        "count": 30,
         "error": null
       },
       {
@@ -115,44 +115,40 @@
     ],
     "gdelt": {
       "ok": 2,
-      "failed": 9,
-      "skipped": 5,
+      "failed": 8,
+      "skipped": 6,
       "errors": [
         {
-          "id": "drc-m23",
+          "id": "west-bank",
           "error": "HTTP 429"
         },
         {
-          "id": "car",
+          "id": "ukraine-russia",
+          "error": "HTTP 429"
+        },
+        {
+          "id": "south-sudan",
           "error": "fetch failed"
         },
         {
-          "id": "cameroon",
+          "id": "myanmar",
           "error": "HTTP 429"
         },
         {
-          "id": "west-papua",
+          "id": "rohingya-bangladesh",
           "error": "HTTP 429"
         },
         {
-          "id": "mexico-cartels",
+          "id": "burkina-faso",
           "error": "HTTP 429"
         },
         {
-          "id": "armenia-azerbaijan",
+          "id": "thailand-cambodia",
           "error": "HTTP 429"
         },
         {
-          "id": "ecuador",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "libya",
-          "error": "HTTP 429"
-        },
-        {
-          "id": "turkey-pkk",
-          "error": "HTTP 429"
+          "id": "iraq",
+          "error": "fetch failed"
         }
       ]
     },
@@ -160,8 +156,8 @@
   },
   "totals": {
     "conflicts": 44,
-    "articles": 795,
-    "newArticles": 43
+    "articles": 801,
+    "newArticles": 18
   },
   "conflicts": [
     {
@@ -193,13 +189,13 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 5,
+      "newCount": 3,
       "signals": [
         {
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 29
+          "count": 30
         },
         {
           "key": "displacement",
@@ -208,16 +204,16 @@
           "count": 17
         },
         {
-          "key": "talks",
-          "label": "Verhandlungen",
-          "dir": "down",
-          "count": 9
-        },
-        {
           "key": "airstrike",
           "label": "Luftschläge",
           "dir": "up",
           "count": 8
+        },
+        {
+          "key": "talks",
+          "label": "Verhandlungen",
+          "dir": "down",
+          "count": 7
         },
         {
           "key": "casualties",
@@ -250,12 +246,29 @@
             37.665,
             55.668
           ],
-          "count": 10,
-          "newCount": 1,
+          "count": 9,
+          "newCount": 0,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
             "label": "Luftangriff"
+          }
+        },
+        {
+          "id": "UKR-4827",
+          "name": "Kherson",
+          "nameDe": "Cherson",
+          "type": "Oblast'",
+          "anchor": [
+            33.604,
+            46.67
+          ],
+          "count": 7,
+          "newCount": 2,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           }
         },
         {
@@ -268,7 +281,7 @@
             50.29
           ],
           "count": 6,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "missile",
             "icon": "🚀",
@@ -276,20 +289,20 @@
           }
         },
         {
-          "id": "UKR-4827",
-          "name": "Kherson",
-          "nameDe": "Cherson",
-          "type": "Oblast'",
+          "id": "RUS-2324",
+          "name": "Kaliningrad",
+          "nameDe": "Kaliningrad",
+          "type": "Region",
           "anchor": [
-            33.604,
-            46.67
+            21.386,
+            54.719
           ],
-          "count": 5,
+          "count": 1,
           "newCount": 1,
           "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           }
         },
         {
@@ -380,13 +393,75 @@
       ],
       "items": [
         {
+          "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
+          "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-11-01T21:55:01.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
+          "isNew": true,
+          "region": {
+            "id": "UKR-4827",
+            "name": "Kherson",
+            "nameDe": "Cherson",
+            "type": "Oblast'",
+            "anchor": [
+              33.604,
+              46.67
+            ],
+            "matched": "Kherson"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 35
+        },
+        {
+          "title": "Kherson braces for return of war as localised Russia-Ukraine truce ends",
+          "url": "https://www.aljazeera.com/news/2026/11/1/ukraine-evacuates-civilians-in-kherson-region-as-localised-ceasefire-ends?traffic_source=rss",
+          "date": "2026-11-01T22:15:14.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Moscow and Kyiv continue strikes elsewhere, but no reported violations in Kherson region during the six-day ceasefire.",
+          "isNew": true,
+          "region": {
+            "id": "UKR-4827",
+            "name": "Kherson",
+            "nameDe": "Cherson",
+            "type": "Oblast'",
+            "anchor": [
+              33.604,
+              46.67
+            ],
+            "matched": "Kherson"
+          },
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 34
+        },
+        {
           "title": "Ukraine defies Trump to resume attacks on Russian oil refineries",
           "url": "https://www.theguardian.com/world/2026/nov/01/ukraine-defies-trump-resumes-attacks-russian-oil",
           "date": "2026-11-01T17:20:18.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Kremlin says Kyiv is ‘simply ignoring’ US wishes days before midterm elections after reported strikes on two oil sites Ukraine has resumed its attacks on Russian oil refineries in defiance of pressure from Donald Trump ahead of the US midterm elections, with a ceasefire in the occupied town of Oleshky due to end late on Sunday. Russian state media said on Sunday Ukrainian long-range drones had set",
-          "isNew": true,
+          "summary": "Kremlin says Kyiv is ‘simply ignoring’ US wishes days before midterm elections after reported strikes on two oil sites Ukraine has resumed its attacks on Russian oil refineries in defiance of pressure from Donald Trump ahead of the US midterm elections, as a ceasefire in the occupied town of Oleshky ended on Sunday night. Russian state media said on Sunday Ukrainian long-range drones had set fire ",
+          "isNew": false,
           "region": {
             "id": "UKR-321",
             "name": "Kyiv",
@@ -408,47 +483,16 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 34
+          "score": 31
         },
         {
-          "title": "Russia detains minor over alleged Moscow attack plot after US warning",
-          "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
-          "date": "2026-11-01T16:24:16.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park.",
-          "isNew": true,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 30
-        },
-        {
-          "title": "Ceasefire in Ukraine's Kherson region set to end after Russia refuses extension",
+          "title": "Ceasefire in Ukraine's Kherson region ends after Russia refuses extension",
           "url": "https://www.france24.com/en/europe/20261101-localised-ceasefire-in-ukraine-s-kherson-region-set-to-end",
           "date": "2026-11-01T12:41:48.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, was set to end on Sunday evening after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
-          "isNew": true,
+          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, ended on Sunday after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
+          "isNew": false,
           "region": {
             "id": "UKR-4827",
             "name": "Kherson",
@@ -473,25 +517,35 @@
           "score": 30
         },
         {
-          "title": "Oleshky: Evacuations during first humanitarian truce of war end",
-          "url": "https://www.france24.com/en/oleshky-evacuations-during-first-humanitarian-truce-of-war-end",
-          "date": "2026-11-01T17:44:51.000Z",
-          "source": "France 24",
+          "title": "Russia detains minor over alleged Moscow attack plot after US warning",
+          "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
+          "date": "2026-11-01T16:24:16.000Z",
+          "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "A successful evacuation. Residents of the city of Oleshky who had requested to be evacuated were reunited with their loved ones in Ukraine on Saturday, October 31. The city, located on the front line and under Russian occupation, is facing a humanitarian crisis, with civilians lacking even the most basic necessities. A localised ceasefire has been in place since Tuesday. France 24 correspondent Em",
-          "isNew": true,
-          "region": null,
+          "summary": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park.",
+          "isNew": false,
+          "region": {
+            "id": "RUS-2364",
+            "name": "Moscow",
+            "nameDe": "Moskau",
+            "type": "Region",
+            "anchor": [
+              37.665,
+              55.668
+            ],
+            "matched": "Moscow"
+          },
           "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 26
+          "score": 27
         },
         {
           "title": "Russia drone strike on Ukrainian railway station kills 13",
@@ -515,46 +569,25 @@
           "score": 23
         },
         {
-          "title": "Oleshky residents return to Ukraine",
-          "url": "https://www.france24.com/en/oleshky-residents-return-to-ukraine",
-          "date": "2026-11-01T14:56:05.000Z",
+          "title": "Oleshky: Evacuations during first humanitarian truce of war end",
+          "url": "https://www.france24.com/en/oleshky-evacuations-during-first-humanitarian-truce-of-war-end",
+          "date": "2026-11-01T17:44:51.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "Residents evacuated from Russian-occupied Oleshky have reached Ukrainian-held territory following a rare local truce. They described years of isolation, food shortages and regular shelling, with some saying they were forced to eat grass and dogs to survive. Seized by Russian forces in the early days of the 2022 invasion, the city remains cut off by the Dnipro River on one side and Russian troops o",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "offensive",
-            "icon": "🪖",
-            "label": "Bodenoffensive"
-          },
-          "score": 22
-        },
-        {
-          "title": "Turkiye’s Erdogan urges Russia and Ukraine to stop Black Sea attacks",
-          "url": "https://www.aljazeera.com/news/2026/10/31/turkiyes-erdogan-urges-russia-and-ukraine-to-stop-black-sea-attacks?traffic_source=rss",
-          "date": "2026-10-31T20:09:18.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Turkish president hosts Zelenskyy in Istanbul as the two leaders agree to work on a new Black Sea grain corridor.",
+          "summary": "A successful evacuation. Residents of the city of Oleshky who had requested to be evacuated were reunited with their loved ones in Ukraine on Saturday, October 31. The city, located on the front line and under Russian occupation, is facing a humanitarian crisis, with civilians lacking even the most basic necessities. A localised ceasefire has been in place since Tuesday. France 24 correspondent Em",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
           },
-          "score": 22
+          "score": 23
         },
         {
           "title": "Ukraine: Oleshky ceasefire offers ‘hope’ for civilians as attacks on aid vehicles continue",
@@ -597,6 +630,79 @@
             "label": "Gefechte"
           },
           "score": 20
+        },
+        {
+          "title": "Russia's giant new radar in Kaliningrad raises alarm in NATO",
+          "url": "https://www.dw.com/en/russia-s-giant-new-radar-in-kaliningrad-raises-alarm-in-nato/a-79797815?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-11-01T20:34:00.000Z",
+          "source": "Deutsche Welle",
+          "sourceType": "news",
+          "summary": "Russia is nearing completion of what experts think is a giant radar complex in Kaliningrad, capable of monitoring much of Europe. Experts warn the project could intensify the military standoff between Moscow and NATO.",
+          "isNew": true,
+          "region": {
+            "id": "RUS-2324",
+            "name": "Kaliningrad",
+            "nameDe": "Kaliningrad",
+            "type": "Region",
+            "anchor": [
+              21.386,
+              54.719
+            ],
+            "matched": "Kaliningrad"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 20
+        },
+        {
+          "title": "Oleshky residents return to Ukraine",
+          "url": "https://www.france24.com/en/oleshky-residents-return-to-ukraine",
+          "date": "2026-11-01T14:56:05.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "Residents evacuated from Russian-occupied Oleshky have reached Ukrainian-held territory following a rare local truce. They described years of isolation, food shortages and regular shelling, with some saying they were forced to eat grass and dogs to survive. Seized by Russian forces in the early days of the 2022 invasion, the city remains cut off by the Dnipro River on one side and Russian troops o",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "offensive",
+            "icon": "🪖",
+            "label": "Bodenoffensive"
+          },
+          "score": 19
+        },
+        {
+          "title": "Turkiye’s Erdogan urges Russia and Ukraine to stop Black Sea attacks",
+          "url": "https://www.aljazeera.com/news/2026/10/31/turkiyes-erdogan-urges-russia-and-ukraine-to-stop-black-sea-attacks?traffic_source=rss",
+          "date": "2026-10-31T20:09:18.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Turkish president hosts Zelenskyy in Istanbul as the two leaders agree to work on a new Black Sea grain corridor.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 18
         },
         {
           "title": "Oleshky evacuees reunite with families after truce allows crossing back into Ukraine",
@@ -2067,7 +2173,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Tunisians drawn into Russia's war in Ukraine",
@@ -2088,7 +2194,7 @@
             "icon": "🗳️",
             "label": "Politik/Wahl"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Daghestani General becomes senator representing occupied part of Ukraine’s Luhansk region",
@@ -2245,79 +2351,6 @@
             "label": "Vertreibung"
           },
           "score": 8
-        },
-        {
-          "title": "Amid uncertainty over EU aid, Vitalii Kim insists Ukraine has no choice but to fight for motherland",
-          "url": "https://www.france24.com/en/tv-shows/spotlight/20261028-amid-uncertainty-over-eu-aid-vitalii-kim-insists-ukraine-has-no-choice-but-to-fight-for-motherland",
-          "date": "2026-10-28T19:57:46.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "François Picard is pleased to welcome Vitalii Kim, Minister for Veterans Affairs of Ukraine. “If Europe will not support us, we also will fight because it's our motherland,” says Kim, insisting that Ukraine's determination to resist Russian aggression will endure regardless of the outcome of negotiations over European financial assistance. Yet behind this assertion of national resolve lies a more ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "talks",
-            "icon": "🤝",
-            "label": "Verhandlungen"
-          },
-          "score": 8
-        },
-        {
-          "title": "Putin hails Elon Musk’s ‘genius’ amid plans for Russian version of Starlink",
-          "url": "https://www.theguardian.com/world/2026/oct/28/vladimir-putin-elon-musk-genius-russia-starlink",
-          "date": "2026-10-28T18:32:38.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Russia plans to build own version of US billionaire’s satellite communications to help attack Ukraine Vladimir Putin praised Elon Musk’s genius and said he was in touch with Starlink’s controlling shareholder as Russia develops its own satellite communications for its military to use against Ukraine. The Russian president, speaking at a summit with African leaders in Moscow, was comparing the Eart",
-          "isNew": false,
-          "region": {
-            "id": "RUS-2364",
-            "name": "Moscow",
-            "nameDe": "Moskau",
-            "type": "Region",
-            "anchor": [
-              37.665,
-              55.668
-            ],
-            "matched": "Moscow"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 8
-        },
-        {
-          "title": "Evacuation from Oleshky: How are preparations going?",
-          "url": "https://www.dw.com/en/evacuation-from-oleshky-how-are-preparations-going/a-79790001?maca=en-rss-en-world-4025-rdf",
-          "date": "2026-10-28T17:04:00.000Z",
-          "source": "Deutsche Welle",
-          "sourceType": "news",
-          "summary": "A lawyer with the Save Ukraine Foundation, Myroslava Kharchenko, told DW about what has been happening in Russian-occupied Oleshky since a temporary ceasefire brokered by Melania Trump took effect.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 8
         }
       ],
       "itemCount": 80
@@ -2349,7 +2382,7 @@
       ],
       "activity": 100,
       "severity": 85,
-      "newCount": 8,
+      "newCount": 3,
       "signals": [
         {
           "key": "ceasefire",
@@ -2379,7 +2412,7 @@
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 4
+          "count": 5
         }
       ],
       "acled": null,
@@ -2407,7 +2440,7 @@
             31.753
           ],
           "count": 3,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "siege",
             "icon": "🛡️",
@@ -2434,13 +2467,34 @@
       ],
       "items": [
         {
+          "title": "Israeli forces raid Hebron shops, assault Palestinians amid siege",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-hebron-shops-beat-palestinians-nearby-halhul",
+          "date": "2026-11-01T21:53:54.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces raid Hebron shops, assault Palestinians amid siege Israeli forces raided several shops in Hebron amid the siege of the city and beat Palestinians during a raid on nearby Halhul on Sunday evening, Wafa news agency reported. Local sources told the agency that troops seized surveillance camera recording devices from shops in Hebron’s besieged al-Jalda area. In Halhul, north of Hebron, ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 29
+        },
+        {
           "title": "Israeli strikes in Gaza kill eight including child, hospitals say",
           "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
           "date": "2026-11-01T17:06:32.000Z",
           "source": "BBC World",
           "sourceType": "news",
           "summary": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2452,28 +2506,49 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 30
+          "score": 27
         },
         {
-          "title": "Israeli attacks on Gaza kill at least nine people",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/israeli-attacks-on-gaza-kill-at-least-nine-people?traffic_source=rss",
-          "date": "2026-11-01T14:10:59.000Z",
+          "title": "Thousands displaced from Hebron as Israel carries on siege",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/thousands-displaced-from-hebron-as-israel-carries-on-siege?traffic_source=rss",
+          "date": "2026-11-01T21:28:47.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
-          "summary": "Israeli attacks on Gaza City and Khan Younis killed at least nine people on Sunday.",
-          "isNew": false,
+          "summary": "Almost 5,000 people have been displaced as a result of Israel’s military siege on the city of Hebron in the West Bank.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
           },
-          "score": 29
+          "score": 26
+        },
+        {
+          "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
+          "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-11-01T21:55:01.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
         },
         {
           "title": "Israeli strikes kill nine people in Gaza",
@@ -2482,7 +2557,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Israeli strikes kill nine people in Gaza Israeli strikes in the&nbsp;Gaza&nbsp;Strip killed at least nine people, including a child on Sunday, according to Al Jazeera. Five people were killed in Khan Younis and three in&nbsp;Gaza City, according to a statement from the civil defence service. Local hospitals said they had received the bodies as well as several people wounded.&nbsp; \"Occupation airc",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2494,59 +2569,7 @@
             "icon": "🚨",
             "label": "Opfer"
           },
-          "score": 29
-        },
-        {
-          "title": "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/jerusalem-daily-israel-continues-siege-and-arrests-in-hebron?traffic_source=rss",
-          "date": "2026-11-01T15:38:12.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Israel’s siege on Hebron is on its 10th day and its attacks on Gaza continue.",
-          "isNew": true,
-          "region": {
-            "id": "ISR-3058",
-            "name": "Jerusalem",
-            "nameDe": "Bezirk Jerusalem",
-            "type": "District",
-            "anchor": [
-              35.035,
-              31.753
-            ],
-            "matched": "Jerusalem"
-          },
-          "event": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "regionEvent": {
-            "type": "siege",
-            "icon": "🛡️",
-            "label": "Belagerung"
-          },
-          "score": 27
-        },
-        {
-          "title": "Palestinian injured in Israeli fire succumbs, settlers attack olive harvesters",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-injured-israeli-fire-succumbs-settlers-attack-olive",
-          "date": "2026-11-01T07:12:32.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Palestinian injured in Israeli fire succumbs, settlers attack olive harvesters A Palestinian man died on Sunday morning from wounds sustained when Israeli occupation forces shot him in al-Musaddar village, in the central Gaza Strip, Wafa reported. Medical sources in Gaza identified the victim as Ibrahim Adel Saeed, who was shot by Israeli tank fire during an incursion into the village several days",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 27
+          "score": 26
         },
         {
           "title": "Hebron siege continues for 10th day as Israel threatens wider offensive",
@@ -2555,7 +2578,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Hebron's economic losses surpass $3.8m as Israeli forces demolish West Bank homes and close hundreds of businesses.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "offensive",
@@ -2567,16 +2590,16 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 26
+          "score": 23
         },
         {
-          "title": "Ceasefire in Ukraine's Kherson region set to end after Russia refuses extension",
+          "title": "Ceasefire in Ukraine's Kherson region ends after Russia refuses extension",
           "url": "https://www.france24.com/en/europe/20261101-localised-ceasefire-in-ukraine-s-kherson-region-set-to-end",
           "date": "2026-11-01T12:41:48.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, was set to end on Sunday evening after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
-          "isNew": true,
+          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, ended on Sunday after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -2612,6 +2635,79 @@
           "score": 23
         },
         {
+          "title": "Israeli attacks on Gaza kill at least nine people",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/israeli-attacks-on-gaza-kill-at-least-nine-people?traffic_source=rss",
+          "date": "2026-11-01T14:10:59.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israeli attacks on Gaza City and Khan Younis killed at least nine people on Sunday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
+          "title": "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/jerusalem-daily-israel-continues-siege-and-arrests-in-hebron?traffic_source=rss",
+          "date": "2026-11-01T15:38:12.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Israel’s siege on Hebron is on its 10th day and its attacks on Gaza continue.",
+          "isNew": false,
+          "region": {
+            "id": "ISR-3058",
+            "name": "Jerusalem",
+            "nameDe": "Bezirk Jerusalem",
+            "type": "District",
+            "anchor": [
+              35.035,
+              31.753
+            ],
+            "matched": "Jerusalem"
+          },
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 22
+        },
+        {
+          "title": "Palestinian injured in Israeli fire succumbs, settlers attack olive harvesters",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-injured-israeli-fire-succumbs-settlers-attack-olive",
+          "date": "2026-11-01T07:12:32.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Palestinian injured in Israeli fire succumbs, settlers attack olive harvesters A Palestinian man died on Sunday morning from wounds sustained when Israeli occupation forces shot him in al-Musaddar village, in the central Gaza Strip, Wafa reported. Medical sources in Gaza identified the victim as Ibrahim Adel Saeed, who was shot by Israeli tank fire during an incursion into the village several days",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 22
+        },
+        {
           "title": "At least eight Palestinians killed in Israeli attacks across Gaza",
           "url": "https://www.aljazeera.com/news/2026/11/1/at-least-eight-palestinians-killed-in-israeli-attacks-across-gaza?traffic_source=rss",
           "date": "2026-11-01T13:36:16.000Z",
@@ -2629,48 +2725,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli forces and settlers injure four Palestinians in West Bank attacks",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-and-israeli-forces-injure-four-palestinians-west-bank-attacks",
-          "date": "2026-10-31T21:31:54.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli forces and settlers injure four Palestinians in West Bank attacks Israeli settlers and forces attacked Palestinians across the occupied West Bank on Saturday, injuring at least four people and targeting farmers during the olive harvest, Palestinian news agency Wafa reported. Near Salfit, settlers severely beat Palestinian resident Taysir al-Qaoud north of his town, Kafr al-Dik. He was hosp",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israel shells south Lebanon towns, builds roads connecting military outposts",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-shells-south-lebanon-towns-builds-roads-connecting-military",
-          "date": "2026-10-31T23:21:11.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel shells south Lebanon towns, builds roads connecting military outposts Israeli forces carried out a large explosion in the town of Baraachit, in south Lebanon ’s Bint Jbeil district, on Saturday evening, Lebanon’s National News Agency (NNA) reported. Israeli artillery also shelled Beit Yahoun, in the same district, and the area between the towns of Zawtar al-Sharqiya and Maifadoun. An Israel",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
           },
           "score": 22
         },
@@ -2696,34 +2750,13 @@
           "score": 21
         },
         {
-          "title": "Lula's victory alone cannot loosen the US and Israeli grip on Latin America",
-          "url": "https://www.middleeasteye.net/opinion/lulas-victory-alone-cannot-loosen-us-and-israeli-grip-latin-america",
-          "date": "2026-11-01T15:57:07.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lula's victory alone cannot loosen the US and Israeli grip on Latin America Submitted by Jodor Jalit on Thu, 10/29/2026 - 01:44 Brazil's president has defied Trump and condemned the genocide in Gaza, but a divided electorate and powerful right-wing neighbours limit hopes of a regional shift Brazilian President Luiz Inacio Lula da Silva gestures to supporters during his birthday celebrations at the",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 20
-        },
-        {
           "title": "Israel’s first ambassador to Somaliland presents credentials in Hargeisa",
           "url": "https://www.aljazeera.com/news/2026/11/1/israels-first-ambassador-to-somaliland-presents-credentials-in-hargeisa?traffic_source=rss",
           "date": "2026-11-01T18:23:57.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israel expands ties with the breakaway territory as Somalia challenges its motives and war intensifies in Yemen.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -2738,25 +2771,46 @@
           "score": 19
         },
         {
-          "title": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-intentionally-released-footage-mossad-operatives-iran-provoke",
-          "date": "2026-11-01T15:33:57.000Z",
+          "title": "Israeli forces and settlers injure four Palestinians in West Bank attacks",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-and-israeli-forces-injure-four-palestinians-west-bank-attacks",
+          "date": "2026-10-31T21:31:54.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says Former Mossad chief David Barnea has said Israel intentionally released images of their covert operation in Iran during the June 2025 conflict to provoke mass arrests and make it harder for Iranian forces to find real Israeli agents. “One of the reasons we immediately released an official vide",
-          "isNew": true,
+          "summary": "Israeli forces and settlers injure four Palestinians in West Bank attacks Israeli settlers and forces attacked Palestinians across the occupied West Bank on Saturday, injuring at least four people and targeting farmers during the olive harvest, Palestinian news agency Wafa reported. Near Salfit, settlers severely beat Palestinian resident Taysir al-Qaoud north of his town, Kafr al-Dik. He was hosp",
+          "isNew": false,
           "region": null,
           "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
-          "score": 19
+          "score": 18
+        },
+        {
+          "title": "Israel shells south Lebanon towns, builds roads connecting military outposts",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-shells-south-lebanon-towns-builds-roads-connecting-military",
+          "date": "2026-10-31T23:21:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel shells south Lebanon towns, builds roads connecting military outposts Israeli forces carried out a large explosion in the town of Baraachit, in south Lebanon ’s Bint Jbeil district, on Saturday evening, Lebanon’s National News Agency (NNA) reported. Israeli artillery also shelled Beit Yahoun, in the same district, and the area between the towns of Zawtar al-Sharqiya and Maifadoun. An Israel",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 18
         },
         {
           "title": "Iran's Khamenei warns US and Israel against new attacks",
@@ -3231,65 +3285,44 @@
           "score": 18
         },
         {
-          "title": "Israel killed 1,574 Palestinians since 2025 ‘ceasefire’, Gaza ministry says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-killed-1574-palestinians-2025-ceasefire-gaza-ministry-says",
-          "date": "2026-10-29T21:59:57.000Z",
+          "title": "Lula's victory alone cannot loosen the US and Israeli grip on Latin America",
+          "url": "https://www.middleeasteye.net/opinion/lulas-victory-alone-cannot-loosen-us-and-israeli-grip-latin-america",
+          "date": "2026-11-01T15:57:07.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israel killed 1,574 Palestinians since 2025 ‘ceasefire’, Gaza ministry says Israeli attacks killed six Palestinians and wounded 38 over the past 24 hours, Gaza’s health ministry said. Israeli forces have killed at least 1,574 Palestinians and injured 5,687 since the “ceasefire” took effect on 10 October 2025, the ministry said. A further 845 bodies have been recovered from the rubble. Israel’s gen",
+          "summary": "Lula's victory alone cannot loosen the US and Israeli grip on Latin America Submitted by Jodor Jalit on Thu, 10/29/2026 - 01:44 Brazil's president has defied Trump and condemned the genocide in Gaza, but a divided electorate and powerful right-wing neighbours limit hopes of a regional shift Brazilian President Luiz Inacio Lula da Silva gestures to supporters during his birthday celebrations at the",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "casualties",
-            "icon": "🚨",
-            "label": "Opfer"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 18
+          "score": 17
         },
         {
-          "title": "Palestinians injured, arrested in Israeli raids across West Bank",
-          "url": "https://www.aljazeera.com/news/2026/10/29/palestinians-injured-arrested-in-israeli-raids-across-west-bank?traffic_source=rss",
-          "date": "2026-10-29T20:40:03.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "This comes as more than 3,300 Palestinians are forced from homes in Hebron as Israel's military offensive continues.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 18
-        },
-        {
-          "title": "Israeli, American flags burnt during protest in France",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-american-flags-burnt-during-protest-france",
-          "date": "2026-11-01T07:29:39.000Z",
+          "title": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-intentionally-released-footage-mossad-operatives-iran-provoke",
+          "date": "2026-11-01T15:33:57.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israeli, American flags burnt during protest in France Israeli and American flags were burned during a cost-of-living protest in Lyon, France.&nbsp; Footage shared by Clash Report shows protesters stomping Israeli and American flags on the roof of the Jean-Macé tram shelter in Lyon before setting them on fire. Nearby protesters were heard chanting “Israel assassin\". France: Israeli and American fl",
+          "summary": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says Former Mossad chief David Barnea has said Israel intentionally released images of their covert operation in Iran during the June 2025 conflict to provoke mass arrests and make it harder for Iranian forces to find real Israeli agents. “One of the reasons we immediately released an official vide",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "protest",
-            "icon": "📣",
-            "label": "Proteste/Unruhen"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 16
         },
@@ -3313,6 +3346,69 @@
             "label": "Gefechte"
           },
           "score": 16
+        },
+        {
+          "title": "Israel killed 1,574 Palestinians since 2025 ‘ceasefire’, Gaza ministry says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-killed-1574-palestinians-2025-ceasefire-gaza-ministry-says",
+          "date": "2026-10-29T21:59:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel killed 1,574 Palestinians since 2025 ‘ceasefire’, Gaza ministry says Israeli attacks killed six Palestinians and wounded 38 over the past 24 hours, Gaza’s health ministry said. Israeli forces have killed at least 1,574 Palestinians and injured 5,687 since the “ceasefire” took effect on 10 October 2025, the ministry said. A further 845 bodies have been recovered from the rubble. Israel’s gen",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "regionEvent": {
+            "type": "casualties",
+            "icon": "🚨",
+            "label": "Opfer"
+          },
+          "score": 15
+        },
+        {
+          "title": "Palestinians injured, arrested in Israeli raids across West Bank",
+          "url": "https://www.aljazeera.com/news/2026/10/29/palestinians-injured-arrested-in-israeli-raids-across-west-bank?traffic_source=rss",
+          "date": "2026-10-29T20:40:03.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "This comes as more than 3,300 Palestinians are forced from homes in Hebron as Israel's military offensive continues.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli, American flags burnt during protest in France",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-american-flags-burnt-during-protest-france",
+          "date": "2026-11-01T07:29:39.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli, American flags burnt during protest in France Israeli and American flags were burned during a cost-of-living protest in Lyon, France.&nbsp; Footage shared by Clash Report shows protesters stomping Israeli and American flags on the roof of the Jean-Macé tram shelter in Lyon before setting them on fire. Nearby protesters were heard chanting “Israel assassin\". France: Israeli and American fl",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "regionEvent": {
+            "type": "protest",
+            "icon": "📣",
+            "label": "Proteste/Unruhen"
+          },
+          "score": 15
         },
         {
           "title": "Recognising Hamas as 'terror' outfit: Eisenkot lays down conditions for 'broad Zionist government'",
@@ -4089,69 +4185,6 @@
             "label": "Gefechte"
           },
           "score": 15
-        },
-        {
-          "title": "Russia halts strikes on Ukraine’s Kherson as Oleshky ceasefire takes effect",
-          "url": "https://www.aljazeera.com/news/2026/10/27/russia-halts-strikes-on-ukraines-kherson-as-oleshky-ceasefire-takes-effect?traffic_source=rss",
-          "date": "2026-10-27T02:29:00.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "The localised ceasefire, secured by US First Lady Melania Trump, will allow evacuations and aid deliveries to Oleshky.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 15
-        },
-        {
-          "title": "Netanyahu reportedly pressured military to attack Iran in run-up to election",
-          "url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election",
-          "date": "2026-10-26T19:21:36.000Z",
-          "source": "The Guardian World",
-          "sourceType": "news",
-          "summary": "Israeli prime minister increases alarmist rhetoric as his far-right coalition narrowly trails in polls Israel election – live updates Benjamin Netanyahu has resorted to increasingly alarmist rhetoric and reportedly put pressure on Israel’s military to take action against Iran as his far-right coalition narrowly trails in the polls ahead of Tuesday’s close-run elections. The Israeli prime minister ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "'Escalation is coming': Middle East on edge as new Israeli-US attack on Iran looms",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/escalation-coming-middle-east-edge-new-israeli-us-attack-iran-looms-0",
-          "date": "2026-10-26T16:11:54.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "'Escalation is coming': Middle East on edge as new Israeli-US attack on Iran looms US &nbsp;diplomats are preparing for embassy evacuations.&nbsp; Israeli &nbsp;fighter jets are conducting sorties on the Iranian border. The mood among Arab and US officials in the region who spoke to Middle East Eye is that it’s a question of when, not if, the US and Israel resume attacking&nbsp; Iran . With Iran t",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
         }
       ],
       "itemCount": 80
@@ -4182,7 +4215,7 @@
       ],
       "activity": 100,
       "severity": 69,
-      "newCount": 4,
+      "newCount": 2,
       "signals": [
         {
           "key": "talks",
@@ -4231,7 +4264,7 @@
             51.831,
             35.568
           ],
-          "count": 20,
+          "count": 21,
           "newCount": 1,
           "event": {
             "type": "naval",
@@ -4259,13 +4292,55 @@
       ],
       "items": [
         {
+          "title": "Iran's IRGC Navy says two tankers 'exploded' after hitting mines in Hormuz",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-navy-says-two-tankers-exploded-after-hitting-mines-hormuz",
+          "date": "2026-11-01T20:18:23.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran's IRGC Navy says two tankers 'exploded' after hitting mines in Hormuz Iran's Islamic Revolutionary Guard Corps Navy said two oil tankers \"exploded\" after striking mines while travelling through an \"unauthorised route\" in the Strait of Hormuz, Iranian state media reported on Sunday. Iran has imposed restrictions on vessels seeking to pass through the Strait of Hormuz and has attacked ships it ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 26
+        },
+        {
+          "title": "Iran warns new war could last longer after Trump threatens strikes",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-new-war-could-last-longer-after-trump-threatens-strikes",
+          "date": "2026-11-01T19:41:16.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Iran warns new war could last longer after Trump threatens strikes Iran&nbsp;warned on Sunday that any renewed war with the United States could last longer than the previous round of fighting, after President Donald Trump said he still had to \"take care\" of more targets. Diplomatic efforts to end the Middle East war have been punctuated by repeated threats from the US and Israel to resume bombardm",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 26
+        },
+        {
           "title": "Pakistan's embassy in Tehran refutes rumours of people 'attacking' its ambassador to Iran",
           "url": "https://www.dawn.com/news/2041397/pakistans-embassy-in-tehran-refutes-rumours-of-people-attacking-its-ambassador-to-iran",
           "date": "2026-11-01T17:27:52.000Z",
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Pakistan’s embassy in Iran on Sunday refuted rumours of an attack on Ambassador Imran Ahmed Siddiqui in Tehran, terming them “baseless”. In a post on X, the embassy said it had taken note of “certain reports circulating in social media and other forums” concerning the Pakistani ambassador to Iran. The embassy shared a post from another X account, which had posted a video showing a commotion amongs",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "IRN-3216",
             "name": "Tehran",
@@ -4286,27 +4361,6 @@
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
-          },
-          "score": 29
-        },
-        {
-          "title": "Iran warns new war could last longer after Trump threatens strikes",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-new-war-could-last-longer-after-trump-threatens-strikes",
-          "date": "2026-11-01T19:41:16.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Iran warns new war could last longer after Trump threatens strikes Iran&nbsp;warned on Sunday that any renewed war with the United States could last longer than the previous round of fighting, after President Donald Trump said he still had to \"take care\" of more targets. Diplomatic efforts to end the Middle East war have been punctuated by repeated threats from the US and Israel to resume bombardm",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
           },
           "score": 26
         },
@@ -4370,7 +4424,7 @@
             "icon": "🤝",
             "label": "Verhandlungen"
           },
-          "score": 24
+          "score": 22
         },
         {
           "title": "World News in Brief: ‘No safe place in Ukraine’, IAEA calls for Iran nuclear inspections, Kenya hosts thousands of Ethiopians fleeing clashes",
@@ -4394,14 +4448,24 @@
           "score": 21
         },
         {
-          "title": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-intentionally-released-footage-mossad-operatives-iran-provoke",
-          "date": "2026-11-01T15:33:57.000Z",
+          "title": "Trump says Iran war will end ‘very soon, one way or the other’",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-war-will-end-very-soon-one-way-or-other",
+          "date": "2026-11-01T22:47:37.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says Former Mossad chief David Barnea has said Israel intentionally released images of their covert operation in Iran during the June 2025 conflict to provoke mass arrests and make it harder for Iranian forces to find real Israeli agents. “One of the reasons we immediately released an official vide",
+          "summary": "Trump says Iran war will end ‘very soon, one way or the other’ US President Donald Trump said the war with Iran would end “very soon, one way or the other”, adding that Tehran would either “make a deal or we’ll just end it”. Speaking to the Right Side Broadcasting Network (RSBN), Trump said the war could end “maybe the easy way”. “We’ve had such a victory and we’ll put it away very soon, one way o",
           "isNew": true,
-          "region": null,
+          "region": {
+            "id": "IRN-3216",
+            "name": "Tehran",
+            "nameDe": "Teheran",
+            "type": "Province",
+            "anchor": [
+              51.831,
+              35.568
+            ],
+            "matched": "Tehran"
+          },
           "event": {
             "type": "report",
             "icon": "📄",
@@ -4421,7 +4485,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "The conflict has become a central issue ahead of Tuesday's polls.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "election",
@@ -4715,6 +4779,27 @@
             "label": "Drohnenangriff"
           },
           "score": 18
+        },
+        {
+          "title": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-intentionally-released-footage-mossad-operatives-iran-provoke",
+          "date": "2026-11-01T15:33:57.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel intentionally released footage of Mossad operatives in Iran to provoke mass arrests, ex-chief says Former Mossad chief David Barnea has said Israel intentionally released images of their covert operation in Iran during the June 2025 conflict to provoke mass arrests and make it harder for Iranian forces to find real Israeli agents. “One of the reasons we immediately released an official vide",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 17
         },
         {
           "title": "Nuclear science boosts Pakistan’s ability to track groundwater",
@@ -5832,7 +5917,7 @@
             "icon": "🕊️",
             "label": "Waffenruhe"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "US senator briefed on Trump's plans to restart Iran war says proposal is 'insane'",
@@ -5853,7 +5938,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Crew of vessel that sustained fire in Hormuz evacuated",
@@ -6103,48 +6188,6 @@
             "type": "sanctions",
             "icon": "⚖️",
             "label": "Sanktionen/Recht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Araghchi says Iran will give diplomacy a chance but 'forces are fully prepared'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-iran-will-give-diplomacy-chance-forces-prepared",
-          "date": "2026-10-28T21:34:06.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Araghchi says Iran will give diplomacy a chance but 'forces are fully prepared' Iranian Foreign Minister Abbas Araghchi said on Wednesday that Iran will keep in close contact with intermediaries to give diplomacy a chance, even as its armed forces stand ready to defend the country. “While our brave armed forces are fully prepared to defend the country, Iran remains committed to giving diplomacy a ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "US Centcom rejects Iranian reports of vessels hitting Hormuz sea mines",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-centcom-rejects-iranian-reports-vessels-hitting-hormuz-sea-mines",
-          "date": "2026-10-28T21:20:38.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US Centcom rejects Iranian reports of vessels hitting Hormuz sea mines The US military said on Wednesday that claims from Iranian media that commercial vessels transiting through the Strait of Hormuz were hitting sea mines were \"false\".&nbsp; \"All internationally recognized primary transit routes through the Strait of Hormuz have been cleared of sea mines by US forces and remain so,\" US Central Co",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
           },
           "score": 8
         }
@@ -7390,9 +7433,9 @@
         "Rotes Meer",
         "Bab al-Mandab"
       ],
-      "activity": 82,
+      "activity": 83,
       "severity": 63,
-      "newCount": 3,
+      "newCount": 1,
       "signals": [
         {
           "key": "airstrike",
@@ -7499,7 +7542,7 @@
             17.071
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "airstrike",
             "icon": "✈️",
@@ -7532,7 +7575,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Houthi media says Saudi strikes target Yemen's Hodeidah port Houthi media said on Sunday that Saudi air strikes targeted Hodeidah, a strategic port under Houthi control, as the&nbsp;Iran-aligned group battles a Saudi-led coalition supporting the internationally&nbsp;recognised&nbsp;government. \"The Saudi enemy has launched two airstrikes on Ras Issa port,\" Al-Masirah TV said. Hodeidah, on the Red ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -7553,7 +7596,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Air strike hits communication network in northern Yemen, Houthi-affiliated media reports An air strike targeted a communications network southeast of Saada city in northern Yemen, according to Houthi-affiliated media. Earlier, Houthi-affiliated media reported that air strikes had targeted Ras Isa port in Yemen’s Hodeidah governorate.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "YEM-150",
             "name": "Sa'dah",
@@ -7578,6 +7621,27 @@
           "score": 30
         },
         {
+          "title": "Yemen’s foreign minister demands accountability for UN worker’s death in Houthi custody",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-foreign-minister-demands-accountability-un-workers-death-houthi",
+          "date": "2026-11-01T23:06:30.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Yemen’s foreign minister demands accountability for UN worker’s death in Houthi custody Yemen’s Foreign Minister Afrah al-Zouba has called for the Houthis to be held accountable for the death of UN human rights employee Mohammed Ibrahim al-Shami after more than two years in the group’s custody. In a post on X, Zouba described his death as a “horrific crime for which the militia bears full responsi",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 22
+        },
+        {
           "title": "Three civilians injured in Saudi-coalition air raids on Hodeidah, Houthis say",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-civilians-injured-saudi-coalition-air-raids-hodeidah-houthis-say",
           "date": "2026-11-01T05:06:37.000Z",
@@ -7597,27 +7661,6 @@
             "label": "Luftangriff"
           },
           "score": 22
-        },
-        {
-          "title": "Houthis repeat threats against Saudi oil giant, aviation",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-repeat-threats-against-saudi-oil-giant-aviation",
-          "date": "2026-11-01T16:28:04.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Houthis repeat threats against Saudi oil giant, aviation Houthi media, citing an anonymous military official, on Sunday repeated threats against Saudi oil giant Aramco and aviation in the kingdom. Yemen's Houthis, fighting a Saudi-led coalition backing the internationally recognised government, are allies of Iran, which on Sunday warned the US and&nbsp;Israel&nbsp;not to renew strikes on the Islam",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 20
         },
         {
           "title": "World News in Brief: 5 children killed in Sudan, Haiti hunger emergency, Yemen war update",
@@ -7934,25 +7977,25 @@
           "score": 18
         },
         {
-          "title": "Houthis claim six attacks on Saudi Arabia airports and oil facilities",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-six-attacks-saudi-arabia-airports-and-oil-facilities",
-          "date": "2026-10-29T21:25:49.000Z",
+          "title": "Houthis repeat threats against Saudi oil giant, aviation",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-repeat-threats-against-saudi-oil-giant-aviation",
+          "date": "2026-11-01T16:28:04.000Z",
           "source": "Middle East Eye",
           "sourceType": "news",
-          "summary": "Houthis claim six attacks on Saudi Arabia airports and oil facilities The Houthis carried out six attacks on Saudi Arabia, targeting airports, oil facilities and a military headquarters, spokesperson Yahya Saree said. Saree said the group fired ballistic missiles at the Ras Tanura and Rabigh oil refineries, a missile at an Aramco facility in Abqaiq, and multiple missiles at King Khalid Internation",
+          "summary": "Houthis repeat threats against Saudi oil giant, aviation Houthi media, citing an anonymous military official, on Sunday repeated threats against Saudi oil giant Aramco and aviation in the kingdom. Yemen's Houthis, fighting a Saudi-led coalition backing the internationally recognised government, are allies of Iran, which on Sunday warned the US and&nbsp;Israel&nbsp;not to renew strikes on the Islam",
           "isNew": false,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
             "type": "clash",
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 17
         },
         {
           "title": "Houthis sending Taiz ‘back to the stone age’, governor of besieged Yemen city says",
@@ -7982,6 +8025,27 @@
             "type": "siege",
             "icon": "🛡️",
             "label": "Belagerung"
+          },
+          "score": 15
+        },
+        {
+          "title": "Houthis claim six attacks on Saudi Arabia airports and oil facilities",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-six-attacks-saudi-arabia-airports-and-oil-facilities",
+          "date": "2026-10-29T21:25:49.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Houthis claim six attacks on Saudi Arabia airports and oil facilities The Houthis carried out six attacks on Saudi Arabia, targeting airports, oil facilities and a military headquarters, spokesperson Yahya Saree said. Saree said the group fired ballistic missiles at the Ras Tanura and Rabigh oil refineries, a missile at an Aramco facility in Abqaiq, and multiple missiles at King Khalid Internation",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 15
         },
@@ -8435,48 +8499,6 @@
           "score": 15
         },
         {
-          "title": "Yemen government says it condemns attacks on Mecca and Medina",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-condemns-attacks-mecca-and-medina",
-          "date": "2026-10-25T22:38:05.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Yemen government says it condemns attacks on Mecca and Medina Yemen’s Ministry of Foreign Affairs condemned the ongoing Houthi attacks on Saudi Arabia, \"including the launch of two ballistic missiles toward the regions of Mecca and Medina.\" In a statement on X, the ministry also “denounced the continued targeting of the Kingdom’s cities and facilities, and the resulting injuries among civilians an",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Flights resume at Riyadh airport after two-week closure as Houthis attack Saudi Arabia",
-          "url": "https://www.dawn.com/news/2039726/flights-resume-at-riyadh-airport-after-two-week-closure-as-houthis-attack-saudi-arabia",
-          "date": "2026-10-25T20:06:11.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Flights resumed at Riyadh’s international airport on Sunday following a series of deadly attacks on the facility that saw it closed for two weeks , even as Yemen’s Houthi rebels targeted the country with strikes. King Khalid International Airport’s website showed several domestic and international flights scheduled on Sunday, including arrivals to the kingdom from Dubai, Paris and Cairo. The renew",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
           "title": "Yemen war makes reaching assistance too dangerous for many",
           "url": "https://news.un.org/feed/view/en/story/2026/10/1168706",
           "date": "2026-10-30T12:00:00.000Z",
@@ -8612,7 +8634,7 @@
           "score": 8
         }
       ],
-      "itemCount": 46
+      "itemCount": 45
     },
     {
       "id": "pakistan",
@@ -8640,9 +8662,9 @@
         "Waziristan",
         "Quetta"
       ],
-      "activity": 82,
+      "activity": 80,
       "severity": 63,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -8755,7 +8777,7 @@
         {
           "title": "Northern Territory water plan condemned as ‘blatant and shameless’ attack on nature",
           "url": "https://www.theguardian.com/australia-news/2026/nov/02/northern-territory-water-plan-condemned-as-blatant-and-shameless-attack-on-nature",
-          "date": "2026-11-01T14:00:13.000Z",
+          "date": "2026-11-01T20:02:57.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Exclusive : Move to scrap legal requirement to set aside water for environment is ‘extreme even for the NT CLP government’, green group says Get our breaking news email , free app or daily news podcast The Northern Territory government has been accused of making a “blatant and shameless” attack on nature by planning to delete a legal requirement that water must be allocated to the environment. In ",
@@ -8780,7 +8802,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Pakistan’s embassy in Iran on Sunday refuted rumours of an attack on Ambassador Imran Ahmed Siddiqui in Tehran, terming them “baseless”. In a post on X, the embassy said it had taken note of “certain reports circulating in social media and other forums” concerning the Pakistani ambassador to Iran. The embassy shared a post from another X account, which had posted a video showing a commotion amongs",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -8792,7 +8814,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Pakistan responds to unprovoked firing from Afghan posts along border in Lower South Waziristan: DC",
@@ -8801,7 +8823,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Pakistani security forces have responded to unprovoked firing from the Afghan border posts, the deputy commissioner of Lower South Waziristan district said on Sunday. In a post on X, the DC’s official account said, “Unprovoked firing from Afghan border posts onto Pakistani border checkpoints continues.” It added that Pakistani security forces responded immediately and effectively, targeting “multi",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -8834,49 +8856,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
-        },
-        {
-          "title": "‘We’re technology-savvy’: DG ISPR says Pakistan ahead of India, Afghan Taliban in operational readiness",
-          "url": "https://www.dawn.com/news/2041391/were-technology-savvy-dg-ispr-says-pakistan-ahead-of-india-afghan-taliban-in-operational-readiness",
-          "date": "2026-11-01T17:31:26.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "Inter-Services Public Relations (ISPR) Director General Lieutenant General Ahmed Sharif Chaudhry has affirmed that Pakistan is “much ahead” in operational readiness compared to the Afghan Taliban and India, adding that the country’s military is adopting emerging technologies. The military spokesperson’s remarks, shared by state media on Sunday, were made during Friday’s wide-ranging interview with",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
-          "title": "US hears Pakistan’s concerns over terrorism from Afghanistan, would play ‘productive role’ if there is one: Rubio",
-          "url": "https://www.dawn.com/news/2041358/us-hears-pakistans-concerns-over-terrorism-from-afghanistan-would-play-productive-role-if-there-is-one-rubio",
-          "date": "2026-11-01T14:03:30.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "US Secretary of State Marco Rubio on Saturday said that Washington has “heard” Pakistan’s concerns about terrorism emanating from Afghanistan and if “there’s a productive role for us to play, we would play it”. Rubio’s statement came in response to a question about tensions between Afghanistan and Pakistan at a press talks in Atlanta. “Pakistan is concerned about terrorist attacks that are being s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
+          "score": 18
         },
         {
           "title": "Dead dolphins, naval mines: Russia-Ukraine war destroys the Black Sea",
@@ -8940,6 +8920,48 @@
             "label": "Drohnenangriff"
           },
           "score": 18
+        },
+        {
+          "title": "‘We’re technology-savvy’: DG ISPR says Pakistan ahead of India, Afghan Taliban in operational readiness",
+          "url": "https://www.dawn.com/news/2041391/were-technology-savvy-dg-ispr-says-pakistan-ahead-of-india-afghan-taliban-in-operational-readiness",
+          "date": "2026-11-01T17:31:26.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "Inter-Services Public Relations (ISPR) Director General Lieutenant General Ahmed Sharif Chaudhry has affirmed that Pakistan is “much ahead” in operational readiness compared to the Afghan Taliban and India, adding that the country’s military is adopting emerging technologies. The military spokesperson’s remarks, shared by state media on Sunday, were made during Friday’s wide-ranging interview with",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 16
+        },
+        {
+          "title": "US hears Pakistan’s concerns over terrorism from Afghanistan, would play ‘productive role’ if there is one: Rubio",
+          "url": "https://www.dawn.com/news/2041358/us-hears-pakistans-concerns-over-terrorism-from-afghanistan-would-play-productive-role-if-there-is-one-rubio",
+          "date": "2026-11-01T14:03:30.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "US Secretary of State Marco Rubio on Saturday said that Washington has “heard” Pakistan’s concerns about terrorism emanating from Afghanistan and if “there’s a productive role for us to play, we would play it”. Rubio’s statement came in response to a question about tensions between Afghanistan and Pakistan at a press talks in Atlanta. “Pakistan is concerned about terrorist attacks that are being s",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
         },
         {
           "title": "Nuclear science boosts Pakistan’s ability to track groundwater",
@@ -9676,13 +9698,13 @@
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 9
+          "count": 10
         },
         {
           "key": "offensive",
           "label": "Offensive",
           "dir": "up",
-          "count": 3
+          "count": 4
         },
         {
           "key": "escalation",
@@ -9722,7 +9744,7 @@
             31.753
           ],
           "count": 4,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "siege",
             "icon": "🛡️",
@@ -9732,13 +9754,55 @@
       ],
       "items": [
         {
+          "title": "Thousands displaced from Hebron as Israel carries on siege",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/thousands-displaced-from-hebron-as-israel-carries-on-siege?traffic_source=rss",
+          "date": "2026-11-01T21:28:47.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Almost 5,000 people have been displaced as a result of Israel’s military siege on the city of Hebron in the West Bank.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 27
+        },
+        {
+          "title": "Israeli forces raid Hebron shops, assault Palestinians amid siege",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-hebron-shops-beat-palestinians-nearby-halhul",
+          "date": "2026-11-01T21:53:54.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli forces raid Hebron shops, assault Palestinians amid siege Israeli forces raided several shops in Hebron amid the siege of the city and beat Palestinians during a raid on nearby Halhul on Sunday evening, Wafa news agency reported. Local sources told the agency that troops seized surveillance camera recording devices from shops in Hebron’s besieged al-Jalda area. In Halhul, north of Hebron, ",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 26
+        },
+        {
           "title": "Hebron siege continues for 10th day as Israel threatens wider offensive",
           "url": "https://www.aljazeera.com/news/2026/11/1/hebron-siege-continues-for-10th-day-as-israel-threatens-wider-offensive?traffic_source=rss",
           "date": "2026-11-01T17:30:45.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Hebron's economic losses surpass $3.8m as Israeli forces demolish West Bank homes and close hundreds of businesses.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "offensive",
@@ -9750,7 +9814,7 @@
             "icon": "🪖",
             "label": "Bodenoffensive"
           },
-          "score": 27
+          "score": 24
         },
         {
           "title": "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
@@ -9759,7 +9823,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israel’s siege on Hebron is on its 10th day and its attacks on Gaza continue.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "ISR-3058",
             "name": "Jerusalem",
@@ -9781,7 +9845,7 @@
             "icon": "🛡️",
             "label": "Belagerung"
           },
-          "score": 26
+          "score": 22
         },
         {
           "title": "Palestinian injured in Israeli fire succumbs, settlers attack olive harvesters",
@@ -9802,7 +9866,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 23
+          "score": 22
         },
         {
           "title": "Israeli forces and settlers injure four Palestinians in West Bank attacks",
@@ -9823,7 +9887,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 22
+          "score": 18
         },
         {
           "title": "More than 530 Palestinian families forced from Hebron during Israeli siege",
@@ -9938,7 +10002,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Israel issues more than 9,500 demolition, stop-work notices in West Bank, report says",
@@ -10158,7 +10222,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "Israel bans travel for Brad Lander after detention in occupied West Bank",
@@ -10179,7 +10243,7 @@
             "icon": "🔗",
             "label": "Entführung/Geiseln"
           },
-          "score": 11
+          "score": 8
         },
         {
           "title": "A week of Israel’s lockdown in Hebron: What’s happened, when will it end?",
@@ -10652,48 +10716,6 @@
             "label": "Politik/Wahl"
           },
           "score": 8
-        },
-        {
-          "title": "Israel to close occupied West Bank crossings over election",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-close-occupied-west-bank-crossings-over-election",
-          "date": "2026-10-25T22:19:18.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel to close occupied West Bank crossings over election Israel will close all land crossings into and out of the occupied West Bank on Tuesday for its general election, the Israeli army said. The military said it would also bar Palestinian workers from entering most areas of the West Bank from Sunday through Monday. The announcement came a day after Israeli forces imposed a lockdown in Hebron a",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 8
-        },
-        {
-          "title": "Israeli military to end Hebron operation ‘within days’, Israeli media reports",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-end-hebron-operation-within-days-israeli-media-reports",
-          "date": "2026-10-25T21:13:00.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli military to end Hebron operation ‘within days’, Israeli media reports The Israeli army will end its military operation in Hebron in the occupied West Bank “within days”, the Israeli Broadcasting Corporation said. Israeli forces have reportedly searched 500 buildings in the occupied West Bank city, but found only two weapons, the report said, adding that&nbsp;army is now preparing to end th",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
         }
       ],
       "itemCount": 44
@@ -10727,7 +10749,7 @@
       ],
       "activity": 14,
       "severity": 59,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -10776,7 +10798,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israel expands ties with the breakaway territory as Somalia challenges its motives and war intensifies in Yemen.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -11592,7 +11614,7 @@
       ],
       "activity": 52,
       "severity": 54,
-      "newCount": 3,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -11743,7 +11765,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Pakistan’s embassy in Iran on Sunday refuted rumours of an attack on Ambassador Imran Ahmed Siddiqui in Tehran, terming them “baseless”. In a post on X, the embassy said it had taken note of “certain reports circulating in social media and other forums” concerning the Pakistani ambassador to Iran. The embassy shared a post from another X account, which had posted a video showing a commotion amongs",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -11755,7 +11777,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "‘We’re technology-savvy’: DG ISPR says Pakistan ahead of India, Afghan Taliban in operational readiness",
@@ -11764,7 +11786,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Inter-Services Public Relations (ISPR) Director General Lieutenant General Ahmed Sharif Chaudhry has affirmed that Pakistan is “much ahead” in operational readiness compared to the Afghan Taliban and India, adding that the country’s military is adopting emerging technologies. The military spokesperson’s remarks, shared by state media on Sunday, were made during Friday’s wide-ranging interview with",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -11776,7 +11798,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 22
+          "score": 19
         },
         {
           "title": "Pakistan responds to unprovoked firing from Afghan posts along border in Lower South Waziristan: DC",
@@ -11785,7 +11807,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Pakistani security forces have responded to unprovoked firing from the Afghan border posts, the deputy commissioner of Lower South Waziristan district said on Sunday. In a post on X, the DC’s official account said, “Unprovoked firing from Afghan border posts onto Pakistani border checkpoints continues.” It added that Pakistani security forces responded immediately and effectively, targeting “multi",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -11818,7 +11840,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "Nuclear science boosts Pakistan’s ability to track groundwater",
@@ -12456,7 +12478,7 @@
       ],
       "activity": 32,
       "severity": 48,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -12618,27 +12640,6 @@
           "score": 19
         },
         {
-          "title": "Masussuka’s killing highlights Nigeria’s extremism, terrorism problem",
-          "url": "https://www.premiumtimesng.com/news/headlines/921920-masussukas-killing-highlights-nigerias-extremism-terrorism-problem.html",
-          "date": "2026-11-01T17:00:54.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Under the guise of condemning his controversial teachings, some of Mr Masussuka's critics continue to gloat over his killing. The post Masussuka’s killing highlights Nigeria’s extremism, terrorism problem appeared first on Premium Times Nigeria .",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Over 30 suspected bandits’ bodies found after gun battle in Zamfara — Police",
           "url": "https://www.premiumtimesng.com/regional/nwest/921748-over-30-suspected-bandits-bodies-found-after-gun-battle-in-zamfara-police.html",
           "date": "2026-10-31T15:35:00.000Z",
@@ -12687,6 +12688,27 @@
             "type": "abduction",
             "icon": "🔗",
             "label": "Entführung/Geiseln"
+          },
+          "score": 16
+        },
+        {
+          "title": "Masussuka’s killing highlights Nigeria’s extremism, terrorism problem",
+          "url": "https://www.premiumtimesng.com/news/headlines/921920-masussukas-killing-highlights-nigerias-extremism-terrorism-problem.html",
+          "date": "2026-11-01T17:00:54.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Under the guise of condemning his controversial teachings, some of Mr Masussuka's critics continue to gloat over his killing. The post Masussuka’s killing highlights Nigeria’s extremism, terrorism problem appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 16
         },
@@ -13219,7 +13241,7 @@
       ],
       "activity": 27,
       "severity": 47,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "casualties",
@@ -13377,27 +13399,6 @@
           "score": 19
         },
         {
-          "title": "Masussuka’s killing highlights Nigeria’s extremism, terrorism problem",
-          "url": "https://www.premiumtimesng.com/news/headlines/921920-masussukas-killing-highlights-nigerias-extremism-terrorism-problem.html",
-          "date": "2026-11-01T17:00:54.000Z",
-          "source": "Premium Times (Nigeria)",
-          "sourceType": "news",
-          "summary": "Under the guise of condemning his controversial teachings, some of Mr Masussuka's critics continue to gloat over his killing. The post Masussuka’s killing highlights Nigeria’s extremism, terrorism problem appeared first on Premium Times Nigeria .",
-          "isNew": true,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 19
-        },
-        {
           "title": "Nigeria: Military Deepens Peace Restoration in North As Over 70 Abductees Rescued",
           "url": "https://allafrica.com/stories/202610290097.html",
           "date": "2026-10-29T05:06:56.000Z",
@@ -13415,6 +13416,27 @@
             "type": "abduction",
             "icon": "🔗",
             "label": "Entführung/Geiseln"
+          },
+          "score": 16
+        },
+        {
+          "title": "Masussuka’s killing highlights Nigeria’s extremism, terrorism problem",
+          "url": "https://www.premiumtimesng.com/news/headlines/921920-masussukas-killing-highlights-nigerias-extremism-terrorism-problem.html",
+          "date": "2026-11-01T17:00:54.000Z",
+          "source": "Premium Times (Nigeria)",
+          "sourceType": "news",
+          "summary": "Under the guise of condemning his controversial teachings, some of Mr Masussuka's critics continue to gloat over his killing. The post Masussuka’s killing highlights Nigeria’s extremism, terrorism problem appeared first on Premium Times Nigeria .",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "score": 16
         },
@@ -14320,27 +14342,6 @@
           "score": 13
         },
         {
-          "title": "Kenya: KNCHR Calls for Urgent Aid As 40,000 Ethiopians Flee to Moyale",
-          "url": "https://allafrica.com/stories/202610280186.html",
-          "date": "2026-10-28T08:07:25.000Z",
-          "source": "AllAfrica – Konflikte",
-          "sourceType": "news",
-          "summary": "[Capital FM] Nairobi -- The Kenya National Commission on Human Rights (KNCHR) has called for an urgent humanitarian response in Moyale after approximately 40,000 people reportedly fled unrest in Ethiopia and sought refuge in Kenya, warning that delays could expose thousands to avoidable suffering.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "regionEvent": {
-            "type": "displacement",
-            "icon": "🚶",
-            "label": "Vertreibung"
-          },
-          "score": 12
-        },
-        {
           "title": "Ethiopia: Ethiopia Receives 12 Russian SU-35 Fighter Jets, Plans to Acquire Four S-400 Air Defense Batteries",
           "url": "https://allafrica.com/stories/202610290101.html",
           "date": "2026-10-29T05:06:59.000Z",
@@ -14370,6 +14371,27 @@
             "label": "Luftangriff"
           },
           "score": 9
+        },
+        {
+          "title": "Kenya: KNCHR Calls for Urgent Aid As 40,000 Ethiopians Flee to Moyale",
+          "url": "https://allafrica.com/stories/202610280186.html",
+          "date": "2026-10-28T08:07:25.000Z",
+          "source": "AllAfrica – Konflikte",
+          "sourceType": "news",
+          "summary": "[Capital FM] Nairobi -- The Kenya National Commission on Human Rights (KNCHR) has called for an urgent humanitarian response in Moyale after approximately 40,000 people reportedly fled unrest in Ethiopia and sought refuge in Kenya, warning that delays could expose thousands to avoidable suffering.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "regionEvent": {
+            "type": "displacement",
+            "icon": "🚶",
+            "label": "Vertreibung"
+          },
+          "score": 8
         },
         {
           "title": "Ethiopia acquires Russian fighter jets and air defence systems amid war in Tigray",
@@ -14500,339 +14522,6 @@
       "itemCount": 21
     },
     {
-      "id": "lebanon-hezbollah",
-      "name": "Israel–Libanon / Hisbollah",
-      "nameEn": "Israel–Hezbollah",
-      "region": "Naher Osten",
-      "countries": [
-        "Lebanon"
-      ],
-      "lat": 33.6,
-      "lon": 35.5,
-      "tier": "high",
-      "since": "Oktober 2023 / Eskalation 2024",
-      "parties": [
-        "Israel",
-        "Hisbollah",
-        "Libanesische Armee",
-        "UNIFIL"
-      ],
-      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
-      "hotspots": [
-        "Südlibanon",
-        "Beirut/Dahiyeh",
-        "Bekaa-Ebene"
-      ],
-      "activity": 21,
-      "severity": 45,
-      "newCount": 0,
-      "signals": [
-        {
-          "key": "airstrike",
-          "label": "Luftschläge",
-          "dir": "up",
-          "count": 2
-        },
-        {
-          "key": "ceasefire",
-          "label": "Waffenruhe",
-          "dir": "down",
-          "count": 1
-        },
-        {
-          "key": "offensive",
-          "label": "Offensive",
-          "dir": "up",
-          "count": 1
-        }
-      ],
-      "acled": null,
-      "briefing": null,
-      "iso3": "LBN",
-      "extraCountries": [
-        "ISR"
-      ],
-      "regions": [
-        {
-          "id": "LBN-3060",
-          "name": "South",
-          "nameDe": "Gouvernement Süd-Libanon",
-          "type": "Province",
-          "anchor": [
-            35.368,
-            33.36
-          ],
-          "count": 2,
-          "newCount": 0,
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          }
-        },
-        {
-          "id": "LBN-3059",
-          "name": "Nabatieh",
-          "nameDe": "Nabatäa",
-          "type": "Province",
-          "anchor": [
-            35.512,
-            33.3
-          ],
-          "count": 1,
-          "newCount": 0,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          }
-        }
-      ],
-      "items": [
-        {
-          "title": "Israel shells south Lebanon towns, builds roads connecting military outposts",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-shells-south-lebanon-towns-builds-roads-connecting-military",
-          "date": "2026-10-31T23:21:11.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel shells south Lebanon towns, builds roads connecting military outposts Israeli forces carried out a large explosion in the town of Baraachit, in south Lebanon ’s Bint Jbeil district, on Saturday evening, Lebanon’s National News Agency (NNA) reported. Israeli artillery also shelled Beit Yahoun, in the same district, and the area between the towns of Zawtar al-Sharqiya and Maifadoun. An Israel",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "regionEvent": {
-            "type": "shelling",
-            "icon": "💥",
-            "label": "Beschuss"
-          },
-          "score": 22
-        },
-        {
-          "title": "Israeli air strikes target southern Lebanese town of Kfar Tebnit",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-target-southern-lebanese-town-kfar-tebnit",
-          "date": "2026-10-31T05:59:55.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli air strikes target southern Lebanese town of Kfar Tebnit An Israeli air attack has targeted the town of Kfar Tebnit in the Nabatieh district, southern Lebanon, Al Jazeera reported. The Israeli military also continued demolitions and artillery shelling in towns in the Bint Jbeil and Tyre districts in the south, large parts of which continues to be occupied by Israeli forces, the report adde",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3059",
-            "name": "Nabatieh",
-            "nameDe": "Nabatäa",
-            "type": "Province",
-            "anchor": [
-              35.512,
-              33.3
-            ],
-            "matched": "Nabatieh"
-          },
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "Lebanese foreign minister urges Gulf states to help restore country's sovereignty",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-foreign-minister-urges-gulf-states-help-restore-countrys",
-          "date": "2026-11-01T02:25:16.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese foreign minister urges Gulf states to help restore country's sovereignty Lebanon's Foreign Minister Youssef Rajji has called for a complete Israeli withdrawal from occupied Lebanese territories, an end to ongoing attacks and the full implementation of UN Security Council Resolution 1701, while urging Gulf states to support efforts to restore Lebanon's sovereignty. Speaking at the 22nd Man",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 15
-        },
-        {
-          "title": "Israeli army strikes Deir Mimas in southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-strikes-target-deir-mimas-southern-lebanon",
-          "date": "2026-10-28T20:40:43.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israeli army strikes Deir Mimas in southern Lebanon The Israeli army struck the Deir Mimas municipality in southern Lebanon, after issuing an earlier warning to residents instructing them to open their windows in preparation for a massive explosion in the town's vicinity, Lebanon’s National News Agency reported on Wednesday.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanon’s lost olive season: harvesting olives under drones and warplanes",
-          "url": "https://www.aljazeera.com/features/2026/10/27/lebanons-lost-olive-season-harvesting-olives-under-drones-and-warplanes?traffic_source=rss",
-          "date": "2026-10-27T13:54:43.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Lebanon's olive harvesters are facing dangerous conditions, with potential attacks and fear of cluster munitions.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "regionEvent": {
-            "type": "airstrike",
-            "icon": "✈️",
-            "label": "Luftangriff"
-          },
-          "score": 15
-        },
-        {
-          "title": "Lebanon charges 13 over confiscated Hezbollah explosives",
-          "url": "https://www.aljazeera.com/news/2026/10/31/lebanon-charges-13-over-hezbollah-confiscated-explosives?traffic_source=rss",
-          "date": "2026-10-31T09:26:46.000Z",
-          "source": "Al Jazeera",
-          "sourceType": "news",
-          "summary": "Group calls charges 'unjust', says weapons were meant to be used against Israeli forces in south Lebanon.",
-          "isNew": false,
-          "region": {
-            "id": "LBN-3060",
-            "name": "South",
-            "nameDe": "Gouvernement Süd-Libanon",
-            "type": "Province",
-            "anchor": [
-              35.368,
-              33.36
-            ],
-            "matched": "South Lebanon"
-          },
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
-          "title": "Lebanese court charges 13 over Hezbollah explosives shipment",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-court-charges-13-over-hezbollah-explosives-shipment",
-          "date": "2026-10-30T16:55:22.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Lebanese court charges 13 over Hezbollah explosives shipment A Lebanese military court on Friday charged 13 people over their alleged involvement in shipping explosives to Hezbollah, AFP reported, citing a judicial source. The charges come after authorities seized a half-tonne cargo earlier this month, as Hezbollah emerges from back-to-back wars with Israel and faces a push from authorities in Bei",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "regionEvent": {
-            "type": "naval",
-            "icon": "🚢",
-            "label": "Seeangriff"
-          },
-          "score": 11
-        },
-        {
-          "title": "Israel launches explosive thermal balloons over southern Lebanon",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-explosive-thermal-balloons-over-southern-lebanon",
-          "date": "2026-10-28T22:04:20.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Israel launches explosive thermal balloons over southern Lebanon Israeli aircraft have been flying at low altitude and dropping thermal balloons over southern Lebanon, Lebanon’s National News Agency reported on Wednesday. The Lebanese army has previously warned that these balloons pose a threat to citizens due to their contents of explosive and incendiary materials, warning residents against appro",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 8
-        },
-        {
-          "title": "Hezbollah leader rules out group's disarmament",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-leader-rules-out-groups-disarmament",
-          "date": "2026-10-28T20:47:43.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "Hezbollah leader rules out group's disarmament Hezbollah Secretary-General Naim Qassem released a statement on Wednesday rejecting calls for the disarmament of the Lebanese group under a June US-brokered framework agreement with Israel. “The resistance continues and will confront any aggression against it; there is no room for discussion regarding the surrender of its weapons,” Qassem said in his ",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "regionEvent": {
-            "type": "ceasefire",
-            "icon": "🕊️",
-            "label": "Waffenruhe"
-          },
-          "score": 8
-        },
-        {
-          "title": "Israeli election: Lebanon expects little change in Israeli policy",
-          "url": "https://www.france24.com/en/video/20261028-israeli-election-lebanon-expects-little-change-in-israeli-policy",
-          "date": "2026-10-28T15:36:07.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "The war in the Middle East never really stopped, but Lebanese expect little change in Israeli policy after Israel's elections. In Israel, as votes are counted, no clear winner has emerged yet. France 24's correspondent Renée Davis reports the latest.",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 8
-        }
-      ],
-      "itemCount": 10
-    },
-    {
       "id": "taiwan-strait",
       "name": "Taiwanstraße",
       "nameEn": "Taiwan Strait",
@@ -14857,15 +14546,15 @@
         "Medianlinie",
         "ADIZ"
       ],
-      "activity": 74,
-      "severity": 45,
-      "newCount": 0,
+      "activity": 78,
+      "severity": 46,
+      "newCount": 1,
       "signals": [
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 11
+          "count": 12
         },
         {
           "key": "casualties",
@@ -14901,9 +14590,30 @@
       "regions": [],
       "items": [
         {
+          "title": "Thousands displaced from Hebron as Israel carries on siege",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/thousands-displaced-from-hebron-as-israel-carries-on-siege?traffic_source=rss",
+          "date": "2026-11-01T21:28:47.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Almost 5,000 people have been displaced as a result of Israel’s military siege on the city of Hebron in the West Bank.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "regionEvent": {
+            "type": "siege",
+            "icon": "🛡️",
+            "label": "Belagerung"
+          },
+          "score": 26
+        },
+        {
           "title": "Northern Territory water plan condemned as ‘blatant and shameless’ attack on nature",
           "url": "https://www.theguardian.com/australia-news/2026/nov/02/northern-territory-water-plan-condemned-as-blatant-and-shameless-attack-on-nature",
-          "date": "2026-11-01T14:00:13.000Z",
+          "date": "2026-11-01T20:02:57.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Exclusive : Move to scrap legal requirement to set aside water for environment is ‘extreme even for the NT CLP government’, green group says Get our breaking news email , free app or daily news podcast The Northern Territory government has been accused of making a “blatant and shameless” attack on nature by planning to delete a legal requirement that water must be allocated to the environment. In ",
@@ -14920,27 +14630,6 @@
             "label": "Gefechte"
           },
           "score": 26
-        },
-        {
-          "title": "US hears Pakistan’s concerns over terrorism from Afghanistan, would play ‘productive role’ if there is one: Rubio",
-          "url": "https://www.dawn.com/news/2041358/us-hears-pakistans-concerns-over-terrorism-from-afghanistan-would-play-productive-role-if-there-is-one-rubio",
-          "date": "2026-11-01T14:03:30.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "US Secretary of State Marco Rubio on Saturday said that Washington has “heard” Pakistan’s concerns about terrorism emanating from Afghanistan and if “there’s a productive role for us to play, we would play it”. Rubio’s statement came in response to a question about tensions between Afghanistan and Pakistan at a press talks in Atlanta. “Pakistan is concerned about terrorist attacks that are being s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
-          },
-          "score": 19
         },
         {
           "title": "World News in Brief: ‘No safe place in Ukraine’, IAEA calls for Iran nuclear inspections, Kenya hosts thousands of Ethiopians fleeing clashes",
@@ -15090,6 +14779,27 @@
           "score": 16
         },
         {
+          "title": "US hears Pakistan’s concerns over terrorism from Afghanistan, would play ‘productive role’ if there is one: Rubio",
+          "url": "https://www.dawn.com/news/2041358/us-hears-pakistans-concerns-over-terrorism-from-afghanistan-would-play-productive-role-if-there-is-one-rubio",
+          "date": "2026-11-01T14:03:30.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "US Secretary of State Marco Rubio on Saturday said that Washington has “heard” Pakistan’s concerns about terrorism emanating from Afghanistan and if “there’s a productive role for us to play, we would play it”. Rubio’s statement came in response to a question about tensions between Afghanistan and Pakistan at a press talks in Atlanta. “Pakistan is concerned about terrorist attacks that are being s",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 16
+        },
+        {
           "title": "Sisi's 2030 exit plan would keep Egypt in the army's hands",
           "url": "https://www.middleeasteye.net/opinion/sisis-2030-exit-plan-would-keep-egypt-armys-hands",
           "date": "2026-11-01T11:23:26.000Z",
@@ -15108,7 +14818,7 @@
             "icon": "🗳️",
             "label": "Politik/Wahl"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "REPLAY: French anti-terrorism prosecutor gives press conference on racist attack",
@@ -15447,27 +15157,6 @@
           "score": 11
         },
         {
-          "title": "US senator briefed on Trump's plans to restart Iran war says proposal is 'insane'",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-senator-briefed-trumps-plans-restart-iran-war-says-proposal-insane",
-          "date": "2026-10-29T20:04:08.000Z",
-          "source": "Middle East Eye",
-          "sourceType": "news",
-          "summary": "US senator briefed on Trump's plans to restart Iran war says proposal is 'insane' Senator Chris Murphy says he has been briefed on the US's plan to restart the war on&nbsp; Iran , calling it \"insane\" and saying it would lead to a \"devastating escalation\". \"You've heard a preview that it would be a short-duration plan. I'll just say this: their plan is insane,\" Murphy said, speaking at an event org",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "score": 11
-        },
-        {
           "title": "Ethiopia: Ethiopia Receives 12 Russian SU-35 Fighter Jets, Plans to Acquire Four S-400 Air Defense Batteries",
           "url": "https://allafrica.com/stories/202610290101.html",
           "date": "2026-10-29T05:06:59.000Z",
@@ -15487,6 +15176,27 @@
             "label": "Luftangriff"
           },
           "score": 9
+        },
+        {
+          "title": "US senator briefed on Trump's plans to restart Iran war says proposal is 'insane'",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-senator-briefed-trumps-plans-restart-iran-war-says-proposal-insane",
+          "date": "2026-10-29T20:04:08.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "US senator briefed on Trump's plans to restart Iran war says proposal is 'insane' Senator Chris Murphy says he has been briefed on the US's plan to restart the war on&nbsp; Iran , calling it \"insane\" and saying it would lead to a \"devastating escalation\". \"You've heard a preview that it would be a short-duration plan. I'll just say this: their plan is insane,\" Murphy said, speaking at an event org",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
         },
         {
           "title": "'Deeply regressive': How the French government plans to make protesters pay for riots and looting",
@@ -15825,7 +15535,340 @@
           "score": 8
         }
       ],
-      "itemCount": 44
+      "itemCount": 45
+    },
+    {
+      "id": "lebanon-hezbollah",
+      "name": "Israel–Libanon / Hisbollah",
+      "nameEn": "Israel–Hezbollah",
+      "region": "Naher Osten",
+      "countries": [
+        "Lebanon"
+      ],
+      "lat": 33.6,
+      "lon": 35.5,
+      "tier": "high",
+      "since": "Oktober 2023 / Eskalation 2024",
+      "parties": [
+        "Israel",
+        "Hisbollah",
+        "Libanesische Armee",
+        "UNIFIL"
+      ],
+      "background": "Nach der Eskalation 2024 brüchige Waffenruhe; fortgesetzte israelische Luftschläge und Streit um die Entwaffnung der Hisbollah.",
+      "hotspots": [
+        "Südlibanon",
+        "Beirut/Dahiyeh",
+        "Bekaa-Ebene"
+      ],
+      "activity": 18,
+      "severity": 44,
+      "newCount": 0,
+      "signals": [
+        {
+          "key": "airstrike",
+          "label": "Luftschläge",
+          "dir": "up",
+          "count": 2
+        },
+        {
+          "key": "ceasefire",
+          "label": "Waffenruhe",
+          "dir": "down",
+          "count": 1
+        },
+        {
+          "key": "offensive",
+          "label": "Offensive",
+          "dir": "up",
+          "count": 1
+        }
+      ],
+      "acled": null,
+      "briefing": null,
+      "iso3": "LBN",
+      "extraCountries": [
+        "ISR"
+      ],
+      "regions": [
+        {
+          "id": "LBN-3060",
+          "name": "South",
+          "nameDe": "Gouvernement Süd-Libanon",
+          "type": "Province",
+          "anchor": [
+            35.368,
+            33.36
+          ],
+          "count": 2,
+          "newCount": 0,
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          }
+        },
+        {
+          "id": "LBN-3059",
+          "name": "Nabatieh",
+          "nameDe": "Nabatäa",
+          "type": "Province",
+          "anchor": [
+            35.512,
+            33.3
+          ],
+          "count": 1,
+          "newCount": 0,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          }
+        }
+      ],
+      "items": [
+        {
+          "title": "Israel shells south Lebanon towns, builds roads connecting military outposts",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-shells-south-lebanon-towns-builds-roads-connecting-military",
+          "date": "2026-10-31T23:21:11.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel shells south Lebanon towns, builds roads connecting military outposts Israeli forces carried out a large explosion in the town of Baraachit, in south Lebanon ’s Bint Jbeil district, on Saturday evening, Lebanon’s National News Agency (NNA) reported. Israeli artillery also shelled Beit Yahoun, in the same district, and the area between the towns of Zawtar al-Sharqiya and Maifadoun. An Israel",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "regionEvent": {
+            "type": "shelling",
+            "icon": "💥",
+            "label": "Beschuss"
+          },
+          "score": 18
+        },
+        {
+          "title": "Israeli air strikes target southern Lebanese town of Kfar Tebnit",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-target-southern-lebanese-town-kfar-tebnit",
+          "date": "2026-10-31T05:59:55.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli air strikes target southern Lebanese town of Kfar Tebnit An Israeli air attack has targeted the town of Kfar Tebnit in the Nabatieh district, southern Lebanon, Al Jazeera reported. The Israeli military also continued demolitions and artillery shelling in towns in the Bint Jbeil and Tyre districts in the south, large parts of which continues to be occupied by Israeli forces, the report adde",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3059",
+            "name": "Nabatieh",
+            "nameDe": "Nabatäa",
+            "type": "Province",
+            "anchor": [
+              35.512,
+              33.3
+            ],
+            "matched": "Nabatieh"
+          },
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Lebanese foreign minister urges Gulf states to help restore country's sovereignty",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-foreign-minister-urges-gulf-states-help-restore-countrys",
+          "date": "2026-11-01T02:25:16.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese foreign minister urges Gulf states to help restore country's sovereignty Lebanon's Foreign Minister Youssef Rajji has called for a complete Israeli withdrawal from occupied Lebanese territories, an end to ongoing attacks and the full implementation of UN Security Council Resolution 1701, while urging Gulf states to support efforts to restore Lebanon's sovereignty. Speaking at the 22nd Man",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "score": 15
+        },
+        {
+          "title": "Israeli army strikes Deir Mimas in southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-strikes-target-deir-mimas-southern-lebanon",
+          "date": "2026-10-28T20:40:43.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israeli army strikes Deir Mimas in southern Lebanon The Israeli army struck the Deir Mimas municipality in southern Lebanon, after issuing an earlier warning to residents instructing them to open their windows in preparation for a massive explosion in the town's vicinity, Lebanon’s National News Agency reported on Wednesday.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
+          "title": "Lebanon’s lost olive season: harvesting olives under drones and warplanes",
+          "url": "https://www.aljazeera.com/features/2026/10/27/lebanons-lost-olive-season-harvesting-olives-under-drones-and-warplanes?traffic_source=rss",
+          "date": "2026-10-27T13:54:43.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Lebanon's olive harvesters are facing dangerous conditions, with potential attacks and fear of cluster munitions.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "regionEvent": {
+            "type": "airstrike",
+            "icon": "✈️",
+            "label": "Luftangriff"
+          },
+          "score": 15
+        },
+        {
+          "title": "Lebanon charges 13 over confiscated Hezbollah explosives",
+          "url": "https://www.aljazeera.com/news/2026/10/31/lebanon-charges-13-over-hezbollah-confiscated-explosives?traffic_source=rss",
+          "date": "2026-10-31T09:26:46.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Group calls charges 'unjust', says weapons were meant to be used against Israeli forces in south Lebanon.",
+          "isNew": false,
+          "region": {
+            "id": "LBN-3060",
+            "name": "South",
+            "nameDe": "Gouvernement Süd-Libanon",
+            "type": "Province",
+            "anchor": [
+              35.368,
+              33.36
+            ],
+            "matched": "South Lebanon"
+          },
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 11
+        },
+        {
+          "title": "Lebanese court charges 13 over Hezbollah explosives shipment",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/lebanese-court-charges-13-over-hezbollah-explosives-shipment",
+          "date": "2026-10-30T16:55:22.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Lebanese court charges 13 over Hezbollah explosives shipment A Lebanese military court on Friday charged 13 people over their alleged involvement in shipping explosives to Hezbollah, AFP reported, citing a judicial source. The charges come after authorities seized a half-tonne cargo earlier this month, as Hezbollah emerges from back-to-back wars with Israel and faces a push from authorities in Bei",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "regionEvent": {
+            "type": "naval",
+            "icon": "🚢",
+            "label": "Seeangriff"
+          },
+          "score": 11
+        },
+        {
+          "title": "Israel launches explosive thermal balloons over southern Lebanon",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-explosive-thermal-balloons-over-southern-lebanon",
+          "date": "2026-10-28T22:04:20.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Israel launches explosive thermal balloons over southern Lebanon Israeli aircraft have been flying at low altitude and dropping thermal balloons over southern Lebanon, Lebanon’s National News Agency reported on Wednesday. The Lebanese army has previously warned that these balloons pose a threat to citizens due to their contents of explosive and incendiary materials, warning residents against appro",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "score": 8
+        },
+        {
+          "title": "Hezbollah leader rules out group's disarmament",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-leader-rules-out-groups-disarmament",
+          "date": "2026-10-28T20:47:43.000Z",
+          "source": "Middle East Eye",
+          "sourceType": "news",
+          "summary": "Hezbollah leader rules out group's disarmament Hezbollah Secretary-General Naim Qassem released a statement on Wednesday rejecting calls for the disarmament of the Lebanese group under a June US-brokered framework agreement with Israel. “The resistance continues and will confront any aggression against it; there is no room for discussion regarding the surrender of its weapons,” Qassem said in his ",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 8
+        },
+        {
+          "title": "Israeli election: Lebanon expects little change in Israeli policy",
+          "url": "https://www.france24.com/en/video/20261028-israeli-election-lebanon-expects-little-change-in-israeli-policy",
+          "date": "2026-10-28T15:36:07.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "The war in the Middle East never really stopped, but Lebanese expect little change in Israeli policy after Israel's elections. In Israel, as votes are counted, no clear winner has emerged yet. France 24's correspondent Renée Davis reports the latest.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 8
+        }
+      ],
+      "itemCount": 10
     },
     {
       "id": "afghanistan",
@@ -15854,7 +15897,7 @@
       ],
       "activity": 18,
       "severity": 44,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "talks",
@@ -15936,7 +15979,7 @@
           "source": "Dawn (Pakistan)",
           "sourceType": "news",
           "summary": "Inter-Services Public Relations (ISPR) Director General Lieutenant General Ahmed Sharif Chaudhry has affirmed that Pakistan is “much ahead” in operational readiness compared to the Afghan Taliban and India, adding that the country’s military is adopting emerging technologies. The military spokesperson’s remarks, shared by state media on Sunday, were made during Friday’s wide-ranging interview with",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -15948,7 +15991,7 @@
             "icon": "📄",
             "label": "Bericht"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "US hears Pakistan’s concerns over terrorism from Afghanistan, would play ‘productive role’ if there is one: Rubio",
@@ -15969,7 +16012,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 19
+          "score": 16
         },
         {
           "title": "‘Have no illusions’: Kundi tells Afghan Taliban Pakistan will not tolerate attacks after Angoor Adda firing",
@@ -16146,7 +16189,7 @@
       ],
       "activity": 14,
       "severity": 43,
-      "newCount": 2,
+      "newCount": 0,
       "signals": [],
       "acled": null,
       "briefing": null,
@@ -16161,7 +16204,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "No arrests made after several security officers were reportedly injured during incidents at Saturday's protests.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -16182,7 +16225,7 @@
           "source": "The Guardian World",
           "sourceType": "news",
           "summary": "Youth-led protests end with street violence in cities across France, Germany, Switzerland, Portugal and Albania French officials have opened an investigation into the attempted murder of a police officer and Germany’s interior minister has called for harsh penalties after peaceful and mainly youth-led protests across Europe ended in violence. In Portugal, police – some with dogs – cleared protest ",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "explosion",
@@ -16194,7 +16237,7 @@
             "icon": "💣",
             "label": "Explosion/Anschlag"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "🔴 Ukraine war live: Russian strikes leave 200,000 without power in Ukraine's Dnipropetrovsk region",
@@ -16671,7 +16714,7 @@
       ],
       "activity": 10,
       "severity": 42,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "airstrike",
@@ -16754,7 +16797,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Israel expands ties with the breakaway territory as Somalia challenges its motives and war intensifies in Yemen.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "report",
@@ -17000,13 +17043,13 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 12
+          "count": 14
         },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 9
+          "count": 10
         },
         {
           "key": "talks",
@@ -17034,13 +17077,55 @@
       "regions": [],
       "items": [
         {
+          "title": "Kherson braces for return of war as localised Russia-Ukraine truce ends",
+          "url": "https://www.aljazeera.com/news/2026/11/1/ukraine-evacuates-civilians-in-kherson-region-as-localised-ceasefire-ends?traffic_source=rss",
+          "date": "2026-11-01T22:15:14.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Moscow and Kyiv continue strikes elsewhere, but no reported violations in Kherson region during the six-day ceasefire.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
+          "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-11-01T21:55:01.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
+        },
+        {
           "title": "Russia detains minor over alleged Moscow attack plot after US warning",
           "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
           "date": "2026-11-01T16:24:16.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -17052,7 +17137,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Ukraine defies Trump to resume attacks on Russian oil refineries",
@@ -17060,8 +17145,8 @@
           "date": "2026-11-01T17:20:18.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Kremlin says Kyiv is ‘simply ignoring’ US wishes days before midterm elections after reported strikes on two oil sites Ukraine has resumed its attacks on Russian oil refineries in defiance of pressure from Donald Trump ahead of the US midterm elections, with a ceasefire in the occupied town of Oleshky due to end late on Sunday. Russian state media said on Sunday Ukrainian long-range drones had set",
-          "isNew": true,
+          "summary": "Kremlin says Kyiv is ‘simply ignoring’ US wishes days before midterm elections after reported strikes on two oil sites Ukraine has resumed its attacks on Russian oil refineries in defiance of pressure from Donald Trump ahead of the US midterm elections, as a ceasefire in the occupied town of Oleshky ended on Sunday night. Russian state media said on Sunday Ukrainian long-range drones had set fire ",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -17073,16 +17158,16 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
-          "title": "Ceasefire in Ukraine's Kherson region set to end after Russia refuses extension",
+          "title": "Ceasefire in Ukraine's Kherson region ends after Russia refuses extension",
           "url": "https://www.france24.com/en/europe/20261101-localised-ceasefire-in-ukraine-s-kherson-region-set-to-end",
           "date": "2026-11-01T12:41:48.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, was set to end on Sunday evening after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
-          "isNew": true,
+          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, ended on Sunday after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -17097,25 +17182,25 @@
           "score": 23
         },
         {
-          "title": "Turkiye’s Erdogan urges Russia and Ukraine to stop Black Sea attacks",
-          "url": "https://www.aljazeera.com/news/2026/10/31/turkiyes-erdogan-urges-russia-and-ukraine-to-stop-black-sea-attacks?traffic_source=rss",
-          "date": "2026-10-31T20:09:18.000Z",
-          "source": "Al Jazeera",
+          "title": "Russia's giant new radar in Kaliningrad raises alarm in NATO",
+          "url": "https://www.dw.com/en/russia-s-giant-new-radar-in-kaliningrad-raises-alarm-in-nato/a-79797815?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-11-01T20:34:00.000Z",
+          "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Turkish president hosts Zelenskyy in Istanbul as the two leaders agree to work on a new Black Sea grain corridor.",
-          "isNew": false,
+          "summary": "Russia is nearing completion of what experts think is a giant radar complex in Kaliningrad, capable of monitoring much of Europe. Experts warn the project could intensify the military standoff between Moscow and NATO.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 22
+          "score": 19
         },
         {
           "title": "Russia drone strike on Ukrainian railway station kills 13",
@@ -17135,6 +17220,27 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Turkiye’s Erdogan urges Russia and Ukraine to stop Black Sea attacks",
+          "url": "https://www.aljazeera.com/news/2026/10/31/turkiyes-erdogan-urges-russia-and-ukraine-to-stop-black-sea-attacks?traffic_source=rss",
+          "date": "2026-10-31T20:09:18.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Turkish president hosts Zelenskyy in Istanbul as the two leaders agree to work on a new Black Sea grain corridor.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 18
         },
@@ -17916,27 +18022,6 @@
           "score": 11
         },
         {
-          "title": "Tunisians drawn into Russia's war in Ukraine",
-          "url": "https://www.france24.com/en/tunisians-drawn-into-russia-s-war-in-ukraine",
-          "date": "2026-10-29T21:48:35.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In tonight's edition, concern is growing in Tunisia as the families of several men who travelled to Russia for work or study are still searching for an answer about the fate of their loved ones forcibly conscripted to the war in Ukraine. Also, a year after Tanzania's controversial election, the fear hasn't faded. And Dakar is ready to make history, as the first Olympic event ever held on African s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 11
-        },
-        {
           "title": "Ethiopia: Ethiopia Receives 12 Russian SU-35 Fighter Jets, Plans to Acquire Four S-400 Air Defense Batteries",
           "url": "https://allafrica.com/stories/202610290101.html",
           "date": "2026-10-29T05:06:59.000Z",
@@ -17977,6 +18062,27 @@
             "label": "Bericht"
           },
           "score": 9
+        },
+        {
+          "title": "Tunisians drawn into Russia's war in Ukraine",
+          "url": "https://www.france24.com/en/tunisians-drawn-into-russia-s-war-in-ukraine",
+          "date": "2026-10-29T21:48:35.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In tonight's edition, concern is growing in Tunisia as the families of several men who travelled to Russia for work or study are still searching for an answer about the fate of their loved ones forcibly conscripted to the war in Ukraine. Also, a year after Tanzania's controversial election, the fear hasn't faded. And Dakar is ready to make history, as the first Olympic event ever held on African s",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 8
         },
         {
           "title": "Ethiopia acquires Russian fighter jets and air defence systems amid war in Tigray",
@@ -18168,7 +18274,7 @@
           "score": 8
         }
       ],
-      "itemCount": 54
+      "itemCount": 57
     },
     {
       "id": "moldova-transnistria",
@@ -18201,13 +18307,13 @@
           "key": "ceasefire",
           "label": "Waffenruhe",
           "dir": "down",
-          "count": 12
+          "count": 14
         },
         {
           "key": "displacement",
           "label": "Vertreibung",
           "dir": "up",
-          "count": 9
+          "count": 10
         },
         {
           "key": "talks",
@@ -18235,13 +18341,55 @@
       "regions": [],
       "items": [
         {
+          "title": "Kherson braces for return of war as localised Russia-Ukraine truce ends",
+          "url": "https://www.aljazeera.com/news/2026/11/1/ukraine-evacuates-civilians-in-kherson-region-as-localised-ceasefire-ends?traffic_source=rss",
+          "date": "2026-11-01T22:15:14.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Moscow and Kyiv continue strikes elsewhere, but no reported violations in Kherson region during the six-day ceasefire.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
+        },
+        {
+          "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
+          "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+          "date": "2026-11-01T21:55:01.000Z",
+          "source": "BBC World",
+          "sourceType": "news",
+          "summary": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
+          "isNew": true,
+          "region": null,
+          "event": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "regionEvent": {
+            "type": "ceasefire",
+            "icon": "🕊️",
+            "label": "Waffenruhe"
+          },
+          "score": 26
+        },
+        {
           "title": "Russia detains minor over alleged Moscow attack plot after US warning",
           "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
           "date": "2026-11-01T16:24:16.000Z",
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park.",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -18253,7 +18401,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Ukraine defies Trump to resume attacks on Russian oil refineries",
@@ -18261,8 +18409,8 @@
           "date": "2026-11-01T17:20:18.000Z",
           "source": "The Guardian World",
           "sourceType": "news",
-          "summary": "Kremlin says Kyiv is ‘simply ignoring’ US wishes days before midterm elections after reported strikes on two oil sites Ukraine has resumed its attacks on Russian oil refineries in defiance of pressure from Donald Trump ahead of the US midterm elections, with a ceasefire in the occupied town of Oleshky due to end late on Sunday. Russian state media said on Sunday Ukrainian long-range drones had set",
-          "isNew": true,
+          "summary": "Kremlin says Kyiv is ‘simply ignoring’ US wishes days before midterm elections after reported strikes on two oil sites Ukraine has resumed its attacks on Russian oil refineries in defiance of pressure from Donald Trump ahead of the US midterm elections, as a ceasefire in the occupied town of Oleshky ended on Sunday night. Russian state media said on Sunday Ukrainian long-range drones had set fire ",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "clash",
@@ -18274,16 +18422,16 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
-          "title": "Ceasefire in Ukraine's Kherson region set to end after Russia refuses extension",
+          "title": "Ceasefire in Ukraine's Kherson region ends after Russia refuses extension",
           "url": "https://www.france24.com/en/europe/20261101-localised-ceasefire-in-ukraine-s-kherson-region-set-to-end",
           "date": "2026-11-01T12:41:48.000Z",
           "source": "France 24",
           "sourceType": "news",
-          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, was set to end on Sunday evening after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
-          "isNew": true,
+          "summary": "The longest truce of the war in Ukraine, localised in the region of Kherson, ended on Sunday after Russia refused to extend the ceasefire. The temporary pause in fighting, which began on Tuesday, enabled a humanitarian mission to the Russian-occupied town of Olechky.",
+          "isNew": false,
           "region": null,
           "event": {
             "type": "ceasefire",
@@ -18319,25 +18467,25 @@
           "score": 23
         },
         {
-          "title": "Turkiye’s Erdogan urges Russia and Ukraine to stop Black Sea attacks",
-          "url": "https://www.aljazeera.com/news/2026/10/31/turkiyes-erdogan-urges-russia-and-ukraine-to-stop-black-sea-attacks?traffic_source=rss",
-          "date": "2026-10-31T20:09:18.000Z",
-          "source": "Al Jazeera",
+          "title": "Russia's giant new radar in Kaliningrad raises alarm in NATO",
+          "url": "https://www.dw.com/en/russia-s-giant-new-radar-in-kaliningrad-raises-alarm-in-nato/a-79797815?maca=en-rss-en-world-4025-rdf",
+          "date": "2026-11-01T20:34:00.000Z",
+          "source": "Deutsche Welle",
           "sourceType": "news",
-          "summary": "Turkish president hosts Zelenskyy in Istanbul as the two leaders agree to work on a new Black Sea grain corridor.",
-          "isNew": false,
+          "summary": "Russia is nearing completion of what experts think is a giant radar complex in Kaliningrad, capable of monitoring much of Europe. Experts warn the project could intensify the military standoff between Moscow and NATO.",
+          "isNew": true,
           "region": null,
           "event": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
           "regionEvent": {
-            "type": "clash",
-            "icon": "⚔️",
-            "label": "Gefechte"
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
           },
-          "score": 22
+          "score": 19
         },
         {
           "title": "Russia drone strike on Ukrainian railway station kills 13",
@@ -18357,6 +18505,27 @@
             "type": "drone",
             "icon": "🛩️",
             "label": "Drohnenangriff"
+          },
+          "score": 18
+        },
+        {
+          "title": "Turkiye’s Erdogan urges Russia and Ukraine to stop Black Sea attacks",
+          "url": "https://www.aljazeera.com/news/2026/10/31/turkiyes-erdogan-urges-russia-and-ukraine-to-stop-black-sea-attacks?traffic_source=rss",
+          "date": "2026-10-31T20:09:18.000Z",
+          "source": "Al Jazeera",
+          "sourceType": "news",
+          "summary": "Turkish president hosts Zelenskyy in Istanbul as the two leaders agree to work on a new Black Sea grain corridor.",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
+          },
+          "regionEvent": {
+            "type": "clash",
+            "icon": "⚔️",
+            "label": "Gefechte"
           },
           "score": 18
         },
@@ -19138,27 +19307,6 @@
           "score": 11
         },
         {
-          "title": "Tunisians drawn into Russia's war in Ukraine",
-          "url": "https://www.france24.com/en/tunisians-drawn-into-russia-s-war-in-ukraine",
-          "date": "2026-10-29T21:48:35.000Z",
-          "source": "France 24",
-          "sourceType": "news",
-          "summary": "In tonight's edition, concern is growing in Tunisia as the families of several men who travelled to Russia for work or study are still searching for an answer about the fate of their loved ones forcibly conscripted to the war in Ukraine. Also, a year after Tanzania's controversial election, the fear hasn't faded. And Dakar is ready to make history, as the first Olympic event ever held on African s",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "report",
-            "icon": "📄",
-            "label": "Bericht"
-          },
-          "regionEvent": {
-            "type": "election",
-            "icon": "🗳️",
-            "label": "Politik/Wahl"
-          },
-          "score": 11
-        },
-        {
           "title": "Ethiopia: Ethiopia Receives 12 Russian SU-35 Fighter Jets, Plans to Acquire Four S-400 Air Defense Batteries",
           "url": "https://allafrica.com/stories/202610290101.html",
           "date": "2026-10-29T05:06:59.000Z",
@@ -19199,6 +19347,27 @@
             "label": "Bericht"
           },
           "score": 9
+        },
+        {
+          "title": "Tunisians drawn into Russia's war in Ukraine",
+          "url": "https://www.france24.com/en/tunisians-drawn-into-russia-s-war-in-ukraine",
+          "date": "2026-10-29T21:48:35.000Z",
+          "source": "France 24",
+          "sourceType": "news",
+          "summary": "In tonight's edition, concern is growing in Tunisia as the families of several men who travelled to Russia for work or study are still searching for an answer about the fate of their loved ones forcibly conscripted to the war in Ukraine. Also, a year after Tanzania's controversial election, the fear hasn't faded. And Dakar is ready to make history, as the first Olympic event ever held on African s",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "report",
+            "icon": "📄",
+            "label": "Bericht"
+          },
+          "regionEvent": {
+            "type": "election",
+            "icon": "🗳️",
+            "label": "Politik/Wahl"
+          },
+          "score": 8
         },
         {
           "title": "Ethiopia acquires Russian fighter jets and air defence systems amid war in Tigray",
@@ -19390,7 +19559,7 @@
           "score": 8
         }
       ],
-      "itemCount": 55
+      "itemCount": 58
     },
     {
       "id": "south-sudan",
@@ -19681,8 +19850,8 @@
         "Gelbes Meer",
         "Pjöngjang"
       ],
-      "activity": 45,
-      "severity": 36,
+      "activity": 42,
+      "severity": 35,
       "newCount": 0,
       "signals": [
         {
@@ -19899,6 +20068,27 @@
           "score": 18
         },
         {
+          "title": "North Korea tests cluster-bomb warheads: KCNA",
+          "url": "https://www.dawn.com/news/2041366/north-korea-tests-cluster-bomb-warheads-kcna",
+          "date": "2026-11-01T07:06:04.000Z",
+          "source": "Dawn (Pakistan)",
+          "sourceType": "news",
+          "summary": "North Korea test-fired cluster-bomb warheads, its state media reported on Sunday, the latest in a slew of weapons drills aimed at training its military units on using them. The test, conducted on Saturday, came after the nuclear-armed North recently trialled a range of weaponry including attack drones, a new precision-guided torpedo system and an intermediate-range hypersonic missile. It also came",
+          "isNew": false,
+          "region": null,
+          "event": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "regionEvent": {
+            "type": "explosion",
+            "icon": "💣",
+            "label": "Explosion/Anschlag"
+          },
+          "score": 15
+        },
+        {
           "title": "Missile shrapnel injures Saudi citizen, says news agency",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/missile-shrapnel-injures-saudi-citizen-says-news-agency",
           "date": "2026-10-29T20:47:44.000Z",
@@ -19917,7 +20107,7 @@
             "icon": "🚀",
             "label": "Raketenangriff"
           },
-          "score": 18
+          "score": 15
         },
         {
           "title": "Coalition says it shot down two missiles fired at Riyadh",
@@ -19937,27 +20127,6 @@
             "type": "missile",
             "icon": "🚀",
             "label": "Raketenangriff"
-          },
-          "score": 18
-        },
-        {
-          "title": "North Korea tests cluster-bomb warheads: KCNA",
-          "url": "https://www.dawn.com/news/2041366/north-korea-tests-cluster-bomb-warheads-kcna",
-          "date": "2026-11-01T07:06:04.000Z",
-          "source": "Dawn (Pakistan)",
-          "sourceType": "news",
-          "summary": "North Korea test-fired cluster-bomb warheads, its state media reported on Sunday, the latest in a slew of weapons drills aimed at training its military units on using them. The test, conducted on Saturday, came after the nuclear-armed North recently trialled a range of weaponry including attack drones, a new precision-guided torpedo system and an intermediate-range hypersonic missile. It also came",
-          "isNew": false,
-          "region": null,
-          "event": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
-          },
-          "regionEvent": {
-            "type": "explosion",
-            "icon": "💣",
-            "label": "Explosion/Anschlag"
           },
           "score": 15
         },
@@ -20285,7 +20454,7 @@
       ],
       "activity": 11,
       "severity": 26,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [
         {
           "key": "displacement",
@@ -20323,7 +20492,7 @@
             24.18
           ],
           "count": 1,
-          "newCount": 1,
+          "newCount": 0,
           "event": {
             "type": "clash",
             "icon": "⚔️",
@@ -20339,7 +20508,7 @@
           "source": "Al Jazeera",
           "sourceType": "news",
           "summary": "Dozens of garment workers in Bangladesh clashed with police in the capital Dhaka.",
-          "isNew": true,
+          "isNew": false,
           "region": {
             "id": "BGD-1806",
             "name": "Dhaka",
@@ -20361,7 +20530,7 @@
             "icon": "⚔️",
             "label": "Gefechte"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Israeli strike on Nuseirat refugee camp in central Gaza kills Palestinian",
@@ -20477,7 +20646,7 @@
       ],
       "activity": 10,
       "severity": 25,
-      "newCount": 1,
+      "newCount": 0,
       "signals": [],
       "acled": null,
       "briefing": null,
@@ -20492,7 +20661,7 @@
           "source": "Middle East Eye",
           "sourceType": "news",
           "summary": "Saudi Arabia condemns strike on Qatar’s LNG tanker Saudi Arabia has condemned the attack on Qatar’s liquefied natural gas (LNG) carrier Al Mayeda and backed measures to protect Qatari vessels and international trade. In a statement posted on X, the Saudi foreign ministry reiterated its “rejection of all violations that threaten the security and safety of maritime navigation and global energy suppl",
-          "isNew": true,
+          "isNew": false,
           "region": null,
           "event": {
             "type": "naval",
@@ -20504,7 +20673,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 26
+          "score": 23
         },
         {
           "title": "Joint naval, army forces kill 34 insurgents in Lake Chad region",
@@ -20525,7 +20694,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 19
+          "score": 15
         }
       ],
       "itemCount": 2
@@ -20604,7 +20773,7 @@
             "icon": "🚢",
             "label": "Seeangriff"
           },
-          "score": 22
+          "score": 15
         },
         {
           "title": "Chad: France and Chad Rebuild Military Ties With Planned Air Force Training",
@@ -21425,7 +21594,7 @@
             "icon": "🗳️",
             "label": "Politik/Wahl"
           },
-          "score": 16
+          "score": 15
         },
         {
           "title": "Egypt: Egypt to Deploy Troops in Somalia Under Bilateral Deal Ahead of Aussom Integration",
